@@ -1,0 +1,37 @@
+{
+  "scope": "Private mechanical NR03 proof-source repair; not compiled, not pushed, not independently refereed",
+  "base_commit": "e4c3483974ef960d72b24c61a3d1ea76a006a11d",
+  "diagnostic_run": 34775864410,
+  "diagnostic_job": 103773729682,
+  "modified_theorem_bodies": [
+    "fin127_sum_split",
+    "coreW_indicator",
+    "coreV_at_rep"
+  ],
+  "all_theorem_statements_preserved": true,
+  "frozen_boundary": {
+    "development/NR03/NLA/NR03/Definitions.lean": "5157fd499d2f63d218012f96bee43f30e5f57e5a2353fde13878af46d30fda04",
+    "development/NR03/Challenge.lean": "4f1764cf9c604f33ed6f285e83ca32ebd1ae1fb1fd8f763a1c4a719ef068c335"
+  },
+  "family_identities_unchanged_uncompiled": true,
+  "finite_kernel_decide_bodies_unchanged": true,
+  "no_budget_changes": true,
+  "local_Lean_Lake_or_cache_run": false,
+  "live_worktree_unchanged": true,
+  "files": {
+    "development/NR03/NLA/NR03/Index.lean": {
+      "before_sha256": "486096f4fd28d10a80141d421a6dea9db825b8e74efe536d64876e895f939f14",
+      "after_sha256": "c404d36ba7ce9888f5bf31ac959ccc78be2a380d628b83972f6c8940cb709370"
+    },
+    "development/NR03/NLA/NR03/Core.lean": {
+      "before_sha256": "86d2b7c434d06476155959bbf7cfb052f113222909250ac4b51e0d66f6cb5eb5",
+      "after_sha256": "1e61cc3df229557d8d12e4c3608d15007a89b786f5270da2985fd5a84aed7ea5"
+    }
+  },
+  "patch_sha256": "1c6a1a740832030d1b287e59e3f701168c4a8da396db49df9d98b9f201ba1ad8",
+  "pinned_api_evidence": {
+    "Mathlib/Algebra/BigOperators/Fin.lean:159-160": "prod_univ_add with to_additive generates exactly the castAdd/natAdd sum terms; named index wrappers are definitionally equal",
+    "Mathlib/Data/Fin/Basic.lean:116-123": "val_eq_val and mk_eq_mk reduce Fin equality to natural-value equality",
+    "Mathlib/Algebra/GCDMonoid/Basic.lean:1369": "Uses if_pos (Or.inl rfl); standard proposition-directed conditional reduction"
+  }
+}

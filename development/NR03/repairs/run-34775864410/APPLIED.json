@@ -1,0 +1,33 @@
+{
+  "scope": "Applied root-reviewed mechanical repair for next bounded NR03 development diagnostic",
+  "base_commit": "e4c3483974ef960d72b24c61a3d1ea76a006a11d",
+  "previous_run": 34775864410,
+  "repair_patch_sha256": "1c6a1a740832030d1b287e59e3f701168c4a8da396db49df9d98b9f201ba1ad8",
+  "private_repair_manifest_sha256": "6d0f491f0f10ec4180dc5111595af1f78f986c39ee8bce8c9a794e72d834609f",
+  "root_review": "Root inspected exact patch and actual Index/Core diagnostics; approved conservative folding/if/Nat projection repairs. This is not a final independent proof acceptance.",
+  "modified_bodies": [
+    "fin127_sum_split",
+    "coreW_indicator",
+    "coreV_at_rep"
+  ],
+  "all_mathematical_statements_definitions_imports_unchanged": true,
+  "family_identities_unchanged_uncompiled": true,
+  "budgets_unchanged": {
+    "job_minutes": 30,
+    "module_seconds": 120,
+    "memory_argument": "-M4096",
+    "threads_argument": "-j1"
+  },
+  "files": {
+    "development/NR03/NLA/NR03/Index.lean": {
+      "before_sha256": "486096f4fd28d10a80141d421a6dea9db825b8e74efe536d64876e895f939f14",
+      "after_sha256": "c404d36ba7ce9888f5bf31ac959ccc78be2a380d628b83972f6c8940cb709370"
+    },
+    "development/NR03/NLA/NR03/Core.lean": {
+      "before_sha256": "86d2b7c434d06476155959bbf7cfb052f113222909250ac4b51e0d66f6cb5eb5",
+      "after_sha256": "1e61cc3df229557d8d12e4c3608d15007a89b786f5270da2985fd5a84aed7ea5"
+    }
+  },
+  "local_Lean_Lake_or_cache_run": false,
+  "no_canonical_status_or_PR_changes": true
+}

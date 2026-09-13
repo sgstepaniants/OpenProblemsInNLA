@@ -1,0 +1,50 @@
+--- a/development/NR03/NLA/NR03/Index.lean
++++ b/development/NR03/NLA/NR03/Index.lean
+@@ -33,6 +33,7 @@
+   have hinner := Fin.sum_univ_add
+     (fun k : Fin (64 + 7) => f (Fin.castAdd 35 (Fin.castAdd 21 k)))
+   rw [houter, hmid, hinner]
++  rfl
+ 
+ theorem sourceW_core (a : Mask7) (k : Fin 64) :
+     sourceW a (coreIndex k) = coreW a k := by
+--- a/development/NR03/NLA/NR03/Core.lean
++++ b/development/NR03/NLA/NR03/Core.lean
+@@ -41,7 +41,7 @@
+         have hv := congrArg (fun z : Mask7 => z.val) h'
+         simp [maskComplement, coreMask] at hv
+         omega
+-      simp [coreW, h, hcomp, hk]
++      simp only [coreW, if_pos (Or.inl h), if_pos hk]
+     · have hk : k ≠ ⟨a.val, ha⟩ := by
+         intro hk'
+         apply h
+@@ -66,15 +66,17 @@
+     · have hk : k = ⟨127 - a.val, by omega⟩ := by
+         apply Fin.ext
+         have hv := congrArg (fun z : Mask7 => z.val) h
+-        simp [maskComplement, coreMask] at hv
++        change a.val = 127 - k.val at hv
++        change k.val = 127 - a.val
+         omega
+-      simp [coreW, h, hlow, hk]
++      simp only [coreW, if_pos (Or.inr h), if_pos hk]
+     · have hk : k ≠ ⟨127 - a.val, by omega⟩ := by
+         intro hk'
+         apply h
+         apply Fin.ext
+         have hv := congrArg (fun z : Fin 64 => z.val) hk'
+-        simp [maskComplement, coreMask] at hv
++        change k.val = 127 - a.val at hv
++        change a.val = 127 - k.val
+         omega
+       simp [coreW, h, hlow, hk]
+ 
+@@ -124,6 +126,7 @@
+     rw [hrep]
+     simp only [coreV, hcore]
+     rw [hsub]
++    rfl
+   · let k : Fin 64 := ⟨127 - a.val, by omega⟩
+     have hrep : coreRep a = k := by
+       simp [coreRep, ha, k]

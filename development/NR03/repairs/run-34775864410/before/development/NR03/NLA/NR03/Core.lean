@@ -41,7 +41,7 @@ theorem coreW_indicator (a : Mask7) (k : Fin 64) :
         have hv := congrArg (fun z : Mask7 => z.val) h'
         simp [maskComplement, coreMask] at hv
         omega
-      simp only [coreW, if_pos (Or.inl h), if_pos hk]
+      simp [coreW, h, hcomp, hk]
     · have hk : k ≠ ⟨a.val, ha⟩ := by
         intro hk'
         apply h
@@ -66,17 +66,15 @@ theorem coreW_indicator (a : Mask7) (k : Fin 64) :
     · have hk : k = ⟨127 - a.val, by omega⟩ := by
         apply Fin.ext
         have hv := congrArg (fun z : Mask7 => z.val) h
-        change a.val = 127 - k.val at hv
-        change k.val = 127 - a.val
+        simp [maskComplement, coreMask] at hv
         omega
-      simp only [coreW, if_pos (Or.inr h), if_pos hk]
+      simp [coreW, h, hlow, hk]
     · have hk : k ≠ ⟨127 - a.val, by omega⟩ := by
         intro hk'
         apply h
         apply Fin.ext
         have hv := congrArg (fun z : Fin 64 => z.val) hk'
-        change k.val = 127 - a.val at hv
-        change a.val = 127 - k.val
+        simp [maskComplement, coreMask] at hv
         omega
       simp [coreW, h, hlow, hk]
 
@@ -126,7 +124,6 @@ theorem coreV_at_rep (a b : Mask7) :
     rw [hrep]
     simp only [coreV, hcore]
     rw [hsub]
-    rfl
   · let k : Fin 64 := ⟨127 - a.val, by omega⟩
     have hrep : coreRep a = k := by
       simp [coreRep, ha, k]

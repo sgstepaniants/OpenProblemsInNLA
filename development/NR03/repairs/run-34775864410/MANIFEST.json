@@ -1,0 +1,12 @@
+{
+  "scope": "Uncompiled private repair candidate",
+  "files": {
+    "CHECKS.json": "fc7d794f7be52bc96f373ccb5132d0d81deefc081ea1973096d547849505a357",
+    "ROOT-CAUSE.md": "61e998a5aa6382183d1439dca891a3b0788855dfda7d31280bd2eb85f3f64b2c",
+    "after/development/NR03/NLA/NR03/Core.lean": "1e61cc3df229557d8d12e4c3608d15007a89b786f5270da2985fd5a84aed7ea5",
+    "after/development/NR03/NLA/NR03/Index.lean": "c404d36ba7ce9888f5bf31ac959ccc78be2a380d628b83972f6c8940cb709370",
+    "before/development/NR03/NLA/NR03/Core.lean": "86d2b7c434d06476155959bbf7cfb052f113222909250ac4b51e0d66f6cb5eb5",
+    "before/development/NR03/NLA/NR03/Index.lean": "486096f4fd28d10a80141d421a6dea9db825b8e74efe536d64876e895f939f14",
+    "repair.patch": "1c6a1a740832030d1b287e59e3f701168c4a8da396db49df9d98b9f201ba1ad8"
+  }
+}

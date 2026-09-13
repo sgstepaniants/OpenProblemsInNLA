@@ -33,7 +33,6 @@ theorem fin127_sum_split (f : AtomIndex → ℕ) :
   have hinner := Fin.sum_univ_add
     (fun k : Fin (64 + 7) => f (Fin.castAdd 35 (Fin.castAdd 21 k)))
   rw [houter, hmid, hinner]
-  rfl
 
 theorem sourceW_core (a : Mask7) (k : Fin 64) :
     sourceW a (coreIndex k) = coreW a k := by
