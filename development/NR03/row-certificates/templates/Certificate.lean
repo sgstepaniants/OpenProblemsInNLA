@@ -49,7 +49,7 @@ theorem genericD_positive : ∀ b : BoolVec 7, 0 < genericD b := by
   split
   · norm_num
   · have hp : 0 < maskCard (maskOfVector b) - 1 := by omega
-    exact Nat.pow_pos hp
+    exact Nat.pow_pos hp _
 
 theorem generic_scaled_identity (a b : BoolVec 7) :
     (castNatMatrix genericW * castNatMatrix genericV) a b =

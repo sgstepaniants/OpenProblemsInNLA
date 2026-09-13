@@ -19,67 +19,15 @@ REPO = ROOT.parents[1]
 WORKFLOW = REPO / ".github/workflows/lean-nr03-development.yml"
 RECORDS: list[dict] = []
 
-# Full original development proof graph. Heavy literal-row modules
-# are ordered in one explicit import chain, also enforcing sequential
-# heavy reductions in ordinary Lake dependency builds.
+# Two independent grouped-row probes. Each module uses eight separately
+# closed kernel decisions and then assembles the previously frozen block
+# predicate by finite cases. No earlier full proof or probe source changes.
 MODULES = [
     ("Definitions", Path("NLA/NR03/Definitions.lean")),
     ("Encoding", Path("NLA/NR03/Encoding.lean")),
     ("FamilyDefs", Path("NLA/NR03/FamilyDefs.lean")),
-    ("Index", Path("NLA/NR03/Index.lean")),
-    ("Core", Path("NLA/NR03/Core.lean")),
-    ("RowCertificate.Singleton.Block00", Path("NLA/NR03/RowCertificate/Singleton/Block00.lean")),
-    ("RowCertificate.Singleton.Block01", Path("NLA/NR03/RowCertificate/Singleton/Block01.lean")),
-    ("RowCertificate.Singleton.Block02", Path("NLA/NR03/RowCertificate/Singleton/Block02.lean")),
-    ("RowCertificate.Singleton.Block03", Path("NLA/NR03/RowCertificate/Singleton/Block03.lean")),
-    ("RowCertificate.Singleton.Block04", Path("NLA/NR03/RowCertificate/Singleton/Block04.lean")),
-    ("RowCertificate.Singleton.Block05", Path("NLA/NR03/RowCertificate/Singleton/Block05.lean")),
-    ("RowCertificate.Singleton.Block06", Path("NLA/NR03/RowCertificate/Singleton/Block06.lean")),
-    ("RowCertificate.Singleton.Block07", Path("NLA/NR03/RowCertificate/Singleton/Block07.lean")),
-    ("RowCertificate.Singleton.Block08", Path("NLA/NR03/RowCertificate/Singleton/Block08.lean")),
-    ("RowCertificate.Singleton.Block09", Path("NLA/NR03/RowCertificate/Singleton/Block09.lean")),
-    ("RowCertificate.Singleton.Block10", Path("NLA/NR03/RowCertificate/Singleton/Block10.lean")),
-    ("RowCertificate.Singleton.Block11", Path("NLA/NR03/RowCertificate/Singleton/Block11.lean")),
-    ("RowCertificate.Singleton.Block12", Path("NLA/NR03/RowCertificate/Singleton/Block12.lean")),
-    ("RowCertificate.Singleton.Block13", Path("NLA/NR03/RowCertificate/Singleton/Block13.lean")),
-    ("RowCertificate.Singleton.Block14", Path("NLA/NR03/RowCertificate/Singleton/Block14.lean")),
-    ("RowCertificate.Singleton.Block15", Path("NLA/NR03/RowCertificate/Singleton/Block15.lean")),
-    ("RowCertificate.Pair.Block00", Path("NLA/NR03/RowCertificate/Pair/Block00.lean")),
-    ("RowCertificate.Pair.Block01", Path("NLA/NR03/RowCertificate/Pair/Block01.lean")),
-    ("RowCertificate.Pair.Block02", Path("NLA/NR03/RowCertificate/Pair/Block02.lean")),
-    ("RowCertificate.Pair.Block03", Path("NLA/NR03/RowCertificate/Pair/Block03.lean")),
-    ("RowCertificate.Pair.Block04", Path("NLA/NR03/RowCertificate/Pair/Block04.lean")),
-    ("RowCertificate.Pair.Block05", Path("NLA/NR03/RowCertificate/Pair/Block05.lean")),
-    ("RowCertificate.Pair.Block06", Path("NLA/NR03/RowCertificate/Pair/Block06.lean")),
-    ("RowCertificate.Pair.Block07", Path("NLA/NR03/RowCertificate/Pair/Block07.lean")),
-    ("RowCertificate.Pair.Block08", Path("NLA/NR03/RowCertificate/Pair/Block08.lean")),
-    ("RowCertificate.Pair.Block09", Path("NLA/NR03/RowCertificate/Pair/Block09.lean")),
-    ("RowCertificate.Pair.Block10", Path("NLA/NR03/RowCertificate/Pair/Block10.lean")),
-    ("RowCertificate.Pair.Block11", Path("NLA/NR03/RowCertificate/Pair/Block11.lean")),
-    ("RowCertificate.Pair.Block12", Path("NLA/NR03/RowCertificate/Pair/Block12.lean")),
-    ("RowCertificate.Pair.Block13", Path("NLA/NR03/RowCertificate/Pair/Block13.lean")),
-    ("RowCertificate.Pair.Block14", Path("NLA/NR03/RowCertificate/Pair/Block14.lean")),
-    ("RowCertificate.Pair.Block15", Path("NLA/NR03/RowCertificate/Pair/Block15.lean")),
-    ("RowCertificate.Four.Block00", Path("NLA/NR03/RowCertificate/Four/Block00.lean")),
-    ("RowCertificate.Four.Block01", Path("NLA/NR03/RowCertificate/Four/Block01.lean")),
-    ("RowCertificate.Four.Block02", Path("NLA/NR03/RowCertificate/Four/Block02.lean")),
-    ("RowCertificate.Four.Block03", Path("NLA/NR03/RowCertificate/Four/Block03.lean")),
-    ("RowCertificate.Four.Block04", Path("NLA/NR03/RowCertificate/Four/Block04.lean")),
-    ("RowCertificate.Four.Block05", Path("NLA/NR03/RowCertificate/Four/Block05.lean")),
-    ("RowCertificate.Four.Block06", Path("NLA/NR03/RowCertificate/Four/Block06.lean")),
-    ("RowCertificate.Four.Block07", Path("NLA/NR03/RowCertificate/Four/Block07.lean")),
-    ("RowCertificate.Four.Block08", Path("NLA/NR03/RowCertificate/Four/Block08.lean")),
-    ("RowCertificate.Four.Block09", Path("NLA/NR03/RowCertificate/Four/Block09.lean")),
-    ("RowCertificate.Four.Block10", Path("NLA/NR03/RowCertificate/Four/Block10.lean")),
-    ("RowCertificate.Four.Block11", Path("NLA/NR03/RowCertificate/Four/Block11.lean")),
-    ("RowCertificate.Four.Block12", Path("NLA/NR03/RowCertificate/Four/Block12.lean")),
-    ("RowCertificate.Four.Block13", Path("NLA/NR03/RowCertificate/Four/Block13.lean")),
-    ("RowCertificate.Four.Block14", Path("NLA/NR03/RowCertificate/Four/Block14.lean")),
-    ("RowCertificate.Four.Block15", Path("NLA/NR03/RowCertificate/Four/Block15.lean")),
-    ("FamilyIdentities", Path("NLA/NR03/FamilyIdentities.lean")),
-    ("Certificate", Path("NLA/NR03/Certificate.lean")),
-    ("Rank", Path("NLA/NR03/Rank.lean")),
-    ("Solution", Path("Solution.lean")),
+    ("ProbePairGroupedBlock", Path("NLA/NR03/ProbePairGroupedBlock.lean")),
+    ("ProbeFourGroupedBlock", Path("NLA/NR03/ProbeFourGroupedBlock.lean")),
 ]
 
 
@@ -249,12 +197,12 @@ def compile_drafts(logs: Path) -> int:
         if not unchanged:
             status = 1
         dump(logs / "result.json", {
-            "purpose": "NR-03 complete original proof graph development compilation",
-            "full_family_obligations_in_scope": True,
-            "literal_rows_per_family": 128,
-            "columns_per_family": 128,
-            "closed_row_lemmas_per_module": 8,
-            "sequential_row_module_count": 48,
+            "purpose": "NR-03 grouped closed-row family probes only",
+            "full_family_obligations_checked": False,
+            "restricted_probe_rows": {"first": 120, "last": 127, "count": 8},
+            "rows_per_closed_lemma": 1,
+            "closed_row_lemmas_per_grouped_module": 8,
+            "restricted_probe_columns": 128,
             "authoritative_verification": False,
             "canonical_problem_verified": False,
             "comparator_executed": False,
