@@ -1,0 +1,166 @@
+{
+  "purpose": "NR-03 source-only next diagnostic draft; no compile or verification claim",
+  "author": "George Stepaniants",
+  "formalization_author": "George Stepaniants, Department of Computing and Mathematical Sciences, California Institute of Technology, Pasadena, California, USA",
+  "review_role": "author optimization analysis by /root/lean_iv01_next (AI agent), not an independent referee report",
+  "base_repository": "sgstepaniants/OpenProblemsInNLA",
+  "base_commit": "d8b65ab13ee9c27e8909052de792f10322a51e1b",
+  "base_run": "34774320268",
+  "base_solution_sha256": "4224164dd803b1d0418694acee1318517da39b47b16fd110955af42e7f779f28",
+  "frozen_boundary": {
+    "development/NR03/NLA/NR03/Definitions.lean": "5157fd499d2f63d218012f96bee43f30e5f57e5a2353fde13878af46d30fda04",
+    "development/NR03/Challenge.lean": "4f1764cf9c604f33ed6f285e83ca32ebd1ae1fb1fd8f763a1c4a719ef068c335"
+  },
+  "module_order": [
+    "Definitions",
+    "Encoding",
+    "FamilyDefs",
+    "Index",
+    "Core",
+    "FamilyIdentities",
+    "Certificate",
+    "Rank",
+    "Solution"
+  ],
+  "finite_tactic_changes": {
+    "maskBit_complement": "fin_cases a/i; decide +kernel -> revert i a; decide +kernel",
+    "singleton_identity": "intro a; fin_cases a; decide +kernel -> decide +kernel",
+    "pair_identity": "intro a; fin_cases a; decide +kernel -> decide +kernel",
+    "four_identity": "intro a; fin_cases a; decide +kernel -> decide +kernel",
+    "closed_arithmetic": "unchanged decide +kernel"
+  },
+  "resource_bounds": {
+    "lean_memory": "-M4096",
+    "threads": "-j1",
+    "module_timeout": "120s",
+    "execution": "remote Linux only"
+  },
+  "tracked_files": [
+    {
+      "path": ".github/workflows/lean-nr03-next-diagnostic.yml",
+      "bytes": 1645,
+      "sha256": "6506ba264e5d107ee0afee73755713e038c5434aa6e753e3aea3e56f34e2cb01"
+    },
+    {
+      "path": "DIAGNOSTIC-PLAN.md",
+      "bytes": 2337,
+      "sha256": "ed504cf5845fc3fe4f68303a0c9a42cd45f9a4a84d298eac3719c874b257f2cc"
+    },
+    {
+      "path": "FINITE-PROOF-DELTA.patch",
+      "bytes": 1054,
+      "sha256": "bc7c091a848efbc6850ad582f7e93e033944375bb70ef6d72de884de6d80ddf1"
+    },
+    {
+      "path": "MODULE-MAP.json",
+      "bytes": 1958,
+      "sha256": "e85c2cb1d5156453e2fd5028b849f47a2c9dd3cfb5db3cd85500681380b4e2b5"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3123,
+      "sha256": "e9306cb681bd28f951ed0a6d850d43132aee034c86719e36c1890dbab486c457"
+    },
+    {
+      "path": "development/NR03/Challenge.lean",
+      "bytes": 3619,
+      "sha256": "4f1764cf9c604f33ed6f285e83ca32ebd1ae1fb1fd8f763a1c4a719ef068c335"
+    },
+    {
+      "path": "development/NR03/LICENSE",
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "development/NR03/NLA/NR03/Certificate.lean",
+      "bytes": 2718,
+      "sha256": "f4f26a2dd99ca63cbd370c63230cc7b4ec4a0f121388b87cd8fdf94e33e09225"
+    },
+    {
+      "path": "development/NR03/NLA/NR03/Core.lean",
+      "bytes": 5021,
+      "sha256": "86d2b7c434d06476155959bbf7cfb052f113222909250ac4b51e0d66f6cb5eb5"
+    },
+    {
+      "path": "development/NR03/NLA/NR03/Definitions.lean",
+      "bytes": 3846,
+      "sha256": "5157fd499d2f63d218012f96bee43f30e5f57e5a2353fde13878af46d30fda04"
+    },
+    {
+      "path": "development/NR03/NLA/NR03/Encoding.lean",
+      "bytes": 4702,
+      "sha256": "4408496c44153ff61a6ca89f87a243d2bbb908c1ef9e20bf2384720a44391657"
+    },
+    {
+      "path": "development/NR03/NLA/NR03/FamilyDefs.lean",
+      "bytes": 4213,
+      "sha256": "1e01f68f20dafa07be2e2a3beca832f0a3925b90a0e1fcc496d087082bdf9415"
+    },
+    {
+      "path": "development/NR03/NLA/NR03/FamilyIdentities.lean",
+      "bytes": 3049,
+      "sha256": "b267428566e7e8ee0d37e9d40045a1a4b7979df8e7327abfb3f8364a5b11db80"
+    },
+    {
+      "path": "development/NR03/NLA/NR03/Index.lean",
+      "bytes": 3305,
+      "sha256": "486096f4fd28d10a80141d421a6dea9db825b8e74efe536d64876e895f939f14"
+    },
+    {
+      "path": "development/NR03/NLA/NR03/Rank.lean",
+      "bytes": 4051,
+      "sha256": "3db45d0fb2688edf93460ea9fa24c3f8fa219574c0a5962c519c08c8930fc876"
+    },
+    {
+      "path": "development/NR03/README.md",
+      "bytes": 3123,
+      "sha256": "e9306cb681bd28f951ed0a6d850d43132aee034c86719e36c1890dbab486c457"
+    },
+    {
+      "path": "development/NR03/SOURCE_INPUTS.json",
+      "bytes": 2140,
+      "sha256": "363acbef6338339cb60fe46ef1845adb37196d4e1d36bd2e17b660c55257bb97"
+    },
+    {
+      "path": "development/NR03/Solution.lean",
+      "bytes": 1665,
+      "sha256": "4a0ae10fcd53d4a894a7e72b9d39c4fad8da1e814428b9df16648d85abb9ddb1"
+    },
+    {
+      "path": "development/NR03/ci_compile.py",
+      "bytes": 9777,
+      "sha256": "060b577393bee577ad1eab894c1372cbfe9e0d02b04e38161ae823830b0b21a5"
+    },
+    {
+      "path": "development/NR03/comparator.json",
+      "bytes": 620,
+      "sha256": "ea1cea90b8e25535a31dca7fc620494ded851587609bb1473c651d07757f40bd"
+    },
+    {
+      "path": "development/NR03/lake-manifest.json",
+      "bytes": 3537,
+      "sha256": "71e8401646a361d36b841337a9e08cbe0633fbbbce8e5ce9b5db0e10dfefbb5c"
+    },
+    {
+      "path": "development/NR03/lean-toolchain",
+      "bytes": 25,
+      "sha256": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71"
+    }
+  ],
+  "workflow": ".github/workflows/lean-nr03-next-diagnostic.yml",
+  "driver_hash": "060b577393bee577ad1eab894c1372cbfe9e0d02b04e38161ae823830b0b21a5",
+  "core_comment_update": "Clarified that coreW_indicator proof is structural; no mathematical body changed.",
+  "source_inputs_files": 17,
+  "static_checks": {
+    "boundary_files_exact": true,
+    "non_finite_source_chunks_preserved": true,
+    "only_proof_script_changes": [
+      "maskBit_complement",
+      "singleton_identity",
+      "pair_identity",
+      "four_identity"
+    ],
+    "no_local_lean_lake_or_cache_run": true,
+    "package_size_bytes": 76886
+  }
+}

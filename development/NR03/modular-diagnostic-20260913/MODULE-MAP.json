@@ -1,0 +1,90 @@
+{
+  "Definitions": {
+    "source": "development/NR03/NLA/NR03/Definitions.lean",
+    "base": "frozen copied boundary",
+    "imports": []
+  },
+  "Encoding": {
+    "source": "development/NR03/NLA/NR03/Encoding.lean",
+    "base_lines": [
+      "25-74",
+      "198-260"
+    ],
+    "imports": [
+      "NLA.NR03.Definitions",
+      "Init.Data.Nat.Bitwise.Lemmas",
+      "Mathlib.Tactic"
+    ]
+  },
+  "FamilyDefs": {
+    "source": "development/NR03/NLA/NR03/FamilyDefs.lean",
+    "base_lines": [
+      "76-196"
+    ],
+    "imports": [
+      "NLA.NR03.Encoding",
+      "Mathlib.Tactic"
+    ]
+  },
+  "Index": {
+    "source": "development/NR03/NLA/NR03/Index.lean",
+    "base_lines": [
+      "262-330"
+    ],
+    "imports": [
+      "NLA.NR03.FamilyDefs",
+      "Mathlib.Tactic"
+    ]
+  },
+  "Core": {
+    "source": "development/NR03/NLA/NR03/Core.lean",
+    "base_lines": [
+      "332-458"
+    ],
+    "imports": [
+      "NLA.NR03.FamilyDefs",
+      "Mathlib.Tactic"
+    ],
+    "proof_edit": "maskBit_complement body only; coreW_indicator comment clarified"
+  },
+  "FamilyIdentities": {
+    "source": "development/NR03/NLA/NR03/FamilyIdentities.lean",
+    "base_lines": [
+      "460-527"
+    ],
+    "imports": [
+      "NLA.NR03.Core",
+      "Mathlib.Tactic"
+    ],
+    "proof_edit": "singleton_identity, pair_identity, four_identity bodies only"
+  },
+  "Certificate": {
+    "source": "development/NR03/NLA/NR03/Certificate.lean",
+    "base_lines": [
+      "529-575"
+    ],
+    "imports": [
+      "NLA.NR03.Index",
+      "NLA.NR03.FamilyIdentities",
+      "Mathlib.Tactic"
+    ]
+  },
+  "Rank": {
+    "source": "development/NR03/NLA/NR03/Rank.lean",
+    "base_lines": [
+      "577-674"
+    ],
+    "imports": [
+      "NLA.NR03.Certificate",
+      "Mathlib.Tactic"
+    ]
+  },
+  "Solution": {
+    "source": "development/NR03/Solution.lean",
+    "base": "trust/axiom diagnostics only",
+    "imports": [
+      "NLA.NR03.Rank",
+      "LeanCert.Tactic.Verification"
+    ]
+  }
+}

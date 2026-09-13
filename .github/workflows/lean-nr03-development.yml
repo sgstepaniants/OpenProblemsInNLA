@@ -1,18 +1,18 @@
-name: NR-03 draft compilation (not verification)
+name: NR-03 modular bounded diagnostics (not verification)
 
 on:
+  workflow_dispatch:
   push:
     branches: [codex/lean-nr03-nonnegative-rank]
     paths:
       - development/NR03/**
       - .github/workflows/lean-nr03-development.yml
-  workflow_dispatch:
 
 permissions:
   contents: read
 
 jobs:
-  draft-compile:
+  modular-draft-compile:
     if: github.ref == 'refs/heads/codex/lean-nr03-nonnegative-rank'
     runs-on: ubuntu-24.04
     timeout-minutes: 30
@@ -20,9 +20,9 @@ jobs:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
         with:
           persist-credentials: false
-      - name: Record exact draft inputs before dependency setup
+      - name: Record exact draft inputs
         env:
-          NR03_LOG_DIR: ${{ runner.temp }}/nr03-development-logs
+          NR03_LOG_DIR: ${{ runner.temp }}/nr03-next-diagnostic
         run: python3 development/NR03/ci_compile.py --record-inputs
       - uses: leanprover/lean-action@96e06131c0e9943c780388fd166f55d1e2fa0433
         with:
@@ -33,16 +33,16 @@ jobs:
           lint: false
           use-mathlib-cache: false
           use-github-cache: false
-      - name: Compile draft modules sequentially with bounded resources
+      - name: Compile modular draft with bounded resources
         env:
-          NR03_LOG_DIR: ${{ runner.temp }}/nr03-development-logs
+          NR03_LOG_DIR: ${{ runner.temp }}/nr03-next-diagnostic
         run: python3 development/NR03/ci_compile.py --compile
-      - name: Retain successful and failed development logs
+      - name: Retain raw diagnostics
         if: always()
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
         with:
-          name: nr03-development-${{ github.run_id }}-${{ github.run_attempt }}
-          path: ${{ runner.temp }}/nr03-development-logs/
+          name: nr03-next-diagnostic-${{ github.run_id }}-${{ github.run_attempt }}
+          path: ${{ runner.temp }}/nr03-next-diagnostic/
           if-no-files-found: warn
           retention-days: 14
           include-hidden-files: true

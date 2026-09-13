@@ -1,61 +1,56 @@
-# NR-03 remote development compiler
+# NR-03 modular bounded diagnostic draft
 
-This directory is a scratch-ready copy of the NR-03 proof candidate for bounded
-Linux compiler feedback. It is **not** authoritative Lean verification, a
-Comparator result, a final proof review, or a solved-status claim. The
-canonical NR-03 target and its statement-stage boundary are unchanged.
+**Status:** source-only optimization draft; not compiled, not verified, and not
+countable.
 
-Formalization: **George Stepaniants**, Department of Computing and Mathematical
-Sciences, California Institute of Technology, Pasadena, California, USA, with
-AI-agent assistance. The underlying mathematical counterexample is attributed
-to Sidney Holden; the retained Colbrook material remains historical partial
-background. No email is included.
+This scratch package responds to the bounded failure at candidate commit
+`d8b65ab13ee9c27e8909052de792f10322a51e1b` (GitHub run `34774320268`). The
+failed run compiled LeanCert and `Definitions`, then the monolithic `Solution`
+process terminated after 63.126 seconds with
+`lean::memory_exception: excessive memory consumption detected at
+'interpreter'`. No declaration location was emitted.
 
-## Exact inputs
+The approved `Definitions.lean` and placeholder `Challenge.lean` are copied
+byte-for-byte from that candidate. The mathematical declarations are separated
+into meaningful dependent modules so a bounded remote run resets elaborator
+state after each stage:
 
-`NLA/NR03/Definitions.lean` and `Challenge.lean` are copied byte-for-byte from
-NR-03 candidate commit `e788494836d075c2ff9e75729634c0fdf812a29a`. `Solution.lean`
-is the author optimization proposal `decide +kernel` plus the structural core
-reduction, SHA-256
-`4224164dd803b1d0418694acee1318517da39b47b16fd110955af42e7f779f28`.
-`SOURCE_INPUTS.json` binds every committed input and the workflow. The source
-boundary remains the full real Boolean-vector target; no certificate data are
-trusted and no target quantifier is weakened.
+1. `NLA.NR03.Encoding` — mask/vector encoding, bit correspondence, casts, and
+   the all-Boolean-vector bridge.
+2. `NLA.NR03.FamilyDefs` — exact atom families, source indexing and sums.
+3. `NLA.NR03.Index` — the finite 127-index decomposition and source bridges.
+4. `NLA.NR03.Core` — complementary core-pair reduction and core sum identity.
+5. `NLA.NR03.FamilyIdentities` — singleton, pair, four-set and closed-family
+   identities.
+6. `NLA.NR03.Certificate` — full source identity, generic matrices, and the
+   scaled certificate.
+7. `NLA.NR03.Rank` — the real denominator bridge, factorization and rank
+   consequences.
+8. `Solution` — public trust/axiom diagnostics only.
 
-The ten dependency revisions are retained in `lake-manifest.json`: LeanCert,
-Mathlib, Plausible, LeanSearchClient, importGraph, ProofWidgets, Aesop, Qq,
-Batteries and Cli. The toolchain is Lean 4.33.1. The `formalization.yaml` and
-`comparator.json` files are retained as metadata context only; this workflow
-does not execute Comparator or promote any status.
+The finite reductions are changed in two deliberately small ways. The 896-case
+`maskBit_complement` proof now reverts both finite variables and invokes one
+closed `decide +kernel`, removing the 128-by-7 interpreter-generated goal
+forest. The three row-local family identities now invoke one closed
+`decide +kernel` on their existing universal finite propositions, removing the
+outer `intro a; fin_cases a` branching. `closed_arithmetic` already used a
+closed `decide +kernel`. No target, definition, certificate family, Boolean
+index, denominator, rank statement, or non-finite proof body is weakened.
 
-## Remote-only bounded run
+The proposed mode remains a diagnostic: a closed kernel decision may still be
+expensive, especially for `pair_identity` because `maskSubset` has a seven-bit
+finite decision procedure. If `FamilyIdentities` still exceeds the bounded
+remote limit, the next reduction should replace that individual closed finite
+decision by structural coordinate/count lemmas. The module graph makes that
+failure identifiable without re-elaborating the earlier modules.
 
-The dedicated workflow is `.github/workflows/lean-nr03-development.yml` and is
-restricted to `codex/lean-nr03-nonnegative-rank`. On Ubuntu 24.04 it installs the
-pinned toolchain, runs `lake env true`, obtains the Mathlib development cache,
-checks all ten dependency revisions, compiles the directly imported LeanCert
-verification module, then attempts the two project modules in order:
+The draft driver retains the existing remote bounds (`-M4096 -j1`, 120 seconds
+per Lean module) and does not run a monolithic `lake build`. It is intended for
+remote Linux only. No local Lean/Lake/cache process was run to create this
+draft.
 
-1. `NLA.NR03.Definitions`
-2. `Solution`
-
-Every direct Lean process uses `-M4096 -j1` and a GNU `timeout` of 120 seconds.
-The driver records a dependency graph, command arguments, elapsed time, raw
-stdout/stderr, return codes, source copies, before/after SHA-256 inventories,
-and a final `result.json`, including when a setup or module step fails. A
-failed dependency skips only descendants; independent modules are still
-attempted. No aggregate `lake build` is run.
-
-This package must run on Linux GitHub Actions only. Do not run Lean, Lake,
-cache setup, or dependency compilation locally. The artifact is development
-feedback only. A green run does not establish Comparator matching, permitted
-axioms, statement correspondence, independent final review, or Lean-verified
-status; those are separate gates.
-
-## Reproduction inputs
-
-The eventual remote branch should preserve the package under
-`development/NR03` and the workflow under `.github/workflows`. The first step
-is always `--record-inputs`; the second is `--compile`. The live canonical
-NR-03 job is independent of this package and must not be canceled or restarted
-because of observation.
+The public `Solution` file contains the same ten Comparator names and ten
+LeanCert kernel assertions as the failed candidate, now supplied by imported
+modules. The copied `Challenge.lean` remains outside the proof claim and still
+contains its intentional placeholders. Comparator/default-kernel/sandbox
+acceptance and publication metadata are pending.

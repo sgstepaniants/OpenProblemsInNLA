@@ -1,0 +1,48 @@
+{
+  "scope": "One bounded NR03 modular diagnostic integration; not verification",
+  "base_commit": "d8b65ab13ee9c27e8909052de792f10322a51e1b",
+  "source_draft": "/tmp/nla-nr03-next-draft",
+  "original_draft_manifest_sha256": "b3981e4ebfd06017c0a65de926cb2a1e5d7a043785b72f3426c8db0520b46d47",
+  "original_draft_unchanged": true,
+  "independent_source_comparison": {
+    "declarations": 93,
+    "all_mapped_chunks_preserved": true,
+    "no_unmapped_nonblank_source_lines": true,
+    "same_twenty_public_diagnostic_commands": true,
+    "only_proof_body_changes": [
+      "maskBit_complement",
+      "singleton_identity",
+      "pair_identity",
+      "four_identity"
+    ]
+  },
+  "frozen_boundary": {
+    "development/NR03/NLA/NR03/Definitions.lean": "5157fd499d2f63d218012f96bee43f30e5f57e5a2353fde13878af46d30fda04",
+    "development/NR03/Challenge.lean": "4f1764cf9c604f33ed6f285e83ca32ebd1ae1fb1fd8f763a1c4a719ef068c335"
+  },
+  "base_hashes": {
+    "development/NR03/Solution.lean": "4224164dd803b1d0418694acee1318517da39b47b16fd110955af42e7f779f28",
+    "development/NR03/ci_compile.py": "6b4abb724e1365a5692fd2e21b37dcec178519bbecabd9af7fa07b56440cf665",
+    "development/NR03/SOURCE_INPUTS.json": "3018096b6cf10e87732ec1a1ab95f3a7490730ce003d8e8306a5700750ecc577",
+    "development/NR03/lakefile.toml": "48067e84ad4450090a93dc620da10e670360a459ead81c97b71557ff24c704e4",
+    ".github/workflows/lean-nr03-development.yml": "ae06f92cfddadd28c63c76da0366c80a1b4b6caca235498e28d6683da3bf98fd"
+  },
+  "integration_only_delta": [
+    "Reuse existing .github/workflows/lean-nr03-development.yml and update its path filter; do not add a second workflow",
+    "Update ci_compile.py WORKFLOW constant to the existing workflow path",
+    "Retain live lakefile.toml omitted by original draft and include it in SOURCE_INPUTS",
+    "Retain existing overall workflow timeout 30 minutes, instead of original draft 40 minutes; per-module timeout/memory/thread limits unchanged",
+    "Refresh SOURCE_INPUTS for all actual source/support inputs excluding its own self-hash"
+  ],
+  "resource_limits": {
+    "module_timeout_seconds": 120,
+    "memory_argument": "-M4096",
+    "threads_argument": "-j1",
+    "workflow_timeout_minutes": 30
+  },
+  "workflow_sha256": "2aa2d29dd873f8085f26a98a960e6e99754668cf9fe48dbc29ef5e2c89c2c8d3",
+  "driver_sha256": "6a5a26cdac3fa4ffd4ff909ae883b42539862b9abc1ed89ad2908cd35a080bd4",
+  "original_lakefile_sha256": "48067e84ad4450090a93dc620da10e670360a459ead81c97b71557ff24c704e4",
+  "local_Lean_Lake_or_cache_execution": false,
+  "canonical_status_or_source_changed": false
+}

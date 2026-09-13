@@ -1,0 +1,30 @@
+--- base candidate: development/NR03/Solution.lean
++++ modular next diagnostic: split modules
+@@ maskBit_complement @@
+ theorem maskBit_complement (a : Mask7) (i : Fin 7) :
+     maskBit (maskComplement a) i = !(maskBit a i) := by
+-  fin_cases a <;> fin_cases i <;> decide +kernel
++  revert i a
++  decide +kernel
+@@ singleton_identity @@
+ theorem singleton_identity : ∀ a b : Mask7,
+     singletonSum a b = singletonClosed a b := by
+-  intro a
+-  fin_cases a <;> decide +kernel
++  decide +kernel
+@@ pair_identity @@
+ theorem pair_identity : ∀ a b : Mask7,
+     pairSum a b = pairClosed a b := by
+-  intro a
+-  fin_cases a <;> decide +kernel
++  decide +kernel
+@@ four_identity @@
+ theorem four_identity : ∀ a b : Mask7,
+     fourSum a b = fourClosed a b := by
+-  intro a
+-  fin_cases a <;> decide +kernel
++  decide +kernel
+@@ all other declarations @@
+-  one monolithic Solution elaboration state
++  same declarations/proof bodies moved unchanged into Encoding, FamilyDefs,
++  Index, Core, FamilyIdentities, Certificate and Rank, with local imports.

@@ -19,6 +19,21 @@ REPO = ROOT.parents[1]
 WORKFLOW = REPO / ".github/workflows/lean-nr03-development.yml"
 RECORDS: list[dict] = []
 
+# Ordered bounded proof graph. Each module is compiled in its own Lean
+# invocation so an expensive finite reduction cannot retain monolithic
+# Solution elaborator state.
+MODULES = [
+    ("Definitions", Path("NLA/NR03/Definitions.lean")),
+    ("Encoding", Path("NLA/NR03/Encoding.lean")),
+    ("FamilyDefs", Path("NLA/NR03/FamilyDefs.lean")),
+    ("Index", Path("NLA/NR03/Index.lean")),
+    ("Core", Path("NLA/NR03/Core.lean")),
+    ("FamilyIdentities", Path("NLA/NR03/FamilyIdentities.lean")),
+    ("Certificate", Path("NLA/NR03/Certificate.lean")),
+    ("Rank", Path("NLA/NR03/Rank.lean")),
+    ("Solution", Path("Solution.lean")),
+]
+
 
 def sha(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
@@ -105,11 +120,11 @@ def check_pins(logs: Path) -> None:
 
 
 def module_graph() -> dict[str, list[str]]:
-    names = ["Definitions", "Solution"]
+    names = [name for name, _ in MODULES]
+    source_by_name = {name: rel for name, rel in MODULES}
     graph: dict[str, list[str]] = {}
     for name in names:
-        source = ROOT / ("Solution.lean" if name == "Solution"
-                         else "NLA/NR03/Definitions.lean")
+        source = ROOT / source_by_name[name]
         imports = [line.split()[1] for line in source.read_text().splitlines()
                    if line.startswith("import ")]
         dependencies = []
@@ -152,9 +167,9 @@ def compile_drafts(logs: Path) -> int:
         dump(logs / "module-dependencies.json", graph)
         module_status: dict[str, int | None] = {
             "LeanCert.Tactic.Verification": cert_status}
-        for name in ["Definitions", "Solution"]:
+        for name, source in MODULES:
             label = f"compile-{name}"
-            blocked = [dep for dep in graph[name] if module_status[dep] != 0]
+            blocked = [dep for dep in graph[name] if module_status.get(dep) != 0]
             if blocked:
                 module_status[name] = None
                 RECORDS.append({"label": label,
@@ -163,8 +178,6 @@ def compile_drafts(logs: Path) -> int:
                 dump(logs / "commands.json", RECORDS)
                 print(f"{label}: skipped; dependencies: {', '.join(blocked)}", flush=True)
                 continue
-            source = Path("Solution.lean" if name == "Solution"
-                          else "NLA/NR03/Definitions.lean")
             output = Path(".lake/build/lib/lean") / source.with_suffix(".olean")
             (ROOT / output).parent.mkdir(parents=True, exist_ok=True)
             module_status[name] = run(logs, label,
