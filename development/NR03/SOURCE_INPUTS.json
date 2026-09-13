@@ -1,13 +1,20 @@
 {
-  "purpose": "Complete NR03 family row-certificate development graph; not canonical verification",
+  "purpose": "NR03 conditional algebra diagnostic with complete unchanged public source boundary; not canonical verification",
   "repository": "sgstepaniants/OpenProblemsInNLA",
-  "base_commit": "91a1588f3141580cd1a0b95b6d22a7b32681fa97",
-  "base_run": 34778330872,
-  "generation_manifest": "development/NR03/row-certificates/SOURCE-MANIFEST.json",
+  "base_commit": "fe4140cced3fc4b4efdd4ef4e202d27156a1cd4f",
+  "base_run": 34780136595,
+  "frozen_interfaces": "development/NR03/certificate-bridge/INTERFACES.md",
+  "historical_row_generation_manifest": "development/NR03/row-certificates/SOURCE-MANIFEST.json",
+  "historical_generation_outputs_superseded": [
+    "development/NR03/NLA/NR03/Certificate.lean",
+    "development/NR03/ci_compile.py"
+  ],
   "files": {
+    ".github/workflows/lean-nr03-development.yml": "2aa2d29dd873f8085f26a98a960e6e99754668cf9fe48dbc29ef5e2c89c2c8d3",
     "development/NR03/Challenge.lean": "4f1764cf9c604f33ed6f285e83ca32ebd1ae1fb1fd8f763a1c4a719ef068c335",
     "development/NR03/LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
-    "development/NR03/NLA/NR03/Certificate.lean": "e60c3e56f0906e1af334e84f12d07f4b3426232691b71f66ce03ecef2b358fe5",
+    "development/NR03/NLA/NR03/Certificate.lean": "05cd28513d8e2e7285f1e2039db944cd8beffface3c72df7fc4079555e624fdc",
+    "development/NR03/NLA/NR03/CertificateBridge.lean": "96e7f3d3611fd91b06080cf1d096cb6b9df8b73b69786c7599f703c496ebcc2b",
     "development/NR03/NLA/NR03/Core.lean": "1e61cc3df229557d8d12e4c3608d15007a89b786f5270da2985fd5a84aed7ea5",
     "development/NR03/NLA/NR03/Definitions.lean": "5157fd499d2f63d218012f96bee43f30e5f57e5a2353fde13878af46d30fda04",
     "development/NR03/NLA/NR03/Encoding.lean": "4408496c44153ff61a6ca89f87a243d2bbb908c1ef9e20bf2384720a44391657",
@@ -75,7 +82,10 @@
     "development/NR03/README.md": "e9306cb681bd28f951ed0a6d850d43132aee034c86719e36c1890dbab486c457",
     "development/NR03/SETUP-NOTES.md": "12ab031a493cd1a00feadf444458d9dcc0810c7b7e26b5aa8441e4846f41ccde",
     "development/NR03/Solution.lean": "4a0ae10fcd53d4a894a7e72b9d39c4fad8da1e814428b9df16648d85abb9ddb1",
-    "development/NR03/ci_compile.py": "55335f7a7338a7da6bf898b185873a5c16e7729772621fff45b063dec106ea5a",
+    "development/NR03/certificate-bridge/DISCHARGE-GRAPH.json": "bd37bf43c3cf2aa87697bc4004f21cdd208a2e93144cf6c5474e80d7570feadc",
+    "development/NR03/certificate-bridge/INTERFACES.md": "ee9cb2c0e6d7c71fa10b70ce8879e78a4cfcfd8dae975c9389ede70355b1ae2d",
+    "development/NR03/certificate-bridge/PROVENANCE.md": "c7997979c68819588167d9d74e8444dcbde5174d896f03d156bab5c67827ea56",
+    "development/NR03/ci_compile.py": "1d8747a8c91038865cecd4e4e2a6bc167e609c15fbebcbcebaff3437b50c5e1e",
     "development/NR03/comparator.json": "ea1cea90b8e25535a31dca7fc620494ded851587609bb1473c651d07757f40bd",
     "development/NR03/family-probe/PROBES.md": "33aabd823fb3609f01461f383e0e11b9f5b6442fc12318105a52ca353fd77f44",
     "development/NR03/grouped-row-probe/PROBES.md": "5b5c8f7c0be134246d32f62a3745ad0b746dd7fc0392fc8a7e003f5830018ba4",
@@ -105,7 +115,6 @@
     "development/NR03/row-certificates/templates/Certificate.lean": "f4f26a2dd99ca63cbd370c63230cc7b4ec4a0f121388b87cd8fdf94e33e09225",
     "development/NR03/row-certificates/templates/FamilyIdentities.lean": "b267428566e7e8ee0d37e9d40045a1a4b7979df8e7327abfb3f8364a5b11db80",
     "development/NR03/row-certificates/templates/ci_compile.py": "7a687582b0250d643677dea85db2f0a3f0f183520d008df1162128203eba683d",
-    "development/NR03/single-row-probe/PROBES.md": "105d0c059f381fdda17285ce9b966ebb021ed382db8ec72e4a67b7921b3b3d74",
-    ".github/workflows/lean-nr03-development.yml": "2aa2d29dd873f8085f26a98a960e6e99754668cf9fe48dbc29ef5e2c89c2c8d3"
+    "development/NR03/single-row-probe/PROBES.md": "105d0c059f381fdda17285ce9b966ebb021ed382db8ec72e4a67b7921b3b3d74"
   }
 }
