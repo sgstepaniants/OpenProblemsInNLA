@@ -19,17 +19,17 @@ REPO = ROOT.parents[1]
 WORKFLOW = REPO / ".github/workflows/lean-nr03-development.yml"
 RECORDS: list[dict] = []
 
-# Independent restricted row-block probes. All original full proof modules
-# remain byte-identical in the input snapshot, but are not compiled by this
-# benchmark. Each probe depends only on the already compiled FamilyDefs;
-# no probe depends on another probe or on the timed-out FamilyIdentities.
+# Independent fixed-row probes. All original full proof modules and prior
+# eight-row probe modules remain byte-identical historical inputs. Each new
+# probe depends only on FamilyDefs, so one probe failure cannot skip another.
 MODULES = [
     ("Definitions", Path("NLA/NR03/Definitions.lean")),
     ("Encoding", Path("NLA/NR03/Encoding.lean")),
     ("FamilyDefs", Path("NLA/NR03/FamilyDefs.lean")),
-    ("ProbeSingletonBlock", Path("NLA/NR03/ProbeSingletonBlock.lean")),
-    ("ProbePairBlock", Path("NLA/NR03/ProbePairBlock.lean")),
-    ("ProbeFourBlock", Path("NLA/NR03/ProbeFourBlock.lean")),
+    ("ProbePairRow120", Path("NLA/NR03/ProbePairRow120.lean")),
+    ("ProbePairRow127", Path("NLA/NR03/ProbePairRow127.lean")),
+    ("ProbeFourRow120", Path("NLA/NR03/ProbeFourRow120.lean")),
+    ("ProbeFourRow127", Path("NLA/NR03/ProbeFourRow127.lean")),
 ]
 
 
@@ -199,9 +199,10 @@ def compile_drafts(logs: Path) -> int:
         if not unchanged:
             status = 1
         dump(logs / "result.json", {
-            "purpose": "NR-03 restricted row-block family probes only",
+            "purpose": "NR-03 restricted single-row family probes only",
             "full_family_obligations_checked": False,
-            "restricted_probe_rows": {"first": 120, "last": 127, "count": 8},
+            "restricted_probe_rows": [120, 127],
+            "rows_per_probe": 1,
             "restricted_probe_columns": 128,
             "authoritative_verification": False,
             "canonical_problem_verified": False,
