@@ -30,8 +30,9 @@ theorem leadingGramDet_succ_succ (word : List ℝ) (z η : ℂ) (n : ℕ) :
         (fun i : Fin n => i.castSucc.castSucc)
         (fun i : Fin n => i.castSucc.castSucc) = gramPencil word z η n := by
     calc
-      _ = ((gramPencil word z η (n + 2)).submatrix Fin.castSucc Fin.castSucc).
-          submatrix Fin.castSucc Fin.castSucc := rfl
+      _ = Matrix.submatrix
+          ((gramPencil word z η (n + 2)).submatrix Fin.castSucc Fin.castSucc)
+          Fin.castSucc Fin.castSucc := rfl
       _ = gramPencil word z η n := by
         rw [gramPencil_corner, gramPencil_corner]
   have h := last_border_det n (gramPencil word z η (n + 2))

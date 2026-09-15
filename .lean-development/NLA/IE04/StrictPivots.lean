@@ -36,11 +36,13 @@ theorem activeInjective_of_noSwap_schur {n : ℕ} (S : Mat n) (k : Fin n)
   have hmul : ∀ i, S.mulVec y i = S.mulVec x i - S i k * x k := by
     intro i
     simp [y, Matrix.mulVec_sub, mul_comm]
+  have hswap : rowSwap S k k = S := by
+    ext i j
+    simp [rowSwap]
   have hyrows : ∀ i, k.val + 1 ≤ i.val → (schurStep S k k).mulVec y i = 0 := by
     intro i hi
     have hki : k < i := hi
-    rw [schurStep_mulVec_proved S k k i y hysupp hki]
-    simp only [rowSwap, Equiv.swap_self, Equiv.refl_apply]
+    rw [schurStep_mulVec_proved S k k i y hysupp hki, hswap]
     rw [hmul, hmul, hrows i hki.le, hrows k le_rfl]
     field_simp
     ring

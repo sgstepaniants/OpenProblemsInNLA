@@ -19,7 +19,13 @@ namespace NLA.SP04
 lemma orderedBox_bounds (s : Fin 3 → ℝ) (hs : OrderedBox s) (i : Fin 3) :
     7 / 4 < s i ∧ s i < 44 / 25 := by
   rcases hs with ⟨h0, h1, h2, h3⟩
-  fin_cases i <;> constructor <;> linarith
+  fin_cases i
+  · change 7 / 4 < s 0 ∧ s 0 < 44 / 25
+    constructor <;> linarith
+  · change 7 / 4 < s 1 ∧ s 1 < 44 / 25
+    constructor <;> linarith
+  · change 7 / 4 < s 2 ∧ s 2 < 44 / 25
+    constructor <;> linarith
 
 lemma orderedBox_pos (s : Fin 3 → ℝ) (hs : OrderedBox s) (i : Fin 3) :
     0 < s i := by

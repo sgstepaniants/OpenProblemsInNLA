@@ -36,9 +36,9 @@ lemma frobenius_norm_sq_trace {n : ℕ} (A : Mat n) :
 lemma frobenius_diagonal_distance_sq {n : ℕ} (s x : Fin n → ℝ) :
     frobeniusDistance (Matrix.diagonal s) (Matrix.diagonal x) ^ 2 =
       ∑ i, (s i - x i) ^ 2 := by
-  rw [frobeniusDistance, (frobenius_norm_squared _).2]
+  rw [frobeniusDistance, Matrix.diagonal_sub, (frobenius_norm_squared _).2]
   classical
-  simp [Matrix.sub_apply, Matrix.diagonal_apply]
+  simp [Matrix.diagonal_apply, ite_pow]
 
 #assert_trust kernel frobenius_norm_squared
 #print axioms frobenius_norm_squared

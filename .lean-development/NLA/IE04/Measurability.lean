@@ -63,7 +63,7 @@ private theorem measurable_pivotFold {α : Type*} [MeasurableSpace α] {n : ℕ}
       have htest : MeasurableSet {a | k ≤ i ∧ |S a (p a) k| < |S a i k|} := by
         by_cases hki : k ≤ i
         · simpa only [hki, true_and] using measurableSet_lt hleft.abs (hS i k).abs
-        · simp only [hki, false_and, Set.setOf_false, MeasurableSet.empty]
+        · simp only [hki, false_and, Set.ofPred_false, MeasurableSet.empty]
       have hnext : Measurable (fun a =>
           if k ≤ i ∧ |S a (p a) k| < |S a i k| then i else p a) :=
         Measurable.ite htest measurable_const hp
@@ -80,10 +80,12 @@ private theorem measurable_schur_fixed {α : Type*} [MeasurableSpace α] {n : �
   apply measurable_matrix_entries
   intro i j
   by_cases hij : k < i ∧ k < j
-  · simpa only [schurStep, rowSwap, hij, if_true] using
-      (hS (Equiv.swap k p i) j).sub
+  · convert (hS (Equiv.swap k p i) j).sub
         (((hS (Equiv.swap k p i) k).div (hS (Equiv.swap k p k) k)).mul
-          (hS (Equiv.swap k p k) j))
+          (hS (Equiv.swap k p k) j)) using 1
+    funext a
+    simp only [schurStep, rowSwap, hij, and_self, if_true,
+      Pi.sub_apply, Pi.mul_apply, Pi.div_apply]
   · simpa only [schurStep, rowSwap, hij, if_false] using
       (measurable_const : Measurable (fun _ : α => (0 : ℝ)))
 
@@ -97,7 +99,7 @@ theorem measurable_schur_selected {α : Type*} [MeasurableSpace α] {n : ℕ}
 theorem measurable_firstTrajectory (n k : ℕ) :
     Measurable (fun A : Mat n => firstTrajectory A k) := by
   induction k with
-  | zero => simpa only [firstTrajectory] using (measurable_id : Measurable (@id (Mat n)))
+  | zero => simpa only [firstTrajectory, id] using (measurable_id : Measurable (@id (Mat n)))
   | succ k ih =>
       by_cases hk : k < n
       · have hentries : ∀ i j, Measurable (fun A : Mat n => firstTrajectory A k i j) :=
@@ -114,10 +116,12 @@ private theorem measurable_nnreal_finset_sup {α ι : Type*} [MeasurableSpace α
     Measurable (fun a => s.sup (fun i => f i a)) := by
   classical
   induction s using Finset.induction_on with
-  | empty => simpa only [Finset.sup_empty] using
+  | empty => simpa only [Finset.sup_empty, NNReal.bot_eq_zero] using
       (measurable_const : Measurable (fun _ : α => (0 : ℝ≥0)))
   | @insert i s hi ih =>
-      simpa only [Finset.sup_insert, Pi.sup_apply] using (hf i).sup ih
+      convert (hf i).sup ih using 1
+      funext a
+      simp only [Finset.sup_insert, Pi.sup_apply, sup_eq_max]
 
 theorem measurable_entryMax (n : ℕ) : Measurable (@entryMax n) := by
   exact (measurable_nnreal_finset_sup Finset.univ
@@ -130,7 +134,8 @@ theorem measurable_activeMaxNN {α : Type*} [MeasurableSpace α] {n : ℕ}
   apply measurable_nnreal_finset_sup
   intro ij
   by_cases hij : k ≤ ij.1.val ∧ k ≤ ij.2.val
-  · simpa only [hij, if_true] using ((measurable_matrix_entry ij.1 ij.2).comp hS).nnnorm
+  · simpa only [hij, and_self, if_true, Function.comp_def] using
+      ((measurable_matrix_entry ij.1 ij.2).comp hS).nnnorm
   · simpa only [hij, if_false] using
       (measurable_const : Measurable (fun _ : α => (0 : ℝ≥0)))
 
@@ -140,8 +145,9 @@ theorem measurable_firstGrowth (n : ℕ) :
       Finset.univ.sup (fun k : Fin n => activeMaxNN (firstTrajectory A k.val) k.val)) :=
     measurable_nnreal_finset_sup Finset.univ _ fun k =>
       measurable_activeMaxNN _ (measurable_firstTrajectory n k.val) k.val
-  simpa only [growth, trajectory_firstPath_eq_proved] using
-    hpeak.coe_nnreal_real.div (measurable_entryMax n)
+  convert hpeak.coe_nnreal_real.div (measurable_entryMax n) using 1
+  funext A
+  simp only [growth, trajectory_firstPath_eq_proved, Pi.div_apply]
 
 theorem firstPath_admissibleRule_proved (n : ℕ) :
     AdmissibleRule (@firstPath n) := by

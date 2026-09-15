@@ -75,7 +75,8 @@ lemma denominator_entry_zero_off_class (m : ℕ) (hm : 2 ≤ m)
   intro hf
   have hmod : Nat.ModEq (stride m) r.val s.val := (Nat.modEq_iff_dvd' hf.1.le).mpr hf.2
   apply hs
-  exact (mem_residueClass m c s).mpr (hmod.symm.trans ((mem_residueClass m c r).mp hr))
+  have hremainder : s.val % stride m = r.val % stride m := hmod.symm
+  exact (mem_residueClass m c s).mpr (hremainder.trans ((mem_residueClass m c r).mp hr))
 
 lemma denominator_row_bound (m : ℕ) (hm : 2 ≤ m) (t : ℝ) (ht : 1 < t)
     (c : Fin (stride m)) (x : EuclideanVector (dimension m))

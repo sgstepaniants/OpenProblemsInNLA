@@ -1,12 +1,5 @@
 [
   {
-    "id": "PF-02",
-    "modules": [
-      "NLA.PF02.Solution"
-    ],
-    "challenge": "Challenges/PF02.lean"
-  },
-  {
     "id": "MF-24",
     "modules": [
       "NLA.MF24.Solution"
@@ -16,13 +9,7 @@
   {
     "id": "IE-04",
     "modules": [
-      "NLA.IE04.Pivot",
-      "NLA.IE04.GEPP",
-      "NLA.IE04.Scalars",
-      "NLA.IE04.Measurability",
-      "NLA.IE04.StrictPivots",
-      "NLA.IE04.Witness",
-      "NLA.IE04.Robustness"
+      "NLA.IE04.Solution"
     ],
     "challenge": "Challenges/IE04.lean"
   },
@@ -30,15 +17,11 @@
     "id": "SP-04",
     "modules": [
       "NLA.SP04.Frobenius",
-      "NLA.SP04.ScalarRoots"
+      "NLA.SP04.ScalarRoots",
+      "NLA.SP04.Normalization",
+      "NLA.SP04.Stationary",
+      "NLA.SP04.PositiveExclusion"
     ],
     "challenge": "Challenges/SP04.lean"
-  },
-  {
-    "id": "MF-12",
-    "modules": [
-      "NLA.MF12.Definitions"
-    ],
-    "challenge": "Challenges/MF12.lean"
   }
 ]

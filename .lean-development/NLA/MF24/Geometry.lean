@@ -42,6 +42,7 @@ lemma residue_card_bound (m : ℕ) (c : Fin (stride m)) :
       · intro v _
         exact Finset.mem_range.mpr (vertex_residue_quotient m v)
       · intro v hv w hw he
+        change v.val / stride m = w.val / stride m at he
         have hvmod := (mem_residueClass m c v).mp hv
         have hwmod := (mem_residueClass m c w).mp hw
         have hdv := Nat.div_add_mod' v.val (stride m)
@@ -54,9 +55,22 @@ lemma residue_card_bound (m : ℕ) (c : Fin (stride m)) :
 lemma heightY_zero_iff (m : ℕ) (v : Fin (dimension m)) :
     heightY m v.val = 0 ↔
       v.val % (m + 1) = 0 ∧ v.val / (m + 1) < m := by
-  have hbound := (vertex_grid_bounds m v.val v.isLt).1
-  unfold heightY
-  split_ifs <;> omega
+  have hbound : v.val / (m + 1) ≤ m := (vertex_grid_bounds m v.val v.isLt).1
+  constructor
+  · intro hz
+    change (if 1 ≤ v.val % (m + 1) then (1 : ℕ) else 0) +
+      (if v.val / (m + 1) = m then (1 : ℕ) else 0) = 0 at hz
+    obtain ⟨hfirst, hsecond⟩ := Nat.add_eq_zero_iff.mp hz
+    have hrem : v.val % (m + 1) = 0 := by
+      by_contra hr
+      have hpos : 1 ≤ v.val % (m + 1) := Nat.one_le_iff_ne_zero.mpr hr
+      exact Nat.one_ne_zero ((if_pos hpos).symm.trans hfirst)
+    have hquot : v.val / (m + 1) ≠ m := by
+      intro he
+      exact Nat.one_ne_zero ((if_pos he).symm.trans hsecond)
+    exact ⟨hrem, Nat.lt_of_le_of_ne hbound hquot⟩
+  · rintro ⟨hrem, hquot⟩
+    simp [heightY, hrem, Nat.ne_of_lt hquot]
 
 lemma heightY_two_iff (m v : ℕ) :
     heightY m v = 2 ↔ 1 ≤ v % (m + 1) ∧ v / (m + 1) = m := by
