@@ -33,7 +33,7 @@ abbrev EuclideanVector (N : ℕ) := EuclideanSpace ℂ (Fin N)
 /-- Genuine induced Euclidean operator norm, explicitly through the continuous
 linear map. No default entrywise matrix norm is used. -/
 def spectralNorm {N : ℕ} (A : Square N) : ℝ :=
-  ‖Matrix.toEuclideanCLM A‖
+  ‖Matrix.toEuclideanCLM (n := Fin N) (𝕜 := ℂ) A‖
 
 /-- Actual ordered singular values, including multiplicities and zeros.
 Mathlib uses indices beginning at zero; exactly N indices are retained here. -/

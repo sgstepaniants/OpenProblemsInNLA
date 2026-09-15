@@ -94,18 +94,17 @@ theorem every_second_perturbation_large (E : Mat 4 3)
     dsimp [s, r, z]
     field_simp [hs0]
   have hproduct : s * realDot d (lowerD.mulVec d) = normSq d * normSq (r - d) := by
-    rw [hscaled, normSq_sub, realDot_comm r d, ← hdrz]
+    rw [hscaled, normSq_sub r d, realDot_comm r d, ← hdrz]
     ring
   have hD : realDot d (lowerD.mulVec d) ≤ spectralNorm E ^ 2 * normSq d := by
     have hbound := normSq_mulVec_le E witnessX2
     rw [hex] at hbound
     apply (mul_le_mul_iff_right₀ hs).mp
     calc
-      realDot d (lowerD.mulVec d) * s = normSq d * normSq (r - d) := by
-        rw [mul_comm, hproduct]
+      s * realDot d (lowerD.mulVec d) = normSq d * normSq (r - d) := hproduct
       _ ≤ normSq d * (spectralNorm E ^ 2 * s) :=
         mul_le_mul_of_nonneg_left hbound (normSq_nonneg d)
-      _ = (spectralNorm E ^ 2 * normSq d) * s := by ring
+      _ = s * (spectralNorm E ^ 2 * normSq d) := by ring
   have hconvex : realDot d (lowerConvexMatrix.mulVec d) ≤ spectralNorm E ^ 2 * normSq d := by
     rw [lowerConvex_quadratic]
     linarith
@@ -116,7 +115,11 @@ theorem every_second_perturbation_large (E : Mat 4 3)
   rw [Matrix.sub_mulVec, Matrix.smul_mulVec, Matrix.one_mulVec,
     realDot_sub, realDot_smul, realDot_self] at hpositive'
   apply (mul_lt_mul_iff_right₀ (normSq_pos hd)).mp
-  exact (by linarith : (99 / 100 : ℝ) * normSq d < realDot d (lowerConvexMatrix.mulVec d)).trans_le hconvex
+  calc
+    normSq d * (99 / 100 : ℝ) = (99 / 100 : ℝ) * normSq d := mul_comm _ _
+    _ < realDot d (lowerConvexMatrix.mulVec d) := by linarith
+    _ ≤ spectralNorm E ^ 2 * normSq d := hconvex
+    _ = normSq d * spectralNorm E ^ 2 := mul_comm _ _
 
 theorem witness_backwardError_separation :
     backwardError witnessA witnessB witnessX1 ^ 2 ≤ 1979 / 2000 ∧

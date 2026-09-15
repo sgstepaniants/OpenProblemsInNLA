@@ -165,7 +165,8 @@ theorem residue_weight_bounds (m : ℕ) (hm : 2 ≤ m)
 so this cannot accidentally be an entrywise or sup-norm matrix calculation. -/
 theorem polynomial_denominator_energy (m : ℕ) (hm : 2 ≤ m)
     (t : ℝ) (ht : 1 < t) (x : EuclideanVector (dimension m)) :
-    ‖Matrix.toEuclideanCLM (polyEval (matrixY m t) (testPolynomial m)) x‖ ^ 2 ≤
+    ‖Matrix.toEuclideanCLM (n := Fin (dimension m)) (𝕜 := ℂ)
+        (polyEval (matrixY m t) (testPolynomial m)) x‖ ^ 2 ≤
       (t ^ 2 + (m : ℝ)) ^ 2 * ‖x‖ ^ 2 := by
   sorry
 
