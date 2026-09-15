@@ -72,8 +72,9 @@ theorem polynomial_entries (m : ℕ) (hm : 2 ≤ m)
   rw [polyEval_testPolynomial]
   simp only [Matrix.sum_apply, height_shift_powers (dimension m) h t ht]
   have hD := stride_pos m
-  have hsize := s.isLt
-  rw [dimension_eq] at hsize
+  have hsize : s.val < m * stride m + 1 := by
+    calc s.val < dimension m := s.isLt
+      _ = m * stride m + 1 := dimension_eq m
   by_cases hforward : r.val < s.val ∧ stride m ∣ s.val - r.val
   · obtain ⟨j, hj⟩ := hforward.2
     have hsj : s.val = r.val + stride m * j := by omega

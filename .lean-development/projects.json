@@ -1,19 +1,10 @@
 [
   {
-    "id": "SP-04",
+    "id": "PF-02",
     "modules": [
-      "NLA.SP04.Definitions"
+      "NLA.PF02.Solution"
     ],
-    "challenge": "Challenges/SP04.lean"
-  },
-  {
-    "id": "IE-04",
-    "modules": [
-      "NLA.IE04.Pivot",
-      "NLA.IE04.GEPP",
-      "NLA.IE04.Scalars"
-    ],
-    "challenge": "Challenges/IE04.lean"
+    "challenge": "Challenges/PF02.lean"
   },
   {
     "id": "MF-24",
@@ -23,10 +14,31 @@
     "challenge": "Challenges/MF24.lean"
   },
   {
-    "id": "PF-02",
+    "id": "IE-04",
     "modules": [
-      "NLA.PF02.Solution"
+      "NLA.IE04.Pivot",
+      "NLA.IE04.GEPP",
+      "NLA.IE04.Scalars",
+      "NLA.IE04.Measurability",
+      "NLA.IE04.StrictPivots",
+      "NLA.IE04.Witness",
+      "NLA.IE04.Robustness"
     ],
-    "challenge": "Challenges/PF02.lean"
+    "challenge": "Challenges/IE04.lean"
+  },
+  {
+    "id": "SP-04",
+    "modules": [
+      "NLA.SP04.Frobenius",
+      "NLA.SP04.ScalarRoots"
+    ],
+    "challenge": "Challenges/SP04.lean"
+  },
+  {
+    "id": "MF-12",
+    "modules": [
+      "NLA.MF12.Definitions"
+    ],
+    "challenge": "Challenges/MF12.lean"
   }
 ]

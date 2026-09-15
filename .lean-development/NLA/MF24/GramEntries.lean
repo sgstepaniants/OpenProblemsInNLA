@@ -99,9 +99,14 @@ theorem gramPencil_last_last (word : List ℝ) (z η : ℂ) (n : ℕ) :
 theorem gramPencil_last_previous (word : List ℝ) (z η : ℂ) (n : ℕ) :
     gramPencil word z η (n + 2) (Fin.last (n + 1)) (Fin.last n).castSucc =
       -z * (word.getD n 0 : ℂ) := by
+  have hne : Fin.last (n + 1) ≠ (Fin.last n).castSucc := by
+    intro h
+    have hv := congrArg Fin.val h
+    simp only [Fin.val_last, Fin.val_castSucc] at hv
+    omega
   rw [gramPencil_apply, Fin.sum_univ_castSucc, Fin.sum_univ_castSucc]
   simp [shiftedWord_far_upper, shiftedWord_last_edge, shiftedWord_diag,
-    shiftedWord_last_lower, mul_comm]
+    shiftedWord_last_lower, mul_comm, hne]
 
 theorem gramPencil_previous_last (word : List ℝ) (z η : ℂ) (n : ℕ) :
     gramPencil word z η (n + 2) (Fin.last n).castSucc (Fin.last (n + 1)) =
@@ -112,8 +117,13 @@ theorem gramPencil_previous_last (word : List ℝ) (z η : ℂ) (n : ℕ) :
 
 theorem gramPencil_last_earlier (word : List ℝ) (z η : ℂ) (n : ℕ) (i : Fin n) :
     gramPencil word z η (n + 2) (Fin.last (n + 1)) i.castSucc.castSucc = 0 := by
+  have hne : Fin.last (n + 1) ≠ i.castSucc.castSucc := by
+    intro h
+    have hv := congrArg Fin.val h
+    simp only [Fin.val_last, Fin.val_castSucc] at hv
+    omega
   rw [gramPencil_apply, Fin.sum_univ_castSucc, Fin.sum_univ_castSucc]
-  simp [shiftedWord_far_upper, shiftedWord_penultimate_lower, shiftedWord_last_lower]
+  simp [shiftedWord_far_upper, shiftedWord_penultimate_lower, shiftedWord_last_lower, hne]
 
 theorem gramPencil_earlier_last (word : List ℝ) (z η : ℂ) (n : ℕ) (i : Fin n) :
     gramPencil word z η (n + 2) i.castSucc.castSucc (Fin.last (n + 1)) = 0 := by

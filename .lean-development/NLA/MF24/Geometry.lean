@@ -28,8 +28,9 @@ namespace NLA.MF24
 lemma vertex_residue_quotient (m : ℕ) (v : Fin (dimension m)) :
     v.val / stride m < m + 1 := by
   apply (Nat.div_lt_iff_lt_mul (stride_pos m)).mpr
-  have hv := v.isLt
-  rw [dimension_eq] at hv
+  have hv : v.val < m * stride m + 1 := by
+    calc v.val < dimension m := v.isLt
+      _ = m * stride m + 1 := dimension_eq m
   have hd := stride_pos m
   nlinarith
 

@@ -29,8 +29,9 @@ lemma positive_stride_multiple (m : ℕ) (v : Fin (dimension m))
     simp only [hj0, mul_zero] at hj
     omega
   have hjm : j ≤ m := by
-    have hb := v.isLt
-    rw [dimension_eq] at hb
+    have hb : v.val < m * stride m + 1 := by
+      calc v.val < dimension m := v.isLt
+        _ = m * stride m + 1 := dimension_eq m
     by_contra hn
     have hlarge : m + 1 ≤ j := by omega
     have hmul := Nat.mul_le_mul_left (stride m) hlarge

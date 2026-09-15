@@ -29,11 +29,12 @@ theorem scalar_budgets {n : ℕ} (hn : 2 ≤ n) :
     cases n with
     | zero => omega
     | succ n =>
-        simp only [Nat.succ_eq_add_one, Nat.add_sub_cancel]
+        simp only [Nat.add_sub_cancel]
         ring
   have hbudget : stageAmplification n ^ (n - 1) * boxRadius n = 1 / 8 := by
     unfold stageAmplification boxRadius
-    rw [hexponent, pow_add, pow_mul]
+    rw [hexponent, pow_add (2 : ℝ) ((n + 2) * (n - 1)) 3,
+      pow_mul (2 : ℝ) (n + 2) (n - 1)]
     norm_num
     field_simp
   have hδsmall : boxRadius n ≤ 1 / 8 := by
@@ -104,7 +105,7 @@ theorem scalar_schur_error (n : ℕ) (e p a u u₀ v v₀ : ℝ)
     _ ≤ |(u - u₀) + (-(a / p)) * (v - v₀)| + |(-(a / p + 1 / 2)) * v₀| :=
       abs_add_le _ _
     _ ≤ (|u - u₀| + |(-(a / p)) * (v - v₀)|) + |(-(a / p + 1 / 2)) * v₀| :=
-      add_le_add_right (abs_add_le _ _) _
+      add_le_add (abs_add_le _ _) le_rfl
     _ = |u - u₀| + |a / p| * |v - v₀| + |a / p + 1 / 2| * |v₀| := by
       simp only [abs_mul, abs_neg]
     _ ≤ e + (5 / 7 : ℝ) * e + (2 * e) * (2 : ℝ) ^ n := by

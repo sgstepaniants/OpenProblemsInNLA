@@ -217,6 +217,7 @@ lemma witness_coordinate_gram (t : ℝ) (ht : t ^ 2 = 1) :
 lemma witness_factorization : IsPSDFactorization witnessMatrix witnessTuple := by
   refine ⟨witness_factors_psd, witness_factors_psd, ?_⟩
   intro i j
+  change (witnessFactors i * witnessFactors j).trace = witnessMatrix i j
   rw [trace_symmetric_coordinates _ _
     (Matrix.isHermitian_iff_isSymm.mp (witness_factors_psd i).1)
     (Matrix.isHermitian_iff_isSymm.mp (witness_factors_psd j).1)]
@@ -230,6 +231,7 @@ lemma witness_factorization : IsPSDFactorization witnessMatrix witnessTuple := b
 lemma reflected_factorization : IsPSDFactorization witnessMatrix reflectedTuple := by
   refine ⟨reflected_factors_psd, reflected_factors_psd, ?_⟩
   intro i j
+  change (reflectedFactors i * reflectedFactors j).trace = witnessMatrix i j
   rw [trace_symmetric_coordinates _ _
     (Matrix.isHermitian_iff_isSymm.mp (reflected_factors_psd i).1)
     (Matrix.isHermitian_iff_isSymm.mp (reflected_factors_psd j).1)]
