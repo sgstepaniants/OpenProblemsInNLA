@@ -24,7 +24,7 @@ set_option autoImplicit false
 namespace NLA.MF22
 
 open Polynomial
-open scoped BigOperators Classical ENNReal
+open scoped BigOperators Classical
 
 noncomputable section
 

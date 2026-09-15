@@ -1,0 +1,14 @@
+{
+  "exact_one_scope_token_added": true,
+  "challenge_unchanged": true,
+  "numerical_target_unchanged": true,
+  "inputs": {
+    "/tmp/nla-lean-next-20260915/reviews/MF22-statement-elaboration-35037184909/original/Definitions.lean": "df592939bea01e87990ede160849296308ea10f0a000386784df8c48e1b4a591",
+    "/tmp/nla-lean-next-20260915/reviews/MF22-statement-elaboration-35037184909/proposed/Definitions.lean": "41c0d3ffb9f061c0dbf6a0022d91e5f72e07e50842899cd3e22f8a482b6294f5",
+    "/tmp/nla-lean-next-20260915/reviews/MF22-statement-elaboration-35037184909/original/Challenge.lean": "87da57e93ad0e0054db6d84c461da170785f666afd0ffe34532a62423905a6e0",
+    "/tmp/nla-lean-next-20260915/reviews/MF22-statement-elaboration-35037184909/Mathlib-ENNReal-Basic.lean": "1c25fed6fb4b1c7e819b206e6e74fcd3e886facca6ff3480871fb7ac33dcbc4a",
+    "/tmp/nla-lean-next-20260915/reviews/MF22-statement-elaboration-35037184909/artifact/MF-22-modules.log": "4621a8a38d672d3d75799263ead93b55dfa635969a20bea9d867362cdf8982b6",
+    "/tmp/nla-lean-next-20260915/reviews/MF22-statement-elaboration-35037184909/artifact/MF-22-challenge.log": "e6fe3500974a86767c6278b3776ce5d11cb2b790daf1a4564f519d821c9611eb",
+    "/tmp/nla-lean-next-20260915/matrix-functions/MF-22/NUMERICAL_TARGETS.md": "913f1b55ad721e7ce4bf8003801d6f318842a619d510b7535dbaefa19e94f9f2"
+  }
+}

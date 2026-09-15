@@ -1,0 +1,11 @@
+--- NLA/MF22/Definitions.lean (approved original)
++++ NLA/MF22/Definitions.lean (proposed ENNReal notation scope)
+@@ -24,7 +24,7 @@
+ namespace NLA.MF22
+ 
+ open Polynomial
+-open scoped BigOperators Classical
++open scoped BigOperators Classical ENNReal
+ 
+ noncomputable section
+ 

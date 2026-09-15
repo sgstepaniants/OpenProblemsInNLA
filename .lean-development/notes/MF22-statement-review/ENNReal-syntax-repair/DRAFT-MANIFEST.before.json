@@ -1,5 +1,5 @@
 {
-  "scope": "Statement-only draft with two full independent approvals and two syntax-repair approvals; repaired actual Linux elaboration pending, no freeze or proof",
+  "scope": "statement-only draft; no proof implementation, actual Lean elaboration or independent review claimed",
   "declarations": 22,
   "deliberate_challenge_placeholders": 22,
   "definition_placeholders": 0,
@@ -21,13 +21,12 @@
     "SOURCE-PROVENANCE.json": "e4a68c5cb2934610002a124a5d1daed2250820ff7116a8b7f6e4fc38d37e5ec4",
     "NUMERICAL_TARGETS.md": "913f1b55ad721e7ce4bf8003801d6f318842a619d510b7535dbaefa19e94f9f2",
     "Challenge.lean": "87da57e93ad0e0054db6d84c461da170785f666afd0ffe34532a62423905a6e0",
-    "NLA/MF22/Definitions.lean": "41c0d3ffb9f061c0dbf6a0022d91e5f72e07e50842899cd3e22f8a482b6294f5",
+    "NLA/MF22/Definitions.lean": "df592939bea01e87990ede160849296308ea10f0a000386784df8c48e1b4a591",
     "checks/formalization-parsed.json": "0a87e68906b088a911462e08171c0414da55af9a387b3e9880a839ee9503d877",
     "checks/v0.4.schema.json": "25ff6b25ca4511635aff4443cf20480c15e59dddf19591c730950b442ea54fce",
     "checks/exact_source_algebra.json": "6381a7afc3d3b96555b3af659c033ce42565ab93c6355189def23ac8d4f02f4e",
     "checks/exact_source_algebra.py": "f9d6e3028554c191094a820e9b6c10084cf32a58427ae44bedfc5c7c96ea6aa4",
     "source/README.md": "1e47aed8795445d4b2fd7736d4ec0420dee5460f1fd12de37097f58d3d752eda",
     "source/solution.md": "a274a6401b27037bb5034cbffe87f02204fdcb663c40a9a7adfe033a19283edb"
-  },
-  "syntax_repair_history": "statement-audit/ENNReal-syntax-repair"
+  }
 }

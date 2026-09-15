@@ -1,0 +1,18 @@
+✖ [2425/2425] Building NLA.MF22.Definitions (2.3s)
+trace: .> LEAN_PATH=/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/Cli/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/batteries/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/Qq/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/aesop/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/proofwidgets/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/importGraph/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/plausible/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/mathlib/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/leancert/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/build/lib/lean /home/runner/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean /home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/NLA/MF22/Definitions.lean -o /home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/build/lib/lean/NLA/MF22/Definitions.olean -i /home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/build/lib/lean/NLA/MF22/Definitions.ilean -c /home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/build/ir/NLA/MF22/Definitions.c --setup /home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/build/ir/NLA/MF22/Definitions.setup.json --json
+error: NLA/MF22/Definitions.lean:45:28: expected token
+error: NLA/MF22/Definitions.lean:45:25: failed to synthesize instance of type class
+  LE Type
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+error: NLA/MF22/Definitions.lean:45:27: failed to synthesize instance of type class
+  OfNat Type 0
+numerals are polymorphic in Lean, but the numeral `0` cannot be used in a context where the expected type is
+  Type
+due to the absence of the instance above
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+error: Lean exited with code 1
+Some required targets logged failures:
+- NLA.MF22.Definitions
+error: build failed
