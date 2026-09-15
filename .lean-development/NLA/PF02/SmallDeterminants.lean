@@ -41,26 +41,30 @@ private lemma witness_coordinates_lu (t : ℝ) :
     witnessCoordinates t = witnessLower * witnessUpper t := by
   ext i j
   fin_cases i <;> fin_cases j <;>
-    norm_num [witnessCoordinates, witnessLower, witnessUpper, Matrix.mul_apply,
-      Fin.sum_univ_succ, Matrix.vecCons, Fin.cons]
+    simp only [Matrix.mul_apply, Fin.sum_univ_succ, Fin.sum_univ_zero, add_zero] <;>
+    dsimp only [witnessCoordinates, witnessLower, witnessUpper,
+      Matrix.vecCons, Fin.cons] <;> norm_num <;> ring
 
 private lemma witness_lower_triangular : witnessLower.IsLowerTriangular := by
   intro i j hij
-  fin_cases i <;> fin_cases j <;>
-    norm_num [witnessLower, Matrix.vecCons, Fin.cons] at hij ⊢
+  fin_cases i <;> fin_cases j <;> norm_num at hij
+  all_goals
+    dsimp only [witnessLower, Matrix.vecCons, Fin.cons] <;> norm_num
 
 private lemma witness_upper_triangular (t : ℝ) :
     (witnessUpper t).IsUpperTriangular := by
   intro i j hij
-  fin_cases i <;> fin_cases j <;>
-    norm_num [witnessUpper, Matrix.vecCons, Fin.cons] at hij ⊢
+  fin_cases i <;> fin_cases j <;> norm_num at hij
+  all_goals
+    dsimp only [witnessUpper, Matrix.vecCons, Fin.cons] <;> norm_num
 
 lemma witness_coordinates_det (t : ℝ) : (witnessCoordinates t).det = 32 * t := by
   rw [witness_coordinates_lu, Matrix.det_mul,
     Matrix.det_of_isLowerTriangular _ witness_lower_triangular,
     Matrix.det_of_isUpperTriangular (witness_upper_triangular t)]
-  norm_num [witnessLower, witnessUpper, Fin.prod_univ_succ, Matrix.vecCons, Fin.cons]
-  <;> ring
+  simp only [Fin.prod_univ_succ, Fin.prod_univ_zero, mul_one]
+  dsimp only [witnessLower, witnessUpper, Matrix.vecCons, Fin.cons]
+  norm_num <;> ring
 
 lemma witness_coordinates_exact :
     rowCoordinateMatrix witnessFactors = witnessCoordinates 1 := by

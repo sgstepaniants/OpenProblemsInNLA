@@ -23,11 +23,13 @@ private lemma congruence_diagonal_det (d : Fin 3 → ℝ) :
     rw [congruence_coordinate_entries]
     ext i j
     fin_cases i <;> fin_cases j <;>
-      simp [congruencePolynomialMatrix, Matrix.diagonal_apply,
-        Matrix.vecCons, Fin.cons] <;> ring
+      simp only [Matrix.diagonal_apply] <;>
+      dsimp only [congruencePolynomialMatrix, Matrix.vecCons, Fin.cons] <;>
+      norm_num [Matrix.diagonal_apply] <;> ring
   rw [hd, Matrix.det_diagonal, Matrix.det_diagonal]
-  simp [Fin.prod_univ_succ, Matrix.vecCons, Fin.cons]
-  <;> ring
+  simp only [Fin.prod_univ_succ, Fin.prod_univ_zero, mul_one]
+  dsimp only [Matrix.vecCons, Fin.cons]
+  ring
 
 /-- Reordering both coordinate axes preserves the determinant. -/
 private lemma det_one_of_reordered_triangular (A : Mat 6) (e : Equiv.Perm (Fin 6))
@@ -45,14 +47,18 @@ private lemma congruence_transvection_01_det (c : ℝ) :
   rw [congruence_coordinate_entries]
   apply det_one_of_reordered_triangular _ order01
   · intro a b hab
-    fin_cases a <;> fin_cases b <;>
-      norm_num [order01, Equiv.ofBijective, Matrix.submatrix_apply,
-        congruencePolynomialMatrix, Matrix.transvection, Matrix.add_apply,
-        Matrix.one_apply, Matrix.single_apply, Matrix.vecCons, Fin.cons] at hab ⊢
+    fin_cases a <;> fin_cases b <;> norm_num at hab
+    all_goals
+      simp only [Matrix.submatrix_apply] <;>
+        dsimp only [order01, Equiv.ofBijective, congruencePolynomialMatrix,
+          Matrix.vecCons, Fin.cons] <;>
+        norm_num [Matrix.transvection, Matrix.add_apply,
+          Matrix.one_apply, Matrix.single_apply] <;> ring
   · intro a
     fin_cases a <;>
-      norm_num [congruencePolynomialMatrix, Matrix.transvection, Matrix.add_apply,
-        Matrix.one_apply, Matrix.single_apply, Matrix.vecCons, Fin.cons]
+      dsimp only [congruencePolynomialMatrix, Matrix.vecCons, Fin.cons] <;>
+      norm_num [Matrix.transvection, Matrix.add_apply,
+        Matrix.one_apply, Matrix.single_apply] <;> ring
 
 /-- A topological order of the sparse coordinate arrows for E_{10}. -/
 private def order10 : Equiv.Perm (Fin 6) :=
@@ -63,14 +69,18 @@ private lemma congruence_transvection_10_det (c : ℝ) :
   rw [congruence_coordinate_entries]
   apply det_one_of_reordered_triangular _ order10
   · intro a b hab
-    fin_cases a <;> fin_cases b <;>
-      norm_num [order10, Equiv.ofBijective, Matrix.submatrix_apply,
-        congruencePolynomialMatrix, Matrix.transvection, Matrix.add_apply,
-        Matrix.one_apply, Matrix.single_apply, Matrix.vecCons, Fin.cons] at hab ⊢
+    fin_cases a <;> fin_cases b <;> norm_num at hab
+    all_goals
+      simp only [Matrix.submatrix_apply] <;>
+        dsimp only [order10, Equiv.ofBijective, congruencePolynomialMatrix,
+          Matrix.vecCons, Fin.cons] <;>
+        norm_num [Matrix.transvection, Matrix.add_apply,
+          Matrix.one_apply, Matrix.single_apply] <;> ring
   · intro a
     fin_cases a <;>
-      norm_num [congruencePolynomialMatrix, Matrix.transvection, Matrix.add_apply,
-        Matrix.one_apply, Matrix.single_apply, Matrix.vecCons, Fin.cons]
+      dsimp only [congruencePolynomialMatrix, Matrix.vecCons, Fin.cons] <;>
+      norm_num [Matrix.transvection, Matrix.add_apply,
+        Matrix.one_apply, Matrix.single_apply] <;> ring
 
 /-- A topological order of the sparse coordinate arrows for E_{02}. -/
 private def order02 : Equiv.Perm (Fin 6) :=
@@ -81,14 +91,18 @@ private lemma congruence_transvection_02_det (c : ℝ) :
   rw [congruence_coordinate_entries]
   apply det_one_of_reordered_triangular _ order02
   · intro a b hab
-    fin_cases a <;> fin_cases b <;>
-      norm_num [order02, Equiv.ofBijective, Matrix.submatrix_apply,
-        congruencePolynomialMatrix, Matrix.transvection, Matrix.add_apply,
-        Matrix.one_apply, Matrix.single_apply, Matrix.vecCons, Fin.cons] at hab ⊢
+    fin_cases a <;> fin_cases b <;> norm_num at hab
+    all_goals
+      simp only [Matrix.submatrix_apply] <;>
+        dsimp only [order02, Equiv.ofBijective, congruencePolynomialMatrix,
+          Matrix.vecCons, Fin.cons] <;>
+        norm_num [Matrix.transvection, Matrix.add_apply,
+          Matrix.one_apply, Matrix.single_apply] <;> ring
   · intro a
     fin_cases a <;>
-      norm_num [congruencePolynomialMatrix, Matrix.transvection, Matrix.add_apply,
-        Matrix.one_apply, Matrix.single_apply, Matrix.vecCons, Fin.cons]
+      dsimp only [congruencePolynomialMatrix, Matrix.vecCons, Fin.cons] <;>
+      norm_num [Matrix.transvection, Matrix.add_apply,
+        Matrix.one_apply, Matrix.single_apply] <;> ring
 
 /-- A topological order of the sparse coordinate arrows for E_{20}. -/
 private def order20 : Equiv.Perm (Fin 6) :=
@@ -99,14 +113,18 @@ private lemma congruence_transvection_20_det (c : ℝ) :
   rw [congruence_coordinate_entries]
   apply det_one_of_reordered_triangular _ order20
   · intro a b hab
-    fin_cases a <;> fin_cases b <;>
-      norm_num [order20, Equiv.ofBijective, Matrix.submatrix_apply,
-        congruencePolynomialMatrix, Matrix.transvection, Matrix.add_apply,
-        Matrix.one_apply, Matrix.single_apply, Matrix.vecCons, Fin.cons] at hab ⊢
+    fin_cases a <;> fin_cases b <;> norm_num at hab
+    all_goals
+      simp only [Matrix.submatrix_apply] <;>
+        dsimp only [order20, Equiv.ofBijective, congruencePolynomialMatrix,
+          Matrix.vecCons, Fin.cons] <;>
+        norm_num [Matrix.transvection, Matrix.add_apply,
+          Matrix.one_apply, Matrix.single_apply] <;> ring
   · intro a
     fin_cases a <;>
-      norm_num [congruencePolynomialMatrix, Matrix.transvection, Matrix.add_apply,
-        Matrix.one_apply, Matrix.single_apply, Matrix.vecCons, Fin.cons]
+      dsimp only [congruencePolynomialMatrix, Matrix.vecCons, Fin.cons] <;>
+      norm_num [Matrix.transvection, Matrix.add_apply,
+        Matrix.one_apply, Matrix.single_apply] <;> ring
 
 /-- A topological order of the sparse coordinate arrows for E_{12}. -/
 private def order12 : Equiv.Perm (Fin 6) :=
@@ -117,14 +135,18 @@ private lemma congruence_transvection_12_det (c : ℝ) :
   rw [congruence_coordinate_entries]
   apply det_one_of_reordered_triangular _ order12
   · intro a b hab
-    fin_cases a <;> fin_cases b <;>
-      norm_num [order12, Equiv.ofBijective, Matrix.submatrix_apply,
-        congruencePolynomialMatrix, Matrix.transvection, Matrix.add_apply,
-        Matrix.one_apply, Matrix.single_apply, Matrix.vecCons, Fin.cons] at hab ⊢
+    fin_cases a <;> fin_cases b <;> norm_num at hab
+    all_goals
+      simp only [Matrix.submatrix_apply] <;>
+        dsimp only [order12, Equiv.ofBijective, congruencePolynomialMatrix,
+          Matrix.vecCons, Fin.cons] <;>
+        norm_num [Matrix.transvection, Matrix.add_apply,
+          Matrix.one_apply, Matrix.single_apply] <;> ring
   · intro a
     fin_cases a <;>
-      norm_num [congruencePolynomialMatrix, Matrix.transvection, Matrix.add_apply,
-        Matrix.one_apply, Matrix.single_apply, Matrix.vecCons, Fin.cons]
+      dsimp only [congruencePolynomialMatrix, Matrix.vecCons, Fin.cons] <;>
+      norm_num [Matrix.transvection, Matrix.add_apply,
+        Matrix.one_apply, Matrix.single_apply] <;> ring
 
 /-- A topological order of the sparse coordinate arrows for E_{21}. -/
 private def order21 : Equiv.Perm (Fin 6) :=
@@ -135,14 +157,18 @@ private lemma congruence_transvection_21_det (c : ℝ) :
   rw [congruence_coordinate_entries]
   apply det_one_of_reordered_triangular _ order21
   · intro a b hab
-    fin_cases a <;> fin_cases b <;>
-      norm_num [order21, Equiv.ofBijective, Matrix.submatrix_apply,
-        congruencePolynomialMatrix, Matrix.transvection, Matrix.add_apply,
-        Matrix.one_apply, Matrix.single_apply, Matrix.vecCons, Fin.cons] at hab ⊢
+    fin_cases a <;> fin_cases b <;> norm_num at hab
+    all_goals
+      simp only [Matrix.submatrix_apply] <;>
+        dsimp only [order21, Equiv.ofBijective, congruencePolynomialMatrix,
+          Matrix.vecCons, Fin.cons] <;>
+        norm_num [Matrix.transvection, Matrix.add_apply,
+          Matrix.one_apply, Matrix.single_apply] <;> ring
   · intro a
     fin_cases a <;>
-      norm_num [congruencePolynomialMatrix, Matrix.transvection, Matrix.add_apply,
-        Matrix.one_apply, Matrix.single_apply, Matrix.vecCons, Fin.cons]
+      dsimp only [congruencePolynomialMatrix, Matrix.vecCons, Fin.cons] <;>
+      norm_num [Matrix.transvection, Matrix.add_apply,
+        Matrix.one_apply, Matrix.single_apply] <;> ring
 
 private lemma congruence_transvection_det (t : Matrix.TransvectionStruct (Fin 3) ℝ) :
     (congruenceCoordinateMatrix t.toMatrix).det = 1 := by

@@ -1,27 +1,17 @@
 [
   {
-    "id": "IE-17",
+    "id": "PF-02",
     "modules": [
-      "NLA.IE17.Definitions",
-      "NLA.IE17.Geometry",
-      "NLA.IE17.Attainment",
-      "NLA.IE17.ExactData",
-      "NLA.IE17.Iterates",
-      "NLA.IE17.ProjectionAlgebra",
-      "NLA.IE17.Projection",
-      "NLA.IE17.Quadratic",
-      "NLA.IE17.Certificates",
-      "NLA.IE17.LowerBound",
-      "NLA.IE17.Final",
-      "NLA.IE17.Solution"
+      "NLA.PF02.Definitions",
+      "NLA.PF02.Algebra",
+      "NLA.PF02.Coordinates",
+      "NLA.PF02.SmallDeterminants",
+      "NLA.PF02.CongruenceReduction",
+      "NLA.PF02.Witness",
+      "NLA.PF02.CongruenceDeterminant",
+      "NLA.PF02.QuotientSeparation",
+      "NLA.PF02.Solution"
     ],
-    "challenge": "Challenges/IE17.lean"
-  },
-  {
-    "id": "MF-24",
-    "modules": [
-      "NLA.MF24.Definitions"
-    ],
-    "challenge": "Challenges/MF24.lean"
+    "challenge": "Challenges/PF02.lean"
   }
 ]

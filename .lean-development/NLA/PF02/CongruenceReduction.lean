@@ -26,9 +26,11 @@ lemma congruence_coordinate_entries (S : Mat 3) :
     congruenceCoordinateMatrix S = congruencePolynomialMatrix S := by
   ext i j
   fin_cases i <;> fin_cases j <;>
-    simp [congruenceCoordinateMatrix, congruencePolynomialMatrix,
-      symmetricCoordinates, symmetricCoordinateBasis, Matrix.mul_apply,
-      Matrix.transpose_apply, Fin.sum_univ_succ, Matrix.vecCons, Fin.cons] <;> ring
+    dsimp only [congruenceCoordinateMatrix, congruencePolynomialMatrix,
+      symmetricCoordinates, symmetricCoordinateBasis, Matrix.vecCons, Fin.cons] <;>
+    simp only [Matrix.mul_apply, Matrix.transpose_apply,
+      Fin.sum_univ_succ, Fin.sum_univ_zero, add_zero] <;>
+    dsimp only [Matrix.vecCons, Fin.cons] <;> ring
 
 private lemma coordinate_basis_symmetric (i : Fin 6) :
     (symmetricCoordinateBasis i).IsSymm := by
@@ -48,8 +50,12 @@ lemma congruence_coordinate_mul (S T : Mat 3) :
     congruenceCoordinateMatrix (S * T) =
         rowCoordinateMatrix (fun i =>
           T.transpose * (S.transpose * symmetricCoordinateBasis i * S) * T) := by
-      simp only [congruenceCoordinateMatrix, rowCoordinateMatrix,
-        Matrix.transpose_mul, Matrix.mul_assoc]
+      ext i j
+      change symmetricCoordinates
+          ((S * T).transpose * symmetricCoordinateBasis i * (S * T)) j =
+        symmetricCoordinates
+          (T.transpose * (S.transpose * symmetricCoordinateBasis i * S) * T) j
+      simp only [Matrix.transpose_mul, Matrix.mul_assoc]
     _ = congruenceCoordinateMatrix S * congruenceCoordinateMatrix T :=
       rowCoordinates_congruence _ hS T
 
