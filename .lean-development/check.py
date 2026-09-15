@@ -35,8 +35,12 @@ def run(argv, filename):
             print(line, end="", flush=True)
             log.write(line)
         code = proc.wait()
+    post_sources = sources()
     receipt["commands"].append({"argv": argv, "exit_code": code,
-                                "log": filename, "sha256": digest(out / filename)})
+                                "log": filename, "sha256": digest(out / filename),
+                                "source_sha256_after": post_sources})
+    if post_sources != receipt["source_sha256"]:
+        raise RuntimeError("development source changed during command")
     save()
     if code:
         raise RuntimeError(f"command failed ({code}): {argv}")

@@ -12,5 +12,12 @@
       "NLA.IE17.Definitions"
     ],
     "challenge": "Challenges/IE17.lean"
+  },
+  {
+    "id": "PF-02",
+    "modules": [
+      "NLA.PF02.Definitions"
+    ],
+    "challenge": "Challenges/PF02.lean"
   }
 ]

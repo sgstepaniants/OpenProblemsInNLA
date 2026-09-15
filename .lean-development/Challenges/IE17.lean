@@ -33,8 +33,9 @@ theorem projectionError_sq_formula {m n : ℕ} (A : Mat m n) (b : Vec m) (x : Ve
     (hx : x ≠ 0) (hr : residual A b x ≠ 0) :
     projectionError A b x ^ 2 =
       realDot (normalResidual A b x)
-        (((normSq x • (A.transpose * A) + normSq (residual A b x) • (1 : Mat n n))⁻¹)
-          .mulVec (normalResidual A b x)) := by
+        (Matrix.mulVec
+          ((normSq x • (A.transpose * A) + normSq (residual A b x) • (1 : Mat n n))⁻¹)
+          (normalResidual A b x)) := by
   sorry
 
 theorem witness_full_column_rank : witnessA.rank = 3 := by
