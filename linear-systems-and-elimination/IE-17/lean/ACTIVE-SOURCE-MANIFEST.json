@@ -1,0 +1,22 @@
+{
+  "phase": "canonical standalone candidate; Comparator pending",
+  "development_run": 35017536835,
+  "development_commit": "8070ed199166429ffd5ea3091caa940de6af5568",
+  "source_sha256": {
+    "Solution.lean": "189b2ff479527efd41b4c7b2b8c0f30adb39835a5e39d646dd77ca7f85d20ab1",
+    "Challenge.lean": "e34bdfa97e74512c988dcbb7635a17f1929f331f3f7ea56b366413e52c6f6c87",
+    "NLA/IE17/Iterates.lean": "f252cba55ede50a396265f94a8af846dc0d82e12fc1a8360e9f3ffe03700ee6a",
+    "NLA/IE17/Definitions.lean": "97651aa5564143486e883b78b11425304580173ff4c76b35559351ebd438519c",
+    "NLA/IE17/ProjectionAlgebra.lean": "f83f219035799022c5700551e0b36102c3503649a2a67bb3bed5c0b7a585c6ae",
+    "NLA/IE17/Final.lean": "8bf415653af674403fdf1a9622157518db1039829124d9f157aac2f2214c41eb",
+    "NLA/IE17/Geometry.lean": "47c91ba418f0495df1c834a9e87fd076aff02dcff11ca042cd5c6088cb48f41f",
+    "NLA/IE17/ExactData.lean": "1911c5c929f6f50b1d4ea46c8265dad13d5dedf318725f3fbc95ef4fee6a7723",
+    "NLA/IE17/LowerBound.lean": "692a1d434bfbdbc5e89da90c90eb048ad3ec880930fc1d9cc2697502b682507b",
+    "NLA/IE17/Quadratic.lean": "33e87d19f5bb8e81d042461d0a647801f4b99a7be5668bcd74f3a4d2a2986838",
+    "NLA/IE17/Attainment.lean": "025fcd59d5037fb6780ff4255036a9819d315ad647587718a2832e0eba47fde2",
+    "NLA/IE17/Projection.lean": "60b8183feda61e45b7e86005dd2baa2aff38db2b0fdab318c01b0465d3ccfa44",
+    "NLA/IE17/Certificates.lean": "0bc1438e92288f11b12b0d0225ebd3c30732245201d6380a3bfd375d6fe2b8a8"
+  },
+  "configuration_delta": "Select/register Solution as default, rename inherited root manifest NLAIE19 to NLAIE17; all pinned dependency package objects unchanged. Historical frozen files retained.",
+  "canonical_status": "Solved; no verification promotion until actual full gates and final reviewers"
+}

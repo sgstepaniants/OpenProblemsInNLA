@@ -1,0 +1,91 @@
+{
+  "phase": "statement-boundary-frozen-proof-implementation-authorized",
+  "time": "2026-09-15T18:48:48.969388+00:00",
+  "problem": "IE-17",
+  "source_hashes": {
+    "Challenge.lean": "e34bdfa97e74512c988dcbb7635a17f1929f331f3f7ea56b366413e52c6f6c87",
+    "LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "NLA/IE17/Definitions.lean": "97651aa5564143486e883b78b11425304580173ff4c76b35559351ebd438519c",
+    "NUMERICAL_TARGETS.md": "baef2552b8c076ec45223906c3a73c9e7724dc78b8b33e5dcf8aa8658556c074",
+    "comparator.json": "fcd2ec8b560c611c4252413194da9702281f2a459943dec22a1386e0e46645d3",
+    "lake-manifest.json": "0b2982e346ad245431120cb2eeafa466c9336f1e8bf11525312c0982cb840cb3",
+    "lakefile.toml": "a178671e5701561143f572ec0b69eaa46f9c58949a1b923cb7e75e5dda9674c1",
+    "lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71"
+  },
+  "reviews": {
+    "/tmp/nla-lean-next-20260915/reviews/root-statements/IE17-REVIEW.md": "0c503a9e3924adfc6eaa013e9de440aa2d638c65aadeb528502d19ee7b5c6383",
+    "/tmp/nla-lean-next-20260915/reviews/IE-17-next-matrix-functions/REVIEW.md": "ed89b2fe83e42b0eabb21d4e980cf53325f66469d745b626fe98a88a1a94096a",
+    "/tmp/nla-lean-next-20260915/reviews/IE-17-next-matrix-functions-mulvec-addendum/REVIEW.md": "8ce97cbbd2cfd8fee14efeaa5a573720e2586e47803dcb33ac06e09099869590"
+  },
+  "linux_component_receipt": {
+    "run_id": 35009115496,
+    "commit": "104eb3f4fb6bcdf16148bfbb248605c174c40b49",
+    "receipt_sha256": "533de2d92d5a5ad66211fa0c10100c49e87e62c0c39a74425a7ea2dffafbdc81",
+    "commands": [
+      {
+        "argv": [
+          "lake",
+          "build",
+          "NLA.IE17.Definitions"
+        ],
+        "exit_code": 0,
+        "log": "IE-17-module-0.log",
+        "sha256": "04ea6ab8fbd8360a5d59b08983144e5c19e34a99677105def4df2f046cb08799",
+        "source_sha256_after": {
+          ".gitignore": "c31604e8314d3883b99549ae88afeae5dc904c7c4f37b89f88477a8206d63ad2",
+          "Challenges/IE17.lean": "e34bdfa97e74512c988dcbb7635a17f1929f331f3f7ea56b366413e52c6f6c87",
+          "Challenges/MF02.lean": "7731b4023acf5747a6d08bdb9f0fd3b180199cdbcef946cd66dde21825cae611",
+          "Challenges/PF02.lean": "95fd48465accdf6bda77ced617ffc586dc89ca4b4c0c99567717a17ee5a53021",
+          "NLA/IE17/Definitions.lean": "97651aa5564143486e883b78b11425304580173ff4c76b35559351ebd438519c",
+          "NLA/MF02/Definitions.lean": "905203d0f31ea8f28f1fcba791efe54684897df0e6df76358b3783351a51d771",
+          "NLA/PF02/Definitions.lean": "c1b7504b722538df70af8db2294657e2cb7fe85f534eec12b5e2b6321d6bb0ae",
+          "README.md": "048f74454241a7a3c8805c1a43c18a6cb4691a5724af3a2d1f36812543cd2c49",
+          "check.py": "ee79c2c97819598ff9b9d12458d69b672ebddf32591a11b29f5be2a89dbe81bc",
+          "lake-manifest.json": "650fa0aa1b77024ef5b39ca9fd6a85aa336352a95860d70d6bc68d1f0958d65b",
+          "lakefile.toml": "f492315dbb789d45659dc734884db3ea020ca28692a7c94499e4f1e3f6fdb24b",
+          "lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+          "notes/IE17-NUMERICAL_TARGETS.md": "baef2552b8c076ec45223906c3a73c9e7724dc78b8b33e5dcf8aa8658556c074",
+          "notes/MF02-NUMERICAL_TARGETS.md": "3a978022d54763b5fa1b5be85d18c9e925b5a7cf8bb14d3ce679efb804ed9b6a",
+          "notes/PF02-NUMERICAL_TARGETS.md": "22ae7a3b9bfffd3bb98c720bd46d4cc41b34b3112b446a39d37136cf343548f7",
+          "projects.json": "5ad4c49aaa95079553fd197735991fe07ae5d3f9bcf6117e0609204e35c5a05e"
+        }
+      },
+      {
+        "argv": [
+          "lake",
+          "env",
+          "lean",
+          "Challenges/IE17.lean"
+        ],
+        "exit_code": 0,
+        "log": "IE-17-challenge.log",
+        "sha256": "e58597ae401593d788c6b88d359ba9fa4366437555abac13f7901bb16a0bf9e6",
+        "source_sha256_after": {
+          ".gitignore": "c31604e8314d3883b99549ae88afeae5dc904c7c4f37b89f88477a8206d63ad2",
+          "Challenges/IE17.lean": "e34bdfa97e74512c988dcbb7635a17f1929f331f3f7ea56b366413e52c6f6c87",
+          "Challenges/MF02.lean": "7731b4023acf5747a6d08bdb9f0fd3b180199cdbcef946cd66dde21825cae611",
+          "Challenges/PF02.lean": "95fd48465accdf6bda77ced617ffc586dc89ca4b4c0c99567717a17ee5a53021",
+          "NLA/IE17/Definitions.lean": "97651aa5564143486e883b78b11425304580173ff4c76b35559351ebd438519c",
+          "NLA/MF02/Definitions.lean": "905203d0f31ea8f28f1fcba791efe54684897df0e6df76358b3783351a51d771",
+          "NLA/PF02/Definitions.lean": "c1b7504b722538df70af8db2294657e2cb7fe85f534eec12b5e2b6321d6bb0ae",
+          "README.md": "048f74454241a7a3c8805c1a43c18a6cb4691a5724af3a2d1f36812543cd2c49",
+          "check.py": "ee79c2c97819598ff9b9d12458d69b672ebddf32591a11b29f5be2a89dbe81bc",
+          "lake-manifest.json": "650fa0aa1b77024ef5b39ca9fd6a85aa336352a95860d70d6bc68d1f0958d65b",
+          "lakefile.toml": "f492315dbb789d45659dc734884db3ea020ca28692a7c94499e4f1e3f6fdb24b",
+          "lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+          "notes/IE17-NUMERICAL_TARGETS.md": "baef2552b8c076ec45223906c3a73c9e7724dc78b8b33e5dcf8aa8658556c074",
+          "notes/MF02-NUMERICAL_TARGETS.md": "3a978022d54763b5fa1b5be85d18c9e925b5a7cf8bb14d3ce679efb804ed9b6a",
+          "notes/PF02-NUMERICAL_TARGETS.md": "22ae7a3b9bfffd3bb98c720bd46d4cc41b34b3112b446a39d37136cf343548f7",
+          "projects.json": "5ad4c49aaa95079553fd197735991fe07ae5d3f9bcf6117e0609204e35c5a05e"
+        }
+      }
+    ],
+    "component_status": "Definitions and all17 corrected Challenge declarations successfully elaborated; before/after source hashes identical",
+    "mathematical_verification": false
+  },
+  "constraints": [
+    "No frozen definition or public-type changes without renewed reviews",
+    "No local Lean or Lake builds",
+    "Complete full target and final Comparator/kernel/controls/referees before count or publication"
+  ]
+}

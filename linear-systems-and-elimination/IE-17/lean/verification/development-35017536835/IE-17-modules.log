@@ -1,0 +1,97 @@
+✔ [2654/2666] Built LeanCert.Tactic.Verification (2.5s)
+✔ [2655/2666] Built NLA.IE17.Definitions (2.7s)
+✔ [2656/2666] Built NLA.IE17.Geometry (2.4s)
+ℹ [2657/2666] Built NLA.IE17.Attainment (3.7s)
+info: NLA/IE17/Attainment.lean:51:0: 'NLA.IE17.backwardError_isLeast' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [2658/2666] Built NLA.IE17.ProjectionAlgebra (4.3s)
+warning: NLA/IE17/ProjectionAlgebra.lean:76:67: This simp argument is unused:
+  Matrix.one_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [augmentedMatrix, Matrix.mul_apply, Fintype.sum_sum_type, pow_two]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: NLA/IE17/ProjectionAlgebra.lean:78:67: This simp argument is unused:
+  Matrix.one_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [augmentedMatrix, Matrix.mul_apply, Fintype.sum_sum_type, hij, Ne.symm hij]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [2659/2666] Built NLA.IE17.ExactData (5.0s)
+ℹ [2660/2666] Built NLA.IE17.Quadratic (4.1s)
+info: NLA/IE17/Quadratic.lean:103:0: 'NLA.IE17.spectralNorm_sq_le_of_gram_posSemidef' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [2661/2666] Built NLA.IE17.Projection (5.2s)
+warning: NLA/IE17/Projection.lean:60:14: This simp argument is unused:
+  mul_left_comm
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [realDot, Matrix.smul_mulVec, Finset.mul_sum, div_eq_mul_inv, mul_comm, mul_assoc]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: NLA/IE17/Projection.lean:69:10: This simp argument is unused:
+  Matrix.diagonal_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [hd]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: NLA/IE17/Projection.lean:70:10: This simp argument is unused:
+  Matrix.diagonal_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Matrix.one_apply, hij]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: NLA/IE17/Projection.lean:70:33: This simp argument is unused:
+  Matrix.one_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Matrix.diagonal_apply, hij]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: NLA/IE17/Projection.lean:96:45: This simp argument is unused:
+  Matrix.diagonal_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [d, Matrix.one_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: NLA/IE17/Projection.lean:96:68: This simp argument is unused:
+  Matrix.one_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [d, Matrix.diagonal_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+info: NLA/IE17/Projection.lean:123:0: 'NLA.IE17.projectionError_sq_formula' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2662/2666] Built NLA.IE17.Iterates (5.7s)
+info: NLA/IE17/Iterates.lean:184:0: 'NLA.IE17.witness_iterates' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2663/2666] Built NLA.IE17.Certificates (15s)
+info: NLA/IE17/Certificates.lean:172:0: 'NLA.IE17.upperPerturbation_certificate' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/IE17/Certificates.lean:173:0: 'NLA.IE17.lowerCertificate_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2664/2666] Built NLA.IE17.LowerBound (3.0s)
+info: NLA/IE17/LowerBound.lean:138:0: 'NLA.IE17.every_second_perturbation_large' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2665/2666] Built NLA.IE17.Final (2.2s)
+info: NLA/IE17/Final.lean:50:0: 'NLA.IE17.counterexample' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/IE17/Final.lean:51:0: 'NLA.IE17.not_spectralMonotonicity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/IE17/Final.lean:52:0: 'NLA.IE17.not_projectionMonotonicity' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2666/2666] Built NLA.IE17.Solution (2.0s)
+info: NLA/IE17/Solution.lean:36:0: 'NLA.IE17.euclideanNorm_sq' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/IE17/Solution.lean:37:0: 'NLA.IE17.backwardError_isLeast' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/IE17/Solution.lean:38:0: 'NLA.IE17.backwardError_zero_at_solution' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/IE17/Solution.lean:39:0: 'NLA.IE17.augmentedPseudoinverse_spec' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/IE17/Solution.lean:40:0: 'NLA.IE17.projectionError_sq_formula' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/IE17/Solution.lean:41:0: 'NLA.IE17.witness_full_column_rank' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/IE17/Solution.lean:42:0: 'NLA.IE17.witness_iterates' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/IE17/Solution.lean:43:0: 'NLA.IE17.witness_before_termination' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/IE17/Solution.lean:44:0: 'NLA.IE17.upperPerturbation_certificate' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/IE17/Solution.lean:45:0: 'NLA.IE17.lowerCertificate_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/IE17/Solution.lean:46:0: 'NLA.IE17.every_second_perturbation_large' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/IE17/Solution.lean:47:0: 'NLA.IE17.witness_backwardError_separation' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/IE17/Solution.lean:48:0: 'NLA.IE17.witness_projectionError_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/IE17/Solution.lean:49:0: 'NLA.IE17.witness_projectionError_separation' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/IE17/Solution.lean:50:0: 'NLA.IE17.counterexample' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/IE17/Solution.lean:51:0: 'NLA.IE17.not_spectralMonotonicity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/IE17/Solution.lean:52:0: 'NLA.IE17.not_projectionMonotonicity' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (2666 jobs).

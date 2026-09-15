@@ -1,0 +1,29 @@
+{
+  "challenge_module": "Challenge",
+  "solution_module": "Solution",
+  "theorem_names": [
+    "NLA.IE17.euclideanNorm_sq",
+    "NLA.IE17.backwardError_isLeast",
+    "NLA.IE17.backwardError_zero_at_solution",
+    "NLA.IE17.augmentedPseudoinverse_spec",
+    "NLA.IE17.projectionError_sq_formula",
+    "NLA.IE17.witness_full_column_rank",
+    "NLA.IE17.witness_iterates",
+    "NLA.IE17.witness_before_termination",
+    "NLA.IE17.upperPerturbation_certificate",
+    "NLA.IE17.lowerCertificate_positive",
+    "NLA.IE17.every_second_perturbation_large",
+    "NLA.IE17.witness_backwardError_separation",
+    "NLA.IE17.witness_projectionError_exact",
+    "NLA.IE17.witness_projectionError_separation",
+    "NLA.IE17.counterexample",
+    "NLA.IE17.not_spectralMonotonicity",
+    "NLA.IE17.not_projectionMonotonicity"
+  ],
+  "definition_names": [],
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ]
+}

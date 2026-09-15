@@ -1,0 +1,98 @@
+{
+  "kind": "implementer-source-reconciliation-not-independent-review",
+  "run_id": "35017536835",
+  "commit": "8070ed199166429ffd5ea3091caa940de6af5568",
+  "uid": 1001,
+  "exit_code": 0,
+  "source_prepost_unchanged": true,
+  "module_log_sha256": "4d3410a8a8093e79a88c2e6c7bc7b8428bfde658ebfc3cf8b300e185e8cc4e9b",
+  "active_sources": [
+    {
+      "file": "NLA/IE17/Iterates.lean",
+      "run_source_key": "NLA/IE17/Iterates.lean",
+      "sha256": "f252cba55ede50a396265f94a8af846dc0d82e12fc1a8360e9f3ffe03700ee6a"
+    },
+    {
+      "file": "NLA/IE17/Definitions.lean",
+      "run_source_key": "NLA/IE17/Definitions.lean",
+      "sha256": "97651aa5564143486e883b78b11425304580173ff4c76b35559351ebd438519c"
+    },
+    {
+      "file": "NLA/IE17/ProjectionAlgebra.lean",
+      "run_source_key": "NLA/IE17/ProjectionAlgebra.lean",
+      "sha256": "f83f219035799022c5700551e0b36102c3503649a2a67bb3bed5c0b7a585c6ae"
+    },
+    {
+      "file": "NLA/IE17/Final.lean",
+      "run_source_key": "NLA/IE17/Final.lean",
+      "sha256": "8bf415653af674403fdf1a9622157518db1039829124d9f157aac2f2214c41eb"
+    },
+    {
+      "file": "NLA/IE17/Geometry.lean",
+      "run_source_key": "NLA/IE17/Geometry.lean",
+      "sha256": "47c91ba418f0495df1c834a9e87fd076aff02dcff11ca042cd5c6088cb48f41f"
+    },
+    {
+      "file": "NLA/IE17/ExactData.lean",
+      "run_source_key": "NLA/IE17/ExactData.lean",
+      "sha256": "1911c5c929f6f50b1d4ea46c8265dad13d5dedf318725f3fbc95ef4fee6a7723"
+    },
+    {
+      "file": "NLA/IE17/LowerBound.lean",
+      "run_source_key": "NLA/IE17/LowerBound.lean",
+      "sha256": "692a1d434bfbdbc5e89da90c90eb048ad3ec880930fc1d9cc2697502b682507b"
+    },
+    {
+      "file": "NLA/IE17/Quadratic.lean",
+      "run_source_key": "NLA/IE17/Quadratic.lean",
+      "sha256": "33e87d19f5bb8e81d042461d0a647801f4b99a7be5668bcd74f3a4d2a2986838"
+    },
+    {
+      "file": "NLA/IE17/Attainment.lean",
+      "run_source_key": "NLA/IE17/Attainment.lean",
+      "sha256": "025fcd59d5037fb6780ff4255036a9819d315ad647587718a2832e0eba47fde2"
+    },
+    {
+      "file": "NLA/IE17/Projection.lean",
+      "run_source_key": "NLA/IE17/Projection.lean",
+      "sha256": "60b8183feda61e45b7e86005dd2baa2aff38db2b0fdab318c01b0465d3ccfa44"
+    },
+    {
+      "file": "NLA/IE17/Certificates.lean",
+      "run_source_key": "NLA/IE17/Certificates.lean",
+      "sha256": "0bc1438e92288f11b12b0d0225ebd3c30732245201d6380a3bfd375d6fe2b8a8"
+    },
+    {
+      "file": "Solution.lean",
+      "run_source_key": "NLA/IE17/Solution.lean",
+      "sha256": "189b2ff479527efd41b4c7b2b8c0f30adb39835a5e39d646dd77ca7f85d20ab1"
+    },
+    {
+      "file": "Challenge.lean",
+      "run_source_key": "Challenges/IE17.lean",
+      "sha256": "e34bdfa97e74512c988dcbb7635a17f1929f331f3f7ea56b366413e52c6f6c87"
+    }
+  ],
+  "export_axioms": {
+    "NLA.IE17.euclideanNorm_sq": "propext, Classical.choice, Quot.sound",
+    "NLA.IE17.backwardError_isLeast": "propext, Classical.choice, Quot.sound",
+    "NLA.IE17.backwardError_zero_at_solution": "propext, Classical.choice, Quot.sound",
+    "NLA.IE17.augmentedPseudoinverse_spec": "propext, Classical.choice, Quot.sound",
+    "NLA.IE17.projectionError_sq_formula": "propext, Classical.choice, Quot.sound",
+    "NLA.IE17.witness_full_column_rank": "propext, Classical.choice, Quot.sound",
+    "NLA.IE17.witness_iterates": "propext, Classical.choice, Quot.sound",
+    "NLA.IE17.witness_before_termination": "propext, Classical.choice, Quot.sound",
+    "NLA.IE17.upperPerturbation_certificate": "propext, Classical.choice, Quot.sound",
+    "NLA.IE17.lowerCertificate_positive": "propext, Classical.choice, Quot.sound",
+    "NLA.IE17.every_second_perturbation_large": "propext, Classical.choice, Quot.sound",
+    "NLA.IE17.witness_backwardError_separation": "propext, Classical.choice, Quot.sound",
+    "NLA.IE17.witness_projectionError_exact": "propext, Classical.choice, Quot.sound",
+    "NLA.IE17.witness_projectionError_separation": "propext, Classical.choice, Quot.sound",
+    "NLA.IE17.counterexample": "propext, Classical.choice, Quot.sound",
+    "NLA.IE17.not_spectralMonotonicity": "propext, Classical.choice, Quot.sound",
+    "NLA.IE17.not_projectionMonotonicity": "propext, Classical.choice, Quot.sound"
+  },
+  "comparator_run": false,
+  "default_kernel_replay": false,
+  "complete_problem_verified": false
+}

@@ -1,0 +1,334 @@
+# yaml-language-server: $schema=../../../docs/lean/schema/v0.4.schema.json
+version: v0.4
+project:
+  name: 'IE-17: nonmonotone spectral backward error and projected error along LSMR'
+  description: Formalization of Matthew J. Colbrook's exact full-column-rank 4-by-3 counterexample. The
+    complete source graph and all seventeen exported LeanCert assertions passed source-bound non-root
+    Linux compilation. Canonical default-kernel replay, Comparator and final compiled-source referee acceptance
+    remain pending.
+  authors:
+  - George Stepaniants
+  affiliations:
+    George Stepaniants: Department of Computing and Mathematical Sciences, California Institute of Technology,
+      Pasadena, California, USA
+  responsible_maintainers:
+  - George Stepaniants
+  license: Apache-2.0
+repository:
+  role: substantive-development
+sources:
+- title: IE-17 — Monotonic optimal backward error along LSMR
+  id: https://github.com/ajt60gaibb/OpenProblemsInNLA/blob/8f04b905eb2e0827b6b84f37d9d080ae1f05b202/linear-systems-and-elimination/IE-17/README.md
+  type: web-post
+  location: Complete canonical problem statement
+  relationship: formalizes
+  author_endorsement: not-contacted
+  note: Matrix-only spectral perturbations with b fixed; both original error quantities on successive
+    nonzero exact LSMR iterates are retained.
+- title: An exact spectral backward-error counterexample for LSMR
+  authors:
+  - Matthew J. Colbrook
+  id: https://github.com/ajt60gaibb/OpenProblemsInNLA/blob/8f04b905eb2e0827b6b84f37d9d080ae1f05b202/references/colbrook-recovered-2026-09-11/manuscripts/IE-17.tex
+  type: manuscript
+  location: Sections 1–4, exact iterates, universal perturbation bound and rational certificates
+  relationship: formalizes
+  author_endorsement: not-contacted
+  note: Original mathematics is credited to Matthew J. Colbrook, Department of Applied Mathematics and
+    Theoretical Physics, University of Cambridge. The dense variant is unnecessary for the canonical negative
+    resolution.
+related_formalizations:
+- id: https://github.com/sgstepaniants/Forsythe/tree/8d1b0c0545a77b40245e84705aa7d273e6c81e62/lean-proof
+  relationship: other
+  note: Statement-first LeanCert and Comparator workflow reference; no theorem imported.
+- id: https://github.com/jaumededios/Schiffer/tree/2938e277969c329caf154e48a3d8823f3635c7f1
+  relationship: other
+  note: Separate definitions and proof organization reference; no theorem imported.
+automation:
+  methods:
+  - method: agent
+    framework: OpenAI Codex
+    tool_setup: Statement-first development after two independent statement reviews and actual Linux declaration
+      elaboration. LeanCert kernel assertions accompany the seventeen exported targets. All Lean and Lake
+      execution is delegated to non-root GitHub-hosted Linux; no local compiler or dependency/cache download
+      is used.
+    prompting_notes: Preserve actual Euclidean and spectral norms, whole Krylov-space minimum-length optimization,
+      all feasible real perturbations, attained infimum, all four Penrose identities, and the complete
+      projection-to-rational-expression bridge. Eliminate interval work through rational LDL factorizations
+      and unnormalized residuals.
+  - method: agent
+    framework: OpenAI Codex
+    tool_setup: Separate independent agents review statement fidelity, universal quantifiers, certificates,
+      proof quality and actual verification receipts under the repository's adapted Tau Ceti protocol.
+      Source reviewers do not count as their own independent proof referees.
+  notes: Substantial AI assistance; no external human peer review, source-author endorsement, official
+    Tau Ceti service, priority claim or measured cost is asserted. Python rational checks format/check
+    supplementary data; their outputs are never trusted mathematical premises in Lean.
+status:
+  scope: Complete canonical negations of both spectral and projected-error monotonicity conjectures, from
+    the exact first two nonzero witness iterates. General minimum-attainment and augmented-pseudoinverse
+    obligations prevent replacing the original target with a certificate.
+  whole_problem_verified: false
+  sorry_count: 0
+  sorry_in_definitions: 0
+  placeholder_count_basis: Complete Solution compilation in Linux run 35017536835; all seventeen exported
+    LeanCert kernel assertions succeeded and their transitive axiom reports contain only propext, Classical.choice
+    and Quot.sound. Seventeen deliberate Challenge placeholders are isolated from Solution. Canonical
+    Comparator/default-kernel replay remains pending.
+  main_results:
+  - declaration: NLA.IE17.euclideanNorm_sq
+    file: NLA/IE17/Geometry.lean
+    comparator_config: comparator.json
+    sorry_count: 0
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    verification_status: Actual Linux compilation and LeanCert assertions passed; canonical Comparator
+      pending.
+  - declaration: NLA.IE17.backwardError_isLeast
+    file: NLA/IE17/Attainment.lean
+    comparator_config: comparator.json
+    sorry_count: 0
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    verification_status: Actual Linux compilation and LeanCert assertions passed; canonical Comparator
+      pending.
+  - declaration: NLA.IE17.backwardError_zero_at_solution
+    file: NLA/IE17/Geometry.lean
+    comparator_config: comparator.json
+    sorry_count: 0
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    verification_status: Actual Linux compilation and LeanCert assertions passed; canonical Comparator
+      pending.
+  - declaration: NLA.IE17.augmentedPseudoinverse_spec
+    file: NLA/IE17/ProjectionAlgebra.lean
+    comparator_config: comparator.json
+    sorry_count: 0
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    verification_status: Actual Linux compilation and LeanCert assertions passed; canonical Comparator
+      pending.
+  - declaration: NLA.IE17.projectionError_sq_formula
+    file: NLA/IE17/Projection.lean
+    comparator_config: comparator.json
+    sorry_count: 0
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    verification_status: Actual Linux compilation and LeanCert assertions passed; canonical Comparator
+      pending.
+  - declaration: NLA.IE17.witness_full_column_rank
+    file: NLA/IE17/ExactData.lean
+    comparator_config: comparator.json
+    sorry_count: 0
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    verification_status: Actual Linux compilation and LeanCert assertions passed; canonical Comparator
+      pending.
+  - declaration: NLA.IE17.witness_iterates
+    file: NLA/IE17/Iterates.lean
+    comparator_config: comparator.json
+    sorry_count: 0
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    verification_status: Actual Linux compilation and LeanCert assertions passed; canonical Comparator
+      pending.
+  - declaration: NLA.IE17.witness_before_termination
+    file: NLA/IE17/ExactData.lean
+    comparator_config: comparator.json
+    sorry_count: 0
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    verification_status: Actual Linux compilation and LeanCert assertions passed; canonical Comparator
+      pending.
+  - declaration: NLA.IE17.upperPerturbation_certificate
+    file: NLA/IE17/Certificates.lean
+    comparator_config: comparator.json
+    sorry_count: 0
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    verification_status: Actual Linux compilation and LeanCert assertions passed; canonical Comparator
+      pending.
+  - declaration: NLA.IE17.lowerCertificate_positive
+    file: NLA/IE17/Certificates.lean
+    comparator_config: comparator.json
+    sorry_count: 0
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    verification_status: Actual Linux compilation and LeanCert assertions passed; canonical Comparator
+      pending.
+  - declaration: NLA.IE17.every_second_perturbation_large
+    file: NLA/IE17/LowerBound.lean
+    comparator_config: comparator.json
+    sorry_count: 0
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    verification_status: Actual Linux compilation and LeanCert assertions passed; canonical Comparator
+      pending.
+  - declaration: NLA.IE17.witness_backwardError_separation
+    file: NLA/IE17/LowerBound.lean
+    comparator_config: comparator.json
+    sorry_count: 0
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    verification_status: Actual Linux compilation and LeanCert assertions passed; canonical Comparator
+      pending.
+  - declaration: NLA.IE17.witness_projectionError_exact
+    file: NLA/IE17/Projection.lean
+    comparator_config: comparator.json
+    sorry_count: 0
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    verification_status: Actual Linux compilation and LeanCert assertions passed; canonical Comparator
+      pending.
+  - declaration: NLA.IE17.witness_projectionError_separation
+    file: NLA/IE17/Projection.lean
+    comparator_config: comparator.json
+    sorry_count: 0
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    verification_status: Actual Linux compilation and LeanCert assertions passed; canonical Comparator
+      pending.
+  - declaration: NLA.IE17.counterexample
+    file: NLA/IE17/Final.lean
+    comparator_config: comparator.json
+    sorry_count: 0
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    verification_status: Actual Linux compilation and LeanCert assertions passed; canonical Comparator
+      pending.
+  - declaration: NLA.IE17.not_spectralMonotonicity
+    file: NLA/IE17/Final.lean
+    comparator_config: comparator.json
+    sorry_count: 0
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    verification_status: Actual Linux compilation and LeanCert assertions passed; canonical Comparator
+      pending.
+  - declaration: NLA.IE17.not_projectionMonotonicity
+    file: NLA/IE17/Final.lean
+    comparator_config: comparator.json
+    sorry_count: 0
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    verification_status: Actual Linux compilation and LeanCert assertions passed; canonical Comparator
+      pending.
+  axioms:
+  - propext
+  - Classical.choice
+  - Quot.sound
+review:
+  status: Two independent statement and proof-source approvals; final compiled-byte addenda pending.
+  reviewers:
+  - /root/next_matrix_functions (independent AI statement referee)
+  - /root (AI statement referee and proof coordinator)
+  - /root/next_inequalities (independent AI proof-source referee)
+  notes: The source implementer /root/next_elimination does not count as its own independent referee.
+    A referee detected that the supplementary lower LDL pivots were scaled for K/2407881992100; the implementation
+    now multiplies those pivots by 2407881992100 before proving the frozen integer-K factorization. The
+    repaired factorization was accepted in Linux; final source and actual compiled evidence still require
+    both independent final approvals.
+fidelity:
+  divergences: No canonical quantifier or norm is weakened. The proof works with the actual unnormalized
+    new residual to eliminate unit-vector square roots, handles the zero-new-residual branch separately,
+    and proves the full perturbation minimum is attained before transferring a strict bound to the infimum.
+    Exact rational LDL witnesses replace determinant expansion; all factorizations and operator-norm bridges
+    remain Lean obligations. The dense orthogonal variant, Frobenius norms, and floating-point recurrences
+    are outside the canonical claim and are not asserted.
+alignment:
+  namespace: NLA.IE17
+  statements:
+  - source: Exact Euclidean norm and original spectral perturbation minimum
+    lean: NLA.IE17.backwardError_isLeast
+    module: NLA/IE17/Attainment.lean
+    status: Complete Linux compilation accepted; final package audit pending.
+  - source: Exact LSMR first three iterates and minimum-length semantics
+    lean: NLA.IE17.witness_iterates
+    module: NLA/IE17/Iterates.lean
+    status: Complete Linux compilation accepted; final package audit pending.
+  - source: Actual Moore-Penrose augmented projection and scalar reduction
+    lean: NLA.IE17.projectionError_sq_formula
+    module: NLA/IE17/Projection.lean
+    status: Complete Linux compilation accepted; final package audit pending.
+  - source: Rational feasible upper perturbation and positive Gram certificate
+    lean: NLA.IE17.upperPerturbation_certificate
+    module: NLA/IE17/Certificates.lean
+    status: Complete Linux compilation accepted; final package audit pending.
+  - source: Universal lower bound, including zero new residual
+    lean: NLA.IE17.every_second_perturbation_large
+    module: NLA/IE17/LowerBound.lean
+    status: Complete Linux compilation accepted; final package audit pending.
+  - source: Both complete original universal monotonicity negations
+    lean: NLA.IE17.counterexample
+    module: NLA/IE17/Final.lean
+    status: Complete Linux compilation accepted; final package audit pending.
+toolchain:
+  lean: leanprover/lean4:v4.33.1
+  dependency_manifest: lake-manifest.json
+  dependencies:
+    leancert: 621a43d7cf21f87872392a01e874f2f1dbddc926
+    mathlib: 0df444a360eaa60ab8c11dca51a86af692955474
+verification:
+  comparator: pending actual Linux verification of all seventeen exports
+  default_kernel: pending final package replay
+  final_compiled_source_reviews: pending
+  permitted_axioms:
+  - propext
+  - Classical.choice
+  - Quot.sound
+  permitted_axioms_note: The actual complete Solution log reports exactly these three transitive axioms
+    for each of the seventeen exported declarations; this observation is distinct from the still-pending
+    canonical Comparator replay.
+  development_compilation:
+    run_id: 35017536835
+    run_url: https://github.com/sgstepaniants/OpenProblemsInNLA/actions/runs/35017536835
+    repository_commit: 8070ed199166429ffd5ea3091caa940de6af5568
+    uid: 1001
+    complete_source_graph_exit_code: 0
+    exported_declarations_checked: 17
+    source_prepost_unchanged: true
+    evidence: verification/development-35017536835/SOURCE-RECONCILIATION.json
+    note: Actual GitHub-hosted Linux development execution with source-bound logs. Both complete Solution
+      and the separate Challenge elaborated. This was not the standalone canonical Comparator/default-kernel
+      verification run.
+  statement_boundary: STATEMENT-FREEZE.json
+  whole_problem_verified: false
+  standalone_configuration: Default target and registered library Solution; root manifest name NLAIE17;
+    exact dependency package objects unchanged from frozen draft, whose original copy is retained under
+    reviews/statement-phase/frozen.
+acknowledgements: Matthew J. Colbrook for the original mathematical counterexample; Mathlib, LeanCert,
+  Lean Comparator and formalization.yaml contributors; Schiffer and Forsythe for workflow examples. Formalization
+  by George Stepaniants, Department of Computing and Mathematical Sciences, California Institute of Technology,
+  Pasadena, California, USA, with AI assistance.
