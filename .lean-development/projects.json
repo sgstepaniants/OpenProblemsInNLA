@@ -32,18 +32,5 @@
       "NLA.IE17.Solution"
     ],
     "challenge": "Challenges/IE17.lean"
-  },
-  {
-    "id": "PF-02",
-    "modules": [
-      "NLA.PF02.Definitions",
-      "NLA.PF02.Algebra",
-      "NLA.PF02.Coordinates",
-      "NLA.PF02.Witness",
-      "NLA.PF02.CongruenceDeterminant",
-      "NLA.PF02.QuotientSeparation",
-      "NLA.PF02.Solution"
-    ],
-    "challenge": "Challenges/PF02.lean"
   }
 ]

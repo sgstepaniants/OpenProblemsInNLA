@@ -113,10 +113,10 @@ theorem uniform_asymptotic_order (m : ℕ) (δ : ℝ) (hδ0 : 0 < δ) (hδ1 : δ
   · have heq := stageMinimum_eq_one_of_le_one m (by omega) δ hδ0 hδ1
     refine ⟨1, heq, ?_, ?_⟩
     · have hreal : (m : ℝ) ≤ 1 := by exact_mod_cast (show m ≤ 1 by omega)
-      change ((m : ℝ) + 1) / 4 ≤ 1
+      simp only [Nat.cast_one]
       linarith
     · have hnonneg : 0 ≤ (m : ℝ) := Nat.cast_nonneg m
-      change (1 : ℝ) ≤ (m : ℝ) + 1
+      simp only [Nat.cast_one]
       linarith
   · have hm2 : 2 ≤ m := by omega
     obtain ⟨T, heq, hT, hminimal⟩ := stage_minimum_attained m δ hδ0 hδ1

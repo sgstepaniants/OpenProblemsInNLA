@@ -82,7 +82,13 @@ theorem witness_projection_formula (x : Vec 3)
     intro i
     have hs := normSq_pos hx
     have ht := normSq_pos hr
-    fin_cases i <;> dsimp [d] <;> positivity
+    fin_cases i
+    · change normSq x + normSq (residual witnessA witnessB x) ≠ 0
+      linarith
+    · change 36 * normSq x + normSq (residual witnessA witnessB x) ≠ 0
+      linarith
+    · change 25 * normSq x + normSq (residual witnessA witnessB x) ≠ 0
+      linarith
   have hdiag : normSq x • (witnessA.transpose * witnessA) +
       normSq (residual witnessA witnessB x) • (1 : Mat 3 3) = Matrix.diagonal d := by
     rw [witness_gram]

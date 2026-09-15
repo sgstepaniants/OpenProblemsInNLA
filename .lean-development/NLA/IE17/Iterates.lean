@@ -153,7 +153,7 @@ theorem witness_isLSMR_iff_of_orthogonal (k : ℕ) (z : Vec 3)
   · rintro rfl
     refine ⟨hz, hmin, ?_⟩
     intro y hy heq
-    simpa only [huniq y hy heq]
+    simpa only [huniq y hy heq] using (le_refl (euclideanNorm x))
 
 theorem witness_iterates :
     (∀ x : Vec 3, IsLSMRIterate witnessA witnessB 0 x ↔ x = 0) ∧

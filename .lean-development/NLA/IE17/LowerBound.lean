@@ -112,7 +112,7 @@ theorem every_second_perturbation_large (E : Mat 4 3)
   have hpositive := lower_convex_gap_positive.dotProduct_mulVec_pos hd
   have hpositive' : 0 < realDot d
       ((lowerConvexMatrix - (99 / 100 : ℝ) • (1 : Mat 4 4)).mulVec d) := by
-    simpa only [star_trivial] using hpositive
+    simpa only [star_trivial, realDot, dotProduct] using hpositive
   rw [Matrix.sub_mulVec, Matrix.smul_mulVec, Matrix.one_mulVec,
     realDot_sub, realDot_smul, realDot_self] at hpositive'
   apply (mul_lt_mul_iff_right₀ (normSq_pos hd)).mp

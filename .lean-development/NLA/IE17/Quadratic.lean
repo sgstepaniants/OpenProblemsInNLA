@@ -33,7 +33,11 @@ theorem realDot_smul {n : ℕ} (x y : Vec n) (a : ℝ) :
 theorem outer_mulVec {m n : ℕ} (x : Vec m) (y z : Vec n) :
     (outer x y).mulVec z = realDot y z • x := by
   ext i
-  simp [outer, realDot, Matrix.mulVec, dotProduct, Finset.mul_sum, mul_assoc, mul_comm]
+  simp only [outer, realDot, Matrix.mulVec, dotProduct, Pi.smul_apply,
+    smul_eq_mul, Finset.sum_mul]
+  apply Finset.sum_congr rfl
+  intro j _
+  ring
 
 theorem realDot_outer {n : ℕ} (x y : Vec n) :
     realDot x ((outer y y).mulVec x) = realDot x y ^ 2 := by
@@ -76,7 +80,7 @@ theorem spectralNorm_sq_le_of_gram_posSemidef {m n : ℕ} (M : Mat m n) (c : ℝ
     intro x
     have h := hM.dotProduct_mulVec_nonneg x
     have h' : 0 ≤ realDot x ((c • (1 : Mat n n) - M.transpose * M).mulVec x) := by
-      simpa only [star_trivial] using h
+      simpa only [star_trivial, realDot, dotProduct] using h
     rw [realDot_gram_complement] at h'
     linarith
   have hvec : ∀ x : Vec n,
