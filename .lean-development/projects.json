@@ -1,0 +1,16 @@
+[
+  {
+    "id": "MF-02",
+    "modules": [
+      "NLA.MF02.Definitions"
+    ],
+    "challenge": "Challenges/MF02.lean"
+  },
+  {
+    "id": "IE-17",
+    "modules": [
+      "NLA.IE17.Definitions"
+    ],
+    "challenge": "Challenges/IE17.lean"
+  }
+]
