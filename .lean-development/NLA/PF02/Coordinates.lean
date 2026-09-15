@@ -1,7 +1,9 @@
 /- Exact six-coordinate identities for the actual real symmetric factors.
 Mathematics: Matthew J. Colbrook. Formalization: George Stepaniants, Caltech CMS.
 Apache 2.0; AI-assisted. No coordinate model replaces a frozen definition. -/
-import NLA.PF02.Algebra
+import NLA.PF02.Definitions
+import Mathlib.Tactic
+import LeanCert.Tactic.Verification
 import Mathlib.Topology.Instances.Matrix
 
 set_option autoImplicit false

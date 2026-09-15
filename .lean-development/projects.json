@@ -7,7 +7,11 @@
       "NLA.MF02.Cubic",
       "NLA.MF02.Errors",
       "NLA.MF02.Parity",
-      "NLA.MF02.Iteration"
+      "NLA.MF02.Iteration",
+      "NLA.MF02.Chebyshev",
+      "NLA.MF02.Bounds",
+      "NLA.MF02.Minimum",
+      "NLA.MF02.Solution"
     ],
     "challenge": "Challenges/MF02.lean"
   },
@@ -16,7 +20,11 @@
     "modules": [
       "NLA.IE17.Definitions",
       "NLA.IE17.Geometry",
-      "NLA.IE17.Attainment"
+      "NLA.IE17.Attainment",
+      "NLA.IE17.ExactData",
+      "NLA.IE17.Iterates",
+      "NLA.IE17.ProjectionAlgebra",
+      "NLA.IE17.Projection"
     ],
     "challenge": "Challenges/IE17.lean"
   },
@@ -25,7 +33,11 @@
     "modules": [
       "NLA.PF02.Definitions",
       "NLA.PF02.Algebra",
-      "NLA.PF02.Coordinates"
+      "NLA.PF02.Coordinates",
+      "NLA.PF02.Witness",
+      "NLA.PF02.CongruenceDeterminant",
+      "NLA.PF02.QuotientSeparation",
+      "NLA.PF02.Solution"
     ],
     "challenge": "Challenges/PF02.lean"
   }

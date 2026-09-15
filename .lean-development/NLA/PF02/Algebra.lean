@@ -89,7 +89,11 @@ lemma factorization_rank_le_square {p q k : ℕ} (M : Rect p q)
   have he : M = U * V := by
     ext i j
     rw [← F.property.2.2 i j]
-    simp [Matrix.trace, Matrix.diag, Matrix.mul_apply, U, V, Fintype.sum_prod_type]
+    change (∑ a : Fin k, ∑ b : Fin k,
+      F.val.1 i a b * F.val.2 j b a) =
+      ∑ ab : Fin k × Fin k, F.val.1 i ab.1 ab.2 * F.val.2 j ab.2 ab.1
+    exact (Fintype.sum_prod_type
+      (fun ab : Fin k × Fin k => F.val.1 i ab.1 ab.2 * F.val.2 j ab.2 ab.1)).symm
   rw [he]
   exact (Matrix.rank_mul_le_left U V).trans
     (by simpa using Matrix.rank_le_card_width U)

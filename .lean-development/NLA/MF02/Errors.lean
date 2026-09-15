@@ -168,7 +168,6 @@ lemma centered_value_error {a x : ℝ} (ha : 0 < a) (hax : a ≤ x) (hx1 : x ≤
   have hd : 0 < 1 + a := by linarith
   have heq : 2 * x / (1 + a) - 1 = (2 * x - (1 + a)) / (1 + a) := by
     field_simp [ne_of_gt hd]
-    ring
   rw [heq, abs_le]
   constructor
   · have h := div_le_div_of_nonneg_right (show -(1 - a) ≤ 2 * x - (1 + a) by linarith) hd.le

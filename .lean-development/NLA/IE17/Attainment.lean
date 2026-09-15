@@ -42,7 +42,7 @@ theorem backwardError_isLeast {m n : ℕ} (A : Mat m n) (b : Vec m) (x : Vec n) 
     refine ⟨⟨E₀, hE₀.1, rfl⟩, ?_⟩
     rintro c ⟨E, hE, rfl⟩
     by_cases hbound : spectralNorm E ≤ spectralNorm (-A)
-    · exact hmin E ⟨hE, hbound⟩
+    · exact hmin ⟨hE, hbound⟩
     · exact hE₀.2.trans (le_of_lt (lt_of_not_ge hbound))
   have heq : backwardError A b x = spectralNorm E₀ := hleast.csInf_eq
   rwa [heq]
