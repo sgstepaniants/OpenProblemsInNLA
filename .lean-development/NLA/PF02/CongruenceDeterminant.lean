@@ -96,9 +96,10 @@ private lemma congruence_diagonal_det (d : Fin 3 → ℝ) :
     · change ((d 1) * (d 2) + (0) * (0) : ℝ) = d 1 * d 2
       ring
   rw [hd, Matrix.det_diagonal, Matrix.det_diagonal]
-  simp only [Fin.prod_univ_succ, Fin.prod_univ_zero, mul_one]
+  simp only [Fin.prod_univ_succ, Fin.prod_univ_zero]
   change (d 0 ^ 2 * (d 1 ^ 2 * (d 2 ^ 2 *
-    (d 0 * d 1 * (d 0 * d 2 * (d 1 * d 2)))))) = (d 0 * (d 1 * d 2)) ^ 4
+    ((d 0 * d 1) * ((d 0 * d 2) * ((d 1 * d 2) * 1)))))) =
+    (d 0 * (d 1 * (d 2 * 1))) ^ 4
   ring
 
 /-- Reordering both coordinate axes preserves the determinant. -/
@@ -573,15 +574,17 @@ private lemma congruence_transvection_21_det (c : ℝ) :
 private lemma congruence_transvection_det (t : Matrix.TransvectionStruct (Fin 3) ℝ) :
     (congruenceCoordinateMatrix t.toMatrix).det = 1 := by
   rcases t with ⟨i, j, hij, c⟩
+  change (congruenceCoordinateMatrix (Matrix.transvection i j c)).det = 1
   fin_cases i <;> fin_cases j
-  all_goals first
-    | exact (hij rfl).elim
-    | exact congruence_transvection_01_det c
-    | exact congruence_transvection_02_det c
-    | exact congruence_transvection_10_det c
-    | exact congruence_transvection_12_det c
-    | exact congruence_transvection_20_det c
-    | exact congruence_transvection_21_det c
+  · exact (hij rfl).elim
+  · exact congruence_transvection_01_det c
+  · exact congruence_transvection_02_det c
+  · exact congruence_transvection_10_det c
+  · exact (hij rfl).elim
+  · exact congruence_transvection_12_det c
+  · exact congruence_transvection_20_det c
+  · exact congruence_transvection_21_det c
+  · exact (hij rfl).elim
 
 /-- Diagonal and elementary transvection matrices generate every real matrix,
 including singular matrices. Sparse triangular checks replace a general 6×6

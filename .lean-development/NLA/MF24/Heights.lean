@@ -47,9 +47,7 @@ lemma motif_height_ratio (s d : ℕ) (t : ℝ) (ht : 0 < t) :
       t ^ ((if 1 ≤ s then 1 else 0) + d) = (if s = 0 then t else 1) := by
   by_cases hs : s = 0
   · subst s
-    simp only [Nat.zero_add, Nat.one_le_one, if_true, Nat.not_succ_le_zero,
-      if_false, pow_add, pow_one]
-    field_simp [ne_of_gt ht]
+    simp [pow_add, ne_of_gt ht]
   · have hs1 : 1 ≤ s := by omega
     have hs2 : 1 ≤ s + 1 := by omega
     simp [hs, hs1, hs2, pow_ne_zero _ (ne_of_gt ht)]
@@ -83,8 +81,8 @@ lemma bridge_height_ratios (m : ℕ) (hm : 2 ≤ m) (q : ℕ) (hq : q < m)
       simp [hm1, ne_of_gt ht]
     · have hq1 : 1 ≤ q := by omega
       have hq2 : 1 ≤ q + 1 := by omega
-      simp only [Nat.not_succ_le_zero, if_false, hq1, hq2, hm1,
-        if_true, zero_add, one_add_one_eq_two, pow_one, hq0]
+      simp only [show ¬ (1 : ℕ) ≤ 0 by omega, hq1, hq2, hm1, hq0,
+        if_false, if_true, Nat.zero_add, one_add_one_eq_two, pow_one]
       field_simp [ne_of_gt ht] <;> ring
   · rw [heightY_grid m (q + 1) 0 (by omega), heightY_grid m q m (by omega)]
     have hqm : q ≠ m := by omega
@@ -98,8 +96,10 @@ lemma vertex_grid_bounds (m v : ℕ) (hv : v < dimension m) :
   · by_contra hn
     have hlarge : m + 1 ≤ v / (m + 1) := by omega
     have hmul := Nat.mul_le_mul_right (m + 1) hlarge
-    unfold dimension at hv
-    nlinarith
+    have hbound : (m + 1) * (m + 1) ≤ v := by omega
+    have hv' : v < (m + 1) * (m + 1) := by
+      simpa only [dimension, pow_two] using hv
+    omega
   · omega
 
 lemma source_edge_height_ratios (m : ℕ) (hm : 2 ≤ m) (t : ℝ) (ht : 0 < t)
@@ -151,8 +151,8 @@ theorem source_words_eq_height_shifts (m : ℕ) (hm : 2 ≤ m)
         he]
     · rfl
   · simp [heightX]
-  · have hm0 : m ≠ 0 := by omega
-    simp [heightY, hm0]
+  · have h0m : 0 ≠ m := by omega
+    simp [heightY, h0m]
 
 theorem family_nilpotent_nonnegative (m : ℕ) (hm : 2 ≤ m)
     (t : ℝ) (ht : 1 < t) :

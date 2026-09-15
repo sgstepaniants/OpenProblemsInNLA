@@ -24,6 +24,14 @@ abbrev Mat (n : ℕ) := Matrix (Fin n) (Fin n) ℝ
 abbrev MatrixPolynomial (n : ℕ) := MvPolynomial (Fin n × Fin n) ℝ
 abbrev Parameters := (Fin 3 → ℝ) × (Fin 3 → ℝ) × (Fin 3 → ℝ)
 
+/-- The ordinary finite product norm supplies the ambient differential calculus.
+The optimization objective below still explicitly uses the Frobenius norm. -/
+instance normedAddCommGroupMat (n : ℕ) : NormedAddCommGroup (Mat n) :=
+  Matrix.normedAddCommGroup
+
+instance normedSpaceMat (n : ℕ) : NormedSpace ℝ (Mat n) :=
+  Matrix.normedSpace
+
 /-- Mathlib's actual Frobenius norm, selected explicitly rather than the
 ambient function-space sup norm. -/
 def frobeniusNorm {n : ℕ} (A : Mat n) : ℝ :=

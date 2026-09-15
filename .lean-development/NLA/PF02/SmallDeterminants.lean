@@ -204,9 +204,9 @@ lemma witness_coordinates_det (t : ℝ) : (witnessCoordinates t).det = 32 * t :=
   rw [witness_coordinates_lu, Matrix.det_mul,
     Matrix.det_of_isLowerTriangular _ witness_lower_triangular,
     Matrix.det_of_isUpperTriangular (witness_upper_triangular t)]
-  simp only [Fin.prod_univ_succ, Fin.prod_univ_zero, mul_one]
-  change ((1 * (1 * (1 * (1 * (1 * 1))))) : ℝ) *
-    ((4) * ((3) * ((8/3) * ((t) * ((1) * (1)))))) = 32 * t
+  simp only [Fin.prod_univ_succ, Fin.prod_univ_zero]
+  change ((1 * (1 * (1 * (1 * (1 * (1 * 1)))))) : ℝ) *
+    (4 * (3 * ((8/3) * (t * (1 * (1 * 1)))))) = 32 * t
   ring
 
 lemma witness_coordinates_exact :

@@ -1,30 +1,5 @@
 [
   {
-    "id": "MF-24",
-    "modules": [
-      "NLA.MF24.Definitions",
-      "NLA.MF24.Bridge",
-      "NLA.MF24.SpectralBridge",
-      "NLA.MF24.Dimensions",
-      "NLA.MF24.Powers",
-      "NLA.MF24.Polynomial",
-      "NLA.MF24.Words",
-      "NLA.MF24.Heights",
-      "NLA.MF24.Geometry",
-      "NLA.MF24.Weights",
-      "NLA.MF24.NormBasics",
-      "NLA.MF24.Numerator"
-    ],
-    "challenge": "Challenges/MF24.lean"
-  },
-  {
-    "id": "IE-04",
-    "modules": [
-      "NLA.IE04.Definitions"
-    ],
-    "challenge": "Challenges/IE04.lean"
-  },
-  {
     "id": "SP-04",
     "modules": [
       "NLA.SP04.Definitions"
@@ -32,10 +7,25 @@
     "challenge": "Challenges/SP04.lean"
   },
   {
+    "id": "IE-04",
+    "modules": [
+      "NLA.IE04.Pivot",
+      "NLA.IE04.GEPP",
+      "NLA.IE04.Scalars"
+    ],
+    "challenge": "Challenges/IE04.lean"
+  },
+  {
+    "id": "MF-24",
+    "modules": [
+      "NLA.MF24.Solution"
+    ],
+    "challenge": "Challenges/MF24.lean"
+  },
+  {
     "id": "PF-02",
     "modules": [
-      "NLA.PF02.SmallDeterminants",
-      "NLA.PF02.CongruenceDeterminant"
+      "NLA.PF02.Solution"
     ],
     "challenge": "Challenges/PF02.lean"
   }
