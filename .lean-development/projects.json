@@ -1,28 +1,19 @@
 [
   {
-    "id": "PF-02",
-    "modules": [
-      "NLA.PF02.Definitions",
-      "NLA.PF02.Algebra",
-      "NLA.PF02.Coordinates",
-      "NLA.PF02.FiniteEntries",
-      "NLA.PF02.SmallDeterminants",
-      "NLA.PF02.CongruenceReduction",
-      "NLA.PF02.Witness",
-      "NLA.PF02.CongruenceDeterminant",
-      "NLA.PF02.QuotientSeparation",
-      "NLA.PF02.Solution"
-    ],
-    "challenge": "Challenges/PF02.lean"
-  },
-  {
     "id": "MF-24",
     "modules": [
       "NLA.MF24.Definitions",
       "NLA.MF24.Bridge",
       "NLA.MF24.SpectralBridge",
       "NLA.MF24.Dimensions",
-      "NLA.MF24.Powers"
+      "NLA.MF24.Powers",
+      "NLA.MF24.Polynomial",
+      "NLA.MF24.Words",
+      "NLA.MF24.Heights",
+      "NLA.MF24.Geometry",
+      "NLA.MF24.Weights",
+      "NLA.MF24.NormBasics",
+      "NLA.MF24.Numerator"
     ],
     "challenge": "Challenges/MF24.lean"
   },
@@ -32,5 +23,20 @@
       "NLA.IE04.Definitions"
     ],
     "challenge": "Challenges/IE04.lean"
+  },
+  {
+    "id": "SP-04",
+    "modules": [
+      "NLA.SP04.Definitions"
+    ],
+    "challenge": "Challenges/SP04.lean"
+  },
+  {
+    "id": "PF-02",
+    "modules": [
+      "NLA.PF02.SmallDeterminants",
+      "NLA.PF02.CongruenceDeterminant"
+    ],
+    "challenge": "Challenges/PF02.lean"
   }
 ]

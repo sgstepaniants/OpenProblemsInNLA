@@ -46,7 +46,8 @@ theorem gram_singular_bridge (N : ℕ) (A B : Square N)
       hn (Matrix.toEuclideanLin B).isSymmetric_adjoint_comp_self hn).mpr hc
   intro j
   dsimp only [singularValue]
-  rw [LinearMap.singularValues_fin hn j, LinearMap.singularValues_fin hn j]
+  rw [(Matrix.toEuclideanLin A).singularValues_fin hn j,
+    (Matrix.toEuclideanLin B).singularValues_fin hn j]
   exact congrArg Real.sqrt (congrFun he j)
 
 lemma spectralNorm_nonneg {N : ℕ} (A : Square N) : 0 ≤ spectralNorm A :=

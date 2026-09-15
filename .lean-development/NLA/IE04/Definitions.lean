@@ -32,6 +32,12 @@ namespace NLA.IE04
 abbrev Mat (n : ℕ) := Matrix (Fin n) (Fin n) ℝ
 abbrev PivotPath (n : ℕ) := Fin n → Fin n
 
+/-- The standard nested product measurable space on the actual n² real entries.
+Matrix is a type synonym for the double function space; making this instance
+explicit does not change its measurable sets or the Gaussian product law. -/
+instance measurableSpaceMat (n : ℕ) : MeasurableSpace (Mat n) :=
+  (inferInstance : MeasurableSpace (Fin n → Fin n → ℝ))
+
 /-- The actual induced Euclidean matrix norm, fixed by L2Operator scope. -/
 def spectralNorm {n : ℕ} (A : Mat n) : ℝ := ‖A‖
 

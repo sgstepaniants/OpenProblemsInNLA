@@ -26,13 +26,223 @@ def congruencePolynomialMatrix (S : Mat 3) : Mat 6 :=
 lemma congruence_coordinate_entries (S : Mat 3) :
     congruenceCoordinateMatrix S = congruencePolynomialMatrix S := by
   ext i j
-  fin_cases i <;> fin_cases j <;>
-    simp only [congruenceCoordinateMatrix, congruencePolynomialMatrix,
-      symmetricCoordinates, symmetricCoordinateBasis, Matrix.mul_apply,
-      Matrix.transpose_apply, Fin.sum_univ_succ, Fin.sum_univ_zero, add_zero,
-      Matrix.cons_val_zero, Matrix.cons_val_one, Matrix.cons_val_succ,
-      vector_at_two, vector_at_three, vector_at_four, vector_at_five] <;>
-    norm_num <;> ring
+  fin_cases i <;> fin_cases j
+  · change ((S.transpose * symmetricCoordinateBasis 0) * S) 0 0 =
+      (S 0 0) ^ 2
+    simp only [Matrix.mul_apply, Matrix.transpose_apply,
+      Fin.sum_univ_succ, Fin.sum_univ_zero, add_zero]
+    change (((S 0 0 * 1 + (S 1 0 * 0 + S 2 0 * 0))) * S 0 0 + (((S 0 0 * 0 + (S 1 0 * 0 + S 2 0 * 0))) * S 1 0 + ((S 0 0 * 0 + (S 1 0 * 0 + S 2 0 * 0))) * S 2 0)) = (S 0 0) ^ 2
+    ring
+  · change ((S.transpose * symmetricCoordinateBasis 0) * S) 1 1 =
+      (S 0 1) ^ 2
+    simp only [Matrix.mul_apply, Matrix.transpose_apply,
+      Fin.sum_univ_succ, Fin.sum_univ_zero, add_zero]
+    change (((S 0 1 * 1 + (S 1 1 * 0 + S 2 1 * 0))) * S 0 1 + (((S 0 1 * 0 + (S 1 1 * 0 + S 2 1 * 0))) * S 1 1 + ((S 0 1 * 0 + (S 1 1 * 0 + S 2 1 * 0))) * S 2 1)) = (S 0 1) ^ 2
+    ring
+  · change ((S.transpose * symmetricCoordinateBasis 0) * S) 2 2 =
+      (S 0 2) ^ 2
+    simp only [Matrix.mul_apply, Matrix.transpose_apply,
+      Fin.sum_univ_succ, Fin.sum_univ_zero, add_zero]
+    change (((S 0 2 * 1 + (S 1 2 * 0 + S 2 2 * 0))) * S 0 2 + (((S 0 2 * 0 + (S 1 2 * 0 + S 2 2 * 0))) * S 1 2 + ((S 0 2 * 0 + (S 1 2 * 0 + S 2 2 * 0))) * S 2 2)) = (S 0 2) ^ 2
+    ring
+  · change ((S.transpose * symmetricCoordinateBasis 0) * S) 0 1 =
+      (S 0 0) * (S 0 1)
+    simp only [Matrix.mul_apply, Matrix.transpose_apply,
+      Fin.sum_univ_succ, Fin.sum_univ_zero, add_zero]
+    change (((S 0 0 * 1 + (S 1 0 * 0 + S 2 0 * 0))) * S 0 1 + (((S 0 0 * 0 + (S 1 0 * 0 + S 2 0 * 0))) * S 1 1 + ((S 0 0 * 0 + (S 1 0 * 0 + S 2 0 * 0))) * S 2 1)) = (S 0 0) * (S 0 1)
+    ring
+  · change ((S.transpose * symmetricCoordinateBasis 0) * S) 0 2 =
+      (S 0 0) * (S 0 2)
+    simp only [Matrix.mul_apply, Matrix.transpose_apply,
+      Fin.sum_univ_succ, Fin.sum_univ_zero, add_zero]
+    change (((S 0 0 * 1 + (S 1 0 * 0 + S 2 0 * 0))) * S 0 2 + (((S 0 0 * 0 + (S 1 0 * 0 + S 2 0 * 0))) * S 1 2 + ((S 0 0 * 0 + (S 1 0 * 0 + S 2 0 * 0))) * S 2 2)) = (S 0 0) * (S 0 2)
+    ring
+  · change ((S.transpose * symmetricCoordinateBasis 0) * S) 1 2 =
+      (S 0 1) * (S 0 2)
+    simp only [Matrix.mul_apply, Matrix.transpose_apply,
+      Fin.sum_univ_succ, Fin.sum_univ_zero, add_zero]
+    change (((S 0 1 * 1 + (S 1 1 * 0 + S 2 1 * 0))) * S 0 2 + (((S 0 1 * 0 + (S 1 1 * 0 + S 2 1 * 0))) * S 1 2 + ((S 0 1 * 0 + (S 1 1 * 0 + S 2 1 * 0))) * S 2 2)) = (S 0 1) * (S 0 2)
+    ring
+  · change ((S.transpose * symmetricCoordinateBasis 1) * S) 0 0 =
+      (S 1 0) ^ 2
+    simp only [Matrix.mul_apply, Matrix.transpose_apply,
+      Fin.sum_univ_succ, Fin.sum_univ_zero, add_zero]
+    change (((S 0 0 * 0 + (S 1 0 * 0 + S 2 0 * 0))) * S 0 0 + (((S 0 0 * 0 + (S 1 0 * 1 + S 2 0 * 0))) * S 1 0 + ((S 0 0 * 0 + (S 1 0 * 0 + S 2 0 * 0))) * S 2 0)) = (S 1 0) ^ 2
+    ring
+  · change ((S.transpose * symmetricCoordinateBasis 1) * S) 1 1 =
+      (S 1 1) ^ 2
+    simp only [Matrix.mul_apply, Matrix.transpose_apply,
+      Fin.sum_univ_succ, Fin.sum_univ_zero, add_zero]
+    change (((S 0 1 * 0 + (S 1 1 * 0 + S 2 1 * 0))) * S 0 1 + (((S 0 1 * 0 + (S 1 1 * 1 + S 2 1 * 0))) * S 1 1 + ((S 0 1 * 0 + (S 1 1 * 0 + S 2 1 * 0))) * S 2 1)) = (S 1 1) ^ 2
+    ring
+  · change ((S.transpose * symmetricCoordinateBasis 1) * S) 2 2 =
+      (S 1 2) ^ 2
+    simp only [Matrix.mul_apply, Matrix.transpose_apply,
+      Fin.sum_univ_succ, Fin.sum_univ_zero, add_zero]
+    change (((S 0 2 * 0 + (S 1 2 * 0 + S 2 2 * 0))) * S 0 2 + (((S 0 2 * 0 + (S 1 2 * 1 + S 2 2 * 0))) * S 1 2 + ((S 0 2 * 0 + (S 1 2 * 0 + S 2 2 * 0))) * S 2 2)) = (S 1 2) ^ 2
+    ring
+  · change ((S.transpose * symmetricCoordinateBasis 1) * S) 0 1 =
+      (S 1 0) * (S 1 1)
+    simp only [Matrix.mul_apply, Matrix.transpose_apply,
+      Fin.sum_univ_succ, Fin.sum_univ_zero, add_zero]
+    change (((S 0 0 * 0 + (S 1 0 * 0 + S 2 0 * 0))) * S 0 1 + (((S 0 0 * 0 + (S 1 0 * 1 + S 2 0 * 0))) * S 1 1 + ((S 0 0 * 0 + (S 1 0 * 0 + S 2 0 * 0))) * S 2 1)) = (S 1 0) * (S 1 1)
+    ring
+  · change ((S.transpose * symmetricCoordinateBasis 1) * S) 0 2 =
+      (S 1 0) * (S 1 2)
+    simp only [Matrix.mul_apply, Matrix.transpose_apply,
+      Fin.sum_univ_succ, Fin.sum_univ_zero, add_zero]
+    change (((S 0 0 * 0 + (S 1 0 * 0 + S 2 0 * 0))) * S 0 2 + (((S 0 0 * 0 + (S 1 0 * 1 + S 2 0 * 0))) * S 1 2 + ((S 0 0 * 0 + (S 1 0 * 0 + S 2 0 * 0))) * S 2 2)) = (S 1 0) * (S 1 2)
+    ring
+  · change ((S.transpose * symmetricCoordinateBasis 1) * S) 1 2 =
+      (S 1 1) * (S 1 2)
+    simp only [Matrix.mul_apply, Matrix.transpose_apply,
+      Fin.sum_univ_succ, Fin.sum_univ_zero, add_zero]
+    change (((S 0 1 * 0 + (S 1 1 * 0 + S 2 1 * 0))) * S 0 2 + (((S 0 1 * 0 + (S 1 1 * 1 + S 2 1 * 0))) * S 1 2 + ((S 0 1 * 0 + (S 1 1 * 0 + S 2 1 * 0))) * S 2 2)) = (S 1 1) * (S 1 2)
+    ring
+  · change ((S.transpose * symmetricCoordinateBasis 2) * S) 0 0 =
+      (S 2 0) ^ 2
+    simp only [Matrix.mul_apply, Matrix.transpose_apply,
+      Fin.sum_univ_succ, Fin.sum_univ_zero, add_zero]
+    change (((S 0 0 * 0 + (S 1 0 * 0 + S 2 0 * 0))) * S 0 0 + (((S 0 0 * 0 + (S 1 0 * 0 + S 2 0 * 0))) * S 1 0 + ((S 0 0 * 0 + (S 1 0 * 0 + S 2 0 * 1))) * S 2 0)) = (S 2 0) ^ 2
+    ring
+  · change ((S.transpose * symmetricCoordinateBasis 2) * S) 1 1 =
+      (S 2 1) ^ 2
+    simp only [Matrix.mul_apply, Matrix.transpose_apply,
+      Fin.sum_univ_succ, Fin.sum_univ_zero, add_zero]
+    change (((S 0 1 * 0 + (S 1 1 * 0 + S 2 1 * 0))) * S 0 1 + (((S 0 1 * 0 + (S 1 1 * 0 + S 2 1 * 0))) * S 1 1 + ((S 0 1 * 0 + (S 1 1 * 0 + S 2 1 * 1))) * S 2 1)) = (S 2 1) ^ 2
+    ring
+  · change ((S.transpose * symmetricCoordinateBasis 2) * S) 2 2 =
+      (S 2 2) ^ 2
+    simp only [Matrix.mul_apply, Matrix.transpose_apply,
+      Fin.sum_univ_succ, Fin.sum_univ_zero, add_zero]
+    change (((S 0 2 * 0 + (S 1 2 * 0 + S 2 2 * 0))) * S 0 2 + (((S 0 2 * 0 + (S 1 2 * 0 + S 2 2 * 0))) * S 1 2 + ((S 0 2 * 0 + (S 1 2 * 0 + S 2 2 * 1))) * S 2 2)) = (S 2 2) ^ 2
+    ring
+  · change ((S.transpose * symmetricCoordinateBasis 2) * S) 0 1 =
+      (S 2 0) * (S 2 1)
+    simp only [Matrix.mul_apply, Matrix.transpose_apply,
+      Fin.sum_univ_succ, Fin.sum_univ_zero, add_zero]
+    change (((S 0 0 * 0 + (S 1 0 * 0 + S 2 0 * 0))) * S 0 1 + (((S 0 0 * 0 + (S 1 0 * 0 + S 2 0 * 0))) * S 1 1 + ((S 0 0 * 0 + (S 1 0 * 0 + S 2 0 * 1))) * S 2 1)) = (S 2 0) * (S 2 1)
+    ring
+  · change ((S.transpose * symmetricCoordinateBasis 2) * S) 0 2 =
+      (S 2 0) * (S 2 2)
+    simp only [Matrix.mul_apply, Matrix.transpose_apply,
+      Fin.sum_univ_succ, Fin.sum_univ_zero, add_zero]
+    change (((S 0 0 * 0 + (S 1 0 * 0 + S 2 0 * 0))) * S 0 2 + (((S 0 0 * 0 + (S 1 0 * 0 + S 2 0 * 0))) * S 1 2 + ((S 0 0 * 0 + (S 1 0 * 0 + S 2 0 * 1))) * S 2 2)) = (S 2 0) * (S 2 2)
+    ring
+  · change ((S.transpose * symmetricCoordinateBasis 2) * S) 1 2 =
+      (S 2 1) * (S 2 2)
+    simp only [Matrix.mul_apply, Matrix.transpose_apply,
+      Fin.sum_univ_succ, Fin.sum_univ_zero, add_zero]
+    change (((S 0 1 * 0 + (S 1 1 * 0 + S 2 1 * 0))) * S 0 2 + (((S 0 1 * 0 + (S 1 1 * 0 + S 2 1 * 0))) * S 1 2 + ((S 0 1 * 0 + (S 1 1 * 0 + S 2 1 * 1))) * S 2 2)) = (S 2 1) * (S 2 2)
+    ring
+  · change ((S.transpose * symmetricCoordinateBasis 3) * S) 0 0 =
+      2 * (S 0 0) * (S 1 0)
+    simp only [Matrix.mul_apply, Matrix.transpose_apply,
+      Fin.sum_univ_succ, Fin.sum_univ_zero, add_zero]
+    change (((S 0 0 * 0 + (S 1 0 * 1 + S 2 0 * 0))) * S 0 0 + (((S 0 0 * 1 + (S 1 0 * 0 + S 2 0 * 0))) * S 1 0 + ((S 0 0 * 0 + (S 1 0 * 0 + S 2 0 * 0))) * S 2 0)) = 2 * (S 0 0) * (S 1 0)
+    ring
+  · change ((S.transpose * symmetricCoordinateBasis 3) * S) 1 1 =
+      2 * (S 0 1) * (S 1 1)
+    simp only [Matrix.mul_apply, Matrix.transpose_apply,
+      Fin.sum_univ_succ, Fin.sum_univ_zero, add_zero]
+    change (((S 0 1 * 0 + (S 1 1 * 1 + S 2 1 * 0))) * S 0 1 + (((S 0 1 * 1 + (S 1 1 * 0 + S 2 1 * 0))) * S 1 1 + ((S 0 1 * 0 + (S 1 1 * 0 + S 2 1 * 0))) * S 2 1)) = 2 * (S 0 1) * (S 1 1)
+    ring
+  · change ((S.transpose * symmetricCoordinateBasis 3) * S) 2 2 =
+      2 * (S 0 2) * (S 1 2)
+    simp only [Matrix.mul_apply, Matrix.transpose_apply,
+      Fin.sum_univ_succ, Fin.sum_univ_zero, add_zero]
+    change (((S 0 2 * 0 + (S 1 2 * 1 + S 2 2 * 0))) * S 0 2 + (((S 0 2 * 1 + (S 1 2 * 0 + S 2 2 * 0))) * S 1 2 + ((S 0 2 * 0 + (S 1 2 * 0 + S 2 2 * 0))) * S 2 2)) = 2 * (S 0 2) * (S 1 2)
+    ring
+  · change ((S.transpose * symmetricCoordinateBasis 3) * S) 0 1 =
+      (S 0 0) * (S 1 1) + (S 0 1) * (S 1 0)
+    simp only [Matrix.mul_apply, Matrix.transpose_apply,
+      Fin.sum_univ_succ, Fin.sum_univ_zero, add_zero]
+    change (((S 0 0 * 0 + (S 1 0 * 1 + S 2 0 * 0))) * S 0 1 + (((S 0 0 * 1 + (S 1 0 * 0 + S 2 0 * 0))) * S 1 1 + ((S 0 0 * 0 + (S 1 0 * 0 + S 2 0 * 0))) * S 2 1)) = (S 0 0) * (S 1 1) + (S 0 1) * (S 1 0)
+    ring
+  · change ((S.transpose * symmetricCoordinateBasis 3) * S) 0 2 =
+      (S 0 0) * (S 1 2) + (S 0 2) * (S 1 0)
+    simp only [Matrix.mul_apply, Matrix.transpose_apply,
+      Fin.sum_univ_succ, Fin.sum_univ_zero, add_zero]
+    change (((S 0 0 * 0 + (S 1 0 * 1 + S 2 0 * 0))) * S 0 2 + (((S 0 0 * 1 + (S 1 0 * 0 + S 2 0 * 0))) * S 1 2 + ((S 0 0 * 0 + (S 1 0 * 0 + S 2 0 * 0))) * S 2 2)) = (S 0 0) * (S 1 2) + (S 0 2) * (S 1 0)
+    ring
+  · change ((S.transpose * symmetricCoordinateBasis 3) * S) 1 2 =
+      (S 0 1) * (S 1 2) + (S 0 2) * (S 1 1)
+    simp only [Matrix.mul_apply, Matrix.transpose_apply,
+      Fin.sum_univ_succ, Fin.sum_univ_zero, add_zero]
+    change (((S 0 1 * 0 + (S 1 1 * 1 + S 2 1 * 0))) * S 0 2 + (((S 0 1 * 1 + (S 1 1 * 0 + S 2 1 * 0))) * S 1 2 + ((S 0 1 * 0 + (S 1 1 * 0 + S 2 1 * 0))) * S 2 2)) = (S 0 1) * (S 1 2) + (S 0 2) * (S 1 1)
+    ring
+  · change ((S.transpose * symmetricCoordinateBasis 4) * S) 0 0 =
+      2 * (S 0 0) * (S 2 0)
+    simp only [Matrix.mul_apply, Matrix.transpose_apply,
+      Fin.sum_univ_succ, Fin.sum_univ_zero, add_zero]
+    change (((S 0 0 * 0 + (S 1 0 * 0 + S 2 0 * 1))) * S 0 0 + (((S 0 0 * 0 + (S 1 0 * 0 + S 2 0 * 0))) * S 1 0 + ((S 0 0 * 1 + (S 1 0 * 0 + S 2 0 * 0))) * S 2 0)) = 2 * (S 0 0) * (S 2 0)
+    ring
+  · change ((S.transpose * symmetricCoordinateBasis 4) * S) 1 1 =
+      2 * (S 0 1) * (S 2 1)
+    simp only [Matrix.mul_apply, Matrix.transpose_apply,
+      Fin.sum_univ_succ, Fin.sum_univ_zero, add_zero]
+    change (((S 0 1 * 0 + (S 1 1 * 0 + S 2 1 * 1))) * S 0 1 + (((S 0 1 * 0 + (S 1 1 * 0 + S 2 1 * 0))) * S 1 1 + ((S 0 1 * 1 + (S 1 1 * 0 + S 2 1 * 0))) * S 2 1)) = 2 * (S 0 1) * (S 2 1)
+    ring
+  · change ((S.transpose * symmetricCoordinateBasis 4) * S) 2 2 =
+      2 * (S 0 2) * (S 2 2)
+    simp only [Matrix.mul_apply, Matrix.transpose_apply,
+      Fin.sum_univ_succ, Fin.sum_univ_zero, add_zero]
+    change (((S 0 2 * 0 + (S 1 2 * 0 + S 2 2 * 1))) * S 0 2 + (((S 0 2 * 0 + (S 1 2 * 0 + S 2 2 * 0))) * S 1 2 + ((S 0 2 * 1 + (S 1 2 * 0 + S 2 2 * 0))) * S 2 2)) = 2 * (S 0 2) * (S 2 2)
+    ring
+  · change ((S.transpose * symmetricCoordinateBasis 4) * S) 0 1 =
+      (S 0 0) * (S 2 1) + (S 0 1) * (S 2 0)
+    simp only [Matrix.mul_apply, Matrix.transpose_apply,
+      Fin.sum_univ_succ, Fin.sum_univ_zero, add_zero]
+    change (((S 0 0 * 0 + (S 1 0 * 0 + S 2 0 * 1))) * S 0 1 + (((S 0 0 * 0 + (S 1 0 * 0 + S 2 0 * 0))) * S 1 1 + ((S 0 0 * 1 + (S 1 0 * 0 + S 2 0 * 0))) * S 2 1)) = (S 0 0) * (S 2 1) + (S 0 1) * (S 2 0)
+    ring
+  · change ((S.transpose * symmetricCoordinateBasis 4) * S) 0 2 =
+      (S 0 0) * (S 2 2) + (S 0 2) * (S 2 0)
+    simp only [Matrix.mul_apply, Matrix.transpose_apply,
+      Fin.sum_univ_succ, Fin.sum_univ_zero, add_zero]
+    change (((S 0 0 * 0 + (S 1 0 * 0 + S 2 0 * 1))) * S 0 2 + (((S 0 0 * 0 + (S 1 0 * 0 + S 2 0 * 0))) * S 1 2 + ((S 0 0 * 1 + (S 1 0 * 0 + S 2 0 * 0))) * S 2 2)) = (S 0 0) * (S 2 2) + (S 0 2) * (S 2 0)
+    ring
+  · change ((S.transpose * symmetricCoordinateBasis 4) * S) 1 2 =
+      (S 0 1) * (S 2 2) + (S 0 2) * (S 2 1)
+    simp only [Matrix.mul_apply, Matrix.transpose_apply,
+      Fin.sum_univ_succ, Fin.sum_univ_zero, add_zero]
+    change (((S 0 1 * 0 + (S 1 1 * 0 + S 2 1 * 1))) * S 0 2 + (((S 0 1 * 0 + (S 1 1 * 0 + S 2 1 * 0))) * S 1 2 + ((S 0 1 * 1 + (S 1 1 * 0 + S 2 1 * 0))) * S 2 2)) = (S 0 1) * (S 2 2) + (S 0 2) * (S 2 1)
+    ring
+  · change ((S.transpose * symmetricCoordinateBasis 5) * S) 0 0 =
+      2 * (S 1 0) * (S 2 0)
+    simp only [Matrix.mul_apply, Matrix.transpose_apply,
+      Fin.sum_univ_succ, Fin.sum_univ_zero, add_zero]
+    change (((S 0 0 * 0 + (S 1 0 * 0 + S 2 0 * 0))) * S 0 0 + (((S 0 0 * 0 + (S 1 0 * 0 + S 2 0 * 1))) * S 1 0 + ((S 0 0 * 0 + (S 1 0 * 1 + S 2 0 * 0))) * S 2 0)) = 2 * (S 1 0) * (S 2 0)
+    ring
+  · change ((S.transpose * symmetricCoordinateBasis 5) * S) 1 1 =
+      2 * (S 1 1) * (S 2 1)
+    simp only [Matrix.mul_apply, Matrix.transpose_apply,
+      Fin.sum_univ_succ, Fin.sum_univ_zero, add_zero]
+    change (((S 0 1 * 0 + (S 1 1 * 0 + S 2 1 * 0))) * S 0 1 + (((S 0 1 * 0 + (S 1 1 * 0 + S 2 1 * 1))) * S 1 1 + ((S 0 1 * 0 + (S 1 1 * 1 + S 2 1 * 0))) * S 2 1)) = 2 * (S 1 1) * (S 2 1)
+    ring
+  · change ((S.transpose * symmetricCoordinateBasis 5) * S) 2 2 =
+      2 * (S 1 2) * (S 2 2)
+    simp only [Matrix.mul_apply, Matrix.transpose_apply,
+      Fin.sum_univ_succ, Fin.sum_univ_zero, add_zero]
+    change (((S 0 2 * 0 + (S 1 2 * 0 + S 2 2 * 0))) * S 0 2 + (((S 0 2 * 0 + (S 1 2 * 0 + S 2 2 * 1))) * S 1 2 + ((S 0 2 * 0 + (S 1 2 * 1 + S 2 2 * 0))) * S 2 2)) = 2 * (S 1 2) * (S 2 2)
+    ring
+  · change ((S.transpose * symmetricCoordinateBasis 5) * S) 0 1 =
+      (S 1 0) * (S 2 1) + (S 1 1) * (S 2 0)
+    simp only [Matrix.mul_apply, Matrix.transpose_apply,
+      Fin.sum_univ_succ, Fin.sum_univ_zero, add_zero]
+    change (((S 0 0 * 0 + (S 1 0 * 0 + S 2 0 * 0))) * S 0 1 + (((S 0 0 * 0 + (S 1 0 * 0 + S 2 0 * 1))) * S 1 1 + ((S 0 0 * 0 + (S 1 0 * 1 + S 2 0 * 0))) * S 2 1)) = (S 1 0) * (S 2 1) + (S 1 1) * (S 2 0)
+    ring
+  · change ((S.transpose * symmetricCoordinateBasis 5) * S) 0 2 =
+      (S 1 0) * (S 2 2) + (S 1 2) * (S 2 0)
+    simp only [Matrix.mul_apply, Matrix.transpose_apply,
+      Fin.sum_univ_succ, Fin.sum_univ_zero, add_zero]
+    change (((S 0 0 * 0 + (S 1 0 * 0 + S 2 0 * 0))) * S 0 2 + (((S 0 0 * 0 + (S 1 0 * 0 + S 2 0 * 1))) * S 1 2 + ((S 0 0 * 0 + (S 1 0 * 1 + S 2 0 * 0))) * S 2 2)) = (S 1 0) * (S 2 2) + (S 1 2) * (S 2 0)
+    ring
+  · change ((S.transpose * symmetricCoordinateBasis 5) * S) 1 2 =
+      (S 1 1) * (S 2 2) + (S 1 2) * (S 2 1)
+    simp only [Matrix.mul_apply, Matrix.transpose_apply,
+      Fin.sum_univ_succ, Fin.sum_univ_zero, add_zero]
+    change (((S 0 1 * 0 + (S 1 1 * 0 + S 2 1 * 0))) * S 0 2 + (((S 0 1 * 0 + (S 1 1 * 0 + S 2 1 * 1))) * S 1 2 + ((S 0 1 * 0 + (S 1 1 * 1 + S 2 1 * 0))) * S 2 2)) = (S 1 1) * (S 2 2) + (S 1 2) * (S 2 1)
+    ring
 
 private lemma coordinate_basis_symmetric (i : Fin 6) :
     (symmetricCoordinateBasis i).IsSymm := by

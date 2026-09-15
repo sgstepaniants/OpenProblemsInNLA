@@ -22,15 +22,83 @@ private lemma congruence_diagonal_det (d : Fin 3 → ℝ) :
         d 0 * d 1, d 0 * d 2, d 1 * d 2] : Fin 6 → ℝ) := by
     rw [congruence_coordinate_entries]
     ext i j
-    fin_cases i <;> fin_cases j <;>
-      simp only [congruencePolynomialMatrix, Matrix.diagonal_apply,
-        Matrix.cons_val_zero, Matrix.cons_val_one, Matrix.cons_val_succ,
-        vector_at_two, vector_at_three, vector_at_four, vector_at_five] <;>
-      norm_num <;> ring
+    fin_cases i <;> fin_cases j
+    · change ((d 0) ^ 2 : ℝ) = d 0 ^ 2
+      ring
+    · change ((0) ^ 2 : ℝ) = 0
+      ring
+    · change ((0) ^ 2 : ℝ) = 0
+      ring
+    · change ((d 0) * (0) : ℝ) = 0
+      ring
+    · change ((d 0) * (0) : ℝ) = 0
+      ring
+    · change ((0) * (0) : ℝ) = 0
+      ring
+    · change ((0) ^ 2 : ℝ) = 0
+      ring
+    · change ((d 1) ^ 2 : ℝ) = d 1 ^ 2
+      ring
+    · change ((0) ^ 2 : ℝ) = 0
+      ring
+    · change ((0) * (d 1) : ℝ) = 0
+      ring
+    · change ((0) * (0) : ℝ) = 0
+      ring
+    · change ((d 1) * (0) : ℝ) = 0
+      ring
+    · change ((0) ^ 2 : ℝ) = 0
+      ring
+    · change ((0) ^ 2 : ℝ) = 0
+      ring
+    · change ((d 2) ^ 2 : ℝ) = d 2 ^ 2
+      ring
+    · change ((0) * (0) : ℝ) = 0
+      ring
+    · change ((0) * (d 2) : ℝ) = 0
+      ring
+    · change ((0) * (d 2) : ℝ) = 0
+      ring
+    · change (2 * (d 0) * (0) : ℝ) = 0
+      ring
+    · change (2 * (0) * (d 1) : ℝ) = 0
+      ring
+    · change (2 * (0) * (0) : ℝ) = 0
+      ring
+    · change ((d 0) * (d 1) + (0) * (0) : ℝ) = d 0 * d 1
+      ring
+    · change ((d 0) * (0) + (0) * (0) : ℝ) = 0
+      ring
+    · change ((0) * (0) + (0) * (d 1) : ℝ) = 0
+      ring
+    · change (2 * (d 0) * (0) : ℝ) = 0
+      ring
+    · change (2 * (0) * (0) : ℝ) = 0
+      ring
+    · change (2 * (0) * (d 2) : ℝ) = 0
+      ring
+    · change ((d 0) * (0) + (0) * (0) : ℝ) = 0
+      ring
+    · change ((d 0) * (d 2) + (0) * (0) : ℝ) = d 0 * d 2
+      ring
+    · change ((0) * (d 2) + (0) * (0) : ℝ) = 0
+      ring
+    · change (2 * (0) * (0) : ℝ) = 0
+      ring
+    · change (2 * (d 1) * (0) : ℝ) = 0
+      ring
+    · change (2 * (0) * (d 2) : ℝ) = 0
+      ring
+    · change ((0) * (0) + (d 1) * (0) : ℝ) = 0
+      ring
+    · change ((0) * (d 2) + (0) * (0) : ℝ) = 0
+      ring
+    · change ((d 1) * (d 2) + (0) * (0) : ℝ) = d 1 * d 2
+      ring
   rw [hd, Matrix.det_diagonal, Matrix.det_diagonal]
-  simp only [Fin.prod_univ_succ, Fin.prod_univ_zero, mul_one,
-    Matrix.cons_val_zero, Matrix.cons_val_one, Matrix.cons_val_succ,
-    vector_at_two, vector_at_three, vector_at_four, vector_at_five]
+  simp only [Fin.prod_univ_succ, Fin.prod_univ_zero, mul_one]
+  change (d 0 ^ 2 * (d 1 ^ 2 * (d 2 ^ 2 *
+    (d 0 * d 1 * (d 0 * d 2 * (d 1 * d 2)))))) = (d 0 * (d 1 * d 2)) ^ 4
   ring
 
 /-- Reordering both coordinate axes preserves the determinant. -/
@@ -49,22 +117,73 @@ private lemma congruence_transvection_01_det (c : ℝ) :
   rw [congruence_coordinate_entries]
   apply det_one_of_reordered_triangular _ order01
   · intro a b hab
-    change b < a at hab
-    fin_cases a <;> fin_cases b <;> try omega
-    all_goals
-      simp only [Matrix.submatrix_apply, order01, Equiv.ofBijective,
-        congruencePolynomialMatrix, Matrix.cons_val_zero, Matrix.cons_val_one,
-        Matrix.cons_val_succ, vector_at_two, vector_at_three,
-        vector_at_four, vector_at_five] <;>
-      norm_num [Matrix.transvection, Matrix.add_apply,
-        Matrix.one_apply, Matrix.single_apply] <;> ring
+    change b.val < a.val at hab
+    fin_cases a <;> fin_cases b
+    · exact False.elim ((by decide : ¬ ((0 : ℕ) < 0)) hab)
+    · exact False.elim ((by decide : ¬ ((1 : ℕ) < 0)) hab)
+    · exact False.elim ((by decide : ¬ ((2 : ℕ) < 0)) hab)
+    · exact False.elim ((by decide : ¬ ((3 : ℕ) < 0)) hab)
+    · exact False.elim ((by decide : ¬ ((4 : ℕ) < 0)) hab)
+    · exact False.elim ((by decide : ¬ ((5 : ℕ) < 0)) hab)
+    · change (2 * ((1 + 0)) * ((0 + 0)) : ℝ) = 0
+      ring
+    · exact False.elim ((by decide : ¬ ((1 : ℕ) < 1)) hab)
+    · exact False.elim ((by decide : ¬ ((2 : ℕ) < 1)) hab)
+    · exact False.elim ((by decide : ¬ ((3 : ℕ) < 1)) hab)
+    · exact False.elim ((by decide : ¬ ((4 : ℕ) < 1)) hab)
+    · exact False.elim ((by decide : ¬ ((5 : ℕ) < 1)) hab)
+    · change (((0 + 0)) ^ 2 : ℝ) = 0
+      ring
+    · change (((0 + 0)) * ((1 + 0)) : ℝ) = 0
+      ring
+    · exact False.elim ((by decide : ¬ ((2 : ℕ) < 2)) hab)
+    · exact False.elim ((by decide : ¬ ((3 : ℕ) < 2)) hab)
+    · exact False.elim ((by decide : ¬ ((4 : ℕ) < 2)) hab)
+    · exact False.elim ((by decide : ¬ ((5 : ℕ) < 2)) hab)
+    · change (2 * ((1 + 0)) * ((0 + 0)) : ℝ) = 0
+      ring
+    · change (((1 + 0)) * ((0 + 0)) + ((0 + c)) * ((0 + 0)) : ℝ) = 0
+      ring
+    · change (2 * ((0 + c)) * ((0 + 0)) : ℝ) = 0
+      ring
+    · exact False.elim ((by decide : ¬ ((3 : ℕ) < 3)) hab)
+    · exact False.elim ((by decide : ¬ ((4 : ℕ) < 3)) hab)
+    · exact False.elim ((by decide : ¬ ((5 : ℕ) < 3)) hab)
+    · change (2 * ((0 + 0)) * ((0 + 0)) : ℝ) = 0
+      ring
+    · change (((0 + 0)) * ((0 + 0)) + ((1 + 0)) * ((0 + 0)) : ℝ) = 0
+      ring
+    · change (2 * ((1 + 0)) * ((0 + 0)) : ℝ) = 0
+      ring
+    · change (((0 + 0)) * ((1 + 0)) + ((0 + 0)) * ((0 + 0)) : ℝ) = 0
+      ring
+    · exact False.elim ((by decide : ¬ ((4 : ℕ) < 4)) hab)
+    · exact False.elim ((by decide : ¬ ((5 : ℕ) < 4)) hab)
+    · change (((0 + 0)) ^ 2 : ℝ) = 0
+      ring
+    · change (((0 + 0)) * ((0 + 0)) : ℝ) = 0
+      ring
+    · change (((0 + 0)) ^ 2 : ℝ) = 0
+      ring
+    · change (((0 + 0)) * ((1 + 0)) : ℝ) = 0
+      ring
+    · change (((0 + 0)) * ((1 + 0)) : ℝ) = 0
+      ring
+    · exact False.elim ((by decide : ¬ ((5 : ℕ) < 5)) hab)
   · intro a
-    fin_cases a <;>
-      simp only [congruencePolynomialMatrix, Matrix.cons_val_zero,
-        Matrix.cons_val_one, Matrix.cons_val_succ, vector_at_two,
-        vector_at_three, vector_at_four, vector_at_five] <;>
-      norm_num [Matrix.transvection, Matrix.add_apply,
-        Matrix.one_apply, Matrix.single_apply] <;> ring
+    fin_cases a
+    · change (((1 + 0)) ^ 2 : ℝ) = 1
+      ring
+    · change (((1 + 0)) ^ 2 : ℝ) = 1
+      ring
+    · change (((1 + 0)) ^ 2 : ℝ) = 1
+      ring
+    · change (((1 + 0)) * ((1 + 0)) + ((0 + c)) * ((0 + 0)) : ℝ) = 1
+      ring
+    · change (((1 + 0)) * ((1 + 0)) + ((0 + 0)) * ((0 + 0)) : ℝ) = 1
+      ring
+    · change (((1 + 0)) * ((1 + 0)) + ((0 + 0)) * ((0 + 0)) : ℝ) = 1
+      ring
 
 /-- A topological order of the sparse coordinate arrows for E_{10}. -/
 private def order10 : Equiv.Perm (Fin 6) :=
@@ -75,22 +194,73 @@ private lemma congruence_transvection_10_det (c : ℝ) :
   rw [congruence_coordinate_entries]
   apply det_one_of_reordered_triangular _ order10
   · intro a b hab
-    change b < a at hab
-    fin_cases a <;> fin_cases b <;> try omega
-    all_goals
-      simp only [Matrix.submatrix_apply, order10, Equiv.ofBijective,
-        congruencePolynomialMatrix, Matrix.cons_val_zero, Matrix.cons_val_one,
-        Matrix.cons_val_succ, vector_at_two, vector_at_three,
-        vector_at_four, vector_at_five] <;>
-      norm_num [Matrix.transvection, Matrix.add_apply,
-        Matrix.one_apply, Matrix.single_apply] <;> ring
+    change b.val < a.val at hab
+    fin_cases a <;> fin_cases b
+    · exact False.elim ((by decide : ¬ ((0 : ℕ) < 0)) hab)
+    · exact False.elim ((by decide : ¬ ((1 : ℕ) < 0)) hab)
+    · exact False.elim ((by decide : ¬ ((2 : ℕ) < 0)) hab)
+    · exact False.elim ((by decide : ¬ ((3 : ℕ) < 0)) hab)
+    · exact False.elim ((by decide : ¬ ((4 : ℕ) < 0)) hab)
+    · exact False.elim ((by decide : ¬ ((5 : ℕ) < 0)) hab)
+    · change (2 * ((0 + 0)) * ((1 + 0)) : ℝ) = 0
+      ring
+    · exact False.elim ((by decide : ¬ ((1 : ℕ) < 1)) hab)
+    · exact False.elim ((by decide : ¬ ((2 : ℕ) < 1)) hab)
+    · exact False.elim ((by decide : ¬ ((3 : ℕ) < 1)) hab)
+    · exact False.elim ((by decide : ¬ ((4 : ℕ) < 1)) hab)
+    · exact False.elim ((by decide : ¬ ((5 : ℕ) < 1)) hab)
+    · change (2 * ((0 + 0)) * ((1 + 0)) : ℝ) = 0
+      ring
+    · change (((0 + 0)) * ((1 + 0)) + ((0 + 0)) * ((0 + 0)) : ℝ) = 0
+      ring
+    · exact False.elim ((by decide : ¬ ((2 : ℕ) < 2)) hab)
+    · exact False.elim ((by decide : ¬ ((3 : ℕ) < 2)) hab)
+    · exact False.elim ((by decide : ¬ ((4 : ℕ) < 2)) hab)
+    · exact False.elim ((by decide : ¬ ((5 : ℕ) < 2)) hab)
+    · change (((0 + 0)) ^ 2 : ℝ) = 0
+      ring
+    · change (((1 + 0)) * ((0 + 0)) : ℝ) = 0
+      ring
+    · change (((0 + c)) * ((0 + 0)) : ℝ) = 0
+      ring
+    · exact False.elim ((by decide : ¬ ((3 : ℕ) < 3)) hab)
+    · exact False.elim ((by decide : ¬ ((4 : ℕ) < 3)) hab)
+    · exact False.elim ((by decide : ¬ ((5 : ℕ) < 3)) hab)
+    · change (2 * ((0 + 0)) * ((0 + 0)) : ℝ) = 0
+      ring
+    · change (((0 + 0)) * ((0 + 0)) + ((0 + 0)) * ((1 + 0)) : ℝ) = 0
+      ring
+    · change (((1 + 0)) * ((0 + 0)) + ((0 + 0)) * ((0 + c)) : ℝ) = 0
+      ring
+    · change (2 * ((0 + 0)) * ((1 + 0)) : ℝ) = 0
+      ring
+    · exact False.elim ((by decide : ¬ ((4 : ℕ) < 4)) hab)
+    · exact False.elim ((by decide : ¬ ((5 : ℕ) < 4)) hab)
+    · change (((0 + 0)) ^ 2 : ℝ) = 0
+      ring
+    · change (((0 + 0)) * ((0 + 0)) : ℝ) = 0
+      ring
+    · change (((1 + 0)) * ((0 + 0)) : ℝ) = 0
+      ring
+    · change (((0 + 0)) ^ 2 : ℝ) = 0
+      ring
+    · change (((1 + 0)) * ((0 + 0)) : ℝ) = 0
+      ring
+    · exact False.elim ((by decide : ¬ ((5 : ℕ) < 5)) hab)
   · intro a
-    fin_cases a <;>
-      simp only [congruencePolynomialMatrix, Matrix.cons_val_zero,
-        Matrix.cons_val_one, Matrix.cons_val_succ, vector_at_two,
-        vector_at_three, vector_at_four, vector_at_five] <;>
-      norm_num [Matrix.transvection, Matrix.add_apply,
-        Matrix.one_apply, Matrix.single_apply] <;> ring
+    fin_cases a
+    · change (((1 + 0)) ^ 2 : ℝ) = 1
+      ring
+    · change (((1 + 0)) ^ 2 : ℝ) = 1
+      ring
+    · change (((1 + 0)) ^ 2 : ℝ) = 1
+      ring
+    · change (((1 + 0)) * ((1 + 0)) + ((0 + 0)) * ((0 + c)) : ℝ) = 1
+      ring
+    · change (((1 + 0)) * ((1 + 0)) + ((0 + 0)) * ((0 + 0)) : ℝ) = 1
+      ring
+    · change (((1 + 0)) * ((1 + 0)) + ((0 + 0)) * ((0 + 0)) : ℝ) = 1
+      ring
 
 /-- A topological order of the sparse coordinate arrows for E_{02}. -/
 private def order02 : Equiv.Perm (Fin 6) :=
@@ -101,22 +271,73 @@ private lemma congruence_transvection_02_det (c : ℝ) :
   rw [congruence_coordinate_entries]
   apply det_one_of_reordered_triangular _ order02
   · intro a b hab
-    change b < a at hab
-    fin_cases a <;> fin_cases b <;> try omega
-    all_goals
-      simp only [Matrix.submatrix_apply, order02, Equiv.ofBijective,
-        congruencePolynomialMatrix, Matrix.cons_val_zero, Matrix.cons_val_one,
-        Matrix.cons_val_succ, vector_at_two, vector_at_three,
-        vector_at_four, vector_at_five] <;>
-      norm_num [Matrix.transvection, Matrix.add_apply,
-        Matrix.one_apply, Matrix.single_apply] <;> ring
+    change b.val < a.val at hab
+    fin_cases a <;> fin_cases b
+    · exact False.elim ((by decide : ¬ ((0 : ℕ) < 0)) hab)
+    · exact False.elim ((by decide : ¬ ((1 : ℕ) < 0)) hab)
+    · exact False.elim ((by decide : ¬ ((2 : ℕ) < 0)) hab)
+    · exact False.elim ((by decide : ¬ ((3 : ℕ) < 0)) hab)
+    · exact False.elim ((by decide : ¬ ((4 : ℕ) < 0)) hab)
+    · exact False.elim ((by decide : ¬ ((5 : ℕ) < 0)) hab)
+    · change (2 * ((1 + 0)) * ((0 + 0)) : ℝ) = 0
+      ring
+    · exact False.elim ((by decide : ¬ ((1 : ℕ) < 1)) hab)
+    · exact False.elim ((by decide : ¬ ((2 : ℕ) < 1)) hab)
+    · exact False.elim ((by decide : ¬ ((3 : ℕ) < 1)) hab)
+    · exact False.elim ((by decide : ¬ ((4 : ℕ) < 1)) hab)
+    · exact False.elim ((by decide : ¬ ((5 : ℕ) < 1)) hab)
+    · change (((0 + 0)) ^ 2 : ℝ) = 0
+      ring
+    · change (((0 + 0)) * ((1 + 0)) : ℝ) = 0
+      ring
+    · exact False.elim ((by decide : ¬ ((2 : ℕ) < 2)) hab)
+    · exact False.elim ((by decide : ¬ ((3 : ℕ) < 2)) hab)
+    · exact False.elim ((by decide : ¬ ((4 : ℕ) < 2)) hab)
+    · exact False.elim ((by decide : ¬ ((5 : ℕ) < 2)) hab)
+    · change (2 * ((1 + 0)) * ((0 + 0)) : ℝ) = 0
+      ring
+    · change (((1 + 0)) * ((0 + 0)) + ((0 + c)) * ((0 + 0)) : ℝ) = 0
+      ring
+    · change (2 * ((0 + c)) * ((0 + 0)) : ℝ) = 0
+      ring
+    · exact False.elim ((by decide : ¬ ((3 : ℕ) < 3)) hab)
+    · exact False.elim ((by decide : ¬ ((4 : ℕ) < 3)) hab)
+    · exact False.elim ((by decide : ¬ ((5 : ℕ) < 3)) hab)
+    · change (2 * ((0 + 0)) * ((0 + 0)) : ℝ) = 0
+      ring
+    · change (((0 + 0)) * ((1 + 0)) + ((0 + 0)) * ((0 + 0)) : ℝ) = 0
+      ring
+    · change (2 * ((0 + 0)) * ((1 + 0)) : ℝ) = 0
+      ring
+    · change (((0 + 0)) * ((0 + 0)) + ((1 + 0)) * ((0 + 0)) : ℝ) = 0
+      ring
+    · exact False.elim ((by decide : ¬ ((4 : ℕ) < 4)) hab)
+    · exact False.elim ((by decide : ¬ ((5 : ℕ) < 4)) hab)
+    · change (((0 + 0)) ^ 2 : ℝ) = 0
+      ring
+    · change (((0 + 0)) * ((0 + 0)) : ℝ) = 0
+      ring
+    · change (((0 + 0)) ^ 2 : ℝ) = 0
+      ring
+    · change (((0 + 0)) * ((1 + 0)) : ℝ) = 0
+      ring
+    · change (((1 + 0)) * ((0 + 0)) : ℝ) = 0
+      ring
+    · exact False.elim ((by decide : ¬ ((5 : ℕ) < 5)) hab)
   · intro a
-    fin_cases a <;>
-      simp only [congruencePolynomialMatrix, Matrix.cons_val_zero,
-        Matrix.cons_val_one, Matrix.cons_val_succ, vector_at_two,
-        vector_at_three, vector_at_four, vector_at_five] <;>
-      norm_num [Matrix.transvection, Matrix.add_apply,
-        Matrix.one_apply, Matrix.single_apply] <;> ring
+    fin_cases a
+    · change (((1 + 0)) ^ 2 : ℝ) = 1
+      ring
+    · change (((1 + 0)) ^ 2 : ℝ) = 1
+      ring
+    · change (((1 + 0)) ^ 2 : ℝ) = 1
+      ring
+    · change (((1 + 0)) * ((1 + 0)) + ((0 + 0)) * ((0 + 0)) : ℝ) = 1
+      ring
+    · change (((1 + 0)) * ((1 + 0)) + ((0 + c)) * ((0 + 0)) : ℝ) = 1
+      ring
+    · change (((1 + 0)) * ((1 + 0)) + ((0 + 0)) * ((0 + 0)) : ℝ) = 1
+      ring
 
 /-- A topological order of the sparse coordinate arrows for E_{20}. -/
 private def order20 : Equiv.Perm (Fin 6) :=
@@ -127,22 +348,73 @@ private lemma congruence_transvection_20_det (c : ℝ) :
   rw [congruence_coordinate_entries]
   apply det_one_of_reordered_triangular _ order20
   · intro a b hab
-    change b < a at hab
-    fin_cases a <;> fin_cases b <;> try omega
-    all_goals
-      simp only [Matrix.submatrix_apply, order20, Equiv.ofBijective,
-        congruencePolynomialMatrix, Matrix.cons_val_zero, Matrix.cons_val_one,
-        Matrix.cons_val_succ, vector_at_two, vector_at_three,
-        vector_at_four, vector_at_five] <;>
-      norm_num [Matrix.transvection, Matrix.add_apply,
-        Matrix.one_apply, Matrix.single_apply] <;> ring
+    change b.val < a.val at hab
+    fin_cases a <;> fin_cases b
+    · exact False.elim ((by decide : ¬ ((0 : ℕ) < 0)) hab)
+    · exact False.elim ((by decide : ¬ ((1 : ℕ) < 0)) hab)
+    · exact False.elim ((by decide : ¬ ((2 : ℕ) < 0)) hab)
+    · exact False.elim ((by decide : ¬ ((3 : ℕ) < 0)) hab)
+    · exact False.elim ((by decide : ¬ ((4 : ℕ) < 0)) hab)
+    · exact False.elim ((by decide : ¬ ((5 : ℕ) < 0)) hab)
+    · change (2 * ((1 + 0)) * ((0 + 0)) : ℝ) = 0
+      ring
+    · exact False.elim ((by decide : ¬ ((1 : ℕ) < 1)) hab)
+    · exact False.elim ((by decide : ¬ ((2 : ℕ) < 1)) hab)
+    · exact False.elim ((by decide : ¬ ((3 : ℕ) < 1)) hab)
+    · exact False.elim ((by decide : ¬ ((4 : ℕ) < 1)) hab)
+    · exact False.elim ((by decide : ¬ ((5 : ℕ) < 1)) hab)
+    · change (2 * ((0 + 0)) * ((1 + 0)) : ℝ) = 0
+      ring
+    · change (((0 + 0)) * ((0 + 0)) + ((0 + 0)) * ((1 + 0)) : ℝ) = 0
+      ring
+    · exact False.elim ((by decide : ¬ ((2 : ℕ) < 2)) hab)
+    · exact False.elim ((by decide : ¬ ((3 : ℕ) < 2)) hab)
+    · exact False.elim ((by decide : ¬ ((4 : ℕ) < 2)) hab)
+    · exact False.elim ((by decide : ¬ ((5 : ℕ) < 2)) hab)
+    · change (((0 + 0)) ^ 2 : ℝ) = 0
+      ring
+    · change (((0 + 0)) * ((1 + 0)) : ℝ) = 0
+      ring
+    · change (((0 + c)) * ((0 + 0)) : ℝ) = 0
+      ring
+    · exact False.elim ((by decide : ¬ ((3 : ℕ) < 3)) hab)
+    · exact False.elim ((by decide : ¬ ((4 : ℕ) < 3)) hab)
+    · exact False.elim ((by decide : ¬ ((5 : ℕ) < 3)) hab)
+    · change (2 * ((0 + 0)) * ((0 + 0)) : ℝ) = 0
+      ring
+    · change (((0 + 0)) * ((1 + 0)) + ((0 + 0)) * ((0 + 0)) : ℝ) = 0
+      ring
+    · change (((1 + 0)) * ((0 + 0)) + ((0 + 0)) * ((0 + c)) : ℝ) = 0
+      ring
+    · change (2 * ((0 + 0)) * ((1 + 0)) : ℝ) = 0
+      ring
+    · exact False.elim ((by decide : ¬ ((4 : ℕ) < 4)) hab)
+    · exact False.elim ((by decide : ¬ ((5 : ℕ) < 4)) hab)
+    · change (((0 + 0)) ^ 2 : ℝ) = 0
+      ring
+    · change (((0 + 0)) * ((0 + 0)) : ℝ) = 0
+      ring
+    · change (((1 + 0)) * ((0 + 0)) : ℝ) = 0
+      ring
+    · change (((0 + 0)) ^ 2 : ℝ) = 0
+      ring
+    · change (((1 + 0)) * ((0 + 0)) : ℝ) = 0
+      ring
+    · exact False.elim ((by decide : ¬ ((5 : ℕ) < 5)) hab)
   · intro a
-    fin_cases a <;>
-      simp only [congruencePolynomialMatrix, Matrix.cons_val_zero,
-        Matrix.cons_val_one, Matrix.cons_val_succ, vector_at_two,
-        vector_at_three, vector_at_four, vector_at_five] <;>
-      norm_num [Matrix.transvection, Matrix.add_apply,
-        Matrix.one_apply, Matrix.single_apply] <;> ring
+    fin_cases a
+    · change (((1 + 0)) ^ 2 : ℝ) = 1
+      ring
+    · change (((1 + 0)) ^ 2 : ℝ) = 1
+      ring
+    · change (((1 + 0)) ^ 2 : ℝ) = 1
+      ring
+    · change (((1 + 0)) * ((1 + 0)) + ((0 + 0)) * ((0 + 0)) : ℝ) = 1
+      ring
+    · change (((1 + 0)) * ((1 + 0)) + ((0 + 0)) * ((0 + c)) : ℝ) = 1
+      ring
+    · change (((1 + 0)) * ((1 + 0)) + ((0 + 0)) * ((0 + 0)) : ℝ) = 1
+      ring
 
 /-- A topological order of the sparse coordinate arrows for E_{12}. -/
 private def order12 : Equiv.Perm (Fin 6) :=
@@ -153,22 +425,73 @@ private lemma congruence_transvection_12_det (c : ℝ) :
   rw [congruence_coordinate_entries]
   apply det_one_of_reordered_triangular _ order12
   · intro a b hab
-    change b < a at hab
-    fin_cases a <;> fin_cases b <;> try omega
-    all_goals
-      simp only [Matrix.submatrix_apply, order12, Equiv.ofBijective,
-        congruencePolynomialMatrix, Matrix.cons_val_zero, Matrix.cons_val_one,
-        Matrix.cons_val_succ, vector_at_two, vector_at_three,
-        vector_at_four, vector_at_five] <;>
-      norm_num [Matrix.transvection, Matrix.add_apply,
-        Matrix.one_apply, Matrix.single_apply] <;> ring
+    change b.val < a.val at hab
+    fin_cases a <;> fin_cases b
+    · exact False.elim ((by decide : ¬ ((0 : ℕ) < 0)) hab)
+    · exact False.elim ((by decide : ¬ ((1 : ℕ) < 0)) hab)
+    · exact False.elim ((by decide : ¬ ((2 : ℕ) < 0)) hab)
+    · exact False.elim ((by decide : ¬ ((3 : ℕ) < 0)) hab)
+    · exact False.elim ((by decide : ¬ ((4 : ℕ) < 0)) hab)
+    · exact False.elim ((by decide : ¬ ((5 : ℕ) < 0)) hab)
+    · change (2 * ((1 + 0)) * ((0 + 0)) : ℝ) = 0
+      ring
+    · exact False.elim ((by decide : ¬ ((1 : ℕ) < 1)) hab)
+    · exact False.elim ((by decide : ¬ ((2 : ℕ) < 1)) hab)
+    · exact False.elim ((by decide : ¬ ((3 : ℕ) < 1)) hab)
+    · exact False.elim ((by decide : ¬ ((4 : ℕ) < 1)) hab)
+    · exact False.elim ((by decide : ¬ ((5 : ℕ) < 1)) hab)
+    · change (((0 + 0)) ^ 2 : ℝ) = 0
+      ring
+    · change (((0 + 0)) * ((1 + 0)) : ℝ) = 0
+      ring
+    · exact False.elim ((by decide : ¬ ((2 : ℕ) < 2)) hab)
+    · exact False.elim ((by decide : ¬ ((3 : ℕ) < 2)) hab)
+    · exact False.elim ((by decide : ¬ ((4 : ℕ) < 2)) hab)
+    · exact False.elim ((by decide : ¬ ((5 : ℕ) < 2)) hab)
+    · change (2 * ((0 + 0)) * ((1 + 0)) : ℝ) = 0
+      ring
+    · change (((0 + 0)) * ((0 + c)) + ((0 + 0)) * ((1 + 0)) : ℝ) = 0
+      ring
+    · change (2 * ((0 + 0)) * ((0 + c)) : ℝ) = 0
+      ring
+    · exact False.elim ((by decide : ¬ ((3 : ℕ) < 3)) hab)
+    · exact False.elim ((by decide : ¬ ((4 : ℕ) < 3)) hab)
+    · exact False.elim ((by decide : ¬ ((5 : ℕ) < 3)) hab)
+    · change (2 * ((0 + 0)) * ((0 + 0)) : ℝ) = 0
+      ring
+    · change (((0 + 0)) * ((1 + 0)) + ((0 + 0)) * ((0 + 0)) : ℝ) = 0
+      ring
+    · change (2 * ((0 + 0)) * ((1 + 0)) : ℝ) = 0
+      ring
+    · change (((1 + 0)) * ((0 + 0)) + ((0 + 0)) * ((0 + 0)) : ℝ) = 0
+      ring
+    · exact False.elim ((by decide : ¬ ((4 : ℕ) < 4)) hab)
+    · exact False.elim ((by decide : ¬ ((5 : ℕ) < 4)) hab)
+    · change (((0 + 0)) ^ 2 : ℝ) = 0
+      ring
+    · change (((0 + 0)) * ((0 + 0)) : ℝ) = 0
+      ring
+    · change (((0 + 0)) ^ 2 : ℝ) = 0
+      ring
+    · change (((1 + 0)) * ((0 + 0)) : ℝ) = 0
+      ring
+    · change (((1 + 0)) * ((0 + 0)) : ℝ) = 0
+      ring
+    · exact False.elim ((by decide : ¬ ((5 : ℕ) < 5)) hab)
   · intro a
-    fin_cases a <;>
-      simp only [congruencePolynomialMatrix, Matrix.cons_val_zero,
-        Matrix.cons_val_one, Matrix.cons_val_succ, vector_at_two,
-        vector_at_three, vector_at_four, vector_at_five] <;>
-      norm_num [Matrix.transvection, Matrix.add_apply,
-        Matrix.one_apply, Matrix.single_apply] <;> ring
+    fin_cases a
+    · change (((1 + 0)) ^ 2 : ℝ) = 1
+      ring
+    · change (((1 + 0)) ^ 2 : ℝ) = 1
+      ring
+    · change (((1 + 0)) ^ 2 : ℝ) = 1
+      ring
+    · change (((1 + 0)) * ((1 + 0)) + ((0 + 0)) * ((0 + 0)) : ℝ) = 1
+      ring
+    · change (((1 + 0)) * ((1 + 0)) + ((0 + 0)) * ((0 + 0)) : ℝ) = 1
+      ring
+    · change (((1 + 0)) * ((1 + 0)) + ((0 + c)) * ((0 + 0)) : ℝ) = 1
+      ring
 
 /-- A topological order of the sparse coordinate arrows for E_{21}. -/
 private def order21 : Equiv.Perm (Fin 6) :=
@@ -179,22 +502,73 @@ private lemma congruence_transvection_21_det (c : ℝ) :
   rw [congruence_coordinate_entries]
   apply det_one_of_reordered_triangular _ order21
   · intro a b hab
-    change b < a at hab
-    fin_cases a <;> fin_cases b <;> try omega
-    all_goals
-      simp only [Matrix.submatrix_apply, order21, Equiv.ofBijective,
-        congruencePolynomialMatrix, Matrix.cons_val_zero, Matrix.cons_val_one,
-        Matrix.cons_val_succ, vector_at_two, vector_at_three,
-        vector_at_four, vector_at_five] <;>
-      norm_num [Matrix.transvection, Matrix.add_apply,
-        Matrix.one_apply, Matrix.single_apply] <;> ring
+    change b.val < a.val at hab
+    fin_cases a <;> fin_cases b
+    · exact False.elim ((by decide : ¬ ((0 : ℕ) < 0)) hab)
+    · exact False.elim ((by decide : ¬ ((1 : ℕ) < 0)) hab)
+    · exact False.elim ((by decide : ¬ ((2 : ℕ) < 0)) hab)
+    · exact False.elim ((by decide : ¬ ((3 : ℕ) < 0)) hab)
+    · exact False.elim ((by decide : ¬ ((4 : ℕ) < 0)) hab)
+    · exact False.elim ((by decide : ¬ ((5 : ℕ) < 0)) hab)
+    · change (2 * ((1 + 0)) * ((0 + 0)) : ℝ) = 0
+      ring
+    · exact False.elim ((by decide : ¬ ((1 : ℕ) < 1)) hab)
+    · exact False.elim ((by decide : ¬ ((2 : ℕ) < 1)) hab)
+    · exact False.elim ((by decide : ¬ ((3 : ℕ) < 1)) hab)
+    · exact False.elim ((by decide : ¬ ((4 : ℕ) < 1)) hab)
+    · exact False.elim ((by decide : ¬ ((5 : ℕ) < 1)) hab)
+    · change (2 * ((1 + 0)) * ((0 + 0)) : ℝ) = 0
+      ring
+    · change (((1 + 0)) * ((0 + 0)) + ((0 + 0)) * ((0 + 0)) : ℝ) = 0
+      ring
+    · exact False.elim ((by decide : ¬ ((2 : ℕ) < 2)) hab)
+    · exact False.elim ((by decide : ¬ ((3 : ℕ) < 2)) hab)
+    · exact False.elim ((by decide : ¬ ((4 : ℕ) < 2)) hab)
+    · exact False.elim ((by decide : ¬ ((5 : ℕ) < 2)) hab)
+    · change (((0 + 0)) ^ 2 : ℝ) = 0
+      ring
+    · change (((0 + 0)) * ((1 + 0)) : ℝ) = 0
+      ring
+    · change (((0 + 0)) * ((0 + c)) : ℝ) = 0
+      ring
+    · exact False.elim ((by decide : ¬ ((3 : ℕ) < 3)) hab)
+    · exact False.elim ((by decide : ¬ ((4 : ℕ) < 3)) hab)
+    · exact False.elim ((by decide : ¬ ((5 : ℕ) < 3)) hab)
+    · change (2 * ((0 + 0)) * ((0 + 0)) : ℝ) = 0
+      ring
+    · change (((0 + 0)) * ((1 + 0)) + ((0 + 0)) * ((0 + 0)) : ℝ) = 0
+      ring
+    · change (((0 + 0)) * ((0 + c)) + ((1 + 0)) * ((0 + 0)) : ℝ) = 0
+      ring
+    · change (2 * ((0 + 0)) * ((1 + 0)) : ℝ) = 0
+      ring
+    · exact False.elim ((by decide : ¬ ((4 : ℕ) < 4)) hab)
+    · exact False.elim ((by decide : ¬ ((5 : ℕ) < 4)) hab)
+    · change (((0 + 0)) ^ 2 : ℝ) = 0
+      ring
+    · change (((0 + 0)) * ((0 + 0)) : ℝ) = 0
+      ring
+    · change (((0 + 0)) * ((1 + 0)) : ℝ) = 0
+      ring
+    · change (((0 + 0)) ^ 2 : ℝ) = 0
+      ring
+    · change (((1 + 0)) * ((0 + 0)) : ℝ) = 0
+      ring
+    · exact False.elim ((by decide : ¬ ((5 : ℕ) < 5)) hab)
   · intro a
-    fin_cases a <;>
-      simp only [congruencePolynomialMatrix, Matrix.cons_val_zero,
-        Matrix.cons_val_one, Matrix.cons_val_succ, vector_at_two,
-        vector_at_three, vector_at_four, vector_at_five] <;>
-      norm_num [Matrix.transvection, Matrix.add_apply,
-        Matrix.one_apply, Matrix.single_apply] <;> ring
+    fin_cases a
+    · change (((1 + 0)) ^ 2 : ℝ) = 1
+      ring
+    · change (((1 + 0)) ^ 2 : ℝ) = 1
+      ring
+    · change (((1 + 0)) ^ 2 : ℝ) = 1
+      ring
+    · change (((1 + 0)) * ((1 + 0)) + ((0 + 0)) * ((0 + 0)) : ℝ) = 1
+      ring
+    · change (((1 + 0)) * ((1 + 0)) + ((0 + 0)) * ((0 + 0)) : ℝ) = 1
+      ring
+    · change (((1 + 0)) * ((1 + 0)) + ((0 + 0)) * ((0 + c)) : ℝ) = 1
+      ring
 
 private lemma congruence_transvection_det (t : Matrix.TransvectionStruct (Fin 3) ℝ) :
     (congruenceCoordinateMatrix t.toMatrix).det = 1 := by
