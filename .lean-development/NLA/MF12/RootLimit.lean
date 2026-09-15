@@ -10,6 +10,7 @@ This proves the actual root limit; no spectral-radius value is assigned by defin
 -/
 import NLA.MF12.Definitions
 import Mathlib.Analysis.SpecialFunctions.Pow.Asymptotics
+import Mathlib.Analysis.SpecialFunctions.Pow.Continuity
 import Mathlib.Analysis.SpecificLimits.Basic
 import Mathlib.Tactic
 import LeanCert.Tactic.Verification

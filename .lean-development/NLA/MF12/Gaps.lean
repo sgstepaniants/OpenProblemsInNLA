@@ -104,7 +104,7 @@ theorem lower_word_exact (α : ℝ) (n : ℕ) :
     constructor
     · simpa only [List.length_append, List.length_flatten, List.map_replicate,
         List.sum_replicate, List.length_replicate, List.length_singleton,
-        nsmul_eq_mul, add_comm] using chosenRemainder_add_count n
+        nsmul_eq_mul, Nat.cast_id, add_comm] using chosenRemainder_add_count n
     · rw [binaryProduct_append, binaryProduct_replicate_false,
         binaryProduct_flatten_replicate, binaryProduct_append,
         binaryProduct_replicate_false]

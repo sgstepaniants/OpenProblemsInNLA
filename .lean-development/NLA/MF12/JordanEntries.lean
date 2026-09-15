@@ -81,7 +81,8 @@ theorem jordan_entries (m n : ℕ) (r s : Fin (m + 1)) :
           simp only [if_pos hrs.le, if_pos hrj, hdiff, Nat.choose_succ_succ, Nat.cast_add] <;> ring
         · by_cases heq : r.val = s.val
           · have hrj : ¬ r.val ≤ j.val := by dsimp only [j]; omega
-            simp [heq, hrj]
+            rw [if_neg hrj]
+            simp [heq]
           · have hnot : ¬ r.val ≤ s.val := by omega
             have hrj : ¬ r.val ≤ j.val := by dsimp only [j]; omega
             simp [hnot, hrj]
