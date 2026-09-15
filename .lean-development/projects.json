@@ -14,24 +14,6 @@
     "challenge": "Challenges/IE04.lean"
   },
   {
-    "id": "SP-04",
-    "modules": [
-      "NLA.SP04.Frobenius",
-      "NLA.SP04.ScalarRoots",
-      "NLA.SP04.Normalization",
-      "NLA.SP04.Stationary",
-      "NLA.SP04.PositiveExclusion",
-      "NLA.SP04.NegativePatterns",
-      "NLA.SP04.Diagonal",
-      "NLA.SP04.Orthogonal",
-      "NLA.SP04.Rotations",
-      "NLA.SP04.ChartSmooth",
-      "NLA.SP04.ChartLinear",
-      "NLA.SP04.PolynomialEscape"
-    ],
-    "challenge": "Challenges/SP04.lean"
-  },
-  {
     "id": "MF-12",
     "modules": [
       "NLA.MF12.Words",
@@ -40,7 +22,13 @@
       "NLA.MF12.Tensor",
       "NLA.MF12.MatrixAlgebra",
       "NLA.MF12.Budgets",
-      "NLA.MF12.HolderBound"
+      "NLA.MF12.HolderBound",
+      "NLA.MF12.RootLimit",
+      "NLA.MF12.Gaps",
+      "NLA.MF12.PowerBounds",
+      "NLA.MF12.Upper",
+      "NLA.MF12.JordanEntries",
+      "NLA.MF12.GapBounds"
     ],
     "challenge": "Challenges/MF12.lean"
   }

@@ -23,16 +23,17 @@ lemma charpoly_eq_of_all_shifted_determinants {N : ℕ} (A B : Square N)
     (h : ∀ η : ℂ, (A + η • (1 : Square N)).det = (B + η • (1 : Square N)).det) :
     A.charpoly = B.charpoly := by
   apply Polynomial.funext
-  intro λ
+  intro spectralParameter
   rw [Matrix.eval_charpoly, Matrix.eval_charpoly]
-  have hs : Matrix.scalar (Fin N) λ = λ • (1 : Square N) := by
+  have hs : Matrix.scalar (Fin N) spectralParameter = spectralParameter • (1 : Square N) := by
     ext i j
     by_cases hij : i = j <;>
       simp [Matrix.scalar_apply, Matrix.diagonal_apply, Matrix.one_apply, hij]
-  have hneg (C : Square N) : Matrix.scalar (Fin N) λ - C = -(C + (-λ) • (1 : Square N)) := by
+  have hneg (C : Square N) : Matrix.scalar (Fin N) spectralParameter - C =
+      -(C + (-spectralParameter) • (1 : Square N)) := by
     rw [hs]
     module
-  rw [hneg A, hneg B, Matrix.det_neg, Matrix.det_neg, h (-λ)]
+  rw [hneg A, hneg B, Matrix.det_neg, Matrix.det_neg, h (-spectralParameter)]
 
 lemma family_gram_determinant (m : ℕ) (hm : 2 ≤ m) (t : ℝ) (z η : ℂ) :
     (gram (scalarShift (matrixX m t) z) + η • (1 : Square (dimension m))).det =
