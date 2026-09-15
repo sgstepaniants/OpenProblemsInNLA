@@ -2,6 +2,7 @@
 Mathematics: Matthew J. Colbrook. Formalization: George Stepaniants, Caltech CMS.
 Apache 2.0; AI-assisted. Only degree-two identities are normalized here. -/
 import NLA.PF02.Coordinates
+import NLA.PF02.FiniteEntries
 import Mathlib.Tactic
 import LeanCert.Tactic.Verification
 
@@ -26,11 +27,12 @@ lemma congruence_coordinate_entries (S : Mat 3) :
     congruenceCoordinateMatrix S = congruencePolynomialMatrix S := by
   ext i j
   fin_cases i <;> fin_cases j <;>
-    dsimp only [congruenceCoordinateMatrix, congruencePolynomialMatrix,
-      symmetricCoordinates, symmetricCoordinateBasis, Matrix.vecCons, Fin.cons] <;>
-    simp only [Matrix.mul_apply, Matrix.transpose_apply,
-      Fin.sum_univ_succ, Fin.sum_univ_zero, add_zero] <;>
-    dsimp only [Matrix.vecCons, Fin.cons] <;> ring
+    simp only [congruenceCoordinateMatrix, congruencePolynomialMatrix,
+      symmetricCoordinates, symmetricCoordinateBasis, Matrix.mul_apply,
+      Matrix.transpose_apply, Fin.sum_univ_succ, Fin.sum_univ_zero, add_zero,
+      Matrix.cons_val_zero, Matrix.cons_val_one, Matrix.cons_val_succ,
+      vector_at_two, vector_at_three, vector_at_four, vector_at_five] <;>
+    norm_num <;> ring
 
 private lemma coordinate_basis_symmetric (i : Fin 6) :
     (symmetricCoordinateBasis i).IsSymm := by

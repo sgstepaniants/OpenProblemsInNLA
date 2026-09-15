@@ -5,6 +5,7 @@
       "NLA.PF02.Definitions",
       "NLA.PF02.Algebra",
       "NLA.PF02.Coordinates",
+      "NLA.PF02.FiniteEntries",
       "NLA.PF02.SmallDeterminants",
       "NLA.PF02.CongruenceReduction",
       "NLA.PF02.Witness",
@@ -13,5 +14,23 @@
       "NLA.PF02.Solution"
     ],
     "challenge": "Challenges/PF02.lean"
+  },
+  {
+    "id": "MF-24",
+    "modules": [
+      "NLA.MF24.Definitions",
+      "NLA.MF24.Bridge",
+      "NLA.MF24.SpectralBridge",
+      "NLA.MF24.Dimensions",
+      "NLA.MF24.Powers"
+    ],
+    "challenge": "Challenges/MF24.lean"
+  },
+  {
+    "id": "IE-04",
+    "modules": [
+      "NLA.IE04.Definitions"
+    ],
+    "challenge": "Challenges/IE04.lean"
   }
 ]

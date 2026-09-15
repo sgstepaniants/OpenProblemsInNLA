@@ -23,12 +23,14 @@ private lemma congruence_diagonal_det (d : Fin 3 → ℝ) :
     rw [congruence_coordinate_entries]
     ext i j
     fin_cases i <;> fin_cases j <;>
-      simp only [Matrix.diagonal_apply] <;>
-      dsimp only [congruencePolynomialMatrix, Matrix.vecCons, Fin.cons] <;>
-      norm_num [Matrix.diagonal_apply] <;> ring
+      simp only [congruencePolynomialMatrix, Matrix.diagonal_apply,
+        Matrix.cons_val_zero, Matrix.cons_val_one, Matrix.cons_val_succ,
+        vector_at_two, vector_at_three, vector_at_four, vector_at_five] <;>
+      norm_num <;> ring
   rw [hd, Matrix.det_diagonal, Matrix.det_diagonal]
-  simp only [Fin.prod_univ_succ, Fin.prod_univ_zero, mul_one]
-  dsimp only [Matrix.vecCons, Fin.cons]
+  simp only [Fin.prod_univ_succ, Fin.prod_univ_zero, mul_one,
+    Matrix.cons_val_zero, Matrix.cons_val_one, Matrix.cons_val_succ,
+    vector_at_two, vector_at_three, vector_at_four, vector_at_five]
   ring
 
 /-- Reordering both coordinate axes preserves the determinant. -/
@@ -47,16 +49,20 @@ private lemma congruence_transvection_01_det (c : ℝ) :
   rw [congruence_coordinate_entries]
   apply det_one_of_reordered_triangular _ order01
   · intro a b hab
-    fin_cases a <;> fin_cases b <;> norm_num at hab
+    change b < a at hab
+    fin_cases a <;> fin_cases b <;> try omega
     all_goals
-      simp only [Matrix.submatrix_apply] <;>
-        dsimp only [order01, Equiv.ofBijective, congruencePolynomialMatrix,
-          Matrix.vecCons, Fin.cons] <;>
-        norm_num [Matrix.transvection, Matrix.add_apply,
-          Matrix.one_apply, Matrix.single_apply] <;> ring
+      simp only [Matrix.submatrix_apply, order01, Equiv.ofBijective,
+        congruencePolynomialMatrix, Matrix.cons_val_zero, Matrix.cons_val_one,
+        Matrix.cons_val_succ, vector_at_two, vector_at_three,
+        vector_at_four, vector_at_five] <;>
+      norm_num [Matrix.transvection, Matrix.add_apply,
+        Matrix.one_apply, Matrix.single_apply] <;> ring
   · intro a
     fin_cases a <;>
-      dsimp only [congruencePolynomialMatrix, Matrix.vecCons, Fin.cons] <;>
+      simp only [congruencePolynomialMatrix, Matrix.cons_val_zero,
+        Matrix.cons_val_one, Matrix.cons_val_succ, vector_at_two,
+        vector_at_three, vector_at_four, vector_at_five] <;>
       norm_num [Matrix.transvection, Matrix.add_apply,
         Matrix.one_apply, Matrix.single_apply] <;> ring
 
@@ -69,16 +75,20 @@ private lemma congruence_transvection_10_det (c : ℝ) :
   rw [congruence_coordinate_entries]
   apply det_one_of_reordered_triangular _ order10
   · intro a b hab
-    fin_cases a <;> fin_cases b <;> norm_num at hab
+    change b < a at hab
+    fin_cases a <;> fin_cases b <;> try omega
     all_goals
-      simp only [Matrix.submatrix_apply] <;>
-        dsimp only [order10, Equiv.ofBijective, congruencePolynomialMatrix,
-          Matrix.vecCons, Fin.cons] <;>
-        norm_num [Matrix.transvection, Matrix.add_apply,
-          Matrix.one_apply, Matrix.single_apply] <;> ring
+      simp only [Matrix.submatrix_apply, order10, Equiv.ofBijective,
+        congruencePolynomialMatrix, Matrix.cons_val_zero, Matrix.cons_val_one,
+        Matrix.cons_val_succ, vector_at_two, vector_at_three,
+        vector_at_four, vector_at_five] <;>
+      norm_num [Matrix.transvection, Matrix.add_apply,
+        Matrix.one_apply, Matrix.single_apply] <;> ring
   · intro a
     fin_cases a <;>
-      dsimp only [congruencePolynomialMatrix, Matrix.vecCons, Fin.cons] <;>
+      simp only [congruencePolynomialMatrix, Matrix.cons_val_zero,
+        Matrix.cons_val_one, Matrix.cons_val_succ, vector_at_two,
+        vector_at_three, vector_at_four, vector_at_five] <;>
       norm_num [Matrix.transvection, Matrix.add_apply,
         Matrix.one_apply, Matrix.single_apply] <;> ring
 
@@ -91,16 +101,20 @@ private lemma congruence_transvection_02_det (c : ℝ) :
   rw [congruence_coordinate_entries]
   apply det_one_of_reordered_triangular _ order02
   · intro a b hab
-    fin_cases a <;> fin_cases b <;> norm_num at hab
+    change b < a at hab
+    fin_cases a <;> fin_cases b <;> try omega
     all_goals
-      simp only [Matrix.submatrix_apply] <;>
-        dsimp only [order02, Equiv.ofBijective, congruencePolynomialMatrix,
-          Matrix.vecCons, Fin.cons] <;>
-        norm_num [Matrix.transvection, Matrix.add_apply,
-          Matrix.one_apply, Matrix.single_apply] <;> ring
+      simp only [Matrix.submatrix_apply, order02, Equiv.ofBijective,
+        congruencePolynomialMatrix, Matrix.cons_val_zero, Matrix.cons_val_one,
+        Matrix.cons_val_succ, vector_at_two, vector_at_three,
+        vector_at_four, vector_at_five] <;>
+      norm_num [Matrix.transvection, Matrix.add_apply,
+        Matrix.one_apply, Matrix.single_apply] <;> ring
   · intro a
     fin_cases a <;>
-      dsimp only [congruencePolynomialMatrix, Matrix.vecCons, Fin.cons] <;>
+      simp only [congruencePolynomialMatrix, Matrix.cons_val_zero,
+        Matrix.cons_val_one, Matrix.cons_val_succ, vector_at_two,
+        vector_at_three, vector_at_four, vector_at_five] <;>
       norm_num [Matrix.transvection, Matrix.add_apply,
         Matrix.one_apply, Matrix.single_apply] <;> ring
 
@@ -113,16 +127,20 @@ private lemma congruence_transvection_20_det (c : ℝ) :
   rw [congruence_coordinate_entries]
   apply det_one_of_reordered_triangular _ order20
   · intro a b hab
-    fin_cases a <;> fin_cases b <;> norm_num at hab
+    change b < a at hab
+    fin_cases a <;> fin_cases b <;> try omega
     all_goals
-      simp only [Matrix.submatrix_apply] <;>
-        dsimp only [order20, Equiv.ofBijective, congruencePolynomialMatrix,
-          Matrix.vecCons, Fin.cons] <;>
-        norm_num [Matrix.transvection, Matrix.add_apply,
-          Matrix.one_apply, Matrix.single_apply] <;> ring
+      simp only [Matrix.submatrix_apply, order20, Equiv.ofBijective,
+        congruencePolynomialMatrix, Matrix.cons_val_zero, Matrix.cons_val_one,
+        Matrix.cons_val_succ, vector_at_two, vector_at_three,
+        vector_at_four, vector_at_five] <;>
+      norm_num [Matrix.transvection, Matrix.add_apply,
+        Matrix.one_apply, Matrix.single_apply] <;> ring
   · intro a
     fin_cases a <;>
-      dsimp only [congruencePolynomialMatrix, Matrix.vecCons, Fin.cons] <;>
+      simp only [congruencePolynomialMatrix, Matrix.cons_val_zero,
+        Matrix.cons_val_one, Matrix.cons_val_succ, vector_at_two,
+        vector_at_three, vector_at_four, vector_at_five] <;>
       norm_num [Matrix.transvection, Matrix.add_apply,
         Matrix.one_apply, Matrix.single_apply] <;> ring
 
@@ -135,16 +153,20 @@ private lemma congruence_transvection_12_det (c : ℝ) :
   rw [congruence_coordinate_entries]
   apply det_one_of_reordered_triangular _ order12
   · intro a b hab
-    fin_cases a <;> fin_cases b <;> norm_num at hab
+    change b < a at hab
+    fin_cases a <;> fin_cases b <;> try omega
     all_goals
-      simp only [Matrix.submatrix_apply] <;>
-        dsimp only [order12, Equiv.ofBijective, congruencePolynomialMatrix,
-          Matrix.vecCons, Fin.cons] <;>
-        norm_num [Matrix.transvection, Matrix.add_apply,
-          Matrix.one_apply, Matrix.single_apply] <;> ring
+      simp only [Matrix.submatrix_apply, order12, Equiv.ofBijective,
+        congruencePolynomialMatrix, Matrix.cons_val_zero, Matrix.cons_val_one,
+        Matrix.cons_val_succ, vector_at_two, vector_at_three,
+        vector_at_four, vector_at_five] <;>
+      norm_num [Matrix.transvection, Matrix.add_apply,
+        Matrix.one_apply, Matrix.single_apply] <;> ring
   · intro a
     fin_cases a <;>
-      dsimp only [congruencePolynomialMatrix, Matrix.vecCons, Fin.cons] <;>
+      simp only [congruencePolynomialMatrix, Matrix.cons_val_zero,
+        Matrix.cons_val_one, Matrix.cons_val_succ, vector_at_two,
+        vector_at_three, vector_at_four, vector_at_five] <;>
       norm_num [Matrix.transvection, Matrix.add_apply,
         Matrix.one_apply, Matrix.single_apply] <;> ring
 
@@ -157,16 +179,20 @@ private lemma congruence_transvection_21_det (c : ℝ) :
   rw [congruence_coordinate_entries]
   apply det_one_of_reordered_triangular _ order21
   · intro a b hab
-    fin_cases a <;> fin_cases b <;> norm_num at hab
+    change b < a at hab
+    fin_cases a <;> fin_cases b <;> try omega
     all_goals
-      simp only [Matrix.submatrix_apply] <;>
-        dsimp only [order21, Equiv.ofBijective, congruencePolynomialMatrix,
-          Matrix.vecCons, Fin.cons] <;>
-        norm_num [Matrix.transvection, Matrix.add_apply,
-          Matrix.one_apply, Matrix.single_apply] <;> ring
+      simp only [Matrix.submatrix_apply, order21, Equiv.ofBijective,
+        congruencePolynomialMatrix, Matrix.cons_val_zero, Matrix.cons_val_one,
+        Matrix.cons_val_succ, vector_at_two, vector_at_three,
+        vector_at_four, vector_at_five] <;>
+      norm_num [Matrix.transvection, Matrix.add_apply,
+        Matrix.one_apply, Matrix.single_apply] <;> ring
   · intro a
     fin_cases a <;>
-      dsimp only [congruencePolynomialMatrix, Matrix.vecCons, Fin.cons] <;>
+      simp only [congruencePolynomialMatrix, Matrix.cons_val_zero,
+        Matrix.cons_val_one, Matrix.cons_val_succ, vector_at_two,
+        vector_at_three, vector_at_four, vector_at_five] <;>
       norm_num [Matrix.transvection, Matrix.add_apply,
         Matrix.one_apply, Matrix.single_apply] <;> ring
 
