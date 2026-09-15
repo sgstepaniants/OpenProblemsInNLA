@@ -1,21 +1,5 @@
 [
   {
-    "id": "MF-02",
-    "modules": [
-      "NLA.MF02.Definitions",
-      "NLA.MF02.Model",
-      "NLA.MF02.Cubic",
-      "NLA.MF02.Errors",
-      "NLA.MF02.Parity",
-      "NLA.MF02.Iteration",
-      "NLA.MF02.Chebyshev",
-      "NLA.MF02.Bounds",
-      "NLA.MF02.Minimum",
-      "NLA.MF02.Solution"
-    ],
-    "challenge": "Challenges/MF02.lean"
-  },
-  {
     "id": "IE-17",
     "modules": [
       "NLA.IE17.Definitions",
@@ -32,5 +16,27 @@
       "NLA.IE17.Solution"
     ],
     "challenge": "Challenges/IE17.lean"
+  },
+  {
+    "id": "PF-02",
+    "modules": [
+      "NLA.PF02.Definitions",
+      "NLA.PF02.Algebra",
+      "NLA.PF02.Coordinates",
+      "NLA.PF02.SmallDeterminants",
+      "NLA.PF02.CongruenceReduction",
+      "NLA.PF02.Witness",
+      "NLA.PF02.CongruenceDeterminant",
+      "NLA.PF02.QuotientSeparation",
+      "NLA.PF02.Solution"
+    ],
+    "challenge": "Challenges/PF02.lean"
+  },
+  {
+    "id": "MF-24",
+    "modules": [
+      "NLA.MF24.Definitions"
+    ],
+    "challenge": "Challenges/MF24.lean"
   }
 ]

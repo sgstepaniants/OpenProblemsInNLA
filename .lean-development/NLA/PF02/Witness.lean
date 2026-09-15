@@ -1,7 +1,8 @@
 /- Colbrook's unchanged exact PF-02 witness.
 Formalization: George Stepaniants, Caltech Department of Computing and Mathematical
 Sciences. Apache 2.0; AI-assisted. Only exact kernel algebra is used. -/
-import NLA.PF02.Definitions
+import NLA.PF02.Coordinates
+import NLA.PF02.SmallDeterminants
 import Mathlib.Tactic
 import LeanCert.Tactic.Verification
 
@@ -18,7 +19,7 @@ lemma witness_factor_0_psd : (witnessFactors 0).PosSemidef := by
   · apply Matrix.IsHermitian.ext
     intro i j
     fin_cases i <;> fin_cases j <;> norm_num [witnessFactors, reflectedFactors, Matrix.cons_val,
-      Fin.ext_iff, Fin.reduceFinMk]
+      Fin.ext_iff, Fin.reduceFinMk] <;> rfl
   · intro x
     simp [witnessFactors, reflectedFactors, Matrix.mulVec, dotProduct, Fin.sum_univ_succ]
     <;> nlinarith [sq_nonneg (x 0), sq_nonneg (x 1), sq_nonneg (x 2),
@@ -31,7 +32,7 @@ lemma witness_factor_1_psd : (witnessFactors 1).PosSemidef := by
   · apply Matrix.IsHermitian.ext
     intro i j
     fin_cases i <;> fin_cases j <;> norm_num [witnessFactors, reflectedFactors, Matrix.cons_val,
-      Fin.ext_iff, Fin.reduceFinMk]
+      Fin.ext_iff, Fin.reduceFinMk] <;> rfl
   · intro x
     simp [witnessFactors, reflectedFactors, Matrix.mulVec, dotProduct, Fin.sum_univ_succ]
     <;> nlinarith [sq_nonneg (x 0), sq_nonneg (x 1), sq_nonneg (x 2),
@@ -44,7 +45,7 @@ lemma witness_factor_2_psd : (witnessFactors 2).PosSemidef := by
   · apply Matrix.IsHermitian.ext
     intro i j
     fin_cases i <;> fin_cases j <;> norm_num [witnessFactors, reflectedFactors, Matrix.cons_val,
-      Fin.ext_iff, Fin.reduceFinMk]
+      Fin.ext_iff, Fin.reduceFinMk] <;> rfl
   · intro x
     simp [witnessFactors, reflectedFactors, Matrix.mulVec, dotProduct, Fin.sum_univ_succ]
     <;> nlinarith [sq_nonneg (x 0), sq_nonneg (x 1), sq_nonneg (x 2),
@@ -57,7 +58,7 @@ lemma witness_factor_3_psd : (witnessFactors 3).PosSemidef := by
   · apply Matrix.IsHermitian.ext
     intro i j
     fin_cases i <;> fin_cases j <;> norm_num [witnessFactors, reflectedFactors, Matrix.cons_val,
-      Fin.ext_iff, Fin.reduceFinMk]
+      Fin.ext_iff, Fin.reduceFinMk] <;> rfl
   · intro x
     simp [witnessFactors, reflectedFactors, Matrix.mulVec, dotProduct, Fin.sum_univ_succ]
     <;> nlinarith [sq_nonneg (x 0), sq_nonneg (x 1), sq_nonneg (x 2),
@@ -70,7 +71,7 @@ lemma witness_factor_4_psd : (witnessFactors 4).PosSemidef := by
   · apply Matrix.IsHermitian.ext
     intro i j
     fin_cases i <;> fin_cases j <;> norm_num [witnessFactors, reflectedFactors, Matrix.cons_val,
-      Fin.ext_iff, Fin.reduceFinMk]
+      Fin.ext_iff, Fin.reduceFinMk] <;> rfl
   · intro x
     simp [witnessFactors, reflectedFactors, Matrix.mulVec, dotProduct, Fin.sum_univ_succ]
     <;> nlinarith [sq_nonneg (x 0), sq_nonneg (x 1), sq_nonneg (x 2),
@@ -83,7 +84,7 @@ lemma witness_factor_5_psd : (witnessFactors 5).PosSemidef := by
   · apply Matrix.IsHermitian.ext
     intro i j
     fin_cases i <;> fin_cases j <;> norm_num [witnessFactors, reflectedFactors, Matrix.cons_val,
-      Fin.ext_iff, Fin.reduceFinMk]
+      Fin.ext_iff, Fin.reduceFinMk] <;> rfl
   · intro x
     simp [witnessFactors, reflectedFactors, Matrix.mulVec, dotProduct, Fin.sum_univ_succ]
     <;> nlinarith [sq_nonneg (x 0), sq_nonneg (x 1), sq_nonneg (x 2),
@@ -96,7 +97,7 @@ lemma reflected_factor_three_psd : (reflectedFactors 3).PosSemidef := by
   · apply Matrix.IsHermitian.ext
     intro i j
     fin_cases i <;> fin_cases j <;> norm_num [witnessFactors, reflectedFactors, Matrix.cons_val,
-      Fin.ext_iff, Fin.reduceFinMk]
+      Fin.ext_iff, Fin.reduceFinMk] <;> rfl
   · intro x
     simp [witnessFactors, reflectedFactors, Matrix.mulVec, dotProduct, Fin.sum_univ_succ]
     <;> nlinarith [sq_nonneg (x 0), sq_nonneg (x 1), sq_nonneg (x 2),
@@ -138,26 +139,21 @@ lemma reflected_factorization : IsPSDFactorization witnessMatrix reflectedTuple 
 theorem witness_orientations :
     orientationDeterminant witnessTuple = 32 ∧
     orientationDeterminant reflectedTuple = -32 := by
-  constructor <;>
-    norm_num [orientationDeterminant, rowCoordinateMatrix, symmetricCoordinates,
-      witnessTuple, reflectedTuple, witnessFactors, reflectedFactors,
-      Matrix.det_succ_row_zero, Matrix.det_fin_three, Matrix.det_fin_two,
-      Matrix.det_fin_one, Matrix.det_fin_zero, Matrix.submatrix_apply,
-      Fin.sum_univ_succ, Matrix.cons_val, Fin.succAbove, Fin.lt_def,
-      Fin.ext_iff, Fin.reduceFinMk]
+  constructor
+  · change (rowCoordinateMatrix witnessFactors).det = 32
+    rw [witness_coordinates_exact, witness_coordinates_det]
+    norm_num
+  · change (rowCoordinateMatrix reflectedFactors).det = -32
+    rw [reflected_coordinates_exact, witness_coordinates_det]
+    norm_num
 
 lemma witness_matrix_det : witnessMatrix.det = 8192 := by
-  let U : Mat 6 := rowCoordinateMatrix witnessFactors
-  let G : Mat 6 := Matrix.diagonal (![1, 1, 1, 2, 2, 2] : Fin 6 → ℝ)
-  have hU : U.det = 32 := witness_orientations.1
-  have he : witnessMatrix = U * G * U.transpose := by
-    ext i j
-    fin_cases i <;> fin_cases j <;>
-      norm_num [U, G, rowCoordinateMatrix, symmetricCoordinates, witnessFactors,
-        witnessMatrix, Matrix.mul_apply, Matrix.diagonal_apply, Fin.sum_univ_succ,
-        Matrix.cons_val, Fin.ext_iff, Fin.reduceFinMk]
-  rw [he, Matrix.det_mul, Matrix.det_mul, Matrix.det_transpose, hU]
-  norm_num [G, Matrix.det_diagonal, Fin.prod_univ_succ, Matrix.cons_val]
+  let F : FactorizationSpace 3 witnessMatrix := ⟨witnessTuple, witness_factorization⟩
+  have he := factorization_coordinate_identity witnessMatrix F
+  have hU : (rowCoordinateMatrix F.val.1).det = 32 := witness_orientations.1
+  have hV : (rowCoordinateMatrix F.val.2).det = 32 := witness_orientations.1
+  rw [he, Matrix.det_mul, Matrix.det_mul, Matrix.det_transpose, hU, hV]
+  norm_num [traceMetric, traceWeights, Matrix.det_diagonal, Fin.prod_univ_succ]
 
 theorem witness_certificates :
     (∀ i j, 0 < witnessMatrix i j) ∧

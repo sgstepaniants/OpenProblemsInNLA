@@ -25,7 +25,7 @@ theorem witness_psd_rank : RealPSDRankEquals witnessMatrix 3 := by
   rw [witness_certificates.2.2.2.2] at hbound
   by_contra hnot
   have hr2 : r ≤ 2 := by omega
-  nlinarith
+  interval_cases r <;> norm_num at hbound
 
 theorem orientation_ne_zero (F : FactorizationSpace 3 witnessMatrix) :
     orientationDeterminant (F : FactorTuple 3 6 6) ≠ 0 := by

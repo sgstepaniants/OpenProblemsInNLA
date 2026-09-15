@@ -27,10 +27,11 @@ def upperExact : Mat 4 3 :=
     (-6175589313810285 / 55737049841018602), (-12599865024711003 / 27868524920509301), (-19466291678089345 / 55737049841018602)]
 
 theorem upperPerturbation_explicit : upperPerturbation = upperExact := by
+  unfold upperPerturbation upperC0 upperA0 upperH
+  simp only [witness_residual_one, witnessA_mulVec, witnessAt_mulVec]
   ext i j
   fin_cases i <;> fin_cases j <;>
-    norm_num [upperPerturbation, upperExact, upperH, upperC0, upperA0,
-      upperCutoff, witnessW, witnessA, witnessB, witnessX1, residual, outer,
+    norm_num [upperExact, upperCutoff, witnessW, witnessA, witnessB, witnessX1, outer,
       normSq, realDot, Matrix.mul_apply, Matrix.mulVec, dotProduct, Fin.sum_univ_succ]
 
 def upperFactor : Mat 3 3 :=
@@ -56,7 +57,7 @@ theorem upperFactor_injective : Function.Injective upperFactor.mulVec := by
   · change x 1 = y 1
     linarith
   · change x 2 = y 2
-    linarith
+    exact h2
 
 
 theorem upperPivots_positive : (Matrix.diagonal upperPivots).PosDef := by
@@ -123,7 +124,7 @@ theorem lowerFactor_injective : Function.Injective lowerFactor.mulVec := by
   · change x 2 = y 2
     linarith
   · change x 3 = y 3
-    linarith
+    exact h3
 
 
 theorem lowerPivots_positive : (Matrix.diagonal lowerPivots).PosDef := by
@@ -143,10 +144,18 @@ theorem lowerCertificate_positive :
       (1 / 2407881992100 : ℝ) • lowerIntegerMatrix ∧
     lowerIntegerMatrix.PosDef := by
   constructor
-  · ext i j
+  · have hcogram : witnessA * witnessA.transpose =
+        ( !![1,0,0,0; 0,36,0,0; 0,0,25,0; 0,0,0,0] : Mat 4 4) := by
+      ext i j
+      rw [Matrix.mul_apply]
+      fin_cases i <;> fin_cases j <;>
+        norm_num [witnessA, Matrix.transpose_apply, Fin.sum_univ_succ]
+    unfold lowerConvexMatrix lowerD
+    simp only [hcogram, witness_residual_two, witnessA_mulVec]
+    ext i j
     fin_cases i <;> fin_cases j <;>
-      norm_num [lowerConvexMatrix, lowerD, lowerIntegerMatrix, witnessA, witnessB,
-        witnessX2, residual, normSq, outer, Matrix.mul_apply, Matrix.mulVec,
+      norm_num [lowerIntegerMatrix, witnessB,
+        witnessX2, normSq, outer, Matrix.mul_apply, Matrix.mulVec,
         dotProduct, Matrix.one_apply, Fin.sum_univ_succ]
   · rw [lower_integer_factorization]
     simpa only [Matrix.conjTranspose_eq_transpose_of_trivial] using
