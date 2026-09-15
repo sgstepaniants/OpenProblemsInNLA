@@ -2,7 +2,9 @@
   {
     "id": "MF-02",
     "modules": [
-      "NLA.MF02.Definitions"
+      "NLA.MF02.Definitions",
+      "NLA.MF02.Model",
+      "NLA.MF02.Cubic"
     ],
     "challenge": "Challenges/MF02.lean"
   },

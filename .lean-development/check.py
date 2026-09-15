@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Remote development elaboration only; never a mathematical verification receipt."""
+"""Remote development checks only; never a complete problem-verification receipt."""
 from pathlib import Path
 import datetime, hashlib, json, os, platform, subprocess, sys
 
@@ -15,7 +15,7 @@ def sources():
              and not ({".lake", "evidence", "__pycache__"} & set(p.relative_to(root).parts))]
     return {str(p.relative_to(root)): digest(p) for p in sorted(paths)}
 
-receipt = {"kind": "development-statement-elaboration-only",
+receipt = {"kind": "development-elaboration-and-module-checks",
            "mathematical_verification": False, "comparator_run": False,
            "status": "running", "repository_commit": os.environ["GITHUB_SHA"],
            "run_id": os.environ["GITHUB_RUN_ID"], "run_attempt": os.environ["GITHUB_RUN_ATTEMPT"],
@@ -62,12 +62,11 @@ try:
         receipt["dependency_commits"][package["name"]] = actual
     run(["lake", "exe", "cache", "get"], "mathlib-cache.log")
     for project in projects:
-        for i, module in enumerate(project["modules"]):
-            run(["lake", "build", module], f"{project['id']}-module-{i}.log")
+        run(["lake", "build", *project["modules"]], f"{project['id']}-modules.log")
         run(["lake", "env", "lean", project["challenge"]], f"{project['id']}-challenge.log")
     if sources() != receipt["source_sha256"]:
         raise RuntimeError("development source changed during elaboration")
-    receipt["status"] = "statements-elaborated-no-proof-verification"
+    receipt["status"] = "development-checks-passed-no-complete-problem-verification"
 except Exception as exc:
     receipt["status"] = "failed"
     receipt["error"] = str(exc)
