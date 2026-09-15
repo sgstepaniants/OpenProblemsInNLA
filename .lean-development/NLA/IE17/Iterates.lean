@@ -15,6 +15,8 @@ open scoped BigOperators Classical Matrix.Norms.L2Operator
 noncomputable section
 namespace NLA.IE17
 
+attribute [local simp] Matrix.cons_val_two Matrix.cons_val_three Matrix.cons_val_four
+
 def witnessGenerator (j : ℕ) : Vec 3 :=
   ((witnessA.transpose * witnessA) ^ j).mulVec (witnessA.transpose.mulVec witnessB)
 
@@ -106,7 +108,13 @@ theorem witness_gram_zero_difference {y z : Vec 3}
   have h2 := congrFun h 2
   simp [witness_gram_mulVec] at h0 h1 h2
   ext i
-  fin_cases i <;> linarith
+  fin_cases i
+  · change y 0 = z 0
+    linarith
+  · change y 1 = z 1
+    linarith
+  · change y 2 = z 2
+    linarith
 
 theorem witness_isLSMR_iff_of_orthogonal (k : ℕ) (z : Vec 3)
     (hz : z ∈ krylovSpace witnessA witnessB k)

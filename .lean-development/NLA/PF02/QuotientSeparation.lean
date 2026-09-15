@@ -112,7 +112,7 @@ theorem witness_orbit_disconnected :
   have htwo : IsConnected ({-1, 1} : Set ℝ) := by
     simpa only [Set.image_univ, hrange] using hconnected.image ε hε.continuousOn
   have hz : (0 : ℝ) ∈ ({-1, 1} : Set ℝ) :=
-    htwo.Icc_subset (by simp) (by simp) (by norm_num)
+    htwo.Icc_subset (a := (-1 : ℝ)) (b := 1) (by simp) (by simp) (by norm_num)
   norm_num at hz
 
 theorem not_minimalPSDOrbitConnectedConjecture :

@@ -13,7 +13,9 @@ open scoped BigOperators Classical MatrixOrder
 noncomputable section
 namespace NLA.PF02
 
-/-- Laplace expansion is simplified exactly before polynomial normalization.
+/-- Laplace expansion and all concrete finite indices are reduced before ring
+normalization. The explicit Matrix.cons_val simproc prevents symbolic tuple
+lookups from surviving as spurious polynomial variables.
 This is one fixed polynomial identity, including singular S, with no sampled
 parameters or external oracle assumption. -/
 theorem congruence_coordinate_determinant (S : Mat 3) :
@@ -21,7 +23,8 @@ theorem congruence_coordinate_determinant (S : Mat 3) :
   simp [congruenceCoordinateMatrix, symmetricCoordinates, symmetricCoordinateBasis,
     Matrix.det_fin_three, Matrix.det_fin_two, Matrix.det_fin_one, Matrix.det_fin_zero,
     Matrix.det_succ_row_zero, Matrix.submatrix_apply, Matrix.mul_apply,
-    Matrix.transpose_apply, Fin.sum_univ_succ]
+    Matrix.transpose_apply, Fin.sum_univ_succ, Matrix.cons_val,
+    Fin.succAbove, Fin.lt_def, Fin.ext_iff, Fin.reduceFinMk]
   <;> ring
 
 #assert_trust kernel congruence_coordinate_determinant

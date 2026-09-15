@@ -45,7 +45,7 @@ lemma unrestrictedError_upper_linear (m : ℕ) (δ : ℝ)
     simpa using programComputable_linear m 0 (2 / (1 + δ))
   exact (unrestrictedError_le hδ0 hδ1 hp).trans
     (centered_polynomial_error hδ0 hδ1 hδ0 X (by intro x; simp)
-      (by intro x hx; simpa only [eval_X] using hx))
+      (by intro x hx; simpa only [eval_X, Set.mem_Icc] using hx))
 
 lemma unrestrictedError_eq_gapRatio_of_le_one (m : ℕ) (hm : m ≤ 1)
     (δ : ℝ) (hδ0 : 0 < δ) (hδ1 : δ < 1) :
@@ -73,7 +73,10 @@ lemma unrestrictedError_lower_bound (m : ℕ) (δ : ℝ)
     gapRatio δ ^ (2 ^ m) ≤ unrestrictedError m δ := by
   apply le_unrestrictedError
   intro p hp
-  exact degree_error_lower_bound δ hδ0 hδ1 (2 ^ m) (by positivity) p
+  have hD : 1 ≤ (2 : ℕ) ^ m := by
+    have hpositive : 0 < (2 : ℕ) ^ m := by positivity
+    omega
+  exact degree_error_lower_bound δ hδ0 hδ1 (2 ^ m) hD p
     (program_degree_bound m p hp)
 
 theorem cubic_error_bounds (δ : ℝ) (hδ0 : 0 < δ) (hδ1 : δ < 1) :
@@ -83,7 +86,10 @@ theorem cubic_error_bounds (δ : ℝ) (hδ0 : 0 < δ) (hδ1 : δ < 1) :
   · intro T
     apply le_cubicError
     intro p hp
-    exact degree_error_lower_bound δ hδ0 hδ1 (3 ^ T) (by positivity) p
+    have hD : 1 ≤ (3 : ℕ) ^ T := by
+      have hpositive : 0 < (3 : ℕ) ^ T := by positivity
+      omega
+    exact degree_error_lower_bound δ hδ0 hδ1 (3 ^ T) hD p
       (cubic_degree_and_cost T p hp).1
   · intro T hT
     exact cubicError_upper_bound T hT δ hδ0 hδ1

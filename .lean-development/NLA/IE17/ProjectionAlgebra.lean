@@ -8,6 +8,7 @@ norm. The generic lemmas work for arbitrary finite row/column index types.
 -/
 import NLA.IE17.Geometry
 import Mathlib.Tactic.Ring
+import Mathlib.Algebra.Order.Star.Real
 
 set_option autoImplicit false
 set_option leancert.trust "kernel"
@@ -75,7 +76,7 @@ theorem augmented_gram {m n : ℕ} (A : Mat m n) (b : Vec m) (x : Vec n) :
     simp [augmentedMatrix, Matrix.mul_apply, Fintype.sum_sum_type, Matrix.one_apply,
       pow_two]
   · simp [augmentedMatrix, Matrix.mul_apply, Fintype.sum_sum_type, Matrix.one_apply,
-      hij, hij.symm]
+      hij, Ne.symm hij]
 
 theorem augmented_gram_posDef {m n : ℕ} (A : Mat m n) (b : Vec m) (x : Vec n)
     (hx : x ≠ 0) (hr : residual A b x ≠ 0) :

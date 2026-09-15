@@ -31,7 +31,7 @@ lemma chebyshev_joukowski (r : ℝ) (hr : r ≠ 0) (D : ℕ) :
       simp only [eval_sub, eval_mul, eval_ofNat, eval_X] at hrec
       rw [← hc1, ← hc2, hn, hn1] at hrec
       rw [hrec]
-      simp only [pow_add, pow_succ, pow_zero, one_mul]
+      simp only [pow_succ]
       field_simp [hr]
       ring
 
@@ -48,7 +48,6 @@ lemma scalar_error_from_chebyshev {e t : ℝ} (he0 : 0 < e) (he1 : e < 1)
   have h2 := mul_le_mul_of_nonneg_right h1 ht0.le
   have heq : ((t + t⁻¹) / 2 * (2 * e)) * t = e * (t ^ 2 + 1) := by
     field_simp [ne_of_gt ht0]
-    ring
   rw [heq] at h2
   by_contra hnot
   have hte : e < t := lt_of_not_ge hnot

@@ -24,7 +24,12 @@
       "NLA.IE17.ExactData",
       "NLA.IE17.Iterates",
       "NLA.IE17.ProjectionAlgebra",
-      "NLA.IE17.Projection"
+      "NLA.IE17.Projection",
+      "NLA.IE17.Quadratic",
+      "NLA.IE17.Certificates",
+      "NLA.IE17.LowerBound",
+      "NLA.IE17.Final",
+      "NLA.IE17.Solution"
     ],
     "challenge": "Challenges/IE17.lean"
   },

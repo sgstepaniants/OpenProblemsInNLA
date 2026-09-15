@@ -23,7 +23,7 @@ lemma cubic_iteration_exists (T : ℕ) (δ : ℝ) (hδ0 : 0 < δ) (hδ1 : δ < 1
   | zero =>
       refine ⟨δ, X, hδ0, hδ1, CubicComposition.empty, ?_, ?_⟩
       · intro x hx
-        simpa only [eval_X] using hx
+        simpa only [eval_X, Set.mem_Icc] using hx
       · simp
   | succ T ih =>
       obtain ⟨a, p, ha0, ha1, hp, himage, hr⟩ := ih
@@ -71,7 +71,8 @@ lemma cubic_improve_error {T : ℕ} {δ e : ℝ} (hδ0 : 0 < δ) (hδ1 : δ < 1)
   have hf : CubicComposition (T + 1) f := CubicComposition.stage hp _ _
   have heval (x : ℝ) : f.eval x = (optimizedCubic a).eval (p.eval x / (1 + e)) := by
     dsimp [f, c, d]
-    simp only [optimizedCubic, cubic, eval_add, eval_mul, eval_C, eval_X, eval_pow]
+    simp only [optimizedCubic, cubic, eval_add, eval_mul, eval_C, eval_X, eval_pow,
+      div_pow]
     ring
   have hinterval := optimized_cubic_interval a ha0 ha1
   have himage : ∀ x ∈ Set.Icc δ 1, improvedGap a ≤ f.eval x ∧ f.eval x ≤ 1 := by

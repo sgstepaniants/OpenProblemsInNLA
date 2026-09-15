@@ -18,6 +18,8 @@ open scoped BigOperators Classical Matrix.Norms.L2Operator
 noncomputable section
 namespace NLA.IE17
 
+attribute [local simp] Matrix.cons_val_two Matrix.cons_val_three Matrix.cons_val_four
+
 theorem witnessA_mulVec (x : Vec 3) :
     witnessA.mulVec x = ![x 0, 6 * x 1, 5 * x 2, 0] := by
   ext i
@@ -119,7 +121,10 @@ theorem witness_normalResidual_injective :
   have h2 := congrFun h 2
   simp [witness_normalResidual] at h0 h1 h2
   ext i
-  fin_cases i <;> linarith
+  fin_cases i
+  · exact h0
+  · exact h1
+  · exact h2
 
 theorem exact_cutoffs :
     (1979 / 2000 : ℝ) < 99 / 100 ∧

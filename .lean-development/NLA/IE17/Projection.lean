@@ -18,6 +18,8 @@ open scoped BigOperators Classical Matrix.Norms.L2Operator
 noncomputable section
 namespace NLA.IE17
 
+attribute [local simp] Matrix.cons_val_two Matrix.cons_val_three Matrix.cons_val_four
+
 theorem projectionError_sq_formula {m n : ℕ} (A : Mat m n) (b : Vec m) (x : Vec n)
     (hx : x ≠ 0) (hr : residual A b x ≠ 0) :
     projectionError A b x ^ 2 =

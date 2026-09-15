@@ -35,7 +35,9 @@ lemma factorization_coordinate_identity (M : Mat 6)
   have hB : (F.val.2 j).IsSymm :=
     Matrix.isHermitian_iff_isSymm.mp (F.property.2.1 j).1
   rw [trace_symmetric_coordinates _ _ hA hB]
-  simp [Matrix.mul_apply, traceMetric, Matrix.mul_diagonal, rowCoordinateMatrix]
+  rw [Matrix.mul_apply]
+  simp only [traceMetric, Matrix.mul_diagonal, rowCoordinateMatrix,
+    Matrix.transpose_apply]
 
 lemma rowCoordinates_congruence (A : Fin 6 → Mat 3)
     (hA : ∀ i, (A i).IsSymm) (S : Mat 3) :

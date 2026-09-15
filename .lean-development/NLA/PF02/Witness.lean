@@ -17,7 +17,8 @@ lemma witness_factor_0_psd : (witnessFactors 0).PosSemidef := by
   apply Matrix.PosSemidef.of_dotProduct_mulVec_nonneg
   · apply Matrix.IsHermitian.ext
     intro i j
-    fin_cases i <;> fin_cases j <;> norm_num [witnessFactors, reflectedFactors]
+    fin_cases i <;> fin_cases j <;> norm_num [witnessFactors, reflectedFactors, Matrix.cons_val,
+      Fin.ext_iff, Fin.reduceFinMk]
   · intro x
     simp [witnessFactors, reflectedFactors, Matrix.mulVec, dotProduct, Fin.sum_univ_succ]
     <;> nlinarith [sq_nonneg (x 0), sq_nonneg (x 1), sq_nonneg (x 2),
@@ -29,7 +30,8 @@ lemma witness_factor_1_psd : (witnessFactors 1).PosSemidef := by
   apply Matrix.PosSemidef.of_dotProduct_mulVec_nonneg
   · apply Matrix.IsHermitian.ext
     intro i j
-    fin_cases i <;> fin_cases j <;> norm_num [witnessFactors, reflectedFactors]
+    fin_cases i <;> fin_cases j <;> norm_num [witnessFactors, reflectedFactors, Matrix.cons_val,
+      Fin.ext_iff, Fin.reduceFinMk]
   · intro x
     simp [witnessFactors, reflectedFactors, Matrix.mulVec, dotProduct, Fin.sum_univ_succ]
     <;> nlinarith [sq_nonneg (x 0), sq_nonneg (x 1), sq_nonneg (x 2),
@@ -41,7 +43,8 @@ lemma witness_factor_2_psd : (witnessFactors 2).PosSemidef := by
   apply Matrix.PosSemidef.of_dotProduct_mulVec_nonneg
   · apply Matrix.IsHermitian.ext
     intro i j
-    fin_cases i <;> fin_cases j <;> norm_num [witnessFactors, reflectedFactors]
+    fin_cases i <;> fin_cases j <;> norm_num [witnessFactors, reflectedFactors, Matrix.cons_val,
+      Fin.ext_iff, Fin.reduceFinMk]
   · intro x
     simp [witnessFactors, reflectedFactors, Matrix.mulVec, dotProduct, Fin.sum_univ_succ]
     <;> nlinarith [sq_nonneg (x 0), sq_nonneg (x 1), sq_nonneg (x 2),
@@ -53,7 +56,8 @@ lemma witness_factor_3_psd : (witnessFactors 3).PosSemidef := by
   apply Matrix.PosSemidef.of_dotProduct_mulVec_nonneg
   · apply Matrix.IsHermitian.ext
     intro i j
-    fin_cases i <;> fin_cases j <;> norm_num [witnessFactors, reflectedFactors]
+    fin_cases i <;> fin_cases j <;> norm_num [witnessFactors, reflectedFactors, Matrix.cons_val,
+      Fin.ext_iff, Fin.reduceFinMk]
   · intro x
     simp [witnessFactors, reflectedFactors, Matrix.mulVec, dotProduct, Fin.sum_univ_succ]
     <;> nlinarith [sq_nonneg (x 0), sq_nonneg (x 1), sq_nonneg (x 2),
@@ -65,7 +69,8 @@ lemma witness_factor_4_psd : (witnessFactors 4).PosSemidef := by
   apply Matrix.PosSemidef.of_dotProduct_mulVec_nonneg
   · apply Matrix.IsHermitian.ext
     intro i j
-    fin_cases i <;> fin_cases j <;> norm_num [witnessFactors, reflectedFactors]
+    fin_cases i <;> fin_cases j <;> norm_num [witnessFactors, reflectedFactors, Matrix.cons_val,
+      Fin.ext_iff, Fin.reduceFinMk]
   · intro x
     simp [witnessFactors, reflectedFactors, Matrix.mulVec, dotProduct, Fin.sum_univ_succ]
     <;> nlinarith [sq_nonneg (x 0), sq_nonneg (x 1), sq_nonneg (x 2),
@@ -77,7 +82,8 @@ lemma witness_factor_5_psd : (witnessFactors 5).PosSemidef := by
   apply Matrix.PosSemidef.of_dotProduct_mulVec_nonneg
   · apply Matrix.IsHermitian.ext
     intro i j
-    fin_cases i <;> fin_cases j <;> norm_num [witnessFactors, reflectedFactors]
+    fin_cases i <;> fin_cases j <;> norm_num [witnessFactors, reflectedFactors, Matrix.cons_val,
+      Fin.ext_iff, Fin.reduceFinMk]
   · intro x
     simp [witnessFactors, reflectedFactors, Matrix.mulVec, dotProduct, Fin.sum_univ_succ]
     <;> nlinarith [sq_nonneg (x 0), sq_nonneg (x 1), sq_nonneg (x 2),
@@ -89,7 +95,8 @@ lemma reflected_factor_three_psd : (reflectedFactors 3).PosSemidef := by
   apply Matrix.PosSemidef.of_dotProduct_mulVec_nonneg
   · apply Matrix.IsHermitian.ext
     intro i j
-    fin_cases i <;> fin_cases j <;> norm_num [witnessFactors, reflectedFactors]
+    fin_cases i <;> fin_cases j <;> norm_num [witnessFactors, reflectedFactors, Matrix.cons_val,
+      Fin.ext_iff, Fin.reduceFinMk]
   · intro x
     simp [witnessFactors, reflectedFactors, Matrix.mulVec, dotProduct, Fin.sum_univ_succ]
     <;> nlinarith [sq_nonneg (x 0), sq_nonneg (x 1), sq_nonneg (x 2),
@@ -117,14 +124,16 @@ lemma witness_factorization : IsPSDFactorization witnessMatrix witnessTuple := b
   intro i j
   fin_cases i <;> fin_cases j <;>
     norm_num [witnessTuple, witnessFactors, witnessMatrix,
-      Matrix.trace, Matrix.diag, Matrix.mul_apply, Fin.sum_univ_succ]
+      Matrix.trace, Matrix.diag, Matrix.mul_apply, Fin.sum_univ_succ,
+      Matrix.cons_val, Fin.ext_iff, Fin.reduceFinMk]
 
 lemma reflected_factorization : IsPSDFactorization witnessMatrix reflectedTuple := by
   refine ⟨reflected_factors_psd, reflected_factors_psd, ?_⟩
   intro i j
   fin_cases i <;> fin_cases j <;>
     norm_num [reflectedTuple, reflectedFactors, witnessFactors, witnessMatrix,
-      Matrix.trace, Matrix.diag, Matrix.mul_apply, Fin.sum_univ_succ]
+      Matrix.trace, Matrix.diag, Matrix.mul_apply, Fin.sum_univ_succ,
+      Matrix.cons_val, Fin.ext_iff, Fin.reduceFinMk]
 
 theorem witness_orientations :
     orientationDeterminant witnessTuple = 32 ∧
@@ -134,7 +143,8 @@ theorem witness_orientations :
       witnessTuple, reflectedTuple, witnessFactors, reflectedFactors,
       Matrix.det_succ_row_zero, Matrix.det_fin_three, Matrix.det_fin_two,
       Matrix.det_fin_one, Matrix.det_fin_zero, Matrix.submatrix_apply,
-      Fin.sum_univ_succ]
+      Fin.sum_univ_succ, Matrix.cons_val, Fin.succAbove, Fin.lt_def,
+      Fin.ext_iff, Fin.reduceFinMk]
 
 lemma witness_matrix_det : witnessMatrix.det = 8192 := by
   let U : Mat 6 := rowCoordinateMatrix witnessFactors
@@ -144,9 +154,10 @@ lemma witness_matrix_det : witnessMatrix.det = 8192 := by
     ext i j
     fin_cases i <;> fin_cases j <;>
       norm_num [U, G, rowCoordinateMatrix, symmetricCoordinates, witnessFactors,
-        witnessMatrix, Matrix.mul_apply, Fin.sum_univ_succ]
+        witnessMatrix, Matrix.mul_apply, Matrix.diagonal_apply, Fin.sum_univ_succ,
+        Matrix.cons_val, Fin.ext_iff, Fin.reduceFinMk]
   rw [he, Matrix.det_mul, Matrix.det_mul, Matrix.det_transpose, hU]
-  norm_num [G, Matrix.det_diagonal, Fin.prod_univ_succ]
+  norm_num [G, Matrix.det_diagonal, Fin.prod_univ_succ, Matrix.cons_val]
 
 theorem witness_certificates :
     (∀ i j, 0 < witnessMatrix i j) ∧
