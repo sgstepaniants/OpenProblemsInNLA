@@ -4,21 +4,28 @@
     "modules": [
       "NLA.MF02.Definitions",
       "NLA.MF02.Model",
-      "NLA.MF02.Cubic"
+      "NLA.MF02.Cubic",
+      "NLA.MF02.Errors",
+      "NLA.MF02.Parity",
+      "NLA.MF02.Iteration"
     ],
     "challenge": "Challenges/MF02.lean"
   },
   {
     "id": "IE-17",
     "modules": [
-      "NLA.IE17.Definitions"
+      "NLA.IE17.Definitions",
+      "NLA.IE17.Geometry",
+      "NLA.IE17.Attainment"
     ],
     "challenge": "Challenges/IE17.lean"
   },
   {
     "id": "PF-02",
     "modules": [
-      "NLA.PF02.Definitions"
+      "NLA.PF02.Definitions",
+      "NLA.PF02.Algebra",
+      "NLA.PF02.Coordinates"
     ],
     "challenge": "Challenges/PF02.lean"
   }

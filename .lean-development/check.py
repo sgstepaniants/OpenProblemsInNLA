@@ -11,8 +11,10 @@ def digest(path):
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 def sources():
-    paths = [p for p in root.rglob("*") if p.is_file()
-             and not ({".lake", "evidence", "__pycache__"} & set(p.relative_to(root).parts))]
+    paths = []
+    for directory, dirs, files in os.walk(root):
+        dirs[:] = [d for d in dirs if d not in {".lake", "evidence", "__pycache__", ".git"}]
+        paths.extend(Path(directory) / name for name in files)
     return {str(p.relative_to(root)): digest(p) for p in sorted(paths)}
 
 receipt = {"kind": "development-elaboration-and-module-checks",
@@ -61,9 +63,17 @@ try:
             raise RuntimeError(f"dependency revision mismatch: {package['name']}")
         receipt["dependency_commits"][package["name"]] = actual
     run(["lake", "exe", "cache", "get"], "mathlib-cache.log")
+    failures = []
     for project in projects:
-        run(["lake", "build", *project["modules"]], f"{project['id']}-modules.log")
-        run(["lake", "env", "lean", project["challenge"]], f"{project['id']}-challenge.log")
+        checks = [(["lake", "build", *project["modules"]], f"{project['id']}-modules.log"),
+                  (["lake", "env", "lean", project["challenge"]], f"{project['id']}-challenge.log")]
+        for argv, filename in checks:
+            try:
+                run(argv, filename)
+            except RuntimeError as exc:
+                failures.append(str(exc))
+    if failures:
+        raise RuntimeError("Development checks failed: " + "; ".join(failures))
     if sources() != receipt["source_sha256"]:
         raise RuntimeError("development source changed during elaboration")
     receipt["status"] = "development-checks-passed-no-complete-problem-verification"

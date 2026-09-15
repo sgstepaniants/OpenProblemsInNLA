@@ -34,7 +34,7 @@ lemma history_degree_bound {k : ℕ} {registers : List ℝ[X]}
   induction h with
   | initial =>
       intro p hp
-      simp only [List.mem_cons, List.mem_singleton] at hp
+      simp only [List.mem_cons, List.not_mem_nil, or_false] at hp
       rcases hp with rfl | rfl <;> simp
   | @product k registers a b history ha hb ih =>
       intro p hp
@@ -103,7 +103,7 @@ lemma programComputable_cubic {m : ℕ} {p : ℝ[X]}
   have hcube : p ^ 3 ∈ freeSpan (((p * p) * p) :: (p * p) :: registers) := by
     have h : (p * p) * p ∈ freeSpan (((p * p) * p) :: (p * p) :: registers) :=
       mem_freeSpan_of_mem (by simp)
-    simpa only [pow_succ, pow_two, pow_one] using h
+    simpa only [pow_succ, pow_zero, one_mul] using h
   simpa only [smul_eq_C_mul] using
     (freeSpan _).add_mem ((freeSpan _).smul_mem a hp2) ((freeSpan _).smul_mem b hcube)
 
@@ -147,7 +147,9 @@ lemma cubicComposition_scale {T : ℕ} {p : ℝ[X]} (hT : 1 ≤ T)
   | empty => omega
   | stage previous a b =>
       have h := CubicComposition.stage previous (c * a) (c * b)
-      convert h using 1 <;> simp only [map_mul] <;> ring
+      convert h using 1
+      simp only [map_mul]
+      ring
 
 #assert_trust kernel program_degree_bound
 #print axioms program_degree_bound

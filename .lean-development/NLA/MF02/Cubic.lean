@@ -88,7 +88,8 @@ theorem optimized_cubic_interval (a : ℝ) (ha0 : 0 < a) (ha1 : a < 1) :
   intro x hx
   have hx0 : 0 < x := ha0.trans_le hx.1
   have hlow : a * (1 + a) ≤ x * (cubicA a - x ^ 2) := by
-    have hprod : 0 ≤ (x - a) * (1 - x) * (x + a + 1) := by positivity
+    have hprod : 0 ≤ (x - a) * (1 - x) * (x + a + 1) :=
+      mul_nonneg (mul_nonneg (sub_nonneg.mpr hx.1) (sub_nonneg.mpr hx.2)) (by linarith)
     nlinarith [cubic_lower_factor a x]
   have hhigh : x * (cubicA a - x ^ 2) ≤ cubicScale a := by
     have hprod : 0 ≤ (x - criticalPoint a) ^ 2 * (x + 2 * criticalPoint a) := by
