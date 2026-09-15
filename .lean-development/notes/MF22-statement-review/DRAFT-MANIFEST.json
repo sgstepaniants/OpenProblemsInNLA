@@ -1,0 +1,32 @@
+{
+  "scope": "statement-only draft; no proof implementation, actual Lean elaboration or independent review claimed",
+  "declarations": 22,
+  "deliberate_challenge_placeholders": 22,
+  "definition_placeholders": 0,
+  "solution_file_exists": false,
+  "yaml_schema_validation": "passed with Ruby safe_load and Python jsonschema Draft7Validator",
+  "schema_sha256": "25ff6b25ca4511635aff4443cf20480c15e59dddf19591c730950b442ea54fce",
+  "exact_polynomial_diagnostics": "all14 true, supplementary only",
+  "lean_execution": false,
+  "files_sha256": {
+    "SOURCE-ASSESSMENT.md": "459e8809caa5709c478431dae32da0d2291a406a308c42a7a484f832392d476d",
+    "comparator.json": "3d35388b2307664f407b6623ed783de88db05159aa2f0c202f042692952cc47d",
+    "SourceCorrespondence.md": "17b9eea27a14d372db0f4a10a686325dcfd2aea50fe61e2faffb802962ee60de",
+    "LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+    "formalization.yaml": "d2296af29a3e389f4ad293872880d335901df814c4b47866beeddfcd06c989b2",
+    "README.md": "00c683924aeea6faf9a5428f10a546fa97027cdb7d261d79680135f129680141",
+    "lake-manifest.json": "8875cbf1c4950de7a170635d73c26d7943c84305a1309fd0a1d9b3d108154e89",
+    "lakefile.toml": "1b63145543616848f5144eb518b322e964e6cbf829e5d4b10ff4cdbac3d8a00e",
+    "SOURCE-PROVENANCE.json": "e4a68c5cb2934610002a124a5d1daed2250820ff7116a8b7f6e4fc38d37e5ec4",
+    "NUMERICAL_TARGETS.md": "913f1b55ad721e7ce4bf8003801d6f318842a619d510b7535dbaefa19e94f9f2",
+    "Challenge.lean": "87da57e93ad0e0054db6d84c461da170785f666afd0ffe34532a62423905a6e0",
+    "NLA/MF22/Definitions.lean": "df592939bea01e87990ede160849296308ea10f0a000386784df8c48e1b4a591",
+    "checks/formalization-parsed.json": "0a87e68906b088a911462e08171c0414da55af9a387b3e9880a839ee9503d877",
+    "checks/v0.4.schema.json": "25ff6b25ca4511635aff4443cf20480c15e59dddf19591c730950b442ea54fce",
+    "checks/exact_source_algebra.json": "6381a7afc3d3b96555b3af659c033ce42565ab93c6355189def23ac8d4f02f4e",
+    "checks/exact_source_algebra.py": "f9d6e3028554c191094a820e9b6c10084cf32a58427ae44bedfc5c7c96ea6aa4",
+    "source/README.md": "1e47aed8795445d4b2fd7736d4ec0420dee5460f1fd12de37097f58d3d752eda",
+    "source/solution.md": "a274a6401b27037bb5034cbffe87f02204fdcb663c40a9a7adfe033a19283edb"
+  }
+}

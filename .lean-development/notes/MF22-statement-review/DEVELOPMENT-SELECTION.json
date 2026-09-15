@@ -1,0 +1,124 @@
+{
+  "scope": "Reviewed MF-22 definitions and 22 Challenge signatures only; no proof implementation, freeze, mathematical verification, or canonical operational acceptance.",
+  "base_commit": "a1efcbfc59263b9e5bb00914ee709112348c1e54",
+  "problem": "MF-22",
+  "selected_modules": [
+    "NLA.MF22.Definitions"
+  ],
+  "selected_challenge": "Challenges/MF22.lean",
+  "independent_statement_approvals": 2,
+  "actual_elaboration": "pending; no Lean or Lake run during preparation",
+  "proof_files_added": false,
+  "statement_freeze_added": false,
+  "IE14_included": false,
+  "review_reports_are_immutable_historical_receipts": true,
+  "source_copies": [
+    {
+      "source": "/tmp/nla-lean-next-20260915/matrix-functions/MF-22/NLA/MF22/Definitions.lean",
+      "destination": ".lean-development/NLA/MF22/Definitions.lean",
+      "sha256": "df592939bea01e87990ede160849296308ea10f0a000386784df8c48e1b4a591"
+    },
+    {
+      "source": "/tmp/nla-lean-next-20260915/matrix-functions/MF-22/Challenge.lean",
+      "destination": ".lean-development/Challenges/MF22.lean",
+      "sha256": "87da57e93ad0e0054db6d84c461da170785f666afd0ffe34532a62423905a6e0"
+    },
+    {
+      "source": "/tmp/nla-lean-next-20260915/matrix-functions/MF-22/NUMERICAL_TARGETS.md",
+      "destination": ".lean-development/notes/MF22-NUMERICAL_TARGETS.md",
+      "sha256": "913f1b55ad721e7ce4bf8003801d6f318842a619d510b7535dbaefa19e94f9f2"
+    },
+    {
+      "source": "/tmp/nla-lean-next-20260915/matrix-functions/MF-22/README.md",
+      "destination": ".lean-development/notes/MF22-statement-review/README.md",
+      "sha256": "00c683924aeea6faf9a5428f10a546fa97027cdb7d261d79680135f129680141"
+    },
+    {
+      "source": "/tmp/nla-lean-next-20260915/matrix-functions/MF-22/SourceCorrespondence.md",
+      "destination": ".lean-development/notes/MF22-statement-review/SourceCorrespondence.md",
+      "sha256": "17b9eea27a14d372db0f4a10a686325dcfd2aea50fe61e2faffb802962ee60de"
+    },
+    {
+      "source": "/tmp/nla-lean-next-20260915/matrix-functions/MF-22/SOURCE-PROVENANCE.json",
+      "destination": ".lean-development/notes/MF22-statement-review/SOURCE-PROVENANCE.json",
+      "sha256": "e4a68c5cb2934610002a124a5d1daed2250820ff7116a8b7f6e4fc38d37e5ec4"
+    },
+    {
+      "source": "/tmp/nla-lean-next-20260915/matrix-functions/MF-22/formalization.yaml",
+      "destination": ".lean-development/notes/MF22-statement-review/formalization.yaml",
+      "sha256": "d2296af29a3e389f4ad293872880d335901df814c4b47866beeddfcd06c989b2"
+    },
+    {
+      "source": "/tmp/nla-lean-next-20260915/matrix-functions/MF-22/comparator.json",
+      "destination": ".lean-development/notes/MF22-statement-review/comparator.json",
+      "sha256": "3d35388b2307664f407b6623ed783de88db05159aa2f0c202f042692952cc47d"
+    },
+    {
+      "source": "/tmp/nla-lean-next-20260915/matrix-functions/MF-22/DRAFT-MANIFEST.json",
+      "destination": ".lean-development/notes/MF22-statement-review/DRAFT-MANIFEST.json",
+      "sha256": "fe37341e89113a75e504648b24acd00a030ab5bdf8730550ac16bebe091e2964"
+    },
+    {
+      "source": "/tmp/nla-lean-next-20260915/matrix-functions/MF-22/SOURCE-ASSESSMENT.md",
+      "destination": ".lean-development/notes/MF22-statement-review/SOURCE-ASSESSMENT.md",
+      "sha256": "459e8809caa5709c478431dae32da0d2291a406a308c42a7a484f832392d476d"
+    },
+    {
+      "source": "/tmp/nla-lean-next-20260915/matrix-functions/MF-22/LICENSE",
+      "destination": ".lean-development/notes/MF22-statement-review/LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "source": "/tmp/nla-lean-next-20260915/matrix-functions/MF-22/source/README.md",
+      "destination": ".lean-development/notes/MF22-statement-review/source/README.md",
+      "sha256": "1e47aed8795445d4b2fd7736d4ec0420dee5460f1fd12de37097f58d3d752eda"
+    },
+    {
+      "source": "/tmp/nla-lean-next-20260915/matrix-functions/MF-22/source/solution.md",
+      "destination": ".lean-development/notes/MF22-statement-review/source/solution.md",
+      "sha256": "a274a6401b27037bb5034cbffe87f02204fdcb663c40a9a7adfe033a19283edb"
+    },
+    {
+      "source": "/tmp/nla-lean-next-20260915/reviews/MF22-root-statements/REVIEW.md",
+      "destination": ".lean-development/notes/MF22-statement-review/reviews/root/REVIEW.md",
+      "sha256": "85000ce6aca7e5c03f881b14a1387646ed7ae0852e1dceb08142df0f9a1eaf73"
+    },
+    {
+      "source": "/tmp/nla-lean-next-20260915/reviews/MF22-root-statements/CHECKS.json",
+      "destination": ".lean-development/notes/MF22-statement-review/reviews/root/CHECKS.json",
+      "sha256": "7244e374c5a1b61adc3ef23ed675b346c1b0fb0c80ae1fa6ae8a963065d1de5f"
+    },
+    {
+      "source": "/tmp/nla-lean-next-20260915/reviews/MF22-elimination-statements/REVIEW.md",
+      "destination": ".lean-development/notes/MF22-statement-review/reviews/elimination/REVIEW.md",
+      "sha256": "2e35697f570a76821e583202c7cd433bfb0fa586f1a439dc9a5204adf4c3c4d8"
+    },
+    {
+      "source": "/tmp/nla-lean-next-20260915/reviews/MF22-elimination-statements/CHECKS.json",
+      "destination": ".lean-development/notes/MF22-statement-review/reviews/elimination/CHECKS.json",
+      "sha256": "05bb483b14a123feb3a9d6d3572161314c167f8f6d27774226803bf7ebf3988e"
+    },
+    {
+      "source": "/tmp/nla-lean-next-20260915/reviews/MF22-elimination-statements/INPUTS.json",
+      "destination": ".lean-development/notes/MF22-statement-review/reviews/elimination/INPUTS.json",
+      "sha256": "72b595bdf2304cd6eec79da002988545352848e08aa54351a565e3bc23f62c68"
+    },
+    {
+      "source": "/tmp/nla-lean-next-20260915/reviews/MF22-elimination-statements/EXACT-DIAGNOSTICS.json",
+      "destination": ".lean-development/notes/MF22-statement-review/reviews/elimination/EXACT-DIAGNOSTICS.json",
+      "sha256": "69d4f537fbb00ed1e5037ba42da21cb1b6fbe570c158200d09ca0620c62b679e"
+    }
+  ],
+  "review_receipt_sha256": {
+    ".lean-development/notes/MF22-statement-review/reviews/root/REVIEW.md": "85000ce6aca7e5c03f881b14a1387646ed7ae0852e1dceb08142df0f9a1eaf73",
+    ".lean-development/notes/MF22-statement-review/reviews/root/CHECKS.json": "7244e374c5a1b61adc3ef23ed675b346c1b0fb0c80ae1fa6ae8a963065d1de5f",
+    ".lean-development/notes/MF22-statement-review/reviews/elimination/REVIEW.md": "2e35697f570a76821e583202c7cd433bfb0fa586f1a439dc9a5204adf4c3c4d8",
+    ".lean-development/notes/MF22-statement-review/reviews/elimination/CHECKS.json": "05bb483b14a123feb3a9d6d3572161314c167f8f6d27774226803bf7ebf3988e",
+    ".lean-development/notes/MF22-statement-review/reviews/elimination/INPUTS.json": "72b595bdf2304cd6eec79da002988545352848e08aa54351a565e3bc23f62c68",
+    ".lean-development/notes/MF22-statement-review/reviews/elimination/EXACT-DIAGNOSTICS.json": "69d4f537fbb00ed1e5037ba42da21cb1b6fbe570c158200d09ca0620c62b679e"
+  },
+  "shared_dependency_package_records_equal_reviewed_package": true,
+  "shared_lock_differences_from_reviewed_package": "Whitespace and root project name only; unchanged shared name NLADevelopment vs reviewed package NLAMF22. All other parsed JSON fields equal.",
+  "shared_toolchain_equals_reviewed_package": true,
+  "whole_problem_verified": false
+}

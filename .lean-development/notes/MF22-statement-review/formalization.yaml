@@ -1,0 +1,117 @@
+# yaml-language-server: $schema=../../../docs/lean/schema/v0.4.schema.json
+version: v0.4
+project:
+  name: 'MF-22: eventual polynomial conditioning of the cubic C1 Toeplitz family'
+  description: >-
+    Proof-free full-target statement draft for every positive real parameter,
+    the exact complex block Toeplitz matrices, eventual invertibility and a
+    sufficient quadratic bound on the genuine spectral condition number.
+  authors:
+  - George Stepaniants
+  affiliations:
+    George Stepaniants: Department of Computing and Mathematical Sciences, California Institute of Technology, Pasadena, California, USA
+  responsible_maintainers:
+  - George Stepaniants
+  license: Apache-2.0
+repository:
+  role: substantive-development
+sources:
+- title: 'MF-22 — Polynomial conditioning of the cubic C1 spline Schrodinger Toeplitz family'
+  id: https://github.com/ajt60gaibb/OpenProblemsInNLA/blob/8f04b905eb2e0827b6b84f37d9d080ae1f05b202/matrix-functions-and-stability/MF-22/README.md
+  type: web-post
+  location: Complete original problem, exact coefficient blocks and retained resolution
+  relationship: formalizes
+  author_endorsement: not-contacted
+  note: Permanent ID, original parameter domain, original Toeplitz boundary and complete existential polynomial target preserved.
+- title: 'MF-22: An eventual linear condition-number bound'
+  authors:
+  - George Stepaniants
+  id: https://github.com/ajt60gaibb/OpenProblemsInNLA/blob/8f04b905eb2e0827b6b84f37d9d080ae1f05b202/matrix-functions-and-stability/MF-22/solution.md
+  type: manuscript
+  location: Complete theorem and proof in sections1–4
+  relationship: formalizes
+  author_endorsement: not-contacted
+  note: >-
+    Retains the source proof's transfer recurrence, cancellation exclusion,
+    exceptional parameter and finite Green-kernel mechanism. The proposed
+    formalization certifies only the original polynomial target, using a
+    sufficient quadratic estimate; it does not claim the sharper linear bound.
+- title: Condition numbers of block Toeplitz matrices and stability of space-time IgA approximations for the wave and Schrodinger equations
+  authors:
+  - M. Bogoya
+  - A. Bottcher
+  - M. Ferrari
+  - S. M. Grudsky
+  - S. Serra-Capizzano
+  id: https://arxiv.org/abs/2608.24151v1
+  type: preprint
+  location: Equation5.22, section5.3, equation5.32, Proposition5.14 and paragraph after Figure9
+  relationship: background
+  author_endorsement: not-contacted
+  note: The original family, source root classification and question retain their original authors' credit; no unproved source result is an intended axiom.
+related_formalizations:
+- id: https://github.com/sgstepaniants/Forsythe/tree/8d1b0c0545a77b40245e84705aa7d273e6c81e62/lean-proof
+  relationship: other
+  note: Numerical-target separation, kernel-only LeanCert and Comparator reproduction patterns studied; no theorem imported.
+- id: https://github.com/jaumededios/Schiffer/tree/2938e277969c329caf154e48a3d8823f3635c7f1
+  relationship: other
+  note: Independent Challenge/Solution organization studied; no mathematical theorem imported.
+- id: https://github.com/leanprover-community/mathlib4/tree/0df444a360eaa60ab8c11dca51a86af692955474
+  relationship: builds-on
+  note: Genuine Euclidean matrix operators, actual inverse, cubic discriminants, Lagrange interpolation and Cayley-Hamilton are the proposed foundations.
+automation:
+  methods:
+  - method: agent
+    framework: OpenAI Codex
+    tool_setup: >-
+      Multiple problem agents; drafting on macOS; all actual Lean statement,
+      proof and Comparator checks are assigned to non-root Linux. No local
+      Lean/Lake/cache download or execution is authorized.
+    prompting_notes: >-
+      State the full target before proof bodies. Preserve the exact eight
+      coefficient blocks, complex field, singular condition-number convention,
+      every positive parameter including rho squared equals10, all growing
+      dimensions and the actual inverse. Use exact small-matrix algebra and
+      the permitted exponent2 to eliminate intervals, root numerics and
+      unnecessary sharp norm estimates. Require LeanCert kernel trust for
+      every eventual export and independent Comparator with no definition holes.
+  notes: >-
+    AI-assisted statement draft by /root/next_matrix_functions. Exact Gaussian
+    integer polynomial diagnostics are supplementary source-data checks only.
+    No proof body, Lean acceptance or independent statement approval is claimed.
+status:
+  scope: >-
+    Definitions and22 deliberate Challenge placeholders only. All proof,
+    independent-review, statement-typecheck, freeze and mechanical acceptance
+    gates are pending. No verified-count increment or repository status change.
+  main_results: []
+fidelity:
+  divergences: >-
+    The original question asks for some nonnegative polynomial exponent. The
+    draft proves the full target using exponent2, via coarse dimension times
+    entry bounds on both actual matrices. The source's sharper exponent1 is
+    not claimed. Direct fixed-size determinant/cofactor certificates replace
+    the source's formal-generating-function denominator inference. All domains,
+    coefficient blocks, boundary entries, invertibility requirements and the
+    exceptional positive parameter remain unchanged.
+review:
+  status: unreviewed statement-only draft; all proof and mechanical gates pending
+  reviewers: []
+  notes: >-
+    Two independent statement reviews and actual Linux elaboration precede
+    an immutable freeze and any proof bodies. Final acceptance requires two
+    independent referees applying scoped Tau Ceti fidelity, proof-quality,
+    reuse and attribution criteria, all LeanCert kernel assertions, the actual
+    permitted-axiom audit, Comparator, default-kernel replay and rejection
+    controls. No official Tau Ceti endorsement or human peer review is claimed.
+alignment:
+  source_correspondence: SourceCorrespondence.md
+  numerical_boundary: NUMERICAL_TARGETS.md
+  proposed_statements: Challenge.lean
+  source_provenance: SOURCE-PROVENANCE.json
+  intended_implementation_entry: Solution.lean
+acknowledgements: >-
+  Bogoya, Bottcher, Ferrari, Grudsky and Serra-Capizzano for the original family,
+  question and source root classification; Mathlib, LeanCert and Comparator
+  contributors for mathematical foundations and verification tools. The
+  retained source mathematical proof and formalization are credited separately.

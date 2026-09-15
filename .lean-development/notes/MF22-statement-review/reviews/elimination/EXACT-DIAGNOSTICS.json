@@ -1,0 +1,14 @@
+{
+  "scope": "Independent bounded exact rational-complex diagnostics and two exact polynomial coefficient identities; not universal Lean proofs, root isolation or norm verification.",
+  "script_sha256": "305269f83610ba46102ba1c0b4f33e444cf3dad46ceb68fd76a269944853490b",
+  "counts": {
+    "symbolic_discriminant_coefficient_identity": 1,
+    "symbolic_completed_square_coefficient_identity": 1,
+    "transfer_polynomial_points": 35,
+    "cayley_points": 30,
+    "coprimality_elimination_data": 5,
+    "actual_Green_inverse_dimensions": 25,
+    "every_state_entry_identities": 2800
+  },
+  "all_passed": true
+}

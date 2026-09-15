@@ -1,9 +1,9 @@
 [
   {
-    "id": "MF-12",
+    "id": "MF-22",
     "modules": [
-      "NLA.MF12.Solution"
+      "NLA.MF22.Definitions"
     ],
-    "challenge": "Challenges/MF12.lean"
+    "challenge": "Challenges/MF22.lean"
   }
 ]

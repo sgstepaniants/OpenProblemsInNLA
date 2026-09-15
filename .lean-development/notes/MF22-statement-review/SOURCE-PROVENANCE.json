@@ -1,0 +1,13 @@
+{
+  "source_repository": "https://github.com/ajt60gaibb/OpenProblemsInNLA",
+  "source_commit": "8f04b905eb2e0827b6b84f37d9d080ae1f05b202",
+  "canonical_path": "matrix-functions-and-stability/MF-22/README.md",
+  "retained_sources_sha256": {
+    "source/README.md": "1e47aed8795445d4b2fd7736d4ec0420dee5460f1fd12de37097f58d3d752eda",
+    "source/solution.md": "a274a6401b27037bb5034cbffe87f02204fdcb663c40a9a7adfe033a19283edb"
+  },
+  "original_mathematical_author": "George Stepaniants",
+  "formalization_author": "George Stepaniants",
+  "affiliation": "Department of Computing and Mathematical Sciences, California Institute of Technology, Pasadena, California, USA",
+  "scope": "Complete original existential polynomial-conditioning target; proposed exponent2 sufficient. Does not certify the stronger exponent1 in the retained manuscript. Statement drafting only; no proof implementation."
+}

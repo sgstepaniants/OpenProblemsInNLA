@@ -1,0 +1,80 @@
+{
+  "problem": "MF-22",
+  "reviewer": "OpenAI Codex agent /root/next_elimination",
+  "phase": "independent full mathematical statement review",
+  "verdict": "approve; no mathematical correction requested",
+  "author_file_edits": false,
+  "Lean_Lake_cache_execution": false,
+  "actual_statement_elaboration_claimed": false,
+  "proof_implementation_authorized_by_this_report": false,
+  "held_source_snapshot_matches_current": true,
+  "statement_count": 22,
+  "only_Challenge_placeholders": 22,
+  "definitions_have_no_holes_or_custom_axioms": true,
+  "Solution_absent": true,
+  "all22_comparator_targets_match": true,
+  "definition_holes": [],
+  "v0_4_schema_valid": true,
+  "schema_sha256": "25ff6b25ca4511635aff4443cf20480c15e59dddf19591c730950b442ea54fce",
+  "source_provenance": {
+    "matrix-functions-and-stability/MF-22/README.md": {
+      "source_commit": "8f04b905eb2e0827b6b84f37d9d080ae1f05b202",
+      "sha256": "1e47aed8795445d4b2fd7736d4ec0420dee5460f1fd12de37097f58d3d752eda",
+      "latest_inspected_commit": "ce47b5630bf3680d9211131c3a43825b022c139a",
+      "latest_sha256": "1e47aed8795445d4b2fd7736d4ec0420dee5460f1fd12de37097f58d3d752eda",
+      "latest_unchanged": true
+    },
+    "matrix-functions-and-stability/MF-22/solution.md": {
+      "source_commit": "8f04b905eb2e0827b6b84f37d9d080ae1f05b202",
+      "sha256": "a274a6401b27037bb5034cbffe87f02204fdcb663c40a9a7adfe033a19283edb",
+      "latest_inspected_commit": "ce47b5630bf3680d9211131c3a43825b022c139a",
+      "latest_sha256": "a274a6401b27037bb5034cbffe87f02204fdcb663c40a9a7adfe033a19283edb",
+      "latest_unchanged": true
+    }
+  },
+  "pinned_mathlib_commit": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "inspected_API_sources": {
+    "Mathlib/Analysis/CStarAlgebra/Matrix.lean": "79518c9e51c4d0cf4083ab69a9ac7a2817305b48db1fe6f25ae1d678e12ce223",
+    "Mathlib/Algebra/CubicDiscriminant.lean": "ca5bc03b0bf418b60f8b828c598304e348d56b14635909f29ba0706ef9b546ec",
+    "Mathlib/LinearAlgebra/Lagrange.lean": "d499c3a0f94632d32003acec6dd5f40c4bffaf6985374dfa20c3c5addced3259",
+    "Mathlib/LinearAlgebra/Matrix/NonsingularInverse.lean": "1ee785b6ebd213ad2ed971bf3c804afee8cc6ce52be69e63572b4cf1bdb5e880"
+  },
+  "independent_exact_diagnostics": {
+    "scope": "Independent bounded exact rational-complex diagnostics and two exact polynomial coefficient identities; not universal Lean proofs, root isolation or norm verification.",
+    "script_sha256": "305269f83610ba46102ba1c0b4f33e444cf3dad46ceb68fd76a269944853490b",
+    "counts": {
+      "symbolic_discriminant_coefficient_identity": 1,
+      "symbolic_completed_square_coefficient_identity": 1,
+      "transfer_polynomial_points": 35,
+      "cayley_points": 30,
+      "coprimality_elimination_data": 5,
+      "actual_Green_inverse_dimensions": 25,
+      "every_state_entry_identities": 2800
+    },
+    "all_passed": true
+  },
+  "scope_checks": {
+    "original_complex_field_and_eight_exact_blocks": true,
+    "integer_Toeplitz_offsets_and_uncorrected_boundaries": true,
+    "genuine_Euclidean_operator_norm": true,
+    "singular_condition_number_infinite": true,
+    "full_positive_parameter_including_rho_squared_10": true,
+    "actual_recurrence_and_all_state_boundaries": true,
+    "four_root_existence_is_exported_unconditionally": true,
+    "full_dominant_projector_rank_one_identity": true,
+    "actual_two_sided_inverse_and_factor80": true,
+    "uniform_all_sizes_all_Green_indices": true,
+    "fixed_constants_independent_of_running_n": true,
+    "exponent2_fulfills_original_existential_target": true,
+    "source_exponent1_not_claimed_as_verified": true
+  },
+  "remaining_gates": [
+    "second independent statement approval",
+    "actual Linux elaboration",
+    "immutable statement freeze",
+    "complete proof implementation",
+    "two final independent source/evidence referees",
+    "actual LeanCert/kernel/Comparator/rejection controls"
+  ],
+  "whole_problem_verified": false
+}

@@ -1,0 +1,34 @@
+{
+  "challenge_module": "Challenge",
+  "solution_module": "Solution",
+  "theorem_names": [
+    "NLA.MF22.complex_entry_norm_bound",
+    "NLA.MF22.source_entry_bound",
+    "NLA.MF22.leading_block_invertible",
+    "NLA.MF22.source_boundaries",
+    "NLA.MF22.source_recurrence",
+    "NLA.MF22.transfer_polynomial_certificates",
+    "NLA.MF22.numerator_denominator_coprime",
+    "NLA.MF22.quartic_factorization",
+    "NLA.MF22.cayley_identity",
+    "NLA.MF22.positive_discriminant_factor",
+    "NLA.MF22.real_cubic_discriminant",
+    "NLA.MF22.exceptional_parameter",
+    "NLA.MF22.four_roots",
+    "NLA.MF22.spectral_projector_algebra",
+    "NLA.MF22.dominant_projector",
+    "NLA.MF22.spectral_tail_bounds",
+    "NLA.MF22.green_source_state",
+    "NLA.MF22.green_inverse",
+    "NLA.MF22.uniform_green_entries",
+    "NLA.MF22.eventual_inverse_entries",
+    "NLA.MF22.eventual_quadratic_conditioning",
+    "NLA.MF22.polynomial_conditioning"
+  ],
+  "definition_names": [],
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ]
+}
