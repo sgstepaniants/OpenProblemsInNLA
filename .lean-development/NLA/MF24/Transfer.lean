@@ -8,6 +8,7 @@ Technology, Pasadena, California, USA. AI-assisted formalization.
 Original mathematical counterexample: Georg Maierhofer, University of Cambridge.
 -/
 import NLA.MF24.GramContinuant
+import NLA.MF24.FamilyTransfer
 
 set_option autoImplicit false
 set_option leancert.trust "kernel"
@@ -24,8 +25,8 @@ private theorem prefix_product_step (word : List ℝ) (u ρ : ℂ) (k : ℕ)
     transferProduct u ρ (word.take (k + 1)) =
       transferMatrix u ρ ((word.getD k 0 : ℂ) ^ 2) *
         transferProduct u ρ (word.take k) := by
-  rw [List.take_succ_eq_append_getElem hk, List.getD_eq_getElem word 0 hk]
-  simp [transferProduct, List.reverse_append]
+  rw [List.take_succ_eq_append_getElem hk, transferProduct_append,
+    transferProduct_singleton, List.getD_eq_getElem word 0 hk]
 
 /-- Both coordinates track actual Gram determinants throughout the entire
 prefix, so the scalar recurrence is connected to the ordered matrix product. -/

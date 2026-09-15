@@ -19,8 +19,11 @@ lemma positive_triple_product_gt_one (x : Fin 3 → ℝ) (hx : ∀ i, 1 < x i) :
     (by linarith [hx 1] : 0 < x 1)
   have h012 := mul_lt_mul_of_pos h01 (hx 2) (by norm_num : (0 : ℝ) < 1 * 1)
     (by linarith [hx 2] : 0 < x 2)
-  simpa only [one_mul, Fin.prod_univ_succ, Fin.prod_univ_zero, mul_one, mul_assoc]
-    using h012
+  norm_num only [one_mul] at h012
+  rw [mul_assoc] at h012
+  simp only [Fin.prod_univ_succ, Fin.prod_univ_zero, mul_one]
+  change (1 : ℝ) < x 0 * (x 1 * x 2)
+  exact h012
 
 lemma triple_product_small_coordinate (x : Fin 3 → ℝ) (q b : ℝ)
     (hx : ∀ i, 0 ≤ x i) (hupper : ∀ i, x i ≤ b) (hsmall : ∃ i, x i ≤ q) :
@@ -32,7 +35,8 @@ lemma triple_product_small_coordinate (x : Fin 3 → ℝ) (q b : ℝ)
     intro j hj
     by_cases hji : j = i
     · subst j
-      simpa only [if_pos rfl] using hi
+      rw [if_pos rfl]
+      exact hi
     · simpa only [if_neg hji] using hupper j
   have hcap : (∏ j : Fin 3, if j = i then q else b) = q * b ^ 2 := by
     fin_cases i <;> simp [Fin.prod_univ_succ, pow_two, mul_comm, mul_left_comm, mul_assoc]

@@ -31,7 +31,7 @@ lemma sum_le_one_exception {α : Type*} (s : Finset α) (bad : α → Prop)
   have hconst : (∑ v ∈ s, if bad v then hi - lo else 0) =
       ((s.filter bad).card : ℝ) * (hi - lo) := by
     rw [← Finset.sum_filter]
-    simp
+    simp only [Finset.sum_const, nsmul_eq_mul]
   rw [Finset.sum_add_distrib, hconst] at hsum
   simp only [Finset.sum_const, nsmul_eq_mul] at hsum
   have hc : (s.card : ℝ) ≤ (m : ℝ) + 1 := by exact_mod_cast hcard

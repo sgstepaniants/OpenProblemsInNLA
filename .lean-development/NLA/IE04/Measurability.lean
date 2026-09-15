@@ -99,7 +99,10 @@ theorem measurable_schur_selected {α : Type*} [MeasurableSpace α] {n : ℕ}
 theorem measurable_firstTrajectory (n k : ℕ) :
     Measurable (fun A : Mat n => firstTrajectory A k) := by
   induction k with
-  | zero => simpa only [firstTrajectory, id] using (measurable_id : Measurable (@id (Mat n)))
+  | zero =>
+      apply measurable_matrix_entries
+      intro i j
+      simpa only [firstTrajectory] using (measurable_matrix_entry (n := n) i j)
   | succ k ih =>
       by_cases hk : k < n
       · have hentries : ∀ i j, Measurable (fun A : Mat n => firstTrajectory A k i j) :=
@@ -121,7 +124,7 @@ private theorem measurable_nnreal_finset_sup {α ι : Type*} [MeasurableSpace α
   | @insert i s hi ih =>
       convert (hf i).sup ih using 1
       funext a
-      simp only [Finset.sup_insert, Pi.sup_apply, sup_eq_max]
+      simp only [Finset.sup_insert, Pi.sup_apply]
 
 theorem measurable_entryMax (n : ℕ) : Measurable (@entryMax n) := by
   exact (measurable_nnreal_finset_sup Finset.univ

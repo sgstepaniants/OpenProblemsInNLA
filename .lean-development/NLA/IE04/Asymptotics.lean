@@ -25,7 +25,7 @@ namespace NLA.IE04
 theorem exponential_ratio_tendsto (s : ℝ) :
     Tendsto (fun n : ℕ => (3 / 2 : ℝ) ^ n / (n : ℝ) ^ s) atTop atTop := by
   have hlog : 0 < Real.log (3 / 2 : ℝ) := Real.log_pos (by norm_num)
-  have h := (Real.tendsto_exp_mul_div_rpow_atTop s (Real.log (3 / 2)) hlog).comp
+  have h := (_root_.tendsto_exp_mul_div_rpow_atTop s (Real.log (3 / 2)) hlog).comp
     (tendsto_natCast_atTop_atTop : Tendsto (fun n : ℕ => (n : ℝ)) atTop atTop)
   have hexp (n : ℕ) : Real.exp (Real.log (3 / 2 : ℝ) * (n : ℝ)) = (3 / 2 : ℝ) ^ n := by
     rw [Real.exp_mul, Real.exp_log (by norm_num : (0 : ℝ) < 3 / 2), Real.rpow_natCast]
@@ -41,7 +41,6 @@ theorem threshold_ratio_identity {n : ℕ} (hn : 1 ≤ n) (c₁ : ℝ) :
   rw [hp, Real.rpow_add hnpos c₁ 4, Real.rpow_ofNat]
   unfold contradictionThreshold
   field_simp
-  ring
 
 theorem probabilityExponent_quartic {n : ℕ} (hn : 2 ≤ n) :
     (probabilityExponent n : ℝ) ≤ 3 * (n : ℝ) ^ 4 := by

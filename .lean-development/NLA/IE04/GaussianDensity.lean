@@ -41,7 +41,7 @@ theorem standard_normal_density_lower (z : ℝ) (hz : |z| ≤ 2) :
     (Real.sqrt_lt (by positivity) (by norm_num)).mpr (by nlinarith [Real.pi_lt_four])
   have hquot : (1 / 32 : ℝ) < Real.exp (-z ^ 2 / 2) / Real.sqrt (2 * Real.pi) :=
     (lt_div_iff₀ hspos).mpr (by nlinarith)
-  simpa only [gaussianPDFReal, NNReal.coe_one, mul_one, sub_zero, div_eq_mul_inv,
+  simpa only [gaussianPDFReal, NNReal.coe_one, mul_one, one_mul, sub_zero, div_eq_mul_inv,
     mul_comm] using hquot
 
 theorem gaussian_interval_lower (a δ : ℝ) (ha : |a| ≤ 1)

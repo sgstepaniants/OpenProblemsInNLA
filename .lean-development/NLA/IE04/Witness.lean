@@ -31,12 +31,9 @@ theorem modelStage_pivot {n k : ℕ} (hk : k < n) :
 theorem modelStage_lower_pivot {n k : ℕ} (hk : k < n) (hk' : k + 1 < n)
     (i : Fin n) (hi : k < i.val) : modelStage n k i ⟨k, hk⟩ = -(1 / 2 : ℝ) := by
   have hlast : k + 1 ≠ n := by omega
-  have hne : i ≠ (⟨k, hk⟩ : Fin n) := by
-    intro h
-    have hv := congrArg Fin.val h
-    simp only [Fin.val_mk] at hv
-    omega
-  simp [modelStage, hi.le, hlast, hne, hi]
+  have hiFin : (⟨k, hk⟩ : Fin n) < i := hi
+  have hne : i ≠ (⟨k, hk⟩ : Fin n) := ne_of_gt hiFin
+  simp [modelStage, hi.le, hlast, hne, hiFin]
 
 theorem modelStage_active_update {n k : ℕ} (hk : k < n) (i j : Fin n)
     (hi : k < i.val) (hj : k < j.val) :
@@ -129,7 +126,9 @@ theorem witness_peakMax {n : ℕ} (hn : 2 ≤ n) :
       (trajectory (witnessMatrix n) (noSwapPath n) last.val) last.val last last le_rfl le_rfl
     rw [witness_trajectory hn last.val last.isLt, modelStage_pivot last.isLt,
       if_pos hlast, abs_of_nonneg (by positivity)] at hentry
-    exact hentry.trans (activeMax_le_peakMax_proved (witnessMatrix n) (noSwapPath n) last)
+    have hpeak := activeMax_le_peakMax_proved (witnessMatrix n) (noSwapPath n) last
+    rw [witness_trajectory hn last.val last.isLt] at hpeak
+    exact hentry.trans hpeak
 
 theorem witness_strict_growth {n : ℕ} (hn : 2 ≤ n) :
     (witnessMatrix n).det ≠ 0 ∧ StrictNoSwapPath (witnessMatrix n) ∧

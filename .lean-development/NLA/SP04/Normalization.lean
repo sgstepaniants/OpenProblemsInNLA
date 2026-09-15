@@ -87,7 +87,8 @@ theorem selected_product_normalization (s : Fin 3 → ℝ) (hs : OrderedBox s) :
     StrictMonoOn (selectedProduct s) (Set.Ici 0) ∧
     selectedProduct s 0 = 0 ∧ 1 < selectedProduct s (13 / 25) ∧
     ∃! t : ℝ, 0 < t ∧ t < 13 / 25 ∧ selectedProduct s t = 1 := by
-  have hc := (selected_product_continuous s).continuousOn
+  have hc : ContinuousOn (selectedProduct s) (Set.Icc 0 (13 / 25)) :=
+    (selected_product_continuous s).continuousOn
   have hm := selected_product_strictMono s hs
   have hz := selected_product_zero s hs
   have he := selected_product_endpoint s hs
