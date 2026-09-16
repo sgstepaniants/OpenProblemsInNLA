@@ -1,0 +1,54 @@
+{
+  "reviewer": "OpenAI Codex independent AI agent /root/next_elimination",
+  "reviewer_is_implementation_author": false,
+  "phase": "bounded incremental mathematical source review",
+  "verdict": "APPROVE source only; actual compilation and final full-project gates pending",
+  "reviewed_at_utc": "2026-09-16T01:55:22.740524+00:00",
+  "handoff_manifest_sha256": "28d04bcc7b7b32a05b13147e5a7d5c4274c6fb89987c08550a901747a84a6509",
+  "new_Limit_sha256": "5a10598688c704f7ee2a13b990ee4cd9d35e2373ba051f651972a66e6aee6e1a",
+  "frozen_statement_header_identity": true,
+  "frozen_sandwich_header_identity": true,
+  "all_handoff_hashes_match_current_source": true,
+  "all_source_provenance_hashes_match_immutable_Git": true,
+  "new_exports_reviewed": [
+    "NLA.MI04.upperCoefficient_tendsto",
+    "NLA.MI04.lowerCoefficient_tendsto",
+    "NLA.MI04.simple_peak_second_order"
+  ],
+  "full_dependency_sources_read": [
+    "NLA/MI04/Coordinates.lean",
+    "NLA/MI04/Correction.lean",
+    "NLA/MI04/Limit.lean",
+    "NLA/MI04/Punctured.lean",
+    "NLA/MI04/Quadratic.lean",
+    "NLA/MI04/Rayleigh.lean",
+    "NLA/MI04/ScalarGeometry.lean",
+    "NLA/MI04/UpperBound.lean"
+  ],
+  "unrelated_Unitary_file": "Hash retained for handoff completeness; not a dependency of Limit and not re-reviewed in this incremental pass.",
+  "finding_count": 0,
+  "method_checks": {
+    "actual_complex_Euclidean_operator_norm": true,
+    "actual_Rayleigh_supremum_with_attainment_prerequisite": true,
+    "all_finite_nonempty_dimensions": true,
+    "all_lower_diagonal_repetitions_and_arbitrary_negative_values": true,
+    "all_off_peak_gaps_at_least_half": true,
+    "upper_denominator_limit_proved_nonzero": true,
+    "lower_denominator_limit_is_one": true,
+    "right_filter_is_actual_nhdsWithin_Ioi_zero": true,
+    "no_assumed_analytic_eigenvalue_or_bigO_result": true,
+    "neighborhood_smallness_eventual_not_final_domain_restriction": true,
+    "same_exact_second_order_coefficient": true,
+    "declared_kernel_trust_and_axiom_print_present": true,
+    "no_source_holes_or_unsafe_shortcuts_in_reviewed_dependency_graph": true
+  },
+  "mechanical_scope": {
+    "local_Lean_or_Lake": false,
+    "new_module_actual_compilation": "pending; no successful execution asserted",
+    "Comparator": "not run in this review",
+    "default_kernel": "not run in this review",
+    "transitive_axiom_acceptance": "not measured in this review"
+  },
+  "scope_limit": "This approves the new exact limit route and its read dependencies as source. It does not complete any other frozen MI04 obligation or verify the full original problem.",
+  "package_mutations": false
+}

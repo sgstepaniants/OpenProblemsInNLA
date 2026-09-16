@@ -1,0 +1,17 @@
+{
+  "upstream_repository": "ajt60gaibb/OpenProblemsInNLA",
+  "immutable_commit": "ce47b5630bf3680d9211131c3a43825b022c139a",
+  "files_sha256": {
+    "matrix-inequalities-and-norms/MI-04/README.md": "22adf3cb0275c044c912eca496d13fbce98f83a35c6ee1184162cef379711bdc",
+    "matrix-inequalities-and-norms/MI-04/solution.tex": "5e2c6b910f17ffebfcb8e2be76577ba2e8a8f55bd2551271430d77b8aa6fc230",
+    "matrix-inequalities-and-norms/MI-04/solution.md": "edfd1ddc69018997eb9709880d4ff5d3066eff4459bf39e7b402eacc1f390eb8",
+    "references/colbrook-matrix-2026-09-11/original-proofs/MI-04.tex": "8363d460f59fba544577ba6453e44cec51f9b546a01875515361df352321fb7c",
+    "references/colbrook-matrix-2026-09-11/verification/reviews/MI-04-review.md": "7493c546f894fb6dd62bb1870cd4b18a20eaad3777d643c7ea32a9394452f645",
+    "AGENTS.md": "d7e27520acdcb0edacebf965b56f5b1e3fb0205d83da45a7fa021e0bedb80162",
+    "docs/lean/README.md": "27d1baf38609e50049f077e8004dabe598dc53cadab73acdb8a7a1e1e4a48be6",
+    "docs/lean/REVIEW.md": "d967ddce620d4e754e2f9c25548f30cb537f76f4ddcf8ecf2574945bcd332553"
+  },
+  "original_mathematical_author": "Matthew J. Colbrook, Department of Applied Mathematics and Theoretical Physics, University of Cambridge",
+  "formalization_author": "George Stepaniants, Department of Computing and Mathematical Sciences, California Institute of Technology",
+  "phase": "statement preparation only; no proof bodies, approvals, elaboration or freeze"
+}

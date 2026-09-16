@@ -1,0 +1,83 @@
+{
+  "reviewer": "OpenAI Codex AI agent /root/next_elimination",
+  "reviewer_is_MI04_implementation_author": false,
+  "reviewed_at_utc": "2026-09-16T02:24:00.454588+00:00",
+  "verdict": "APPROVE incremental mathematical source; author corrected one prospective API defect; actual compilation pending",
+  "new_sources_sha256": {
+    "WeightedProbes": "8fb7c11c6c36371a3a3cee2e3ed6869be8b325ea063a8abe35bd5cd79510f693",
+    "Probes": "659176443980b438e7f55bd8df45ee5174ac87117fc37a73bd6c4900f349df01",
+    "BasisTransport": "a3bd7f091903150bcf01c981a5a1ae8aae7bc8c31ea00f4b601aa53636c9341e",
+    "Normality": "d8abea3f3a78a9381890e637e022553ba0b9b0317d184b33d799123391831d6f"
+  },
+  "all_ten_frozen_files_unchanged": true,
+  "four_exact_frozen_header_matches": {
+    "weighted_magnitude_identity": true,
+    "offDiagonal_magnitude_symmetry": true,
+    "orthonormal_pair_symmetry": true,
+    "pair_symmetry_normal": true
+  },
+  "original_source_commit": "ce47b5630bf3680d9211131c3a43825b022c139a",
+  "all_original_sources_match_immutable_Git": true,
+  "pinned_Mathlib_commit": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "all_retained_API_files_match_pinned_Git": true,
+  "complete_new_modules_read": [
+    "WeightedProbes",
+    "Probes",
+    "BasisTransport",
+    "Normality"
+  ],
+  "prior_reviewed_dependencies_reconciled": [
+    "Limit",
+    "Unitary",
+    "ScaledSymmetry",
+    "BlockSymmetry",
+    "Coordinates",
+    "Correction",
+    "Punctured",
+    "UpperBound",
+    "Quadratic",
+    "Rayleigh",
+    "ScalarGeometry"
+  ],
+  "method_checks": {
+    "actual_positive_side_limits_and_nontrivial_filter": true,
+    "opposite_block_peak_coefficients_are_row_and_column_magnitudes": true,
+    "two_exact_probes_isolate_each_entry_with_no_dimension_enumeration": true,
+    "basis_extension_retains_given_vectors_and_actual_unitary_coordinates": true,
+    "all_complex_orthonormal_pairs_no_dimension_at_least_two_assumption": true,
+    "singleton_extension_and_all_Parseval_terms_including_diagonal": true,
+    "arbitrary_vector_normalization_cancels_only_proved_nonzero_scalar": true,
+    "actual_CLM_adjoint_normality_equivalence_and_injective_matrix_star_map": true,
+    "dimension_one_retained_and_no_X_invertibility_or_genericity": true,
+    "no_new_proof_holes_axioms_unsafe_native_or_Challenge_imports": true,
+    "kernel_assertions_and_axiom_prints_present_not_yet_executed": true
+  },
+  "findings": [
+    {
+      "id": "MI04-normality-source-01",
+      "kind": "prospective Lean API defect, no mathematical defect",
+      "location": "original BasisTransport.lean:48",
+      "description": "hne.symm on a disequality repeated the invalid field lookup actually observed in Coordinates.",
+      "author_resolution": "One explicit Ne.symm hne replacement; exact before/after/diff retained.",
+      "status": "resolved in reviewed source; actual compiler acceptance pending"
+    }
+  ],
+  "repair_reconciliation": {
+    "actual_run": 35046126916,
+    "actual_commit": "64a04495cb03fa7496cbdc3dc72f94779ab4c340",
+    "Rayleigh_Coordinates_before_match_Git": true,
+    "Rayleigh_Coordinates_proof_only_API_repairs_reviewed": true,
+    "Probes_two_proactive_Ne_symm_replacements_only": true,
+    "BasisTransport_one_proactive_Ne_symm_replacement_only": true,
+    "no_claim_new_four_modules_ran_in_that_failed_run": true
+  },
+  "mechanical_scope": {
+    "local_Lean_or_Lake": false,
+    "new_module_actual_compilation": "pending; source-only review",
+    "Comparator": "not run in this review",
+    "default_kernel": "not run in this review",
+    "transitive_axiom_acceptance": "not measured in this review"
+  },
+  "scope_limit": "Four intermediate frozen exports and their prerequisites only. Diagonalization, collinearity, affine reconstruction, full solution, and publication gates remain outside this acceptance.",
+  "author_source_mutations_by_reviewer": false
+}

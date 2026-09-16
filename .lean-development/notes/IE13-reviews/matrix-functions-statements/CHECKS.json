@@ -1,0 +1,40 @@
+{
+  "problem_id": "IE-13",
+  "reviewer": "OpenAI Codex agent /root/next_matrix_functions",
+  "phase": "independent full pre-proof statement review",
+  "independent_nonimplementer": true,
+  "verdict": "APPROVE exact full statement boundary; no mathematical correction requested",
+  "all21_manifest_files_match": true,
+  "all3_canonical_sources_match_immutable_git": true,
+  "all13_reused_definition_bodies_identical": true,
+  "all28_contracts_independently_read": true,
+  "comparator_28_to_28_no_definition_holes": true,
+  "schema_validation": {
+    "actual_schema_validation": "PASS",
+    "schema_sha256": "25ff6b25ca4511635aff4443cf20480c15e59dddf19591c730950b442ea54fce",
+    "yaml_sha256": "02239350a0d27112048b9bd386f29c6a3968896558a73dbe8130a746e484779d",
+    "28_declarations_match_comparator": true,
+    "not_completed_promotion_validation": true,
+    "parser": "existing /tmp/nla-lean-formalization/venv/bin/python, PyYAML/jsonschema",
+    "no_download_or_local_Lean": true
+  },
+  "pins_match": true,
+  "author_source_mutated": false,
+  "exact_diagnostics_sha256": "7ece77ec136cbac9897511b3a175762630667919197043d2aad1c13915a8a51f",
+  "bounded_diagnostic_summary": {
+    "status": "all bounded exact diagnostics passed",
+    "local_Lean_execution": false,
+    "universal_or_formal_proof": false,
+    "history_slot_checks": 3500,
+    "sorted_front_pivot_cases": 6368,
+    "rotation_cases": 56,
+    "total_full_paths": 266,
+    "total_tie_branch_nodes": 169
+  },
+  "bounded_witness_cases": 35,
+  "local_Lean_or_Lake_execution": false,
+  "actual_statement_elaboration_accepted": false,
+  "freeze_or_proof_implementation_authorized_by_this_report": false,
+  "kernel_axiom_or_comparator_acceptance_claimed": false,
+  "whole_problem_Lean_verified": false
+}

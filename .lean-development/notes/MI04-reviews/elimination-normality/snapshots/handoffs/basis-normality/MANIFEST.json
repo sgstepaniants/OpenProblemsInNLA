@@ -1,0 +1,19 @@
+{
+  "problem": "MI-04",
+  "phase": "complete frozen orthonormal_pair_symmetry and pair_symmetry_normal source; actual compilation pending",
+  "new_files": {
+    "NLA/MI04/BasisTransport.lean": "35828c2571be6e3714ea77b01ee8a3fcd7cb33fecdb0435f8d311594666690f7",
+    "NLA/MI04/Normality.lean": "d8abea3f3a78a9381890e637e022553ba0b9b0317d184b33d799123391831d6f"
+  },
+  "all_frozen_files_unchanged": true,
+  "build_target": "NLA.MI04.Normality",
+  "earlier_held_modules_unchanged": true,
+  "mathematical_scope": [
+    "Pinned Mathlib orthonormal-set extension and reindexing produce a genuine basis containing any given orthonormal pair. Its actual change-of-basis matrix is unitary.",
+    "The universal entry-magnitude result transfers to arbitrary orthonormal pairs, including the dimension-one vacuous case.",
+    "Extend every unit vector to a basis, compare all Parseval terms including its own coordinate, and normalize all other nonzero vectors.",
+    "Pinned actual CLM norm-adjoint normality criterion and faithful star-algebra equivalence return the exact matrix normality identity."
+  ],
+  "local_lean_execution": false,
+  "mechanical_acceptance": false
+}

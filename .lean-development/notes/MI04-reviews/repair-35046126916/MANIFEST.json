@@ -1,0 +1,32 @@
+{
+  "files": {
+    "CHECKS.json": "0adf615972b2ccdaa813275a39a221df709127b0051ad41779437636708aec9d",
+    "REVIEW.md": "891536f7939a3a85ba2262ca299086651838e968e3bf10d72a73f365008e2b06",
+    "author-packet/ACTIVE-BEFORE.json": "955cfe3ea6ec5c4a7e0856146520b0da0b99287fd51b5bdeba25a2d91da1706a",
+    "author-packet/CHANGES.diff": "df0da78a67d18bebb4858a96e1ca5f3e9830f370c29e3a796f47e8f8475455da",
+    "author-packet/CHECKS.json": "c763c8efcdd55f3e626ca2b23f46af26b3e9c9461b519e04d2c3b5db7a267b14",
+    "author-packet/MANIFEST.json": "9182bf25928f2f11ed6e1fa15bd929aa4e7839ce86f6c9a54859ab27579ea65c",
+    "author-packet/MI-04-modules.log": "4c6880cee6100f9f91bbf2d33b38514d03f353d1e25dfd679b39500c60593942",
+    "author-packet/after/Coordinates.lean": "9fbf6dac25ce96499fdd7a6371e948c11d6e1b04156788af48998b0919d555d6",
+    "author-packet/after/Rayleigh.lean": "a9308e19575aa44ec56389ef2a24e75b375bcb577703c706590af6b63ebcca97",
+    "author-packet/before/Coordinates.lean": "9c81bfca4b76495a35b8b740d2abfae231952c2b4da82702a0921e8be1e04cc4",
+    "author-packet/before/Rayleigh.lean": "5fd32d7b37dfd66b6b3a30ab1d490a7fc3627536b05c8379641f84ffc95420ef",
+    "frozen/Challenge.lean": "ca80d090bfe9f3013d08aa86297761e1e524810881bce92776896545d6eeabf9",
+    "frozen/LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "frozen/NLA/MI04/Definitions.lean": "de70e2a9dd878f1d083adacf8df6808c90c27630ffc2644a62293bf085e41715",
+    "frozen/NUMERICAL_TARGETS.md": "5cb5e20ffcf035b2ea303cf9edae2e85619b0f562bf302cf6df0c7a46079d1d7",
+    "frozen/SOURCE-PROVENANCE.json": "aa92f22a3c17fa3abd48d80aaac4c7cff1d5dd0f02c32d6441c516d1000d6829",
+    "frozen/STATEMENT-FREEZE.json": "c5ca666f10da44ad1c47a81b0fe81898abf3a7a9ea789e90ec9dfbc8c8cf4c6c",
+    "frozen/SourceCorrespondence.md": "dad6f6884c04ad65ba61fb2ab8b7d76fb01f679c724d69514545eaae7161f9fc",
+    "frozen/comparator.json": "6137dba303006439dc5c2a38c163834383752ca2fefd7b79b98ffe6839d04180",
+    "frozen/lake-manifest.json": "bbcbcd55e8d78d67e7772d7ee2e921ed70c1c10ef25a8d73bc454de23780397d",
+    "frozen/lakefile.toml": "194165e91eb78144ef94e089710f5b200005d63c402c95031e3817cc519c322e",
+    "frozen/lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+    "proactive-packet/CHANGES.diff": "071da8002dd6e845b59bacac44b05bc974c4fe1e69e1a2fa68af4239bc66b99d",
+    "proactive-packet/CHECKS.json": "2f6668f664f4c38b032c0c5b9e9cc709ee4bf390acbde080214a4d9da00d35f2",
+    "proactive-packet/MANIFEST.json": "93f53996092456e3a2eb66a8db397080ff1124030c0ccdf536543102e0b67f34",
+    "proactive-packet/after/Probes.lean": "659176443980b438e7f55bd8df45ee5174ac87117fc37a73bd6c4900f349df01",
+    "proactive-packet/before/Probes.lean": "a5f2a00eb2ec5be139b866fbc5b2bde6007f40986115861883e062ccc680db87"
+  },
+  "review_scope": "source-only three-file proof repair; no whole-project acceptance"
+}

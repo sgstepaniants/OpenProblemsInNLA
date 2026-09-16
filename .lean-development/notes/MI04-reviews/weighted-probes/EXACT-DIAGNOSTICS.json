@@ -1,0 +1,7 @@
+{
+  "exact_peak_row_column_checks": 21,
+  "exact_one_coordinate_probe_checks": 70,
+  "all_passed": true,
+  "scope": "bounded indexing/rational diagnostics only",
+  "Lean_execution_or_universal_proof": false
+}

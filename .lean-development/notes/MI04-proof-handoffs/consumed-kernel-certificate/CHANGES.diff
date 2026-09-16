@@ -1,0 +1,52 @@
+--- before/UpperBound.lean
++++ after/UpperBound.lean
+@@ -9,6 +9,7 @@
+ import NLA.MI04.Punctured
+ import NLA.MI04.ScalarGeometry
+ import NLA.MI04.Correction
++import LeanCert.Tactic
+ 
+ set_option autoImplicit false
+ set_option leancert.trust "kernel"
+@@ -17,6 +18,11 @@
+ open scoped BigOperators ComplexConjugate ComplexOrder
+ 
+ namespace NLA.MI04
++
++/-- Exact kernel certificate consumed in the two off-peak denominator bounds. -/
++lemma quarter_gap_certificate : (0 : ℝ) < (1 : ℝ) / 4 := by
++  interval_decide (trust := kernel)
++
+ variable {ι : Type*} [Fintype ι] [DecidableEq ι]
+ 
+ lemma perturbed_gap_pos (d : ι → ℝ) (V : CMatrix ι) (a : ι)
+@@ -38,7 +44,8 @@
+   · simp [hj]
+   · rw [if_neg hj]
+     exact div_nonneg (Complex.normSq_nonneg _)
+-      (by have h := perturbed_gap_pos d V a hd ε hε hsmall j hj; linarith)
++      (le_of_lt (lt_trans quarter_gap_certificate
++        (perturbed_gap_pos d V a hd ε hε hsmall j hj)))
+ 
+ lemma scaled_weighted_square (q ε : ℝ) (hq : 0 < q) (c z w : ℂ) :
+     2 * ε * (c * z * star w).re - q * Complex.normSq w ≤
+@@ -79,8 +86,8 @@
+     · simp [hj]
+     · rw [if_neg hj, if_neg hj]
+       apply scaled_weighted_square
+-      have h := perturbed_gap_pos d V a hd ε hε hsmall j hj
+-      linarith
++      exact lt_trans quarter_gap_certificate
++        (perturbed_gap_pos d V a hd ε hε hsmall j hj)
+   have hc : Complex.normSq (v a) ≤ 1 := by
+     simpa only [hv, one_pow] using coordinate_normSq_le a v
+   have hnonneg := upperCoefficient_nonneg d V a hd ε hε hsmall
+@@ -115,6 +122,8 @@
+   ⟨simple_peak_lower_bound d V a ha hd hV haa ε hε,
+     simple_peak_upper_bound d V a ha hd hV haa ε hε hsmall⟩
+ 
++#print axioms quarter_gap_certificate
++#assert_trust kernel quarter_gap_certificate
+ #print axioms simple_peak_sandwich
+ #assert_trust kernel simple_peak_sandwich
+ 

@@ -1,0 +1,35 @@
+{
+  "problem_id": "MI-04",
+  "reviewer": "OpenAI Codex /root/next_matrix_functions",
+  "independent_nonimplementer": true,
+  "phase": "incremental mathematical source review of weighted probes plus required foundations",
+  "verdict": "APPROVE source; no mathematical correction requested",
+  "new_five_sources": {
+    "NLA/MI04/WeightedProbes.lean": "8fb7c11c6c36371a3a3cee2e3ed6869be8b325ea063a8abe35bd5cd79510f693",
+    "NLA/MI04/Probes.lean": "a5f2a00eb2ec5be139b866fbc5b2bde6007f40986115861883e062ccc680db87",
+    "NLA/MI04/Limit.lean": "5a10598688c704f7ee2a13b990ee4cd9d35e2373ba051f651972a66e6aee6e1a",
+    "NLA/MI04/BlockSymmetry.lean": "7d5c0e711ba01a8bb98616427b50b06c64768e3bb12aef81ab06cd03720d3826",
+    "NLA/MI04/ScaledSymmetry.lean": "6ad9967e48602adc087ac905407f1554fc5e8fdb04f90dd9cea0605c8d350ef1"
+  },
+  "exact_written_five_frozen_contracts": [
+    "simple_peak_second_order",
+    "universal_to_extreme_symmetry",
+    "extreme_symmetry_scaled_unitary",
+    "weighted_magnitude_identity",
+    "offDiagonal_magnitude_symmetry"
+  ],
+  "input_manifest_sha256": "6eaf62d6b2d3b20256b0f423738bd481ca5ee3bc6f784300ec35338b265b10b5",
+  "all_frozen_bytes_and_prior_eight_files_match": true,
+  "exact_diagnostics": {
+    "exact_peak_row_column_checks": 21,
+    "exact_one_coordinate_probe_checks": 70,
+    "all_passed": true,
+    "scope": "bounded indexing/rational diagnostics only",
+    "Lean_execution_or_universal_proof": false
+  },
+  "author_files_edited": false,
+  "local_Lean_execution": false,
+  "actual_compilation_acceptance_claimed": false,
+  "comparator_acceptance_claimed": false,
+  "whole_project_approval": false
+}

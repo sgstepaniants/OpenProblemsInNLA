@@ -1,0 +1,17 @@
+{
+  "files": {
+    "CHECKS.json": "11c4ee0f452601395659566c98786cebb76287200d349c545470dba1e9a966b3",
+    "REVIEW.md": "29cd4b72663fa916c65cf6f2bdcb1586c984e236aeec96966d8aaad23d098a03",
+    "inputs/MANIFEST.json": "0f44c7754516c242ab536b6fcc0ea941a13d77f61fd8ed44cb8c6438a0d5b3e3",
+    "inputs/ProjectorRank.patch": "1467bda0be1463e12c82d53f33dd28d73e2a71330fa7ed4958167cbbf211d55f",
+    "inputs/REPAIRS.json": "1d554c13ad6b1d7795b7d6b133a2f6334bef34cc8ad4d2564f6cd3cf5252c4ed",
+    "inputs/actual/MF-22-modules.log": "390d6899ff3ea68d7728d99e85aea99777c0caa76847c8f8da8234f8be998e4b",
+    "inputs/actual/ROOT-AUDIT.json": "525057bbe5ae230dbf60efe7a74331a0c89b4a8364e12d48d8618b72f90fa8ee",
+    "inputs/after/NLA/MF22/ProjectorRank.lean": "c0b2ed551c7b98b413ab5fa8efe60dc97509f5ef6b0edaa3bb64db3a600143c2",
+    "inputs/before/NLA/MF22/ProjectorRank.lean": "3006740272f2d12b5331179eec67f091860df539ccea7bf12df75fb3aa3f8815",
+    "inputs/primary-api/Mathlib/LinearAlgebra/Dimension/FreeAndStrongRankCondition.lean": "0e0131b3883f5be37a08ae02d6b04f900602ec17d17d42e1fcf0177aff26f248",
+    "inputs/primary-api/Mathlib/LinearAlgebra/Eigenspace/Basic.lean": "35b37f40517c1ad2038fbfeb26887ecaa801d2e16d886d856074935a5904bd33",
+    "inputs/primary-api/Mathlib/LinearAlgebra/Eigenspace/Zero.lean": "4c21ddafc2bea3c7403d84d87952c76065e6df952647bff24efe948d0d5b78e9",
+    "inputs/primary-api/Mathlib/LinearAlgebra/Matrix/ToLin.lean": "4a7eaa18d2821f36ecf2146f6116703a08223a15c494b66824e94259f98cceaf"
+  }
+}

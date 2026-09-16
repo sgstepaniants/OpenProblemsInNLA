@@ -1,0 +1,9 @@
+{
+  "reason": "same invalid .symm lookup on a negated by_cases equality as actual Coordinates run35046126916",
+  "actual_Probes_compilation": "not yet run; proactive syntax repair only",
+  "before_sha256": "a5f2a00eb2ec5be139b866fbc5b2bde6007f40986115861883e062ccc680db87",
+  "after_sha256": "659176443980b438e7f55bd8df45ee5174ac87117fc37a73bd6c4900f349df01",
+  "exactly_two_proof_term_replacements": true,
+  "headers_and_frozen_boundary_unchanged": true,
+  "local_Lean": false
+}

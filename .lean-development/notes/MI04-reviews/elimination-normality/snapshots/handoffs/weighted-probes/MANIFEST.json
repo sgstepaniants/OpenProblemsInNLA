@@ -1,0 +1,18 @@
+{
+  "problem": "MI-04",
+  "phase": "complete frozen weighted_magnitude_identity and offDiagonal_magnitude_symmetry source; actual compilation pending",
+  "new_files": {
+    "NLA/MI04/WeightedProbes.lean": "8fb7c11c6c36371a3a3cee2e3ed6869be8b325ea063a8abe35bd5cd79510f693",
+    "NLA/MI04/Probes.lean": "a5f2a00eb2ec5be139b866fbc5b2bde6007f40986115861883e062ccc680db87"
+  },
+  "all_frozen_files_unchanged": true,
+  "build_target": "NLA.MI04.Probes",
+  "held_previous_eleven_proof_files_unchanged": true,
+  "mathematical_scope": [
+    "Upper/lower literal sum-type diagonal peaks, complex adjoint row and column coefficients, full positive-sided limit equality.",
+    "Two exact feasible diagonal probes differ at one coordinate only; their weighted sums isolate that coordinate without enumerating the dimension.",
+    "Includes n=1 and diagonal i=j cases explicitly, with no simple-spectrum or invertibility assumption."
+  ],
+  "local_lean_execution": false,
+  "mechanical_acceptance": false
+}

@@ -1,0 +1,17 @@
+{
+  "status": "source-only consumed numerical certificate, actual Linux acceptance pending",
+  "before_UpperBound_sha256": "03376a5de032704cae5fa9fe17ab4633102655373699b5d8a23c30694362e190",
+  "after_UpperBound_sha256": "5dc357316ab5e3ff1aeb282c20770870bd8b14d93c2928f64e3807cd96629c20",
+  "certificate": "quarter_gap_certificate : (0 : Real) < (1 : Real) / 4",
+  "tactic": "interval_decide (trust := kernel)",
+  "scope": "constant rational bound; no variable boxes or subdivisions",
+  "direct_consumers": [
+    "upperCoefficient_nonneg",
+    "perturbation_unit_vector_upper"
+  ],
+  "purpose": "turn the exact quarter-gap lower bound into strict/nonnegative denominator positivity in the actual all-vector upper Rayleigh bound",
+  "existing_headers_unchanged": true,
+  "frozen_boundary_unchanged": true,
+  "other20_source_files_unchanged": true,
+  "no_local_Lean_execution": true
+}

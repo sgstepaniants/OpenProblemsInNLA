@@ -1,0 +1,18 @@
+{
+  "problem": "MI-04",
+  "phase": "complete frozen universal_to_extreme_symmetry and extreme_symmetry_scaled_unitary source; actual compilation pending",
+  "new_files": {
+    "NLA/MI04/BlockSymmetry.lean": "7d5c0e711ba01a8bb98616427b50b06c64768e3bb12aef81ab06cd03720d3826",
+    "NLA/MI04/ScaledSymmetry.lean": "6ad9967e48602adc087ac905407f1554fc5e8fdb04f90dd9cea0605c8d350ef1"
+  },
+  "all_frozen_files_unchanged": true,
+  "build_target": "NLA.MI04.ScaledSymmetry",
+  "held_previous_nine_proof_files_unchanged": true,
+  "mathematical_scope": [
+    "Genuine positive block completion at c = top(-K), with c nonnegative from the two literal opposite diagonal entries; full universal premise implies top(K)<=top(-K).",
+    "Actual block sign unitary and T -> -T give the reverse inequality for every Hermitian T.",
+    "Actual block diagonal unitary and its inverse preserve all Hermitian T; positive scalar rescaling uses T/r, with r>0, and exact top-value homogeneity."
+  ],
+  "local_lean_execution": false,
+  "mechanical_acceptance": false
+}

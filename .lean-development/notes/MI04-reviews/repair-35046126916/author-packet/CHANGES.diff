@@ -1,0 +1,49 @@
+--- before/Rayleigh.lean
++++ after/Rayleigh.lean
+@@ -108,7 +108,7 @@
+   · apply (topValue_le_iff _ _).mpr
+     intro v hv
+     rw [realQuadratic_shift, hv, one_pow, mul_one]
+-    exact add_le_add_left (realQuadratic_le_top_of_unit M v hv) c
++    exact add_le_add (le_refl c) (realQuadratic_le_top_of_unit M v hv)
+   · obtain ⟨u, hu, he, _⟩ := topValue_attained M
+     have h := realQuadratic_le_top_of_unit ((c : ℂ) • (1 : CMatrix ι) + M) u hu
+     simpa only [realQuadratic_shift, hu, one_pow, mul_one, he] using h
+--- before/Coordinates.lean
++++ after/Coordinates.lean
+@@ -65,6 +65,8 @@
+     (Matrix.isSymmetric_toEuclideanLin_iff.mpr hM) v w
+   have hr := inner_re_symm (𝕜 := ℂ) w
+     (Matrix.toEuclideanCLM (n := ι) (𝕜 := ℂ) M v)
++  change (inner ℂ w (Matrix.toEuclideanCLM (n := ι) (𝕜 := ℂ) M v)).re =
++    (inner ℂ (Matrix.toEuclideanCLM (n := ι) (𝕜 := ℂ) M v) w).re at hr
+   have hs' := congrArg Complex.re hs
+   simp only [realQuadratic, map_add, inner_add_left, inner_add_right, Complex.add_re]
+   linarith
+@@ -74,9 +76,14 @@
+     realQuadratic M (v + (ε : ℂ) • w) = realQuadratic M v +
+       ε ^ 2 * realQuadratic M w +
+       2 * ε * (inner ℂ v (Matrix.toEuclideanCLM (n := ι) (𝕜 := ℂ) M w)).re := by
+-  rw [realQuadratic_add_vectors M hM, realQuadratic_smul_vector]
+-  simp [map_smul, inner_smul_right, Complex.mul_re,
+-    Complex.norm_real, Real.norm_eq_abs, sq_abs] <;> ring
++  have hcross :
++      (inner ℂ v (Matrix.toEuclideanCLM (n := ι) (𝕜 := ℂ) M ((ε : ℂ) • w))).re =
++        ε * (inner ℂ v (Matrix.toEuclideanCLM (n := ι) (𝕜 := ℂ) M w)).re := by
++    rw [map_smul, inner_smul_right]
++    simp only [Complex.mul_re, Complex.ofReal_re, Complex.ofReal_im, zero_mul, sub_zero]
++  rw [realQuadratic_add_vectors M hM, realQuadratic_smul_vector, hcross]
++  simp only [Complex.norm_real, Real.norm_eq_abs, sq_abs]
++  ring
+ 
+ lemma coordinateUnit_add_norm_sq (a : ι) (w : CVector ι) (hw : w a = 0) (ε : ℝ) :
+     ‖coordinateUnit a + (ε : ℂ) • w‖ ^ 2 = 1 + ε ^ 2 * ‖w‖ ^ 2 := by
+@@ -90,7 +97,7 @@
+   by_cases h : i = j
+   · subst j
+     simp [realDiagonal]
+-  · simp [realDiagonal, Matrix.diagonal_apply, h, h.symm]
++  · simp [realDiagonal, Matrix.diagonal_apply, h, Ne.symm h]
+ 
+ lemma perturbedDiagonal_isHermitian (d : ι → ℝ) (V : CMatrix ι)
+     (hV : V.IsHermitian) (ε : ℝ) : (perturbedDiagonal d V ε).IsHermitian :=

@@ -1,0 +1,9 @@
+{
+  "actual_schema_validation": "PASS",
+  "schema_sha256": "25ff6b25ca4511635aff4443cf20480c15e59dddf19591c730950b442ea54fce",
+  "yaml_sha256": "02239350a0d27112048b9bd386f29c6a3968896558a73dbe8130a746e484779d",
+  "28_declarations_match_comparator": true,
+  "not_completed_promotion_validation": true,
+  "parser": "existing /tmp/nla-lean-formalization/venv/bin/python, PyYAML/jsonschema",
+  "no_download_or_local_Lean": true
+}

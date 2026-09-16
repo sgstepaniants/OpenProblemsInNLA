@@ -1,0 +1,55 @@
+{
+  "problem_id": "MI-04",
+  "reviewer": "OpenAI Codex agent /root/next_matrix_functions",
+  "independent_nonimplementer": true,
+  "verdict": "APPROVE four actual-diagnostic proof reductions in two files and two proactive Ne.symm replacements in Probes; original incremental scope unchanged",
+  "actual_prior_run": 35046126916,
+  "actual_prior_commit": "64a04495cb03fa7496cbdc3dc72f94779ab4c340",
+  "actual_log_sha256": "4c6880cee6100f9f91bbf2d33b38514d03f353d1e25dfd679b39500c60593942",
+  "author_manifest_sha256": "9182bf25928f2f11ed6e1fa15bd929aa4e7839ce86f6c9a54859ab27579ea65c",
+  "proactive_manifest_sha256": "93f53996092456e3a2eb66a8db397080ff1124030c0ccdf536543102e0b67f34",
+  "baseline_reviews": {
+    "prefix": {
+      "path": "/tmp/nla-lean-next-20260915/reviews/MI04-matrix-functions-prefix/REVIEW.md",
+      "sha256": "da9e9236ec156bfea0242699098d2a228aac3a1e8b3eef72b4f2a594f5ee72f3"
+    },
+    "exact_sandwich": {
+      "path": "/tmp/nla-lean-next-20260915/reviews/MI04-matrix-functions-exact-sandwich/REVIEW.md",
+      "sha256": "f118de6f39d9455ff3b3f56acb0ddece8b9d323715249d4fb05c38ead7052f86"
+    },
+    "quadratic_repair": {
+      "path": "/tmp/nla-lean-next-20260915/reviews/MI04-matrix-functions-prefix/repair-35044592511-addendum/REVIEW.md",
+      "sha256": "e46a78c5092e1cd2e7cad9e245af9a669b6ea1a9be4dae827eee50134fba82be"
+    },
+    "weighted_probes": {
+      "path": "/tmp/nla-lean-next-20260915/reviews/MI04-matrix-functions-weighted-probes/REVIEW.md",
+      "sha256": "50eec44f3ff6714242f076b1979fcf16a95d9d823122cfc4276cea03d405fa0b"
+    }
+  },
+  "covered_changed_files": {
+    "NLA/MI04/Rayleigh.lean": "a9308e19575aa44ec56389ef2a24e75b375bcb577703c706590af6b63ebcca97",
+    "NLA/MI04/Coordinates.lean": "9fbf6dac25ce96499fdd7a6371e948c11d6e1b04156788af48998b0919d555d6",
+    "NLA/MI04/Probes.lean": "659176443980b438e7f55bd8df45ee5174ac87117fc37a73bd6c4900f349df01"
+  },
+  "actual_failed_before_files_match_git": true,
+  "all_covered_declaration_headers_unchanged": true,
+  "probes_previously_uncompiled": true,
+  "all10_frozen_files_match_freeze": true,
+  "other13_active_files_match_before_inventory": true,
+  "separate_unreviewed_change_outside_this_scope": {
+    "NLA/MI04/Geometry.lean": "21b50d8fb4d8eeed4a8b313f0e04599bcc7842fd69bfbe2310ea3a67948f2622"
+  },
+  "actual_prior_component_acceptance": [
+    "Quadratic",
+    "ScalarGeometry"
+  ],
+  "actual_prior_failed_components": [
+    "Rayleigh",
+    "Coordinates"
+  ],
+  "local_lean_execution": false,
+  "author_files_modified": false,
+  "repaired_source_actual_acceptance": "pending",
+  "complete_MI04_acceptance": false,
+  "canonical_comparator_acceptance": false
+}

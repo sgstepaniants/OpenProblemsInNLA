@@ -1,0 +1,35 @@
+{
+  "source_commit": "6e48f25fffdae2cf93e4985dc515abbd15e0481b",
+  "source_paths": [
+    "linear-systems-and-elimination/IE-14/lean/NLA/IE14/Definitions.lean",
+    "linear-systems-and-elimination/IE-14/lean/NLA/IE14/Front.lean"
+  ],
+  "source_sha256": {
+    "Definitions.lean": "fbc915432bf9b254d966e73af7ad3c525dfff44f11c1ec420a041a94817b5d91",
+    "Front.lean": "6c72173fcf2274fff2f91429436994f30ea7a2976b3356ae4bd8c7e592beab71"
+  },
+  "target_path": "NLA/IE13/Definitions.lean",
+  "source_namespace": "NLA.IE14",
+  "target_namespace": "NLA.IE13",
+  "declarations_with_identical_semantic_bodies": [
+    "Mat",
+    "PivotPath",
+    "rowSwap",
+    "schurStep",
+    "trajectory",
+    "AdmissiblePivot",
+    "AdmissiblePath",
+    "entryMaxNN",
+    "entryMax",
+    "activeMaxNN",
+    "activeMax",
+    "growth",
+    "origin"
+  ],
+  "copied_generic_block_sha256": "758ed27ab59bd5d1b51d183602e1a6a0f802ebd4e02050742a526026d4a1896f",
+  "copied_origin_block_sha256": "66fbcb196db76f46943b254061b5c720de49aebeb782cd8e60529b62c6b19ae5",
+  "exact_blocks_present": true,
+  "explicit_semantic_bridge": "NLA.IE13.gepp_model_semantics plus entryMax_semantics, activeMax_semantics, growth_semantics and originalRow_update in independent Challenge",
+  "earlier_problem_theorems_imported": false,
+  "proofs_reused_at_statement_stage": false
+}

@@ -1,0 +1,40 @@
+{
+  "challenge_module": "Challenge",
+  "solution_module": "Solution",
+  "theorem_names": [
+    "NLA.IE13.gepp_model_semantics",
+    "NLA.IE13.entryMax_semantics",
+    "NLA.IE13.activeMax_semantics",
+    "NLA.IE13.growth_semantics",
+    "NLA.IE13.admissiblePath_exists",
+    "NLA.IE13.admissiblePrefix_extension",
+    "NLA.IE13.originalRow_update",
+    "NLA.IE13.multiplier_bounds",
+    "NLA.IE13.front_structure",
+    "NLA.IE13.front_transition",
+    "NLA.IE13.recurrence_history",
+    "NLA.IE13.sequence_recurrence",
+    "NLA.IE13.sequence_properties",
+    "NLA.IE13.envelope_recurrence",
+    "NLA.IE13.late_column_zero",
+    "NLA.IE13.column_front_bound",
+    "NLA.IE13.all_active_entries_bound",
+    "NLA.IE13.zero_lower_bandwidth",
+    "NLA.IE13.universal_growth",
+    "NLA.IE13.witness_scale",
+    "NLA.IE13.witness_structure",
+    "NLA.IE13.witness_prefix_order",
+    "NLA.IE13.witness_prefix_admissible",
+    "NLA.IE13.witness_target_value",
+    "NLA.IE13.witness_nonsingular",
+    "NLA.IE13.witness_attainment",
+    "NLA.IE13.identity_attainment",
+    "NLA.IE13.sharp_growth"
+  ],
+  "definition_names": [],
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ]
+}

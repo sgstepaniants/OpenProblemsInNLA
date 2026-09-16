@@ -1,0 +1,13 @@
+--- before/Probes.lean
++++ after/Probes.lean
+@@ -65,8 +65,8 @@
+   obtain ⟨hprobe, hprobebounds⟩ := tweakedPeak_bounds i j
+   have h0 := weighted_magnitude_identity hn X hX i (basePeak i) hbase hbasebounds
+   have h1 := weighted_magnitude_identity hn X hX i (tweakedPeak i j) hprobe hprobebounds
+-  have hrow := weighted_probe_difference (fun k => Complex.normSq (X i k)) i j hij.symm
+-  have hcol := weighted_probe_difference (fun k => Complex.normSq (X k i)) i j hij.symm
++  have hrow := weighted_probe_difference (fun k => Complex.normSq (X i k)) i j (Ne.symm hij)
++  have hcol := weighted_probe_difference (fun k => Complex.normSq (X k i)) i j (Ne.symm hij)
+   rw [h0, h1] at hrow
+   linarith
+ 

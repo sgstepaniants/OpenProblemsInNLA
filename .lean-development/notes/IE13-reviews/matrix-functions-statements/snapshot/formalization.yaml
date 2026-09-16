@@ -1,0 +1,257 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/mathlib-initiative/formalization.yaml/99c678e569c7c4c0772db297c5ddd5e4c9b6322e/schema/v0.4.schema.json
+version: v0.4
+project:
+  name: 'IE-13: sharp GEPP growth for unequal lower and upper bandwidths'
+  description: Statement-only full-target draft over every required dimension, nonsingular complex
+    input and legal pivot tie, with an exact rational-real attaining matrix for every positive lower
+    bandwidth. All 28 independent obligations await proofs.
+  authors:
+  - George Stepaniants
+  affiliations:
+    George Stepaniants: Department of Computing and Mathematical Sciences, California Institute of
+      Technology, Pasadena, California, USA
+  responsible_maintainers:
+  - George Stepaniants
+  license: Apache-2.0
+repository:
+  role: substantive-development
+sources:
+- title: IE-13 — Sharp growth for unequal lower and upper bandwidths
+  id: https://github.com/ajt60gaibb/OpenProblemsInNLA/blob/ce47b5630bf3680d9211131c3a43825b022c139a/linear-systems-and-elimination/IE-13/README.md
+  type: web-post
+  location: 'Complete original problem: every unequal bandwidth pair, complex field, all dimensions
+    and all admissible ties'
+  relationship: formalizes
+  author_endorsement: not-contacted
+  note: Permanent ID, original-order band condition, all active entries and dimension-union supremum
+    are retained.
+- title: Sharp partial-pivoting growth for unequal bandwidths
+  authors:
+  - Matthew J. Colbrook
+  id: https://github.com/ajt60gaibb/OpenProblemsInNLA/blob/ce47b5630bf3680d9211131c3a43825b022c139a/references/colbrook-recovered-2026-09-11/manuscripts/IE-13.tex
+  type: manuscript
+  location: Theorem 1 and complete Sections 2–4, including exact attaining construction
+  relationship: formalizes
+  author_endorsement: not-contacted
+  note: Original mathematics credited to Matthew J. Colbrook, Department of Applied Mathematics and
+    Theoretical Physics, University of Cambridge. Optional source closed forms are not necessary
+    for the full original recurrence answer.
+related_formalizations:
+- id: https://github.com/ajt60gaibb/OpenProblemsInNLA/tree/6e48f25fffdae2cf93e4985dc515abbd15e0481b/linear-systems-and-elimination/IE-14/lean
+  relationship: builds-on
+  note: Copies literal generic complex GEPP, finite-maxima and original-row-label definition bodies
+    into the independent IE13 namespace; exact reuse hashes and explicit semantic bridge are retained.
+    No problem-specific bound or proof is imported.
+- id: https://github.com/ajt60gaibb/OpenProblemsInNLA/tree/ce47b5630bf3680d9211131c3a43825b022c139a/linear-systems-and-elimination/IE-05/lean
+  relationship: other
+  note: Real scaled-LU trajectory and pivot code inspected as implementation references; no deterministic
+    tie rule or real-only hypothesis is imposed on the IE13 universal complex target.
+- id: https://github.com/sgstepaniants/Forsythe/tree/8d1b0c0545a77b40245e84705aa7d273e6c81e62/lean-proof
+  relationship: other
+  note: Numerical-first, kernel-only LeanCert and Comparator evidence patterns.
+- id: https://github.com/jaumededios/Schiffer/tree/2938e277969c329caf154e48a3d8823f3635c7f1
+  relationship: other
+  note: Independent Challenge and separate proof organization studied.
+automation:
+  methods:
+  - method: agent
+    framework: OpenAI Codex
+    tool_setup: Multiple independent problem agents; source drafting on macOS, all actual Lean and
+      Comparator execution assigned to non-root Linux. No local Lean/Lake or cache downloads.
+    prompting_notes: Write full numerical statements first, then literal definitions and independent
+      contracts. Preserve all bandwidth endpoints, complex entries, every pivot tie, every active
+      stage, actual nonsingularity and rational attainment. Use exact recurrence and finite-subset
+      bounds in place of sorting or growing interval boxes. Require two independent statement approvals
+      and actual elaboration before freezing and proofs.
+  notes: Draft prepared by /root/next_elimination. No proof implementation or mechanical acceptance
+    claimed. Full independent source and runtime referees are later gates; no human peer review or
+    official Tau Ceti endorsement.
+status:
+  scope: Full original IE13 sharp bound G(0,q)=1 and G(p,q)=h_p(p+q) for p≥1, over every required
+    unequal pair and every allowed dimension, actual complex input and GEPP tie path, with exact
+    rational-real attainment. Current phase is unapproved definitions and 28 deliberate independent
+    Challenge placeholders only.
+  whole_problem_verified: false
+  main_results:
+  - declaration: NLA.IE13.gepp_model_semantics
+    file: Challenge.lean
+    comparator_config: comparator.json
+    verification_status: Proposed obligation only. No implementation, statement elaboration or proof
+      acceptance.
+  - declaration: NLA.IE13.entryMax_semantics
+    file: Challenge.lean
+    comparator_config: comparator.json
+    verification_status: Proposed obligation only. No implementation, statement elaboration or proof
+      acceptance.
+  - declaration: NLA.IE13.activeMax_semantics
+    file: Challenge.lean
+    comparator_config: comparator.json
+    verification_status: Proposed obligation only. No implementation, statement elaboration or proof
+      acceptance.
+  - declaration: NLA.IE13.growth_semantics
+    file: Challenge.lean
+    comparator_config: comparator.json
+    verification_status: Proposed obligation only. No implementation, statement elaboration or proof
+      acceptance.
+  - declaration: NLA.IE13.admissiblePath_exists
+    file: Challenge.lean
+    comparator_config: comparator.json
+    verification_status: Proposed obligation only. No implementation, statement elaboration or proof
+      acceptance.
+  - declaration: NLA.IE13.admissiblePrefix_extension
+    file: Challenge.lean
+    comparator_config: comparator.json
+    verification_status: Proposed obligation only. No implementation, statement elaboration or proof
+      acceptance.
+  - declaration: NLA.IE13.originalRow_update
+    file: Challenge.lean
+    comparator_config: comparator.json
+    verification_status: Proposed obligation only. No implementation, statement elaboration or proof
+      acceptance.
+  - declaration: NLA.IE13.multiplier_bounds
+    file: Challenge.lean
+    comparator_config: comparator.json
+    verification_status: Proposed obligation only. No implementation, statement elaboration or proof
+      acceptance.
+  - declaration: NLA.IE13.front_structure
+    file: Challenge.lean
+    comparator_config: comparator.json
+    verification_status: Proposed obligation only. No implementation, statement elaboration or proof
+      acceptance.
+  - declaration: NLA.IE13.front_transition
+    file: Challenge.lean
+    comparator_config: comparator.json
+    verification_status: Proposed obligation only. No implementation, statement elaboration or proof
+      acceptance.
+  - declaration: NLA.IE13.recurrence_history
+    file: Challenge.lean
+    comparator_config: comparator.json
+    verification_status: Proposed obligation only. No implementation, statement elaboration or proof
+      acceptance.
+  - declaration: NLA.IE13.sequence_recurrence
+    file: Challenge.lean
+    comparator_config: comparator.json
+    verification_status: Proposed obligation only. No implementation, statement elaboration or proof
+      acceptance.
+  - declaration: NLA.IE13.sequence_properties
+    file: Challenge.lean
+    comparator_config: comparator.json
+    verification_status: Proposed obligation only. No implementation, statement elaboration or proof
+      acceptance.
+  - declaration: NLA.IE13.envelope_recurrence
+    file: Challenge.lean
+    comparator_config: comparator.json
+    verification_status: Proposed obligation only. No implementation, statement elaboration or proof
+      acceptance.
+  - declaration: NLA.IE13.late_column_zero
+    file: Challenge.lean
+    comparator_config: comparator.json
+    verification_status: Proposed obligation only. No implementation, statement elaboration or proof
+      acceptance.
+  - declaration: NLA.IE13.column_front_bound
+    file: Challenge.lean
+    comparator_config: comparator.json
+    verification_status: Proposed obligation only. No implementation, statement elaboration or proof
+      acceptance.
+  - declaration: NLA.IE13.all_active_entries_bound
+    file: Challenge.lean
+    comparator_config: comparator.json
+    verification_status: Proposed obligation only. No implementation, statement elaboration or proof
+      acceptance.
+  - declaration: NLA.IE13.zero_lower_bandwidth
+    file: Challenge.lean
+    comparator_config: comparator.json
+    verification_status: Proposed obligation only. No implementation, statement elaboration or proof
+      acceptance.
+  - declaration: NLA.IE13.universal_growth
+    file: Challenge.lean
+    comparator_config: comparator.json
+    verification_status: Proposed obligation only. No implementation, statement elaboration or proof
+      acceptance.
+  - declaration: NLA.IE13.witness_scale
+    file: Challenge.lean
+    comparator_config: comparator.json
+    verification_status: Proposed obligation only. No implementation, statement elaboration or proof
+      acceptance.
+  - declaration: NLA.IE13.witness_structure
+    file: Challenge.lean
+    comparator_config: comparator.json
+    verification_status: Proposed obligation only. No implementation, statement elaboration or proof
+      acceptance.
+  - declaration: NLA.IE13.witness_prefix_order
+    file: Challenge.lean
+    comparator_config: comparator.json
+    verification_status: Proposed obligation only. No implementation, statement elaboration or proof
+      acceptance.
+  - declaration: NLA.IE13.witness_prefix_admissible
+    file: Challenge.lean
+    comparator_config: comparator.json
+    verification_status: Proposed obligation only. No implementation, statement elaboration or proof
+      acceptance.
+  - declaration: NLA.IE13.witness_target_value
+    file: Challenge.lean
+    comparator_config: comparator.json
+    verification_status: Proposed obligation only. No implementation, statement elaboration or proof
+      acceptance.
+  - declaration: NLA.IE13.witness_nonsingular
+    file: Challenge.lean
+    comparator_config: comparator.json
+    verification_status: Proposed obligation only. No implementation, statement elaboration or proof
+      acceptance.
+  - declaration: NLA.IE13.witness_attainment
+    file: Challenge.lean
+    comparator_config: comparator.json
+    verification_status: Proposed obligation only. No implementation, statement elaboration or proof
+      acceptance.
+  - declaration: NLA.IE13.identity_attainment
+    file: Challenge.lean
+    comparator_config: comparator.json
+    verification_status: Proposed obligation only. No implementation, statement elaboration or proof
+      acceptance.
+  - declaration: NLA.IE13.sharp_growth
+    file: Challenge.lean
+    comparator_config: comparator.json
+    verification_status: Proposed obligation only. No implementation, statement elaboration or proof
+      acceptance.
+fidelity:
+  divergences: Zero-based Fin indices and zero-padded inactive Schur blocks replace one-based active
+    matrices. A structurally recursive history register implements the integer recurrence, with exported
+    correspondence. Actual arbitrary input scale is retained. Finite-subset envelope bounds replace
+    sorting without weakening the domain. An explicitly proved prefix-extension lemma can complete
+    the witness after its attaining entry is visible. The source matrix is defined first over rational
+    numbers and then embedded into complex numbers; no preliminary algorithmic permutation is introduced.
+review:
+  status: Pending two independent full statement approvals and actual Linux elaboration. No freeze
+    or proof authorization yet.
+  reviewers: []
+  notes: Apply scoped Tau Ceti fidelity, proof-quality, reuse/API and attribution standards to all
+    definitions and all 28 contracts. Check maxima, recurrence indexing, every zero-bandwidth case,
+    nonvacuous paths, original-row witness support and actual prefix extension. Final acceptance
+    requires two nonimplementing referees plus genuine LeanCert/default-kernel/Comparator and rejection/sandbox
+    controls.
+alignment:
+  source_correspondence: SourceCorrespondence.md
+  numerical_boundary: NUMERICAL_TARGETS.md
+  proposed_statements: Challenge.lean
+  source_provenance: SOURCE-PROVENANCE.json
+  definition_reuse: REUSE-AUDIT.json
+  duplicate_audit: DUPLICATE-AUDIT.json
+toolchain:
+  lean: leanprover/lean4:v4.33.1
+  dependency_manifest: lake-manifest.json
+  dependencies:
+    leancert: 621a43d7cf21f87872392a01e874f2f1dbddc926
+    mathlib: 0df444a360eaa60ab8c11dca51a86af692955474
+verification:
+  statement_elaboration: pending
+  default_kernel: pending
+  comparator: pending
+  permitted_axioms:
+  - propext
+  - Classical.choice
+  - Quot.sound
+  permitted_axioms_note: Future acceptance policy, not an observed axiom report. Challenge placeholders
+    are deliberate and the future Solution may never import that module.
+acknowledgements: Matthew J. Colbrook for the complete mathematical proof; prior generic GEPP formalization
+  contributors; Mathlib, LeanCert, Lean Comparator and formalization.yaml contributors; Schiffer
+  and Forsythe workflow examples.

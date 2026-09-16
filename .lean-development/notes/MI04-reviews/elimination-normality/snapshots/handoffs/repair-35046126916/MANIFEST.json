@@ -1,0 +1,16 @@
+{
+  "files": {
+    "ACTIVE-BEFORE.json": "955cfe3ea6ec5c4a7e0856146520b0da0b99287fd51b5bdeba25a2d91da1706a",
+    "CHANGES.diff": "df0da78a67d18bebb4858a96e1ca5f3e9830f370c29e3a796f47e8f8475455da",
+    "CHECKS.json": "c763c8efcdd55f3e626ca2b23f46af26b3e9c9461b519e04d2c3b5db7a267b14",
+    "MI-04-modules.log": "4c6880cee6100f9f91bbf2d33b38514d03f353d1e25dfd679b39500c60593942",
+    "after/Coordinates.lean": "9fbf6dac25ce96499fdd7a6371e948c11d6e1b04156788af48998b0919d555d6",
+    "after/Rayleigh.lean": "a9308e19575aa44ec56389ef2a24e75b375bcb577703c706590af6b63ebcca97",
+    "before/Coordinates.lean": "9c81bfca4b76495a35b8b740d2abfae231952c2b4da82702a0921e8be1e04cc4",
+    "before/Rayleigh.lean": "5fd32d7b37dfd66b6b3a30ab1d490a7fc3627536b05c8379641f84ffc95420ef"
+  },
+  "current_sources": {
+    "NLA/MI04/Rayleigh.lean": "a9308e19575aa44ec56389ef2a24e75b375bcb577703c706590af6b63ebcca97",
+    "NLA/MI04/Coordinates.lean": "9fbf6dac25ce96499fdd7a6371e948c11d6e1b04156788af48998b0919d555d6"
+  }
+}

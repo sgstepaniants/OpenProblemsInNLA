@@ -1,0 +1,11 @@
+--- before/BasisTransport.lean
++++ after/BasisTransport.lean
+@@ -45,7 +45,7 @@
+   intro x hx y hy
+   simp only [Set.mem_insert_iff, Set.mem_singleton_iff] at hx hy
+   rcases hx with rfl | rfl <;> rcases hy with rfl | rfl <;>
+-    simp [huu, hvv, huv, hvu, hne, hne.symm]
++    simp [huu, hvv, huv, hvu, hne, Ne.symm hne]
+ 
+ def basisUnitary {n : ℕ} (B : OrthonormalBasis (Fin n) ℂ (CVector (Fin n))) :
+     Matrix.unitaryGroup (Fin n) ℂ :=

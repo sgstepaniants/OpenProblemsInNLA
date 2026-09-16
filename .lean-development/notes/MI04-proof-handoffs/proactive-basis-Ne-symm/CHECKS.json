@@ -1,0 +1,9 @@
+{
+  "reason": "independent elimination reviewer requested an explicit Ne.symm application consistent with actual Coordinates lookup repair",
+  "before_sha256": "35828c2571be6e3714ea77b01ee8a3fcd7cb33fecdb0435f8d311594666690f7",
+  "after_sha256": "a3bd7f091903150bcf01c981a5a1ae8aae7bc8c31ea00f4b601aa53636c9341e",
+  "one_proof_term_replacement": true,
+  "headers_and_frozen_boundary_unchanged": true,
+  "actual_BasisTransport_compilation": "not yet run",
+  "local_Lean": false
+}

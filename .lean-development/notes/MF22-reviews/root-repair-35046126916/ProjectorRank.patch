@@ -1,0 +1,24 @@
+--- before/NLA/MF22/ProjectorRank.lean
++++ after/NLA/MF22/ProjectorRank.lean
+@@ -41,7 +41,7 @@
+     (roots : Fin 4 → ℂ) (hroots : RootData ρ roots)
+     (hchar : (transferMatrix ρ).charpoly = C ((leadingScalar ρ)⁻¹) * quartic ρ)
+     (i : Fin 4) :
+-    Module.finrank ℂ ((transferMatrix ρ).toLin'.eigenspace (roots i)) ≤ 1 := by
++    Module.finrank ℂ (Module.End.eigenspace (transferMatrix ρ).toLin' (roots i)) ≤ 1 := by
+   have he := LinearMap.finrank_eigenspace_le (transferMatrix ρ).toLin' (roots i)
+   rw [Matrix.charpoly_toLin', transfer_charpoly_eq_nodal ρ roots hroots hchar,
+     nodal_rootMultiplicity_one roots hroots.1 i] at he
+@@ -51,10 +51,10 @@
+ two-by-two minors zero. No nonzero column or nonzero coordinate is assumed. -/
+ lemma entry_minor_zero_of_simple_eigenspace {n : ℕ} (A P : Square n) (z : ℂ)
+     (hAP : A * P = z • P)
+-    (hdim : Module.finrank ℂ (A.toLin'.eigenspace z) ≤ 1)
++    (hdim : Module.finrank ℂ (Module.End.eigenspace A.toLin' z) ≤ 1)
+     (r k c s : Fin n) :
+     P r c * P k s = P k c * P r s := by
+-  let E := A.toLin'.eigenspace z
++  let E := Module.End.eigenspace A.toLin' z
+   have hcol (j : Fin n) : (fun row => P row j) ∈ E := by
+     apply Module.End.mem_eigenspace_iff.mpr
+     change A *ᵥ (fun row => P row j) = z • (fun row => P row j)

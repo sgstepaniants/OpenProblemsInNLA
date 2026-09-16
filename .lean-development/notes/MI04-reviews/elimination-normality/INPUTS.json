@@ -1,0 +1,355 @@
+{
+  "files": {
+    "package/NLA/MI04/Definitions.lean": {
+      "sha256": "de70e2a9dd878f1d083adacf8df6808c90c27630ffc2644a62293bf085e41715",
+      "bytes": 3795,
+      "role": "unchanged frozen boundary/configuration"
+    },
+    "package/Challenge.lean": {
+      "sha256": "ca80d090bfe9f3013d08aa86297761e1e524810881bce92776896545d6eeabf9",
+      "bytes": 5490,
+      "role": "unchanged frozen boundary/configuration"
+    },
+    "package/NUMERICAL_TARGETS.md": {
+      "sha256": "5cb5e20ffcf035b2ea303cf9edae2e85619b0f562bf302cf6df0c7a46079d1d7",
+      "bytes": 8284,
+      "role": "unchanged frozen boundary/configuration"
+    },
+    "package/SourceCorrespondence.md": {
+      "sha256": "dad6f6884c04ad65ba61fb2ab8b7d76fb01f679c724d69514545eaae7161f9fc",
+      "bytes": 4455,
+      "role": "unchanged frozen boundary/configuration"
+    },
+    "package/SOURCE-PROVENANCE.json": {
+      "sha256": "aa92f22a3c17fa3abd48d80aaac4c7cff1d5dd0f02c32d6441c516d1000d6829",
+      "bytes": 1450,
+      "role": "unchanged frozen boundary/configuration"
+    },
+    "package/comparator.json": {
+      "sha256": "6137dba303006439dc5c2a38c163834383752ca2fefd7b79b98ffe6839d04180",
+      "bytes": 1079,
+      "role": "unchanged frozen boundary/configuration"
+    },
+    "package/lakefile.toml": {
+      "sha256": "194165e91eb78144ef94e089710f5b200005d63c402c95031e3817cc519c322e",
+      "bytes": 281,
+      "role": "unchanged frozen boundary/configuration"
+    },
+    "package/lake-manifest.json": {
+      "sha256": "bbcbcd55e8d78d67e7772d7ee2e921ed70c1c10ef25a8d73bc454de23780397d",
+      "bytes": 3884,
+      "role": "unchanged frozen boundary/configuration"
+    },
+    "package/lean-toolchain": {
+      "sha256": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+      "bytes": 25,
+      "role": "unchanged frozen boundary/configuration"
+    },
+    "package/LICENSE": {
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "bytes": 11358,
+      "role": "unchanged frozen boundary/configuration"
+    },
+    "package/STATEMENT-FREEZE.json": {
+      "sha256": "c5ca666f10da44ad1c47a81b0fe81898abf3a7a9ea789e90ec9dfbc8c8cf4c6c",
+      "bytes": 7776,
+      "role": "historical statement freeze"
+    },
+    "package/NLA/MI04/WeightedProbes.lean": {
+      "sha256": "8fb7c11c6c36371a3a3cee2e3ed6869be8b325ea063a8abe35bd5cd79510f693",
+      "bytes": 5565,
+      "role": "complete new source reviewed"
+    },
+    "package/NLA/MI04/Probes.lean": {
+      "sha256": "659176443980b438e7f55bd8df45ee5174ac87117fc37a73bd6c4900f349df01",
+      "bytes": 2894,
+      "role": "complete new source reviewed"
+    },
+    "package/NLA/MI04/BasisTransport.lean": {
+      "sha256": "a3bd7f091903150bcf01c981a5a1ae8aae7bc8c31ea00f4b601aa53636c9341e",
+      "bytes": 4614,
+      "role": "complete new source reviewed"
+    },
+    "package/NLA/MI04/Normality.lean": {
+      "sha256": "d8abea3f3a78a9381890e637e022553ba0b9b0317d184b33d799123391831d6f",
+      "bytes": 4063,
+      "role": "complete new source reviewed"
+    },
+    "package/NLA/MI04/Limit.lean": {
+      "sha256": "5a10598688c704f7ee2a13b990ee4cd9d35e2373ba051f651972a66e6aee6e1a",
+      "bytes": 4255,
+      "role": "prior-reviewed dependency source reconciled"
+    },
+    "package/NLA/MI04/Unitary.lean": {
+      "sha256": "05ccea07c757797829759c8a637ef14d5d216826d28b79a615e8b1df32b738e0",
+      "bytes": 4127,
+      "role": "prior-reviewed dependency source reconciled"
+    },
+    "package/NLA/MI04/ScaledSymmetry.lean": {
+      "sha256": "6ad9967e48602adc087ac905407f1554fc5e8fdb04f90dd9cea0605c8d350ef1",
+      "bytes": 5174,
+      "role": "prior-reviewed dependency source reconciled"
+    },
+    "package/NLA/MI04/BlockSymmetry.lean": {
+      "sha256": "7d5c0e711ba01a8bb98616427b50b06c64768e3bb12aef81ab06cd03720d3826",
+      "bytes": 5895,
+      "role": "prior-reviewed dependency source reconciled"
+    },
+    "package/NLA/MI04/Coordinates.lean": {
+      "sha256": "9fbf6dac25ce96499fdd7a6371e948c11d6e1b04156788af48998b0919d555d6",
+      "bytes": 4916,
+      "role": "prior-reviewed dependency source reconciled"
+    },
+    "package/NLA/MI04/Correction.lean": {
+      "sha256": "b719f84cdfde494644f4eed77eff83bc946d4630da9046e3ce86525e0714431e",
+      "bytes": 5205,
+      "role": "prior-reviewed dependency source reconciled"
+    },
+    "package/NLA/MI04/Punctured.lean": {
+      "sha256": "8c7ff3d4386c0ff3a466f316b402637ce0ea7e6df02f80e96ade989ae22bc3ad",
+      "bytes": 4824,
+      "role": "prior-reviewed dependency source reconciled"
+    },
+    "package/NLA/MI04/UpperBound.lean": {
+      "sha256": "03376a5de032704cae5fa9fe17ab4633102655373699b5d8a23c30694362e190",
+      "bytes": 5200,
+      "role": "prior-reviewed dependency source reconciled"
+    },
+    "package/NLA/MI04/Quadratic.lean": {
+      "sha256": "8f627c7c20e201548a8c0dfa68fb6a3252295d3103b6ffbbd3377385c10f3fbc",
+      "bytes": 5545,
+      "role": "prior-reviewed dependency source reconciled"
+    },
+    "package/NLA/MI04/Rayleigh.lean": {
+      "sha256": "a9308e19575aa44ec56389ef2a24e75b375bcb577703c706590af6b63ebcca97",
+      "bytes": 5784,
+      "role": "prior-reviewed dependency source reconciled"
+    },
+    "package/NLA/MI04/ScalarGeometry.lean": {
+      "sha256": "583817923f7be81b7792a89b4e5ce48bd4817b07ef52655068fb17e3f48a4682",
+      "bytes": 2573,
+      "role": "prior-reviewed dependency source reconciled"
+    },
+    "handoffs/basis-normality/MANIFEST.json": {
+      "sha256": "0fd7594f1975e044862f4c47bd242633284b3ba0e1ec8aac89401175cf577350",
+      "bytes": 1164,
+      "role": "author source handoff or explicitly separated repair"
+    },
+    "handoffs/repair-35046126916/MANIFEST.json": {
+      "sha256": "9182bf25928f2f11ed6e1fa15bd929aa4e7839ce86f6c9a54859ab27579ea65c",
+      "bytes": 996,
+      "role": "author source handoff or explicitly separated repair"
+    },
+    "handoffs/repair-35046126916/ACTIVE-BEFORE.json": {
+      "sha256": "955cfe3ea6ec5c4a7e0856146520b0da0b99287fd51b5bdeba25a2d91da1706a",
+      "bytes": 1670,
+      "role": "retained before/after/diff/actual diagnostic"
+    },
+    "handoffs/repair-35046126916/CHANGES.diff": {
+      "sha256": "df0da78a67d18bebb4858a96e1ca5f3e9830f370c29e3a796f47e8f8475455da",
+      "bytes": 2444,
+      "role": "retained before/after/diff/actual diagnostic"
+    },
+    "handoffs/repair-35046126916/CHECKS.json": {
+      "sha256": "c763c8efcdd55f3e626ca2b23f46af26b3e9c9461b519e04d2c3b5db7a267b14",
+      "bytes": 1443,
+      "role": "retained before/after/diff/actual diagnostic"
+    },
+    "handoffs/repair-35046126916/MI-04-modules.log": {
+      "sha256": "4c6880cee6100f9f91bbf2d33b38514d03f353d1e25dfd679b39500c60593942",
+      "bytes": 13775,
+      "role": "retained before/after/diff/actual diagnostic"
+    },
+    "handoffs/repair-35046126916/after/Coordinates.lean": {
+      "sha256": "9fbf6dac25ce96499fdd7a6371e948c11d6e1b04156788af48998b0919d555d6",
+      "bytes": 4916,
+      "role": "retained before/after/diff/actual diagnostic"
+    },
+    "handoffs/repair-35046126916/after/Rayleigh.lean": {
+      "sha256": "a9308e19575aa44ec56389ef2a24e75b375bcb577703c706590af6b63ebcca97",
+      "bytes": 5784,
+      "role": "retained before/after/diff/actual diagnostic"
+    },
+    "handoffs/repair-35046126916/before/Coordinates.lean": {
+      "sha256": "9c81bfca4b76495a35b8b740d2abfae231952c2b4da82702a0921e8be1e04cc4",
+      "bytes": 4468,
+      "role": "retained before/after/diff/actual diagnostic"
+    },
+    "handoffs/repair-35046126916/before/Rayleigh.lean": {
+      "sha256": "5fd32d7b37dfd66b6b3a30ab1d490a7fc3627536b05c8379641f84ffc95420ef",
+      "bytes": 5779,
+      "role": "retained before/after/diff/actual diagnostic"
+    },
+    "handoffs/proactive-Ne-symm/MANIFEST.json": {
+      "sha256": "93f53996092456e3a2eb66a8db397080ff1124030c0ccdf536543102e0b67f34",
+      "bytes": 382,
+      "role": "author source handoff or explicitly separated repair"
+    },
+    "handoffs/proactive-Ne-symm/CHANGES.diff": {
+      "sha256": "071da8002dd6e845b59bacac44b05bc974c4fe1e69e1a2fa68af4239bc66b99d",
+      "bytes": 702,
+      "role": "retained before/after/diff/actual diagnostic"
+    },
+    "handoffs/proactive-Ne-symm/CHECKS.json": {
+      "sha256": "2f6668f664f4c38b032c0c5b9e9cc709ee4bf390acbde080214a4d9da00d35f2",
+      "bytes": 480,
+      "role": "retained before/after/diff/actual diagnostic"
+    },
+    "handoffs/proactive-Ne-symm/after/Probes.lean": {
+      "sha256": "659176443980b438e7f55bd8df45ee5174ac87117fc37a73bd6c4900f349df01",
+      "bytes": 2894,
+      "role": "retained before/after/diff/actual diagnostic"
+    },
+    "handoffs/proactive-Ne-symm/before/Probes.lean": {
+      "sha256": "a5f2a00eb2ec5be139b866fbc5b2bde6007f40986115861883e062ccc680db87",
+      "bytes": 2884,
+      "role": "retained before/after/diff/actual diagnostic"
+    },
+    "handoffs/proactive-basis-Ne-symm/MANIFEST.json": {
+      "sha256": "1f7e419c3496239aacbc31d5037e6cdc67aa3fd429fd6cb84727f0a3e14ae3b5",
+      "bytes": 398,
+      "role": "author source handoff or explicitly separated repair"
+    },
+    "handoffs/proactive-basis-Ne-symm/CHANGES.diff": {
+      "sha256": "f6f674bebb888f5d825ecc3f6ceed8fba27779fa50df0f17f1a25c249a63104b",
+      "bytes": 445,
+      "role": "retained before/after/diff/actual diagnostic"
+    },
+    "handoffs/proactive-basis-Ne-symm/CHECKS.json": {
+      "sha256": "2d4bb6eed69ae68d17f1b382a0f280e102ad78d4cb8069d744de1e9d8cefa1ad",
+      "bytes": 479,
+      "role": "retained before/after/diff/actual diagnostic"
+    },
+    "handoffs/proactive-basis-Ne-symm/after/BasisTransport.lean": {
+      "sha256": "a3bd7f091903150bcf01c981a5a1ae8aae7bc8c31ea00f4b601aa53636c9341e",
+      "bytes": 4614,
+      "role": "retained before/after/diff/actual diagnostic"
+    },
+    "handoffs/proactive-basis-Ne-symm/before/BasisTransport.lean": {
+      "sha256": "35828c2571be6e3714ea77b01ee8a3fcd7cb33fecdb0435f8d311594666690f7",
+      "bytes": 4611,
+      "role": "retained before/after/diff/actual diagnostic"
+    },
+    "handoffs/weighted-probes/MANIFEST.json": {
+      "sha256": "902f85eb65e7d0f1924c2257b330354bf75a43e2c9d296ea14d6c4e3736616fe",
+      "bytes": 993,
+      "role": "historical original weighted-probes handoff; later Probes repair explicitly retained"
+    },
+    "source/matrix-inequalities-and-norms/MI-04/README.md": {
+      "sha256": "22adf3cb0275c044c912eca496d13fbce98f83a35c6ee1184162cef379711bdc",
+      "bytes": 3859,
+      "role": "original canonical target/manuscript/policy"
+    },
+    "source/matrix-inequalities-and-norms/MI-04/solution.tex": {
+      "sha256": "5e2c6b910f17ffebfcb8e2be76577ba2e8a8f55bd2551271430d77b8aa6fc230",
+      "bytes": 9166,
+      "role": "original canonical target/manuscript/policy"
+    },
+    "source/matrix-inequalities-and-norms/MI-04/solution.md": {
+      "sha256": "edfd1ddc69018997eb9709880d4ff5d3066eff4459bf39e7b402eacc1f390eb8",
+      "bytes": 2607,
+      "role": "original canonical target/manuscript/policy"
+    },
+    "source/references/colbrook-matrix-2026-09-11/original-proofs/MI-04.tex": {
+      "sha256": "8363d460f59fba544577ba6453e44cec51f9b546a01875515361df352321fb7c",
+      "bytes": 6395,
+      "role": "original canonical target/manuscript/policy"
+    },
+    "source/references/colbrook-matrix-2026-09-11/verification/reviews/MI-04-review.md": {
+      "sha256": "7493c546f894fb6dd62bb1870cd4b18a20eaad3777d643c7ea32a9394452f645",
+      "bytes": 5918,
+      "role": "original canonical target/manuscript/policy"
+    },
+    "source/AGENTS.md": {
+      "sha256": "d7e27520acdcb0edacebf965b56f5b1e3fb0205d83da45a7fa021e0bedb80162",
+      "bytes": 1272,
+      "role": "original canonical target/manuscript/policy"
+    },
+    "source/docs/lean/README.md": {
+      "sha256": "27d1baf38609e50049f077e8004dabe598dc53cadab73acdb8a7a1e1e4a48be6",
+      "bytes": 7278,
+      "role": "original canonical target/manuscript/policy"
+    },
+    "source/docs/lean/REVIEW.md": {
+      "sha256": "d967ddce620d4e754e2f9c25548f30cb537f76f4ddcf8ecf2574945bcd332553",
+      "bytes": 3110,
+      "role": "original canonical target/manuscript/policy"
+    },
+    "mathlib/Mathlib/Analysis/InnerProductSpace/PiL2.lean": {
+      "sha256": "1f9827b2db67213c725a2dcc3fec52a87772966d1fbd3fc6857a019dbd7a6053",
+      "bytes": 61065,
+      "role": "pinned primary API inspected"
+    },
+    "mathlib/Mathlib/Analysis/InnerProductSpace/Orthonormal.lean": {
+      "sha256": "8f6d3904a8b6e011cb5f2aea532ce0c1dec796fc4f8292ff59c351fd960c096c",
+      "bytes": 21548,
+      "role": "pinned primary API inspected"
+    },
+    "mathlib/Mathlib/Analysis/InnerProductSpace/Adjoint.lean": {
+      "sha256": "f28b5896638f712605265a69ffe4469f1f42e1b78b10ade0844738aeecd2b2a2",
+      "bytes": 48453,
+      "role": "pinned primary API inspected"
+    },
+    "mathlib/Mathlib/Analysis/CStarAlgebra/Matrix.lean": {
+      "sha256": "79518c9e51c4d0cf4083ab69a9ac7a2817305b48db1fe6f25ae1d678e12ce223",
+      "bytes": 14220,
+      "role": "pinned primary API inspected"
+    },
+    "mathlib/Mathlib/Order/Filter/Tendsto.lean": {
+      "sha256": "76800f92ca0414bd4f31e94719ac9cac2985bd2b083035380c3e32111e0405ce",
+      "bytes": 14382,
+      "role": "pinned primary API inspected"
+    },
+    "mathlib/Mathlib/Topology/Separation/Hausdorff.lean": {
+      "sha256": "4e6998adc898c3aac6d01e0c8bc916aa68794bf6cca0d3c57e43f76760151a87",
+      "bytes": 35574,
+      "role": "pinned primary API inspected"
+    },
+    "mathlib/Mathlib/Topology/Order/DenselyOrdered.lean": {
+      "sha256": "adf96457e0a75584217f92722491e7a025ad49da4291cbcd85eff61121f6fec1",
+      "bytes": 13402,
+      "role": "pinned primary API inspected"
+    },
+    "prior-reviews/MI04-elimination-second-order-limit/REVIEW.md": {
+      "sha256": "39d1f6253d6dce64e5ab5fd247a9db55111ebc1eb4a25ae9bfc7af0f647b7248",
+      "bytes": 7374,
+      "role": "immutable prior incremental review"
+    },
+    "prior-reviews/MI04-elimination-second-order-limit/CHECKS.json": {
+      "sha256": "c21351cc0c743e3743c608556685870b85ab8a711b0bb7d80c29606d627a05cf",
+      "bytes": 2628,
+      "role": "immutable prior incremental review"
+    },
+    "prior-reviews/MI04-elimination-second-order-limit/INPUTS.json": {
+      "sha256": "45fce7082b105e12dca71ba66739328379c29aceeed0a7e5877ef3997009d72e",
+      "bytes": 7494,
+      "role": "immutable prior incremental review"
+    },
+    "prior-reviews/MI04-elimination-second-order-limit/MANIFEST.json": {
+      "sha256": "c4037f21e0cdf7d82c90482e328d136b648904f4f811af33473e3ab19de59d78",
+      "bytes": 4504,
+      "role": "immutable prior incremental review"
+    },
+    "prior-reviews/MI04-elimination-block-extrema/REVIEW.md": {
+      "sha256": "0aeae6331c3e23cb621daa87ca8f5f843954a4424d504eaa0aef68f626c1f28b",
+      "bytes": 7694,
+      "role": "immutable prior incremental review"
+    },
+    "prior-reviews/MI04-elimination-block-extrema/CHECKS.json": {
+      "sha256": "e2882858db248616804803e96477c18ac02d9d30d18aa77f0ecfac3b7cbd06c2",
+      "bytes": 2433,
+      "role": "immutable prior incremental review"
+    },
+    "prior-reviews/MI04-elimination-block-extrema/INPUTS.json": {
+      "sha256": "61b3585a96c10b86e9de0fff5366cc8a2cd20e527e63e275e25f79374c89e393",
+      "bytes": 7523,
+      "role": "immutable prior incremental review"
+    },
+    "prior-reviews/MI04-elimination-block-extrema/MANIFEST.json": {
+      "sha256": "2967629f9b3dd5bf12fc62cff26f0513d01f47fc99050ed09e6e9b0d380171b8",
+      "bytes": 4996,
+      "role": "immutable prior incremental review"
+    }
+  },
+  "count": 70
+}

@@ -1,0 +1,19 @@
+{
+  "NLA/MI04/BasisTransport.lean": "35828c2571be6e3714ea77b01ee8a3fcd7cb33fecdb0435f8d311594666690f7",
+  "NLA/MI04/BlockSymmetry.lean": "7d5c0e711ba01a8bb98616427b50b06c64768e3bb12aef81ab06cd03720d3826",
+  "NLA/MI04/Coordinates.lean": "9c81bfca4b76495a35b8b740d2abfae231952c2b4da82702a0921e8be1e04cc4",
+  "NLA/MI04/Correction.lean": "b719f84cdfde494644f4eed77eff83bc946d4630da9046e3ce86525e0714431e",
+  "NLA/MI04/Definitions.lean": "de70e2a9dd878f1d083adacf8df6808c90c27630ffc2644a62293bf085e41715",
+  "NLA/MI04/Geometry.lean": "e4d8936508ae9943e4b61e5b3be856299d70f37567adef558db815e3d0b17c7a",
+  "NLA/MI04/Limit.lean": "5a10598688c704f7ee2a13b990ee4cd9d35e2373ba051f651972a66e6aee6e1a",
+  "NLA/MI04/Normality.lean": "d8abea3f3a78a9381890e637e022553ba0b9b0317d184b33d799123391831d6f",
+  "NLA/MI04/Probes.lean": "a5f2a00eb2ec5be139b866fbc5b2bde6007f40986115861883e062ccc680db87",
+  "NLA/MI04/Punctured.lean": "8c7ff3d4386c0ff3a466f316b402637ce0ea7e6df02f80e96ade989ae22bc3ad",
+  "NLA/MI04/Quadratic.lean": "8f627c7c20e201548a8c0dfa68fb6a3252295d3103b6ffbbd3377385c10f3fbc",
+  "NLA/MI04/Rayleigh.lean": "5fd32d7b37dfd66b6b3a30ab1d490a7fc3627536b05c8379641f84ffc95420ef",
+  "NLA/MI04/ScalarGeometry.lean": "583817923f7be81b7792a89b4e5ce48bd4817b07ef52655068fb17e3f48a4682",
+  "NLA/MI04/ScaledSymmetry.lean": "6ad9967e48602adc087ac905407f1554fc5e8fdb04f90dd9cea0605c8d350ef1",
+  "NLA/MI04/Unitary.lean": "05ccea07c757797829759c8a637ef14d5d216826d28b79a615e8b1df32b738e0",
+  "NLA/MI04/UpperBound.lean": "03376a5de032704cae5fa9fe17ab4633102655373699b5d8a23c30694362e190",
+  "NLA/MI04/WeightedProbes.lean": "8fb7c11c6c36371a3a3cee2e3ed6869be8b325ea063a8abe35bd5cd79510f693"
+}

@@ -1,0 +1,21 @@
+{
+  "problem_id": "IE-13",
+  "phase": "two exact complete statement source approvals; authorized for statement-only remote elaboration",
+  "review_sha256": {
+    "reviews/IE13-root-statements/REVIEW.md": "1182fa30893fd20d23e92b4ec5eea6241ffd3db760d2cf6bb4bda0b4ba405ad7",
+    "reviews/IE13-matrix-functions-statements/REVIEW.md": "101ea631c0796193afbf2b1d199e3e81d9441cb4f4dbca9036cb76706ab09b69"
+  },
+  "draft_manifest_sha256": "7df9990e5e5f944f4c90890a6e12cd0cc6b9838cbbde2ee33a9f5061d7516c38",
+  "modules": [
+    "NLA.IE13.Definitions"
+  ],
+  "challenge_transport": {
+    "from": "Challenge.lean",
+    "to": "Challenges/IE13.lean",
+    "bytes_unchanged": true
+  },
+  "deliberate_Challenge_obligations": 28,
+  "proof_implementation_authorized": false,
+  "freeze_authorized_before_actual_success": false,
+  "created_at_utc": "2026-09-16T02:09:28.570174+00:00"
+}

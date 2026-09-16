@@ -1,0 +1,35 @@
+{
+  "problem": "MI-04",
+  "phase": "new exact limit helper and full frozen simple_peak_second_order export; actual compilation pending",
+  "new_file": {
+    "NLA/MI04/Limit.lean": "5a10598688c704f7ee2a13b990ee4cd9d35e2373ba051f651972a66e6aee6e1a"
+  },
+  "full_current_proof_files": {
+    "NLA/MI04/Coordinates.lean": "9c81bfca4b76495a35b8b740d2abfae231952c2b4da82702a0921e8be1e04cc4",
+    "NLA/MI04/Correction.lean": "b719f84cdfde494644f4eed77eff83bc946d4630da9046e3ce86525e0714431e",
+    "NLA/MI04/Limit.lean": "5a10598688c704f7ee2a13b990ee4cd9d35e2373ba051f651972a66e6aee6e1a",
+    "NLA/MI04/Punctured.lean": "8c7ff3d4386c0ff3a466f316b402637ce0ea7e6df02f80e96ade989ae22bc3ad",
+    "NLA/MI04/Quadratic.lean": "8f627c7c20e201548a8c0dfa68fb6a3252295d3103b6ffbbd3377385c10f3fbc",
+    "NLA/MI04/Rayleigh.lean": "5fd32d7b37dfd66b6b3a30ab1d490a7fc3627536b05c8379641f84ffc95420ef",
+    "NLA/MI04/ScalarGeometry.lean": "583817923f7be81b7792a89b4e5ce48bd4817b07ef52655068fb17e3f48a4682",
+    "NLA/MI04/Unitary.lean": "05ccea07c757797829759c8a637ef14d5d216826d28b79a615e8b1df32b738e0",
+    "NLA/MI04/UpperBound.lean": "03376a5de032704cae5fa9fe17ab4633102655373699b5d8a23c30694362e190"
+  },
+  "frozen_files": {
+    "NLA/MI04/Definitions.lean": "de70e2a9dd878f1d083adacf8df6808c90c27630ffc2644a62293bf085e41715",
+    "Challenge.lean": "ca80d090bfe9f3013d08aa86297761e1e524810881bce92776896545d6eeabf9",
+    "NUMERICAL_TARGETS.md": "5cb5e20ffcf035b2ea303cf9edae2e85619b0f562bf302cf6df0c7a46079d1d7",
+    "SourceCorrespondence.md": "dad6f6884c04ad65ba61fb2ab8b7d76fb01f679c724d69514545eaae7161f9fc",
+    "SOURCE-PROVENANCE.json": "aa92f22a3c17fa3abd48d80aaac4c7cff1d5dd0f02c32d6441c516d1000d6829",
+    "comparator.json": "6137dba303006439dc5c2a38c163834383752ca2fefd7b79b98ffe6839d04180",
+    "lakefile.toml": "194165e91eb78144ef94e089710f5b200005d63c402c95031e3817cc519c322e",
+    "lake-manifest.json": "bbcbcd55e8d78d67e7772d7ee2e921ed70c1c10ef25a8d73bc454de23780397d",
+    "lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+    "LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+  },
+  "build_target": "NLA.MI04.Limit",
+  "review_baseline_and_repair": "Original eight held modules plus explicitly retained Quadratic repair35044592511; no other prior proof file changed.",
+  "mathematical_method": "Each upper rational summand tends to its zero-parameter value since all off-peak gaps are at least1/2. The explicit lower quotient tends to the same coefficient. The exact sandwich applies eventually on the positive half-neighborhood, yielding the frozen right-hand limit by squeeze.",
+  "local_lean_execution": false,
+  "mechanical_acceptance": false
+}
