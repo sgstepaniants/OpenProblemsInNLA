@@ -1,0 +1,72 @@
+{
+  "scope": "Source reviews for the next development gate only. Hashes refer to original private inventories, which are not copied in full here.",
+  "reviews": [
+    {
+      "id": "MI04-ie13-repair-35064080581",
+      "manifest": "reviews/MI04-ie13-repair-35064080581/MANIFEST.json",
+      "manifest_sha256": "0716de50d1b23e3440f335301a891da3363ebf96464c522981c24582fd6b7304",
+      "review": "reviews/MI04-ie13-repair-35064080581/REVIEW.md",
+      "review_sha256": "4a02133b42cf04f3c67090374da71835e2b5fc08f61573b8e6211169eeb9644a",
+      "reviewer": "/root/ie13_continuation",
+      "scope": "Independent repair approval extending complete MI04 mathematical source review; compilation pending",
+      "full_private_inventory_published": false,
+      "entries_checked": 11
+    },
+    {
+      "id": "MI04-independent-repair-35064080581",
+      "manifest": "reviews/MI04-independent-repair-35064080581/MANIFEST.json",
+      "manifest_sha256": "16a1be7a7616c36365b1b65a23162643a17b77fe4b7b7f0bdcb40ce4bf1393ff",
+      "review": "reviews/MI04-independent-repair-35064080581/REVIEW.md",
+      "review_sha256": "96d9f318f500cd583ae49bf8bbe9a93260879d78b6c3fd0cd9ddb3d6eca6ca05",
+      "reviewer": "/root/mi04_independent_referee",
+      "scope": "Independent repair approval extending complete MI04 mathematical source review; compilation pending",
+      "full_private_inventory_published": false,
+      "entries_checked": 66
+    },
+    {
+      "id": "IE13-root-repair-35064080581",
+      "manifest": "reviews/IE13-root-repair-35064080581/MANIFEST.json",
+      "manifest_sha256": "ee7665c0bd811bbf9adbbceb0cfa68224d88a49a743bfcf21112f3e33a5d5230",
+      "review": "reviews/IE13-root-repair-35064080581/REVIEW.md",
+      "review_sha256": "112dbd496c1d96147082b27d1f098b3ed172e3e445b09c1b3b81ed6fda7db980",
+      "reviewer": "/root",
+      "scope": "Independent narrow repair approval preserving prior IE13 full source review; compilation pending",
+      "full_private_inventory_published": false,
+      "entries_checked": 4
+    },
+    {
+      "id": "IE13-mi04-repair-35064080581",
+      "manifest": "reviews/IE13-mi04-repair-35064080581/MANIFEST.json",
+      "manifest_sha256": "ead455c6e11a792e2cd8c8d8f3694c6519a9eb1bd4c5eb7729a3b718e2d20294",
+      "review": "reviews/IE13-mi04-repair-35064080581/REVIEW.md",
+      "review_sha256": "8cd05a6ba06843fdb50e0e2a6baa51bfaf81fd762a45724ca1f7127812f05fb5",
+      "reviewer": "/root/mi04_independent_referee",
+      "scope": "Independent repair approval extending complete IE13 source review through intervening repairs; compilation pending",
+      "full_private_inventory_published": false,
+      "entries_checked": 69
+    },
+    {
+      "id": "MF07-root-foundation-batch-01",
+      "manifest": "reviews/MF07-root-foundation-batch-01/MANIFEST.json",
+      "manifest_sha256": "d726fec45f621cf4ac1af51da5727192d40d65566fc8b2de3817ee40baa7605d",
+      "review": "reviews/MF07-root-foundation-batch-01/REVIEW.md",
+      "review_sha256": "34633f108c59df3bd00115ace0f9f9ddc8d57d070002c438eb2b940e21c9fbe4",
+      "reviewer": "/root",
+      "scope": "Development review of first three uncompiled modules; not a complete final mathematical referee approval",
+      "full_private_inventory_published": false,
+      "entries_checked": 2
+    },
+    {
+      "id": "MF07-root-envelope-batch-02",
+      "manifest": "reviews/MF07-root-envelope-batch-02/MANIFEST.json",
+      "manifest_sha256": "14c09b80f8f4cc39577f252ac377ce346a0fac2839060d7fe46e4f85cde67a82",
+      "review": "reviews/MF07-root-envelope-batch-02/REVIEW.md",
+      "review_sha256": "dbd15058d0311ed1081ba8a5e5dd041d68c7d7ebb9f217082e6ddea8091e8d7f",
+      "reviewer": "/root",
+      "scope": "Development review of two uncompiled orbit-norm modules; not a complete final mathematical referee approval",
+      "full_private_inventory_published": false,
+      "entries_checked": 2
+    }
+  ],
+  "complete_problems_verified": false
+}

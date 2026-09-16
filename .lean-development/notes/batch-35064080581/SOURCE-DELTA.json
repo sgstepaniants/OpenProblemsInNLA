@@ -1,0 +1,116 @@
+{
+  "base_commit": "39865897ba6e213cc89b666cb49a290d151233a3",
+  "failed_run": 35064080581,
+  "base_input_count": 1839,
+  "source_delta": [
+    {
+      "path": ".lean-development/NLA/MI04/JointBasis.lean",
+      "before_sha256": "0114cc6e7f74fde482306df19d67457d15458519d0eef3fd33fe2659d0f003fe",
+      "after_sha256": "e7a3c1a94fecfe2ad271870e641281d01565c68c8ace0f8dcc20452e7262dd6f"
+    },
+    {
+      "path": ".lean-development/NLA/MI04/Normality.lean",
+      "before_sha256": "e8631dbd37561e34755c9aba8c7fad7100b4bb3b02c464145484caa46e7021bc",
+      "after_sha256": "ff2d57732f8b619fa2bd9bccb8d42dcce24e5a9e6d214e886801a09548e9df54"
+    },
+    {
+      "path": ".lean-development/NLA/IE13/ColumnBounds.lean",
+      "before_sha256": "34af391613ba5362eb155cdf7601290f64467fa38780b1856d9372b754812908",
+      "after_sha256": "e29e33527d8b0ff3f7bdcd8d8e90a4d639d3e12e62e6cdcb2fbc6707a56ab39e"
+    },
+    {
+      "path": ".lean-development/NLA/IE13/WitnessProduct.lean",
+      "before_sha256": "6376c64427207873653b7e9a3c8e109792449326d4f8d59ed624df65df0a15d3",
+      "after_sha256": "7f62a39547d2eb41be31eb4e49b0e6b320e51c003cc38a61f7ce32a377607c75"
+    },
+    {
+      "path": ".lean-development/NLA/MF07/MatrixBasics.lean",
+      "before_sha256": null,
+      "after_sha256": "707bd9c9a155ef3aec0fde37e900313f833ce9798cbaab583e094fe433a0e0a6"
+    },
+    {
+      "path": ".lean-development/NLA/MF07/CompactGrowth.lean",
+      "before_sha256": null,
+      "after_sha256": "72168caa967a7f3ee8c78cb0a22fc53215894581a160ca716b8a2eb70ce237a2"
+    },
+    {
+      "path": ".lean-development/NLA/MF07/Numerical.lean",
+      "before_sha256": null,
+      "after_sha256": "90407ab2d374d652549c8b57858f9c5123602a1edf72bde8ce2ea2243b786c03"
+    },
+    {
+      "path": ".lean-development/NLA/MF07/ProductEnvelope.lean",
+      "before_sha256": null,
+      "after_sha256": "de68f5d96fe905b7b0f62940ea4acc7aef161ac96468f4bdd92aa88f07136ab9"
+    },
+    {
+      "path": ".lean-development/NLA/MF07/Interspersed.lean",
+      "before_sha256": null,
+      "after_sha256": "c3ce231c9cde04b8498082f583148dfbcee80e647d26bb6e74b673a838dc6b51"
+    },
+    {
+      "path": ".lean-development/projects.json",
+      "before_sha256": "f47fb5154c2c658d74f8766b22d4ef47b921f11ccc551b91c9681ce221852ec0",
+      "after_sha256": "7d6fec277cfad8735add15af1c0203f76fe7eb9f271282d1feb8eb1a5365d4ae"
+    }
+  ],
+  "frozen_boundaries": {
+    "MI04": {
+      "freeze_sha256": "c5ca666f10da44ad1c47a81b0fe81898abf3a7a9ea789e90ec9dfbc8c8cf4c6c",
+      "files_sha256": {
+        "NLA/MI04/Definitions.lean": "de70e2a9dd878f1d083adacf8df6808c90c27630ffc2644a62293bf085e41715",
+        "Challenge.lean": "ca80d090bfe9f3013d08aa86297761e1e524810881bce92776896545d6eeabf9",
+        "NUMERICAL_TARGETS.md": "5cb5e20ffcf035b2ea303cf9edae2e85619b0f562bf302cf6df0c7a46079d1d7",
+        "SourceCorrespondence.md": "dad6f6884c04ad65ba61fb2ab8b7d76fb01f679c724d69514545eaae7161f9fc",
+        "SOURCE-PROVENANCE.json": "aa92f22a3c17fa3abd48d80aaac4c7cff1d5dd0f02c32d6441c516d1000d6829",
+        "comparator.json": "6137dba303006439dc5c2a38c163834383752ca2fefd7b79b98ffe6839d04180",
+        "lakefile.toml": "194165e91eb78144ef94e089710f5b200005d63c402c95031e3817cc519c322e",
+        "lake-manifest.json": "bbcbcd55e8d78d67e7772d7ee2e921ed70c1c10ef25a8d73bc454de23780397d",
+        "lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+        "LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+      }
+    },
+    "IE13": {
+      "freeze_sha256": "85916aae89eb2111ff914b8767e8918548c132a6ff6c7ed92e52286bec1998fe",
+      "files_sha256": {
+        "NLA/IE13/Definitions.lean": "cda485c546a5879f35eb9d69e7aaa7eaf1449d2219a47b75fcbb4c2827031988",
+        "Challenge.lean": "5b6b9a4c714686d6b060589a4ee1414f2ec94e80787a9ffe351ac6fe66331e57",
+        "NUMERICAL_TARGETS.md": "a95e32b7b8e654185f1d6bbbb3c483fa9b988e2ee5800a2ce641a230706e1cb9",
+        "SourceCorrespondence.md": "f4c1091773fe8b684147f80f80d16fec4f59d9c413fa3244947932a023c86782",
+        "SOURCE-PROVENANCE.json": "35906d147fa91f733fb80f8e8c431656df752da69bc7716b3fef4f0ada091905",
+        "comparator.json": "51a3effaed3e2ba4effde07da37c8f84c7c864a0010e2c1548eb5922ec8a7c14",
+        "lakefile.toml": "7f0a154e9c02b9f44b3573eb3447e30276885396364d3b66e896e2f72eb39380",
+        "lake-manifest.json": "55717fab833a468f9b9971b29a171b5a4098fafb7437b93641f357b45c8ec795",
+        "lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+        "LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+      }
+    },
+    "MF07": {
+      "freeze_sha256": "6e792469355b1553d8a08d608c20c67cbfde2f067292a15e0ad119b63609037c",
+      "files_sha256": {
+        "NLA/MF07/Definitions.lean": "8eec7f3f10c012e8721687cfced35537cc754f0a12f08ed42595a64e3ad18c32",
+        "Challenge.lean": "ca4190cbafdc8a5e09317173a9fdb07820a965821b0c0b42d5152d23f21ff7da",
+        "NUMERICAL_TARGETS.md": "cd13a36c5ca167aabb754915c0a6ab834fc50e59329a4f1feb3af4e8b3a959f3",
+        "SourceCorrespondence.md": "88cf78168a76064468fc425b26975bcb93246464c463d7c74a6f713afbbb24c3",
+        "SOURCE-PROVENANCE.json": "647427cfd61f45ea14bcf3cb022893395eebca56313d98e5c8bd0f7f3613c392",
+        "comparator.json": "da9df06bcc2f5b3f696bd6a7ada166e1e52afb464b309217daf09327eb5cee74",
+        "lakefile.toml": "fb3e81b851f20b96c1ded6edfcb81fc34775dcb0fd49f763213c660da35055bc",
+        "lake-manifest.json": "13899bcb8b63f2e638331cad43f6103e7aa04083a5e6db173df3fbc3c3319ddd",
+        "lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+        "LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+      }
+    }
+  },
+  "protected_harness_and_pins": {
+    ".lean-development/check.py": "205c49b87d512199a33030338a17fd0c7df6a85dc2fdbb7774a572c8eff2c486",
+    ".lean-development/lakefile.toml": "f492315dbb789d45659dc734884db3ea020ca28692a7c94499e4f1e3f6fdb24b",
+    ".lean-development/lake-manifest.json": "650fa0aa1b77024ef5b39ca9fd6a85aa336352a95860d70d6bc68d1f0958d65b",
+    ".lean-development/lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+    ".github/workflows/lean-development.yml": "f59f22f64198fe72f2566a33373e40171102445b3fbdd787f0b9737cc36854fe"
+  },
+  "MI04_existing_headers": 164,
+  "MI04_new_private_proved_helpers": 1,
+  "IE13_unchanged_headers": 238,
+  "MF07_partial_candidate_exports": 9,
+  "MF07_frozen_full_contracts": 18
+}

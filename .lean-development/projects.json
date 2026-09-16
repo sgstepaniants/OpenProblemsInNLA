@@ -16,7 +16,11 @@
   {
     "id": "MF-07",
     "modules": [
-      "NLA.MF07.Definitions"
+      "NLA.MF07.MatrixBasics",
+      "NLA.MF07.CompactGrowth",
+      "NLA.MF07.Numerical",
+      "NLA.MF07.ProductEnvelope",
+      "NLA.MF07.Interspersed"
     ],
     "challenge": "Challenges/MF07.lean"
   }

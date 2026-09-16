@@ -19,6 +19,20 @@ open scoped BigOperators ComplexOrder
 
 namespace NLA.MI04
 
+private lemma exists_subordinate_basis {n : ℕ} {ι : Type*}
+    [Fintype ι] [DecidableEq ι] (V : ι → Submodule ℂ (CVector (Fin n)))
+    (horth : OrthogonalFamily ℂ (fun i => V i) (fun i => (V i).subtypeₗᵢ))
+    (htop : (⨆ i, V i) = ⊤) :
+    ∃ b : OrthonormalBasis (Fin n) ℂ (CVector (Fin n)),
+      ∃ j : Fin n → ι, ∀ i, b i ∈ V (j i) := by
+  have hdim : Module.finrank ℂ (CVector (Fin n)) = n := finrank_euclideanSpace_fin
+  have hV : DirectSum.IsInternal V := horth.isInternal_iff.mpr (by
+    rw [htop, Submodule.top_orthogonal_eq_bot])
+  refine ⟨hV.subordinateOrthonormalBasis hdim horth,
+    fun i => hV.subordinateOrthonormalBasisIndex hdim i horth, ?_⟩
+  intro i
+  exact hV.subordinateOrthonormalBasis_subordinate hdim i horth
+
 set_option maxHeartbeats 800000 in
 lemma commuting_symmetric_eigenbasis {n : ℕ}
     (A B : Module.End ℂ (CVector (Fin n)))
@@ -27,9 +41,8 @@ lemma commuting_symmetric_eigenbasis {n : ℕ}
       ∃ α β : Fin n → ℂ, ∀ i, A (b i) = α i • b i ∧ B (b i) = β i • b i := by
   classical
   let J := Module.End.Eigenvalues B × Module.End.Eigenvalues A
-  letI : Fintype J := inferInstance
-  letI : DecidableEq J := Classical.decEq J
-  have hdim : Module.finrank ℂ (CVector (Fin n)) = n := finrank_euclideanSpace_fin
+  let : Fintype J := inferInstance
+  let : DecidableEq J := Classical.decEq J
   let V : J → Submodule ℂ (CVector (Fin n)) := fun j =>
     Module.End.eigenspace A j.2.val ⊓ Module.End.eigenspace B j.1.val
   have hinj : Function.Injective (fun j : J => (j.1.val, j.2.val)) := by
@@ -56,16 +69,10 @@ lemma commuting_symmetric_eigenbasis {n : ℕ}
         exact hα (Module.End.hasEigenvalue_iff.mpr hne)
       rw [hzero, bot_inf_eq]
       exact bot_le
-  have hV : DirectSum.IsInternal V := horth.isInternal_iff.mpr (by
-    rw [htop, Submodule.top_orthogonal_eq_bot])
-  let b : OrthonormalBasis (Fin n) ℂ (CVector (Fin n)) :=
-    hV.subordinateOrthonormalBasis (n := n) hdim horth
-  let j : Fin n → J := fun i =>
-    hV.subordinateOrthonormalBasisIndex hdim i horth
+  obtain ⟨b, j, hj⟩ := exists_subordinate_basis V horth htop
   refine ⟨b, fun i => (j i).2.val, fun i => (j i).1.val, ?_⟩
   intro i
-  have hm : b i ∈ V (j i) :=
-    hV.subordinateOrthonormalBasis_subordinate hdim i horth
+  have hm : b i ∈ V (j i) := hj i
   exact ⟨Module.End.mem_eigenspace_iff.mp hm.1,
     Module.End.mem_eigenspace_iff.mp hm.2⟩
 

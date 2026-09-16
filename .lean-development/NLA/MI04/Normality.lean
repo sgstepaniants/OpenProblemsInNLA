@@ -84,8 +84,10 @@ theorem pair_symmetry_normal {n : ℕ} (hn : 1 ≤ n) (X : Square n)
   have hs : (Matrix.toEuclideanCLM (n := Fin n) (𝕜 := ℂ)).toRingEquiv (star X) =
       star (Matrix.toEuclideanCLM (n := Fin n) (𝕜 := ℂ) X) :=
     map_star (Matrix.toEuclideanCLM (n := Fin n) (𝕜 := ℂ)) X
+  have hx : (Matrix.toEuclideanCLM (n := Fin n) (𝕜 := ℂ)).toRingEquiv X =
+      Matrix.toEuclideanCLM (n := Fin n) (𝕜 := ℂ) X := rfl
   apply (Matrix.toEuclideanCLM (n := Fin n) (𝕜 := ℂ)).injective
-  simpa only [← Matrix.star_eq_conjTranspose, map_mul, hs] using he
+  simpa only [← Matrix.star_eq_conjTranspose, map_mul, hs, hx] using he
 
 #print axioms pair_symmetry_normal
 #assert_trust kernel pair_symmetry_normal

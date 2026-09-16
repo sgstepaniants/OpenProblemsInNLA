@@ -18,8 +18,12 @@ namespace NLA.IE13
 
 lemma columnAge_zero_iff {n : ℕ} (p q k : ℕ) (j : Fin n) :
     columnAge p q k j = 0 ↔ k + p + q ≤ j.val := by
-  unfold columnAge
-  split_ifs <;> omega
+  by_cases hj : j.val < p + q
+  · have hlate : ¬ k + p + q ≤ j.val := by omega
+    simp [columnAge, hj, hlate]
+  · have hband : p + q ≤ j.val := Nat.le_of_not_lt hj
+    rw [columnAge, if_neg hj, Nat.sub_eq_zero_iff_le,
+      Nat.le_sub_iff_add_le hband, Nat.add_assoc]
 
 lemma columnAge_succ_of_pos {n : ℕ} (p q k : ℕ) (j : Fin n)
     (hpos : 0 < columnAge p q k j) :

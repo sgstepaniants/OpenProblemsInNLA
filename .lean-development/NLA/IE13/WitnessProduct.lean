@@ -37,7 +37,7 @@ lemma fullUpper_target (p q : ℕ) (r : Fin (witnessOrder p q)) :
     fullUpperRational p q r (witnessTarget p q) =
       if r.val ≤ p + q then forwardRational p r.val else 0 := by
   simp only [fullUpperRational, witnessTarget, Fin.val_mk, lt_self_iff_false,
-    if_false, if_pos rfl]
+    if_false, ite_true]
 
 lemma full_product_target_split (p q : ℕ) (i : Fin (witnessOrder p q)) :
     (∑ r : Fin (witnessOrder p q),
@@ -120,7 +120,7 @@ lemma witness_factorization_rational (p q : ℕ) (i j : Fin (witnessOrder p q)) 
           exact witnessFactorIndex_injective p q (h.trans hf.symm)
         · intro h
           rw [h, hf]
-      rw [heq]
+      simp only [heq]
 
 lemma witness_factorization (p q : ℕ) (i j : Fin (witnessOrder p q)) :
     witnessMatrix p q i j = (fullLower p q * fullUpper p q) (witnessFactorIndex p q i) j := by
