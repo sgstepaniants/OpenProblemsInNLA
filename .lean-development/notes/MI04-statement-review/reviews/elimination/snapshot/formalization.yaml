@@ -1,0 +1,125 @@
+# yaml-language-server: $schema=../../../docs/lean/schema/v0.4.schema.json
+version: v0.4
+project:
+  name: 'MI-04: universal positive-block norm implies essentially Hermitian'
+  description: Statement-only package for the complete original implication in every positive finite complex
+    dimension, with genuine Euclidean norms and all Hermitian positive semidefinite completions.
+  authors:
+  - George Stepaniants
+  affiliations:
+    George Stepaniants: Department of Computing and Mathematical Sciences, California Institute of Technology,
+      Pasadena, California, USA
+  responsible_maintainers:
+  - George Stepaniants
+  license: Apache-2.0
+repository:
+  role: substantive-development
+sources:
+- title: MI-04 — A universal block-norm characterization of essentially Hermitian matrices
+  id: https://github.com/ajt60gaibb/OpenProblemsInNLA/blob/ce47b5630bf3680d9211131c3a43825b022c139a/matrix-inequalities-and-norms/MI-04/README.md
+  type: web-post
+  location: Full original problem statement
+  relationship: formalizes
+  author_endorsement: not-contacted
+  note: Permanent ID and all original quantifiers, complex field, genuine norms, PSD cases and affine-Hermitian
+    conclusion are preserved.
+- title: 'MI-04: a characterization of essentially Hermitian off-diagonal blocks'
+  authors:
+  - Matthew J. Colbrook
+  id: https://github.com/ajt60gaibb/OpenProblemsInNLA/blob/ce47b5630bf3680d9211131c3a43825b022c139a/references/colbrook-matrix-2026-09-11/original-proofs/MI-04.tex
+  type: manuscript
+  location: Theorem1.1, necessity implication, subsections1–3
+  relationship: formalizes
+  author_endorsement: not-contacted
+  note: 'Original mathematical author: Matthew J. Colbrook, Department of Applied Mathematics and Theoretical
+    Physics, University of Cambridge. The stronger converse/equivalence is not a proposed formal claim.'
+- title: Eigenvalue inequalities for positive block matrices with the inradius of the numerical range
+  authors:
+  - Jean-Christophe Bourin
+  - Eun-Young Lee
+  id: https://arxiv.org/abs/2111.15180
+  type: preprint
+  location: Conjecture3.3 as recorded by the retained canonical statement
+  relationship: background
+  author_endorsement: not-contacted
+  note: No unproved theorem from this paper is an intended assumption.
+related_formalizations:
+- id: https://github.com/sgstepaniants/Forsythe/tree/8d1b0c0545a77b40245e84705aa7d273e6c81e62/lean-proof
+  relationship: other
+  note: Statement/proof separation, numerical obligations, kernel-only LeanCert and exact Comparator reproduction
+    patterns studied; no mathematical theorem imported.
+- id: https://github.com/jaumededios/Schiffer/tree/2938e277969c329caf154e48a3d8823f3635c7f1
+  relationship: other
+  note: Independent Challenge and proof organization studied.
+- id: https://github.com/leanprover-community/mathlib4/tree/0df444a360eaa60ab8c11dca51a86af692955474
+  relationship: builds-on
+  note: Genuine Euclidean matrix operators, PSD/quadratic forms, finite Rayleigh extrema, Hermitian spectral
+    theory, orthogonal joint eigenspaces and orthonormal-basis extension are the planned foundations.
+- id: https://github.com/ajt60gaibb/OpenProblemsInNLA/blob/ce47b5630bf3680d9211131c3a43825b022c139a/eigenvalues-and-inverse-problems/SP-05/lean
+  relationship: other
+  note: Inspected the accepted complex positivity and spectral API usage; no SP-05 theorem imported.
+- id: https://github.com/sgstepaniants/OpenProblemsInNLA/tree/208e30d80f73ef661b1f019c7de93c70254f7e48/matrix-functions-and-stability/MF-24/lean
+  relationship: other
+  note: Reuses the explicit toEuclideanCLM complex operator-norm definition pattern; no MF-24 theorem
+    imported.
+automation:
+  methods:
+  - method: agent
+    framework: OpenAI Codex
+    tool_setup: Multiple problem agents. This agent writes source and read-only audits on macOS; the coordinator
+      runs later non-root Linux elaboration, builds and Comparator. No local Lean/Lake/cache execution
+      is authorized.
+    prompting_notes: Write complete numerical obligations and definitions before proofs. Keep all positive
+      dimensions, singular/repeated cases, all Hermitian A/B PSD completions and actual complex Euclidean
+      norm. Replace analytic perturbation by an exact Rayleigh sandwich and two rational diagonal probes.
+      Require two independent statement reviews, actual elaboration, then LeanCert kernel trust and independent
+      final Comparator/axiom/control referees.
+  notes: AI-assisted statement-only draft by /root/next_inequalities. No proof body, independent approval,
+    Lean execution, official Tau Ceti endorsement, human peer review or source-author endorsement is claimed.
+status:
+  scope: Definitions and 21 independent Challenge obligations only. No proof implementation, frozen boundary,
+    successful elaboration, Comparator acceptance or verified-count increment.
+  main_results: []
+fidelity:
+  divergences: The full original necessity implication is retained; the manuscript converse and four-way
+    equivalence are not claimed. An exact Rayleigh-quotient sandwich replaces analytic eigenvalue-branch
+    perturbation. Only diagonal probes 1,0,1/2 are needed. The equivalent normalized vectors (1,1,1) and
+    (1,I,-1-I) replace cube roots of unity for the collinearity step. None of these changes adds a final
+    hypothesis or changes the requested conclusion.
+review:
+  status: unreviewed statement-only draft; all proof and mechanical gates pending
+  reviewers: []
+  notes: Two independent source-bound statement approvals and actual Linux elaboration must precede the
+    freeze and all proof implementation. Two independent final referees must inspect complete source and
+    authentic Comparator/default-kernel/axiom/control evidence. Source-only checks do not verify a problem.
+alignment:
+  source_correspondence: SourceCorrespondence.md
+  numerical_boundary: NUMERICAL_TARGETS.md
+  proposed_statements: Challenge.lean
+  proposed_declarations:
+  - NLA.MI04.topValue_maximum
+  - NLA.MI04.positive_quadratic_iff
+  - NLA.MI04.positive_norm_eq_top
+  - NLA.MI04.shifted_topValue
+  - NLA.MI04.scalar_order_iff_top
+  - NLA.MI04.unitary_topValue
+  - NLA.MI04.simple_peak_sandwich
+  - NLA.MI04.simple_peak_second_order
+  - NLA.MI04.pencil_isHermitian
+  - NLA.MI04.universal_to_extreme_symmetry
+  - NLA.MI04.extreme_symmetry_scaled_unitary
+  - NLA.MI04.weighted_magnitude_identity
+  - NLA.MI04.offDiagonal_magnitude_symmetry
+  - NLA.MI04.orthonormal_pair_symmetry
+  - NLA.MI04.pair_symmetry_normal
+  - NLA.MI04.normal_unitary_diagonalization
+  - NLA.MI04.pair_symmetry_unitary
+  - NLA.MI04.diagonal_pair_collinearity
+  - NLA.MI04.collinear_values_affine
+  - NLA.MI04.pair_symmetry_essentially_hermitian
+  - NLA.MI04.universal_positive_block_essentially_hermitian
+  source_provenance: SOURCE-PROVENANCE.json
+  intended_implementation_entry: Solution.lean
+acknowledgements: Matthew J. Colbrook for the original mathematical proof; Bourin and Lee for the conjecture;
+  Mathlib, LeanCert, Comparator, Schiffer and Forsythe contributors for relevant foundations and workflow
+  patterns. Original mathematical authorship remains separate from formalization authorship.

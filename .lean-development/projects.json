@@ -1,8 +1,16 @@
 [
   {
+    "id": "MI-04",
+    "modules": [
+      "NLA.MI04.Definitions"
+    ],
+    "challenge": "Challenges/MI04.lean"
+  },
+  {
     "id": "MF-22",
     "modules": [
-      "NLA.MF22.Definitions"
+      "NLA.MF22.Norms",
+      "NLA.MF22.ScalarCertificates"
     ],
     "challenge": "Challenges/MF22.lean"
   }

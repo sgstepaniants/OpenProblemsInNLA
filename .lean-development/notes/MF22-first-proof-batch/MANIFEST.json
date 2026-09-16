@@ -1,0 +1,33 @@
+{
+  "problem_id": "MF-22",
+  "status": "source-reviewed candidate modules; no actual proof elaboration yet",
+  "statement_freeze_sha256": "28363e214e908192b52ae5f680be7b9872374b3a72cb2e0a98c9a39062e04f00",
+  "frozen_boundary_unchanged": true,
+  "files": {
+    "NLA/MF22/Norms.lean": "93833e7a3ab99325442c37269d9e89315bc598c65e7c1cff96f304ab10daaff2",
+    "NLA/MF22/ScalarCertificates.lean": "2dac104eaf5ba7e8f1401e8267e3d0277aa507e11c96ff017391e664084eba89"
+  },
+  "requested_targets": [
+    "NLA.MF22.Norms",
+    "NLA.MF22.ScalarCertificates"
+  ],
+  "local_lean_execution": false,
+  "dependency_apis_read": [
+    "PiLp.norm_apply_le",
+    "PiLp.norm_single",
+    "EuclideanSpace.norm_sq_eq",
+    "Matrix.toEuclideanCLM",
+    "Finset.sum_mul_sq_le_sq_mul_sq",
+    "Cubic.toPoly",
+    "Cubic.discr",
+    "Complex.ofReal_ne_zero"
+  ],
+  "exports_from_frozen_challenge": [
+    "complex_entry_norm_bound",
+    "quartic_factorization",
+    "cayley_identity",
+    "positive_discriminant_factor",
+    "real_cubic_discriminant",
+    "exceptional_parameter"
+  ]
+}

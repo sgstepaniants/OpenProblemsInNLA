@@ -1,0 +1,33 @@
+{
+  "challenge_module": "Challenge",
+  "solution_module": "Solution",
+  "theorem_names": [
+    "NLA.MI04.topValue_maximum",
+    "NLA.MI04.positive_quadratic_iff",
+    "NLA.MI04.positive_norm_eq_top",
+    "NLA.MI04.shifted_topValue",
+    "NLA.MI04.scalar_order_iff_top",
+    "NLA.MI04.unitary_topValue",
+    "NLA.MI04.simple_peak_sandwich",
+    "NLA.MI04.simple_peak_second_order",
+    "NLA.MI04.pencil_isHermitian",
+    "NLA.MI04.universal_to_extreme_symmetry",
+    "NLA.MI04.extreme_symmetry_scaled_unitary",
+    "NLA.MI04.weighted_magnitude_identity",
+    "NLA.MI04.offDiagonal_magnitude_symmetry",
+    "NLA.MI04.orthonormal_pair_symmetry",
+    "NLA.MI04.pair_symmetry_normal",
+    "NLA.MI04.normal_unitary_diagonalization",
+    "NLA.MI04.pair_symmetry_unitary",
+    "NLA.MI04.diagonal_pair_collinearity",
+    "NLA.MI04.collinear_values_affine",
+    "NLA.MI04.pair_symmetry_essentially_hermitian",
+    "NLA.MI04.universal_positive_block_essentially_hermitian"
+  ],
+  "definition_names": [],
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ]
+}

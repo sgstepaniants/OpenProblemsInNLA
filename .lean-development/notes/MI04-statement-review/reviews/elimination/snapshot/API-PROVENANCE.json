@@ -1,0 +1,19 @@
+{
+  "mathlib_commit": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "readonly_local_source": "/tmp/nla-lean-mi22-worktree/matrix-inequalities-and-norms/MI-22/lean/.lake/packages/mathlib",
+  "source_sha256": {
+    "Mathlib/Analysis/CStarAlgebra/Matrix.lean": "79518c9e51c4d0cf4083ab69a9ac7a2817305b48db1fe6f25ae1d678e12ce223",
+    "Mathlib/Analysis/InnerProductSpace/Rayleigh.lean": "cd697c142567c6bd0116f70774062691a7f3c65bc00476a1bbec3c5addf7cfe2",
+    "Mathlib/Analysis/Matrix/Order.lean": "eb786ba4435f1955c504da52de2beae76647d814922266c8aac8f082bbc3e2da",
+    "Mathlib/LinearAlgebra/Matrix/PosDef.lean": "09290b5923e167fcf959df64d00b039c7b99c4b236755728219bf5b5feaac24a",
+    "Mathlib/Analysis/Matrix/Spectrum.lean": "1ad47effa0a5fbc373ebb6cf52a6b85a66b25d3c5a86394f3dd5932ffbfc3afe",
+    "Mathlib/Analysis/InnerProductSpace/Adjoint.lean": "f28b5896638f712605265a69ffe4469f1f42e1b78b10ade0844738aeecd2b2a2",
+    "Mathlib/LinearAlgebra/Complex/Module.lean": "e89fa5a5b6c21325b50c351b7e3f1303201e6bec4006e4650cca1f8913c6ba71",
+    "Mathlib/Analysis/InnerProductSpace/JointEigenspace.lean": "31b7d9333b17eb1a770c89e773c52faf71b801eb89b8ccb94c6b7d8d763a76c2",
+    "Mathlib/Analysis/InnerProductSpace/PiL2.lean": "1f9827b2db67213c725a2dcc3fec52a87772966d1fbd3fc6857a019dbd7a6053"
+  },
+  "planned_bridge": "commuting Hermitian real/imaginary parts -> orthogonal internal joint-eigenspace decomposition -> subordinate orthonormal basis -> complex diagonal unitary matrix",
+  "analytic_eigenvalue_perturbation_assumed": false,
+  "planned_second_order_route": "explicit universal Rayleigh sandwich, then one-sided squeeze",
+  "direct_normal_diagonalization_lemma_located": false
+}

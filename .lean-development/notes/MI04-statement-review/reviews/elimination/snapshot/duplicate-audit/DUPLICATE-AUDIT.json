@@ -1,0 +1,472 @@
+{
+  "checked_at_utc": "2026-09-16T00:13:05.091466+00:00",
+  "upstream_main": "ce47b5630bf3680d9211131c3a43825b022c139a",
+  "public_upstream_heads": [
+    {
+      "name": "ajt60gaibb-patch-1",
+      "sha": "668e8b9be5ae079fd7334ba54f8710a8844d8b55",
+      "git_object_present": true,
+      "MI04_paths": [
+        "matrix-inequalities-and-norms/MI-04/README.md",
+        "matrix-inequalities-and-norms/MI-04/problem.pdf",
+        "matrix-inequalities-and-norms/MI-04/problem.tex",
+        "matrix-inequalities-and-norms/MI-04/solution.md",
+        "matrix-inequalities-and-norms/MI-04/solution.pdf",
+        "matrix-inequalities-and-norms/MI-04/solution.tex"
+      ],
+      "MI04_Lean_named_paths": []
+    },
+    {
+      "name": "ajt60gaibb-patch-2",
+      "sha": "cd094dbd6d3a86458d47d771404098ec7a8c45b4",
+      "git_object_present": true,
+      "MI04_paths": [
+        "matrix-inequalities-and-norms/MI-04/README.md",
+        "matrix-inequalities-and-norms/MI-04/problem.pdf",
+        "matrix-inequalities-and-norms/MI-04/problem.tex",
+        "matrix-inequalities-and-norms/MI-04/solution.md",
+        "matrix-inequalities-and-norms/MI-04/solution.pdf",
+        "matrix-inequalities-and-norms/MI-04/solution.tex"
+      ],
+      "MI04_Lean_named_paths": []
+    },
+    {
+      "name": "codex/audit-lean-154-156",
+      "sha": "bff9b761d1e96661ac4b567e1b167ea56b4704dc",
+      "git_object_present": true,
+      "MI04_paths": [
+        "matrix-inequalities-and-norms/MI-04/README.md",
+        "matrix-inequalities-and-norms/MI-04/problem.pdf",
+        "matrix-inequalities-and-norms/MI-04/problem.tex",
+        "matrix-inequalities-and-norms/MI-04/solution.md",
+        "matrix-inequalities-and-norms/MI-04/solution.pdf",
+        "matrix-inequalities-and-norms/MI-04/solution.tex"
+      ],
+      "MI04_Lean_named_paths": []
+    },
+    {
+      "name": "codex/audit-lean-157",
+      "sha": "c3ecffa971e74394bc3616b477163fa823c8edb2",
+      "git_object_present": true,
+      "MI04_paths": [
+        "matrix-inequalities-and-norms/MI-04/README.md",
+        "matrix-inequalities-and-norms/MI-04/problem.pdf",
+        "matrix-inequalities-and-norms/MI-04/problem.tex",
+        "matrix-inequalities-and-norms/MI-04/solution.md",
+        "matrix-inequalities-and-norms/MI-04/solution.pdf",
+        "matrix-inequalities-and-norms/MI-04/solution.tex"
+      ],
+      "MI04_Lean_named_paths": []
+    },
+    {
+      "name": "codex/audit-lean-169",
+      "sha": "8f8267e776ca3f15581fcf3ff46026579b89f58f",
+      "git_object_present": true,
+      "MI04_paths": [
+        "matrix-inequalities-and-norms/MI-04/README.md",
+        "matrix-inequalities-and-norms/MI-04/problem.pdf",
+        "matrix-inequalities-and-norms/MI-04/problem.tex",
+        "matrix-inequalities-and-norms/MI-04/solution.md",
+        "matrix-inequalities-and-norms/MI-04/solution.pdf",
+        "matrix-inequalities-and-norms/MI-04/solution.tex"
+      ],
+      "MI04_Lean_named_paths": []
+    },
+    {
+      "name": "codex/audit-pr183",
+      "sha": "7d0bf4c776494e347934427c91a9c39b4c749eb1",
+      "git_object_present": true,
+      "MI04_paths": [
+        "matrix-inequalities-and-norms/MI-04/README.md",
+        "matrix-inequalities-and-norms/MI-04/problem.pdf",
+        "matrix-inequalities-and-norms/MI-04/problem.tex",
+        "matrix-inequalities-and-norms/MI-04/solution.md",
+        "matrix-inequalities-and-norms/MI-04/solution.pdf",
+        "matrix-inequalities-and-norms/MI-04/solution.tex"
+      ],
+      "MI04_Lean_named_paths": []
+    },
+    {
+      "name": "codex/audit-pr251-nr03",
+      "sha": "8200c39feb1777b9a61304e026355d92eada350e",
+      "git_object_present": true,
+      "MI04_paths": [
+        "matrix-inequalities-and-norms/MI-04/README.md",
+        "matrix-inequalities-and-norms/MI-04/problem.pdf",
+        "matrix-inequalities-and-norms/MI-04/problem.tex",
+        "matrix-inequalities-and-norms/MI-04/solution.md",
+        "matrix-inequalities-and-norms/MI-04/solution.pdf",
+        "matrix-inequalities-and-norms/MI-04/solution.tex"
+      ],
+      "MI04_Lean_named_paths": []
+    },
+    {
+      "name": "codex/audit-pr257",
+      "sha": "6aff6f259480f6f917bfd4dee0403d547d48bf9a",
+      "git_object_present": true,
+      "MI04_paths": [
+        "matrix-inequalities-and-norms/MI-04/README.md",
+        "matrix-inequalities-and-norms/MI-04/problem.pdf",
+        "matrix-inequalities-and-norms/MI-04/problem.tex",
+        "matrix-inequalities-and-norms/MI-04/solution.md",
+        "matrix-inequalities-and-norms/MI-04/solution.pdf",
+        "matrix-inequalities-and-norms/MI-04/solution.tex"
+      ],
+      "MI04_Lean_named_paths": []
+    },
+    {
+      "name": "codex/audit-pr261",
+      "sha": "be8d59f84d5014499282e24d63a7ef282effdf60",
+      "git_object_present": true,
+      "MI04_paths": [
+        "matrix-inequalities-and-norms/MI-04/README.md",
+        "matrix-inequalities-and-norms/MI-04/problem.pdf",
+        "matrix-inequalities-and-norms/MI-04/problem.tex",
+        "matrix-inequalities-and-norms/MI-04/solution.md",
+        "matrix-inequalities-and-norms/MI-04/solution.pdf",
+        "matrix-inequalities-and-norms/MI-04/solution.tex"
+      ],
+      "MI04_Lean_named_paths": []
+    },
+    {
+      "name": "codex/audit-pr264",
+      "sha": "382801489b73184fcbf7f69cd8e910d1e099d8af",
+      "git_object_present": true,
+      "MI04_paths": [
+        "matrix-inequalities-and-norms/MI-04/README.md",
+        "matrix-inequalities-and-norms/MI-04/problem.pdf",
+        "matrix-inequalities-and-norms/MI-04/problem.tex",
+        "matrix-inequalities-and-norms/MI-04/solution.md",
+        "matrix-inequalities-and-norms/MI-04/solution.pdf",
+        "matrix-inequalities-and-norms/MI-04/solution.tex"
+      ],
+      "MI04_Lean_named_paths": []
+    },
+    {
+      "name": "codex/audit-prs-172-182",
+      "sha": "50ff4700205c59741743f5a4a30e197c2ee309a9",
+      "git_object_present": true,
+      "MI04_paths": [
+        "matrix-inequalities-and-norms/MI-04/README.md",
+        "matrix-inequalities-and-norms/MI-04/problem.pdf",
+        "matrix-inequalities-and-norms/MI-04/problem.tex",
+        "matrix-inequalities-and-norms/MI-04/solution.md",
+        "matrix-inequalities-and-norms/MI-04/solution.pdf",
+        "matrix-inequalities-and-norms/MI-04/solution.tex"
+      ],
+      "MI04_Lean_named_paths": []
+    },
+    {
+      "name": "codex/audit-prs-186-193",
+      "sha": "92c840b7255ee13055d25222544aa1595f0fd9ea",
+      "git_object_present": true,
+      "MI04_paths": [
+        "matrix-inequalities-and-norms/MI-04/README.md",
+        "matrix-inequalities-and-norms/MI-04/problem.pdf",
+        "matrix-inequalities-and-norms/MI-04/problem.tex",
+        "matrix-inequalities-and-norms/MI-04/solution.md",
+        "matrix-inequalities-and-norms/MI-04/solution.pdf",
+        "matrix-inequalities-and-norms/MI-04/solution.tex"
+      ],
+      "MI04_Lean_named_paths": []
+    },
+    {
+      "name": "codex/audit-prs-195-228",
+      "sha": "24f7d355a63d97ab0609cbac232a9740954f511e",
+      "git_object_present": true,
+      "MI04_paths": [
+        "matrix-inequalities-and-norms/MI-04/README.md",
+        "matrix-inequalities-and-norms/MI-04/problem.pdf",
+        "matrix-inequalities-and-norms/MI-04/problem.tex",
+        "matrix-inequalities-and-norms/MI-04/solution.md",
+        "matrix-inequalities-and-norms/MI-04/solution.pdf",
+        "matrix-inequalities-and-norms/MI-04/solution.tex"
+      ],
+      "MI04_Lean_named_paths": []
+    },
+    {
+      "name": "codex/audit-prs-232-233",
+      "sha": "50c4060a047be4dcaa82a02c94d2119d4acdd3a1",
+      "git_object_present": true,
+      "MI04_paths": [
+        "matrix-inequalities-and-norms/MI-04/README.md",
+        "matrix-inequalities-and-norms/MI-04/problem.pdf",
+        "matrix-inequalities-and-norms/MI-04/problem.tex",
+        "matrix-inequalities-and-norms/MI-04/solution.md",
+        "matrix-inequalities-and-norms/MI-04/solution.pdf",
+        "matrix-inequalities-and-norms/MI-04/solution.tex"
+      ],
+      "MI04_Lean_named_paths": []
+    },
+    {
+      "name": "codex/audit-prs-235-244",
+      "sha": "3a80265014cea3862cedb45830b24feb42e69717",
+      "git_object_present": true,
+      "MI04_paths": [
+        "matrix-inequalities-and-norms/MI-04/README.md",
+        "matrix-inequalities-and-norms/MI-04/problem.pdf",
+        "matrix-inequalities-and-norms/MI-04/problem.tex",
+        "matrix-inequalities-and-norms/MI-04/solution.md",
+        "matrix-inequalities-and-norms/MI-04/solution.pdf",
+        "matrix-inequalities-and-norms/MI-04/solution.tex"
+      ],
+      "MI04_Lean_named_paths": []
+    },
+    {
+      "name": "codex/audit-prs-246-249",
+      "sha": "38bc11e45295612c38edf08ea67ea8195836bc73",
+      "git_object_present": true,
+      "MI04_paths": [
+        "matrix-inequalities-and-norms/MI-04/README.md",
+        "matrix-inequalities-and-norms/MI-04/problem.pdf",
+        "matrix-inequalities-and-norms/MI-04/problem.tex",
+        "matrix-inequalities-and-norms/MI-04/solution.md",
+        "matrix-inequalities-and-norms/MI-04/solution.pdf",
+        "matrix-inequalities-and-norms/MI-04/solution.tex"
+      ],
+      "MI04_Lean_named_paths": []
+    },
+    {
+      "name": "codex/audit-prs-253-256",
+      "sha": "90cce32b18efef7f01dd19551c37cd143bda1fc7",
+      "git_object_present": true,
+      "MI04_paths": [
+        "matrix-inequalities-and-norms/MI-04/README.md",
+        "matrix-inequalities-and-norms/MI-04/problem.pdf",
+        "matrix-inequalities-and-norms/MI-04/problem.tex",
+        "matrix-inequalities-and-norms/MI-04/solution.md",
+        "matrix-inequalities-and-norms/MI-04/solution.pdf",
+        "matrix-inequalities-and-norms/MI-04/solution.tex"
+      ],
+      "MI04_Lean_named_paths": []
+    },
+    {
+      "name": "codex/audit-six-prs-20260912",
+      "sha": "b6bc68303747317ac739025950db857454a8ba25",
+      "git_object_present": true,
+      "MI04_paths": [
+        "matrix-inequalities-and-norms/MI-04/README.md",
+        "matrix-inequalities-and-norms/MI-04/problem.pdf",
+        "matrix-inequalities-and-norms/MI-04/problem.tex",
+        "matrix-inequalities-and-norms/MI-04/solution.md",
+        "matrix-inequalities-and-norms/MI-04/solution.pdf",
+        "matrix-inequalities-and-norms/MI-04/solution.tex"
+      ],
+      "MI04_Lean_named_paths": []
+    },
+    {
+      "name": "codex/clarify-tr08-issue150",
+      "sha": "40513098db36f7c89bd3366329e4379f0bb2aa80",
+      "git_object_present": true,
+      "MI04_paths": [
+        "matrix-inequalities-and-norms/MI-04/README.md",
+        "matrix-inequalities-and-norms/MI-04/problem.pdf",
+        "matrix-inequalities-and-norms/MI-04/problem.tex",
+        "matrix-inequalities-and-norms/MI-04/solution.md",
+        "matrix-inequalities-and-norms/MI-04/solution.pdf",
+        "matrix-inequalities-and-norms/MI-04/solution.tex"
+      ],
+      "MI04_Lean_named_paths": []
+    },
+    {
+      "name": "codex/fix-github-math-rendering",
+      "sha": "5484ec05eb8adf4a0da9968c45d22629727d4ac9",
+      "git_object_present": false,
+      "MI04_paths": [
+        "matrix-inequalities-and-norms/MI-04/README.md",
+        "matrix-inequalities-and-norms/MI-04/problem.pdf",
+        "matrix-inequalities-and-norms/MI-04/problem.tex",
+        "matrix-inequalities-and-norms/MI-04/solution.md",
+        "matrix-inequalities-and-norms/MI-04/solution.pdf",
+        "matrix-inequalities-and-norms/MI-04/solution.tex"
+      ],
+      "contents_api_response": "branch-5484ec05-mi04.json"
+    },
+    {
+      "name": "codex/ie18-prior-resolution-credit",
+      "sha": "d0032648a31f0343f6f45f563e6652560a9f8950",
+      "git_object_present": true,
+      "MI04_paths": [
+        "matrix-inequalities-and-norms/MI-04/README.md",
+        "matrix-inequalities-and-norms/MI-04/problem.pdf",
+        "matrix-inequalities-and-norms/MI-04/problem.tex",
+        "matrix-inequalities-and-norms/MI-04/solution.md",
+        "matrix-inequalities-and-norms/MI-04/solution.pdf",
+        "matrix-inequalities-and-norms/MI-04/solution.tex"
+      ],
+      "MI04_Lean_named_paths": []
+    },
+    {
+      "name": "codex/lean-ie14",
+      "sha": "6e48f25fffdae2cf93e4985dc515abbd15e0481b",
+      "git_object_present": false,
+      "MI04_paths": [
+        "matrix-inequalities-and-norms/MI-04/README.md",
+        "matrix-inequalities-and-norms/MI-04/problem.pdf",
+        "matrix-inequalities-and-norms/MI-04/problem.tex",
+        "matrix-inequalities-and-norms/MI-04/solution.md",
+        "matrix-inequalities-and-norms/MI-04/solution.pdf",
+        "matrix-inequalities-and-norms/MI-04/solution.tex"
+      ],
+      "contents_api_response": "branch-6e48f25f-mi04.json"
+    },
+    {
+      "name": "codex/lean-ie15",
+      "sha": "8789e0705a510518b052ff267d4ebd25abaf5b15",
+      "git_object_present": true,
+      "MI04_paths": [
+        "matrix-inequalities-and-norms/MI-04/README.md",
+        "matrix-inequalities-and-norms/MI-04/problem.pdf",
+        "matrix-inequalities-and-norms/MI-04/problem.tex",
+        "matrix-inequalities-and-norms/MI-04/solution.md",
+        "matrix-inequalities-and-norms/MI-04/solution.pdf",
+        "matrix-inequalities-and-norms/MI-04/solution.tex"
+      ],
+      "MI04_Lean_named_paths": []
+    },
+    {
+      "name": "codex/lean-ie17",
+      "sha": "fb3eee8589923ce165408a8d0265df63d194c1f7",
+      "git_object_present": true,
+      "MI04_paths": [
+        "matrix-inequalities-and-norms/MI-04/README.md",
+        "matrix-inequalities-and-norms/MI-04/problem.pdf",
+        "matrix-inequalities-and-norms/MI-04/problem.tex",
+        "matrix-inequalities-and-norms/MI-04/solution.md",
+        "matrix-inequalities-and-norms/MI-04/solution.pdf",
+        "matrix-inequalities-and-norms/MI-04/solution.tex"
+      ],
+      "MI04_Lean_named_paths": []
+    },
+    {
+      "name": "codex/lean-pf02",
+      "sha": "7ff1a34bd3cffe97fd8100ee2b61e5b8b6a919a1",
+      "git_object_present": true,
+      "MI04_paths": [
+        "matrix-inequalities-and-norms/MI-04/README.md",
+        "matrix-inequalities-and-norms/MI-04/problem.pdf",
+        "matrix-inequalities-and-norms/MI-04/problem.tex",
+        "matrix-inequalities-and-norms/MI-04/solution.md",
+        "matrix-inequalities-and-norms/MI-04/solution.pdf",
+        "matrix-inequalities-and-norms/MI-04/solution.tex"
+      ],
+      "MI04_Lean_named_paths": []
+    },
+    {
+      "name": "codex/lean-sp04",
+      "sha": "d808e552c69532d691c7e18f8a45fef585508d0f",
+      "git_object_present": true,
+      "MI04_paths": [
+        "matrix-inequalities-and-norms/MI-04/README.md",
+        "matrix-inequalities-and-norms/MI-04/problem.pdf",
+        "matrix-inequalities-and-norms/MI-04/problem.tex",
+        "matrix-inequalities-and-norms/MI-04/solution.md",
+        "matrix-inequalities-and-norms/MI-04/solution.pdf",
+        "matrix-inequalities-and-norms/MI-04/solution.tex"
+      ],
+      "MI04_Lean_named_paths": []
+    },
+    {
+      "name": "codex/lean-sp05",
+      "sha": "6ec7be10f030c393922d5731dad976e74778f912",
+      "git_object_present": true,
+      "MI04_paths": [
+        "matrix-inequalities-and-norms/MI-04/README.md",
+        "matrix-inequalities-and-norms/MI-04/problem.pdf",
+        "matrix-inequalities-and-norms/MI-04/problem.tex",
+        "matrix-inequalities-and-norms/MI-04/solution.md",
+        "matrix-inequalities-and-norms/MI-04/solution.pdf",
+        "matrix-inequalities-and-norms/MI-04/solution.tex"
+      ],
+      "MI04_Lean_named_paths": []
+    },
+    {
+      "name": "codex/lean-verified-status",
+      "sha": "096e48563ba550015c38c8e5eb7924b4b80fd772",
+      "git_object_present": true,
+      "MI04_paths": [
+        "matrix-inequalities-and-norms/MI-04/README.md",
+        "matrix-inequalities-and-norms/MI-04/problem.pdf",
+        "matrix-inequalities-and-norms/MI-04/problem.tex",
+        "matrix-inequalities-and-norms/MI-04/solution.md",
+        "matrix-inequalities-and-norms/MI-04/solution.pdf",
+        "matrix-inequalities-and-norms/MI-04/solution.tex"
+      ],
+      "MI04_Lean_named_paths": []
+    },
+    {
+      "name": "codex/literature-conjectures-2026-09-11",
+      "sha": "5724dd047a5fb0eb6fb4f873dbc3f36c56e1bc0a",
+      "git_object_present": true,
+      "MI04_paths": [
+        "matrix-inequalities-and-norms/MI-04/README.md",
+        "matrix-inequalities-and-norms/MI-04/problem.pdf",
+        "matrix-inequalities-and-norms/MI-04/problem.tex",
+        "matrix-inequalities-and-norms/MI-04/solution.md",
+        "matrix-inequalities-and-norms/MI-04/solution.pdf",
+        "matrix-inequalities-and-norms/MI-04/solution.tex"
+      ],
+      "MI04_Lean_named_paths": []
+    },
+    {
+      "name": "codex/resolution-evidence-wording-20260913",
+      "sha": "c75108dc5737eb0fc6d2a670b93bdeb188aa2dc0",
+      "git_object_present": true,
+      "MI04_paths": [
+        "matrix-inequalities-and-norms/MI-04/README.md",
+        "matrix-inequalities-and-norms/MI-04/problem.pdf",
+        "matrix-inequalities-and-norms/MI-04/problem.tex",
+        "matrix-inequalities-and-norms/MI-04/solution.md",
+        "matrix-inequalities-and-norms/MI-04/solution.pdf",
+        "matrix-inequalities-and-norms/MI-04/solution.tex"
+      ],
+      "MI04_Lean_named_paths": []
+    },
+    {
+      "name": "codex/review-wave2",
+      "sha": "3030adbc9dbd3cc4493113aacd158e4ecf65fd37",
+      "git_object_present": true,
+      "MI04_paths": [
+        "matrix-inequalities-and-norms/MI-04/README.md",
+        "matrix-inequalities-and-norms/MI-04/problem.pdf",
+        "matrix-inequalities-and-norms/MI-04/problem.tex",
+        "matrix-inequalities-and-norms/MI-04/solution.md",
+        "matrix-inequalities-and-norms/MI-04/solution.pdf",
+        "matrix-inequalities-and-norms/MI-04/solution.tex"
+      ],
+      "MI04_Lean_named_paths": []
+    },
+    {
+      "name": "main",
+      "sha": "ce47b5630bf3680d9211131c3a43825b022c139a",
+      "git_object_present": true,
+      "MI04_paths": [
+        "matrix-inequalities-and-norms/MI-04/README.md",
+        "matrix-inequalities-and-norms/MI-04/problem.pdf",
+        "matrix-inequalities-and-norms/MI-04/problem.tex",
+        "matrix-inequalities-and-norms/MI-04/solution.md",
+        "matrix-inequalities-and-norms/MI-04/solution.pdf",
+        "matrix-inequalities-and-norms/MI-04/solution.tex"
+      ],
+      "MI04_Lean_named_paths": []
+    }
+  ],
+  "open_prs": [
+    {
+      "number": 274,
+      "title": "Lean-verify MF-24 polynomial norm counterexample",
+      "head_sha": "9acb634ce0d160a76c601c9432d6a14ca7e05e53",
+      "head_ref": "codex/lean-mf24-verification",
+      "head_repo": "sgstepaniants/OpenProblemsInNLA"
+    }
+  ],
+  "existing_MI04_Lean_formalization_found": false,
+  "scope": "All 32 observed public upstream branch heads at canonical MI04 path; all 30 locally present trees also searched for MI04-named Lean source. Open upstream PR titles/heads inspected. Not an exhaustive search of private/unlisted repositories or future changes.",
+  "response_hashes": {
+    "upstream-branches.json": "c6f5c44792a92ec5992b731822322a4a4d9a0885288701202df7fdd5275d1295",
+    "branch-5484ec05-mi04.json": "fc3dc1dac875ae0171a34e4a91df87c5d3045698dbe4d8348e3f1d95f005290f",
+    "branch-6e48f25f-mi04.json": "4a64a4f31860a8ef44e6c8136f400f110d672c93818df346a8f05c3e21e0ecc3",
+    "upstream-open-pulls.json": "8617e8300e4cfd18aaedc1dcb3e581faa3ae4db7c7400e806757cca34329fb6e",
+    "local-branch-scan.json": "142eada34b9eea1245a222d6bd0d93f6c7a54735aa835c231319a18f7fbb52a9"
+  }
+}
