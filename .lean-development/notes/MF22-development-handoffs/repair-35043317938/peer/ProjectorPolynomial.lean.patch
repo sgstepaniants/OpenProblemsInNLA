@@ -1,0 +1,11 @@
+--- before/NLA/MF22/ProjectorPolynomial.lean
++++ after/NLA/MF22/ProjectorPolynomial.lean
+@@ -72,7 +72,7 @@
+       if i = j then 1 else 0 := by
+   by_cases hij : i = j
+   · subst j
+-    simpa only [if_pos rfl] using
++    simpa using
+       (Lagrange.eval_basis_self hnodes.injOn (Finset.mem_univ i))
+   · simpa only [if_neg hij] using
+       (Lagrange.eval_basis_of_ne hij (Finset.mem_univ j))

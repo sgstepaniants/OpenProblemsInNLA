@@ -1,0 +1,24 @@
+--- before/NLA/MF22/GreenKernel.lean
++++ after/NLA/MF22/GreenKernel.lean
+@@ -85,8 +85,10 @@
+ 
+ lemma greenKernel_initial_zero (ρ : ℝ) (n ell : ℕ) (r : Fin 4) (hr : r ≠ 0)
+     (s : Fin 2) : greenKernel ρ n 0 ell r s = 0 := by
+-  simp [greenKernel, Matrix.sub_apply, Matrix.smul_apply, smul_eq_mul,
+-    boundary_four_product, Matrix.one_apply, hr]
++  simp only [greenKernel, Nat.not_lt_zero, if_false, pow_zero, Matrix.sub_apply,
++    Matrix.zero_apply, Matrix.smul_apply, smul_eq_mul]
++  rw [boundary_four_product]
++  simp [Matrix.one_apply, hr]
+ 
+ lemma greenKernel_terminal_zero (ρ : ℝ) (n ell : ℕ) (hell : ell < n)
+     (ha : boundaryScalar ρ n ≠ 0) (s : Fin 2) : greenKernel ρ n n ell 0 s = 0 := by
+@@ -95,7 +97,7 @@
+   change (transferMatrix ρ ^ (n - 1 - ell) * forcingMatrix ρ) 0 s -
+     (boundaryScalar ρ n)⁻¹ *
+       (boundaryScalar ρ n * (transferMatrix ρ ^ (n - 1 - ell) * forcingMatrix ρ) 0 s) = 0
+-  field_simp [ha]
++  field_simp [ha] <;> ring
+ 
+ #assert_trust kernel greenKernel_step
+ #assert_trust kernel greenKernel_terminal_zero

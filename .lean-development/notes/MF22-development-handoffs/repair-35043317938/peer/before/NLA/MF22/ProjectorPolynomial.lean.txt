@@ -72,7 +72,7 @@ lemma lagrange_basis_eval_node {n : ℕ} (nodes : Fin n → ℂ)
       if i = j then 1 else 0 := by
   by_cases hij : i = j
   · subst j
-    simpa using
+    simpa only [if_pos rfl] using
       (Lagrange.eval_basis_self hnodes.injOn (Finset.mem_univ i))
   · simpa only [if_neg hij] using
       (Lagrange.eval_basis_of_ne hij (Finset.mem_univ j))

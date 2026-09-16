@@ -1,0 +1,18 @@
+{
+  "coordinator": "/root",
+  "authorized_at_utc": "2026-09-16T01:11:54.290138+00:00",
+  "freeze_sha256": "c5ca666f10da44ad1c47a81b0fe81898abf3a7a9ea789e90ec9dfbc8c8cf4c6c",
+  "seal_sha256": "45f2293bead1b92bcb8a53ef62e9749999b87ec388dee676433acadc8eb3e44f",
+  "all67_sealed_files_verified": true,
+  "all10_frozen_source_and_snapshot_pairs_verified": true,
+  "all4_independent_approvals_and_checks_byte_exact": true,
+  "actual_MI04_statement_component_accepted": true,
+  "actual_run": 35041873518,
+  "actual_combined_workflow_remains_failure": "MF22 proof draft errors, unrelated to MI04 statement elaboration",
+  "root_runtime_audit_sha256": "40652f37586aaf82033328d2c722b5e379b0fff0de57e9b6302ceec48f4e7342",
+  "proof_implementation_authorized": true,
+  "preserve_frozen_definitions_signatures_and_history": true,
+  "any_mathematical_boundary_change_requires": "two renewed independent approvals, actual elaboration, explicit replacement freeze retaining history",
+  "proof_or_Comparator_acceptance_claimed": false,
+  "local_Lean_execution": false
+}

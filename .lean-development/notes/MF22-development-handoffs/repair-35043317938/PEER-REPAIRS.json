@@ -1,0 +1,30 @@
+{
+  "actual_run_id": 35043317938,
+  "actual_commit": "92a6e385eb0ef4db9a80657aed2ee01c8bf8fb0f",
+  "actual_log_sha256": "c0411077de5ad6e18bf91772e8bf3aacea19568de64761dc6f61dc8829851a9c",
+  "files": [
+    {
+      "path": "NLA/MF22/ProjectorPolynomial.lean",
+      "before_sha256": "983177bd7e7ed117bbcd6aa05568c85b84fa294ea7c24de0ab7aa8f5e27444a4",
+      "after_sha256": "10e88a81a066f915b62d084125e60fe59fef1b54eae1b79a2ea8f0b4414c31d0",
+      "diff_sha256": "84a601ceeeef86c072cee3d442c0e5e6294618523313bd9fdde8c991d3b85fb4",
+      "theorem_and_lemma_headers_unchanged": true
+    },
+    {
+      "path": "NLA/MF22/TransferCertificates.lean",
+      "before_sha256": "aee6312c8222fe583055d85f26ca02e7f568ad438c380596cb269437eb992040",
+      "after_sha256": "247751273e19544c15451f3088c2bb70335a12653a22882567e0925de341abd8",
+      "diff_sha256": "f4d6704df61d8c39c11c46078b438fcc2593cfa2ed348f41999e8ed57f7e1861",
+      "theorem_and_lemma_headers_unchanged": true
+    }
+  ],
+  "scope": "Proof elaboration only; no frozen definitions or signatures changed. Local source inspection; repaired bytes have not yet been executed in Lean.",
+  "changes": [
+    "Let simp discharge the reflexive conditional after substituting the Lagrange node.",
+    "Give the determinant simplifier the definitional identity (2:Fin3).castSucc=(2:Fin4), reducing exactly the three vector entries exposed by the actual log."
+  ],
+  "local_Lean_or_Lake": false,
+  "author_tree_mutated": false,
+  "shared_repository_mutated": false,
+  "new_assumptions_or_axioms": false
+}

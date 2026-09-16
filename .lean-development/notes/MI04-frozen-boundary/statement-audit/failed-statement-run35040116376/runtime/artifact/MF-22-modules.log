@@ -1,0 +1,371 @@
+✔ [3435/3448] Built LeanCert.Core.Interval (3.6s)
+✔ [3436/3473] Built NLA.MF22.Definitions (4.7s)
+✔ [3437/3473] Built LeanCert.Tactic.Verification (4.4s)
+✔ [3452/3474] Built LeanCert.Core.Expr (6.7s)
+✔ [3455/3474] Built LeanCert.Core.DerivativeIntervals (4.5s)
+⚠ [3456/3474] Built NLA.MF22.Norms (6.8s)
+warning: NLA/MF22/Norms.lean:59:10: This simp argument is unused:
+  Matrix.mulVec_single_one
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+info: NLA/MF22/Norms.lean:113:0: 'NLA.MF22.complex_entry_norm_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [3457/3474] Built LeanCert.Core.Support (5.0s)
+✔ [3460/3490] Built LeanCert.Core.IntervalRat.LogReduction (7.6s)
+✔ [3462/3490] Built LeanCert.Core.IntervalRat.Basic (10s)
+✔ [3463/3490] Built LeanCert.Meta.Numeral (5.2s)
+✔ [3464/3490] Built LeanCert.Engine.Eval.Result (4.3s)
+✔ [3465/3490] Built LeanCert.Contrib.Sinc (6.9s)
+✔ [3466/3496] Built LeanCert.Core.TrigReduction (5.8s)
+✔ [3467/3496] Built LeanCert.Core.Taylor (9.7s)
+✔ [3468/3500] Built LeanCert.Tactic.IntervalAuto.Types (4.8s)
+✔ [3469/3500] Built LeanCert.Tactic.IntervalAuto.Extract (3.9s)
+✔ [3470/3500] Built LeanCert.Core.IntervalRat.Transcendental (7.2s)
+✔ [3471/3500] Built LeanCert.Meta.ToExpr (6.9s)
+✔ [3472/3500] Built LeanCert.Core.Dyadic (5.4s)
+✔ [3473/3501] Built LeanCert.Tactic.IntervalAuto.Norm (6.0s)
+✔ [3474/3601] Built LeanCert.Tactic.NumericalRefinement (1.0s)
+✔ [3524/3602] Built LeanCert.Tactic.LeanCert.Bridge.Environment (5.4s)
+✔ [3525/3603] Built LeanCert.Tactic.VecUtil (6.4s)
+✔ [3526/3603] Built LeanCert.Tactic.IntervalAuto.Parse (10s)
+✔ [3527/3604] Built LeanCert.Tactic.LeanCert.Normalize (6.9s)
+✔ [3528/3607] Built LeanCert.Tactic.FinSumExpand (3.9s)
+✔ [3529/3609] Built LeanCert.Tactic.BridgeNative (1.9s)
+✔ [3530/3611] Built LeanCert.Tactic.FinsetParse (4.1s)
+✔ [3531/3618] Built LeanCert.Tactic.IntervalAuto.Diagnostic (3.8s)
+✔ [3532/3618] Built LeanCert.Tactic.LeanCert.Semantic.Domain (1.9s)
+✔ [3533/3622] Built LeanCert.Tactic.VecSimp (2.0s)
+✔ [3534/3623] Built LeanCert.Validity.Eventual (3.6s)
+✔ [3535/3623] Built LeanCert.Tactic.LeanCert.Semantic.Goal (2.5s)
+✔ [3536/3623] Built LeanCert.Core.IntervalRat.Taylor (24s)
+✔ [3537/3625] Built LeanCert.Tactic.Extension.Protocol (3.6s)
+✔ [3538/3626] Built LeanCert.Tactic.LeanCert.Semantic.Parse.Comparison (1.7s)
+✔ [3539/3626] Built LeanCert.Tactic.LeanCert.Diagnostic.Evidence (3.7s)
+✔ [3540/3626] Built LeanCert.Tactic.EventualBound (6.0s)
+✔ [3541/3626] Built LeanCert.Core.IntervalReal (3.0s)
+✔ [3542/3626] Built LeanCert.Core.IntervalRat.TrigReduced (3.5s)
+✔ [3543/3626] Built LeanCert.Tactic.LeanCert.Config (2.3s)
+✔ [3544/3626] Built LeanCert.Tactic.Extension.Registry (3.9s)
+✔ [3545/3630] Built LeanCert.Tactic.LeanCert.Semantic.Parse.Bound (3.9s)
+✔ [3547/3631] Built LeanCert.Core.IntervalRealEndpoints (8.1s)
+✔ [3548/3631] Built LeanCert.Engine.Affine.Basic (10s)
+✔ [3549/3633] Built LeanCert.Engine.Algebra.QPoly (7.5s)
+✔ [3550/3633] Built LeanCert.Core.IntervalDyadic (12s)
+✔ [3551/3639] Built LeanCert.Engine.Algebra.QPolyIntegral (6.2s)
+✔ [3553/3644] Built LeanCert.Engine.Affine.Nonlinear (7.8s)
+✔ [3554/3644] Built LeanCert.Core.DyadicCell (6.6s)
+✔ [3555/3644] Built LeanCert.Engine.Eval.Core (10s)
+✔ [3556/3644] Built LeanCert.Engine.FloatEval (4.2s)
+✔ [3557/3644] Built LeanCert.Tactic.Extension.Command (3.1s)
+✔ [3558/3644] Built LeanCert.Core.DyadicFrontier (2.9s)
+✔ [3559/3644] Built LeanCert.Tactic.Extension (1.0s)
+✔ [3560/3644] Built LeanCert.Engine.Eval.Extended (3.8s)
+✔ [3561/3644] Built LeanCert.Engine.Bounds.Lemmas (1.9s)
+✔ [3562/3644] Built LeanCert.Engine.IntervalEval (1.7s)
+✔ [3563/3644] Built LeanCert.Validity.Bounds.Checked (3.2s)
+✔ [3564/3644] Built LeanCert.Validity.Bounds.Core (3.4s)
+✔ [3565/3644] Built LeanCert.Engine.Affine.Transcendental (4.0s)
+✔ [3566/3644] Built LeanCert.Engine.IntervalEvalDyadic (8.3s)
+✔ [3567/3644] Built LeanCert.Engine.Optimization.Box (5.0s)
+✔ [3568/3644] Built LeanCert.Engine.RootFinding.Basic (7.1s)
+✔ [3569/3644] Built LeanCert.Engine.Integrate (7.7s)
+✔ [3570/3644] Built LeanCert.Engine.AD.Basic (4.7s)
+✔ [3571/3644] Built LeanCert.Engine.FinSumDyadic (6.4s)
+✔ [3572/3644] Built LeanCert.Engine.IntervalEvalAffine (9.2s)
+✔ [3573/3644] Built LeanCert.Validity.DyadicBounds (6.4s)
+✔ [3574/3644] Built LeanCert.Engine.TaylorModel.Core (11s)
+✔ [3575/3644] Built LeanCert.Engine.Search.Heuristic (3.3s)
+✔ [3576/3644] Built LeanCert.Engine.WitnessSum (3.9s)
+✔ [3577/3644] Built LeanCert.Engine.AD.Transcendental (5.4s)
+✔ [3578/3644] Built LeanCert.Engine.RootFinding.Bisection (6.5s)
+✔ [3579/3644] Built LeanCert.Engine.Affine.Environment (4.8s)
+✔ [3580/3644] Built LeanCert.Engine.TaylorModel.Integral (4.5s)
+✔ [3581/3644] Built LeanCert.Engine.TaylorModel.Special (3.3s)
+✔ [3582/3644] Built LeanCert.Engine.AD.Eval (3.9s)
+✔ [3583/3644] Built LeanCert.Engine.TaylorModel.ExpLog (11s)
+✔ [3584/3644] Built LeanCert.Engine.AD.Correctness (8.4s)
+✔ [3585/3644] Built LeanCert.Engine.TaylorModel.Trig (14s)
+✔ [3586/3644] Built LeanCert.Engine.TaylorModel.Hyperbolic (16s)
+✔ [3587/3644] Built LeanCert.Engine.AD.Computable (4.4s)
+✔ [3588/3644] Built LeanCert.Engine.TaylorModel.Functions (2.7s)
+✔ [3589/3644] Built LeanCert.Engine.AD.PartialCorrectness (6.9s)
+✔ [3590/3644] Built LeanCert.Engine.AD.DomainChecked (3.5s)
+✔ [3591/3644] Built LeanCert.Engine.TaylorModel.Expr (4.3s)
+✔ [3592/3644] Built LeanCert.Engine.TaylorModel (2.1s)
+✔ [3593/3644] Built LeanCert.Engine.AD.Dyadic (3.6s)
+✔ [3594/3644] Built LeanCert.Engine.AD (1.7s)
+✔ [3595/3644] Built LeanCert.Validity.Bounds.Smart (4.2s)
+✔ [3596/3644] Built LeanCert.Meta.ProveSupported (4.6s)
+✔ [3597/3644] Built LeanCert.Engine.IntervalEvalRefined (4.8s)
+✔ [3598/3644] Built LeanCert.Engine.Optimize (7.6s)
+✔ [3599/3644] Built LeanCert.Validity.Bounds.Bridge (3.8s)
+✔ [3600/3644] Built LeanCert.Meta.ProveContinuous (5.5s)
+✔ [3601/3644] Built LeanCert.Tactic.IntervalAuto.ProveCommon (8.1s)
+✔ [3602/3644] Built LeanCert.Validity.Bounds.Basic (3.0s)
+✔ [3603/3644] Built LeanCert.Engine.RootFinding.Newton (6.4s)
+✔ [3604/3644] Built LeanCert.Engine.Optimization.Gradient (7.6s)
+✔ [3605/3644] Built LeanCert.Tactic.LeanCert.Bridge.ReifiedFunction (4.0s)
+✔ [3606/3644] Built LeanCert.Tactic.IntervalAuto.Basic (3.4s)
+✔ [3607/3644] Built LeanCert.Validity.Integration (7.5s)
+✔ [3608/3644] Built LeanCert.Engine.RootFinding.MVTBounds (11s)
+✔ [3609/3644] Built LeanCert.Engine.RootFinding.Krawczyk (9.9s)
+✔ [3610/3644] Built LeanCert.Tactic.LeanCert.Semantic.Prepare (7.7s)
+✔ [3611/3644] Built LeanCert.Engine.RootFinding.KrawczykCandidate (7.2s)
+✔ [3612/3644] Built LeanCert.Tactic.LeanCert.Integral (11s)
+✔ [3613/3644] Built LeanCert.Engine.RootFinding.Contraction (10s)
+✔ [3614/3644] Built LeanCert.Validity.Krawczyk (3.6s)
+✔ [3615/3644] Built LeanCert.Engine.RootFinding.Main (3.1s)
+✔ [3616/3644] Built LeanCert.Tactic.LeanCert.Solver.Protocol (6.2s)
+✔ [3617/3644] Built LeanCert.Tactic.Extension.Execute (7.8s)
+✔ [3618/3644] Built LeanCert.Engine.Optimization.Global (30s)
+✔ [3619/3644] Built LeanCert.Tactic.LeanCert.Diagnostic.Render (3.7s)
+✔ [3620/3644] Built LeanCert.Tactic.Enclosure (3.8s)
+✔ [3621/3644] Built LeanCert.Validity.Types (3.6s)
+✔ [3622/3644] Built LeanCert.Engine.Optimization.Guided (3.8s)
+✔ [3623/3644] Built LeanCert.Engine.Search.CounterExample (3.9s)
+✔ [3624/3644] Built LeanCert.Engine.Optimization.BoundVerify (3.8s)
+✔ [3625/3644] Built LeanCert.Validity.Bounds (7.6s)
+✔ [3626/3644] Built LeanCert.Discovery.Find (3.9s)
+✔ [3627/3644] Built LeanCert.Tactic.IntervalAuto.OptBound (4.5s)
+✔ [3628/3644] Built LeanCert.Tactic.IntervalAuto.Multivariate (6.6s)
+✔ [3629/3644] Built LeanCert.Tactic.IntervalAuto.RootBound (3.8s)
+✔ [3630/3644] Built LeanCert.Tactic.IntervalAuto.Bound (15s)
+✔ [3631/3644] Built LeanCert.Tactic.IntervalAuto.Subdiv (5.8s)
+✔ [3632/3644] Built LeanCert.Tactic.IntervalAuto.Adaptive (7.8s)
+✔ [3633/3644] Built LeanCert.Tactic.IntervalAuto.PointIneq (9.0s)
+✔ [3634/3644] Built LeanCert.Tactic.IntervalAuto (2.3s)
+✔ [3635/3644] Built LeanCert.Tactic.Refute (4.1s)
+✔ [3636/3644] Built LeanCert.Tactic.FinSumWitness (5.3s)
+✔ [3637/3644] Built LeanCert.Tactic.FinSumBound (4.2s)
+✔ [3638/3644] Built LeanCert.Tactic.LeanCert.Semantic.Parse (3.1s)
+✔ [3639/3644] Built LeanCert.Tactic.Discovery (13s)
+✔ [3640/3644] Built LeanCert.Tactic.Krawczyk (3.3s)
+✔ [3641/3644] Built LeanCert.Tactic.LeanCert.Router (7.8s)
+✔ [3642/3644] Built LeanCert.Tactic.LeanCert (2.3s)
+✔ [3643/3644] Built LeanCert.Tactic (2.4s)
+✖ [3644/3644] Building NLA.MF22.ScalarCertificates (4.4s)
+trace: .> LEAN_PATH=/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/Cli/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/batteries/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/Qq/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/aesop/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/proofwidgets/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/importGraph/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/plausible/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/mathlib/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/leancert/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/build/lib/lean /home/runner/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean /home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/NLA/MF22/ScalarCertificates.lean -o /home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/build/lib/lean/NLA/MF22/ScalarCertificates.olean -i /home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/build/lib/lean/NLA/MF22/ScalarCertificates.ilean -c /home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/build/ir/NLA/MF22/ScalarCertificates.c --setup /home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/build/ir/NLA/MF22/ScalarCertificates.setup.json --json
+error: NLA/MF22/ScalarCertificates.lean:29:2: linarith failed to find a contradiction
+ρ : ℝ
+hρ : 0 < ρ
+he : leadingScalar ρ = 0
+hi : -(↑ρ ^ 2).im - 10 * ρ = 0
+⊢ False
+failed
+warning: NLA/MF22/ScalarCertificates.lean:33:23: This simp argument is unused:
+  Complex.star_def
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [leadingScalar]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: NLA/MF22/ScalarCertificates.lean:33:45: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: NLA/MF22/ScalarCertificates.lean:33:45: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: NLA/MF22/ScalarCertificates.lean:37:22: This simp argument is unused:
+  Complex.star_def
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [middleScalar]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: NLA/MF22/ScalarCertificates.lean:37:40: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: NLA/MF22/ScalarCertificates.lean:43:51: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: NLA/MF22/ScalarCertificates.lean:43:51: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+info: NLA/MF22/ScalarCertificates.lean:53:4: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+error: NLA/MF22/ScalarCertificates.lean:50:2: unsolved goals
+case left
+ρ : ℝ
+⊢ C ↑ρ * C Complex.I * X ^ 3 * 80 - C ↑ρ * C Complex.I * X ^ 4 * 10 - C ↑ρ ^ 2 * X ^ 2 * 46 + C ↑ρ ^ 2 * X ^ 3 * 24 -
+                C ↑ρ ^ 2 * X ^ 4 +
+              X * C (star (-240 + ↑ρ * Complex.I * 80 + ↑ρ ^ 2 * 24)) +
+            X ^ 2 * 420 -
+          X ^ 3 * 240 +
+        X ^ 4 * 30 +
+      C (star (30 - ↑ρ * Complex.I * 10 - ↑ρ ^ 2)) =
+    -(C ↑ρ * C Complex.I * X ^ 2 * 70) + C ↑ρ * C Complex.I * X ^ 3 * 80 - C ↑ρ * C Complex.I * X ^ 4 * 10 -
+                        C ↑ρ ^ 2 * X ^ 2 * 23 +
+                      C ↑ρ ^ 2 * X ^ 3 * 24 -
+                    C ↑ρ ^ 2 * X ^ 4 +
+                  X * C (star (-240 + ↑ρ * Complex.I * 80 + ↑ρ ^ 2 * 24)) +
+                X ^ 2 * 210 -
+              X ^ 2 * C (star (-240 + ↑ρ * Complex.I * 80 + ↑ρ ^ 2 * 24)) -
+            X ^ 2 * C (star (30 - ↑ρ * Complex.I * 10 - ↑ρ ^ 2)) -
+          X ^ 3 * 240 +
+        X ^ 4 * 30 +
+      C (star (30 - ↑ρ * Complex.I * 10 - ↑ρ ^ 2))
+info: NLA/MF22/ScalarCertificates.lean:59:6: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+info: NLA/MF22/ScalarCertificates.lean:59:6: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+error: NLA/MF22/ScalarCertificates.lean:54:2: unsolved goals
+case right.left
+ρ : ℝ
+⊢ -180 + ↑ρ * Complex.I * 60 + ↑ρ ^ 2 * 22 - star (30 - ↑ρ * Complex.I * 10 - ↑ρ ^ 2) * 2 -
+      star (-240 + ↑ρ * Complex.I * 80 + ↑ρ ^ 2 * 24) =
+    ↑ρ * Complex.I * 120
+
+case right.right
+ρ : ℝ
+⊢ -240 + ↑ρ * Complex.I * 80 + ↑ρ ^ 2 * 24 + star (-240 + ↑ρ * Complex.I * 80 + ↑ρ ^ 2 * 24) = -480 + ↑ρ ^ 2 * 48
+warning: NLA/MF22/ScalarCertificates.lean:50:39: This simp argument is unused:
+  conjugate_leadingScalar
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [quartic, quotientCubic, conjugate_middleScalar, leadingScalar, middleScalar, centralScalar,
+    map_add, map_sub, map_mul, map_pow, map_ofNat]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: NLA/MF22/ScalarCertificates.lean:51:6: This simp argument is unused:
+  conjugate_middleScalar
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [quartic, quotientCubic, conjugate_leadingScalar, leadingScalar, middleScalar, centralScalar,
+    map_add, map_sub, map_mul, map_pow, map_ofNat]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: NLA/MF22/ScalarCertificates.lean:57:16: This simp argument is unused:
+  conjugate_leadingScalar
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [quotientCubic, eval_sub, eval_add, eval_mul, eval_pow, eval_C, eval_X, conjugate_middleScalar,
+    leadingScalar, middleScalar]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: NLA/MF22/ScalarCertificates.lean:57:41: This simp argument is unused:
+  conjugate_middleScalar
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [quotientCubic, eval_sub, eval_add, eval_mul, eval_pow, eval_C, eval_X, conjugate_leadingScalar,
+    leadingScalar, middleScalar]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+info: NLA/MF22/ScalarCertificates.lean:69:86: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+error: NLA/MF22/ScalarCertificates.lean:63:49: unsolved goals
+ρ : ℝ
+x : ℂ
+hx : 1 - Complex.I * x ≠ 0
+⊢ -180 - Complex.I * x * 120 + Complex.I * x * ↑ρ ^ 2 * 20 +
+                                    Complex.I * x * star (30 - Complex.I * ↑ρ * 10 - ↑ρ ^ 2) * 4 +
+                                  Complex.I * x * star (-240 + Complex.I * ↑ρ * 80 + ↑ρ ^ 2 * 24) +
+                                Complex.I * x ^ 2 * ↑ρ * 100 -
+                              Complex.I * x ^ 3 * 240 +
+                            Complex.I * x ^ 3 * ↑ρ ^ 2 * 24 +
+                          Complex.I * x ^ 3 * star (-240 + Complex.I * ↑ρ * 80 + ↑ρ ^ 2 * 24) +
+                        Complex.I * ↑ρ * 60 -
+                      x * ↑ρ * 40 -
+                    x ^ 2 * 300 +
+                  x ^ 2 * ↑ρ ^ 2 * 26 +
+                x ^ 2 * star (30 - Complex.I * ↑ρ * 10 - ↑ρ ^ 2) * 2 -
+              x ^ 2 * star (-240 + Complex.I * ↑ρ * 80 + ↑ρ ^ 2 * 24) -
+            x ^ 3 * ↑ρ * 80 +
+          ↑ρ ^ 2 * 22 -
+        star (30 - Complex.I * ↑ρ * 10 - ↑ρ ^ 2) * 2 -
+      star (-240 + Complex.I * ↑ρ * 80 + ↑ρ ^ 2 * 24) =
+    -(Complex.I * x * 240) + Complex.I * x * ↑ρ ^ 2 * 40 + Complex.I * x ^ 2 * ↑ρ * 200 - Complex.I * x ^ 3 * 480 +
+        Complex.I * x ^ 3 * ↑ρ ^ 2 * 48 +
+      Complex.I * ↑ρ * 120
+warning: NLA/MF22/ScalarCertificates.lean:66:12: This simp argument is unused:
+  conjugate_leadingScalar
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [quotientCubic, eval_sub, eval_add, eval_mul, eval_pow, eval_C, eval_X, conjugate_middleScalar,
+    leadingScalar, middleScalar, cayley]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: NLA/MF22/ScalarCertificates.lean:66:37: This simp argument is unused:
+  conjugate_middleScalar
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [quotientCubic, eval_sub, eval_add, eval_mul, eval_pow, eval_C, eval_X, conjugate_leadingScalar,
+    leadingScalar, middleScalar, cayley]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: NLA/MF22/ScalarCertificates.lean:95:62: This simp argument is unused:
+  Complex.I_pow_four
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Complex.I_sq, Complex.I_pow_three]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: NLA/MF22/ScalarCertificates.lean:91:57: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: NLA/MF22/ScalarCertificates.lean:95:12: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: NLA/MF22/ScalarCertificates.lean:95:82: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+error: NLA/MF22/ScalarCertificates.lean:116:2: unsolved goals
+case refine_1
+ρ : ℝ
+hρ : 0 < ρ
+hρ2 : ρ ^ 2 = 10
+hc : ↑ρ ^ 2 = 10
+he : eval (-1) (derivative (quotientCubic ρ)) = -100 * Complex.I * ↑ρ
+⊢ C 5 * (C 10 - C 6) = C 20
+warning: NLA/MF22/ScalarCertificates.lean:113:25: This simp argument is unused:
+  conjugate_leadingScalar
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [quotientCubic, conjugate_middleScalar, leadingScalar, middleScalar, hc]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: NLA/MF22/ScalarCertificates.lean:113:50: This simp argument is unused:
+  conjugate_middleScalar
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [quotientCubic, conjugate_leadingScalar, leadingScalar, middleScalar, hc]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: NLA/MF22/ScalarCertificates.lean:124:21: #assert_trust: 'NLA.MF22.quartic_factorization' depends on sorry or unrecognized axioms
+  foundational: propext, Classical.choice, Quot.sound
+  sorryAx: sorryAx
+info: NLA/MF22/ScalarCertificates.lean:125:0: 'NLA.MF22.quartic_factorization' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+error: NLA/MF22/ScalarCertificates.lean:126:21: #assert_trust: 'NLA.MF22.cayley_identity' depends on sorry or unrecognized axioms
+  foundational: propext, Classical.choice, Quot.sound
+  sorryAx: sorryAx
+info: NLA/MF22/ScalarCertificates.lean:127:0: 'NLA.MF22.cayley_identity' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: NLA/MF22/ScalarCertificates.lean:129:0: 'NLA.MF22.positive_discriminant_factor' depends on axioms: [propext, Classical.choice, Quot.sound]
+error: NLA/MF22/ScalarCertificates.lean:130:21: #assert_trust: 'NLA.MF22.real_cubic_discriminant' depends on sorry or unrecognized axioms
+  foundational: propext, Classical.choice, Quot.sound
+  sorryAx: sorryAx
+info: NLA/MF22/ScalarCertificates.lean:131:0: 'NLA.MF22.real_cubic_discriminant' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+error: NLA/MF22/ScalarCertificates.lean:132:21: #assert_trust: 'NLA.MF22.exceptional_parameter' depends on sorry or unrecognized axioms
+  foundational: propext, Classical.choice, Quot.sound
+  sorryAx: sorryAx
+info: NLA/MF22/ScalarCertificates.lean:133:0: 'NLA.MF22.exceptional_parameter' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+error: Lean exited with code 1
+Some required targets logged failures:
+- NLA.MF22.ScalarCertificates
+error: build failed

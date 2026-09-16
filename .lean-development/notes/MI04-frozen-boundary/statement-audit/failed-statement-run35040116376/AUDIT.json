@@ -1,0 +1,141 @@
+{
+  "reviewer": "/root/next_inequalities",
+  "role_disclosure": "Authored the MI04 statement package; this is a runtime/source-identity audit, not an independent mathematical referee approval.",
+  "run": 35040116376,
+  "commit": "32f2bd6520df49e45a782cd8813b377e8234d5cf",
+  "conclusion": "failure",
+  "job": 104617877093,
+  "artifact": 10424728704,
+  "archive_sha256": "da7ae17b630893d046643cfaed8c278a3dd941770218977cccf4cd43fe33f3ee",
+  "bound_tracked_inputs": 216,
+  "exact_source_set": true,
+  "all_seven_command_prepost_source_hashes_unchanged": true,
+  "all_seven_raw_logs_contiguously_present_in_actual_job_log": true,
+  "commands": [
+    {
+      "argv": [
+        "lean",
+        "--version"
+      ],
+      "exit_code": 0,
+      "log": "lean-version.log",
+      "sha256": "63f3e16bf0258e2cc0ab3010eb1830723df9bb85097b7b72b0137b9be25a78e9"
+    },
+    {
+      "argv": [
+        "lake",
+        "env",
+        "true"
+      ],
+      "exit_code": 0,
+      "log": "dependencies.log",
+      "sha256": "025fc8aa8b9c0edd94f54499f519dd6f3801068c4230f3173e6895708e75b9fb"
+    },
+    {
+      "argv": [
+        "lake",
+        "exe",
+        "cache",
+        "get"
+      ],
+      "exit_code": 0,
+      "log": "mathlib-cache.log",
+      "sha256": "770af9cecf2be83b5855dbc7d7300649479db580402ed271cd15cab58428b25a"
+    },
+    {
+      "argv": [
+        "lake",
+        "build",
+        "NLA.MI04.Definitions"
+      ],
+      "exit_code": 1,
+      "log": "MI-04-modules.log",
+      "sha256": "54a6b1770d8c7774f3bac619ae1886c9d17810a4f04d32e6b5852510e8ff8c60"
+    },
+    {
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "Challenges/MI04.lean"
+      ],
+      "exit_code": 1,
+      "log": "MI-04-challenge.log",
+      "sha256": "b9ad41bbf0b1a55b29120f3a3af3e7a19c8844d1e5331850b90d3e25f99ccddd"
+    },
+    {
+      "argv": [
+        "lake",
+        "build",
+        "NLA.MF22.Norms",
+        "NLA.MF22.ScalarCertificates"
+      ],
+      "exit_code": 1,
+      "log": "MF-22-modules.log",
+      "sha256": "a0ba6f28348d822313dc322a5476b7eb86f249e484b84a9a2c7f2ae67ae87c4b"
+    },
+    {
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "Challenges/MF22.lean"
+      ],
+      "exit_code": 0,
+      "log": "MF-22-challenge.log",
+      "sha256": "4b528f1df6cae53a736865fce53d2f5127b9a21c346e108b5c564da562dde1ad"
+    }
+  ],
+  "dependency_commits": {
+    "leancert": "621a43d7cf21f87872392a01e874f2f1dbddc926",
+    "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+    "plausible": "b7eb3304aeae834b12dda98993a37f6a41f6f0bb",
+    "LeanSearchClient": "5f4d51b81cbd3f6b32b156bfad9056621a040404",
+    "importGraph": "16f02aa7642864af59f1ff0e384a015994db9118",
+    "proofwidgets": "4be2e3d5087eeb272cf5a8853b8f9dd025ef5957",
+    "aesop": "3448c0bcc5ce01b2d1546e483ec3620e32df3d0e",
+    "Qq": "92c15be17b7caf78c2ad767ec40f89052d908d81",
+    "batteries": "4488d40d070b9700d4d5a6aa342f0d40c31b2a2d",
+    "Cli": "6130a47896ce867c6a4a55373441e59e565bad0f"
+  },
+  "held_MI04_package_files_unchanged": 27,
+  "MI04_source_bindings": {
+    "NLA/MI04/Definitions.lean": "cfd0c1e0174699e8e9127a6fb8b7ce9de3f4c7d9770292746d15c0a5bc047748",
+    "Challenges/MI04.lean": "ca80d090bfe9f3013d08aa86297761e1e524810881bce92776896545d6eeabf9",
+    "notes/MI04-statement-review/NUMERICAL_TARGETS.md": "5cb5e20ffcf035b2ea303cf9edae2e85619b0f562bf302cf6df0c7a46079d1d7"
+  },
+  "MI04_intended_obligations": [
+    "topValue_maximum",
+    "positive_quadratic_iff",
+    "positive_norm_eq_top",
+    "shifted_topValue",
+    "scalar_order_iff_top",
+    "unitary_topValue",
+    "simple_peak_sandwich",
+    "simple_peak_second_order",
+    "pencil_isHermitian",
+    "universal_to_extreme_symmetry",
+    "extreme_symmetry_scaled_unitary",
+    "weighted_magnitude_identity",
+    "offDiagonal_magnitude_symmetry",
+    "orthonormal_pair_symmetry",
+    "pair_symmetry_normal",
+    "normal_unitary_diagonalization",
+    "pair_symmetry_unitary",
+    "diagonal_pair_collinearity",
+    "collinear_values_affine",
+    "pair_symmetry_essentially_hermitian",
+    "universal_positive_block_essentially_hermitian"
+  ],
+  "MI04_definition_elaboration_passed": false,
+  "MI04_challenge_elaboration_passed": false,
+  "MI04_reached_declaration_placeholders": 0,
+  "MI04_failure": "Definitions lines32/85 unannotated Matrix.toEuclideanCLM application; Challenge dependency missing.",
+  "MF22_norm_module_built": true,
+  "MF22_scalar_module_passed": false,
+  "MF22_challenge_types_passed": 22,
+  "mathematical_verification": false,
+  "comparator_run": false,
+  "freeze_authorized_by_this_audit": false,
+  "local_lean_or_lake_executed": false
+}

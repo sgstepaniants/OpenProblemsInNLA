@@ -1,0 +1,20 @@
+{
+  "problem_id": "MI-04",
+  "status": "source only; actual Linux elaboration pending",
+  "freeze_sha256": "c5ca666f10da44ad1c47a81b0fe81898abf3a7a9ea789e90ec9dfbc8c8cf4c6c",
+  "files_sha256": {
+    "NLA/MI04/Unitary.lean": "05ccea07c757797829759c8a637ef14d5d216826d28b79a615e8b1df32b738e0",
+    "NLA/MI04/ScalarGeometry.lean": "583817923f7be81b7792a89b4e5ce48bd4817b07ef52655068fb17e3f48a4682"
+  },
+  "compile_targets": [
+    "NLA.MI04.Unitary",
+    "NLA.MI04.ScalarGeometry"
+  ],
+  "new_frozen_exports": [
+    "unitary_topValue",
+    "pair_symmetry_unitary",
+    "collinear_values_affine"
+  ],
+  "substantive_helper": "The exact weighted complex square bound is kernel-trust asserted and will be consumed by the all-vector perturbation upper bound. No artificial interval certificate or numerical eigendecomposition.",
+  "local_lean_execution": false
+}

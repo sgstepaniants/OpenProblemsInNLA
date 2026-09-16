@@ -1,0 +1,22 @@
+{
+  "problem_id": "MI-04",
+  "status": "source only; actual Linux elaboration pending",
+  "freeze_sha256": "c5ca666f10da44ad1c47a81b0fe81898abf3a7a9ea789e90ec9dfbc8c8cf4c6c",
+  "files_sha256": {
+    "NLA/MI04/Coordinates.lean": "9c81bfca4b76495a35b8b740d2abfae231952c2b4da82702a0921e8be1e04cc4",
+    "NLA/MI04/Correction.lean": "b719f84cdfde494644f4eed77eff83bc946d4630da9046e3ce86525e0714431e",
+    "NLA/MI04/Punctured.lean": "8c7ff3d4386c0ff3a466f316b402637ce0ea7e6df02f80e96ade989ae22bc3ad",
+    "NLA/MI04/UpperBound.lean": "03376a5de032704cae5fa9fe17ab4633102655373699b5d8a23c30694362e190"
+  },
+  "compile_targets": [
+    "NLA.MI04.Coordinates",
+    "NLA.MI04.Correction",
+    "NLA.MI04.Punctured",
+    "NLA.MI04.UpperBound"
+  ],
+  "new_frozen_exports": [
+    "simple_peak_sandwich"
+  ],
+  "scope": "Exact lower trial-vector calculation plus upper bound for every unit vector; all dimensions, no simple-spectrum assumption on other diagonal entries, no eigenvalue computation, no interval subdivision. Consumes the weighted_square_bound kernel-trust lemma.",
+  "local_lean_execution": false
+}

@@ -2,16 +2,22 @@
   {
     "id": "MF-22",
     "modules": [
-      "NLA.MF22.ScalarTail",
-      "NLA.MF22.Coprime",
-      "NLA.MF22.SourceRecurrence",
-      "NLA.MF22.Roots",
-      "NLA.MF22.TransferCertificates",
-      "NLA.MF22.ProjectorAlgebra",
-      "NLA.MF22.ProjectorRank",
-      "NLA.MF22.GreenInverse",
-      "NLA.MF22.SpectralTailBounds"
+      "NLA.MF22.Complete"
     ],
     "challenge": "Challenges/MF22.lean"
+  },
+  {
+    "id": "MI-04",
+    "modules": [
+      "NLA.MI04.Quadratic",
+      "NLA.MI04.Rayleigh",
+      "NLA.MI04.Unitary",
+      "NLA.MI04.ScalarGeometry",
+      "NLA.MI04.Coordinates",
+      "NLA.MI04.Correction",
+      "NLA.MI04.Punctured",
+      "NLA.MI04.UpperBound"
+    ],
+    "challenge": "Challenges/MI04.lean"
   }
 ]

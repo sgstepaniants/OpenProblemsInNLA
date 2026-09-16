@@ -1,0 +1,246 @@
+{
+  "problem_id": "MF-22",
+  "status": "full proof source implemented; actual whole-project verification pending",
+  "source_root": "/tmp/nla-lean-next-20260915/matrix-functions/MF-22",
+  "frozen_statement_count": 22,
+  "definitions_proof_entrypoint_file_count": 29,
+  "export_locations": [
+    {
+      "name": "complex_entry_norm_bound",
+      "path": "NLA/MF22/Norms.lean",
+      "line": 76,
+      "file_sha256": "f37ffc6f38461a491e934043b6093a1b0a9968d2bf3c26c8d3be45bef4821f04"
+    },
+    {
+      "name": "source_entry_bound",
+      "path": "NLA/MF22/SourceBounds.lean",
+      "line": 28,
+      "file_sha256": "8f9f476c6108ea080167423e61e4d9f385d4d2b3a9ecce672ca183dfff2dfd8f"
+    },
+    {
+      "name": "leading_block_invertible",
+      "path": "NLA/MF22/LeadingBlock.lean",
+      "line": 38,
+      "file_sha256": "14b501678ec522423f05e560d138fbb6a480d997ae21bdb25a8c5486e98390c3"
+    },
+    {
+      "name": "source_boundaries",
+      "path": "NLA/MF22/Coordinates.lean",
+      "line": 57,
+      "file_sha256": "5434845e2d23134b8f0bb9bdd85b4f840e73aca8a4236f0043021a78414eca34"
+    },
+    {
+      "name": "source_recurrence",
+      "path": "NLA/MF22/SourceRecurrence.lean",
+      "line": 98,
+      "file_sha256": "a9ea22f41be5421a57a36efd3708039bc89c8c8a7f1c1cde6c91dfa894fa9870"
+    },
+    {
+      "name": "transfer_polynomial_certificates",
+      "path": "NLA/MF22/TransferCertificates.lean",
+      "line": 161,
+      "file_sha256": "247751273e19544c15451f3088c2bb70335a12653a22882567e0925de341abd8"
+    },
+    {
+      "name": "numerator_denominator_coprime",
+      "path": "NLA/MF22/Coprime.lean",
+      "line": 119,
+      "file_sha256": "c9f3e38ab6e033fd64d2dd26755981ad962c89ccabd56535da66c3183693e383"
+    },
+    {
+      "name": "quartic_factorization",
+      "path": "NLA/MF22/ScalarCertificates.lean",
+      "line": 46,
+      "file_sha256": "b30a176287042eb9fb3fdfac83fa5409f3015b4590dc9f21f79a97d083a6c70d"
+    },
+    {
+      "name": "cayley_identity",
+      "path": "NLA/MF22/ScalarCertificates.lean",
+      "line": 63,
+      "file_sha256": "b30a176287042eb9fb3fdfac83fa5409f3015b4590dc9f21f79a97d083a6c70d"
+    },
+    {
+      "name": "positive_discriminant_factor",
+      "path": "NLA/MF22/ScalarCertificates.lean",
+      "line": 73,
+      "file_sha256": "b30a176287042eb9fb3fdfac83fa5409f3015b4590dc9f21f79a97d083a6c70d"
+    },
+    {
+      "name": "real_cubic_discriminant",
+      "path": "NLA/MF22/ScalarCertificates.lean",
+      "line": 80,
+      "file_sha256": "b30a176287042eb9fb3fdfac83fa5409f3015b4590dc9f21f79a97d083a6c70d"
+    },
+    {
+      "name": "exceptional_parameter",
+      "path": "NLA/MF22/ScalarCertificates.lean",
+      "line": 106,
+      "file_sha256": "b30a176287042eb9fb3fdfac83fa5409f3015b4590dc9f21f79a97d083a6c70d"
+    },
+    {
+      "name": "four_roots",
+      "path": "NLA/MF22/Roots.lean",
+      "line": 22,
+      "file_sha256": "5ce001f3209a583dc6b1ce263a2156482d0977d6d28ac748ee0df1deabe9634c"
+    },
+    {
+      "name": "spectral_projector_algebra",
+      "path": "NLA/MF22/SpectralAlgebra.lean",
+      "line": 21,
+      "file_sha256": "d8c93f67972893a646844f9adce801f2caa6531082681cbe0239efff1adc2d8c"
+    },
+    {
+      "name": "dominant_projector",
+      "path": "NLA/MF22/Dominant.lean",
+      "line": 106,
+      "file_sha256": "03517e7ecb894a0d1cea8b32331b2b90822cdd4f01b1f703809a1b542e3da804"
+    },
+    {
+      "name": "spectral_tail_bounds",
+      "path": "NLA/MF22/SpectralTailBounds.lean",
+      "line": 98,
+      "file_sha256": "a59421e36ac67c09f1f0f173dbda8f9a81ddc3321dccb1fd5adfe96ec29b8269"
+    },
+    {
+      "name": "green_source_state",
+      "path": "NLA/MF22/GreenInverse.lean",
+      "line": 65,
+      "file_sha256": "7c79e4b31774ab3cb0c277814bab0ba0df524c587bfa5b7d9535bce05bb93129"
+    },
+    {
+      "name": "green_inverse",
+      "path": "NLA/MF22/GreenInverse.lean",
+      "line": 105,
+      "file_sha256": "7c79e4b31774ab3cb0c277814bab0ba0df524c587bfa5b7d9535bce05bb93129"
+    },
+    {
+      "name": "uniform_green_entries",
+      "path": "NLA/MF22/GreenEntryBounds.lean",
+      "line": 93,
+      "file_sha256": "a15c4ca6d1d53ab05a7fba6587c91d4988805214b43cab9975ade2ffb77d750c"
+    },
+    {
+      "name": "eventual_inverse_entries",
+      "path": "NLA/MF22/Conditioning.lean",
+      "line": 25,
+      "file_sha256": "05675818684fddb72e775839a57b768d78a9c2207c478934aa989b9604aebdc2"
+    },
+    {
+      "name": "eventual_quadratic_conditioning",
+      "path": "NLA/MF22/Conditioning.lean",
+      "line": 49,
+      "file_sha256": "05675818684fddb72e775839a57b768d78a9c2207c478934aa989b9604aebdc2"
+    },
+    {
+      "name": "polynomial_conditioning",
+      "path": "NLA/MF22/Conditioning.lean",
+      "line": 69,
+      "file_sha256": "05675818684fddb72e775839a57b768d78a9c2207c478934aa989b9604aebdc2"
+    }
+  ],
+  "local_import_graph": {
+    "NLA/MF22/ScalarCertificates.lean": [
+      "NLA.MF22.Definitions"
+    ],
+    "NLA/MF22/LeadingBlock.lean": [
+      "NLA.MF22.ScalarCertificates"
+    ],
+    "NLA/MF22/GreenEntryBounds.lean": [
+      "NLA.MF22.GreenCoefficients",
+      "NLA.MF22.GreenEntryAlgebra",
+      "NLA.MF22.SpectralTailBounds",
+      "NLA.MF22.Roots"
+    ],
+    "NLA/MF22/Definitions.lean": [],
+    "NLA/MF22/Conditioning.lean": [
+      "NLA.MF22.GreenEntryBounds",
+      "NLA.MF22.GreenInverse",
+      "NLA.MF22.SourceBounds"
+    ],
+    "NLA/MF22/RootCayley.lean": [
+      "NLA.MF22.ScalarCertificates"
+    ],
+    "NLA/MF22/StateReconstruction.lean": [
+      "NLA.MF22.Coordinates"
+    ],
+    "NLA/MF22/Dominant.lean": [
+      "NLA.MF22.Coprime",
+      "NLA.MF22.EigenEvaluation",
+      "NLA.MF22.ProjectorRank",
+      "NLA.MF22.SpectralAlgebra"
+    ],
+    "NLA/MF22/EigenEvaluation.lean": [
+      "NLA.MF22.Definitions"
+    ],
+    "NLA/MF22/ProjectorRank.lean": [
+      "NLA.MF22.ProjectorAlgebra"
+    ],
+    "NLA/MF22/Norms.lean": [
+      "NLA.MF22.Definitions"
+    ],
+    "NLA/MF22/SourceRecurrence.lean": [
+      "NLA.MF22.SourceRows",
+      "NLA.MF22.LeadingBlock"
+    ],
+    "NLA/MF22/SourceRows.lean": [
+      "NLA.MF22.Coordinates"
+    ],
+    "NLA/MF22/ProjectorPolynomial.lean": [
+      "NLA.MF22.Definitions"
+    ],
+    "NLA/MF22/TransferCertificates.lean": [
+      "NLA.MF22.LeadingBlock"
+    ],
+    "NLA/MF22/ScalarTail.lean": [
+      "NLA.MF22.Norms"
+    ],
+    "NLA/MF22/GreenInverse.lean": [
+      "NLA.MF22.GreenKernel",
+      "NLA.MF22.StateReconstruction",
+      "NLA.MF22.SourceRecurrence"
+    ],
+    "NLA/MF22/Coprime.lean": [
+      "NLA.MF22.ScalarCertificates"
+    ],
+    "NLA/MF22/RootCubic.lean": [
+      "NLA.MF22.Definitions"
+    ],
+    "NLA/MF22/ProjectorAlgebra.lean": [
+      "NLA.MF22.ProjectorPolynomial"
+    ],
+    "NLA/MF22/SourceBounds.lean": [
+      "NLA.MF22.Norms"
+    ],
+    "NLA/MF22/Coordinates.lean": [
+      "NLA.MF22.Definitions"
+    ],
+    "NLA/MF22/Roots.lean": [
+      "NLA.MF22.RootCayley",
+      "NLA.MF22.RootCubic"
+    ],
+    "NLA/MF22/SpectralAlgebra.lean": [
+      "NLA.MF22.ProjectorAlgebra",
+      "NLA.MF22.TransferCertificates"
+    ],
+    "NLA/MF22/GreenKernel.lean": [
+      "NLA.MF22.Definitions"
+    ],
+    "NLA/MF22/SpectralTailBounds.lean": [
+      "NLA.MF22.ScalarTail",
+      "NLA.MF22.SpectralAlgebra",
+      "NLA.MF22.Dominant"
+    ],
+    "NLA/MF22/GreenEntryAlgebra.lean": [
+      "NLA.MF22.GreenKernel",
+      "NLA.MF22.Norms"
+    ],
+    "NLA/MF22/GreenCoefficients.lean": [
+      "NLA.MF22.ScalarTail"
+    ],
+    "Solution.lean": [
+      "NLA.MF22.Conditioning"
+    ]
+  },
+  "no_local_lean_execution": true,
+  "historical_note": "Some prefix modules have authentic Linux development acceptance, but that is not full22 acceptance. All final controls/referees/Comparator remain required."
+}

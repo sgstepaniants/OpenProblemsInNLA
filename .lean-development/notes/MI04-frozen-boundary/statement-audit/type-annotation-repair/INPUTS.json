@@ -1,0 +1,12 @@
+{
+  "CHANGES.json": "da6b5097e7ca1af734c73a58f1142c14ee02ee6bbefdec0f9244bf58309ca10b",
+  "DIAGNOSIS.md": "8781449cf0226e720a9c1d4ebca0fa7a2cbe33d7171ce9c3c149c4f9e424d03e",
+  "Definitions.patch": "48bca40c0450eab8fd7a1249600c71379fd2535659631267845a1d03ed7a7a03",
+  "actual-run35040116376/MI-04-challenge.log": "b9ad41bbf0b1a55b29120f3a3af3e7a19c8844d1e5331850b90d3e25f99ccddd",
+  "actual-run35040116376/MI-04-modules.log": "54a6b1770d8c7774f3bac619ae1886c9d17810a4f04d32e6b5852510e8ff8c60",
+  "original/Challenge.lean.txt": "ca80d090bfe9f3013d08aa86297761e1e524810881bce92776896545d6eeabf9",
+  "original/DRAFT-CHECKS.json": "1d0680862f81dec0e9c419e3d7351c3d431f4439a09d56fee3ca10761d527b3b",
+  "original/NLA/MI04/Definitions.lean.txt": "cfd0c1e0174699e8e9127a6fb8b7ce9de3f4c7d9770292746d15c0a5bc047748",
+  "original/NUMERICAL_TARGETS.md": "5cb5e20ffcf035b2ea303cf9edae2e85619b0f562bf302cf6df0c7a46079d1d7",
+  "proposed/NLA/MI04/Definitions.lean": "de70e2a9dd878f1d083adacf8df6808c90c27630ffc2644a62293bf085e41715"
+}

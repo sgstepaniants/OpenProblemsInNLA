@@ -1,0 +1,19 @@
+{
+  "problem_id": "MF-22",
+  "actual_prior_run": 35043317938,
+  "status": "held proof-only GreenKernel repair, uncompiled",
+  "local_lean_execution": false,
+  "frozen_boundary_unchanged": true,
+  "files": {
+    "NLA/MF22/GreenKernel.lean": "c06372c23010f366a42c77c415b1256c676b5bd95fd65c31a2c1c6d3e4c66bc2"
+  },
+  "before_sha256": "34740d89070e813520e68ce71f96142bb10ae51ad08a11ffb8518f0edeca99d8",
+  "log_sha256": "c0411077de5ad6e18bf91772e8bf3aacea19568de64761dc6f61dc8829851a9c",
+  "patch_sha256": "f51e5a94a3df30ff0c74c9b9141abbd8da7c8a5152d1604a5514df0cf6557950",
+  "assessment_sha256": "1a7302e49294a85fb3540c958fe65c2b0b3f3effc75098b36b02391bcc9d7118",
+  "requested_targets": [
+    "NLA.MF22.GreenInverse",
+    "NLA.MF22.Conditioning",
+    "Solution"
+  ]
+}

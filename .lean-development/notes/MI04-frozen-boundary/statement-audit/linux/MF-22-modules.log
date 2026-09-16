@@ -1,0 +1,658 @@
+✔ [3435/3448] Built LeanCert.Core.Interval (2.0s)
+✔ [3436/3451] Built NLA.MF22.Definitions (3.6s)
+✔ [3437/3473] Built LeanCert.Tactic.Verification (3.4s)
+✔ [3452/3474] Built LeanCert.Core.Expr (5.3s)
+✔ [3455/3474] Built LeanCert.Core.DerivativeIntervals (3.3s)
+ℹ [3456/3474] Built NLA.MF22.Norms (5.0s)
+info: NLA/MF22/Norms.lean:113:0: 'NLA.MF22.complex_entry_norm_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [3457/3474] Built LeanCert.Core.IntervalRat.Basic (7.8s)
+✔ [3459/3477] Built LeanCert.Core.Support (4.6s)
+✔ [3460/3477] Built LeanCert.Core.IntervalRat.LogReduction (5.7s)
+✔ [3462/3477] Built LeanCert.Meta.Numeral (3.9s)
+✔ [3463/3479] Built LeanCert.Tactic.IntervalAuto.Types (4.4s)
+✔ [3464/3479] Built LeanCert.Core.IntervalRat.Transcendental (5.5s)
+✔ [3465/3479] Built LeanCert.Core.Taylor (6.8s)
+✔ [3466/3481] Built LeanCert.Core.TrigReduction (5.1s)
+✔ [3467/3481] Built LeanCert.Tactic.IntervalAuto.Extract (3.3s)
+✔ [3468/3489] Built LeanCert.Engine.Eval.Result (2.9s)
+✔ [3470/3490] Built LeanCert.Meta.ToExpr (4.0s)
+✔ [3471/3496] Built LeanCert.Tactic.IntervalAuto.Norm (3.8s)
+✔ [3472/3500] Built LeanCert.Core.Dyadic (5.7s)
+✔ [3473/3501] Built LeanCert.Contrib.Sinc (7.5s)
+✔ [3474/3501] Built LeanCert.Tactic.IntervalAuto.Parse (8.0s)
+✔ [3475/3542] Built LeanCert.Tactic.NumericalRefinement (769ms)
+✔ [3525/3602] Built LeanCert.Tactic.LeanCert.Bridge.Environment (3.8s)
+✔ [3526/3603] Built LeanCert.Tactic.VecUtil (3.1s)
+✔ [3527/3603] Built LeanCert.Tactic.IntervalAuto.Diagnostic (4.1s)
+✔ [3528/3609] Built LeanCert.Tactic.LeanCert.Normalize (3.6s)
+✔ [3529/3609] Built LeanCert.Tactic.FinSumExpand (2.2s)
+✔ [3530/3618] Built LeanCert.Tactic.FinsetParse (3.1s)
+✔ [3531/3618] Built LeanCert.Tactic.BridgeNative (1.7s)
+✔ [3532/3618] Built LeanCert.Core.IntervalRat.Taylor (18s)
+✔ [3533/3618] Built LeanCert.Validity.Eventual (3.0s)
+✔ [3534/3622] Built LeanCert.Tactic.LeanCert.Semantic.Domain (1.6s)
+✔ [3535/3622] Built LeanCert.Tactic.VecSimp (1.6s)
+✔ [3536/3622] Built LeanCert.Tactic.LeanCert.Semantic.Goal (1.8s)
+✔ [3537/3623] Built LeanCert.Core.IntervalReal (2.3s)
+✔ [3538/3623] Built LeanCert.Core.IntervalRat.TrigReduced (2.7s)
+✔ [3539/3623] Built LeanCert.Tactic.LeanCert.Semantic.Parse.Comparison (1.4s)
+✔ [3540/3623] Built LeanCert.Tactic.EventualBound (4.7s)
+✔ [3541/3623] Built LeanCert.Tactic.Extension.Protocol (2.8s)
+✔ [3542/3626] Built LeanCert.Tactic.LeanCert.Diagnostic.Evidence (4.2s)
+✔ [3543/3626] Built LeanCert.Engine.Affine.Basic (6.9s)
+✔ [3544/3626] Built LeanCert.Core.IntervalRealEndpoints (6.3s)
+✔ [3545/3626] Built LeanCert.Core.IntervalDyadic (8.2s)
+✔ [3546/3626] Built LeanCert.Tactic.LeanCert.Semantic.Parse.Bound (3.7s)
+✔ [3547/3626] Built LeanCert.Tactic.LeanCert.Config (1.7s)
+✔ [3548/3630] Built LeanCert.Tactic.Extension.Registry (3.5s)
+✔ [3550/3639] Built LeanCert.Engine.Affine.Nonlinear (5.5s)
+✔ [3551/3641] Built LeanCert.Engine.Algebra.QPoly (5.1s)
+✔ [3552/3644] Built LeanCert.Core.DyadicCell (5.7s)
+✔ [3553/3645] Built LeanCert.Engine.FloatEval (2.8s)
+✔ [3554/3646] Built LeanCert.Engine.Eval.Core (8.5s)
+✔ [3555/3647] Built LeanCert.Engine.Algebra.QPolyIntegral (3.6s)
+✔ [3556/3647] Built LeanCert.Tactic.Extension.Command (3.1s)
+✔ [3557/3647] Built LeanCert.Core.DyadicFrontier (2.7s)
+⚠ [3558/3662] Built NLA.MF22.Coordinates (3.5s)
+warning: NLA/MF22/Coordinates.lean:57:35: Variable name `hn` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hn
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+info: NLA/MF22/Coordinates.lean:72:0: 'NLA.MF22.source_boundaries' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [3568/3663] Built LeanCert.Engine.Eval.Extended (4.0s)
+✔ [3569/3663] Built LeanCert.Tactic.Extension (2.9s)
+⚠ [3570/3663] Built NLA.MF22.SourceBounds (4.4s)
+warning: NLA/MF22/SourceBounds.lean:37:12: This simp argument is unused:
+  norm_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Complex.norm_real, Real.norm_eq_abs, abs_of_pos hρ]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+info: NLA/MF22/SourceBounds.lean:43:0: 'NLA.MF22.source_entry_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [3571/3663] Built LeanCert.Engine.Bounds.Lemmas (1.9s)
+✖ [3572/3663] Building NLA.MF22.ScalarTail (3.4s)
+trace: .> LEAN_PATH=/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/Cli/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/batteries/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/Qq/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/aesop/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/proofwidgets/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/importGraph/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/plausible/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/mathlib/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/leancert/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/build/lib/lean /home/runner/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean /home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/NLA/MF22/ScalarTail.lean -o /home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/build/lib/lean/NLA/MF22/ScalarTail.olean -i /home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/build/lib/lean/NLA/MF22/ScalarTail.ilean -c /home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/build/ir/NLA/MF22/ScalarTail.c --setup /home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/build/ir/NLA/MF22/ScalarTail.setup.json --json
+error: NLA/MF22/ScalarTail.lean:31:21: unsolved goals
+d : ℂ
+he : d = 0
+h : 2 ≤ 0
+⊢ False
+error: NLA/MF22/ScalarTail.lean:57:50: unsolved goals
+γ μ : ℂ
+hγ : γ ≠ 0
+hμ : 1 < ‖μ‖
+r : ℕ → ℂ
+C : ℝ
+hC : 0 < C
+hr : ∀ (n : ℕ), ‖r n‖ ≤ C
+hg : 0 < ‖γ‖
+hl : 0 < ‖μ‖
+hlne : μ ≠ 0
+hevent : ∀ᶠ (n : ℕ) in atTop, 2 * C / ‖γ‖ ≤ ‖μ‖ ^ n
+N : ℕ
+hN : ∀ (b : ℕ), N ≤ b → 2 * C / ‖γ‖ ≤ ‖μ‖ ^ b
+n : ℕ
+hn : max 1 N ≤ n
+hpow : 2 * C / ‖γ‖ ≤ ‖μ‖ ^ n
+hgn : γ * μ ^ n ≠ 0
+hpos : 0 < ‖γ‖ * ‖μ‖ ^ n
+d : ℂ := (γ * μ ^ n + r n) / (γ * μ ^ n)
+⊢ γ * μ ^ n + r n - γ * μ ^ n = r n
+error: NLA/MF22/ScalarTail.lean:82:21: #assert_trust: 'NLA.MF22.scalar_dominant_tail' depends on sorry or unrecognized axioms
+  foundational: propext, Classical.choice, Quot.sound
+  sorryAx: sorryAx
+info: NLA/MF22/ScalarTail.lean:83:0: 'NLA.MF22.scalar_dominant_tail' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+error: Lean exited with code 1
+✔ [3573/3663] Built LeanCert.Engine.IntervalEval (2.1s)
+⚠ [3574/3663] Built NLA.MF22.SourceRows (5.7s)
+warning: NLA/MF22/SourceRows.lean:54:10: This simp argument is unused:
+  h
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [he.mp h]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [3575/3663] Built LeanCert.Validity.Bounds.Checked (2.7s)
+✔ [3576/3663] Built LeanCert.Validity.Bounds.Core (2.8s)
+✔ [3577/3663] Built LeanCert.Engine.Affine.Transcendental (4.0s)
+✔ [3578/3663] Built LeanCert.Engine.Optimization.Box (3.8s)
+✔ [3579/3663] Built LeanCert.Engine.IntervalEvalDyadic (6.4s)
+✔ [3580/3663] Built LeanCert.Engine.RootFinding.Basic (5.3s)
+✔ [3581/3663] Built LeanCert.Engine.AD.Basic (2.9s)
+✔ [3582/3663] Built LeanCert.Engine.Integrate (6.4s)
+✔ [3583/3663] Built LeanCert.Engine.Search.Heuristic (4.0s)
+✔ [3584/3663] Built LeanCert.Engine.IntervalEvalAffine (6.3s)
+✔ [3585/3663] Built LeanCert.Engine.FinSumDyadic (5.4s)
+✔ [3586/3663] Built LeanCert.Engine.TaylorModel.Core (9.6s)
+✔ [3587/3663] Built LeanCert.Validity.DyadicBounds (3.5s)
+✔ [3588/3663] Built LeanCert.Engine.RootFinding.Bisection (5.3s)
+✔ [3589/3663] Built LeanCert.Engine.Affine.Environment (3.9s)
+✔ [3590/3663] Built LeanCert.Engine.AD.Transcendental (4.5s)
+✔ [3591/3663] Built LeanCert.Engine.WitnessSum (3.2s)
+✔ [3592/3663] Built LeanCert.Engine.TaylorModel.Special (2.6s)
+✔ [3593/3663] Built LeanCert.Engine.TaylorModel.Integral (3.4s)
+✔ [3594/3663] Built LeanCert.Engine.AD.Eval (5.1s)
+✔ [3595/3663] Built LeanCert.Engine.TaylorModel.ExpLog (7.6s)
+✔ [3596/3663] Built LeanCert.Engine.AD.Correctness (4.1s)
+✔ [3597/3663] Built LeanCert.Engine.TaylorModel.Trig (10s)
+✔ [3598/3663] Built LeanCert.Engine.TaylorModel.Hyperbolic (12s)
+✔ [3599/3663] Built LeanCert.Engine.AD.Computable (3.2s)
+✔ [3600/3663] Built LeanCert.Engine.TaylorModel.Functions (2.1s)
+✔ [3601/3663] Built LeanCert.Engine.AD.PartialCorrectness (4.7s)
+✔ [3602/3663] Built LeanCert.Engine.AD.DomainChecked (3.1s)
+✔ [3603/3663] Built LeanCert.Engine.TaylorModel.Expr (3.8s)
+✔ [3604/3663] Built LeanCert.Engine.TaylorModel (1.8s)
+✔ [3605/3663] Built LeanCert.Engine.AD.Dyadic (2.9s)
+✔ [3606/3663] Built LeanCert.Engine.AD (1.5s)
+✔ [3607/3663] Built LeanCert.Validity.Bounds.Smart (3.7s)
+✔ [3608/3663] Built LeanCert.Meta.ProveSupported (4.1s)
+✔ [3609/3663] Built LeanCert.Engine.IntervalEvalRefined (4.0s)
+✔ [3610/3663] Built LeanCert.Engine.Optimize (5.6s)
+✔ [3611/3663] Built LeanCert.Validity.Bounds.Bridge (3.2s)
+✔ [3612/3663] Built LeanCert.Meta.ProveContinuous (4.3s)
+✔ [3613/3663] Built LeanCert.Tactic.IntervalAuto.ProveCommon (5.8s)
+✔ [3614/3663] Built LeanCert.Validity.Bounds.Basic (2.7s)
+✔ [3615/3663] Built LeanCert.Engine.Optimization.Gradient (5.0s)
+✔ [3616/3663] Built LeanCert.Engine.RootFinding.Newton (4.9s)
+✔ [3617/3663] Built LeanCert.Tactic.IntervalAuto.Basic (2.7s)
+✔ [3618/3663] Built LeanCert.Tactic.LeanCert.Bridge.ReifiedFunction (3.4s)
+✔ [3619/3663] Built LeanCert.Validity.Integration (6.5s)
+✔ [3620/3663] Built LeanCert.Engine.RootFinding.Krawczyk (9.0s)
+✔ [3621/3663] Built LeanCert.Tactic.LeanCert.Semantic.Prepare (8.4s)
+✔ [3622/3663] Built LeanCert.Engine.RootFinding.MVTBounds (11s)
+✔ [3623/3663] Built LeanCert.Engine.RootFinding.KrawczykCandidate (3.6s)
+✔ [3624/3663] Built LeanCert.Validity.Krawczyk (3.1s)
+✔ [3625/3663] Built LeanCert.Tactic.LeanCert.Integral (6.9s)
+✔ [3626/3663] Built LeanCert.Engine.Optimization.Global (21s)
+✔ [3627/3663] Built LeanCert.Tactic.LeanCert.Solver.Protocol (5.8s)
+✔ [3628/3663] Built LeanCert.Tactic.Extension.Execute (7.3s)
+✔ [3629/3663] Built LeanCert.Validity.Types (2.9s)
+✔ [3630/3663] Built LeanCert.Engine.RootFinding.Contraction (5.1s)
+✔ [3631/3663] Built LeanCert.Engine.Optimization.Guided (2.8s)
+✔ [3632/3663] Built LeanCert.Engine.Search.CounterExample (2.7s)
+✔ [3633/3663] Built LeanCert.Engine.Optimization.BoundVerify (3.2s)
+✔ [3634/3663] Built LeanCert.Tactic.LeanCert.Diagnostic.Render (3.4s)
+✔ [3635/3663] Built LeanCert.Engine.RootFinding.Main (1.0s)
+✔ [3636/3663] Built LeanCert.Tactic.Enclosure (2.0s)
+✔ [3637/3663] Built LeanCert.Validity.Bounds (3.7s)
+✔ [3638/3663] Built LeanCert.Discovery.Find (3.2s)
+✔ [3639/3663] Built LeanCert.Tactic.IntervalAuto.OptBound (3.6s)
+✔ [3640/3663] Built LeanCert.Tactic.IntervalAuto.Multivariate (5.0s)
+✔ [3641/3663] Built LeanCert.Tactic.IntervalAuto.RootBound (2.0s)
+✔ [3642/3663] Built LeanCert.Tactic.IntervalAuto.Bound (11s)
+✔ [3643/3663] Built LeanCert.Tactic.IntervalAuto.Subdiv (4.6s)
+✔ [3644/3663] Built LeanCert.Tactic.IntervalAuto.Adaptive (5.7s)
+✔ [3645/3663] Built LeanCert.Tactic.IntervalAuto.PointIneq (7.0s)
+✔ [3646/3663] Built LeanCert.Tactic.IntervalAuto (1.9s)
+✔ [3647/3663] Built LeanCert.Tactic.Refute (3.3s)
+✔ [3648/3663] Built LeanCert.Tactic.FinSumWitness (4.5s)
+✔ [3649/3663] Built LeanCert.Tactic.FinSumBound (3.4s)
+✔ [3650/3663] Built LeanCert.Tactic.Discovery (10s)
+✔ [3651/3663] Built LeanCert.Tactic.LeanCert.Semantic.Parse (2.5s)
+✔ [3652/3663] Built LeanCert.Tactic.Krawczyk (2.6s)
+✔ [3653/3663] Built LeanCert.Tactic.LeanCert.Router (5.9s)
+✔ [3654/3663] Built LeanCert.Tactic.LeanCert (2.1s)
+✔ [3655/3663] Built LeanCert.Tactic (2.1s)
+⚠ [3656/3663] Built NLA.MF22.RootCubic (3.3s)
+warning: NLA/MF22/RootCubic.lean:104:41: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: NLA/MF22/RootCubic.lean:112:0: 'NLA.MF22.negative_cubic_configuration' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [3657/3663] Built NLA.MF22.ScalarCertificates (4.0s)
+warning: NLA/MF22/ScalarCertificates.lean:71:27: This simp argument is unused:
+  Complex.I_sq
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Complex.I_pow_three, Complex.I_pow_four]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: NLA/MF22/ScalarCertificates.lean:71:62: This simp argument is unused:
+  Complex.I_pow_four
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Complex.I_sq, Complex.I_pow_three]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: NLA/MF22/ScalarCertificates.lean:70:18: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: NLA/MF22/ScalarCertificates.lean:71:12: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: NLA/MF22/ScalarCertificates.lean:71:82: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: NLA/MF22/ScalarCertificates.lean:97:62: This simp argument is unused:
+  Complex.I_pow_four
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Complex.I_sq, Complex.I_pow_three]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: NLA/MF22/ScalarCertificates.lean:93:57: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: NLA/MF22/ScalarCertificates.lean:97:12: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: NLA/MF22/ScalarCertificates.lean:97:82: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: NLA/MF22/ScalarCertificates.lean:117:59: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: NLA/MF22/ScalarCertificates.lean:117:59: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: NLA/MF22/ScalarCertificates.lean:115:58: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: NLA/MF22/ScalarCertificates.lean:126:0: 'NLA.MF22.quartic_factorization' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MF22/ScalarCertificates.lean:128:0: 'NLA.MF22.cayley_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MF22/ScalarCertificates.lean:130:0: 'NLA.MF22.positive_discriminant_factor' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MF22/ScalarCertificates.lean:132:0: 'NLA.MF22.real_cubic_discriminant' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MF22/ScalarCertificates.lean:134:0: 'NLA.MF22.exceptional_parameter' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [3658/3663] Built NLA.MF22.LeadingBlock (3.4s)
+warning: NLA/MF22/LeadingBlock.lean:24:10: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: NLA/MF22/LeadingBlock.lean:24:38: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: NLA/MF22/LeadingBlock.lean:48:0: 'NLA.MF22.leading_block_invertible' depends on axioms: [propext, Classical.choice, Quot.sound]
+✖ [3659/3663] Building NLA.MF22.RootCayley (4.5s)
+trace: .> LEAN_PATH=/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/Cli/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/batteries/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/Qq/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/aesop/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/proofwidgets/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/importGraph/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/plausible/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/mathlib/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/leancert/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/build/lib/lean /home/runner/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean /home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/NLA/MF22/RootCayley.lean -o /home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/build/lib/lean/NLA/MF22/RootCayley.olean -i /home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/build/lib/lean/NLA/MF22/RootCayley.ilean -c /home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/build/ir/NLA/MF22/RootCayley.c --setup /home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/build/ir/NLA/MF22/RootCayley.setup.json --json
+warning: NLA/MF22/RootCayley.lean:35:62: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: NLA/MF22/RootCayley.lean:39:62: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: NLA/MF22/RootCayley.lean:120:41: Try `simp at hu` instead of `simpa using hu`
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: NLA/MF22/RootCayley.lean:121:41: Try `simp at hv` instead of `simpa using hv`
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+error: NLA/MF22/RootCayley.lean:146:4: unsolved goals
+case refine_2.«0»
+ρ : ℝ
+hρ : 0 < ρ
+t u v : ℂ
+ht : ‖t‖ = 1
+hu : ‖u‖ < 1
+hv : 1 < ‖v‖
+hqt : eval t (quotientCubic ρ) = 0
+hqu : eval u (quotientCubic ρ) = 0
+hqv : eval v (quotientCubic ρ) = 0
+h1t : 1 ≠ t
+h1u : 1 ≠ u
+h1v : 1 ≠ v
+htu : t ≠ u
+htv : t ≠ v
+huv : u ≠ v
+hroot : ∀ (z : ℂ), eval z (quotientCubic ρ) = 0 → z ≠ 0 ∧ (quartic ρ).IsRoot z
+roots : Fin 4 → ℂ := ![1, t, u, v]
+⊢ roots 0 - 1 = 0 ∨ eval (roots 0) (quotientCubic ρ) = 0
+error: NLA/MF22/RootCayley.lean:153:21: #assert_trust: 'NLA.MF22.rootData_of_quotient_configuration' depends on sorry or unrecognized axioms
+  foundational: propext, Classical.choice, Quot.sound
+  sorryAx: sorryAx
+info: NLA/MF22/RootCayley.lean:154:0: 'NLA.MF22.rootData_of_quotient_configuration' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+error: Lean exited with code 1
+✖ [3661/3663] Building NLA.MF22.Coprime (6.3s)
+trace: .> LEAN_PATH=/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/Cli/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/batteries/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/Qq/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/aesop/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/proofwidgets/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/importGraph/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/plausible/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/mathlib/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/leancert/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/build/lib/lean /home/runner/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean /home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/NLA/MF22/Coprime.lean -o /home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/build/lib/lean/NLA/MF22/Coprime.olean -i /home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/build/lib/lean/NLA/MF22/Coprime.ilean -c /home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/build/ir/NLA/MF22/Coprime.c --setup /home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/build/ir/NLA/MF22/Coprime.setup.json --json
+error: NLA/MF22/Coprime.lean:41:4: `simp` made no progress
+error: NLA/MF22/Coprime.lean:37:37: unsolved goals
+case right
+ρ : ℝ
+z : ℂ
+⊢ (coefficientA ρ - 24 * ↑ρ * z + coefficientF ρ * z ^ 2) * (coefficientD ρ + 24 * ↑ρ * z + coefficientE ρ * z ^ 2) -
+      (coefficientB ρ + 96 * Complex.I * z + coefficientC ρ * z ^ 2) ^ 2 =
+    24 *
+      (leadingScalar ρ + middleScalar ρ * z + centralScalar ρ * z ^ 2 +
+          (24 * ↑ρ ^ 2 - 80 * Complex.I * ↑ρ - 240) * z ^ 3 +
+        (30 - ↑ρ ^ 2 + 10 * Complex.I * ↑ρ) * z ^ 4)
+warning: NLA/MF22/Coprime.lean:75:12: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: NLA/MF22/Coprime.lean:75:81: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: NLA/MF22/Coprime.lean:98:83: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: NLA/MF22/Coprime.lean:98:83: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: NLA/MF22/Coprime.lean:98:10: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: NLA/MF22/Coprime.lean:110:85: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+error: NLA/MF22/Coprime.lean:106:65: unsolved goals
+ρ : ℝ
+⊢ 27000 + ↑ρ * Complex.I * 30600 - ↑ρ * Complex.I * (30 + ↑ρ * Complex.I * 22 + ↑ρ ^ 2 * 7)⁻¹ * 345600 -
+                                                    ↑ρ * Complex.I *
+                                                        (900 + ↑ρ * Complex.I * 1320 - ↑ρ ^ 2 * 64 +
+                                                              ↑ρ ^ 3 * Complex.I * 308 +
+                                                            ↑ρ ^ 4 * 49)⁻¹ *
+                                                      25505280 +
+                                                  ↑ρ ^ 2 * 10380 +
+                                                ↑ρ ^ 2 * (30 + ↑ρ * Complex.I * 22 + ↑ρ ^ 2 * 7)⁻¹ * 4490640 +
+                                              ↑ρ ^ 2 *
+                                                  (900 + ↑ρ * Complex.I * 1320 - ↑ρ ^ 2 * 64 +
+                                                        ↑ρ ^ 3 * Complex.I * 308 +
+                                                      ↑ρ ^ 4 * 49)⁻¹ *
+                                                28921536 +
+                                            ↑ρ ^ 3 * Complex.I * 8560 -
+                                          ↑ρ ^ 3 * Complex.I * (30 + ↑ρ * Complex.I * 22 + ↑ρ ^ 2 * 7)⁻¹ * 774528 -
+                                        ↑ρ ^ 3 * Complex.I *
+                                            (900 + ↑ρ * Complex.I * 1320 - ↑ρ ^ 2 * 64 + ↑ρ ^ 3 * Complex.I * 308 +
+                                                ↑ρ ^ 4 * 49)⁻¹ *
+                                          46747584 +
+                                      ↑ρ ^ 4 * 4614 +
+                                    ↑ρ ^ 4 * (30 + ↑ρ * Complex.I * 22 + ↑ρ ^ 2 * 7)⁻¹ * 1495780 +
+                                  ↑ρ ^ 4 *
+                                      (900 + ↑ρ * Complex.I * 1320 - ↑ρ ^ 2 * 64 + ↑ρ ^ 3 * Complex.I * 308 +
+                                          ↑ρ ^ 4 * 49)⁻¹ *
+                                    3066480 -
+                                ↑ρ ^ 5 * Complex.I * 798 -
+                              ↑ρ ^ 5 * Complex.I * (30 + ↑ρ * Complex.I * 22 + ↑ρ ^ 2 * 7)⁻¹ * 724424 -
+                            ↑ρ ^ 5 * Complex.I *
+                                (900 + ↑ρ * Complex.I * 1320 - ↑ρ ^ 2 * 64 + ↑ρ ^ 3 * Complex.I * 308 + ↑ρ ^ 4 * 49)⁻¹ *
+                              20708736 -
+                          ↑ρ ^ 6 * 49 -
+                        ↑ρ ^ 6 * (30 + ↑ρ * Complex.I * 22 + ↑ρ ^ 2 * 7)⁻¹ * 113148 -
+                      ↑ρ ^ 6 * (900 + ↑ρ * Complex.I * 1320 - ↑ρ ^ 2 * 64 + ↑ρ ^ 3 * Complex.I * 308 + ↑ρ ^ 4 * 49)⁻¹ *
+                        7938376 +
+                    ↑ρ ^ 7 * Complex.I * (30 + ↑ρ * Complex.I * 22 + ↑ρ ^ 2 * 7)⁻¹ * 3724 +
+                  ↑ρ ^ 7 * Complex.I *
+                      (900 + ↑ρ * Complex.I * 1320 - ↑ρ ^ 2 * 64 + ↑ρ ^ 3 * Complex.I * 308 + ↑ρ ^ 4 * 49)⁻¹ *
+                    372400 -
+                ↑ρ ^ 8 * (30 + ↑ρ * Complex.I * 22 + ↑ρ ^ 2 * 7)⁻¹ * 343 -
+              ↑ρ ^ 8 * (900 + ↑ρ * Complex.I * 1320 - ↑ρ ^ 2 * 64 + ↑ρ ^ 3 * Complex.I * 308 + ↑ρ ^ 4 * 49)⁻¹ * 359268 +
+            ↑ρ ^ 9 * Complex.I *
+                (900 + ↑ρ * Complex.I * 1320 - ↑ρ ^ 2 * 64 + ↑ρ ^ 3 * Complex.I * 308 + ↑ρ ^ 4 * 49)⁻¹ *
+              76832 +
+          ↑ρ ^ 10 * (900 + ↑ρ * Complex.I * 1320 - ↑ρ ^ 2 * 64 + ↑ρ ^ 3 * Complex.I * 308 + ↑ρ ^ 4 * 49)⁻¹ * 4802 +
+        (30 + ↑ρ * Complex.I * 22 + ↑ρ ^ 2 * 7)⁻¹ * 2592000 +
+      (900 + ↑ρ * Complex.I * 1320 - ↑ρ ^ 2 * 64 + ↑ρ ^ 3 * Complex.I * 308 + ↑ρ ^ 4 * 49)⁻¹ * 18662400 =
+    134136 - ↑ρ * Complex.I * 103032 + ↑ρ ^ 2 * 32436 - ↑ρ ^ 3 * Complex.I * 40632 - ↑ρ ^ 4 * 10404 +
+      ↑ρ ^ 5 * Complex.I * 840
+error: NLA/MF22/Coprime.lean:159:6: linarith failed to find a contradiction
+case h1
+ρ : ℝ
+hρ : 0 < ρ
+z : ℂ
+hN : eval ((7 * ↑ρ ^ 2 - 24 + 34 * Complex.I * ↑ρ) / (7 * ↑ρ ^ 2 + 30 + 22 * Complex.I * ↑ρ)) (numerator ρ) = 0
+hd : eval z (denominator ρ) = 0
+hz : z ≠ 0
+heq₁ : coefficientA ρ * auxiliaryEll ρ z = coefficientB ρ * auxiliaryH ρ z
+heq₂ : auxiliaryAlpha ρ z * auxiliaryEll ρ z = auxiliaryH ρ z ^ 2
+hh : auxiliaryH ρ z ≠ 0
+hex : coefficientA ρ * auxiliaryH ρ z = coefficientB ρ * auxiliaryAlpha ρ z
+hzero : 24 - 7 * ↑ρ ^ 2 - 34 * Complex.I * ↑ρ + (7 * ↑ρ ^ 2 + 30 + 22 * Complex.I * ↑ρ) * z = 0
+hzexact : z = (7 * ↑ρ ^ 2 - 24 + 34 * Complex.I * ↑ρ) / (7 * ↑ρ ^ 2 + 30 + 22 * Complex.I * ↑ρ)
+he : 0 = 134136 + 32436 * ↑ρ ^ 2 - 10404 * ↑ρ ^ 4 + Complex.I * ↑ρ * (-103032 - 40632 * ↑ρ ^ 2 + 840 * ↑ρ ^ 4)
+hre : 0 = 134136 + 32436 * ρ ^ 2 - 10404 * ρ ^ 4
+him : ρ = 0 ∨ -103032 - 40632 * ρ ^ 2 + 840 * ρ ^ 4 = 0
+a✝ : ρ * (-103032 - 40632 * ρ ^ 2 + 840 * ρ ^ 4) < 0
+⊢ False
+failed
+error: NLA/MF22/Coprime.lean:167:21: #assert_trust: 'NLA.MF22.numerator_denominator_coprime' depends on sorry or unrecognized axioms
+  foundational: propext, Classical.choice, Quot.sound
+  sorryAx: sorryAx
+info: NLA/MF22/Coprime.lean:168:0: 'NLA.MF22.numerator_denominator_coprime' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+error: Lean exited with code 1
+✖ [3662/3663] Building NLA.MF22.SourceRecurrence (5.5s)
+trace: .> LEAN_PATH=/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/Cli/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/batteries/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/Qq/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/aesop/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/proofwidgets/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/importGraph/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/plausible/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/mathlib/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/leancert/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/build/lib/lean /home/runner/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean /home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/NLA/MF22/SourceRecurrence.lean -o /home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/build/lib/lean/NLA/MF22/SourceRecurrence.olean -i /home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/build/lib/lean/NLA/MF22/SourceRecurrence.ilean -c /home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/build/ir/NLA/MF22/SourceRecurrence.c --setup /home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/build/ir/NLA/MF22/SourceRecurrence.setup.json --json
+error: NLA/MF22/SourceRecurrence.lean:40:8: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  Matrix.mulVec (scaledToeplitz ?ρ ?m.301) ?x (?j, 0)
+in the target expression
+  Matrix.mulVec (scaledToeplitz ρ n) x (j, (fun i => i) ⟨0, ⋯⟩) =
+    (Matrix.mulVec (leadingBlock ρ) ![coordinate x (↑↑j + 1) 0, coordinate x (↑↑j) 1] -
+        (transferRhs ρ).mulVec (sourceState x ↑j))
+      ((fun i => i) ⟨0, ⋯⟩)
+
+case «0»
+n : ℕ
+ρ : ℝ
+x : BlockVector n
+j : Fin n
+⊢ Matrix.mulVec (scaledToeplitz ρ n) x (j, (fun i => i) ⟨0, ⋯⟩) =
+    (Matrix.mulVec (leadingBlock ρ) ![coordinate x (↑↑j + 1) 0, coordinate x (↑↑j) 1] -
+        (transferRhs ρ).mulVec (sourceState x ↑j))
+      ((fun i => i) ⟨0, ⋯⟩)
+error: NLA/MF22/SourceRecurrence.lean:44:8: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  Matrix.mulVec (scaledToeplitz ?ρ ?m.305) ?x (?j, 1)
+in the target expression
+  Matrix.mulVec (scaledToeplitz ρ n) x (j, (fun i => i) ⟨1, ⋯⟩) =
+    (Matrix.mulVec (leadingBlock ρ) ![coordinate x (↑↑j + 1) 0, coordinate x (↑↑j) 1] -
+        (transferRhs ρ).mulVec (sourceState x ↑j))
+      ((fun i => i) ⟨1, ⋯⟩)
+
+case «1»
+n : ℕ
+ρ : ℝ
+x : BlockVector n
+j : Fin n
+⊢ Matrix.mulVec (scaledToeplitz ρ n) x (j, (fun i => i) ⟨1, ⋯⟩) =
+    (Matrix.mulVec (leadingBlock ρ) ![coordinate x (↑↑j + 1) 0, coordinate x (↑↑j) 1] -
+        (transferRhs ρ).mulVec (sourceState x ↑j))
+      ((fun i => i) ⟨1, ⋯⟩)
+error: NLA/MF22/SourceRecurrence.lean:83:6: Type mismatch: After simplification, term
+  congrFun h 0
+ has type
+  @Eq ℂ (coordinate x (↑↑j + 1) 0) ((leadingBlock ρ)⁻¹.mulVec b 0)
+but is expected to have type
+  @Eq ℂ (coordinate x (↑↑j + 1) 0)
+    ((leadingBlock ρ)⁻¹.mulVec
+      ((transferRhs ρ).mulVec
+          ![coordinate x (↑↑j) 0, coordinate x (↑↑j - 1) 1, coordinate x (↑↑j - 1) 0, coordinate x (↑↑j - 2) 1] +
+        f)
+      0)
+error: NLA/MF22/SourceRecurrence.lean:84:6: Type mismatch: After simplification, term
+  congrFun h 1
+ has type
+  @Eq ℂ (coordinate x (↑↑j) 1) ((leadingBlock ρ)⁻¹.mulVec b 1)
+but is expected to have type
+  @Eq ℂ (coordinate x (↑↑j) 1)
+    ((leadingBlock ρ)⁻¹.mulVec
+      ((transferRhs ρ).mulVec
+          ![coordinate x (↑↑j) 0, coordinate x (↑↑j - 1) 1, coordinate x (↑↑j - 1) 0, coordinate x (↑↑j - 2) 1] +
+        f)
+      1)
+error: NLA/MF22/SourceRecurrence.lean:93:6: Type mismatch: After simplification, term
+  congrFun h 0
+ has type
+  @Eq ℂ (coordinate x (↑↑j + 1) 0)
+    ((leadingBlock ρ)⁻¹.mulVec
+      ((transferRhs ρ).mulVec
+          ![coordinate x (↑↑j) 0, coordinate x (↑↑j - 1) 1, coordinate x (↑↑j - 1) 0, coordinate x (↑↑j - 2) 1] +
+        f)
+      0)
+but is expected to have type
+  @Eq ℂ (coordinate x (↑↑j + 1) 0) ((leadingBlock ρ)⁻¹.mulVec b 0)
+error: NLA/MF22/SourceRecurrence.lean:94:6: Type mismatch: After simplification, term
+  congrFun h 1
+ has type
+  @Eq ℂ (coordinate x (↑↑j) 1)
+    ((leadingBlock ρ)⁻¹.mulVec
+      ((transferRhs ρ).mulVec
+          ![coordinate x (↑↑j) 0, coordinate x (↑↑j - 1) 1, coordinate x (↑↑j - 1) 0, coordinate x (↑↑j - 2) 1] +
+        f)
+      1)
+but is expected to have type
+  @Eq ℂ (coordinate x (↑↑j) 1) ((leadingBlock ρ)⁻¹.mulVec b 1)
+warning: NLA/MF22/SourceRecurrence.lean:86:8: This simp argument is unused:
+  Matrix.cons_val_three
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [sourceState, Nat.cast_add, Matrix.cons_val_two, Matrix.vecHead, Matrix.vecTail]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: NLA/MF22/SourceRecurrence.lean:96:56: Variable name `hn` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hn
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+error: NLA/MF22/SourceRecurrence.lean:111:21: #assert_trust: 'NLA.MF22.source_recurrence' depends on sorry or unrecognized axioms
+  foundational: propext, Classical.choice, Quot.sound
+  sorryAx: sorryAx
+info: NLA/MF22/SourceRecurrence.lean:112:0: 'NLA.MF22.source_recurrence' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+error: Lean exited with code 1
+✖ [3663/3663] Building NLA.MF22.TransferCertificates (5.8s)
+trace: .> LEAN_PATH=/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/Cli/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/batteries/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/Qq/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/aesop/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/proofwidgets/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/importGraph/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/plausible/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/mathlib/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/leancert/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/build/lib/lean /home/runner/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean /home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/NLA/MF22/TransferCertificates.lean -o /home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/build/lib/lean/NLA/MF22/TransferCertificates.olean -i /home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/build/lib/lean/NLA/MF22/TransferCertificates.ilean -c /home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/build/ir/NLA/MF22/TransferCertificates.c --setup /home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/build/ir/NLA/MF22/TransferCertificates.setup.json --json
+info: NLA/MF22/TransferCertificates.lean:31:84: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+error: NLA/MF22/TransferCertificates.lean:28:45: unsolved goals
+a b c d e f g h z w : ℂ
+⊢ a * f * w ^ 2 + a * w * h * z - w * b * e * ![0, -z, 0, w] (if 2 = 0 then Fin.castSucc 2 else Fin.succ 2) -
+                              z * b * ![0, -z, 0, w] (if 2 = 0 then Fin.castSucc 2 else Fin.succ 2) * g +
+                            c * ![e, f, g, h] (if 0 < 2 then 0 else 1) * ![-z, 0, w, 0] (if 1 < 2 then 1 else 2) *
+                              ![0, -z, 0, w] (if Fin.castSucc 2 < 2 then Fin.castSucc 2 else Fin.succ 2) -
+                          c * ![e, f, g, h] (if 0 < 2 then 0 else 1) *
+                              ![-z, 0, w, 0] (if Fin.castSucc 2 < 2 then Fin.castSucc 2 else Fin.succ 2) *
+                            ![0, -z, 0, w] (if 1 < 2 then 1 else 2) -
+                        c * ![-z, 0, w, 0] (if 1 < 2 then 1 else 2) * ![0, -z, 0, w] (if 0 < 2 then 0 else 1) *
+                          ![e, f, g, h] (if Fin.castSucc 2 < 2 then Fin.castSucc 2 else Fin.succ 2) -
+                      c * ![0, -z, 0, w] (if Fin.castSucc 2 < 2 then Fin.castSucc 2 else Fin.succ 2) *
+                          ![e, f, g, h] (if 1 < 2 then 1 else 2) *
+                        ![-z, 0, w, 0] (if 0 < 2 then 0 else 1) +
+                    c * ![-z, 0, w, 0] (if Fin.castSucc 2 < 2 then Fin.castSucc 2 else Fin.succ 2) *
+                        ![e, f, g, h] (if 1 < 2 then 1 else 2) *
+                      ![0, -z, 0, w] (if 0 < 2 then 0 else 1) +
+                  c * ![0, -z, 0, w] (if 1 < 2 then 1 else 2) * ![-z, 0, w, 0] (if 0 < 2 then 0 else 1) *
+                    ![e, f, g, h] (if Fin.castSucc 2 < 2 then Fin.castSucc 2 else Fin.succ 2) -
+                d * ![e, f, g, h] (if 0 < 3 then 0 else 1) * ![-z, 0, w, 0] (if 1 < 3 then 1 else 2) *
+                  ![0, -z, 0, w] (if Fin.castSucc 2 < 3 then Fin.castSucc 2 else Fin.succ 2) +
+              d * ![e, f, g, h] (if 0 < 3 then 0 else 1) *
+                  ![-z, 0, w, 0] (if Fin.castSucc 2 < 3 then Fin.castSucc 2 else Fin.succ 2) *
+                ![0, -z, 0, w] (if 1 < 3 then 1 else 2) +
+            d * ![-z, 0, w, 0] (if 1 < 3 then 1 else 2) * ![0, -z, 0, w] (if 0 < 3 then 0 else 1) *
+              ![e, f, g, h] (if Fin.castSucc 2 < 3 then Fin.castSucc 2 else Fin.succ 2) +
+          d * ![0, -z, 0, w] (if Fin.castSucc 2 < 3 then Fin.castSucc 2 else Fin.succ 2) *
+              ![e, f, g, h] (if 1 < 3 then 1 else 2) *
+            ![-z, 0, w, 0] (if 0 < 3 then 0 else 1) -
+        d * ![-z, 0, w, 0] (if Fin.castSucc 2 < 3 then Fin.castSucc 2 else Fin.succ 2) *
+            ![e, f, g, h] (if 1 < 3 then 1 else 2) *
+          ![0, -z, 0, w] (if 0 < 3 then 0 else 1) -
+      d * ![0, -z, 0, w] (if 1 < 3 then 1 else 2) * ![-z, 0, w, 0] (if 0 < 3 then 0 else 1) *
+        ![e, f, g, h] (if Fin.castSucc 2 < 3 then Fin.castSucc 2 else Fin.succ 2) =
+    a * f * w ^ 2 + a * w * h * z + f * w * z * c - w * z * b * g - w * z * e * d - w ^ 2 * b * e + h * z ^ 2 * c -
+      z ^ 2 * g * d
+error: NLA/MF22/TransferCertificates.lean:67:4: Type mismatch: After simplification, term
+  h
+ has type
+  @Eq ℂ
+    (leadingBlock ρ 0 0 *
+        ((leadingBlock ρ)⁻¹ 0 0 * ![24 * ↑ρ, -(96 * Complex.I), -coefficientF ρ, -coefficientC ρ] j +
+          (leadingBlock ρ)⁻¹ 0 1 * ![-(96 * Complex.I), -(24 * ↑ρ), -coefficientC ρ, -coefficientE ρ] j) +
+      leadingBlock ρ 0 1 *
+        ((leadingBlock ρ)⁻¹ 1 0 * ![24 * ↑ρ, -(96 * Complex.I), -coefficientF ρ, -coefficientC ρ] j +
+          (leadingBlock ρ)⁻¹ 1 1 * ![-(96 * Complex.I), -(24 * ↑ρ), -coefficientC ρ, -coefficientE ρ] j))
+    (![24 * ↑ρ, -(96 * Complex.I), -coefficientF ρ, -coefficientC ρ] j)
+but is expected to have type
+  @Eq ℂ
+    (coefficientA ρ *
+        ((leadingBlock ρ)⁻¹ 0 0 * ![24 * ↑ρ, -(96 * Complex.I), -coefficientF ρ, -coefficientC ρ] j +
+          (leadingBlock ρ)⁻¹ 0 1 * ![-(96 * Complex.I), -(24 * ↑ρ), -coefficientC ρ, -coefficientE ρ] j) +
+      coefficientB ρ *
+        ((leadingBlock ρ)⁻¹ 1 0 * ![24 * ↑ρ, -(96 * Complex.I), -coefficientF ρ, -coefficientC ρ] j +
+          (leadingBlock ρ)⁻¹ 1 1 * ![-(96 * Complex.I), -(24 * ↑ρ), -coefficientC ρ, -coefficientE ρ] j))
+    (![24 * ↑ρ, -(96 * Complex.I), -coefficientF ρ, -coefficientC ρ] j)
+error: NLA/MF22/TransferCertificates.lean:71:4: Type mismatch: After simplification, term
+  h
+ has type
+  @Eq ℂ
+    (leadingBlock ρ 1 0 *
+        ((leadingBlock ρ)⁻¹ 0 0 * ![24 * ↑ρ, -(96 * Complex.I), -coefficientF ρ, -coefficientC ρ] j +
+          (leadingBlock ρ)⁻¹ 0 1 * ![-(96 * Complex.I), -(24 * ↑ρ), -coefficientC ρ, -coefficientE ρ] j) +
+      leadingBlock ρ 1 1 *
+        ((leadingBlock ρ)⁻¹ 1 0 * ![24 * ↑ρ, -(96 * Complex.I), -coefficientF ρ, -coefficientC ρ] j +
+          (leadingBlock ρ)⁻¹ 1 1 * ![-(96 * Complex.I), -(24 * ↑ρ), -coefficientC ρ, -coefficientE ρ] j))
+    (![-(96 * Complex.I), -(24 * ↑ρ), -coefficientC ρ, -coefficientE ρ] j)
+but is expected to have type
+  @Eq ℂ
+    (coefficientB ρ *
+        ((leadingBlock ρ)⁻¹ 0 0 * ![24 * ↑ρ, -(96 * Complex.I), -coefficientF ρ, -coefficientC ρ] j +
+          (leadingBlock ρ)⁻¹ 0 1 * ![-(96 * Complex.I), -(24 * ↑ρ), -coefficientC ρ, -coefficientE ρ] j) +
+      coefficientD ρ *
+        ((leadingBlock ρ)⁻¹ 1 0 * ![24 * ↑ρ, -(96 * Complex.I), -coefficientF ρ, -coefficientC ρ] j +
+          (leadingBlock ρ)⁻¹ 1 1 * ![-(96 * Complex.I), -(24 * ↑ρ), -coefficientC ρ, -coefficientE ρ] j))
+    (![-(96 * Complex.I), -(24 * ↑ρ), -coefficientC ρ, -coefficientE ρ] j)
+warning: NLA/MF22/TransferCertificates.lean:93:65: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: NLA/MF22/TransferCertificates.lean:93:65: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: NLA/MF22/TransferCertificates.lean:104:10: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: NLA/MF22/TransferCertificates.lean:104:79: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: NLA/MF22/TransferCertificates.lean:141:84: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+error: NLA/MF22/TransferCertificates.lean:137:69: unsolved goals
+ρ : ℝ
+z : ℂ
+⊢ ((((((1 - z * ((leadingBlock ρ)⁻¹ * transferRhs ρ) 1 1 +
+                    (z * if Fin.succ 2 = 1 then 1 else 0) * ((leadingBlock ρ)⁻¹ * transferRhs ρ) 1 3 +
+                  z * if 1 = Fin.succ 2 then 1 else 0) -
+                z ^ 2 * ((leadingBlock ρ)⁻¹ * transferRhs ρ) 1 3 -
+              if Fin.succ 2 = 2 then if 2 = Fin.succ 2 then 1 - z * ((leadingBlock ρ)⁻¹ * transferRhs ρ) 1 1 else 0
+              else 0) -
+            if 2 = 1 then -(z * ((leadingBlock ρ)⁻¹ * transferRhs ρ) 1 2) + if 1 = 2 then 1 else 0 else 0) -
+          (if Fin.succ 2 = 1 then 1 else 0) * if 1 = Fin.succ 2 then 1 else 0) +
+        if 2 = Fin.succ 2 then
+          (-(z * if 1 = 2 then 1 else 0) -
+                z * ((leadingBlock ρ)⁻¹ * transferRhs ρ) 1 2 * if Fin.succ 2 = 1 then 1 else 0) +
+              z ^ 2 * ((leadingBlock ρ)⁻¹ * transferRhs ρ) 1 2 +
+            (if 1 = 2 then 1 else 0) * if Fin.succ 2 = 1 then 1 else 0
+        else 0) +
+      if Fin.succ 2 = 2 then
+        if 2 = 1 then -(z * ((leadingBlock ρ)⁻¹ * transferRhs ρ) 1 3) + if 1 = Fin.succ 2 then 1 else 0 else 0
+      else 0) =
+    1 - z * ((leadingBlock ρ)⁻¹ * transferRhs ρ) 1 1 - z ^ 2 * ((leadingBlock ρ)⁻¹ * transferRhs ρ) 1 3
+warning: NLA/MF22/TransferCertificates.lean:154:43: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: NLA/MF22/TransferCertificates.lean:155:77: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: NLA/MF22/TransferCertificates.lean:156:12: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: NLA/MF22/TransferCertificates.lean:156:81: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+error: NLA/MF22/TransferCertificates.lean:167:21: #assert_trust: 'NLA.MF22.transfer_polynomial_certificates' depends on sorry or unrecognized axioms
+  foundational: propext, Classical.choice, Quot.sound
+  sorryAx: sorryAx
+info: NLA/MF22/TransferCertificates.lean:168:0: 'NLA.MF22.transfer_polynomial_certificates' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+error: Lean exited with code 1
+Some required targets logged failures:
+- NLA.MF22.ScalarTail
+- NLA.MF22.RootCayley
+- NLA.MF22.Coprime
+- NLA.MF22.SourceRecurrence
+- NLA.MF22.TransferCertificates
+error: build failed

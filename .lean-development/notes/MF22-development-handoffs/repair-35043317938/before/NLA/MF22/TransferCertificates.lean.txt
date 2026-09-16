@@ -26,10 +26,9 @@ lemma companion_pencil_det (a b c d e f g h z w : ℂ) :
     Matrix.det !![a, b, c, d; e, f, g, h; -z, 0, w, 0; 0, -z, 0, w] =
       (a * w + c * z) * (f * w + h * z) -
         (b * w + d * z) * (e * w + g * z) := by
-  have hcast : (2 : Fin 3).castSucc = (2 : Fin 4) := rfl
   rw [Matrix.det_succ_row_zero, Fin.sum_univ_four]
   norm_num [Matrix.det_fin_three, Matrix.submatrix_apply, Fin.succAbove,
-    Fin.lt_def, Fin.ext_iff, hcast,
+    Fin.lt_def, Fin.ext_iff,
     Matrix.cons_val_two, Matrix.cons_val_three, Matrix.vecHead, Matrix.vecTail] <;> ring
 
 def leadingLift (ρ : ℝ) : Square 4 :=

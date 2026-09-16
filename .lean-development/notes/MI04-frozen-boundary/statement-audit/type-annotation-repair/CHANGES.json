@@ -1,0 +1,29 @@
+{
+  "kind": "proposed syntax-only explicit type-argument repair",
+  "source_run": 35040116376,
+  "source_commit": "32f2bd6520df49e45a782cd8813b377e8234d5cf",
+  "original_definitions_sha256": "cfd0c1e0174699e8e9127a6fb8b7ce9de3f4c7d9770292746d15c0a5bc047748",
+  "proposed_definitions_sha256": "de70e2a9dd878f1d083adacf8df6808c90c27630ffc2644a62293bf085e41715",
+  "unchanged_challenge_sha256": "ca80d090bfe9f3013d08aa86297761e1e524810881bce92776896545d6eeabf9",
+  "unchanged_numerical_sha256": "5cb5e20ffcf035b2ea303cf9edae2e85619b0f562bf302cf6df0c7a46079d1d7",
+  "edits": [
+    {
+      "line": 32,
+      "definition": "realQuadratic",
+      "from": "Matrix.toEuclideanCLM M v",
+      "to": "Matrix.toEuclideanCLM (n := \u03b9) (\ud835\udd5c := \u2102) M v"
+    },
+    {
+      "line": 85,
+      "definition": "matrixCoefficient",
+      "from": "Matrix.toEuclideanCLM X v",
+      "to": "Matrix.toEuclideanCLM (n := Fin n) (\ud835\udd5c := \u2102) X v"
+    }
+  ],
+  "held_author_package_modified": false,
+  "independent_reviews": "pending",
+  "actual_elaboration_of_proposed_bytes": "pending",
+  "proof_implementation_started": false,
+  "local_lean_or_lake_executed": false,
+  "statement_freeze": "not authorized"
+}

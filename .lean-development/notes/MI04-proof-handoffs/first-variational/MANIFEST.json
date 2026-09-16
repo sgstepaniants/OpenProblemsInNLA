@@ -1,0 +1,23 @@
+{
+  "problem_id": "MI-04",
+  "stage": "first variational proof chunk; not compiled",
+  "freeze_sha256": "c5ca666f10da44ad1c47a81b0fe81898abf3a7a9ea789e90ec9dfbc8c8cf4c6c",
+  "authorization_sha256": "7b12d322d094f0db792ba2c0aee0609d9127f67c5499750b5333b473138b1b6d",
+  "files_sha256": {
+    "NLA/MI04/Quadratic.lean": "57b0cd20fd608c1f618de16a7663de1863fd364900269bb9a5b92c5b64375ed4",
+    "NLA/MI04/Rayleigh.lean": "5fd32d7b37dfd66b6b3a30ab1d490a7fc3627536b05c8379641f84ffc95420ef"
+  },
+  "compile_targets": [
+    "NLA.MI04.Quadratic",
+    "NLA.MI04.Rayleigh"
+  ],
+  "frozen_exports_implemented": [
+    "positive_quadratic_iff",
+    "pencil_isHermitian",
+    "topValue_maximum",
+    "positive_norm_eq_top",
+    "shifted_topValue",
+    "scalar_order_iff_top"
+  ],
+  "implementation_status": "Source only. No local Lean, Lake, source compilation, Comparator acceptance or complete-problem verification. All mathematical definitions and Challenge signatures unchanged."
+}

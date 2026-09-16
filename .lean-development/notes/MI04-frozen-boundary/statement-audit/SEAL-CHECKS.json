@@ -1,0 +1,144 @@
+{
+  "reviewer": "OpenAI Codex agent /root/next_inequalities",
+  "role": "Statement author and evidence packager; independent mathematical approval is supplied by the two other agents, not this audit.",
+  "run_id": 35041873518,
+  "commit": "5d756f75d6e90f0a391e0fc239b692c656f4c318",
+  "job_id": 104623290758,
+  "all252_git_sources_independently_rehashed": true,
+  "all7_command_log_hashes_checked": true,
+  "all7_prepost_source_maps_equal": true,
+  "all10_package_revisions_match": true,
+  "archive_sha256": "a595440d5e0e07fdf54f9fd815aa7395082c1da189dfdb8fa29af60187185578",
+  "whole_run_conclusion": "failure",
+  "only_failed_command": "MF-22-modules.log",
+  "MI04_definitions_exit_code": 0,
+  "MI04_challenge_exit_code": 0,
+  "statement_warning_mapping": [
+    {
+      "declaration": "topValue_maximum",
+      "line": 19,
+      "deliberate_specification_hole": true
+    },
+    {
+      "declaration": "positive_quadratic_iff",
+      "line": 23,
+      "deliberate_specification_hole": true
+    },
+    {
+      "declaration": "positive_norm_eq_top",
+      "line": 26,
+      "deliberate_specification_hole": true
+    },
+    {
+      "declaration": "shifted_topValue",
+      "line": 29,
+      "deliberate_specification_hole": true
+    },
+    {
+      "declaration": "scalar_order_iff_top",
+      "line": 32,
+      "deliberate_specification_hole": true
+    },
+    {
+      "declaration": "unitary_topValue",
+      "line": 35,
+      "deliberate_specification_hole": true
+    },
+    {
+      "declaration": "simple_peak_sandwich",
+      "line": 39,
+      "deliberate_specification_hole": true
+    },
+    {
+      "declaration": "simple_peak_second_order",
+      "line": 49,
+      "deliberate_specification_hole": true
+    },
+    {
+      "declaration": "pencil_isHermitian",
+      "line": 57,
+      "deliberate_specification_hole": true
+    },
+    {
+      "declaration": "universal_to_extreme_symmetry",
+      "line": 60,
+      "deliberate_specification_hole": true
+    },
+    {
+      "declaration": "extreme_symmetry_scaled_unitary",
+      "line": 63,
+      "deliberate_specification_hole": true
+    },
+    {
+      "declaration": "weighted_magnitude_identity",
+      "line": 68,
+      "deliberate_specification_hole": true
+    },
+    {
+      "declaration": "offDiagonal_magnitude_symmetry",
+      "line": 74,
+      "deliberate_specification_hole": true
+    },
+    {
+      "declaration": "orthonormal_pair_symmetry",
+      "line": 78,
+      "deliberate_specification_hole": true
+    },
+    {
+      "declaration": "pair_symmetry_normal",
+      "line": 81,
+      "deliberate_specification_hole": true
+    },
+    {
+      "declaration": "normal_unitary_diagonalization",
+      "line": 84,
+      "deliberate_specification_hole": true
+    },
+    {
+      "declaration": "pair_symmetry_unitary",
+      "line": 89,
+      "deliberate_specification_hole": true
+    },
+    {
+      "declaration": "diagonal_pair_collinearity",
+      "line": 93,
+      "deliberate_specification_hole": true
+    },
+    {
+      "declaration": "collinear_values_affine",
+      "line": 97,
+      "deliberate_specification_hole": true
+    },
+    {
+      "declaration": "pair_symmetry_essentially_hermitian",
+      "line": 101,
+      "deliberate_specification_hole": true
+    },
+    {
+      "declaration": "universal_positive_block_essentially_hermitian",
+      "line": 105,
+      "deliberate_specification_hole": true
+    }
+  ],
+  "current_source_matches_actual_component": true,
+  "all10_boundary_snapshots_exact": true,
+  "definition_edits_at_freeze": false,
+  "challenge_edits_at_freeze": false,
+  "proof_exists_at_freeze": false,
+  "mathematical_verification": false,
+  "comparator_run": false,
+  "local_lean_execution": false,
+  "proof_implementation_authorized_by_this_record": false,
+  "dependency_commits": {
+    "leancert": "621a43d7cf21f87872392a01e874f2f1dbddc926",
+    "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+    "plausible": "b7eb3304aeae834b12dda98993a37f6a41f6f0bb",
+    "LeanSearchClient": "5f4d51b81cbd3f6b32b156bfad9056621a040404",
+    "importGraph": "16f02aa7642864af59f1ff0e384a015994db9118",
+    "proofwidgets": "4be2e3d5087eeb272cf5a8853b8f9dd025ef5957",
+    "aesop": "3448c0bcc5ce01b2d1546e483ec3620e32df3d0e",
+    "Qq": "92c15be17b7caf78c2ad767ec40f89052d908d81",
+    "batteries": "4488d40d070b9700d4d5a6aa342f0d40c31b2a2d",
+    "Cli": "6130a47896ce867c6a4a55373441e59e565bad0f"
+  }
+}

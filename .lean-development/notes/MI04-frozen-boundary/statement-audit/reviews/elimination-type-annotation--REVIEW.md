@@ -1,0 +1,11 @@
+# MI-04 explicit type-argument repair addendum
+
+**APPROVE**, extending the unchanged independent mathematical statement approval to proposed Definitions SHA256 `de70e2a9dd878f1d083adacf8df6808c90c27630ffc2644a62293bf085e41715`. Reviewer `/root/next_elimination` contributed no MI-04 implementation or definition edits. This is source-only approval; no successful elaboration, proof, Comparator acceptance or verified-count increase is asserted.
+
+I read the actual Linux run35040116376 diagnostics at Definitions lines32 and85, the entire proposed definitions, the exact two-hunk diff and all21 unchanged Challenge declarations. Both failures concern coercing the polymorphic bundled `Matrix.toEuclideanCLM` before its index and scalar parameters are inferred. Pinned Mathlib `Mathlib/Analysis/CStarAlgebra/Matrix.lean`, lines93–120, declares the equivalence with parameters n and scalar field and uses these same explicit arguments in its application lemmas.
+
+The only changes instantiate that existing equivalence with `(n := ι) (𝕜 := ℂ)` in `realQuadratic` and `(n := Fin n) (𝕜 := ℂ)` in `matrixCoefficient`. The aliases already specify precisely those finite complex Euclidean spaces. The operands, conjugate-linear inner-product convention, real projection, all norms, quantifiers, hypotheses, conclusions and coercion targets are unchanged. No different norm or quadratic form is introduced. An exact replacement assertion verifies that no third edit is present.
+
+All21 Challenge contracts remain byte-identical, SHA256 `ca80d090bfe9f3013d08aa86297761e1e524810881bce92776896545d6eeabf9`; the numerical dossier remains `5cb5e20ffcf035b2ea303cf9edae2e85619b0f562bf302cf6df0c7a46079d1d7`. The original approval still covers the complete universal positive-block implication in every positive dimension, singular completions and its genuine spectral-norm/Rayleigh/diagonalization bridges. INPUTS.json binds the actual diagnostic, proposed and original source, unchanged targets and primary API used in this addendum.
+
+The second independent approval and actual successful Linux elaboration of these repaired bytes must precede statement freeze and proof implementation. No local Lean/Lake, cache download, source edit, workflow dispatch, commit or push occurred in this review.

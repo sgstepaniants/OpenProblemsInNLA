@@ -1,0 +1,20 @@
+✖ [2736/2736] Building NLA.MI04.Definitions (1.9s)
+trace: .> LEAN_PATH=/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/Cli/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/batteries/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/Qq/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/aesop/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/proofwidgets/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/importGraph/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/plausible/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/mathlib/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/leancert/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/build/lib/lean /home/runner/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean /home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/NLA/MI04/Definitions.lean -o /home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/build/lib/lean/NLA/MI04/Definitions.olean -i /home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/build/lib/lean/NLA/MI04/Definitions.ilean -c /home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/build/ir/NLA/MI04/Definitions.c --setup /home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/build/ir/NLA/MI04/Definitions.setup.json --json
+error: NLA/MI04/Definitions.lean:32:14: Function expected at
+  Matrix.toEuclideanCLM
+but this term has type
+  Matrix ?m.4 ?m.4 ?m.3 ≃⋆ₐ[?m.3] EuclideanSpace ?m.3 ?m.4 →L[?m.3] EuclideanSpace ?m.3 ?m.4
+
+Note: Expected a function because this term is being applied to the argument
+  M
+error: NLA/MI04/Definitions.lean:85:46: Function expected at
+  Matrix.toEuclideanCLM
+but this term has type
+  Matrix ?m.4 ?m.4 ?m.3 ≃⋆ₐ[?m.3] EuclideanSpace ?m.3 ?m.4 →L[?m.3] EuclideanSpace ?m.3 ?m.4
+
+Note: Expected a function because this term is being applied to the argument
+  X
+error: Lean exited with code 1
+Some required targets logged failures:
+- NLA.MI04.Definitions
+error: build failed
