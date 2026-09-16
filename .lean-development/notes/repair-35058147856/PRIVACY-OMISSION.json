@@ -1,0 +1,16 @@
+{
+  "scope": "public reference copy only; no active Lean source excluded",
+  "reason": "Two upstream contributor contact strings; user privacy preference",
+  "omitted_public_path": "IE-13/repair-35058147856/primary/src/Init/Prelude.lean.txt",
+  "unchanged_private_reference_sha256": "56de5780adc4358372fa9cfac270a70f2d03fd4f213a373aea4365483b31a544",
+  "original_Git_source": {
+    "repository": "leanprover/lean4",
+    "commit": "819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+    "path": "src/Init/Prelude.lean",
+    "git_blob": "11abbc2c3c4fe6ade835ad3ab6c241385f25f918",
+    "sha256": "56de5780adc4358372fa9cfac270a70f2d03fd4f213a373aea4365483b31a544"
+  },
+  "manifest_interpretation": "The original author packet manifest binds the complete private reference packet. The public notes copy explicitly omits this one raw file; its hash and Git identity remain recorded. It is not a complete byte-identical copy of that packet.",
+  "original_packet_modified": false,
+  "active_proof_or_statement_modified": false
+}

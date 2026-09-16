@@ -1,0 +1,31 @@
+--- before/NLA/MI04/BasisTransport.lean
++++ after/NLA/MI04/BasisTransport.lean
+@@ -45,7 +45,7 @@
+   intro x hx y hy
+   simp only [Set.mem_insert_iff, Set.mem_singleton_iff] at hx hy
+   rcases hx with rfl | rfl <;> rcases hy with rfl | rfl <;>
+-    simp [huu, hvv, huv, hvu, hne, Ne.symm hne]
++    simp [hu, hv, huu, hvv, huv, hvu, hne, Ne.symm hne]
+ 
+ def basisUnitary {n : ℕ} (B : OrthonormalBasis (Fin n) ℂ (CVector (Fin n))) :
+     Matrix.unitaryGroup (Fin n) ℂ :=
+@@ -54,7 +54,7 @@
+ 
+ lemma basisUnitary_entry {n : ℕ} (B : OrthonormalBasis (Fin n) ℂ (CVector (Fin n)))
+     (i j : Fin n) : (basisUnitary B : Square n) i j = B j i := by
+-  simp [basisUnitary, Basis.toMatrix_apply, OrthonormalBasis.coe_toBasis_repr_apply,
++  simp [basisUnitary, Module.Basis.toMatrix_apply, OrthonormalBasis.coe_toBasis_repr_apply,
+     EuclideanSpace.basisFun_repr]
+ 
+ lemma basisUnitary_action {n : ℕ} (B : OrthonormalBasis (Fin n) ℂ (CVector (Fin n)))
+@@ -77,8 +77,8 @@
+ lemma unitarySimilarity_entry_basis {n : ℕ} (X : Square n)
+     (B : OrthonormalBasis (Fin n) ℂ (CVector (Fin n))) (i j : Fin n) :
+     unitarySimilarity X (basisUnitary B) i j = matrixCoefficient X (B i) (B j) := by
+-  rw [← matrixCoefficient_coordinateUnits, matrixCoefficient_unitarySimilarity,
+-    basisUnitary_action, basisUnitary_action]
++  rw [← matrixCoefficient_coordinateUnits (unitarySimilarity X (basisUnitary B)) i j,
++    matrixCoefficient_unitarySimilarity, basisUnitary_action, basisUnitary_action]
+ 
+ theorem orthonormal_pair_symmetry {n : ℕ} (hn : 1 ≤ n) (X : Square n)
+     (hX : ExtremeSymmetry X) : PairMagnitudeSymmetry X := by

@@ -1,0 +1,36 @@
+{
+  "Git_PR_or_count_change": false,
+  "actual_Comparator_for_repair": false,
+  "actual_repaired_compilation": false,
+  "all10_frozen_inputs_unchanged": true,
+  "all238_headers_unchanged": true,
+  "all27_before_match_actual_Git_receipt_and_previously_approved_sources": true,
+  "all27_current_after_match_author_packet": true,
+  "all28_public_contracts_match_frozen_Challenge": true,
+  "all6_primary_API_sources_checked": true,
+  "author_packet_manifest_sha256": "163dfd93d2cc712f3059fcad6fd2c3a4c574370ca58698d69c70682c765d0b4f",
+  "full3_current_changed_files_and_actual_full_IE13_log_read": true,
+  "imports_and_declaration_scope_unchanged": true,
+  "local_Lean_or_Lake": false,
+  "other24_sources_unchanged": true,
+  "patch_sha256": "a30559d66cbc60a5ffda2c8e667db9ecadff91e5a14bb46efab1a939376433b9",
+  "reviewer": "/root/mi04_independent_referee",
+  "seven_existing_proof_bodies_changed": {
+    "NLA/IE13/LateColumn.lean": [
+      "oldRows_subset_frontRows",
+      "front_not_old_label",
+      "late_column_zero_at"
+    ],
+    "NLA/IE13/WitnessEntries.lean": [
+      "early_original_upper_support"
+    ],
+    "NLA/IE13/WitnessForward.lean": [
+      "forward_window",
+      "forward_lower_action",
+      "targetFactorColumn_original"
+    ]
+  },
+  "source_edits": false,
+  "strict_canonical_acceptance": false,
+  "verdict": "Approve exact observed-error source repairs for fresh compilation; repaired runtime pending"
+}

@@ -1,0 +1,83 @@
+--- before/NLA/IE13/LateColumn.lean
++++ after/NLA/IE13/LateColumn.lean
+@@ -17,6 +17,7 @@
+ 
+ lemma oldRows_subset_frontRows {n : ℕ} (p k : ℕ) (path : PivotPath n) :
+     oldRows p path k ⊆ frontRows p path k := by
++  classical
+   intro i hi
+   obtain ⟨ha, hlt⟩ := (Finset.mem_filter.mp hi).2
+   simp only [frontRows, Finset.mem_filter, Finset.mem_univ, true_and]
+@@ -25,6 +26,7 @@
+ lemma front_not_old_label {n : ℕ} (p k : ℕ) (path : PivotPath n) (i : Fin n)
+     (hi : i ∈ frontRows p path k) (hnot : i ∉ oldRows p path k) :
+     i.val = k + p := by
++  classical
+   obtain ⟨ha, hle⟩ := (Finset.mem_filter.mp hi).2
+   have hnlt : ¬i.val < k + p := by
+     intro hlt
+@@ -44,6 +46,7 @@
+     (path : PivotPath n) (hpath : AdmissiblePath A path) (k : ℕ) (j : Fin n)
+     (hlate : k + p + q ≤ j.val) :
+     ∀ i ∈ oldRows p path k, originalRowStage A path k i j = 0 := by
++  classical
+   revert hlate
+   induction k with
+   | zero =>
+--- before/NLA/IE13/WitnessEntries.lean
++++ after/NLA/IE13/WitnessEntries.lean
+@@ -41,7 +41,8 @@
+     apply lower_rational_above p q
+     change (witnessFactorIndex p q i).val < j.val
+     unfold witnessFactorIndex
+-    split_ifs <;> simp only [Fin.val_mk] <;> omega
++    split_ifs <;> try simp only [Fin.val_mk]
++    all_goals omega
+ 
+ lemma witness_rational_banded (p q : ℕ) (i j : Fin (witnessOrder p q))
+     (hband : j.val + p < i.val ∨ i.val + q < j.val) : witnessRational p q i j = 0 := by
+--- before/NLA/IE13/WitnessForward.lean
++++ after/NLA/IE13/WitnessForward.lean
+@@ -77,7 +77,7 @@
+     by_cases he : s.val + 1 = i
+     · have hsi : s.val < i := by omega
+       have hz : i - 1 - s.val = 0 := by omega
+-      simp only [if_pos hsi, hz, forwardRational, if_pos rfl,
++      simp only [if_pos hsi, hz, forwardRational, ite_true,
+         bandSequence_zero, Nat.cast_zero, if_pos he, zero_add]
+     · by_cases hsi : s.val < i
+       · have hn : i - 1 - s.val ≠ 0 := by omega
+@@ -110,7 +110,7 @@
+       witnessLowerRational p q i r * forwardRational p r.val) = targetFactorColumn p i.val := by
+   rw [lower_rational_action, lower_window_reindex]
+   by_cases hi : i.val = 0
+-  · simp only [hi, forwardRational, targetFactorColumn, if_pos rfl,
++  · simp only [hi, forwardRational, targetFactorColumn, ite_true,
+       Nat.not_lt_zero, if_false, Finset.sum_const_zero, sub_zero]
+   · have hip : 0 < i.val := Nat.pos_of_ne_zero hi
+     rw [forward_window p i.val hip, forwardRational, if_neg hi,
+@@ -126,9 +126,21 @@
+ 
+ lemma targetFactorColumn_original (p q : ℕ) (i : Fin (witnessOrder p q)) :
+     targetFactorColumn p (witnessFactorIndex p q i).val = if p ≤ i.val then 1 else 0 := by
+-  unfold witnessFactorIndex
+-  split_ifs <;> simp only [Fin.val_mk, targetFactorColumn]
+-  all_goals split_ifs <;> try rfl <;> omega
++  by_cases hi : i.val < p
++  · have hne : i.val + 1 ≠ 0 := by omega
++    have hle : i.val + 1 ≤ p := by omega
++    have hnot : ¬p ≤ i.val := by omega
++    simp only [witnessFactorIndex, dif_pos hi, Fin.val_mk,
++      targetFactorColumn, if_neg hne, if_pos hle, if_neg hnot]
++  · by_cases he : i.val = p
++    · have hle : p ≤ i.val := by omega
++      simp only [witnessFactorIndex, dif_neg hi, if_pos he, Fin.val_mk,
++        targetFactorColumn, ite_true, if_pos hle]
++    · have hne : i.val ≠ 0 := by omega
++      have hnot : ¬i.val ≤ p := by omega
++      have hle : p ≤ i.val := by omega
++      simp only [witnessFactorIndex, dif_neg hi, if_neg he,
++        targetFactorColumn, if_neg hne, if_neg hnot, if_pos hle]
+ 
+ lemma forwardRational_pos (p i : ℕ) : 0 < forwardRational p i := by
+   by_cases hi : i = 0

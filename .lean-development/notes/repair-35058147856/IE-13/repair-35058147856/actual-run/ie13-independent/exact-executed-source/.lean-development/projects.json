@@ -1,0 +1,16 @@
+[
+  {
+    "id": "MI-04",
+    "modules": [
+      "NLA.MI04.Complete"
+    ],
+    "challenge": "Challenges/MI04.lean"
+  },
+  {
+    "id": "IE-13",
+    "modules": [
+      "NLA.IE13.Complete"
+    ],
+    "challenge": "Challenges/IE13.lean"
+  }
+]

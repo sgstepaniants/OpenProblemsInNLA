@@ -1,0 +1,36 @@
+{
+  "source_repository": "https://github.com/ajt60gaibb/OpenProblemsInNLA",
+  "source_commit": "ce47b5630bf3680d9211131c3a43825b022c139a",
+  "canonical_path": "linear-systems-and-elimination/IE-13/README.md",
+  "sources": [
+    {
+      "commit": "ce47b5630bf3680d9211131c3a43825b022c139a",
+      "git_path": "linear-systems-and-elimination/IE-13/README.md",
+      "git_blob": "2c67a16dca9856ecef8291c42a3a77ba09cb2829",
+      "retained_path": "source/linear-systems-and-elimination/IE-13/README.md",
+      "sha256": "2977da8c5a1144e8bec75b77eeb6df1ed9ac49ffc3ab741a3f278e6310088d6b",
+      "bytes": 4764
+    },
+    {
+      "commit": "ce47b5630bf3680d9211131c3a43825b022c139a",
+      "git_path": "references/colbrook-recovered-2026-09-11/manuscripts/IE-13.tex",
+      "git_blob": "becb7962f0bb6354f86174a3f4d4f51019cec10c",
+      "retained_path": "source/references/colbrook-recovered-2026-09-11/manuscripts/IE-13.tex",
+      "sha256": "cc2fd88017d3f372cd41682d3ea06b390786a39cc0552267c77a3211250b485a",
+      "bytes": 8413
+    },
+    {
+      "commit": "ce47b5630bf3680d9211131c3a43825b022c139a",
+      "git_path": "references/colbrook-recovered-2026-09-11/verification/reviews/IE-13-review.md",
+      "git_blob": "9c30a834a9fefb07b8934f3654d788eb2abebfc3",
+      "retained_path": "source/references/colbrook-recovered-2026-09-11/verification/reviews/IE-13-review.md",
+      "sha256": "8889beae66533947ac1828b3abd1aafb1c11a431d1dd2cf23ad91665007a611e",
+      "bytes": 10562
+    }
+  ],
+  "mathematical_author": "Matthew J. Colbrook",
+  "mathematical_affiliation": "Department of Applied Mathematics and Theoretical Physics, University of Cambridge",
+  "formalization_author": "George Stepaniants",
+  "formalization_affiliation": "Department of Computing and Mathematical Sciences, California Institute of Technology, Pasadena, California, USA",
+  "stage": "Statement draft only; no proof implementation or approval"
+}

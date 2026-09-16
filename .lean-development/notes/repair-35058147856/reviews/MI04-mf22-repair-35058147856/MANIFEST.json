@@ -1,0 +1,16 @@
+{
+  "kind": "SHA256 inventory of independent repair review",
+  "files": {
+    "ALL-21-SOURCE-BINDINGS.json": "b3cd83285908ac69694590d90d7ebc82e0223b7dc0df4f7cd5f60264064f50ce",
+    "BasisTransport.after.lean.txt": "b0425ada4b3e2a58d0280929236f92e3a1017c2216f5d09dc8f52163834e8189",
+    "BasisTransport.before.lean.txt": "a3bd7f091903150bcf01c981a5a1ae8aae7bc8c31ea00f4b601aa53636c9341e",
+    "CHANGE.patch": "7b9282667a56c7f66a4ca9dca1719e5291eb71d23e53f757b37b0a93653b6f7f",
+    "CHECKS.json": "2c139287b69296a2f2c4164a23773b75284b0d4ff009aaabd2e5149e2713b29b",
+    "FROZEN-10-BINDINGS.json": "805beae5b5c3fbc87cf93e1578cc8354b4c927b876b72ee368bed6c2087a0009",
+    "OBSERVED-BASISTRANSPORT-DIAGNOSTICS.txt": "9f861fee741f9b0fa18900a7bf899164d7313ef6f9cd0852d832836d30b43e0d",
+    "OBSERVED-FAILURE-BINDINGS.json": "efd7826fffe73d326f4ad612a82dc4703415be5fbf434a48b56569f29183b684",
+    "PINNED-PRIMARY-APIS.json": "6e74d3d319315df944f2c833848a6b4bb3817c8e41132f9af1d072e3972af542",
+    "REVIEW.md": "109f4aad16905e93341a65f18718deb47d585abe8e706fd4bcb326b4516b760d",
+    "check_repair.py": "dc8bc1e2fcfcd31057a1bf534a865341b51966ac75989b0d4fa727b82da42df0"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "all10_frozen_inputs_unchanged": true,
+  "all20_other_sources_unchanged": true,
+  "all21_public_contracts_unchanged": true,
+  "all21_sources_Git_and_receipt_bound": true,
+  "all7_postmaps_identical": true,
+  "all9_BasisTransport_headers_unchanged": true,
+  "before_closure_sha256": "3f553e705896b765090592e3a637fb202cf165bea9dbc01f437d6507298ec3c7",
+  "clarification_manifest_sha256": "226086bc10535220a471899c1fc1b08960d3d7d31b6758e8136c2feae191926c",
+  "count_change": false,
+  "current_closure_sha256": "0739d4df0299ae9be0f03aa20c71e9c96f8875a8384bc39897dc497677e9d81c",
+  "exact_three_replacements_only": true,
+  "fresh_development_and_strict_canonical_run": "pending",
+  "full_prior_review_and_approved_repairs_preserved": true,
+  "local_Lean_or_Lake": false,
+  "provenance_note": "Stale inherited correction prose was identified and resolved by append-only metadata clarification. The three changed metadata fields and all unchanged active/frozen maps were independently checked.",
+  "repair_manifest_sha256": "38c1c42a69357371aa0558da4c7c36828cc75fba7646720cb795a4b80aff6b59",
+  "reviewer": "/root/mi04_independent_referee",
+  "source_approval": true,
+  "source_or_Git_edits": false,
+  "superseded_metadata_closure_sha256": "0b3840f310be1d68f957d10862e721f960dcf0f0bd0420c8a38c1f0ca9c82099",
+  "verdict": "Approve exact three proof-body changes for next compilation; not runtime acceptance"
+}

@@ -1,0 +1,40 @@
+{
+  "reviewer": "/root/mf22_publication_referee",
+  "sealed_utc": "2026-09-16T05:26:46.830523+00:00",
+  "verdict": "APPROVE bounded BasisTransport proof-body repair and carry forward unchanged complete mathematical source approval; fresh Linux verification pending",
+  "current_corrected_closure_sha256": "0739d4df0299ae9be0f03aa20c71e9c96f8875a8384bc39897dc497677e9d81c",
+  "current_provenance_manifest_sha256": "226086bc10535220a471899c1fc1b08960d3d7d31b6758e8136c2feae191926c",
+  "original_repair_packet_manifest_sha256": "38c1c42a69357371aa0558da4c7c36828cc75fba7646720cb795a4b80aff6b59",
+  "source_predecessor": "3f553e705896b765090592e3a637fb202cf165bea9dbc01f437d6507298ec3c7",
+  "metadata_superseded_closure": "0b3840f310be1d68f957d10862e721f960dcf0f0bd0420c8a38c1f0ca9c82099",
+  "all21_sources_bound_to_prior_complete_review_and_failed_receipt_Git": true,
+  "all20_other_sources_unchanged": true,
+  "all10_frozen_inputs_unchanged": true,
+  "BasisTransport_before_sha256": "a3bd7f091903150bcf01c981a5a1ae8aae7bc8c31ea00f4b601aa53636c9341e",
+  "BasisTransport_after_sha256": "b0425ada4b3e2a58d0280929236f92e3a1017c2216f5d09dc8f52163834e8189",
+  "BasisTransport_current_file_read_in_full": true,
+  "full_file_lines": 99,
+  "change_is_exactly_three_proof_body_substitutions": true,
+  "all_declaration_headers_hypotheses_conclusions_unchanged": true,
+  "exact_pinned_primary_API_sources_authenticated": {
+    "Mathlib/Analysis/InnerProductSpace/Orthonormal.lean": "8f6d3904a8b6e011cb5f2aea532ce0c1dec796fc4f8292ff59c351fd960c096c",
+    "Mathlib/Analysis/InnerProductSpace/PiL2.lean": "1f9827b2db67213c725a2dcc3fec52a87772966d1fbd3fc6857a019dbd7a6053",
+    "Mathlib/LinearAlgebra/Matrix/Basis.lean": "6b4bba5144422e5082911e36726f35d6252cc64d436d3b8bc0183f053c889655"
+  },
+  "review_reasoning": [
+    "hu and hv are already quantified assumptions. Including them in simp closes the observed self-pair unit-norm goals; mixed pairs still use zero inner products and distinctness.",
+    "Pinned Mathlib declares toMatrix_apply in namespace Module.Basis; standard orthonormal-basis representation reduces the change-of-basis matrix entry to B j i.",
+    "Instantiating the reverse coefficient equality with the actual unitary-similarity matrix and i,j avoids the observed metavariable rewrite pattern and leaves the same matrix coefficient equality.",
+    "Orthonormal extension, actual unitary transport and nonnegative squared-norm equality remain the full-dimensional proof; no added dimension, coordinate, or mathematical premise."
+  ],
+  "actual_run35058147856": "failed at BasisTransport; original trust guard correctly rejected sorryAx",
+  "current_runtime": "pending; source approval is not a Lean/Comparator execution",
+  "local_Lean_or_Lake_or_Comparator": false,
+  "proof_edits": false,
+  "commit_push_PR_or_count_change": false,
+  "remaining_gates": [
+    "Complete repaired-source Linux build",
+    "All21 Comparator/default-kernel/axiom checks and required controls",
+    "Final actual-run review and publication metadata/retained-source checks"
+  ]
+}

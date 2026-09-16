@@ -1,0 +1,15 @@
+{
+  "metadata_only": true,
+  "superseded_repair_closure": "0b3840f310be1d68f957d10862e721f960dcf0f0bd0420c8a38c1f0ca9c82099",
+  "actual_proof_predecessor_closure": "3f553e705896b765090592e3a637fb202cf165bea9dbc01f437d6507298ec3c7",
+  "changed_metadata_fields": [
+    "supersedes_closure_sha256",
+    "previous_source_closure_sha256",
+    "provenance_correction"
+  ],
+  "all21_current_sources_and10frozen_hashes_unchanged_from_superseded_record": true,
+  "proof_body_change_from_actual_failed_run": "BasisTransport only, three bounded edits in original repair packet",
+  "actual_failed_run": 35058147856,
+  "actual_failed_commit": "d36c8b357347a78781e854328a95fd5e4adce852",
+  "review_and_fresh_runtime": "pending"
+}

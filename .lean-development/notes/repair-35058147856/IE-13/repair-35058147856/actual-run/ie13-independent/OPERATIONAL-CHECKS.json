@@ -1,0 +1,432 @@
+{
+  "reviewer": "/root/ie13_continuation",
+  "run": 35058147856,
+  "actual_commit": "d36c8b357347a78781e854328a95fd5e4adce852",
+  "actual_run_conclusion": "failure",
+  "actual_job": 104672556977,
+  "all1633_tracked_inputs_exactly_Git_and_receipt_bound": true,
+  "all7_command_pre_post_source_maps_identical": true,
+  "all7_command_logs_sha256_and_raw_job_stream_bound": true,
+  "log_payload_matches": [
+    {
+      "log": "lean-version.log",
+      "nonempty_payload_lines_matched_in_order": 1
+    },
+    {
+      "log": "dependencies.log",
+      "nonempty_payload_lines_matched_in_order": 20
+    },
+    {
+      "log": "mathlib-cache.log",
+      "nonempty_payload_lines_matched_in_order": 95
+    },
+    {
+      "log": "MI-04-modules.log",
+      "nonempty_payload_lines_matched_in_order": 407
+    },
+    {
+      "log": "MI-04-challenge.log",
+      "nonempty_payload_lines_matched_in_order": 21
+    },
+    {
+      "log": "IE-13-modules.log",
+      "nonempty_payload_lines_matched_in_order": 300
+    },
+    {
+      "log": "IE-13-challenge.log",
+      "nonempty_payload_lines_matched_in_order": 28
+    }
+  ],
+  "dependencies_exactly_match_pinned_manifest": true,
+  "platform": "Linux-6.17.0-1022-azure-x86_64-with-glibc2.39",
+  "uid": 1001,
+  "artifact_id": 10431791787,
+  "artifact_sha256": "152e13727cdf2ba44d21c2722c6e9799bba7fb83a1f23bc58557c797470f741d",
+  "receipt_sha256": "f4fba693d4077a75212b742ab7d4a9010bb64bc55dbbdb4fb8604b0d104a73c6",
+  "shared_audit_sha256": "75c20b969041d8973deafb6abc8900e250f213ba403f6a408c162f9997078b1c",
+  "shared_auditor_label_note": "The reused auditor emits a fixed /root reviewer label. It was run by this child agent and is not a separate claim of root manual review.",
+  "outcomes": {
+    "MI-04": {
+      "module_build_exit_code": 1,
+      "modules_reported_built": [
+        "NLA.MI04.BlockSymmetry",
+        "NLA.MI04.Coordinates",
+        "NLA.MI04.Correction",
+        "NLA.MI04.Definitions",
+        "NLA.MI04.Limit",
+        "NLA.MI04.Probes",
+        "NLA.MI04.Punctured",
+        "NLA.MI04.Quadratic",
+        "NLA.MI04.Rayleigh",
+        "NLA.MI04.ScalarGeometry",
+        "NLA.MI04.ScaledSymmetry",
+        "NLA.MI04.Unitary",
+        "NLA.MI04.UpperBound",
+        "NLA.MI04.WeightedProbes"
+      ],
+      "modules_reported_failed": [
+        "NLA.MI04.BasisTransport"
+      ],
+      "all_error_lines": [
+        "error: NLA/MI04/BasisTransport.lean:35:88: unsolved goals",
+        "error: NLA/MI04/BasisTransport.lean:57:22: Unknown identifier `Basis.toMatrix_apply`",
+        "error: NLA/MI04/BasisTransport.lean:56:63: unsolved goals",
+        "error: NLA/MI04/BasisTransport.lean:80:6: Invalid rewrite argument: The pattern to be substituted is a metavariable (`?X ?i ?j`) in this equality",
+        "error: NLA/MI04/BasisTransport.lean:97:21: #assert_trust: 'NLA.MI04.orthonormal_pair_symmetry' depends on sorry or unrecognized axioms",
+        "error: Lean exited with code 1",
+        "error: build failed"
+      ],
+      "public_expected_names": [
+        "NLA.MI04.topValue_maximum",
+        "NLA.MI04.positive_quadratic_iff",
+        "NLA.MI04.positive_norm_eq_top",
+        "NLA.MI04.shifted_topValue",
+        "NLA.MI04.scalar_order_iff_top",
+        "NLA.MI04.unitary_topValue",
+        "NLA.MI04.simple_peak_sandwich",
+        "NLA.MI04.simple_peak_second_order",
+        "NLA.MI04.pencil_isHermitian",
+        "NLA.MI04.universal_to_extreme_symmetry",
+        "NLA.MI04.extreme_symmetry_scaled_unitary",
+        "NLA.MI04.weighted_magnitude_identity",
+        "NLA.MI04.offDiagonal_magnitude_symmetry",
+        "NLA.MI04.orthonormal_pair_symmetry",
+        "NLA.MI04.pair_symmetry_normal",
+        "NLA.MI04.normal_unitary_diagonalization",
+        "NLA.MI04.pair_symmetry_unitary",
+        "NLA.MI04.diagonal_pair_collinearity",
+        "NLA.MI04.collinear_values_affine",
+        "NLA.MI04.pair_symmetry_essentially_hermitian",
+        "NLA.MI04.universal_positive_block_essentially_hermitian"
+      ],
+      "public_axiom_reports_actually_printed": {
+        "NLA.MI04.topValue_maximum": [
+          [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        ],
+        "NLA.MI04.positive_quadratic_iff": [
+          [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        ],
+        "NLA.MI04.positive_norm_eq_top": [
+          [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        ],
+        "NLA.MI04.shifted_topValue": [
+          [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        ],
+        "NLA.MI04.scalar_order_iff_top": [
+          [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        ],
+        "NLA.MI04.unitary_topValue": [
+          [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        ],
+        "NLA.MI04.simple_peak_sandwich": [
+          [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        ],
+        "NLA.MI04.simple_peak_second_order": [
+          [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        ],
+        "NLA.MI04.pencil_isHermitian": [
+          [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        ],
+        "NLA.MI04.universal_to_extreme_symmetry": [
+          [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        ],
+        "NLA.MI04.extreme_symmetry_scaled_unitary": [
+          [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        ],
+        "NLA.MI04.weighted_magnitude_identity": [
+          [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        ],
+        "NLA.MI04.offDiagonal_magnitude_symmetry": [
+          [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        ],
+        "NLA.MI04.orthonormal_pair_symmetry": [
+          [
+            "propext",
+            "sorryAx",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        ],
+        "NLA.MI04.pair_symmetry_unitary": [
+          [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        ],
+        "NLA.MI04.collinear_values_affine": [
+          [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        ]
+      },
+      "challenge_exit_code": 0,
+      "challenge_deliberate_holes": 21,
+      "challenge_errors": [],
+      "strict_whole_problem_verification": false,
+      "Comparator_executed": false
+    },
+    "IE-13": {
+      "module_build_exit_code": 1,
+      "modules_reported_built": [
+        "NLA.IE13.Basic",
+        "NLA.IE13.Definitions",
+        "NLA.IE13.Envelope",
+        "NLA.IE13.Front",
+        "NLA.IE13.GEPP",
+        "NLA.IE13.Maxima",
+        "NLA.IE13.Origin",
+        "NLA.IE13.Prefix",
+        "NLA.IE13.Recurrence",
+        "NLA.IE13.SubsetAlgebra",
+        "NLA.IE13.TailAlgebra",
+        "NLA.IE13.WitnessColumns",
+        "NLA.IE13.WitnessOrder",
+        "NLA.IE13.WitnessScale"
+      ],
+      "modules_reported_failed": [
+        "NLA.IE13.LateColumn",
+        "NLA.IE13.WitnessEntries",
+        "NLA.IE13.WitnessForward"
+      ],
+      "all_error_lines": [
+        "error: NLA/IE13/WitnessEntries.lean:44:18: `simp` made no progress",
+        "error: NLA/IE13/WitnessEntries.lean:127:21: #assert_trust: 'NLA.IE13.witness_structure' depends on sorry or unrecognized axioms",
+        "error: Lean exited with code 1",
+        "error: NLA/IE13/WitnessForward.lean:78:4: unsolved goals",
+        "error: NLA/IE13/WitnessForward.lean:113:2: unsolved goals",
+        "error: NLA/IE13/WitnessForward.lean:128:88: unsolved goals",
+        "error: NLA/IE13/WitnessForward.lean:141:21: #assert_trust: 'NLA.IE13.forward_lower_action' depends on sorry or unrecognized axioms",
+        "error: Lean exited with code 1",
+        "error: NLA/IE13/LateColumn.lean:21:23: failed to synthesize instance of type class",
+        "error: NLA/IE13/LateColumn.lean:28:23: failed to synthesize instance of type class",
+        "error: NLA/IE13/LateColumn.lean:51:18: failed to synthesize instance of type class",
+        "error: NLA/IE13/LateColumn.lean:74:21: failed to synthesize instance of type class",
+        "error: Lean exited with code 1",
+        "error: build failed"
+      ],
+      "public_expected_names": [
+        "NLA.IE13.gepp_model_semantics",
+        "NLA.IE13.entryMax_semantics",
+        "NLA.IE13.activeMax_semantics",
+        "NLA.IE13.growth_semantics",
+        "NLA.IE13.admissiblePath_exists",
+        "NLA.IE13.admissiblePrefix_extension",
+        "NLA.IE13.originalRow_update",
+        "NLA.IE13.multiplier_bounds",
+        "NLA.IE13.front_structure",
+        "NLA.IE13.front_transition",
+        "NLA.IE13.recurrence_history",
+        "NLA.IE13.sequence_recurrence",
+        "NLA.IE13.sequence_properties",
+        "NLA.IE13.envelope_recurrence",
+        "NLA.IE13.late_column_zero",
+        "NLA.IE13.column_front_bound",
+        "NLA.IE13.all_active_entries_bound",
+        "NLA.IE13.zero_lower_bandwidth",
+        "NLA.IE13.universal_growth",
+        "NLA.IE13.witness_scale",
+        "NLA.IE13.witness_structure",
+        "NLA.IE13.witness_prefix_order",
+        "NLA.IE13.witness_prefix_admissible",
+        "NLA.IE13.witness_target_value",
+        "NLA.IE13.witness_nonsingular",
+        "NLA.IE13.witness_attainment",
+        "NLA.IE13.identity_attainment",
+        "NLA.IE13.sharp_growth"
+      ],
+      "public_axiom_reports_actually_printed": {
+        "NLA.IE13.gepp_model_semantics": [
+          [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        ],
+        "NLA.IE13.entryMax_semantics": [
+          [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        ],
+        "NLA.IE13.activeMax_semantics": [
+          [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        ],
+        "NLA.IE13.growth_semantics": [
+          [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        ],
+        "NLA.IE13.admissiblePath_exists": [
+          [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        ],
+        "NLA.IE13.admissiblePrefix_extension": [
+          [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        ],
+        "NLA.IE13.originalRow_update": [
+          [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        ],
+        "NLA.IE13.multiplier_bounds": [
+          [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        ],
+        "NLA.IE13.front_structure": [
+          [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        ],
+        "NLA.IE13.front_transition": [
+          [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        ],
+        "NLA.IE13.recurrence_history": [
+          [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        ],
+        "NLA.IE13.sequence_recurrence": [
+          [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        ],
+        "NLA.IE13.sequence_properties": [
+          [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        ],
+        "NLA.IE13.envelope_recurrence": [
+          [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        ],
+        "NLA.IE13.late_column_zero": [
+          [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        ],
+        "NLA.IE13.witness_scale": [
+          [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        ],
+        "NLA.IE13.witness_structure": [
+          [
+            "propext",
+            "sorryAx",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        ],
+        "NLA.IE13.witness_prefix_order": [
+          [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        ]
+      },
+      "challenge_exit_code": 0,
+      "challenge_deliberate_holes": 28,
+      "challenge_errors": [],
+      "strict_whole_problem_verification": false,
+      "Comparator_executed": false
+    }
+  },
+  "local_Lean_or_Lake": false,
+  "source_changes": false,
+  "new_dispatch_Git_count_or_publication": false,
+  "scope": "Authenticated development compilation and statement elaboration only. It does not execute strict default-kernel replay or Comparator. Deliberate Challenge holes are specifications; printed partial helper results do not establish complete problem acceptance."
+}

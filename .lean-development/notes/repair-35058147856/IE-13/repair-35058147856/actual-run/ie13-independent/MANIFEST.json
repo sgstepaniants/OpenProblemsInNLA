@@ -1,0 +1,32 @@
+{
+  "scope": "Independent operational authentication only; actual complete builds failed. No local Lean or proof acceptance.",
+  "reviewer": "/root/ie13_continuation",
+  "files": {
+    "ALL-1633-INPUT-BINDINGS.json": "039bcb0a8a8faec13999f76625912e0bf72b0a84b814038ac15a713a2858b19a",
+    "OPERATIONAL-CHECKS.json": "7079d71227dbf65830a0c7b7f119cdf710c6e5a268fe5204627fcc36d5fcd476",
+    "REVIEW.md": "78b5da9339a1458c921434e0908f4961ff0d0922c484dda68a41d154cd53a8d0",
+    "audit_operational.py": "2e40e7ab7ffdde562d279c06f95ce143e45ee606e476a1fce52812c4842e9da8",
+    "exact-executed-source/.github/workflows/lean-development.yml": "f59f22f64198fe72f2566a33373e40171102445b3fbdd787f0b9737cc36854fe",
+    "exact-executed-source/.lean-development/check.py": "205c49b87d512199a33030338a17fd0c7df6a85dc2fdbb7774a572c8eff2c486",
+    "exact-executed-source/.lean-development/projects.json": "9da3d0cb4597ce574b9da2f43522827464cf2293534cb50a6bac2b6e780700af",
+    "used-tools/audit_development_run.py": "35b530fd82c1a0f7a535c3dea4b78cb3792fe7fcd4773ec52032ea45185f449f",
+    "used-tools/fetch_repository_run.py": "72955012966fddf41e30d47b3248729610099e8b7ffcafb022a198fb74215676"
+  },
+  "actual_run_evidence_relative_to_parent": {
+    "FETCH-IDENTITY.json": "4d26186e864fb0c1aa7d3f52f042ed92b82638a2827da51c01ade9661d7639d7",
+    "ROOT-AUDIT.json": "75c20b969041d8973deafb6abc8900e250f213ba403f6a408c162f9997078b1c",
+    "artifacts/lean-development-statements/IE-13-challenge.log": "4d18ca0aa8287a7c7378aa0a463038d4263f3e5426a300b44d083404ca3cbbe5",
+    "artifacts/lean-development-statements/IE-13-modules.log": "eec7e1da5b07054feb832f0002a975e79883f39e558787483038cec1e45a6d20",
+    "artifacts/lean-development-statements/MI-04-challenge.log": "af7bc36d34f4804a63715e558f243fa874d0fb9cd508aae388f8f4dda8529398",
+    "artifacts/lean-development-statements/MI-04-modules.log": "1d562c1c0444f3e77af1a17c6703a21b1bd66fa3896acb20472e0561ed1eaeb2",
+    "artifacts/lean-development-statements/dependencies.log": "025fc8aa8b9c0edd94f54499f519dd6f3801068c4230f3173e6895708e75b9fb",
+    "artifacts/lean-development-statements/lean-version.log": "63f3e16bf0258e2cc0ab3010eb1830723df9bb85097b7b72b0137b9be25a78e9",
+    "artifacts/lean-development-statements/mathlib-cache.log": "f995c44278e96fcbc0af2ff0ece45494e3e14ca27bb8245aabbd8db30280eedd",
+    "artifacts/lean-development-statements/receipt.json": "f4fba693d4077a75212b742ab7d4a9010bb64bc55dbbdb4fb8604b0d104a73c6",
+    "artifacts.json": "8960cdab641d0d7069f3635799ebdae061b2254a27e480121617e1593f015fff",
+    "job-104672556977.log": "dd88a11315d5a7111912e5342b6f29da0e096221adf5417951b8bb1079531bf8",
+    "jobs.json": "8636834fb6b8c94ee0d601ea64854b921d3919b45f552a8c9008755ffee5d559",
+    "lean-development-statements.zip": "152e13727cdf2ba44d21c2722c6e9799bba7fb83a1f23bc58557c797470f741d",
+    "run.json": "5af4e027f39ffa71b713d996e31598564b0681bcbf558c4298c41f256dbbeaa9"
+  }
+}

@@ -1,0 +1,135 @@
+{
+  "editor": "/root",
+  "problem": "MI-04",
+  "actual_failed_run": 35058147856,
+  "actual_failed_commit": "d36c8b357347a78781e854328a95fd5e4adce852",
+  "actual_audit_sha256": "75c20b969041d8973deafb6abc8900e250f213ba403f6a408c162f9997078b1c",
+  "legacy_auditor_root_label_actual_executor": "/root/ie13_continuation",
+  "actual_log_sha256": "1d562c1c0444f3e77af1a17c6703a21b1bd66fa3896acb20472e0561ed1eaeb2",
+  "before_closure_sha256": "3f553e705896b765090592e3a637fb202cf165bea9dbc01f437d6507298ec3c7",
+  "all21_before_sources_bound_to_actual_receipt_and_Git": {
+    "NLA/MI04/BasisTransport.lean": {
+      "receipt_key": "NLA/MI04/BasisTransport.lean",
+      "sha256": "a3bd7f091903150bcf01c981a5a1ae8aae7bc8c31ea00f4b601aa53636c9341e"
+    },
+    "NLA/MI04/BlockSymmetry.lean": {
+      "receipt_key": "NLA/MI04/BlockSymmetry.lean",
+      "sha256": "7d5c0e711ba01a8bb98616427b50b06c64768e3bb12aef81ab06cd03720d3826"
+    },
+    "NLA/MI04/Conclusion.lean": {
+      "receipt_key": "NLA/MI04/Conclusion.lean",
+      "sha256": "d12abb7dd84e2407b5a3f52769aec699f3f3a282eb2043fd9a6a00a3fb67b6d8"
+    },
+    "NLA/MI04/Coordinates.lean": {
+      "receipt_key": "NLA/MI04/Coordinates.lean",
+      "sha256": "9fbf6dac25ce96499fdd7a6371e948c11d6e1b04156788af48998b0919d555d6"
+    },
+    "NLA/MI04/Correction.lean": {
+      "receipt_key": "NLA/MI04/Correction.lean",
+      "sha256": "9c647ae819a57c51b8a1529fe2783d9e27c3bb541ee2979a48a8c84a7de3c740"
+    },
+    "NLA/MI04/Definitions.lean": {
+      "receipt_key": "NLA/MI04/Definitions.lean",
+      "sha256": "de70e2a9dd878f1d083adacf8df6808c90c27630ffc2644a62293bf085e41715"
+    },
+    "NLA/MI04/Diagonalization.lean": {
+      "receipt_key": "NLA/MI04/Diagonalization.lean",
+      "sha256": "dd1f160e56238b0b41846938774dd86cf63434465268e8ae5c33d532f12653f8"
+    },
+    "NLA/MI04/Geometry.lean": {
+      "receipt_key": "NLA/MI04/Geometry.lean",
+      "sha256": "21b50d8fb4d8eeed4a8b313f0e04599bcc7842fd69bfbe2310ea3a67948f2622"
+    },
+    "NLA/MI04/JointBasis.lean": {
+      "receipt_key": "NLA/MI04/JointBasis.lean",
+      "sha256": "3d9ed5937621ea6251ebf0332c816b37b22703d52aa52c3af3f1944317c8b3b1"
+    },
+    "NLA/MI04/Limit.lean": {
+      "receipt_key": "NLA/MI04/Limit.lean",
+      "sha256": "7cdbd3546146dc78ce37452fffcc4c95be66ab7c909180f1694ff23009fed981"
+    },
+    "NLA/MI04/Normality.lean": {
+      "receipt_key": "NLA/MI04/Normality.lean",
+      "sha256": "d8abea3f3a78a9381890e637e022553ba0b9b0317d184b33d799123391831d6f"
+    },
+    "NLA/MI04/Probes.lean": {
+      "receipt_key": "NLA/MI04/Probes.lean",
+      "sha256": "0e4b3d9a0e6bb70c8b91a1669e89785cbefe99777315d9a4b52d961fa93f5f76"
+    },
+    "NLA/MI04/Punctured.lean": {
+      "receipt_key": "NLA/MI04/Punctured.lean",
+      "sha256": "8c7ff3d4386c0ff3a466f316b402637ce0ea7e6df02f80e96ade989ae22bc3ad"
+    },
+    "NLA/MI04/Quadratic.lean": {
+      "receipt_key": "NLA/MI04/Quadratic.lean",
+      "sha256": "81af17f3172536a7bf5e6c4d8f535b3cca8d801fae0884a60a477c4deff9ea18"
+    },
+    "NLA/MI04/Rayleigh.lean": {
+      "receipt_key": "NLA/MI04/Rayleigh.lean",
+      "sha256": "a9308e19575aa44ec56389ef2a24e75b375bcb577703c706590af6b63ebcca97"
+    },
+    "NLA/MI04/ScalarGeometry.lean": {
+      "receipt_key": "NLA/MI04/ScalarGeometry.lean",
+      "sha256": "583817923f7be81b7792a89b4e5ce48bd4817b07ef52655068fb17e3f48a4682"
+    },
+    "NLA/MI04/ScaledSymmetry.lean": {
+      "receipt_key": "NLA/MI04/ScaledSymmetry.lean",
+      "sha256": "54694087df421c0f4e6148008b43447728e053ef075aa319a116d34dbc980457"
+    },
+    "NLA/MI04/Unitary.lean": {
+      "receipt_key": "NLA/MI04/Unitary.lean",
+      "sha256": "05ccea07c757797829759c8a637ef14d5d216826d28b79a615e8b1df32b738e0"
+    },
+    "NLA/MI04/UpperBound.lean": {
+      "receipt_key": "NLA/MI04/UpperBound.lean",
+      "sha256": "5dc357316ab5e3ff1aeb282c20770870bd8b14d93c2928f64e3807cd96629c20"
+    },
+    "NLA/MI04/WeightedProbes.lean": {
+      "receipt_key": "NLA/MI04/WeightedProbes.lean",
+      "sha256": "e72d7cd3a10c574477a794d26aba66d40da7486c9ead38e9e4e1d31840570eea"
+    },
+    "Solution.lean": {
+      "receipt_key": "NLA/MI04/Complete.lean",
+      "sha256": "f00a126f014cf0220f104ac344991a0075e155218431e9e670607cc0d68dc587"
+    }
+  },
+  "after_sources": {
+    "NLA/MI04/BasisTransport.lean": "b0425ada4b3e2a58d0280929236f92e3a1017c2216f5d09dc8f52163834e8189",
+    "NLA/MI04/BlockSymmetry.lean": "7d5c0e711ba01a8bb98616427b50b06c64768e3bb12aef81ab06cd03720d3826",
+    "NLA/MI04/Conclusion.lean": "d12abb7dd84e2407b5a3f52769aec699f3f3a282eb2043fd9a6a00a3fb67b6d8",
+    "NLA/MI04/Coordinates.lean": "9fbf6dac25ce96499fdd7a6371e948c11d6e1b04156788af48998b0919d555d6",
+    "NLA/MI04/Correction.lean": "9c647ae819a57c51b8a1529fe2783d9e27c3bb541ee2979a48a8c84a7de3c740",
+    "NLA/MI04/Definitions.lean": "de70e2a9dd878f1d083adacf8df6808c90c27630ffc2644a62293bf085e41715",
+    "NLA/MI04/Diagonalization.lean": "dd1f160e56238b0b41846938774dd86cf63434465268e8ae5c33d532f12653f8",
+    "NLA/MI04/Geometry.lean": "21b50d8fb4d8eeed4a8b313f0e04599bcc7842fd69bfbe2310ea3a67948f2622",
+    "NLA/MI04/JointBasis.lean": "3d9ed5937621ea6251ebf0332c816b37b22703d52aa52c3af3f1944317c8b3b1",
+    "NLA/MI04/Limit.lean": "7cdbd3546146dc78ce37452fffcc4c95be66ab7c909180f1694ff23009fed981",
+    "NLA/MI04/Normality.lean": "d8abea3f3a78a9381890e637e022553ba0b9b0317d184b33d799123391831d6f",
+    "NLA/MI04/Probes.lean": "0e4b3d9a0e6bb70c8b91a1669e89785cbefe99777315d9a4b52d961fa93f5f76",
+    "NLA/MI04/Punctured.lean": "8c7ff3d4386c0ff3a466f316b402637ce0ea7e6df02f80e96ade989ae22bc3ad",
+    "NLA/MI04/Quadratic.lean": "81af17f3172536a7bf5e6c4d8f535b3cca8d801fae0884a60a477c4deff9ea18",
+    "NLA/MI04/Rayleigh.lean": "a9308e19575aa44ec56389ef2a24e75b375bcb577703c706590af6b63ebcca97",
+    "NLA/MI04/ScalarGeometry.lean": "583817923f7be81b7792a89b4e5ce48bd4817b07ef52655068fb17e3f48a4682",
+    "NLA/MI04/ScaledSymmetry.lean": "54694087df421c0f4e6148008b43447728e053ef075aa319a116d34dbc980457",
+    "NLA/MI04/Unitary.lean": "05ccea07c757797829759c8a637ef14d5d216826d28b79a615e8b1df32b738e0",
+    "NLA/MI04/UpperBound.lean": "5dc357316ab5e3ff1aeb282c20770870bd8b14d93c2928f64e3807cd96629c20",
+    "NLA/MI04/WeightedProbes.lean": "e72d7cd3a10c574477a794d26aba66d40da7486c9ead38e9e4e1d31840570eea",
+    "Solution.lean": "f00a126f014cf0220f104ac344991a0075e155218431e9e670607cc0d68dc587"
+  },
+  "primary_sources_sha256": {
+    "Mathlib/LinearAlgebra/Matrix/Basis.lean": "6b4bba5144422e5082911e36726f35d6252cc64d436d3b8bc0183f053c889655",
+    "Mathlib/Analysis/InnerProductSpace/PiL2.lean": "1f9827b2db67213c725a2dcc3fec52a87772966d1fbd3fc6857a019dbd7a6053",
+    "Mathlib/Analysis/InnerProductSpace/Orthonormal.lean": "8f6d3904a8b6e011cb5f2aea532ce0c1dec796fc4f8292ff59c351fd960c096c"
+  },
+  "only_changes": [
+    "Supply the existing unit-norm hypotheses to the final four-case simplification.",
+    "Use the exact pinned Module.Basis.toMatrix_apply namespace.",
+    "Instantiate the matrix and coordinate indices before reversing the coordinate-coefficient identity."
+  ],
+  "frozen10_and_all_other20_sources_unchanged": true,
+  "declaration_headers_hypotheses_conclusions_unchanged": true,
+  "local_Lean_execution": false,
+  "fresh_Linux_execution": "pending",
+  "independent_reviews": "pending",
+  "whole_problem_verified": false
+}

@@ -1,0 +1,44 @@
+[
+  {
+    "repository": "leanprover/lean4",
+    "commit": "819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+    "path": "src/Init/Prelude.lean",
+    "git_blob": "11abbc2c3c4fe6ade835ad3ab6c241385f25f918",
+    "sha256": "56de5780adc4358372fa9cfac270a70f2d03fd4f213a373aea4365483b31a544"
+  },
+  {
+    "repository": "leanprover-community/mathlib4",
+    "commit": "0df444a360eaa60ab8c11dca51a86af692955474",
+    "path": "Mathlib/Data/Finset/Filter.lean",
+    "git_blob": "084546dfff857a35cd68402be31a2b7529417f19",
+    "sha256": "c777e9b830557d7b4f903a0fa81c27bec2d89f546dd4ae146122f4bb4882a06d"
+  },
+  {
+    "repository": "leanprover/lean4",
+    "commit": "819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+    "path": "src/Init/SimpLemmas.lean",
+    "git_blob": "b604e2a3f0961dd1cb465502adf8ad39c0a2a3bb",
+    "sha256": "fe0dc61e7380da95224dc4a7bb577a9395c5e64fbab93c62afaa2cf7883a8de5"
+  },
+  {
+    "repository": "leanprover/lean4",
+    "commit": "819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+    "path": "src/Init/Classical.lean",
+    "git_blob": "a2dcc6b5a597bf043e68548ec0dddb227a694b9a",
+    "sha256": "4e3bb021681d948c72dd3ab90d849e67999776dcabca4de55e8da14593474815"
+  },
+  {
+    "repository": "leanprover/lean4",
+    "commit": "819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+    "path": "src/Init/Data/Fin/Basic.lean",
+    "git_blob": "6fee3ab2eaacf1b76de02ea7f7880f29fbac8294",
+    "sha256": "bb3d4e46cb40a24f5a09e6e003c76f2b84140a598df81233f0bffe3afe08cbf4"
+  },
+  {
+    "repository": "leanprover/lean4",
+    "commit": "819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+    "path": "src/Init/Core.lean",
+    "git_blob": "c00f44d589c186526ee811958ab745a2b1078de6",
+    "sha256": "8537e234659a281a8f49cc91e2f48c17b6faeacb852d1c4ba3a09b6b5e45ab20"
+  }
+]

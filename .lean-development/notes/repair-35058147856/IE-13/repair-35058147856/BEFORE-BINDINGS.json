@@ -1,0 +1,387 @@
+{
+  "run": 35058147856,
+  "actual_commit": "d36c8b357347a78781e854328a95fd5e4adce852",
+  "root_audit_sha256": "75c20b969041d8973deafb6abc8900e250f213ba403f6a408c162f9997078b1c",
+  "independent_runtime_manifest_sha256": "8cefadeec0537e78950d33df89508c6cd2f0b3e7d4228329023dbd1fd0e4f9c1",
+  "frozen_manifest_sha256": "85916aae89eb2111ff914b8767e8918548c132a6ff6c7ed92e52286bec1998fe",
+  "all27_active_plus_frozen_challenge_exact_source_matches": [
+    {
+      "author_path": "NLA/IE13/Attainment.lean",
+      "receipt_key": "NLA/IE13/Attainment.lean",
+      "git_path": ".lean-development/NLA/IE13/Attainment.lean",
+      "git_blob": "c06a3186802a86ecc5912986335639617cf94eae",
+      "sha256": "e63861f7a7a15e8db15ed7c040a88c8c1cb9b977e672c141fe74f3b997cadbfe",
+      "exact_bytes_match": true
+    },
+    {
+      "author_path": "NLA/IE13/Basic.lean",
+      "receipt_key": "NLA/IE13/Basic.lean",
+      "git_path": ".lean-development/NLA/IE13/Basic.lean",
+      "git_blob": "e8bf246a79868497048dedd40afdb03e06e0e4e8",
+      "sha256": "ba05afefeeea9bb5b4f2b3b8187aa0929ef1979700286ca9470ea991f7aa14b8",
+      "exact_bytes_match": true
+    },
+    {
+      "author_path": "NLA/IE13/ColumnBounds.lean",
+      "receipt_key": "NLA/IE13/ColumnBounds.lean",
+      "git_path": ".lean-development/NLA/IE13/ColumnBounds.lean",
+      "git_blob": "c522ad84b29e2b852a37ce916dd6d9b1001a5b99",
+      "sha256": "34af391613ba5362eb155cdf7601290f64467fa38780b1856d9372b754812908",
+      "exact_bytes_match": true
+    },
+    {
+      "author_path": "NLA/IE13/Definitions.lean",
+      "receipt_key": "NLA/IE13/Definitions.lean",
+      "git_path": ".lean-development/NLA/IE13/Definitions.lean",
+      "git_blob": "e22b04787500e4df93790d6f7ccacfd70f05444d",
+      "sha256": "cda485c546a5879f35eb9d69e7aaa7eaf1449d2219a47b75fcbb4c2827031988",
+      "exact_bytes_match": true
+    },
+    {
+      "author_path": "NLA/IE13/Envelope.lean",
+      "receipt_key": "NLA/IE13/Envelope.lean",
+      "git_path": ".lean-development/NLA/IE13/Envelope.lean",
+      "git_blob": "eefa21d4d5a7d43701c4e2cc17b87034ad0cb6ff",
+      "sha256": "6869f47422e9b095e64133dec3324308ec771bd1c54eb06a797f828ba6648279",
+      "exact_bytes_match": true
+    },
+    {
+      "author_path": "NLA/IE13/Front.lean",
+      "receipt_key": "NLA/IE13/Front.lean",
+      "git_path": ".lean-development/NLA/IE13/Front.lean",
+      "git_blob": "531271ff1884efecc3849c67d7d73a84396c43f3",
+      "sha256": "6e2f6fcd432d001c3074030f1dc4c68c5dd0c20960920e5fbee5f5b8904a7a1e",
+      "exact_bytes_match": true
+    },
+    {
+      "author_path": "NLA/IE13/FrontBounds.lean",
+      "receipt_key": "NLA/IE13/FrontBounds.lean",
+      "git_path": ".lean-development/NLA/IE13/FrontBounds.lean",
+      "git_blob": "d4916c5affa7f304c235ea29924bf357531caaee",
+      "sha256": "f439389a89d7fe43d494bb34ae51d78206de46c3d286dec07de21e2740c18049",
+      "exact_bytes_match": true
+    },
+    {
+      "author_path": "NLA/IE13/GEPP.lean",
+      "receipt_key": "NLA/IE13/GEPP.lean",
+      "git_path": ".lean-development/NLA/IE13/GEPP.lean",
+      "git_blob": "7a7695b633c3534f9d1ba9460322df19757ccefc",
+      "sha256": "3f6b8a53ff1db1fa6d0f16386ead9c23f4f11223705736f9ce0cf3deee1b8c47",
+      "exact_bytes_match": true
+    },
+    {
+      "author_path": "NLA/IE13/Identity.lean",
+      "receipt_key": "NLA/IE13/Identity.lean",
+      "git_path": ".lean-development/NLA/IE13/Identity.lean",
+      "git_blob": "9d9ed6e47d443b9fa261fddce3495ff8a8025476",
+      "sha256": "099b4717ae0cca91dfc368b66f05d30584c06d9b8c00335509bf4859443bf036",
+      "exact_bytes_match": true
+    },
+    {
+      "author_path": "NLA/IE13/LateColumn.lean",
+      "receipt_key": "NLA/IE13/LateColumn.lean",
+      "git_path": ".lean-development/NLA/IE13/LateColumn.lean",
+      "git_blob": "be785a7a68141a39b37106ef13bd3b17056645f6",
+      "sha256": "eb1d7df64a15b120f882c438afc327487dcec2bc10095690e3722b49d2d6a7dd",
+      "exact_bytes_match": true
+    },
+    {
+      "author_path": "NLA/IE13/Maxima.lean",
+      "receipt_key": "NLA/IE13/Maxima.lean",
+      "git_path": ".lean-development/NLA/IE13/Maxima.lean",
+      "git_blob": "67b89278ca81893ba497ef480c6f16fd5e3da638",
+      "sha256": "c17bc375c0b6d4abf10aec25632a3763af30d413ecc24836aa328fb863163277",
+      "exact_bytes_match": true
+    },
+    {
+      "author_path": "NLA/IE13/Origin.lean",
+      "receipt_key": "NLA/IE13/Origin.lean",
+      "git_path": ".lean-development/NLA/IE13/Origin.lean",
+      "git_blob": "ebb9bd20dcadfb604dd2c339e110888f6baafe73",
+      "sha256": "ccbca9a6ee35516ef0b830b89507b0d4011a067353e88eabb4c670cb8c980c15",
+      "exact_bytes_match": true
+    },
+    {
+      "author_path": "NLA/IE13/Prefix.lean",
+      "receipt_key": "NLA/IE13/Prefix.lean",
+      "git_path": ".lean-development/NLA/IE13/Prefix.lean",
+      "git_blob": "e94f867c0a46356d934cb4770b821e7c7587b463",
+      "sha256": "f87e3f15182af6c3a0862f24c62d591eb170cc82be3ad0548f4ce4ca729c55b6",
+      "exact_bytes_match": true
+    },
+    {
+      "author_path": "NLA/IE13/Recurrence.lean",
+      "receipt_key": "NLA/IE13/Recurrence.lean",
+      "git_path": ".lean-development/NLA/IE13/Recurrence.lean",
+      "git_blob": "e90f2c425d65bc8107955772edb9dc2717014317",
+      "sha256": "7b3d916e5848d156a759fd90542b89c2e4cc481720e2eff0da95cca3d7a404c6",
+      "exact_bytes_match": true
+    },
+    {
+      "author_path": "NLA/IE13/Sharp.lean",
+      "receipt_key": "NLA/IE13/Sharp.lean",
+      "git_path": ".lean-development/NLA/IE13/Sharp.lean",
+      "git_blob": "2a080d3a5e4417538181906c8ddbc08bf900d2b8",
+      "sha256": "00cddc77e12b20c2a43f07d400700a967c579be4dd2e31fb2859e1e734cbe598",
+      "exact_bytes_match": true
+    },
+    {
+      "author_path": "NLA/IE13/SubsetAlgebra.lean",
+      "receipt_key": "NLA/IE13/SubsetAlgebra.lean",
+      "git_path": ".lean-development/NLA/IE13/SubsetAlgebra.lean",
+      "git_blob": "98c6d770749649a64a7892a030f8c750d2a44c41",
+      "sha256": "73e2e05a14e4cda1bc2ea7b830eb9b9cecade2243acf13b7e01225c0c17fdd47",
+      "exact_bytes_match": true
+    },
+    {
+      "author_path": "NLA/IE13/TailAlgebra.lean",
+      "receipt_key": "NLA/IE13/TailAlgebra.lean",
+      "git_path": ".lean-development/NLA/IE13/TailAlgebra.lean",
+      "git_blob": "0dbd0b0385a698eca4190c95e0a68df364723933",
+      "sha256": "942bdfa9f34272fb7ae617dc68869fbf0ace26ac07e6b0b67cbd34eaadd40338",
+      "exact_bytes_match": true
+    },
+    {
+      "author_path": "NLA/IE13/UpperBound.lean",
+      "receipt_key": "NLA/IE13/UpperBound.lean",
+      "git_path": ".lean-development/NLA/IE13/UpperBound.lean",
+      "git_blob": "eb65e11821170ee946b78292da57c2b0e4a35b77",
+      "sha256": "f508358e10b5ab3ed566321d7191f592495e60d146451ccbf5b1d25b891b54c6",
+      "exact_bytes_match": true
+    },
+    {
+      "author_path": "NLA/IE13/WitnessColumns.lean",
+      "receipt_key": "NLA/IE13/WitnessColumns.lean",
+      "git_path": ".lean-development/NLA/IE13/WitnessColumns.lean",
+      "git_blob": "61886701c8f76c220a2f81062f94670ac5484f31",
+      "sha256": "78e5686f41fa2f6ffc2d935e510f662b8ba3fefa85768cba7fd2a8afda665680",
+      "exact_bytes_match": true
+    },
+    {
+      "author_path": "NLA/IE13/WitnessDynamics.lean",
+      "receipt_key": "NLA/IE13/WitnessDynamics.lean",
+      "git_path": ".lean-development/NLA/IE13/WitnessDynamics.lean",
+      "git_blob": "77c8df8d5de046f7a2aba1be4de3d0701700caf0",
+      "sha256": "67c6d5cc5484b224a1c40a8893fd8e01a63763e4fa8528d730b75b991ebe76c3",
+      "exact_bytes_match": true
+    },
+    {
+      "author_path": "NLA/IE13/WitnessEntries.lean",
+      "receipt_key": "NLA/IE13/WitnessEntries.lean",
+      "git_path": ".lean-development/NLA/IE13/WitnessEntries.lean",
+      "git_blob": "520bed9cdcef37ee19e86beae5874176830ebaad",
+      "sha256": "a0bba2dc25dc09b02a9157cb007d1c34e410caa4e35f4291a7bdc05371f70314",
+      "exact_bytes_match": true
+    },
+    {
+      "author_path": "NLA/IE13/WitnessFactors.lean",
+      "receipt_key": "NLA/IE13/WitnessFactors.lean",
+      "git_path": ".lean-development/NLA/IE13/WitnessFactors.lean",
+      "git_blob": "cc7024d327b51a1a6522b0db2d21943ce0548379",
+      "sha256": "b645fa10d9660917c3a792138931f94e2781d3015583066c9fb72013f4d99bec",
+      "exact_bytes_match": true
+    },
+    {
+      "author_path": "NLA/IE13/WitnessForward.lean",
+      "receipt_key": "NLA/IE13/WitnessForward.lean",
+      "git_path": ".lean-development/NLA/IE13/WitnessForward.lean",
+      "git_blob": "8b093033a2083b208d0d377630e6a9ed447b97fb",
+      "sha256": "4363ec641183e33f61210b0c30bf1333baaf476b2cfb1b4f1c94e942af9670ba",
+      "exact_bytes_match": true
+    },
+    {
+      "author_path": "NLA/IE13/WitnessOrder.lean",
+      "receipt_key": "NLA/IE13/WitnessOrder.lean",
+      "git_path": ".lean-development/NLA/IE13/WitnessOrder.lean",
+      "git_blob": "e6069e4c37e4bd3cbc28043ec90a851ecc1a3677",
+      "sha256": "9e792338aeb966935886373132c95549d901f639091af01210d5c80871b94844",
+      "exact_bytes_match": true
+    },
+    {
+      "author_path": "NLA/IE13/WitnessProduct.lean",
+      "receipt_key": "NLA/IE13/WitnessProduct.lean",
+      "git_path": ".lean-development/NLA/IE13/WitnessProduct.lean",
+      "git_blob": "360357fcb95c8010e16f4d627fd3e9401747fdbd",
+      "sha256": "6376c64427207873653b7e9a3c8e109792449326d4f8d59ed624df65df0a15d3",
+      "exact_bytes_match": true
+    },
+    {
+      "author_path": "NLA/IE13/WitnessScale.lean",
+      "receipt_key": "NLA/IE13/WitnessScale.lean",
+      "git_path": ".lean-development/NLA/IE13/WitnessScale.lean",
+      "git_blob": "8a221754c9bb98e4496f45dc53c150effa3d76f6",
+      "sha256": "ea68a71a53afcfde78dd13d74679475b2349c42a4177e4617da96813005647be",
+      "exact_bytes_match": true
+    },
+    {
+      "author_path": "Solution.lean",
+      "receipt_key": "NLA/IE13/Complete.lean",
+      "git_path": ".lean-development/NLA/IE13/Complete.lean",
+      "git_blob": "b691228ed7d7f3b455ff9a5241b3b77bfc5321b3",
+      "sha256": "3cdebabfea0d23071262256feaa6fa570103be7eb82f0da4e745f3f15bee4f63",
+      "exact_bytes_match": true
+    },
+    {
+      "author_path": "Challenge.lean",
+      "receipt_key": "Challenges/IE13.lean",
+      "git_path": ".lean-development/Challenges/IE13.lean",
+      "git_blob": "260e3858fcfe03309d84173682ee3e7fb1e7ea2d",
+      "sha256": "5b6b9a4c714686d6b060589a4ee1414f2ec94e80787a9ffe351ac6fe66331e57",
+      "exact_bytes_match": true
+    }
+  ],
+  "frozen_files_sha256": {
+    "NLA/IE13/Definitions.lean": "cda485c546a5879f35eb9d69e7aaa7eaf1449d2219a47b75fcbb4c2827031988",
+    "Challenge.lean": "5b6b9a4c714686d6b060589a4ee1414f2ec94e80787a9ffe351ac6fe66331e57",
+    "NUMERICAL_TARGETS.md": "a95e32b7b8e654185f1d6bbbb3c483fa9b988e2ee5800a2ce641a230706e1cb9",
+    "SourceCorrespondence.md": "f4c1091773fe8b684147f80f80d16fec4f59d9c413fa3244947932a023c86782",
+    "SOURCE-PROVENANCE.json": "35906d147fa91f733fb80f8e8c431656df752da69bc7716b3fef4f0ada091905",
+    "comparator.json": "51a3effaed3e2ba4effde07da37c8f84c7c864a0010e2c1548eb5922ec8a7c14",
+    "lakefile.toml": "7f0a154e9c02b9f44b3573eb3447e30276885396364d3b66e896e2f72eb39380",
+    "lake-manifest.json": "55717fab833a468f9b9971b29a171b5a4098fafb7437b93641f357b45c8ec795",
+    "lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+    "LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+  },
+  "all28_public_headers": {
+    "gepp_model_semantics": {
+      "source": "NLA/IE13/Maxima.lean",
+      "normalized_header": "theorem gepp_model_semantics {n : \u2115} (A : Mat n) (path : PivotPath n) : trajectory A path 0 = A \u2227 \u2200 k i j : Fin n, trajectory A path (k.val + 1) i j = if k < i \u2227 k < j then trajectory A path k.val (Equiv.swap k (path k) i) j - (trajectory A path k.val (Equiv.swap k (path k) i) k / trajectory A path k.val (path k) k) * trajectory A path k.val (path k) j else 0",
+      "sha256": "e4fd4ea8a1cbc2c45df2b44730edadb935efa61a52ff3573976357f424eed959"
+    },
+    "entryMax_semantics": {
+      "source": "NLA/IE13/Maxima.lean",
+      "normalized_header": "theorem entryMax_semantics {n : \u2115} (hn : 1 \u2264 n) (A : Mat n) : 0 \u2264 entryMax A \u2227 (\u2200 i j, \u2016A i j\u2016 \u2264 entryMax A) \u2227 (\u2203 i j, \u2016A i j\u2016 = entryMax A) \u2227 (A.det \u2260 0 \u2192 0 < entryMax A)",
+      "sha256": "5c5af2ba9bb0a16c7438a9c6079294a412c813764d5d69b594957c8b795bfc01"
+    },
+    "activeMax_semantics": {
+      "source": "NLA/IE13/Maxima.lean",
+      "normalized_header": "theorem activeMax_semantics {n : \u2115} (S : Mat n) (k : Fin n) : 0 \u2264 activeMax S k.val \u2227 (\u2200 i j, k \u2264 i \u2192 k \u2264 j \u2192 \u2016S i j\u2016 \u2264 activeMax S k.val) \u2227 \u2203 i j, k \u2264 i \u2227 k \u2264 j \u2227 \u2016S i j\u2016 = activeMax S k.val",
+      "sha256": "b8c680dbcd7d1adec5d190bffc85c5085682073055496993b4999fb1f23d4ac6"
+    },
+    "growth_semantics": {
+      "source": "NLA/IE13/Maxima.lean",
+      "normalized_header": "theorem growth_semantics {n : \u2115} (hn : 1 \u2264 n) (A : Mat n) (hA : A.det \u2260 0) (path : PivotPath n) : 1 \u2264 growth A path \u2227 (\u2200 k i j : Fin n, k \u2264 i \u2192 k \u2264 j \u2192 \u2016trajectory A path k.val i j\u2016 \u2264 growth A path * entryMax A) \u2227 \u2203 k i j : Fin n, k \u2264 i \u2227 k \u2264 j \u2227 \u2016trajectory A path k.val i j\u2016 = growth A path * entryMax A",
+      "sha256": "95b3614625c26a185c1830ce3006ee659da734cd128cb35d12d8bd772cc88812"
+    },
+    "admissiblePath_exists": {
+      "source": "NLA/IE13/GEPP.lean",
+      "normalized_header": "theorem admissiblePath_exists {n : \u2115} (hn : 1 \u2264 n) (A : Mat n) (hA : A.det \u2260 0) : \u2203 path : PivotPath n, AdmissiblePath A path",
+      "sha256": "65436244917e9174bf0681c0a3cdf3df707f37e3bfa4ccb5c9ba871b1382537e"
+    },
+    "admissiblePrefix_extension": {
+      "source": "NLA/IE13/Prefix.lean",
+      "normalized_header": "theorem admissiblePrefix_extension {n : \u2115} (hn : 1 \u2264 n) (A : Mat n) (hA : A.det \u2260 0) (path : PivotPath n) (t : \u2115) (ht : t \u2264 n) (hprefix : AdmissiblePrefix A path t) : \u2203 full : PivotPath n, AdmissiblePath A full \u2227 (\u2200 k : Fin n, k.val < t \u2192 full k = path k) \u2227 \u2200 s : \u2115, s \u2264 t \u2192 trajectory A full s = trajectory A path s",
+      "sha256": "7ec91d8377bca75b0cb0b12c5ea28ddf2a57756e9a4af8696394b07de15c9ce8"
+    },
+    "originalRow_update": {
+      "source": "NLA/IE13/Origin.lean",
+      "normalized_header": "theorem originalRow_update {n : \u2115} (A : Mat n) (path : PivotPath n) (hpath : AdmissiblePath A path) (k i j : Fin n) (hi : OriginalRowActive path k.val i) (hne : i \u2260 pivotLabel path k) (hj : k < j) : OriginalRowActive path (k.val + 1) i \u2227 originalRowStage A path (k.val + 1) i j = originalRowStage A path k.val i j - (originalRowStage A path k.val i k / originalRowStage A path k.val (pivotLabel path k) k) * originalRowStage A path k.val (pivotLabel path k) j",
+      "sha256": "c48aabd7a19a17d0e4f533a50c20ce826f8dccff55d2abc4917f11c989c948df"
+    },
+    "multiplier_bounds": {
+      "source": "NLA/IE13/Origin.lean",
+      "normalized_header": "theorem multiplier_bounds {n : \u2115} (A : Mat n) (path : PivotPath n) (hpath : AdmissiblePath A path) (k i : Fin n) (hi : OriginalRowActive path k.val i) : originalRowStage A path k.val (pivotLabel path k) k \u2260 0 \u2227 \u2016originalRowStage A path k.val i k / originalRowStage A path k.val (pivotLabel path k) k\u2016 \u2264 1",
+      "sha256": "17282562b229943331370431463e590627989e9e1ae62f2deb8bf0e7c1cb7b63"
+    },
+    "front_structure": {
+      "source": "NLA/IE13/Front.lean",
+      "normalized_header": "theorem front_structure {n : \u2115} (p q : \u2115) (A : Mat n) (hA : Banded p q A) (path : PivotPath n) (hpath : AdmissiblePath A path) (k : Fin n) : (oldRows p path k.val).card \u2264 p \u2227 (\u2200 i : Fin n, k.val + p \u2264 i.val \u2192 OriginalRowActive path k.val i \u2227 \u2200 j : Fin n, k \u2264 j \u2192 originalRowStage A path k.val i j = A i j) \u2227 pivotLabel path k \u2208 frontRows p path k.val",
+      "sha256": "e67201d15c02d2c7641b4f0c93cc4e2086603ab0052e1eeab487bcc7d641bd3e"
+    },
+    "front_transition": {
+      "source": "NLA/IE13/Origin.lean",
+      "normalized_header": "theorem front_transition {n : \u2115} (p q : \u2115) (A : Mat n) (hA : Banded p q A) (path : PivotPath n) (hpath : AdmissiblePath A path) (k : Fin n) : oldRows p path (k.val + 1) = (frontRows p path k.val).erase (pivotLabel path k)",
+      "sha256": "c813eeec2cf6312d3f7b16453a2eee34c8da85ff83dc13e8c3d7f172e1291100"
+    },
+    "recurrence_history": {
+      "source": "NLA/IE13/Recurrence.lean",
+      "normalized_header": "theorem recurrence_history (p t r : \u2115) : recurrenceHistory p t r = bandSequence p (t - r)",
+      "sha256": "82ac5dfe1310c2a9f50cf0a69830c1217f960a13db15065cd666350adf7931ff"
+    },
+    "sequence_recurrence": {
+      "source": "NLA/IE13/Recurrence.lean",
+      "normalized_header": "theorem sequence_recurrence (p : \u2115) : bandSequence p 0 = 0 \u2227 \u2200 t : \u2115, bandSequence p (t + 1) = 1 + \u2211 r : Fin p, bandSequence p (t - r.val)",
+      "sha256": "75b0a92efb3cdb5878a41af26df1a9c94dfdf67d1fd67c4ae302f6d81c036d32"
+    },
+    "sequence_properties": {
+      "source": "NLA/IE13/Recurrence.lean",
+      "normalized_header": "theorem sequence_properties (p : \u2115) : Monotone (bandSequence p) \u2227 \u2200 t : \u2115, 0 < t \u2192 0 < bandSequence p t",
+      "sha256": "d5146dfb98e59766acab9ae3fd6aa49d57c792de234d22d29dbd6394d7cea7f8"
+    },
+    "envelope_recurrence": {
+      "source": "NLA/IE13/Envelope.lean",
+      "normalized_header": "theorem envelope_recurrence (p : \u2115) (hp : 0 < p) : (\u2200 i : Fin p, envelope p 0 i = 0 \u2227 envelope p 1 i = 1) \u2227 \u2200 t : \u2115, 1 \u2264 t \u2192 envelope p t \u27e80, hp\u27e9 = bandSequence p t \u2227 (\u2200 i : Fin p, 1 \u2264 envelope p t i) \u2227 (\u2200 i j : Fin p, i \u2264 j \u2192 envelope p t j \u2264 envelope p t i) \u2227 \u2200 i : Fin p, envelope p (t + 1) i = bandSequence p t + (if h : i.val + 1 < p then envelope p t \u27e8i.val + 1, h\u27e9 else 1)",
+      "sha256": "d49b1384fb584a3fb6f0b6ba7fa294652eb7d9f9e2984ad1bfbfa9fc8e689bc9"
+    },
+    "late_column_zero": {
+      "source": "NLA/IE13/LateColumn.lean",
+      "normalized_header": "theorem late_column_zero {n : \u2115} (p q : \u2115) (A : Mat n) (hA : Banded p q A) (path : PivotPath n) (hpath : AdmissiblePath A path) (k j : Fin n) (hlate : k.val + p + q \u2264 j.val) : \u2200 i \u2208 oldRows p path k.val, originalRowStage A path k.val i j = 0",
+      "sha256": "c78f89278b0d4180319561c31b56bc534e22af0aa82df7d7ae335279f65a857e"
+    },
+    "column_front_bound": {
+      "source": "NLA/IE13/ColumnBounds.lean",
+      "normalized_header": "theorem column_front_bound {n : \u2115} (p q : \u2115) (hp : 0 < p) (A : Mat n) (hA : Banded p q A) (path : PivotPath n) (hpath : AdmissiblePath A path) (k j : Fin n) (hkj : k \u2264 j) : \u2200 S : Finset (Fin n), S \u2286 oldRows p path k.val \u2192 (\u2211 i \u2208 S, \u2016originalRowStage A path k.val i j\u2016) \u2264 (envelopeSum p (columnAge p q k.val j) S.card : \u211d) * entryMax A",
+      "sha256": "c95e5d81d2b57e18f1a35edd8f693b34fb0c48363fead673cfbf1402b628511f"
+    },
+    "all_active_entries_bound": {
+      "source": "NLA/IE13/UpperBound.lean",
+      "normalized_header": "theorem all_active_entries_bound {n : \u2115} (p q : \u2115) (hp : 0 < p) (A : Mat n) (hA : Banded p q A) (path : PivotPath n) (hpath : AdmissiblePath A path) (k i j : Fin n) (hki : k \u2264 i) (hkj : k \u2264 j) : \u2016trajectory A path k.val i j\u2016 \u2264 (bandSequence p (p + q) : \u211d) * entryMax A",
+      "sha256": "9c0024f80733899b873a6474d5185e6b18f007655c632072df44bc4750544717"
+    },
+    "zero_lower_bandwidth": {
+      "source": "NLA/IE13/UpperBound.lean",
+      "normalized_header": "theorem zero_lower_bandwidth {n : \u2115} (hn : 1 \u2264 n) (q : \u2115) (A : Mat n) (hA : BandedInput 0 q A) (path : PivotPath n) (hpath : AdmissiblePath A path) : growth A path = 1",
+      "sha256": "6a5a929d419f7a9503b44a23957b99c7c5658f480a343b3fba375a818ac31053"
+    },
+    "universal_growth": {
+      "source": "NLA/IE13/UpperBound.lean",
+      "normalized_header": "theorem universal_growth {n : \u2115} (hn : 1 \u2264 n) (p q : \u2115) (A : Mat n) (hA : BandedInput p q A) (path : PivotPath n) (hpath : AdmissiblePath A path) : growth A path \u2264 sharpBound p q",
+      "sha256": "0925a0b4ca64ad975574c8a67521e97245e45f6d946433685fac350252011d2e"
+    },
+    "witness_scale": {
+      "source": "NLA/IE13/WitnessScale.lean",
+      "normalized_header": "theorem witness_scale (p : \u2115) : 0 < (witnessScale p : \u211d) \u2227 (witnessScale p : \u211d) \u2264 1 \u2227 (witnessScale p : \u211d) * (2 : \u211d) ^ p = 1",
+      "sha256": "b2d880548ff7be0112b82e39a00f87a763fb804ef9f8b3ff7c13074c2226fbcc"
+    },
+    "witness_structure": {
+      "source": "NLA/IE13/WitnessEntries.lean",
+      "normalized_header": "theorem witness_structure (p q : \u2115) (hp : 0 < p) : 1 + max p q \u2264 witnessOrder p q \u2227 Banded p q (witnessMatrix p q) \u2227 entryMax (witnessMatrix p q) = 1 \u2227 \u2200 i j : Fin (witnessOrder p q), \u2203 r : \u211a, witnessMatrix p q i j = (r : \u2102)",
+      "sha256": "cd7ce37dfc92db236951a4573465885b865ce12cde638d76fd20fbce1ef5cb5a"
+    },
+    "witness_prefix_order": {
+      "source": "NLA/IE13/WitnessOrder.lean",
+      "normalized_header": "theorem witness_prefix_order (p q : \u2115) : PositionsValid (witnessSeedPath p q) \u2227 \u2200 i : Fin (witnessOrder p q), (origin (witnessSeedPath p q) (p + q) i).val = if i.val = 0 then p else if i.val \u2264 p then i.val - 1 else i.val",
+      "sha256": "bb451f9180ec9d9da4605405591b1d3520de864eb7ebf4dd7e5d0b88e5b7b76c"
+    },
+    "witness_prefix_admissible": {
+      "source": "NLA/IE13/WitnessDynamics.lean",
+      "normalized_header": "theorem witness_prefix_admissible (p q : \u2115) (hp : 0 < p) : AdmissiblePrefix (witnessMatrix p q) (witnessSeedPath p q) (p + q)",
+      "sha256": "1cce67e015cdab021785dd1baba293f2481e73fa2eb6e7c30b7fa9bbf0c8c2bc"
+    },
+    "witness_target_value": {
+      "source": "NLA/IE13/WitnessDynamics.lean",
+      "normalized_header": "theorem witness_target_value (p q : \u2115) (hp : 0 < p) : trajectory (witnessMatrix p q) (witnessSeedPath p q) (p + q) (witnessTarget p q) (witnessTarget p q) = (bandSequence p (p + q) : \u2102)",
+      "sha256": "930bb4d2a8459494365909618586684f3bb7f5fcd5eda26aa528c84b6d904e7f"
+    },
+    "witness_nonsingular": {
+      "source": "NLA/IE13/WitnessDynamics.lean",
+      "normalized_header": "theorem witness_nonsingular (p q : \u2115) (hp : 0 < p) : (witnessMatrix p q).det \u2260 0",
+      "sha256": "9abbaa2c5eff7de4a5e10739823ca2f910ed512f6f764f3c51a5dfb191f5408e"
+    },
+    "witness_attainment": {
+      "source": "NLA/IE13/Attainment.lean",
+      "normalized_header": "theorem witness_attainment (p q : \u2115) (hp : 0 < p) : \u2203 path : PivotPath (witnessOrder p q), AdmissiblePath (witnessMatrix p q) path \u2227 (\u2200 k : Fin (witnessOrder p q), k.val < p + q \u2192 path k = witnessSeedPath p q k) \u2227 growth (witnessMatrix p q) path = sharpBound p q",
+      "sha256": "a02ab62fc0d50b7ed36744f8a2d4d763dfbb0489cfc11380fa8708beb6b811e3"
+    },
+    "identity_attainment": {
+      "source": "NLA/IE13/Identity.lean",
+      "normalized_header": "theorem identity_attainment (q : \u2115) : BandedInput 0 q (1 : Mat (q + 1)) \u2227 AdmissiblePath (1 : Mat (q + 1)) (fun k => k) \u2227 growth (1 : Mat (q + 1)) (fun k => k) = 1",
+      "sha256": "21b3272b0a7259a32c7f26bab4ac86f99ffa64d4dc010bc755f4bcaee7d6d6af"
+    },
+    "sharp_growth": {
+      "source": "NLA/IE13/Sharp.lean",
+      "normalized_header": "theorem sharp_growth (p q : \u2115) (hne : p \u2260 q) : IsGreatest (growthValues p q) (sharpBound p q) \u2227 sharpConstant p q = sharpBound p q",
+      "sha256": "af4836177b5179b8c181ed1da17c86e53630266bec3d5076727ad795989c1f10"
+    }
+  }
+}
