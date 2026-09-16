@@ -20,7 +20,7 @@ namespace NLA.MI04
 lemma matrixCoefficient_smul {n : ℕ} (X : Square n) (u v : CVector (Fin n)) (c d : ℂ) :
     matrixCoefficient X (c • u) (d • v) = star c * d * matrixCoefficient X u v := by
   simp [matrixCoefficient, map_smul, inner_smul_left, inner_smul_right,
-    Complex.star_def, mul_assoc]
+    Complex.star_def, mul_assoc, mul_left_comm]
 
 lemma complex_normalize_unit {n : ℕ} (u : CVector (Fin n)) (hu : u ≠ 0) :
     ‖((‖u‖⁻¹ : ℝ) : ℂ) • u‖ = 1 := by

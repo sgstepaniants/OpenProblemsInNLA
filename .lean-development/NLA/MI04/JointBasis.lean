@@ -19,6 +19,7 @@ open scoped BigOperators ComplexOrder
 
 namespace NLA.MI04
 
+set_option maxHeartbeats 800000 in
 lemma commuting_symmetric_eigenbasis {n : ℕ}
     (A B : Module.End ℂ (CVector (Fin n)))
     (hA : A.IsSymmetric) (hB : B.IsSymmetric) (hAB : Commute A B) :
@@ -26,6 +27,9 @@ lemma commuting_symmetric_eigenbasis {n : ℕ}
       ∃ α β : Fin n → ℂ, ∀ i, A (b i) = α i • b i ∧ B (b i) = β i • b i := by
   classical
   let J := Module.End.Eigenvalues B × Module.End.Eigenvalues A
+  letI : Fintype J := inferInstance
+  letI : DecidableEq J := Classical.decEq J
+  have hdim : Module.finrank ℂ (CVector (Fin n)) = n := finrank_euclideanSpace_fin
   let V : J → Submodule ℂ (CVector (Fin n)) := fun j =>
     Module.End.eigenspace A j.2.val ⊓ Module.End.eigenspace B j.1.val
   have hinj : Function.Injective (fun j : J => (j.1.val, j.2.val)) := by
@@ -54,13 +58,14 @@ lemma commuting_symmetric_eigenbasis {n : ℕ}
       exact bot_le
   have hV : DirectSum.IsInternal V := horth.isInternal_iff.mpr (by
     rw [htop, Submodule.top_orthogonal_eq_bot])
-  let b := hV.subordinateOrthonormalBasis (n := n) finrank_euclideanSpace_fin horth
+  let b : OrthonormalBasis (Fin n) ℂ (CVector (Fin n)) :=
+    hV.subordinateOrthonormalBasis (n := n) hdim horth
   let j : Fin n → J := fun i =>
-    hV.subordinateOrthonormalBasisIndex finrank_euclideanSpace_fin i horth
+    hV.subordinateOrthonormalBasisIndex hdim i horth
   refine ⟨b, fun i => (j i).2.val, fun i => (j i).1.val, ?_⟩
   intro i
   have hm : b i ∈ V (j i) :=
-    hV.subordinateOrthonormalBasis_subordinate finrank_euclideanSpace_fin i horth
+    hV.subordinateOrthonormalBasis_subordinate hdim i horth
   exact ⟨Module.End.mem_eigenspace_iff.mp hm.1,
     Module.End.mem_eigenspace_iff.mp hm.2⟩
 

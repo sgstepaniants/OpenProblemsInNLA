@@ -60,6 +60,7 @@ lemma old_column_advance_positive {n : ℕ} (p q t : ℕ) (hp : 0 < p) (ht : 1 �
     ∀ S : Finset (Fin n), S ⊆ oldRows p path (k.val + 1) →
       (∑ i ∈ S, ‖originalRowStage A path (k.val + 1) i j‖) ≤
         (envelopeSum p (t + 1) S.card : ℝ) * entryMax A := by
+  classical
   intro S hS
   have hf := front_column_bounds p q t ht A hA path hpath k j hj.le hbound
   have hs : S ⊆ (frontRows p path k.val).erase (pivotLabel path k) := by
@@ -107,6 +108,7 @@ lemma old_column_advance_zero {n : ℕ} (p q : ℕ)
     ∀ S : Finset (Fin n), S ⊆ oldRows p path (k.val + 1) →
       (∑ i ∈ S, ‖originalRowStage A path (k.val + 1) i j‖) ≤
         (envelopeSum p 1 S.card : ℝ) * entryMax A := by
+  classical
   intro S hS
   have hs : S ⊆ (frontRows p path k.val).erase (pivotLabel path k) := by
     simpa only [front_transition p q A hA path hpath k] using hS

@@ -12,5 +12,12 @@
       "NLA.IE13.Complete"
     ],
     "challenge": "Challenges/IE13.lean"
+  },
+  {
+    "id": "MF-07",
+    "modules": [
+      "NLA.MF07.Definitions"
+    ],
+    "challenge": "Challenges/MF07.lean"
   }
 ]

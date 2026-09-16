@@ -1,0 +1,110 @@
+{
+  "IE13_reviewed_after_map_sha256": "9571c5fbafb935276f4d7e1fbf1c41c06ea60e416a3c1179b6261433620f51cb",
+  "MF07_approved_private_draft_manifest_sha256": "48c0a99fafd8a956b7a5ee009482751d4d14671a70fd647297cecfe1da107989",
+  "MF07_numerical_first_sha256": "acb29b5c3b0cf4ffd8db3e1c8401214d0b86a46883020befe0aa386d81194a12",
+  "MF07_numerical_targets_sha256": "cd13a36c5ca167aabb754915c0a6ab834fc50e59329a4f1feb3af4e8b3a959f3",
+  "MI04_164_declaration_headers_and_IE13_238_unchanged_in_reviewed_repairs": true,
+  "MI04_reviewed_after_map_sha256": "0af966bd25f32cca6ba1ea3fb8a97f1e588511feb5507db36d071ceef50ba8a6",
+  "active_or_config_delta": [
+    {
+      "after_sha256": "ca4190cbafdc8a5e09317173a9fdb07820a965821b0c0b42d5152d23f21ff7da",
+      "before_sha256": null,
+      "kind": "new approved statement source",
+      "path": ".lean-development/Challenges/MF07.lean",
+      "reviewed_private_source": "MF07-development-statements-integration/candidate/.lean-development/Challenges/MF07.lean"
+    },
+    {
+      "after_sha256": "dbf3e94685d13b8d0002bc724b14d233ca789f184c55a64e6854427d563ad275",
+      "before_sha256": "f439389a89d7fe43d494bb34ae51d78206de46c3d286dec07de21e2740c18049",
+      "kind": "existing proof body repair",
+      "path": ".lean-development/NLA/IE13/FrontBounds.lean",
+      "reviewed_private_source": "elimination/IE-13/proof-handoffs/repair-35060849854/after/NLA/IE13/FrontBounds.lean"
+    },
+    {
+      "after_sha256": "aeba0757a42f4b3c06d33aa5501a7a3fa22691586e6f66f42250e9bc8a65f64b",
+      "before_sha256": "b645fa10d9660917c3a792138931f94e2781d3015583066c9fb72013f4d99bec",
+      "kind": "existing proof body repair",
+      "path": ".lean-development/NLA/IE13/WitnessFactors.lean",
+      "reviewed_private_source": "elimination/IE-13/proof-handoffs/repair-35060849854/after/NLA/IE13/WitnessFactors.lean"
+    },
+    {
+      "after_sha256": "8eec7f3f10c012e8721687cfced35537cc754f0a12f08ed42595a64e3ad18c32",
+      "before_sha256": null,
+      "kind": "new approved statement source",
+      "path": ".lean-development/NLA/MF07/Definitions.lean",
+      "reviewed_private_source": "MF07-development-statements-integration/candidate/.lean-development/NLA/MF07/Definitions.lean"
+    },
+    {
+      "after_sha256": "2d3c52a8ec6c9d146310018819e2f7f038de56bd49a8b907a5b46c69e85e91e9",
+      "before_sha256": "21b50d8fb4d8eeed4a8b313f0e04599bcc7842fd69bfbe2310ea3a67948f2622",
+      "kind": "existing proof body repair",
+      "path": ".lean-development/NLA/MI04/Geometry.lean",
+      "reviewed_private_source": "inequalities/MI-04/proof-handoffs/repair-35060849854/after/NLA/MI04/Geometry.lean.txt"
+    },
+    {
+      "after_sha256": "0114cc6e7f74fde482306df19d67457d15458519d0eef3fd33fe2659d0f003fe",
+      "before_sha256": "3d9ed5937621ea6251ebf0332c816b37b22703d52aa52c3af3f1944317c8b3b1",
+      "kind": "existing proof body repair",
+      "path": ".lean-development/NLA/MI04/JointBasis.lean",
+      "reviewed_private_source": "inequalities/MI-04/proof-handoffs/repair-35060849854/after/NLA/MI04/JointBasis.lean.txt"
+    },
+    {
+      "after_sha256": "e8631dbd37561e34755c9aba8c7fad7100b4bb3b02c464145484caa46e7021bc",
+      "before_sha256": "d8abea3f3a78a9381890e637e022553ba0b9b0317d184b33d799123391831d6f",
+      "kind": "existing proof body repair",
+      "path": ".lean-development/NLA/MI04/Normality.lean",
+      "reviewed_private_source": "inequalities/MI-04/proof-handoffs/repair-35060849854/after/NLA/MI04/Normality.lean.txt"
+    },
+    {
+      "after_sha256": "f47fb5154c2c658d74f8766b22d4ef47b921f11ccc551b91c9681ce221852ec0",
+      "before_sha256": "9da3d0cb4597ce574b9da2f43522827464cf2293534cb50a6bac2b6e780700af",
+      "kind": "existing project configuration append",
+      "path": ".lean-development/projects.json",
+      "reviewed_private_source": "MF07-development-statements-integration/candidate/.lean-development/projects.json"
+    }
+  ],
+  "base_commit": "79b52188c4d7fb778d4a48b538f02f9257b86a2c",
+  "base_development_input_count": 1834,
+  "existing_statement_freezes": {
+    "IE13": {
+      "freeze_sha256": "85916aae89eb2111ff914b8767e8918548c132a6ff6c7ed92e52286bec1998fe",
+      "frozen10_sha256": {
+        "Challenge.lean": "5b6b9a4c714686d6b060589a4ee1414f2ec94e80787a9ffe351ac6fe66331e57",
+        "LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+        "NLA/IE13/Definitions.lean": "cda485c546a5879f35eb9d69e7aaa7eaf1449d2219a47b75fcbb4c2827031988",
+        "NUMERICAL_TARGETS.md": "a95e32b7b8e654185f1d6bbbb3c483fa9b988e2ee5800a2ce641a230706e1cb9",
+        "SOURCE-PROVENANCE.json": "35906d147fa91f733fb80f8e8c431656df752da69bc7716b3fef4f0ada091905",
+        "SourceCorrespondence.md": "f4c1091773fe8b684147f80f80d16fec4f59d9c413fa3244947932a023c86782",
+        "comparator.json": "51a3effaed3e2ba4effde07da37c8f84c7c864a0010e2c1548eb5922ec8a7c14",
+        "lake-manifest.json": "55717fab833a468f9b9971b29a171b5a4098fafb7437b93641f357b45c8ec795",
+        "lakefile.toml": "7f0a154e9c02b9f44b3573eb3447e30276885396364d3b66e896e2f72eb39380",
+        "lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71"
+      },
+      "public_contract_count": 28
+    },
+    "MI04": {
+      "freeze_sha256": "c5ca666f10da44ad1c47a81b0fe81898abf3a7a9ea789e90ec9dfbc8c8cf4c6c",
+      "frozen10_sha256": {
+        "Challenge.lean": "ca80d090bfe9f3013d08aa86297761e1e524810881bce92776896545d6eeabf9",
+        "LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+        "NLA/MI04/Definitions.lean": "de70e2a9dd878f1d083adacf8df6808c90c27630ffc2644a62293bf085e41715",
+        "NUMERICAL_TARGETS.md": "5cb5e20ffcf035b2ea303cf9edae2e85619b0f562bf302cf6df0c7a46079d1d7",
+        "SOURCE-PROVENANCE.json": "aa92f22a3c17fa3abd48d80aaac4c7cff1d5dd0f02c32d6441c516d1000d6829",
+        "SourceCorrespondence.md": "dad6f6884c04ad65ba61fb2ab8b7d76fb01f679c724d69514545eaae7161f9fc",
+        "comparator.json": "6137dba303006439dc5c2a38c163834383752ca2fefd7b79b98ffe6839d04180",
+        "lake-manifest.json": "bbcbcd55e8d78d67e7772d7ee2e921ed70c1c10ef25a8d73bc454de23780397d",
+        "lakefile.toml": "194165e91eb78144ef94e089710f5b200005d63c402c95031e3817cc519c322e",
+        "lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71"
+      },
+      "public_contract_count": 21
+    }
+  },
+  "no_MF07_freeze_or_proof_implementation": true,
+  "protected_harness_workflow_and_pins_sha256": {
+    ".github/workflows/lean-development.yml": "f59f22f64198fe72f2566a33373e40171102445b3fbdd787f0b9737cc36854fe",
+    ".lean-development/check.py": "205c49b87d512199a33030338a17fd0c7df6a85dc2fdbb7774a572c8eff2c486",
+    ".lean-development/lake-manifest.json": "650fa0aa1b77024ef5b39ca9fd6a85aa336352a95860d70d6bc68d1f0958d65b",
+    ".lean-development/lakefile.toml": "f492315dbb789d45659dc734884db3ea020ca28692a7c94499e4f1e3f6fdb24b",
+    ".lean-development/lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71"
+  }
+}

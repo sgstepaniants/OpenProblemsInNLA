@@ -38,7 +38,7 @@ def fullLower (p q : ℕ) : Mat (witnessOrder p q) := fun i j => (fullLowerRatio
 def fullUpper (p q : ℕ) : Mat (witnessOrder p q) := fun i j => (fullUpperRational p q i j : ℂ)
 
 lemma fullLower_rational_diag (p q : ℕ) (i : Fin (witnessOrder p q)) :
-    fullLowerRational p q i i = 1 := by simp only [fullLowerRational, if_pos rfl]
+    fullLowerRational p q i i = 1 := by simp only [fullLowerRational, ite_true]
 
 lemma fullLower_rational_prefix (p q : ℕ) (i j : Fin (witnessOrder p q))
     (hj : j.val < p + q) : fullLowerRational p q i j = witnessLowerRational p q i j := by
@@ -85,7 +85,15 @@ lemma fullLower_target_below (p q : ℕ) (i : Fin (witnessOrder p q))
     have hv := congrArg Fin.val he
     change i.val = p + q at hv
     omega
-  rw [fullLowerRational, if_neg hne, if_neg (lt_irrefl (p + q)), if_pos ⟨rfl, hi⟩]
+  have hcut : ¬(witnessTarget p q).val < p + q := by
+    change ¬ (p + q < p + q)
+    exact lt_irrefl (p + q)
+  have htarget : (witnessTarget p q).val = p + q ∧ witnessTarget p q < i := by
+    constructor
+    · rfl
+    · change p + q < i.val
+      exact hi
+  rw [fullLowerRational, if_neg hne, if_neg hcut, if_pos htarget]
 
 lemma fullUpper_rational_above (p q : ℕ) (i j : Fin (witnessOrder p q)) (hji : j < i) :
     fullUpperRational p q i j = 0 := by
