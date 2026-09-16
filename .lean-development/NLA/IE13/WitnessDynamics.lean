@@ -47,8 +47,9 @@ theorem witness_target_value (p q : ℕ) (hp : 0 < p) :
     (fullLower_triangular p q) (fullLower_diag p q)]
   change (fullUpperRational p q (witnessTarget p q) (witnessTarget p q) : ℂ) = _
   rw [fullUpper_target]
-  simp only [witnessTarget, Fin.val_mk, le_refl, ite_true,
-    forwardRational, if_neg (by omega : p + q ≠ 0), Rat.cast_natCast]
+  simp only [witnessTarget, Fin.val_mk, le_refl, ite_true]
+  -- Expose the rational conditional before rewriting it beneath the complex cast.
+  rw [forwardRational, if_neg (by omega : p + q ≠ 0), Rat.cast_natCast]
 
 theorem witness_nonsingular (p q : ℕ) (hp : 0 < p) :
     (witnessMatrix p q).det ≠ 0 := by

@@ -21,8 +21,9 @@ namespace NLA.MF07
 lemma spectralNorm_eq_zero_iff {d : ℕ} (A : Square d) : spectralNorm A = 0 ↔ A = 0 := by
   constructor
   · intro h
-    apply (Matrix.toEuclideanCLM (n := Fin d) (𝕜 := ℂ)).injective
-    simpa only [map_zero] using (norm_eq_zero.mp h)
+    apply EquivLike.injective (Matrix.toEuclideanCLM (n := Fin d) (𝕜 := ℂ))
+    rw [map_zero]
+    exact norm_eq_zero.mp h
   · rintro rfl
     simp [spectralNorm]
 
@@ -66,12 +67,12 @@ lemma interspersed_positive_rate {d : ℕ} (M : Set (Square d))
       _ ≤ u * w x + K * ‖applyMatrix (E A) x‖ :=
         add_le_add (productEnvelope_generator M C u K hu hC A hA x) (hb _).2
       _ ≤ u * w x + K * (v * ‖x‖) := by
-        exact add_le_add_left
+        exact add_le_add le_rfl
           (mul_le_mul_of_nonneg_left ((norm_applyMatrix_le (E A) x).trans
-            (mul_le_mul_of_nonneg_right (hE A hA) (norm_nonneg x))) hK0) _
+            (mul_le_mul_of_nonneg_right (hE A hA) (norm_nonneg x))) hK0)
       _ ≤ u * w x + K * (v * w x) := by
-        exact add_le_add_left (mul_le_mul_of_nonneg_left
-          (mul_le_mul_of_nonneg_left (hb x).1 hv) hK0) _
+        exact add_le_add le_rfl (mul_le_mul_of_nonneg_left
+          (mul_le_mul_of_nonneg_left (hb x).1 hv) hK0)
       _ = (u+K*v) * w x := by ring
   apply (Matrix.toEuclideanCLM (n := Fin d) (𝕜 := ℂ) _).opNorm_le_bound (by positivity)
   intro x

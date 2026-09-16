@@ -30,7 +30,7 @@ lemma wordNorms_eq_range {d : ℕ} (M : Set (Square d)) (n : ℕ) :
     refine ⟨A, ?_⟩
     simp [finiteProduct, A, List.ofFn_get]
   · rintro ⟨A, rfl⟩
-    exact ⟨List.ofFn (fun i => (A i).val), List.length_ofFn _,
+    exact ⟨List.ofFn (fun i => (A i).val), List.length_ofFn,
       WordIn_ofFn M _ (fun i => (A i).property), rfl⟩
 
 lemma wordNorms_nonempty {d : ℕ} (M : Set (Square d)) (hne : M.Nonempty) (n : ℕ) :
@@ -59,6 +59,7 @@ theorem family_norm_maximum {d : ℕ} (hd : 1 ≤ d) (M : Set (Square d))
     intro B hB
     exact le_csSup hc.bddAbove ⟨B, hB, rfl⟩
   refine ⟨?_, ⟨A, hA, hval⟩, hmax⟩
+  change 0 ≤ sSup (spectralNorm '' M)
   rw [← hval]
   exact spectralNorm_nonneg A
 

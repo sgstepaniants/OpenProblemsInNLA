@@ -1,0 +1,173 @@
+{
+  "base_commit": "455082e5045c1c67a0a859dca591426d9dfdd10a",
+  "failed_run": 35071348416,
+  "base_inputs": 1855,
+  "delta": [
+    {
+      "path": ".lean-development/NLA/MI04/JointBasis.lean",
+      "before_sha256": "a4f688880de4a91db07e1945ce12feab396b1a27ea87331edc3f0e3a9c2eb65e",
+      "after_sha256": "f142f20d4504f5b961502952201f2d5342a16c14244192eb7d1412a46413fd9a"
+    },
+    {
+      "path": ".lean-development/NLA/IE13/WitnessDynamics.lean",
+      "before_sha256": "001672ed24a1004cb8dc64dfa83d7b12351b6b015eca987c91639bf95c9a5332",
+      "after_sha256": "b04f4fa3c4290f85397e35926af3aa1a89da710aa3582a6d9abfa8b6e46ef1fa"
+    },
+    {
+      "path": ".lean-development/NLA/MF07/Auerbach.lean",
+      "before_sha256": null,
+      "after_sha256": "9e1f04da52c406d325e2fb4ea1bded917a1872385d3b4b98e1bb2b587a1d018a"
+    },
+    {
+      "path": ".lean-development/NLA/MF07/BlockComparison.lean",
+      "before_sha256": null,
+      "after_sha256": "a35335a4c1b9eaceb5e18cefd7656a6c943d5738bc9dd3883e7ea727c0d7a498"
+    },
+    {
+      "path": ".lean-development/NLA/MF07/CappedWeights.lean",
+      "before_sha256": null,
+      "after_sha256": "d805dd0e28524a6add975afb89fe857a639111fb0c65702aec93d27b5493bcc4"
+    },
+    {
+      "path": ".lean-development/NLA/MF07/CompactGrowth.lean",
+      "before_sha256": "72168caa967a7f3ee8c78cb0a22fc53215894581a160ca716b8a2eb70ce237a2",
+      "after_sha256": "d5f90c834c9d2f15a621575e0fd29185671e7c6a66ad997ceea2ae8bd198b1f9"
+    },
+    {
+      "path": ".lean-development/NLA/MF07/Final.lean",
+      "before_sha256": null,
+      "after_sha256": "b9daa70a5881d142537010a3739ee348b113f111e558bf5fd87463b419a63468"
+    },
+    {
+      "path": ".lean-development/NLA/MF07/Interspersed.lean",
+      "before_sha256": "208ec1f62147a3d8b79153cd1d577ec637c93a863e646917a71d7a2112b19ba8",
+      "after_sha256": "8f65ea5980bb23640c5185abc3d793964f84b1e1a45550e580ee184bcafdc898"
+    },
+    {
+      "path": ".lean-development/NLA/MF07/NormGeometry.lean",
+      "before_sha256": null,
+      "after_sha256": "7a343bf1aed1b29b85416f18b8cb72c26fdcac975e0c6f24db8b6ff69d0bf8b6"
+    },
+    {
+      "path": ".lean-development/NLA/MF07/QuantitativeComparison.lean",
+      "before_sha256": null,
+      "after_sha256": "ad20c7a071d84ea13b6c95f2a915d5ae9fcb362aa7f35d3730e7d910054e6248"
+    },
+    {
+      "path": ".lean-development/NLA/MF07/RoundedNorm.lean",
+      "before_sha256": null,
+      "after_sha256": "a352a64d47f2f163b648b8804ce9de7341249f20df243a47078e9f92b328dc0a"
+    },
+    {
+      "path": ".lean-development/NLA/MF07/Similarity.lean",
+      "before_sha256": null,
+      "after_sha256": "c9d06e4ca115f58c384b0dfe2298ae2fd49e9c73d138a7319445ed2d08eb86c3"
+    },
+    {
+      "path": ".lean-development/NLA/MF07/SingularCoordinates.lean",
+      "before_sha256": null,
+      "after_sha256": "e98aeb9f48fd3b095af3f1f445e4ea95f1a762cfa371e203de76ccb884811c95"
+    },
+    {
+      "path": ".lean-development/NLA/MF07/UnitaryGeometry.lean",
+      "before_sha256": "8295d28da765237b415e89b60ce2c3801bbedb5c5dadda1983d9460a6e1beb8a",
+      "after_sha256": "ee0bf9c4b7f1fba1dee0534f24e9ba095ecc53b7b57d5910e537f9316edbba1d"
+    },
+    {
+      "path": ".lean-development/NLA/MF07/Complete.lean",
+      "before_sha256": null,
+      "after_sha256": "04de4ca8c2ab3635777015bcbd4a1425106b08a6b4dd126d085581fe2003aa62"
+    },
+    {
+      "path": ".lean-development/NLA/SF01/Definitions.lean",
+      "before_sha256": null,
+      "after_sha256": "53d50f8b1f82d63c2d721b1aa1bf3de48fd1a2bb64499eabc329190039c48aa2"
+    },
+    {
+      "path": ".lean-development/Challenges/SF01.lean",
+      "before_sha256": null,
+      "after_sha256": "0fc95735951fe21cbc6c5e551be13ac492322b2a6eea226cedd83fc132381277"
+    },
+    {
+      "path": ".lean-development/projects.json",
+      "before_sha256": "e9011c17277f9f5d89ccfd8fa76c44cd049a2a6354e55be7eb2490d3cda51bac",
+      "after_sha256": "f02c8b2580da615eebe969d7a088ff8a2697757be8d8d64cb0504b398a44c4c5"
+    }
+  ],
+  "current_closures": {
+    "MI04": "1666db20ab8165015df3219c0b04b6ece6d6d6bfc90b8f42deefaa99830f55ff",
+    "IE13": "baf8151de076df0626a703376a982e4c85d3a250de2c9a8992c585f9e166eebb",
+    "MF07": "c1edff16fcdc0e09ab61acf061fafa1bbfa77050f9ad4f7d5f8c1c7a13ca29d8",
+    "SF01": "c59c2f2dad8f37aad1f6c21b8150349dd2584b6461c23ac983c608f48d928222"
+  },
+  "frozen30": {
+    "MI04": {
+      "freeze_sha256": "c5ca666f10da44ad1c47a81b0fe81898abf3a7a9ea789e90ec9dfbc8c8cf4c6c",
+      "files_sha256": {
+        "NLA/MI04/Definitions.lean": "de70e2a9dd878f1d083adacf8df6808c90c27630ffc2644a62293bf085e41715",
+        "Challenge.lean": "ca80d090bfe9f3013d08aa86297761e1e524810881bce92776896545d6eeabf9",
+        "NUMERICAL_TARGETS.md": "5cb5e20ffcf035b2ea303cf9edae2e85619b0f562bf302cf6df0c7a46079d1d7",
+        "SourceCorrespondence.md": "dad6f6884c04ad65ba61fb2ab8b7d76fb01f679c724d69514545eaae7161f9fc",
+        "SOURCE-PROVENANCE.json": "aa92f22a3c17fa3abd48d80aaac4c7cff1d5dd0f02c32d6441c516d1000d6829",
+        "comparator.json": "6137dba303006439dc5c2a38c163834383752ca2fefd7b79b98ffe6839d04180",
+        "lakefile.toml": "194165e91eb78144ef94e089710f5b200005d63c402c95031e3817cc519c322e",
+        "lake-manifest.json": "bbcbcd55e8d78d67e7772d7ee2e921ed70c1c10ef25a8d73bc454de23780397d",
+        "lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+        "LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+      }
+    },
+    "IE13": {
+      "freeze_sha256": "85916aae89eb2111ff914b8767e8918548c132a6ff6c7ed92e52286bec1998fe",
+      "files_sha256": {
+        "NLA/IE13/Definitions.lean": "cda485c546a5879f35eb9d69e7aaa7eaf1449d2219a47b75fcbb4c2827031988",
+        "Challenge.lean": "5b6b9a4c714686d6b060589a4ee1414f2ec94e80787a9ffe351ac6fe66331e57",
+        "NUMERICAL_TARGETS.md": "a95e32b7b8e654185f1d6bbbb3c483fa9b988e2ee5800a2ce641a230706e1cb9",
+        "SourceCorrespondence.md": "f4c1091773fe8b684147f80f80d16fec4f59d9c413fa3244947932a023c86782",
+        "SOURCE-PROVENANCE.json": "35906d147fa91f733fb80f8e8c431656df752da69bc7716b3fef4f0ada091905",
+        "comparator.json": "51a3effaed3e2ba4effde07da37c8f84c7c864a0010e2c1548eb5922ec8a7c14",
+        "lakefile.toml": "7f0a154e9c02b9f44b3573eb3447e30276885396364d3b66e896e2f72eb39380",
+        "lake-manifest.json": "55717fab833a468f9b9971b29a171b5a4098fafb7437b93641f357b45c8ec795",
+        "lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+        "LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+      }
+    },
+    "MF07": {
+      "freeze_sha256": "6e792469355b1553d8a08d608c20c67cbfde2f067292a15e0ad119b63609037c",
+      "files_sha256": {
+        "NLA/MF07/Definitions.lean": "8eec7f3f10c012e8721687cfced35537cc754f0a12f08ed42595a64e3ad18c32",
+        "Challenge.lean": "ca4190cbafdc8a5e09317173a9fdb07820a965821b0c0b42d5152d23f21ff7da",
+        "NUMERICAL_TARGETS.md": "cd13a36c5ca167aabb754915c0a6ab834fc50e59329a4f1feb3af4e8b3a959f3",
+        "SourceCorrespondence.md": "88cf78168a76064468fc425b26975bcb93246464c463d7c74a6f713afbbb24c3",
+        "SOURCE-PROVENANCE.json": "647427cfd61f45ea14bcf3cb022893395eebca56313d98e5c8bd0f7f3613c392",
+        "comparator.json": "da9df06bcc2f5b3f696bd6a7ada166e1e52afb464b309217daf09327eb5cee74",
+        "lakefile.toml": "fb3e81b851f20b96c1ded6edfcb81fc34775dcb0fd49f763213c660da35055bc",
+        "lake-manifest.json": "13899bcb8b63f2e638331cad43f6103e7aa04083a5e6db173df3fbc3c3319ddd",
+        "lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+        "LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+      }
+    }
+  },
+  "SF01_statement_draft_manifest": "fa30a8ebe5e6f583a758f8cca336c46ca044e31009d6f22153c4041078686576",
+  "SF01_not_frozen_or_implemented": true,
+  "protected_harness_and_pins": {
+    ".lean-development/check.py": "205c49b87d512199a33030338a17fd0c7df6a85dc2fdbb7774a572c8eff2c486",
+    ".lean-development/lakefile.toml": "f492315dbb789d45659dc734884db3ea020ca28692a7c94499e4f1e3f6fdb24b",
+    ".lean-development/lake-manifest.json": "650fa0aa1b77024ef5b39ca9fd6a85aa336352a95860d70d6bc68d1f0958d65b",
+    ".lean-development/lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+    ".github/workflows/lean-development.yml": "f59f22f64198fe72f2566a33373e40171102445b3fbdd787f0b9737cc36854fe"
+  },
+  "new_command_count": 11,
+  "deliberate_Challenge_holes": {
+    "MI04": 21,
+    "IE13": 28,
+    "MF07": 18,
+    "SF01": 24
+  },
+  "MF07_complete_wrapper_reaches_all20_sources": true,
+  "integration_whitespace_amendment": {
+    "path": ".lean-development/NLA/MF07/Complete.lean",
+    "before_sha256": "5bfedc431d3b729177e36b2246c25803abc7eefc007db4f18591bd0b428f8c87",
+    "after_sha256": "04de4ca8c2ab3635777015bcbd4a1425106b08a6b4dd126d085581fe2003aa62",
+    "scope": "remove one final empty line only; all nonblank source lines and all eighteen checks unchanged"
+  }
+}

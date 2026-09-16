@@ -16,17 +16,15 @@
   {
     "id": "MF-07",
     "modules": [
-      "NLA.MF07.MatrixBasics",
-      "NLA.MF07.CompactGrowth",
-      "NLA.MF07.Numerical",
-      "NLA.MF07.ProductEnvelope",
-      "NLA.MF07.Interspersed",
-      "NLA.MF07.RootSemantics",
-      "NLA.MF07.ApproximateNorm",
-      "NLA.MF07.ScalarFamily",
-      "NLA.MF07.UnitaryGeometry",
-      "NLA.MF07.TriangularDamping"
+      "NLA.MF07.Complete"
     ],
     "challenge": "Challenges/MF07.lean"
+  },
+  {
+    "id": "SF-01",
+    "modules": [
+      "NLA.SF01.Definitions"
+    ],
+    "challenge": "Challenges/SF01.lean"
   }
 ]

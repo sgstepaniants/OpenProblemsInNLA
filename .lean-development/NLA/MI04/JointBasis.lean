@@ -51,7 +51,10 @@ private lemma jointEigenSpace_orthogonal {n : ℕ}
     apply Prod.ext
     · exact Subtype.ext (congrArg Prod.fst h)
     · exact Subtype.ext (congrArg Prod.snd h)
-  exact (hA.orthogonalFamily_eigenspace_inf_eigenspace hB).comp hinj
+  apply OrthogonalFamily.of_pairwise (V := jointEigenSpace A B)
+  intro j k hjk
+  exact (hA.orthogonalFamily_eigenspace_inf_eigenspace hB).pairwise
+    (hinj.ne hjk)
 
 private lemma jointEigenSpace_iSup {n : ℕ}
     (A B : Module.End ℂ (CVector (Fin n)))

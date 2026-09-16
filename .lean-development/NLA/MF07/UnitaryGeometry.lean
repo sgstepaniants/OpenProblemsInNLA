@@ -22,7 +22,7 @@ namespace NLA.MF07
 
 lemma isUnitary_mem {d : ℕ} {Q : Square d} (hQ : IsUnitary Q) :
     Q ∈ Matrix.unitaryGroup (Fin d) ℂ := by
-  simpa only [Unitary.mem_iff, Matrix.star_eq_conjTranspose] using hQ
+  simpa only [IsUnitary, Unitary.mem_iff, Matrix.star_eq_conjTranspose] using hQ
 
 lemma isUnitary_star {d : ℕ} {Q : Square d} (hQ : IsUnitary Q) :
     IsUnitary Q.conjTranspose := by
@@ -56,14 +56,18 @@ lemma cutReflection_star (d k : ℕ) :
   ext i j
   by_cases hij : i = j
   · subst j
-    simp [cutReflection, Matrix.conjTranspose_apply]
+    by_cases hi : i.val < k <;> simp [cutReflection, Matrix.conjTranspose_apply, hi]
   · simp [cutReflection, Matrix.conjTranspose_apply, hij, Ne.symm hij]
 
 lemma cutReflection_unitary (d k : ℕ) : IsUnitary (cutReflection d k) := by
   have hs : cutReflection d k * cutReflection d k = 1 := by
+    dsimp only [cutReflection]
+    rw [Matrix.diagonal_mul_diagonal]
     ext i j
-    by_cases hi : i.val < k <;>
-      simp [cutReflection, Matrix.diagonal_mul_diagonal, hi]
+    by_cases hij : i = j
+    · subst j
+      by_cases hi : i.val < k <;> simp [Matrix.diagonal_apply, Matrix.one_apply, hi]
+    · simp [Matrix.diagonal_apply, Matrix.one_apply, hij]
   exact ⟨by simpa only [cutReflection_star] using hs,
     by simpa only [cutReflection_star] using hs⟩
 

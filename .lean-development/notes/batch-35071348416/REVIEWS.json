@@ -1,0 +1,109 @@
+{
+  "scope": "Two independent source approvals per included problem, no runtime acceptance; full private inventories are referenced but not copied here.",
+  "reviews": [
+    {
+      "problem": "MI04",
+      "manifest": "reviews/MI04-independent-repair-35071348416/MANIFEST.json",
+      "manifest_sha256": "6815a07d5aa4bf8f74230913bbf491a38e681ff018b48b5c1569e9c364683f67",
+      "review": "reviews/MI04-independent-repair-35071348416/REVIEW.md",
+      "review_sha256": "81a2d1aaef9c4d0009978e167dda87bc67b86f25f016dee76b5f828df66360ef",
+      "source_closure_sha256": "1666db20ab8165015df3219c0b04b6ece6d6d6bfc90b8f42deefaa99830f55ff",
+      "verdict": "approve-for-development-rerun",
+      "scope": "two independent source reviews; actual compile/Comparator acceptance not claimed",
+      "root_read_full_report": true,
+      "root_rehashed_bound_files": 14,
+      "entries_checked": 14
+    },
+    {
+      "problem": "MI04",
+      "manifest": "reviews/MI04-ie13-repair-35071348416/MANIFEST.json",
+      "manifest_sha256": "3917929b6882bef7be1e96ea79cc16152ad196bee7901aa30f0675b628118163",
+      "review": "reviews/MI04-ie13-repair-35071348416/REVIEW.md",
+      "review_sha256": "2cda0c52ba0b4fb7f9350c3a630f328f5fdf6076640246e2add63c8a138946b0",
+      "source_closure_sha256": "1666db20ab8165015df3219c0b04b6ece6d6d6bfc90b8f42deefaa99830f55ff",
+      "verdict": "approve-for-development-rerun",
+      "scope": "two independent source reviews; actual compile/Comparator acceptance not claimed",
+      "root_read_full_report": true,
+      "root_rehashed_bound_files": 8,
+      "entries_checked": 8
+    },
+    {
+      "problem": "IE13",
+      "manifest": "reviews/IE13-mi04-repair-35071348416/MANIFEST.json",
+      "manifest_sha256": "a9f302a5764146993bccb6c2f07f38b5ac966233988c4583f06b30a0bd5345d7",
+      "review": "reviews/IE13-mi04-repair-35071348416/REVIEW.md",
+      "review_sha256": "90d52838619d5e3edad8269fadb40d121609f9fee2603ecad5d40ef035f9f9ce",
+      "source_closure_sha256": "baf8151de076df0626a703376a982e4c85d3a250de2c9a8992c585f9e166eebb",
+      "verdict": "approve-for-development-rerun",
+      "scope": "two independent source reviews; actual compile/Comparator acceptance not claimed",
+      "root_read_full_report": true,
+      "root_rehashed_bound_files": 14,
+      "entries_checked": 14
+    },
+    {
+      "problem": "IE13",
+      "manifest": "reviews/IE13-mf22-repair-35071348416/MANIFEST.json",
+      "manifest_sha256": "6703670e2ed4df71ec157ed5d0e6971248bdddcd652b560b2785e8c9b9d75f2a",
+      "review": "reviews/IE13-mf22-repair-35071348416/REVIEW.md",
+      "review_sha256": "d0f16f94d314670edd626afe345bd4f904063d7bf9e8f408a9bf2fc472607f9c",
+      "source_closure_sha256": "baf8151de076df0626a703376a982e4c85d3a250de2c9a8992c585f9e166eebb",
+      "verdict": "approve-for-development-rerun",
+      "scope": "two independent source reviews; actual compile/Comparator acceptance not claimed",
+      "root_read_full_report": true,
+      "root_rehashed_bound_files": 9,
+      "entries_checked": 9
+    },
+    {
+      "problem": "MF07",
+      "manifest": "reviews/MF07-root-unitary-followthrough-35071348416/MANIFEST.json",
+      "manifest_sha256": "26d73dd1d5b572a096e9e2cabd79a96c9c94d3cf44cd03061f9da5ce77272212",
+      "review": "reviews/MF07-root-unitary-followthrough-35071348416/REVIEW.md",
+      "review_sha256": "198365b777d143f5ee6f03df2133678082f3480ff8f95b134f1cbaf993a60ec2",
+      "source_closure_sha256": "c1edff16fcdc0e09ab61acf061fafa1bbfa77050f9ad4f7d5f8c1c7a13ca29d8",
+      "verdict": "approve-for-development-rerun",
+      "scope": "two independent source reviews; actual compile/Comparator acceptance not claimed",
+      "root_read_full_report": true,
+      "root_rehashed_bound_files": 10,
+      "entries_checked": 10
+    },
+    {
+      "problem": "MF07",
+      "manifest": "reviews/MF07-mi04-unitary-followthrough-35071348416/MANIFEST.json",
+      "manifest_sha256": "8a16b7c16d3e46c5540aa54d4d6f2ca44133577b5cb760f0e9cfe36c1cb302ad",
+      "review": "reviews/MF07-mi04-unitary-followthrough-35071348416/REVIEW.md",
+      "review_sha256": "bab32de628fab991c401b5b7c2f45060d0616bf3718f9b64ec91d90430832a33",
+      "source_closure_sha256": "c1edff16fcdc0e09ab61acf061fafa1bbfa77050f9ad4f7d5f8c1c7a13ca29d8",
+      "verdict": "approve-for-development-rerun",
+      "scope": "two independent source reviews; actual compile/Comparator acceptance not claimed",
+      "root_read_full_report": true,
+      "root_rehashed_bound_files": 10,
+      "entries_checked": 10
+    },
+    {
+      "problem": "SF01",
+      "manifest": "reviews/SF01-root-statements/MANIFEST.json",
+      "manifest_sha256": "4c5c7d5d704291e62c5f6e0a3d2ee7a7abbf25bb092fdca295bfb4f1a05b2779",
+      "review": "reviews/SF01-root-statements/REVIEW.md",
+      "review_sha256": "5880d6ad2b431f11284a7155388f518eed3131f15370e4d10d29486fbd51dc3c",
+      "source_closure_sha256": "c59c2f2dad8f37aad1f6c21b8150349dd2584b6461c23ac983c608f48d928222",
+      "verdict": "approve-for-development-rerun",
+      "scope": "two independent source reviews; actual compile/Comparator acceptance not claimed",
+      "root_read_full_report": true,
+      "root_rehashed_bound_files": 11,
+      "entries_checked": 11
+    },
+    {
+      "problem": "SF01",
+      "manifest": "reviews/SF01-mi04-statements/MANIFEST.json",
+      "manifest_sha256": "246135dbd8f7b45a125dbd3effaab937a3dbf66d6605aeb93eabba846db16c4b",
+      "review": "reviews/SF01-mi04-statements/REVIEW.md",
+      "review_sha256": "14586beab2d2fe26b825dc3a9dccf863fb41f9580ddd0a61ddb6d7d5d701d9cb",
+      "source_closure_sha256": "c59c2f2dad8f37aad1f6c21b8150349dd2584b6461c23ac983c608f48d928222",
+      "verdict": "approve-for-development-rerun",
+      "scope": "two independent source reviews; actual compile/Comparator acceptance not claimed",
+      "root_read_full_report": true,
+      "root_rehashed_bound_files": 13,
+      "entries_checked": 13
+    }
+  ]
+}
