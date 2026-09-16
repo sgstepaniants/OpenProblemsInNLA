@@ -14,7 +14,7 @@ statement approval, actual elaboration or frozen boundary is claimed.
 import NLA.SF01.Definitions
 
 set_option autoImplicit false
-open scoped BigOperators
+open scoped BigOperators Matrix
 
 namespace NLA.SF01
 noncomputable section

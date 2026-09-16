@@ -1,0 +1,37 @@
+{
+  "canonical_id": "RA-02",
+  "upstream_commit": "ce47b5630bf3680d9211131c3a43825b022c139a",
+  "original_target_unchanged": true,
+  "complete_target_and_manuscript_read": true,
+  "no_new_mathematical_authorship_claim": true,
+  "source_records": [
+    {
+      "commit": "ce47b5630bf3680d9211131c3a43825b022c139a",
+      "path": "randomized-and-low-rank-approximation/RA-02/README.md",
+      "raw_git_blob": "738c682aa100311dd2a923eb1a6820fcbd16075e",
+      "raw_sha256": "65d58ede3fac4a92420c18db2da850e0f1814454f78ad9f9cb75919e6fedaea9",
+      "raw_bytes": 4800,
+      "raw_private_path": "/tmp/nla-lean-next-20260915/next-statements/RA02-arrowhead-feasibility/source-private/README.md",
+      "packet_path": "sources/upstream/RA-02-README.md",
+      "packet_sha256": "65d58ede3fac4a92420c18db2da850e0f1814454f78ad9f9cb75919e6fedaea9",
+      "packet_bytes": 4800,
+      "contact_redaction_only": false,
+      "contact_replacements": 0,
+      "prior_literal_git_authentication": "Two sealed mathematical preflights and fresh public audit; current author rehashed those exact raw snapshots without invoking Git."
+    },
+    {
+      "commit": "ce47b5630bf3680d9211131c3a43825b022c139a",
+      "path": "references/colbrook-random-pivoting-2026-09-11/manuscripts/sharp_random_pivoting.tex",
+      "raw_git_blob": "93fef4e0c421dfe2f14d29928df98f2e0c276a18",
+      "raw_sha256": "6ea9223d7411994923a0f27d4c9b3ae44fee8c19ca82c5f16f42b722ee589880",
+      "raw_bytes": 28308,
+      "raw_private_path": "/tmp/nla-lean-next-20260915/next-statements/RA02-arrowhead-feasibility/source-private/sharp_random_pivoting.tex",
+      "packet_path": "sources/upstream/sharp_random_pivoting.contact-redacted.tex",
+      "packet_sha256": "6af0a82c5fe2997d1fd1db963a0a8ec126d39bdab9833f5f06ba76aa6fa18089",
+      "packet_bytes": 28299,
+      "contact_redaction_only": true,
+      "contact_replacements": 1,
+      "prior_literal_git_authentication": "Two sealed mathematical preflights and fresh public audit; current author rehashed those exact raw snapshots without invoking Git."
+    }
+  ]
+}

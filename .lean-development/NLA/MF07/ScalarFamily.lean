@@ -51,7 +51,7 @@ lemma scalar_growth_eq (M : Set (Square 1)) (hM : IsCompact M)
 lemma scalar_rootGrowth (M : Set (Square 1)) (hM : IsCompact M)
     (hne : M.Nonempty) (n : ℕ) (hn : 1 ≤ n) : rootGrowth M n = familyNorm M := by
   have hL := (family_norm_maximum le_rfl M hM hne).1
-  rw [rootGrowth, scalar_growth_eq M hM hne n, one_div]
+  rw [rootGrowth, Real.rpow_eq_pow, scalar_growth_eq M hM hne n, one_div]
   exact Real.pow_rpow_inv_natCast hL (show n ≠ 0 by omega)
 
 theorem scalar_family_growth (M : Set (Square 1)) (hM : IsCompact M)

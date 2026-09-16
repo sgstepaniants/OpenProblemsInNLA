@@ -1,0 +1,140 @@
+{
+  "base_commit": "ce33d037e9960d7bbb096eb2bf90266cb07213c7",
+  "failed_run": 35076646177,
+  "base_inputs": 1870,
+  "delta": [
+    {
+      "path": ".lean-development/Challenges/RA02.lean",
+      "before_sha256": null,
+      "after_sha256": "eb95beaddd92fc1b24d2df1d7bc9db9afec7a3391759dd2d613119c5f25d4340",
+      "kind": "new"
+    },
+    {
+      "path": ".lean-development/Challenges/SF01.lean",
+      "before_sha256": "0fc95735951fe21cbc6c5e551be13ac492322b2a6eea226cedd83fc132381277",
+      "after_sha256": "66f3111799d39aa5772dfb7395c9e95c7dc94b263d5c01d6e142f642b64c37c0",
+      "kind": "modified"
+    },
+    {
+      "path": ".lean-development/NLA/MF07/NormGeometry.lean",
+      "before_sha256": "7a343bf1aed1b29b85416f18b8cb72c26fdcac975e0c6f24db8b6ff69d0bf8b6",
+      "after_sha256": "9069dada9936d5b4c2568aa247a8ce050c3ca79385fa4b50dbf42e2c94fcafe8",
+      "kind": "modified"
+    },
+    {
+      "path": ".lean-development/NLA/MF07/RootSemantics.lean",
+      "before_sha256": "9e4ed1fb3d1d500a5527cadcd6865928be310b047ae3f23bdc18619281dab4ef",
+      "after_sha256": "bee70f65ab8e7e517ebec8f579ea3ee8fb276d52a8f5cd293c9c0e085ab304ee",
+      "kind": "modified"
+    },
+    {
+      "path": ".lean-development/NLA/MF07/ScalarFamily.lean",
+      "before_sha256": "65e73510323dcba07445028f2c57d94ca615dcf992a60827d63ebac9e4582228",
+      "after_sha256": "a04ae3e130512679f2eb8e68d270234f17947bcb1425042b59d753e644c4a5fe",
+      "kind": "modified"
+    },
+    {
+      "path": ".lean-development/NLA/MF07/TriangularDamping.lean",
+      "before_sha256": "2e4be5f21f0e35bfa4b9393cf1411bf1eb7d00de6642231be2482df5cfc7bffe",
+      "after_sha256": "ea35c872a9c579f4d6e9a259140cbe64afdf12491fa34729272b34e7150aab2a",
+      "kind": "modified"
+    },
+    {
+      "path": ".lean-development/NLA/MI04/JointBasis.lean",
+      "before_sha256": "f142f20d4504f5b961502952201f2d5342a16c14244192eb7d1412a46413fd9a",
+      "after_sha256": "ea3acff2f539beaeae34d665e1858a14b8b8acd2c195feab46d61df50ef0f584",
+      "kind": "modified"
+    },
+    {
+      "path": ".lean-development/NLA/RA02/Definitions.lean",
+      "before_sha256": null,
+      "after_sha256": "1a0f251cfcc38f57787de3ee79dc8c89e7bf0f496ebfe9196a66f8b3f452a376",
+      "kind": "new"
+    },
+    {
+      "path": ".lean-development/NLA/SF01/Definitions.lean",
+      "before_sha256": "53d50f8b1f82d63c2d721b1aa1bf3de48fd1a2bb64499eabc329190039c48aa2",
+      "after_sha256": "937c5a9f6908fe90b9633f80aa4db1e40859a51bf37cd3bbf87729d64719057d",
+      "kind": "modified"
+    },
+    {
+      "path": ".lean-development/projects.json",
+      "before_sha256": "f02c8b2580da615eebe969d7a088ff8a2697757be8d8d64cb0504b398a44c4c5",
+      "after_sha256": "2c76500587db4a3ab46b2ff305c2f6d0ca0779cf7942c7e7864e3eb39a930ab1",
+      "kind": "modified"
+    }
+  ],
+  "source_closures": {
+    "MI04": "683be932b63873241336038e4eca8d53891dc42ab4bf0d344ade05a4fd3d8b5a",
+    "MF07": "32034c0b73f84a63aa310fe285e9942dae8dfe4bedd8fa9983e045653fb3f203",
+    "SF01": "5b65f662a71162100b591ed0b90af2bdaa7ae9ab99e8b61693e38b95b834084f",
+    "RA02": "4ba11c4fab5fc0b4ba40192c3993511aecf74129f0211c4588580b498c23fb3e",
+    "IE13-preserved": "baf8151de076df0626a703376a982e4c85d3a250de2c9a8992c585f9e166eebb"
+  },
+  "preserved_existing_frozen30": {
+    "MI04": {
+      "freeze_sha256": "c5ca666f10da44ad1c47a81b0fe81898abf3a7a9ea789e90ec9dfbc8c8cf4c6c",
+      "files_sha256": {
+        "NLA/MI04/Definitions.lean": "de70e2a9dd878f1d083adacf8df6808c90c27630ffc2644a62293bf085e41715",
+        "Challenge.lean": "ca80d090bfe9f3013d08aa86297761e1e524810881bce92776896545d6eeabf9",
+        "NUMERICAL_TARGETS.md": "5cb5e20ffcf035b2ea303cf9edae2e85619b0f562bf302cf6df0c7a46079d1d7",
+        "SourceCorrespondence.md": "dad6f6884c04ad65ba61fb2ab8b7d76fb01f679c724d69514545eaae7161f9fc",
+        "SOURCE-PROVENANCE.json": "aa92f22a3c17fa3abd48d80aaac4c7cff1d5dd0f02c32d6441c516d1000d6829",
+        "comparator.json": "6137dba303006439dc5c2a38c163834383752ca2fefd7b79b98ffe6839d04180",
+        "lakefile.toml": "194165e91eb78144ef94e089710f5b200005d63c402c95031e3817cc519c322e",
+        "lake-manifest.json": "bbcbcd55e8d78d67e7772d7ee2e921ed70c1c10ef25a8d73bc454de23780397d",
+        "lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+        "LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+      }
+    },
+    "IE13": {
+      "freeze_sha256": "85916aae89eb2111ff914b8767e8918548c132a6ff6c7ed92e52286bec1998fe",
+      "files_sha256": {
+        "NLA/IE13/Definitions.lean": "cda485c546a5879f35eb9d69e7aaa7eaf1449d2219a47b75fcbb4c2827031988",
+        "Challenge.lean": "5b6b9a4c714686d6b060589a4ee1414f2ec94e80787a9ffe351ac6fe66331e57",
+        "NUMERICAL_TARGETS.md": "a95e32b7b8e654185f1d6bbbb3c483fa9b988e2ee5800a2ce641a230706e1cb9",
+        "SourceCorrespondence.md": "f4c1091773fe8b684147f80f80d16fec4f59d9c413fa3244947932a023c86782",
+        "SOURCE-PROVENANCE.json": "35906d147fa91f733fb80f8e8c431656df752da69bc7716b3fef4f0ada091905",
+        "comparator.json": "51a3effaed3e2ba4effde07da37c8f84c7c864a0010e2c1548eb5922ec8a7c14",
+        "lakefile.toml": "7f0a154e9c02b9f44b3573eb3447e30276885396364d3b66e896e2f72eb39380",
+        "lake-manifest.json": "55717fab833a468f9b9971b29a171b5a4098fafb7437b93641f357b45c8ec795",
+        "lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+        "LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+      }
+    },
+    "MF07": {
+      "freeze_sha256": "6e792469355b1553d8a08d608c20c67cbfde2f067292a15e0ad119b63609037c",
+      "files_sha256": {
+        "NLA/MF07/Definitions.lean": "8eec7f3f10c012e8721687cfced35537cc754f0a12f08ed42595a64e3ad18c32",
+        "Challenge.lean": "ca4190cbafdc8a5e09317173a9fdb07820a965821b0c0b42d5152d23f21ff7da",
+        "NUMERICAL_TARGETS.md": "cd13a36c5ca167aabb754915c0a6ab834fc50e59329a4f1feb3af4e8b3a959f3",
+        "SourceCorrespondence.md": "88cf78168a76064468fc425b26975bcb93246464c463d7c74a6f713afbbb24c3",
+        "SOURCE-PROVENANCE.json": "647427cfd61f45ea14bcf3cb022893395eebca56313d98e5c8bd0f7f3613c392",
+        "comparator.json": "da9df06bcc2f5b3f696bd6a7ada166e1e52afb464b309217daf09327eb5cee74",
+        "lakefile.toml": "fb3e81b851f20b96c1ded6edfcb81fc34775dcb0fd49f763213c660da35055bc",
+        "lake-manifest.json": "13899bcb8b63f2e638331cad43f6103e7aa04083a5e6db173df3fbc3c3319ddd",
+        "lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+        "LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+      }
+    }
+  },
+  "protected_checker_workflow_and_pins": {
+    ".lean-development/check.py": "205c49b87d512199a33030338a17fd0c7df6a85dc2fdbb7774a572c8eff2c486",
+    ".lean-development/lakefile.toml": "f492315dbb789d45659dc734884db3ea020ca28692a7c94499e4f1e3f6fdb24b",
+    ".lean-development/lake-manifest.json": "650fa0aa1b77024ef5b39ca9fd6a85aa336352a95860d70d6bc68d1f0958d65b",
+    ".lean-development/lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+    ".github/workflows/lean-development.yml": "f59f22f64198fe72f2566a33373e40171102445b3fbdd787f0b9737cc36854fe"
+  },
+  "prospective_commands": 13,
+  "deliberate_Challenge_holes": {
+    "MI04": 21,
+    "IE13": 28,
+    "MF07": 18,
+    "SF01": 24,
+    "RA02": 27
+  },
+  "proof_implementation_added_for_SF01_or_RA02": false,
+  "statement_freeze_added_for_SF01_or_RA02": false,
+  "accepted_count_change": 0,
+  "RA02_original_statement_manifest_sha256": "10c1c64a95804f21dde488409bdda7affaa7f1d07b3d633b242314468db3cbb6"
+}

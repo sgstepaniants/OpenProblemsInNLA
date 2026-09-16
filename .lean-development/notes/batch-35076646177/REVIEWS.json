@@ -1,0 +1,136 @@
+{
+  "scope": "Current source approvals only; full private manifest archives are referenced by hash, not recursively copied. No runtime acceptance.",
+  "roles": {
+    "batch_preparer": "/root",
+    "batch_preparer_is_MF07_proof_repair_author": false,
+    "batch_preparer_is_RA02_statement_author": false,
+    "batch_preparer_SF01_role": "nonauthor narrow syntax reviewer",
+    "MI04_current_repair_author": "/root",
+    "SF01_current_repair_author": "/root/ie13_continuation",
+    "RA02_original_mathematical_route_author": "/root",
+    "independent_integration_review": "required before root applies; this preparer does not approve its own batch",
+    "Git_check": "Root separately authenticated all1870 literal ce33 Git blobs and clean shared checkout before preparation; apply must recheck.",
+    "original_batch_preparer": "/root/mf22_publication_referee",
+    "RA02_scope_amendment_author": "/root"
+  },
+  "reviews": [
+    {
+      "problem": "MI04",
+      "reviewer": "/root/ie13_continuation",
+      "scope": "Independent current proof-body repair continuation; prior complete source review remains attributed.",
+      "verdict": "approve-for-development-elaboration-attempt",
+      "source_closure_sha256": "683be932b63873241336038e4eca8d53891dc42ab4bf0d344ade05a4fd3d8b5a",
+      "historical_private_manifest": "reviews/MI04-ie13-repair-35076646177/MANIFEST.json",
+      "manifest_sha256": "c426756b65fcd6b32eeb161a492781be1ebe60829cfadb4472bcb0eb51b09a50",
+      "manifest_entries_rehashed": 7,
+      "report_sha256": "c74bd67cafbbf8652b54e31746415e166c6a10f432a0d8da5309b4285ea2f7e1",
+      "retained_report": "reviews/MI04-ie13-repair-35076646177.md"
+    },
+    {
+      "problem": "MI04",
+      "reviewer": "/root/mi04_independent_referee",
+      "scope": "Independent current proof-body repair continuation of prior complete source review.",
+      "verdict": "approve-for-development-elaboration-attempt",
+      "source_closure_sha256": "683be932b63873241336038e4eca8d53891dc42ab4bf0d344ade05a4fd3d8b5a",
+      "historical_private_manifest": "reviews/MI04-independent-repair-35076646177/MANIFEST.json",
+      "manifest_sha256": "a936882bf30d26d2925585f95cb94ae04b9c4234874d0e38d98c13c12e3bb0a5",
+      "manifest_entries_rehashed": 11,
+      "report_sha256": "589945ddae9e6936ebf78ec401bd55d0540a1f8c52a6059227c7d5eaed38a45f",
+      "retained_report": "reviews/MI04-independent-repair-35076646177.md"
+    },
+    {
+      "problem": "MF07",
+      "reviewer": "/root",
+      "scope": "Independent proof-body repair continuation; not author of MF07 proofs.",
+      "verdict": "approve-for-development-elaboration-attempt",
+      "source_closure_sha256": "32034c0b73f84a63aa310fe285e9942dae8dfe4bedd8fa9983e045653fb3f203",
+      "historical_private_manifest": "reviews/MF07-root-repair-35076646177/MANIFEST.json",
+      "manifest_sha256": "1c5ae42dd77c03ce9dde497a61327207beda8f69025cb8e308314a6ba1feb249",
+      "manifest_entries_rehashed": 4,
+      "report_sha256": "991e7fb05df6fa695008f13b6c78c641ac475aa282bdcc96ab9192b85c5903c7",
+      "retained_report": "reviews/MF07-root-repair-35076646177.md"
+    },
+    {
+      "problem": "MF07",
+      "reviewer": "/root/ie13_continuation",
+      "scope": "Independent proof-body repair review; authored original statement draft, not a new independent review of own statements.",
+      "verdict": "approve-for-development-elaboration-attempt",
+      "source_closure_sha256": "32034c0b73f84a63aa310fe285e9942dae8dfe4bedd8fa9983e045653fb3f203",
+      "historical_private_manifest": "reviews/MF07-ie13-repair-35076646177/MANIFEST.json",
+      "manifest_sha256": "9a5eb689a69609ad7f8848d7146105700e305b14f7ebba2ba2155e92bad069be",
+      "manifest_entries_rehashed": 7,
+      "report_sha256": "cfb9ef6fb2d6d7740c968852abd72cc619be600d13e74c8e6bc6505426e40b3c",
+      "retained_report": "reviews/MF07-ie13-repair-35076646177.md"
+    },
+    {
+      "problem": "SF01",
+      "reviewer": "/root",
+      "scope": "Independent statement-syntax repair continuation of full statement review.",
+      "verdict": "approve-for-development-elaboration-attempt",
+      "source_closure_sha256": "5b65f662a71162100b591ed0b90af2bdaa7ae9ab99e8b61693e38b95b834084f",
+      "historical_private_manifest": "reviews/SF01-root-repair-35076646177/MANIFEST.json",
+      "manifest_sha256": "c3a95fb51a2b1af6d445b8bebcd7e29d25dfd808912e34c5d1833d5f4fbaf84a",
+      "manifest_entries_rehashed": 4,
+      "report_sha256": "1362fc11b0525842d9f05a1683b73c10313a0931efdd44378178524557c4e54f",
+      "retained_report": "reviews/SF01-root-repair-35076646177.md"
+    },
+    {
+      "problem": "SF01",
+      "reviewer": "/root/mf22_publication_referee",
+      "scope": "Independent narrow syntax repair review, not a new complete mathematical statement review.",
+      "verdict": "approve-for-development-elaboration-attempt",
+      "source_closure_sha256": "5b65f662a71162100b591ed0b90af2bdaa7ae9ab99e8b61693e38b95b834084f",
+      "historical_private_manifest": "reviews/SF01-mf22-elaboration-repair-35076646177/MANIFEST.json",
+      "manifest_sha256": "5bfeeaa2dfb3338aa4ebea4d2dde0536fc4b6b1a00726b7cf404b8210494f177",
+      "manifest_entries_rehashed": 3,
+      "report_sha256": "f25d11c4c76ec60ad8ad8039edd3657eff2a521c1851ea97b7de0b6b57397441",
+      "retained_report": "reviews/SF01-mf22-elaboration-repair-35076646177.md"
+    },
+    {
+      "problem": "RA02",
+      "reviewer": "/root",
+      "scope": "Nonauthor Lean statement reviewer; authored preceding mathematical route and discloses that role. Applies to the original draft before the separately reviewed two-line Matrix-scope amendment.",
+      "verdict": "approve-for-development-elaboration-attempt",
+      "source_closure_sha256": "10c1c64a95804f21dde488409bdda7affaa7f1d07b3d633b242314468db3cbb6",
+      "historical_private_manifest": "reviews/RA02-root-statements/MANIFEST.json",
+      "manifest_sha256": "2e6fe5946d144d526cbe136ad3dfc9eebee0f1da27fe0c0e4835a10f42d1529d",
+      "manifest_entries_rehashed": 21,
+      "report_sha256": "1d6e1534b82b29906658ef506c029d77192ccafebe02f30e07bf0bc72cd53588",
+      "retained_report": "reviews/RA02-root-statements.md"
+    },
+    {
+      "problem": "RA02",
+      "reviewer": "/root/mi04_independent_referee",
+      "scope": "Independent nonauthor full mathematical statement review. Applies to the original draft before the separately reviewed two-line Matrix-scope amendment.",
+      "verdict": "approve-for-development-elaboration-attempt",
+      "source_closure_sha256": "10c1c64a95804f21dde488409bdda7affaa7f1d07b3d633b242314468db3cbb6",
+      "historical_private_manifest": "reviews/RA02-mi04-statements/MANIFEST.json",
+      "manifest_sha256": "e50b2f0de8a5734f19b3dd79e901107fc657b324f43867e8371c05324a9e8fb6",
+      "manifest_entries_rehashed": 11,
+      "report_sha256": "bba0ff7fa07fdf4a1d0826809c2ed1afd5ab01375bc769c603780712ac62b351",
+      "retained_report": "reviews/RA02-mi04-statements.md"
+    },
+    {
+      "problem": "RA02",
+      "reviewer": "/root/ie13_continuation",
+      "scope": "Independent narrow statement-syntax amendment review; original complete statement reviews retained.",
+      "verdict": "approve-for-development-elaboration-attempt",
+      "source_closure_sha256": "4ba11c4fab5fc0b4ba40192c3993511aecf74129f0211c4588580b498c23fb3e",
+      "historical_private_manifest": "reviews/RA02-ie13-Matrix-scope-20260916/MANIFEST.json",
+      "manifest_sha256": "6bc3e2f4348bd9dba507a6cb74e15a63c643e30eabce45fe3a28ce8e637b954d",
+      "report_sha256": "33ba4f66b09ad853d032b2ffd10d1700661b5bd3e626301b4ae25b837b1a12c7",
+      "retained_report": "reviews/RA02-ie13-Matrix-scope-20260916.md"
+    },
+    {
+      "problem": "RA02",
+      "reviewer": "/root/mi04_independent_referee",
+      "scope": "Independent narrow statement-syntax amendment review; original complete statement reviews retained.",
+      "verdict": "approve-for-development-elaboration-attempt",
+      "source_closure_sha256": "4ba11c4fab5fc0b4ba40192c3993511aecf74129f0211c4588580b498c23fb3e",
+      "historical_private_manifest": "reviews/RA02-mi04-Matrix-scope-20260916/MANIFEST.json",
+      "manifest_sha256": "444880506dc8832445811ec6a9fe5bcce7dfe7346878060adbdc61be9087ab10",
+      "report_sha256": "026351a2f08eb6d718a44be4dc98bc3431c34422893f47232ddd33b4516320b0",
+      "retained_report": "reviews/RA02-mi04-Matrix-scope-20260916.md"
+    }
+  ]
+}

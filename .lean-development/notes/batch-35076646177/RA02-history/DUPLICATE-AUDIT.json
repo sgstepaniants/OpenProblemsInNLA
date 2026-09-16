@@ -1,0 +1,37 @@
+{
+  "snapshot_utc": "2026-09-16 08:38:08 through 08:38:17 UTC",
+  "repositories": 14,
+  "public_branch_heads": 251,
+  "unique_complete_trees": 205,
+  "PR_records": 152,
+  "RA02_RPCholesky_target_named_Lean_or_manifest_hits": 0,
+  "main_commit": "ce47b5630bf3680d9211131c3a43825b022c139a",
+  "related_PRs": {
+    "106": "Existing Colbrook mathematical solution; merged",
+    "157": "Existing RA-03 randomized-LU Lean result explicitly excludes Cholesky",
+    "237": "Partial RA-01 oversampling result, a different target"
+  },
+  "retained_bounded_evidence": [
+    {
+      "origin": "/tmp/nla-lean-next-20260915/next-statements/RA02-public-audit-20260916/REPORT.md",
+      "packet_path": "sources/duplicate-audit/REPORT.md",
+      "sha256": "678c425e97170c19e846f6bbd226cad2466e80a43bb7e1c29b2879a58aff968e",
+      "bytes": 4861
+    },
+    {
+      "origin": "/tmp/nla-lean-next-20260915/next-statements/RA02-public-audit-20260916/CHECKS.json",
+      "packet_path": "sources/duplicate-audit/CHECKS.json",
+      "sha256": "d9e549bc89a23dfbeb0782898d1376397d10599630857bb8efb9ee75523c975d",
+      "bytes": 1341
+    },
+    {
+      "origin": "/tmp/nla-lean-next-20260915/next-statements/RA02-public-audit-20260916/MANIFEST.json",
+      "packet_path": "sources/duplicate-audit/MANIFEST.json",
+      "sha256": "deb6b22a98df2609814e945b9d0fbc6de006e1873273c4f3b4892ea8b9321fea",
+      "bytes": 13084
+    }
+  ],
+  "complete_private_evidence_directory": "/tmp/nla-lean-next-20260915/next-statements/RA02-public-audit-20260916",
+  "limitations": "Public path and complete PR-title/body snapshot only; excludes no private, unpushed, deleted, later, unusually named or comment-only work. No exhaustive semantic proof search claimed.",
+  "canonical_current_status": "Solved mathematically; current Lean draft remains unverified"
+}

@@ -26,5 +26,12 @@
       "NLA.SF01.Definitions"
     ],
     "challenge": "Challenges/SF01.lean"
+  },
+  {
+    "id": "RA-02",
+    "modules": [
+      "NLA.RA02.Definitions"
+    ],
+    "challenge": "Challenges/RA02.lean"
   }
 ]

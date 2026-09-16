@@ -1,0 +1,327 @@
+{
+  "status": "Immutable statement-only draft; not a statement freeze or proof acceptance",
+  "sealed_at_utc": "2026-09-16T09:01:13.328839+00:00",
+  "author_agent": "/root/mf22_publication_referee",
+  "canonical_problem": "RA-02",
+  "upstream_commit": "ce47b5630bf3680d9211131c3a43825b022c139a",
+  "active_Lean_files": [
+    "NLA/RA02/Definitions.lean",
+    "Challenge.lean"
+  ],
+  "Challenge_contracts": 27,
+  "proof_implementation_absent": true,
+  "independent_statement_reviews_pending": true,
+  "actual_Linux_statement_elaboration_pending": true,
+  "all_files": [
+    {
+      "path": "Challenge.lean",
+      "sha256": "ef47b12a4a94a2f5f131d34d937e2a2950a38e79bc3b9cd9cc5cb8824604fb49",
+      "bytes": 9711
+    },
+    {
+      "path": "DUPLICATE-AUDIT.json",
+      "sha256": "050f3e4cbfa46c2a413cb73ba86aaa1fd3d15c6733e4eb6d182e321e926053c2",
+      "bytes": 1815
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "bytes": 11358
+    },
+    {
+      "path": "MATHEMATICAL-PREFLIGHT.json",
+      "sha256": "a6ad06f287c79dfdbc9a20f268c823b4d2d044557b6f81b975e393ae2a8bcf4d",
+      "bytes": 1963
+    },
+    {
+      "path": "NLA/RA02/Definitions.lean",
+      "sha256": "c85bc5c1cb78742c7cd9e290dc65ae21746ca96167bdcbd10974c7a2cf46d593",
+      "bytes": 7183
+    },
+    {
+      "path": "NUMERICAL-FIRST.json",
+      "sha256": "6d7ec68d212f11e874bcf1944819376cb345c00e94a0a40b8051b726d08661f3",
+      "bytes": 407
+    },
+    {
+      "path": "NUMERICAL_TARGETS.md",
+      "sha256": "ce5dde3c86b4790c95030d6ab645dac509bc7c784282a4c308e06f3d54fe11f8",
+      "bytes": 10938
+    },
+    {
+      "path": "PRIMARY-API.json",
+      "sha256": "dcdb2ac58fca4431b4d4bfa8feebc9fc09a83a8cf1c57c0e527980e315c530a5",
+      "bytes": 8207
+    },
+    {
+      "path": "README.md",
+      "sha256": "ede2eb39d4e6bc549f75566509e1a2daca5db450ab384597a2266398e7b2bac7",
+      "bytes": 3120
+    },
+    {
+      "path": "REUSE-AND-API.md",
+      "sha256": "fdd12c85a922e9ec5b4989acad78fd40902d68833439d2b9f6f671b44d2adc04",
+      "bytes": 4204
+    },
+    {
+      "path": "REUSE-AUDIT.json",
+      "sha256": "0fbc55ce6acf52d0e15ad5451c100bc2c9b36c4f92e3687d26753c19d7340675",
+      "bytes": 1874
+    },
+    {
+      "path": "REVIEW-PLAN.md",
+      "sha256": "17932257a923f5895a33ef8e15badacf1b0a78dc3f372a8503876b74dba3fdb2",
+      "bytes": 4206
+    },
+    {
+      "path": "SEMANTIC-API-PROVENANCE.json",
+      "sha256": "297b247ff0e37ab3069dde336c9f1ed6e4644afcd084b741a1431512a39e9617",
+      "bytes": 914
+    },
+    {
+      "path": "SOURCE-PROVENANCE.json",
+      "sha256": "f627f3d5a540ff1e3e39bd968acbb96026f88924b016dccdd2e1246080d440c9",
+      "bytes": 2070
+    },
+    {
+      "path": "STANDARDS-PROVENANCE.json",
+      "sha256": "700fae797ef5b6efb3d709286feef83ecf32f01a4a9573f4034390dfee95e132",
+      "bytes": 5426
+    },
+    {
+      "path": "STATIC-CHECKS.json",
+      "sha256": "5a1927009036a8264a2991abc30de1494652710d41836b3de34e6edc093aa902",
+      "bytes": 3355
+    },
+    {
+      "path": "SourceCorrespondence.md",
+      "sha256": "ed3f06e340852168d9a34494c071ce749ae469c2d9789acd38d87183200ad434",
+      "bytes": 7291
+    },
+    {
+      "path": "comparator.json",
+      "sha256": "93f07f48dd506db58884be7a8494c1cd47df905f3fa93bd25279eaaec7c4a254",
+      "bytes": 1250
+    },
+    {
+      "path": "formalization.yaml",
+      "sha256": "6a0b5eb5075934b42080b54d3b0748f63aee7b4462c9c05f7db2a406f98bed2a",
+      "bytes": 5697
+    },
+    {
+      "path": "lake-manifest.json",
+      "sha256": "11ce586cb4b568b7d90c89c8596ea504fa34a7aa03476cd234b0451c87929ce8",
+      "bytes": 3884
+    },
+    {
+      "path": "lakefile.toml",
+      "sha256": "4b4baaa6c8db4a23b0354b8841ad6cb444fd371f7fa061c00d2dfdda4a0604a1",
+      "bytes": 249
+    },
+    {
+      "path": "lean-toolchain",
+      "sha256": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+      "bytes": 25
+    },
+    {
+      "path": "preflight/check_packet.py",
+      "sha256": "7a00e353e6c2ce75e8dcd6d3bafc96ff353ad71305ada0698570ac4fd20029f2",
+      "bytes": 6981
+    },
+    {
+      "path": "preflight/prepare_packet.py",
+      "sha256": "3321b40f65ba7a998e7377b06b5c537bb9441a62bb5643833751e110d6a49f34",
+      "bytes": 12260
+    },
+    {
+      "path": "sources/API-investigation/MANIFEST.json",
+      "sha256": "522c054cc59c1a7f90df7e0b430eb25613d496fb4d8464764709e7669f34a5bf",
+      "bytes": 275
+    },
+    {
+      "path": "sources/API-investigation/NOTES.md",
+      "sha256": "a1cd5768f20b35a2f26c256976372cf608edee8d595e40c2101b8adad41ca406",
+      "bytes": 7743
+    },
+    {
+      "path": "sources/API-investigation/PRIMARY-API.json",
+      "sha256": "10e83c9552e0772aff31a236920ae07f4701daa31cf3016a5162acf20a0977e5",
+      "bytes": 6123
+    },
+    {
+      "path": "sources/duplicate-audit/CHECKS.json",
+      "sha256": "d9e549bc89a23dfbeb0782898d1376397d10599630857bb8efb9ee75523c975d",
+      "bytes": 1341
+    },
+    {
+      "path": "sources/duplicate-audit/MANIFEST.json",
+      "sha256": "deb6b22a98df2609814e945b9d0fbc6de006e1873273c4f3b4892ea8b9321fea",
+      "bytes": 13084
+    },
+    {
+      "path": "sources/duplicate-audit/REPORT.md",
+      "sha256": "678c425e97170c19e846f6bbd226cad2466e80a43bb7e1c29b2879a58aff968e",
+      "bytes": 4861
+    },
+    {
+      "path": "sources/patterns/Forsythe-Challenge.lean",
+      "sha256": "bcbc89b32f46f6d9c33bbc919d4b08b0e3e797e8b87745485e1decd059c07a8d",
+      "bytes": 1399
+    },
+    {
+      "path": "sources/patterns/Forsythe-NUMERICAL_TARGETS.md",
+      "sha256": "2e25ed916080e6405f7b0a39e45641ef6f88389f26a6a142bc3036528dfc4119",
+      "bytes": 5589
+    },
+    {
+      "path": "sources/patterns/Schiffer-Challenge.lean",
+      "sha256": "bc31fcc14f816c2e3b756bdea74c6c791aae2d34fa055ae2a8c6a218b209f267",
+      "bytes": 5473
+    },
+    {
+      "path": "sources/primary/Mathlib/Analysis/Complex/Exponential.lean",
+      "sha256": "78ca88512755a04b7346806b8e74fb3930bf14c0ec289107694a33c1947b7821",
+      "bytes": 28641
+    },
+    {
+      "path": "sources/primary/Mathlib/Analysis/Complex/Order.lean",
+      "sha256": "67cf9e2c39fa9c53e1a3d5e9f418718638ed01f9274135b49795a335abe64f7d",
+      "bytes": 5764
+    },
+    {
+      "path": "sources/primary/Mathlib/Analysis/InnerProductSpace/Basic.lean",
+      "sha256": "344aa5e0b104223d327bb1f13db092b4d320017c8f82b7ba9846b5f517222468",
+      "bytes": 46963
+    },
+    {
+      "path": "sources/primary/Mathlib/Analysis/InnerProductSpace/Rayleigh.lean",
+      "sha256": "cd697c142567c6bd0116f70774062691a7f3c65bc00476a1bbec3c5addf7cfe2",
+      "bytes": 17503
+    },
+    {
+      "path": "sources/primary/Mathlib/Analysis/InnerProductSpace/Spectrum.lean",
+      "sha256": "f12ef613416053c759ef30179147744c64eeec90f7467644cb30e64d532d7aa6",
+      "bytes": 24198
+    },
+    {
+      "path": "sources/primary/Mathlib/Analysis/Matrix/PosDef.lean",
+      "sha256": "d019fb2cae81293d8505e2a2543a6f5fe7c1819e4860454d00e15ef74528a43d",
+      "bytes": 5724
+    },
+    {
+      "path": "sources/primary/Mathlib/Analysis/Matrix/Spectrum.lean",
+      "sha256": "1ad47effa0a5fbc373ebb6cf52a6b85a66b25d3c5a86394f3dd5932ffbfc3afe",
+      "bytes": 11285
+    },
+    {
+      "path": "sources/primary/Mathlib/Analysis/RCLike/Basic.lean",
+      "sha256": "a84c795cd067befa1095540ddacd3f580d3d517f91c50965227c6f8e7e34474e",
+      "bytes": 50583
+    },
+    {
+      "path": "sources/primary/Mathlib/Analysis/SpecialFunctions/Pow/Asymptotics.lean",
+      "sha256": "004e4d6013b20f95feedfcb23b257c07eb1ee4c7645b9d81fd6e4cb684a116d6",
+      "bytes": 19622
+    },
+    {
+      "path": "sources/primary/Mathlib/Data/Complex/Basic.lean",
+      "sha256": "e279bd6369e83ebf6716e17a8f38c81c812020753472cac5e7ae2a501790b760",
+      "bytes": 30091
+    },
+    {
+      "path": "sources/primary/Mathlib/LinearAlgebra/Matrix/Determinant/Basic.lean",
+      "sha256": "37646a248748fd65e37c20a21b4a20fea11539d4312aae4f277e4faef8ed2b87",
+      "bytes": 37796
+    },
+    {
+      "path": "sources/primary/Mathlib/LinearAlgebra/Matrix/Hermitian.lean",
+      "sha256": "9f4e84cafd93f05935d8accc2846a4d624c1fe994c53ab348b8338464bf5cb21",
+      "bytes": 15986
+    },
+    {
+      "path": "sources/primary/Mathlib/LinearAlgebra/Matrix/PosDef.lean",
+      "sha256": "09290b5923e167fcf959df64d00b039c7b99c4b236755728219bf5b5feaac24a",
+      "bytes": 27238
+    },
+    {
+      "path": "sources/reviews/RA02-ie13-preflight/MANIFEST.json",
+      "sha256": "99053459a442b092b7bbad05120ff9bd77c4aef919029b2552e99a6d8e1f238f",
+      "bytes": 659
+    },
+    {
+      "path": "sources/reviews/RA02-ie13-preflight/REVIEW.md",
+      "sha256": "57ba96f762d23ae3ac26b43ce62c83ce8d23f759624b854de1856911fc2732ed",
+      "bytes": 11327
+    },
+    {
+      "path": "sources/reviews/RA02-mf22-preflight/MANIFEST.json",
+      "sha256": "51ed0b23f4737321a0018e7f972b9c7faaca533ad577b5e7a659087dd9abd62c",
+      "bytes": 530
+    },
+    {
+      "path": "sources/reviews/RA02-mf22-preflight/REVIEW.md",
+      "sha256": "31346652f535020e39743033db734847048d7917d8c4aea72e300a90b72c4296",
+      "bytes": 9103
+    },
+    {
+      "path": "sources/route/FINITE-ROUTE.md",
+      "sha256": "a14770a8d91ad413722ae8cd98339f79b4195ae464fffd00269af1b53bc2162d",
+      "bytes": 8508
+    },
+    {
+      "path": "sources/standards/TauCetiProject/TauCetiReview/REVIEWING.md",
+      "sha256": "352f1c0482b6880e538e1dc1ad7259c0382b12eb62553dca6ab50cd7a12fb352",
+      "bytes": 10001
+    },
+    {
+      "path": "sources/standards/TauCetiProject/TauCetiReview/rubrics/attribution.md",
+      "sha256": "04e2956b91409b5abce91f934db00218fddb0fc5ba7e6776bf748690554c71db",
+      "bytes": 1116
+    },
+    {
+      "path": "sources/standards/TauCetiProject/TauCetiReview/rubrics/correctness.md",
+      "sha256": "24eb3f6504809e7e938b02daeb75179fd7d99338bda63f125f7229a2e4b1ca06",
+      "bytes": 2531
+    },
+    {
+      "path": "sources/standards/TauCetiProject/TauCetiReview/rubrics/generality.md",
+      "sha256": "b793f946b84a7b079626271cb8c81f219b8e21dfebf0263620dc4b091c9a84c7",
+      "bytes": 901
+    },
+    {
+      "path": "sources/standards/TauCetiProject/TauCetiReview/rubrics/proof-quality.md",
+      "sha256": "346768b1a3445343e5fad4d0f78dcb601f5f633cbc7abd81ba189ac4d15ecb83",
+      "bytes": 1578
+    },
+    {
+      "path": "sources/standards/TauCetiProject/TauCetiReview/rubrics/reuse.md",
+      "sha256": "43325e91f32f5f2e5819012caae8c42b72326dfff86599c1feb1ba498ca14a3b",
+      "bytes": 3014
+    },
+    {
+      "path": "sources/standards/leanprover/comparator/README.md",
+      "sha256": "cfdf0ff608755d56f3bad62acc86273bc0c11591335678344bf53cb733b61772",
+      "bytes": 9960
+    },
+    {
+      "path": "sources/standards/mathlib-initiative/formalization.yaml/README.md",
+      "sha256": "68f8f77eced3b729638b9ee45c16c19d30d88b947520eb0c193fd17352146bee",
+      "bytes": 4555
+    },
+    {
+      "path": "sources/standards/mathlib-initiative/formalization.yaml/schema/v0.4.schema.json",
+      "sha256": "25ff6b25ca4511635aff4443cf20480c15e59dddf19591c730950b442ea54fce",
+      "bytes": 12694
+    },
+    {
+      "path": "sources/upstream/RA-02-README.md",
+      "sha256": "65d58ede3fac4a92420c18db2da850e0f1814454f78ad9f9cb75919e6fedaea9",
+      "bytes": 4800
+    },
+    {
+      "path": "sources/upstream/sharp_random_pivoting.contact-redacted.tex",
+      "sha256": "6af0a82c5fe2997d1fd1db963a0a8ec126d39bdab9833f5f06ba76aa6fa18089",
+      "bytes": 28299
+    }
+  ]
+}

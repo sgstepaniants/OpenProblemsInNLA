@@ -25,7 +25,8 @@ def clippedWeights {d : ℕ} (h : Fin d → ℝ) (k : ℕ) (hk : k < d) (i : Fin
 lemma clippedWeights_zero {d : ℕ} (h : Fin d → ℝ) (hd : 0 < d) (i : Fin d) :
     clippedWeights h 0 hd i = h ⟨0, hd⟩ := by
   by_cases hi : i.val ≤ 0
-  · have he : i = ⟨0, hd⟩ := Fin.ext (by omega)
+  · have he : i = ⟨0, hd⟩ := Fin.ext (by
+      simpa only [Fin.val_mk] using Nat.eq_zero_of_le_zero hi)
     simp [clippedWeights, he]
   · simp [clippedWeights, hi]
 
@@ -35,7 +36,8 @@ lemma clippedWeights_succ_apply {d : ℕ} (h : Fin d → ℝ) (k : ℕ)
   by_cases hi : i.val ≤ k
   · simp [clippedWeights, hi, show i.val ≤ k+1 by omega]
   · by_cases hi' : i.val ≤ k+1
-    · have he : i = ⟨k+1, hk⟩ := Fin.ext (by omega)
+    · have he : i = ⟨k+1, hk⟩ := Fin.ext (by
+        simpa only [Fin.val_mk] using (show i.val = k+1 by omega))
       simp [clippedWeights, he]
     · simp [clippedWeights, hi, hi']
 
@@ -58,6 +60,8 @@ lemma clippedDamping_step {d : ℕ} (h : Fin d → ℝ) (hh : Antitone h)
   let ik1 : Fin d := ⟨k+1, hk⟩
   have hp : (h ik : ℂ) ≠ 0 := Complex.ofReal_ne_zero.mpr (hpos ik).ne'
   have hp1 : (h ik1 : ℂ) ≠ 0 := Complex.ofReal_ne_zero.mpr (hpos ik1).ne'
+  -- Expose the clipped indices in the complex nonzero facts used for cancellation.
+  dsimp only [ik, ik1] at hp hp1
   ext i j
   rw [cutDamping_apply]
   simp only [diagonalDamping_apply, clippedWeights_succ_apply]
@@ -76,20 +80,19 @@ lemma clippedDamping_step {d : ℕ} (h : Fin d → ℝ) (hh : Antitone h)
         have hk1k : h ik1 ≤ h ik := hh (show ik ≤ ik1 by change k ≤ k+1; omega)
         have he : h ik1 = h ik := by linarith
         have he' : h ⟨k+1, hk⟩ = h ⟨k, by omega⟩ := he
-        simp [clippedWeights, hi, hj, hi', hj', he', div_self (hpos ik).ne']
+        simp [clippedWeights, hi, hj, hi', hj', he', hp]
   · have hi' : ¬ i.val < k+1 := by omega
     by_cases hj : j.val ≤ k
     · have hj' : j.val < k+1 := by omega
       simp only [clippedWeights, if_neg hi, if_pos hj, if_neg (by simp [hi', hj'] :
         ¬ (i.val < k+1 ↔ j.val < k+1))]
       push_cast
-      field_simp
-      ring
+      field_simp [hp, hpj] <;> ring
     · have hj' : ¬ j.val < k+1 := by omega
       simp only [clippedWeights, if_neg hi, if_neg hj, if_pos (by simp [hi', hj'] :
         (i.val < k+1 ↔ j.val < k+1)), one_mul]
       push_cast
-      field_simp
+      field_simp [hp, hp1] <;> ring
 
 lemma clippedDamping_bound {d : ℕ} (h : Fin d → ℝ) (hh : Antitone h)
     (hpos : ∀ i, 0 < h i) (X : Square d) (hX : LowerForWeights h X) :

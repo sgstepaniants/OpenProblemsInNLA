@@ -45,7 +45,7 @@ lemma complexNorm_sum {d : ℕ} {v : EuclideanVector d → ℝ} (hv : IsComplexN
 lemma complexNorm_continuous {d : ℕ} {v : EuclideanVector d → ℝ}
     (hv : IsComplexNorm v) (c : ℝ) (hc : 0 ≤ c)
     (hupper : ∀ x, v x ≤ c * ‖x‖) : Continuous v := by
-  have hlip : LipschitzWith ⟨c, hc⟩ v := by
+  have hlip : LipschitzWith (NNReal.mk c hc) v := by
     apply LipschitzWith.of_dist_le_mul
     intro x y
     have hxy : v x - v y ≤ c * ‖x-y‖ := by
@@ -58,7 +58,7 @@ lemma complexNorm_continuous {d : ℕ} {v : EuclideanVector d → ℝ}
       have hu := hupper (y-x)
       simp only [sub_add_cancel, norm_sub_rev y x] at ht hu
       linarith
-    simpa only [Real.dist_eq, dist_eq_norm, NNReal.coe_mk] using
+    simpa only [Real.dist_eq, dist_eq_norm, Real.norm_eq_abs, NNReal.coe_mk] using
       (abs_sub_le_iff.mpr ⟨hxy, hyx⟩)
   exact hlip.continuous
 

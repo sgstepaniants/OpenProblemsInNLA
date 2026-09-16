@@ -20,7 +20,7 @@ set_option autoImplicit false
 
 namespace NLA.SF01
 noncomputable section
-open scoped BigOperators
+open scoped BigOperators Matrix
 
 abbrev Square (n : ℕ) := Matrix (Fin n) (Fin n) ℝ
 abbrev Vector (n : ℕ) := Fin n → ℝ
@@ -99,7 +99,7 @@ def poleVector (d : RidgeData) : Fin (d.size + 1) → ℝ :=
 
 def poleMatrix (d : RidgeData) : Square (d.size + 1) :=
   Matrix.diagonal (poleOffsets d) +
-    d.b⁻¹ • (fun i j => poleVector d i * poleVector d j)
+    d.b⁻¹ • Matrix.of (fun i j => poleVector d i * poleVector d j)
 
 def IsOrthogonal {n : ℕ} (Q : Square n) : Prop :=
   Q.transpose * Q = 1 ∧ Q * Q.transpose = 1

@@ -44,7 +44,7 @@ lemma jointSpectralRadius_le_root {d : ℕ} (M : Set (Square d)) (hM : IsCompact
 lemma rootGrowth_pow {d : ℕ} (M : Set (Square d)) (hM : IsCompact M)
     (hne : M.Nonempty) (n : ℕ) (hn : 1 ≤ n) :
     rootGrowth M n ^ n = familyGrowth M n := by
-  simpa only [rootGrowth, one_div] using
+  simpa only [rootGrowth, Real.rpow_eq_pow, one_div] using
     Real.rpow_inv_natCast_pow (familyGrowth_nonneg M hM hne n) (show n ≠ 0 by omega)
 
 lemma familyGrowth_ge_one_of_radius_one {d : ℕ} (hd : 1 ≤ d) (M : Set (Square d))
@@ -86,7 +86,7 @@ lemma radius_one_root_limit {d : ℕ} (hd : 1 ≤ d) (M : Set (Square d))
   have hl := hsub.tendsto_lim hb
   have hl0 : 0 ≤ hsub.lim := ge_of_tendsto hl (Filter.Eventually.of_forall hquot)
   have hroot (n : ℕ) : rootGrowth M n = Real.exp (Real.log (familyGrowth M n) / (n : ℝ)) := by
-    rw [rootGrowth, Real.rpow_def_of_pos (hp n)]
+    rw [rootGrowth, Real.rpow_eq_pow, Real.rpow_def_of_pos (hp n)]
     congr 1
     ring
   have he_upper : Real.exp hsub.lim ≤ jointSpectralRadius M := by
@@ -99,7 +99,7 @@ lemma radius_one_root_limit {d : ℕ} (hd : 1 ≤ d) (M : Set (Square d))
     · simpa [hr] using he_upper
     · exact Real.one_le_exp_iff.mpr hl0
   have hconv := Real.continuous_exp.continuousAt.tendsto.comp hl
-  simpa only [he, ← hroot] using hconv
+  simpa only [Function.comp_def, he, ← hroot] using hconv
 
 lemma familyGrowth_mul_le_pow {d : ℕ} (hd : 1 ≤ d) (M : Set (Square d))
     (hM : IsCompact M) (hne : M.Nonempty) (k n : ℕ) :
@@ -121,11 +121,12 @@ lemma rootGrowth_mul_le {d : ℕ} (hd : 1 ≤ d) (M : Set (Square d))
       Real.rpow_le_rpow (familyGrowth_nonneg M hM hne (k*n))
         (familyGrowth_mul_le_pow hd M hM hne k n) (by positivity)
     _ = rootGrowth M n := by
+      -- Normalize the explicit rpow wrapper before applying the public Pow API.
+      simp only [rootGrowth, Real.rpow_eq_pow]
       rw [← Real.rpow_natCast_mul (familyGrowth_nonneg M hM hne n)]
-      unfold rootGrowth
       congr 1
       push_cast
-      field_simp
+      field_simp [hk0, hn0]
 
 lemma one_le_rootGrowth_of_limit {d : ℕ} (hd : 1 ≤ d) (M : Set (Square d))
     (hM : IsCompact M) (hne : M.Nonempty)

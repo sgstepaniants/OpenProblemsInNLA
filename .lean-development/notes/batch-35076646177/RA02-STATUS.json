@@ -1,0 +1,14 @@
+{
+  "phase": "Two original full statement approvals plus two independent minimal scope-amendment approvals; actual Linux elaboration pending",
+  "draft_manifest_sha256": "10c1c64a95804f21dde488409bdda7affaa7f1d07b3d633b242314468db3cbb6",
+  "definitions_sha256": "1a0f251cfcc38f57787de3ee79dc8c89e7bf0f496ebfe9196a66f8b3f452a376",
+  "challenge_sha256": "eb95beaddd92fc1b24d2df1d7bc9db9afec7a3391759dd2d613119c5f25d4340",
+  "Challenge_contracts": 27,
+  "actual_Lean_LeanCert_Comparator_execution": false,
+  "proof_implementation": false,
+  "statement_freeze": false,
+  "whole_problem_verified": false,
+  "status_documents": "RA02-history contains original preparation-time metadata with historical path references; current source approvals are in REVIEWS.json.",
+  "full_original_target_and_author_credit_preserved": true,
+  "amendment": "RA02-MATRIX-SCOPE-AMENDMENT.json"
+}

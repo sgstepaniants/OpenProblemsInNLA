@@ -1,0 +1,39 @@
+{
+  "challenge_module": "Challenge",
+  "solution_module": "Solution",
+  "theorem_names": [
+    "NLA.RA02.exp_one_bound",
+    "NLA.RA02.scalar_parameters",
+    "NLA.RA02.pivot_kernel",
+    "NLA.RA02.finite_path_law",
+    "NLA.RA02.zero_residual",
+    "NLA.RA02.expected_trace_recursion",
+    "NLA.RA02.ordered_spectrum",
+    "NLA.RA02.least_eigenvalue_rayleigh",
+    "NLA.RA02.spectral_tail_semantics",
+    "NLA.RA02.arrowhead_quadratic",
+    "NLA.RA02.arrowhead_positive_definite",
+    "NLA.RA02.rayleigh_probe_values",
+    "NLA.RA02.arrowhead_tail",
+    "NLA.RA02.residual_state_positivity",
+    "NLA.RA02.residual_state_updates",
+    "NLA.RA02.distinct_history_state",
+    "NLA.RA02.distinct_history_identity",
+    "NLA.RA02.retained_history_count",
+    "NLA.RA02.retained_prefix_description",
+    "NLA.RA02.retained_trace_bound",
+    "NLA.RA02.retained_contribution_bound",
+    "NLA.RA02.expectation_lower_bound",
+    "NLA.RA02.binomial_exponential_bound",
+    "NLA.RA02.exponential_tail_factor",
+    "NLA.RA02.exponential_dominates_real_power",
+    "NLA.RA02.universal_counterexamples",
+    "NLA.RA02.no_polynomial_trace_factor"
+  ],
+  "definition_names": [],
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ]
+}

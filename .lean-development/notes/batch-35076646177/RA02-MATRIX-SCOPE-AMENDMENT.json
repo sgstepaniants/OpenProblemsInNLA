@@ -1,0 +1,49 @@
+{
+  "author": "/root",
+  "at_utc": "2026-09-16T09:59:16.152007+00:00",
+  "original_statement_manifest_sha256": "10c1c64a95804f21dde488409bdda7affaa7f1d07b3d633b242314468db3cbb6",
+  "reason": "Independent integration reviewer found missing Matrix scope for actual *\u1d65 notation. This is a source-based prediction, not an observed RA02 compiler failure.",
+  "source_files": {
+    "NLA/RA02/Definitions.lean": {
+      "before_sha256": "c85bc5c1cb78742c7cd9e290dc65ae21746ca96167bdcbd10974c7a2cf46d593",
+      "after_sha256": "1a0f251cfcc38f57787de3ee79dc8c89e7bf0f496ebfe9196a66f8b3f452a376"
+    },
+    "Challenge.lean": {
+      "before_sha256": "ef47b12a4a94a2f5f131d34d937e2a2950a38e79bc3b9cd9cc5cb8824604fb49",
+      "after_sha256": "eb95beaddd92fc1b24d2df1d7bc9db9afec7a3391759dd2d613119c5f25d4340"
+    }
+  },
+  "change": "Add Matrix to exactly two existing open scoped declarations; all other bytes, all definitions and all27 theorem headers unchanged.",
+  "primary_mathlib_commit": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "primary_source_sha256": "9ce6ecd0751e977f58fc47d6f271dff381e59868474a6955730ff07a99aa0e6b",
+  "original62_file_draft_unmodified": true,
+  "Lean_elaboration_executed": false,
+  "statement_freeze": false,
+  "proof_implementation": false,
+  "two_independent_amendment_reviews": [
+    {
+      "problem": "RA02",
+      "reviewer": "/root/ie13_continuation",
+      "scope": "Independent narrow statement-syntax amendment review; original complete statement reviews retained.",
+      "verdict": "approve-for-development-elaboration-attempt",
+      "source_closure_sha256": "4ba11c4fab5fc0b4ba40192c3993511aecf74129f0211c4588580b498c23fb3e",
+      "historical_private_manifest": "reviews/RA02-ie13-Matrix-scope-20260916/MANIFEST.json",
+      "manifest_sha256": "6bc3e2f4348bd9dba507a6cb74e15a63c643e30eabce45fe3a28ce8e637b954d",
+      "report_sha256": "33ba4f66b09ad853d032b2ffd10d1700661b5bd3e626301b4ae25b837b1a12c7",
+      "retained_report": "reviews/RA02-ie13-Matrix-scope-20260916.md"
+    },
+    {
+      "problem": "RA02",
+      "reviewer": "/root/mi04_independent_referee",
+      "scope": "Independent narrow statement-syntax amendment review; original complete statement reviews retained.",
+      "verdict": "approve-for-development-elaboration-attempt",
+      "source_closure_sha256": "4ba11c4fab5fc0b4ba40192c3993511aecf74129f0211c4588580b498c23fb3e",
+      "historical_private_manifest": "reviews/RA02-mi04-Matrix-scope-20260916/MANIFEST.json",
+      "manifest_sha256": "444880506dc8832445811ec6a9fe5bcce7dfe7346878060adbdc61be9087ab10",
+      "report_sha256": "026351a2f08eb6d718a44be4dc98bc3431c34422893f47232ddd33b4516320b0",
+      "retained_report": "reviews/RA02-mi04-Matrix-scope-20260916.md"
+    }
+  ],
+  "original_private_amendment_manifest_sha256": "4ba11c4fab5fc0b4ba40192c3993511aecf74129f0211c4588580b498c23fb3e",
+  "scope": "This acceptance note follows the original source-only amendment; no Lean execution or statement freeze yet."
+}

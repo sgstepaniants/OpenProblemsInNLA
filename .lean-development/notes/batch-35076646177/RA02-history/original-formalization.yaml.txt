@@ -1,0 +1,101 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/mathlib-initiative/formalization.yaml/99c678e569c7c4c0772db297c5ddd5e4c9b6322e/schema/v0.4.schema.json
+version: v0.4
+project:
+  name: 'RA-02: no polynomial trace-error factor after exactly the target rank of pivots'
+  description: Statement-only draft of the complete negative result for arbitrary complex Hermitian
+    PSD inputs, all positive dimensions and all permitted ranks, with arbitrary real constants C>0,p>=0.
+    Twenty-seven independent obligations await statement approval and proofs.
+  authors:
+  - George Stepaniants
+  affiliations:
+    George Stepaniants: Department of Computing and Mathematical Sciences, California Institute of
+      Technology, Pasadena, California, USA
+  responsible_maintainers:
+  - George Stepaniants
+  license: Apache-2.0
+sources:
+- title: RA-02 — Polynomial trace-error factor after exactly the target rank of pivots
+  id: https://github.com/ajt60gaibb/OpenProblemsInNLA/blob/ce47b5630bf3680d9211131c3a43825b022c139a/randomized-and-low-rank-approximation/RA-02/README.md
+  type: web-post
+  relationship: formalizes
+  location: Complete original problem, context and sampling convention
+  author_endorsement: not-contacted
+  note: Permanent ID, original canonical path, full mathematical target and original mathematical
+    authorship are retained.
+- title: Sharp worst-case factors for randomly pivoted Cholesky and LU
+  authors:
+  - Matthew J. Colbrook
+  id: https://github.com/ajt60gaibb/OpenProblemsInNLA/blob/ce47b5630bf3680d9211131c3a43825b022c139a/references/colbrook-random-pivoting-2026-09-11/manuscripts/sharp_random_pivoting.tex
+  type: manuscript
+  relationship: formalizes
+  location: Theorem 1 and Corollary 3, negative RA-02 target
+  author_endorsement: not-contacted
+  note: Original resolution credited to Matthew J. Colbrook, Cambridge DAMTP. This proposed alternative
+    finite arrowhead proof seeks only the sufficient factor 2^r/3, not the stronger sharp limiting
+    ratio, entrywise-positive, correlation-matrix or LU claims.
+related_formalizations:
+- id: https://github.com/jaumededios/Schiffer/tree/2938e277969c329caf154e48a3d8823f3635c7f1
+  relationship: other
+  note: Complete retained independent Challenge read as a structure example; no theorem imported.
+    Exact inspected bytes bound in REUSE-AUDIT.json.
+- id: https://github.com/sgstepaniants/Forsythe/tree/8d1b0c0545a77b40245e84705aa7d273e6c81e62/lean-proof
+  relationship: other
+  note: Numerical-first and independent Challenge structure inspected; no theorem imported.
+automation:
+  methods:
+  - method: agent
+    framework: OpenAI Codex
+    tool_setup: Parallel author and independent-referee agents. Source-only drafting on macOS; actual
+      Lean and Comparator execution reserved for authenticated non-root Linux runs. No local Lean/Lake/cache.
+    prompting_notes: Numerical and semantic statements written and hashed before Lean definitions/contracts.
+      Preserve actual normalized PSD pivot law, full finite path expectation, true decreasing Hermitian
+      eigenvalue tail and arbitrary real exponent. Minimize computation to one consumed kernel-mode
+      LeanCert exp(1)<=3 certificate; all rank and path arguments symbolic.
+  notes: No proof implementation or mechanical acceptance has occurred in this private draft. Mathematical
+    preflights precede this authoring and are not independent statement approvals.
+status:
+  scope: 'Work in progress: unapproved concrete definitions and twenty-seven deliberate independent
+    Challenge placeholders for the complete original RA-02 negative result.'
+  whole_problem_verified: false
+  main_results: []
+fidelity:
+  divergences: The proposed proof uses an explicit real-entry positive-definite arrowhead family of
+    order r+1 with factor 2^r/3, sufficient to negate the full universal complex-PSD assertion. It
+    does not formalize the manuscript sharp limiting ratio 2^r or entrywise-positive/LU/correlation
+    extensions. Full finite path weights replace optional measure-theoretic packaging, with mandatory
+    normalization/PSD/conditional-law proofs. A uniform dummy label at a zero residual preserves exact
+    zero absorption. The tail uses actual ordered eigenvalues₀ with only cardinality-index transport.
+review:
+  status: unchecked
+  reviewers: []
+  notes: Two nonauthor complete statement reviews and actual Linux elaboration are pending. The current
+    author preflight cannot count as independent statement approval. No freeze, proof review, human
+    peer review or official Tau Ceti approval is claimed. See REVIEW-PLAN.md.
+alignment:
+  source_correspondence: SourceCorrespondence.md
+  numerical_boundary: NUMERICAL_TARGETS.md
+  numerical_first_record: NUMERICAL-FIRST.json
+  proposed_statements: Challenge.lean
+  source_provenance: SOURCE-PROVENANCE.json
+  reuse_audit: REUSE-AUDIT.json
+  duplicate_audit: DUPLICATE-AUDIT.json
+toolchain:
+  lean: leanprover/lean4:v4.33.1
+  dependency_manifest: lake-manifest.json
+  dependencies:
+    leancert: 621a43d7cf21f87872392a01e874f2f1dbddc926
+    mathlib: 0df444a360eaa60ab8c11dca51a86af692955474
+verification:
+  statement_elaboration: pending
+  proof_implementation: absent
+  default_kernel: pending
+  comparator: pending
+  leancert: pending
+  permitted_axioms:
+  - propext
+  - Classical.choice
+  - Quot.sound
+  permitted_axioms_note: Future acceptance policy only, not an observed axiom report.
+acknowledgements: Matthew J. Colbrook for the original mathematical resolution; Chen, Epperly, Tropp
+  and Webber for RPCholesky and its comparison problem; Mathlib, LeanCert, Lean Comparator and formalization.yaml
+  contributors; Schiffer and Forsythe structure examples.

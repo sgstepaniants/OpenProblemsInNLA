@@ -44,17 +44,21 @@ private lemma jointEigenSpace_orthogonal {n : ℕ}
     (hA : A.IsSymmetric) (hB : B.IsSymmetric) :
     OrthogonalFamily ℂ (fun j => jointEigenSpace A B j)
       (fun j => (jointEigenSpace A B j).subtypeₗᵢ) := by
-  have hinj : Function.Injective
-      (fun j : Module.End.Eigenvalues B × Module.End.Eigenvalues A =>
-        (j.1.val, j.2.val)) := by
-    intro j k h
-    apply Prod.ext
-    · exact Subtype.ext (congrArg Prod.fst h)
-    · exact Subtype.ext (congrArg Prod.snd h)
-  apply OrthogonalFamily.of_pairwise (V := jointEigenSpace A B)
-  intro j k hjk
-  exact (hA.orthogonalFamily_eigenspace_inf_eigenspace hB).pairwise
-    (hinj.ne hjk)
+  -- Work with two actual vectors, avoiding transport of the dependent family.
+  intro j k hjk v w
+  change inner ℂ (v : CVector (Fin n)) (w : CVector (Fin n)) = 0
+  have hv : (v : CVector (Fin n)) ∈ Module.End.eigenspace A j.2.val ∧
+      (v : CVector (Fin n)) ∈ Module.End.eigenspace B j.1.val := v.property
+  have hw : (w : CVector (Fin n)) ∈ Module.End.eigenspace A k.2.val ∧
+      (w : CVector (Fin n)) ∈ Module.End.eigenspace B k.1.val := w.property
+  obtain (hβ | hα) : j.1 ≠ k.1 ∨ j.2 ≠ k.2 := by
+    rwa [Ne.eq_def, Prod.ext_iff, not_and_or] at hjk
+  · have hβ' : j.1.val ≠ k.1.val := fun h => hβ (Subtype.ext h)
+    exact hB.orthogonalFamily_eigenspaces hβ'
+      ⟨(v : CVector (Fin n)), hv.2⟩ ⟨(w : CVector (Fin n)), hw.2⟩
+  · have hα' : j.2.val ≠ k.2.val := fun h => hα (Subtype.ext h)
+    exact hA.orthogonalFamily_eigenspaces hα'
+      ⟨(v : CVector (Fin n)), hv.1⟩ ⟨(w : CVector (Fin n)), hw.1⟩
 
 private lemma jointEigenSpace_iSup {n : ℕ}
     (A B : Module.End ℂ (CVector (Fin n)))

@@ -1,0 +1,11 @@
+{
+  "event": "numerical statements written before either active Lean file",
+  "utc": "2026-09-16T08:49:15.784354+00:00",
+  "path": "NUMERICAL_TARGETS.md",
+  "sha256": "ce5dde3c86b4790c95030d6ab645dac509bc7c784282a4c308e06f3d54fe11f8",
+  "bytes": 10938,
+  "lean_source_files_present": [],
+  "proof_implementation_authorized": false,
+  "statement_reviews_pending": true,
+  "linux_elaboration_pending": true
+}
