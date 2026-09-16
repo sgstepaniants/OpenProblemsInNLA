@@ -1,0 +1,11 @@
+--- before/NLA/IE13/SubsetAlgebra.lean
++++ after/NLA/IE13/SubsetAlgebra.lean
+@@ -130,7 +130,7 @@
+       _ = ‖v i‖ + ‖μ i‖ * ‖v a‖ := by rw [norm_mul]
+       _ ≤ ‖v i‖ + ‖v a‖ := by
+         have := mul_le_mul_of_nonneg_right (hμ i hi) (norm_nonneg (v a))
+-        simpa only [one_mul] using add_le_add_left this ‖v i‖
++        simpa only [one_mul] using add_le_add (le_refl ‖v i‖) this
+   have hs := Finset.sum_le_sum hnorm
+   rw [Finset.sum_add_distrib] at hs
+   simp only [Finset.sum_const, nsmul_eq_mul] at hs

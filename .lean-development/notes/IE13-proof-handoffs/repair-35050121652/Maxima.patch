@@ -1,0 +1,13 @@
+--- before/NLA/IE13/Maxima.lean
++++ after/NLA/IE13/Maxima.lean
+@@ -28,8 +28,8 @@
+         else 0 := by
+   refine ⟨rfl, ?_⟩
+   intro k i j
+-  simp only [trajectory, dif_pos k.isLt, schurStep, rowSwap,
+-    Equiv.swap_apply_left]
++  rw [trajectory, dif_pos k.isLt]
++  simp only [schurStep, rowSwap, Equiv.swap_apply_left]
+ 
+ lemma entryMax_pos_of_det_ne_zero {n : ℕ} (hn : 1 ≤ n) (A : Mat n)
+     (hA : A.det ≠ 0) : 0 < entryMax A := by

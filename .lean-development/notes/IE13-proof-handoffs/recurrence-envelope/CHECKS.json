@@ -1,0 +1,28 @@
+{
+  "problem": "IE-13",
+  "phase": "four recurrence/envelope exports; source-only, no actual proof compilation yet",
+  "four_exact_frozen_contracts": {
+    "recurrence_history": true,
+    "sequence_recurrence": true,
+    "sequence_properties": true,
+    "envelope_recurrence": true
+  },
+  "all_ten_frozen_files_unchanged": true,
+  "new_sources": {
+    "NLA/IE13/Recurrence.lean": "e59902b07de60d14c135701917f623f867e490a08e6db5114a8f89643d36cd55",
+    "NLA/IE13/Envelope.lean": "e2ab5c2760e98b36111093546a70c43d17c6b7e14449d60a77532d3a05442e0e"
+  },
+  "compile_targets": [
+    "NLA.IE13.Recurrence",
+    "NLA.IE13.Envelope"
+  ],
+  "full_dependency_sources": {
+    "NLA/IE13/Definitions.lean": "cda485c546a5879f35eb9d69e7aaa7eaf1449d2219a47b75fcbb4c2827031988",
+    "NLA/IE13/Recurrence.lean": "e59902b07de60d14c135701917f623f867e490a08e6db5114a8f89643d36cd55",
+    "NLA/IE13/Envelope.lean": "e2ab5c2760e98b36111093546a70c43d17c6b7e14449d60a77532d3a05442e0e"
+  },
+  "mathematics": "Exact all-natural truncated register recurrence and its monotonicity. Explicit sorted envelope; coordinate and subtraction-free finite partial-sum identities. No truncation of bandwidth/time and no actual-algorithm assumptions.",
+  "local_Lean_or_Lake": false,
+  "actual_compilation": false,
+  "whole_problem_verified": false
+}

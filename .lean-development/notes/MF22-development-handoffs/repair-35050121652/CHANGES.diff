@@ -1,0 +1,11 @@
+--- before/NLA/MF22/Conditioning.lean
++++ after/NLA/MF22/Conditioning.lean
+@@ -74,7 +74,7 @@
+   refine ⟨K, 2, hK, by norm_num, n0, hn0, ?_⟩
+   intro n hn
+   have h := hquad n hn
+-  simpa only [Real.rpow_two] using h
++  simpa only [Real.rpow_eq_pow, Real.rpow_two] using h
+ 
+ #assert_trust kernel eventual_inverse_entries
+ #print axioms eventual_inverse_entries

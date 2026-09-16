@@ -1,0 +1,15 @@
+--- before/NLA/IE13/Origin.lean
++++ after/NLA/IE13/Origin.lean
+@@ -123,7 +123,11 @@
+   ext i
+   simp only [oldRows, frontRows, Finset.mem_filter, Finset.mem_univ, true_and,
+     Finset.mem_erase, originalRowActive_succ_iff path k i hp]
+-  omega
++  constructor
++  · rintro ⟨⟨ha, hne⟩, hlt⟩
++    exact ⟨hne, ha, by omega⟩
++  · rintro ⟨hne, ha, hle⟩
++    exact ⟨⟨ha, hne⟩, by omega⟩
+ 
+ theorem front_transition {n : ℕ} (p q : ℕ) (A : Mat n) (hA : Banded p q A)
+     (path : PivotPath n) (hpath : AdmissiblePath A path) (k : Fin n) :

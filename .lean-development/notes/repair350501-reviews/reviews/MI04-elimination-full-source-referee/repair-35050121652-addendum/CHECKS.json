@@ -1,0 +1,30 @@
+{
+  "verdict": "APPROVE proof-only repair addendum; repaired runtime pending",
+  "baseline_full_review_sha256": "3df5650ab9182568508130624d24c290a9e720f077eabf8af36b5a0a83cd5f64",
+  "preceding_repair_review_sha256": "108b4e0bb8341e3729ed8ed4f7939e14b76a43bf062d79843eeceba71f97897a",
+  "repair_manifest_sha256": "da7f62612efea9c6b24d7f9167de85418fdb2477822284d4ee5c142cf2f546e6",
+  "new_Limit_sha256": "7cdbd3546146dc78ce37452fffcc4c95be66ab7c909180f1694ff23009fed981",
+  "previous_Limit_sha256": "5a10598688c704f7ee2a13b990ee4cd9d35e2373ba051f651972a66e6aee6e1a",
+  "final_closure_sha256": "b88418d07385ad40f2cbb861baf0608102ab75889b3b6bd78b529e726928bacf",
+  "changed_source_paths": [
+    "NLA/MI04/Limit.lean"
+  ],
+  "exact_single_replacement_only": true,
+  "all_other20_sources_unchanged": true,
+  "all10_frozen_files_unchanged": true,
+  "all_declaration_headers_and_frozen_contract_unchanged": true,
+  "before_matches_actual_Git_and_run_prepost": true,
+  "raw_log_matches_coordinator_authenticated_copy": true,
+  "pinned_primary_API_matches_immutable_Git": true,
+  "actual_prior_builds_accepted": [
+    "Correction",
+    "ScaledSymmetry",
+    "UpperBound"
+  ],
+  "consumed_kernel_quarter_certificate_and_sandwich_print_permitted_axioms": true,
+  "actual_failed_Limit_correctly_rejected_sorryAx": true,
+  "new_compilation_accepted": false,
+  "whole_problem_verified": false,
+  "local_Lean_or_Lake": false,
+  "reviewer_implementation_edits": false
+}

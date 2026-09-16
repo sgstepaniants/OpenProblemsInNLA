@@ -1,0 +1,117 @@
+✔ [3008/3014] Built NLA.IE13.Definitions (2.4s)
+ℹ [3009/3014] Built NLA.IE13.Basic (2.8s)
+info: NLA/IE13/Basic.lean:115:0: 'NLA.IE13.norm_le_entryMax' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/IE13/Basic.lean:117:0: 'NLA.IE13.entryMax_attained_basic' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/IE13/Basic.lean:119:0: 'NLA.IE13.multiplier_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [3010/3014] Built NLA.IE13.GEPP (3.3s)
+warning: NLA/IE13/GEPP.lean:170:39: Variable name `hn` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hn
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+info: NLA/IE13/GEPP.lean:175:0: 'NLA.IE13.activeInjective_schur' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/IE13/GEPP.lean:177:0: 'NLA.IE13.admissiblePath_exists' depends on axioms: [propext, Classical.choice, Quot.sound]
+✖ [3011/3014] Building NLA.IE13.Origin (3.8s)
+trace: .> LEAN_PATH=/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/Cli/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/batteries/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/Qq/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/aesop/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/proofwidgets/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/importGraph/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/plausible/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/mathlib/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/leancert/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/build/lib/lean /home/runner/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean /home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/NLA/IE13/Origin.lean -o /home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/build/lib/lean/NLA/IE13/Origin.olean -i /home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/build/lib/lean/NLA/IE13/Origin.ilean -c /home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/build/ir/NLA/IE13/Origin.c --setup /home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/build/ir/NLA/IE13/Origin.setup.json --json
+warning: NLA/IE13/Origin.lean:46:4: Try `simp at hi` instead of `simpa using hi`
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+error: NLA/IE13/Origin.lean:126:2: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  f ≥ 0
+  e ≥ 0
+  e - f ≤ -1
+  d ≥ 0
+  c ≥ 0
+  c - e ≥ 1
+  c - f ≥ 1
+  b ≥ 0
+  b - c ≤ -1
+  b + d - e ≥ 0
+  a ≥ 0
+  a - b ≥ 0
+  a - c ≤ -1
+where
+ a := ↑↑(path k)
+ b := ↑↑k
+ c := ↑n
+ d := ↑p
+ e := ↑↑i
+ f := ↑↑(pivotLabel path k)
+warning: NLA/IE13/Origin.lean:128:56: Variable name `hA` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hA
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+info: NLA/IE13/Origin.lean:134:0: 'NLA.IE13.originalRow_update' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/IE13/Origin.lean:136:0: 'NLA.IE13.multiplier_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/IE13/Origin.lean:138:0: 'NLA.IE13.front_transition' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+error: NLA/IE13/Origin.lean:139:21: #assert_trust: 'NLA.IE13.front_transition' depends on sorry or unrecognized axioms
+  foundational: propext, Classical.choice, Quot.sound
+  sorryAx: sorryAx
+error: Lean exited with code 1
+✖ [3013/3014] Building NLA.IE13.Maxima (4.2s)
+trace: .> LEAN_PATH=/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/Cli/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/batteries/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/Qq/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/aesop/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/proofwidgets/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/importGraph/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/plausible/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/mathlib/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/leancert/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/build/lib/lean /home/runner/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean /home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/NLA/IE13/Maxima.lean -o /home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/build/lib/lean/NLA/IE13/Maxima.olean -i /home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/build/lib/lean/NLA/IE13/Maxima.ilean -c /home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/build/ir/NLA/IE13/Maxima.c --setup /home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/build/ir/NLA/IE13/Maxima.setup.json --json
+error: NLA/IE13/Maxima.lean:28:18: unsolved goals
+n : ℕ
+A : Mat n
+path : PivotPath n
+k i j : Fin n
+⊢ (if h : ↑k < n then fun i j =>
+        if ⟨↑k, h⟩ < i ∧ ⟨↑k, h⟩ < j then
+          trajectory A path (↑k) ((Equiv.swap ⟨↑k, h⟩ (path ⟨↑k, h⟩)) i) j -
+            trajectory A path (↑k) ((Equiv.swap ⟨↑k, h⟩ (path ⟨↑k, h⟩)) i) ⟨↑k, h⟩ /
+                trajectory A path (↑k) (path ⟨↑k, h⟩) ⟨↑k, h⟩ *
+              trajectory A path (↑k) (path ⟨↑k, h⟩) j
+        else 0
+      else 0)
+      i j =
+    if k < i ∧ k < j then
+      trajectory A path (↑k) ((Equiv.swap k (path k)) i) j -
+        trajectory A path (↑k) ((Equiv.swap k (path k)) i) k / trajectory A path (↑k) (path k) k *
+          trajectory A path (↑k) (path k) j
+    else 0
+warning: NLA/IE13/Maxima.lean:31:25: This simp argument is unused:
+  dif_pos k.isLt
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [trajectory, schurStep, rowSwap, Equiv.swap_apply_left]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: NLA/IE13/Maxima.lean:36:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+info: NLA/IE13/Maxima.lean:113:0: 'NLA.IE13.gepp_model_semantics' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+error: NLA/IE13/Maxima.lean:114:21: #assert_trust: 'NLA.IE13.gepp_model_semantics' depends on sorry or unrecognized axioms
+  foundational: propext, Classical.choice, Quot.sound
+  sorryAx: sorryAx
+info: NLA/IE13/Maxima.lean:115:0: 'NLA.IE13.entryMax_semantics' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/IE13/Maxima.lean:117:0: 'NLA.IE13.activeMax_semantics' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/IE13/Maxima.lean:119:0: 'NLA.IE13.growth_semantics' depends on axioms: [propext, Classical.choice, Quot.sound]
+error: Lean exited with code 1
+⚠ [3014/3014] Built NLA.IE13.Prefix (2.8s)
+warning: NLA/IE13/Prefix.lean:100:44: Variable name `hn` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hn
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: NLA/IE13/Prefix.lean:101:51: Variable name `ht` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _ht
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+info: NLA/IE13/Prefix.lean:110:0: 'NLA.IE13.trajectory_agree_before' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/IE13/Prefix.lean:112:0: 'NLA.IE13.admissiblePrefix_extension' depends on axioms: [propext, Classical.choice, Quot.sound]
+Some required targets logged failures:
+- NLA.IE13.Origin
+- NLA.IE13.Maxima
+error: build failed

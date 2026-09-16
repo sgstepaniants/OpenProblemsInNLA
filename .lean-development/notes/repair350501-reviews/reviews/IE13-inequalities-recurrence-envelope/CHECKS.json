@@ -1,0 +1,53 @@
+{
+  "reviewer": "/root/next_inequalities, independent nonimplementing IE13 referee",
+  "verdict": "incremental source approval; no actual execution or full-project acceptance",
+  "packet_sha256": "d442b3b05dd7493b39ca94b0fb5abf173e516608b4392b57b9a95668b77336bc",
+  "source_dependency_closure": {
+    "NLA/IE13/Definitions.lean": "cda485c546a5879f35eb9d69e7aaa7eaf1449d2219a47b75fcbb4c2827031988",
+    "NLA/IE13/Recurrence.lean": "e59902b07de60d14c135701917f623f867e490a08e6db5114a8f89643d36cd55",
+    "NLA/IE13/Envelope.lean": "e2ab5c2760e98b36111093546a70c43d17c6b7e14449d60a77532d3a05442e0e"
+  },
+  "four_exact_written_headers": {
+    "recurrence_history": true,
+    "sequence_recurrence": true,
+    "sequence_properties": true,
+    "envelope_recurrence": true
+  },
+  "not_an_elaborated_type_equality_claim": true,
+  "all10_frozen_files_sha256": {
+    "NLA/IE13/Definitions.lean": "cda485c546a5879f35eb9d69e7aaa7eaf1449d2219a47b75fcbb4c2827031988",
+    "Challenge.lean": "5b6b9a4c714686d6b060589a4ee1414f2ec94e80787a9ffe351ac6fe66331e57",
+    "NUMERICAL_TARGETS.md": "a95e32b7b8e654185f1d6bbbb3c483fa9b988e2ee5800a2ce641a230706e1cb9",
+    "SourceCorrespondence.md": "f4c1091773fe8b684147f80f80d16fec4f59d9c413fa3244947932a023c86782",
+    "SOURCE-PROVENANCE.json": "35906d147fa91f733fb80f8e8c431656df752da69bc7716b3fef4f0ada091905",
+    "comparator.json": "51a3effaed3e2ba4effde07da37c8f84c7c864a0010e2c1548eb5922ec8a7c14",
+    "lakefile.toml": "7f0a154e9c02b9f44b3573eb3447e30276885396364d3b66e896e2f72eb39380",
+    "lake-manifest.json": "55717fab833a468f9b9971b29a171b5a4098fafb7437b93641f357b45c8ec795",
+    "lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+    "LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+  },
+  "all10_active_snapshot_pairs_identical": true,
+  "arbitrary_natural_p_t_r_reviewed": true,
+  "zero_initial_and_truncated_windows_reviewed": true,
+  "partial_sum_endpoints_0_and_p_reviewed": true,
+  "p_zero_sequence_and_p_one_envelope_reviewed": true,
+  "primary_API_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "primary_API_sha256": {
+    "Mathlib/Algebra/BigOperators/Fin.lean": "4fe78cba9cdeac4eb8badbdd6359b055031900906fb94f3e51aba6d81451dbd5",
+    "Mathlib/Algebra/BigOperators/Group/Finset/Basic.lean": "1305c143ee5528281992dc083faa3c881c2e7c0f3d09b127de4f58987182d1f2",
+    "Mathlib/Algebra/Order/BigOperators/Group/Finset.lean": "6a8daafb9e3b8b6ac48a696661c99a2d10dce57f48907ae18280914bf0ac639f",
+    "Mathlib/Order/Monotone/Basic.lean": "0442e4b4fe68c058e788dbc589611010c9182d124dc3f72a1da0d2242d769f04"
+  },
+  "prior_incremental_reports": {
+    "IE13-inequalities-origin-front": "22cefa3414e0ff286e051cd9a2132768beff327d100157812a16c463e3a32ea6",
+    "IE13-inequalities-generic-prefix": "a8eda68ee4a356b50cd749d3733272f51ac9b6008b66693b9866a252b1ba6673"
+  },
+  "mathematical_findings": [],
+  "concrete_pinned_API_findings": [],
+  "local_Lean_or_Lake": false,
+  "author_source_edits": false,
+  "actual_chunk_compilation_claim": false,
+  "Comparator_acceptance_claim": false,
+  "whole_problem_verified": false,
+  "verification_count_change": false
+}

@@ -1,0 +1,56 @@
+{
+  "problem": "IE-13",
+  "phase": "complete universal bound source draft; witness/attainment work remains",
+  "five_exact_frozen_contracts": {
+    "late_column_zero": true,
+    "column_front_bound": true,
+    "all_active_entries_bound": true,
+    "zero_lower_bandwidth": true,
+    "universal_growth": true
+  },
+  "all_ten_frozen_files_unchanged": true,
+  "new_sources": {
+    "NLA/IE13/LateColumn.lean": "eb1d7df64a15b120f882c438afc327487dcec2bc10095690e3722b49d2d6a7dd",
+    "NLA/IE13/SubsetAlgebra.lean": "5cffd542c9c6b33d8cec43aa17477d9ee684ebe93f86d746351ffbf676c88f77",
+    "NLA/IE13/FrontBounds.lean": "f439389a89d7fe43d494bb34ae51d78206de46c3d286dec07de21e2740c18049",
+    "NLA/IE13/ColumnBounds.lean": "34af391613ba5362eb155cdf7601290f64467fa38780b1856d9372b754812908",
+    "NLA/IE13/UpperBound.lean": "214ba613128141896cf177b1ef78f391bf3694e76a88a025977bf0db79bf7ef0"
+  },
+  "full_dependency_sources": {
+    "NLA/IE13/Definitions.lean": "cda485c546a5879f35eb9d69e7aaa7eaf1449d2219a47b75fcbb4c2827031988",
+    "NLA/IE13/Basic.lean": "ba05afefeeea9bb5b4f2b3b8187aa0929ef1979700286ca9470ea991f7aa14b8",
+    "NLA/IE13/Maxima.lean": "c17bc375c0b6d4abf10aec25632a3763af30d413ecc24836aa328fb863163277",
+    "NLA/IE13/GEPP.lean": "3f6b8a53ff1db1fa6d0f16386ead9c23f4f11223705736f9ce0cf3deee1b8c47",
+    "NLA/IE13/Prefix.lean": "f87e3f15182af6c3a0862f24c62d591eb170cc82be3ad0548f4ce4ca729c55b6",
+    "NLA/IE13/Origin.lean": "ccbca9a6ee35516ef0b830b89507b0d4011a067353e88eabb4c670cb8c980c15",
+    "NLA/IE13/Front.lean": "563bd688ff0475583d3fcb0a073ffe437fff04d5249d08c900d76d1a332e9b89",
+    "NLA/IE13/Recurrence.lean": "e59902b07de60d14c135701917f623f867e490a08e6db5114a8f89643d36cd55",
+    "NLA/IE13/Envelope.lean": "e2ab5c2760e98b36111093546a70c43d17c6b7e14449d60a77532d3a05442e0e",
+    "NLA/IE13/LateColumn.lean": "eb1d7df64a15b120f882c438afc327487dcec2bc10095690e3722b49d2d6a7dd",
+    "NLA/IE13/SubsetAlgebra.lean": "5cffd542c9c6b33d8cec43aa17477d9ee684ebe93f86d746351ffbf676c88f77",
+    "NLA/IE13/FrontBounds.lean": "f439389a89d7fe43d494bb34ae51d78206de46c3d286dec07de21e2740c18049",
+    "NLA/IE13/ColumnBounds.lean": "34af391613ba5362eb155cdf7601290f64467fa38780b1856d9372b754812908",
+    "NLA/IE13/UpperBound.lean": "214ba613128141896cf177b1ef78f391bf3694e76a88a025977bf0db79bf7ef0"
+  },
+  "dependency_graph_acyclic": true,
+  "compile_targets": [
+    "NLA.IE13.LateColumn",
+    "NLA.IE13.SubsetAlgebra",
+    "NLA.IE13.FrontBounds",
+    "NLA.IE13.ColumnBounds",
+    "NLA.IE13.UpperBound"
+  ],
+  "actual_new_compilation": false,
+  "local_Lean_or_Lake": false,
+  "whole_problem_verified": false,
+  "scope": [
+    "Every natural p,q, arbitrary matrix dimension and complex entries, every legal maximal-modulus tie.",
+    "Derive late-column zero phase from original upper bandwidth and actual original-row updates.",
+    "General one-new-element subset estimate, then genuine pivot deletion and all complex multipliers with norm at most one.",
+    "Retain exact first nonzero late update: when old values vanish only one front value can be nonzero.",
+    "Induct on the actual full trajectory; every finite subset, including empty and full p rows, is covered.",
+    "Obtain every-active-entry bound and full growth upper bound. p=0 is proved separately from the zero-cardinality old front.",
+    "No front/column upper conclusion assumed in definitions; helper inequalities take only prior-time induction hypotheses."
+  ],
+  "runtime_note": "Basic/GEPP/Prefix previously accepted in35050121652; Maxima/Origin proof-only repairs plus Front and recurrence/envelope still require fresh Linux execution. New five modules have not run."
+}

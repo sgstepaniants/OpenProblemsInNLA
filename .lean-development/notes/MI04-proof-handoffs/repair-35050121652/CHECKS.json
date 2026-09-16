@@ -1,0 +1,30 @@
+{
+  "problem": "MI-04",
+  "phase": "single observed proof-body elaboration repair; no new acceptance claim",
+  "actual_run_id": 35050121652,
+  "actual_commit": "b428c974e7d82b37a8c11ad7e8cb5dc4ebfb3380",
+  "actual_whole_run": "failure",
+  "actual_log_sha256": "bed3393432b857fff5bfa2102fdffd9ff3793e23a042c7f745ee27d60ada9b3a",
+  "root_audit_sha256": "05034a994353382679797867cc35d8fc57aad987612c1311d9fa8ab3fc01780a",
+  "actual_component_command": "lake build NLA.MI04.Complete",
+  "actual_component_exit_code": 1,
+  "actual_defect": "At Limit:61, Tendsto.div concludes pointwise function division; the target is its explicit lambda. The existing restricted simpa did not unfold this function operation.",
+  "repair": "Add only Pi.div_def to that restricted simpa. This exact pinned rfl lemma rewrites the unapplied quotient of functions to its lambda form; div_one still simplifies the limit value.",
+  "source_change": {
+    "path": "NLA/MI04/Limit.lean",
+    "before": "5a10598688c704f7ee2a13b990ee4cd9d35e2373ba051f651972a66e6aee6e1a",
+    "after": "7cdbd3546146dc78ce37452fffcc4c95be66ab7c909180f1694ff23009fed981"
+  },
+  "before_matches_actual_Git_and_receipt": true,
+  "other20_source_files_unchanged": true,
+  "all10_frozen_files_unchanged": true,
+  "all_auxiliary_and_export_headers_unchanged": true,
+  "pinned_mathlib_commit": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "primary_api_anchors": {
+    "Mathlib/Algebra/Notation/Pi/Defs.lean": "lines 110-116: instDiv, div_apply and div_def; div_def is proved by rfl",
+    "Mathlib/Topology/Algebra/GroupWithZero.lean": "lines 191-194: Filter.Tendsto.div returns Tendsto (f / g)"
+  },
+  "actual_prior_repairs": "Correction and ScaledSymmetry both built; UpperBound and its consumed quarter_gap_certificate and simple_peak_sandwich passed with only propext, Classical.choice, Quot.sound.",
+  "scope_limit": "The failed Limit theorem triggered a correct LeanCert sorryAx rejection. Later dependent modules have not been accepted. Repaired execution, complete graph and canonical Comparator/default-kernel controls remain pending.",
+  "no_local_Lean_Lake": true
+}

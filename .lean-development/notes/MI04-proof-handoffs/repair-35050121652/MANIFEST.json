@@ -1,0 +1,20 @@
+{
+  "problem": "MI-04",
+  "kind": "immutable single-proof repair packet",
+  "files": {
+    "CHANGES.diff": "a41e075640e1df1a7fb5fa13aab29ca47890d9482db69306bae947a80244ae84",
+    "CHECKS.json": "e45dd3f1a1ce18f6996d59e401cb940fdb0560f70920ec98abd25a06e88379cd",
+    "FINAL-CLOSURE.json": "b88418d07385ad40f2cbb861baf0608102ab75889b3b6bd78b529e726928bacf",
+    "MI-04-modules.log": "bed3393432b857fff5bfa2102fdffd9ff3793e23a042c7f745ee27d60ada9b3a",
+    "PREVIOUS-CLOSURE.json": "46f0d118bb154a40b5f39cd1ed3f6222fa8a4e62fd726e8a06ce2432828c6e1a",
+    "after/NLA/MI04/Limit.lean": "7cdbd3546146dc78ce37452fffcc4c95be66ab7c909180f1694ff23009fed981",
+    "before/NLA/MI04/Limit.lean": "5a10598688c704f7ee2a13b990ee4cd9d35e2373ba051f651972a66e6aee6e1a",
+    "pinned-api/Mathlib/Algebra/Notation/Pi/Defs.lean": "79c1a26611ae1d19d22b47b0b109eb02ff5502545b55e7ad96b2a9164622a89c",
+    "pinned-api/Mathlib/Topology/Algebra/GroupWithZero.lean": "31a94fa0c4e231ae401f3231473377108b27ef0ac9cd779ca3158aef198f8e15",
+    "runtime-evidence/FETCH-IDENTITY.json": "32b5798f9aa29202b922974f2ee34d3cf2519e21085a43e46e0fc1cf31907889",
+    "runtime-evidence/ROOT-AUDIT.json": "05034a994353382679797867cc35d8fc57aad987612c1311d9fa8ab3fc01780a",
+    "runtime-evidence/artifacts/lean-development-statements/receipt.json": "5ccbb8720f45f7cf354d2671b464b4a6348f63e08ca397d7d942c3202360ca37",
+    "runtime-evidence/jobs.json": "09c8489d69f4541c0cbbdb0dfaf7b50abd13961f03f86fe90f59de8ba86f3cf0",
+    "runtime-evidence/run.json": "66dd00a018894450c2fdb2359633a8647d4755be02a6162833d54a301983e781"
+  }
+}

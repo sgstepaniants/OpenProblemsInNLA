@@ -1,0 +1,11 @@
+--- before/NLA/MI04/Limit.lean
++++ after/NLA/MI04/Limit.lean
+@@ -58,7 +58,7 @@
+       (𝓝[>] (0 : ℝ)) (𝓝 (1 : ℝ)) := by
+     simpa only [zero_pow (by decide : (2 : ℕ) ≠ 0), zero_mul, add_zero] using
+       tendsto_const_nhds.add ((ht.pow 2).mul_const (‖correctionVector d V a‖ ^ 2))
+-  simpa only [div_one] using hnum.div hden (one_ne_zero : (1 : ℝ) ≠ 0)
++  simpa only [Pi.div_def, div_one] using hnum.div hden (one_ne_zero : (1 : ℝ) ≠ 0)
+ 
+ variable [Nonempty ι]
+ 

@@ -1,0 +1,9 @@
+{
+  "CHECKS.json": "ea599e266607d1cc59ccda5bb819fd0dced44892220d30073b058f420a9b5186",
+  "README.md": "b9f08f33c1e8d61e8c4a6520c74621e3f8cee722242404c21b2b21b7dd26202d",
+  "snapshot/Challenge.lean": "5b6b9a4c714686d6b060589a4ee1414f2ec94e80787a9ffe351ac6fe66331e57",
+  "snapshot/NLA/IE13/Definitions.lean": "cda485c546a5879f35eb9d69e7aaa7eaf1449d2219a47b75fcbb4c2827031988",
+  "snapshot/NLA/IE13/Envelope.lean": "e2ab5c2760e98b36111093546a70c43d17c6b7e14449d60a77532d3a05442e0e",
+  "snapshot/NLA/IE13/Recurrence.lean": "e59902b07de60d14c135701917f623f867e490a08e6db5114a8f89643d36cd55",
+  "snapshot/STATEMENT-FREEZE.json": "85916aae89eb2111ff914b8767e8918548c132a6ff6c7ed92e52286bec1998fe"
+}

@@ -1,0 +1,22 @@
+{
+  "CHECKS.json": "0e479b5b7d22e5fbfbfa726346662698d5362a56966d78e6e7551e3e030f3b0c",
+  "REVIEW.md": "d1ac0c4c1ead0f5c5d019cb465deb6aa2b0b0991035187b785e78b54f50e9903",
+  "current-boundary/Challenge.lean": "ca80d090bfe9f3013d08aa86297761e1e524810881bce92776896545d6eeabf9",
+  "current-boundary/NLA/MI04/Definitions.lean": "de70e2a9dd878f1d083adacf8df6808c90c27630ffc2644a62293bf085e41715",
+  "current-boundary/STATEMENT-FREEZE.json": "c5ca666f10da44ad1c47a81b0fe81898abf3a7a9ea789e90ec9dfbc8c8cf4c6c",
+  "packet/CHANGES.diff": "a41e075640e1df1a7fb5fa13aab29ca47890d9482db69306bae947a80244ae84",
+  "packet/CHECKS.json": "e45dd3f1a1ce18f6996d59e401cb940fdb0560f70920ec98abd25a06e88379cd",
+  "packet/FINAL-CLOSURE.json": "b88418d07385ad40f2cbb861baf0608102ab75889b3b6bd78b529e726928bacf",
+  "packet/MANIFEST.json": "da7f62612efea9c6b24d7f9167de85418fdb2477822284d4ee5c142cf2f546e6",
+  "packet/MI-04-modules.log": "bed3393432b857fff5bfa2102fdffd9ff3793e23a042c7f745ee27d60ada9b3a",
+  "packet/PREVIOUS-CLOSURE.json": "46f0d118bb154a40b5f39cd1ed3f6222fa8a4e62fd726e8a06ce2432828c6e1a",
+  "packet/after/NLA/MI04/Limit.lean": "7cdbd3546146dc78ce37452fffcc4c95be66ab7c909180f1694ff23009fed981",
+  "packet/before/NLA/MI04/Limit.lean": "5a10598688c704f7ee2a13b990ee4cd9d35e2373ba051f651972a66e6aee6e1a",
+  "packet/pinned-api/Mathlib/Algebra/Notation/Pi/Defs.lean": "79c1a26611ae1d19d22b47b0b109eb02ff5502545b55e7ad96b2a9164622a89c",
+  "packet/pinned-api/Mathlib/Topology/Algebra/GroupWithZero.lean": "31a94fa0c4e231ae401f3231473377108b27ef0ac9cd779ca3158aef198f8e15",
+  "packet/runtime-evidence/FETCH-IDENTITY.json": "32b5798f9aa29202b922974f2ee34d3cf2519e21085a43e46e0fc1cf31907889",
+  "packet/runtime-evidence/ROOT-AUDIT.json": "05034a994353382679797867cc35d8fc57aad987612c1311d9fa8ab3fc01780a",
+  "packet/runtime-evidence/artifacts/lean-development-statements/receipt.json": "5ccbb8720f45f7cf354d2671b464b4a6348f63e08ca397d7d942c3202360ca37",
+  "packet/runtime-evidence/jobs.json": "09c8489d69f4541c0cbbdb0dfaf7b50abd13961f03f86fe90f59de8ba86f3cf0",
+  "packet/runtime-evidence/run.json": "66dd00a018894450c2fdb2359633a8647d4755be02a6162833d54a301983e781"
+}
