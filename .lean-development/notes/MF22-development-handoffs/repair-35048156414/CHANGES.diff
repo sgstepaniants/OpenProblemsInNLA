@@ -1,0 +1,11 @@
+--- before/NLA/MF22/ProjectorRank.lean
++++ after/NLA/MF22/ProjectorRank.lean
+@@ -57,7 +57,7 @@
+   let E := Module.End.eigenspace A.toLin' z
+   have hcol (j : Fin n) : (fun row => P row j) ∈ E := by
+     apply Module.End.mem_eigenspace_iff.mpr
+-    change A *ᵥ (fun row => P row j) = z • (fun row => P row j)
++    change Matrix.mulVec A (fun row => P row j) = z • (fun row => P row j)
+     funext row
+     exact congrArg (fun M : Square n => M row j) hAP
+   obtain ⟨w, hw⟩ := (finrank_le_one_iff (K := ℂ) (V := E)).mp hdim

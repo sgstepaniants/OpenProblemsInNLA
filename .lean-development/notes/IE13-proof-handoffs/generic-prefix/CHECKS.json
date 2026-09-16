@@ -1,0 +1,37 @@
+{
+  "problem": "IE-13",
+  "phase": "first complete generic proof prefix, remote compilation pending",
+  "all_ten_frozen_files_unchanged": true,
+  "new_proof_modules": {
+    "NLA/IE13/Basic.lean": "ba05afefeeea9bb5b4f2b3b8187aa0929ef1979700286ca9470ea991f7aa14b8",
+    "NLA/IE13/Maxima.lean": "a27876b33cc6b75657811f6250c8b165ad137720edd1407314c804b68d8ae4b9",
+    "NLA/IE13/GEPP.lean": "3f6b8a53ff1db1fa6d0f16386ead9c23f4f11223705736f9ce0cf3deee1b8c47",
+    "NLA/IE13/Prefix.lean": "f87e3f15182af6c3a0862f24c62d591eb170cc82be3ad0548f4ce4ca729c55b6"
+  },
+  "six_frozen_headers_exact": {
+    "gepp_model_semantics": true,
+    "entryMax_semantics": true,
+    "activeMax_semantics": true,
+    "growth_semantics": true,
+    "admissiblePath_exists": true,
+    "admissiblePrefix_extension": true
+  },
+  "literal_model_unchanged": true,
+  "prefix_semantics": "Any admissible prefix of the nonsingular input extends via actual maximum pivots, preserving every original pivot before t and all original states through t, including t=0 and t=n. No unused suffix assumption.",
+  "no_local_Lean_or_Lake": true,
+  "actual_compilation": false,
+  "complete_problem": false,
+  "compile_targets": [
+    "NLA.IE13.Basic",
+    "NLA.IE13.Maxima",
+    "NLA.IE13.GEPP",
+    "NLA.IE13.Prefix"
+  ],
+  "full_project_dependency_files": {
+    "NLA/IE13/Definitions.lean": "cda485c546a5879f35eb9d69e7aaa7eaf1449d2219a47b75fcbb4c2827031988",
+    "NLA/IE13/Basic.lean": "ba05afefeeea9bb5b4f2b3b8187aa0929ef1979700286ca9470ea991f7aa14b8",
+    "NLA/IE13/Maxima.lean": "a27876b33cc6b75657811f6250c8b165ad137720edd1407314c804b68d8ae4b9",
+    "NLA/IE13/GEPP.lean": "3f6b8a53ff1db1fa6d0f16386ead9c23f4f11223705736f9ce0cf3deee1b8c47",
+    "NLA/IE13/Prefix.lean": "f87e3f15182af6c3a0862f24c62d591eb170cc82be3ad0548f4ce4ca729c55b6"
+  }
+}

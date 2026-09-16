@@ -84,7 +84,7 @@ lemma inner_coordinate_realDiagonal (d : ι → ℝ) (a : ι) (v : CVector ι) :
       (Matrix.toEuclideanCLM (n := ι) (𝕜 := ℂ) (realDiagonal d) v) =
         (d a : ℂ) * v a := by
   rw [inner_coordinateUnit_left]
-  change Matrix.mulVec (Matrix.diagonal (fun j => (d j : ℂ))) (WithLp.ofLp v) a = _
+  change (Matrix.diagonal (fun j => (d j : ℂ)) *ᵥ WithLp.ofLp v) a = _
   exact Matrix.mulVec_diagonal _ _ _
 
 lemma correction_trial_quadratic (d : ι → ℝ) (V : CMatrix ι) (a : ι)

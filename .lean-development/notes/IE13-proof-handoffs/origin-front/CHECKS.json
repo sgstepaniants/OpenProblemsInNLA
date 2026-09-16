@@ -1,0 +1,32 @@
+{
+  "problem": "IE-13",
+  "phase": "full general front source, actual compilation pending",
+  "new_sources": {
+    "NLA/IE13/Origin.lean": "07c87e38dd3103364c5d252fc4eb6da5db07e1bb94aab3a078d17b4f7fff1c85",
+    "NLA/IE13/Front.lean": "563bd688ff0475583d3fcb0a073ffe437fff04d5249d08c900d76d1a332e9b89"
+  },
+  "four_exact_frozen_contracts": {
+    "originalRow_update": true,
+    "multiplier_bounds": true,
+    "front_transition": true,
+    "front_structure": true
+  },
+  "all_ten_frozen_files_unchanged": true,
+  "whole_problem_verified": false,
+  "generic_IE14_source_commit": "6e48f25fffdae2cf93e4985dc515abbd15e0481b",
+  "generic_IE14_source_sha256": "6c72173fcf2274fff2f91429436994f30ea7a2976b3356ae4bd8c7e592beab71",
+  "reuse_scope": "Only generic original-label swap and survivor formulas; no cyclic front theorem imported.",
+  "new_argument": "Derive exact activity deletion and front transition; induct jointly on old-row cardinality and untouched future rows. Derive pivot-front membership from band zeros and genuine pivot nonzeroness. Includes p=0 and bottom stages.",
+  "compile_targets": [
+    "NLA.IE13.Origin",
+    "NLA.IE13.Front"
+  ],
+  "full_dependency_sources": {
+    "NLA/IE13/Definitions.lean": "cda485c546a5879f35eb9d69e7aaa7eaf1449d2219a47b75fcbb4c2827031988",
+    "NLA/IE13/Basic.lean": "ba05afefeeea9bb5b4f2b3b8187aa0929ef1979700286ca9470ea991f7aa14b8",
+    "NLA/IE13/Origin.lean": "07c87e38dd3103364c5d252fc4eb6da5db07e1bb94aab3a078d17b4f7fff1c85",
+    "NLA/IE13/Front.lean": "563bd688ff0475583d3fcb0a073ffe437fff04d5249d08c900d76d1a332e9b89"
+  },
+  "local_Lean_or_Lake": false,
+  "actual_compilation": false
+}

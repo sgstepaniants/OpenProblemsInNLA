@@ -1,0 +1,51 @@
+{
+  "problem_id": "IE-13",
+  "reviewer": "OpenAI Codex agent /root/next_matrix_functions",
+  "role": "independent mathematical source referee; no implementation contribution",
+  "verdict": "APPROVE Origin/Front; no mathematical or concrete pinned-API correction requested",
+  "scope": "four additional frozen exports, not complete problem",
+  "manifest_sha256": "a42c18f33d89bc9118c1c33e873554721c78f4349594d9118c246011879cdd24",
+  "freeze_sha256": "85916aae89eb2111ff914b8767e8918548c132a6ff6c7ed92e52286bec1998fe",
+  "prior_generic_prefix_review_sha256": "3eff705ff2e443a56bd984d78d4526be40740c0db310333b24d752e45eac15af",
+  "source_files": {
+    "NLA/IE13/Origin.lean": "07c87e38dd3103364c5d252fc4eb6da5db07e1bb94aab3a078d17b4f7fff1c85",
+    "NLA/IE13/Front.lean": "563bd688ff0475583d3fcb0a073ffe437fff04d5249d08c900d76d1a332e9b89"
+  },
+  "four_frozen_headers": {
+    "originalRow_update": {
+      "path": "NLA/IE13/Origin.lean",
+      "exact_frozen_header": true,
+      "header_sha256": "824d8a87021f9c3a00eac65a02c2096adfa01f65203db21e0c69b75738777563"
+    },
+    "multiplier_bounds": {
+      "path": "NLA/IE13/Origin.lean",
+      "exact_frozen_header": true,
+      "header_sha256": "e035e44057dfdcf131f6085fc0a8c25eb0861fb32caa53c8514d386b1e2c473f"
+    },
+    "front_transition": {
+      "path": "NLA/IE13/Origin.lean",
+      "exact_frozen_header": true,
+      "header_sha256": "a62cef27f4498bcd90f40ea5de528cc427d9d3849ce4c15ebe3082c0f1de2ba9"
+    },
+    "front_structure": {
+      "path": "NLA/IE13/Front.lean",
+      "exact_frozen_header": true,
+      "header_sha256": "63e9e53402d8f4948a5d35a320f0af4a8b89ebd5410d7452ee24290f7a28c58c"
+    }
+  },
+  "all10_frozen_inputs_unchanged": true,
+  "previous_four_module_sources_unchanged": true,
+  "original_IE14_front_source_matches_Git": true,
+  "reuse_excludes_IE14_cyclic_and_two_row_front": true,
+  "original_row_provenance_derived_from_actual_swaps": true,
+  "future_rows_and_front_cardinality_jointly_derived": true,
+  "pivot_front_from_band_zero_and_nonzero_pivot": true,
+  "full_complex_and_all_ties": true,
+  "p_zero_and_bottom_truncation_included": true,
+  "actual_new_module_compilation": false,
+  "complete_problem_verification": false,
+  "canonical_Comparator_and_kernel_acceptance": "pending",
+  "local_Lean_or_Lake": false,
+  "author_source_mutation": false,
+  "verified_count_change": false
+}

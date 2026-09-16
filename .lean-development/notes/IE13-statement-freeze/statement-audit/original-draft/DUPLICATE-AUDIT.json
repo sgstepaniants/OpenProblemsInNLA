@@ -1,0 +1,63 @@
+{
+  "preflight_directory": "../IE13-preflight",
+  "preflight_manifest_sha256": "b8053fab4ec62bf9539930c195a48e2e101e3c53be0ebd4bb8cbe0d802e6fd14",
+  "preflight_report_sha256": "06b44181f47bd82feda261e9d2f005d09d43e7e38954a9fb5ee945c5d772ec73",
+  "audit": {
+    "upstream": "ajt60gaibb/OpenProblemsInNLA",
+    "public_forks": 13,
+    "repositories_including_upstream": 14,
+    "heads": 248,
+    "unique_revisions": 202,
+    "local_complete_trees": 162,
+    "remote_complete_trees": 40,
+    "remote_errors": 0,
+    "remote_truncated_trees": 0,
+    "possible_ID_labelled_formalization_paths": 0,
+    "upstream_open_PRs": [
+      {
+        "number": 276,
+        "title": "Lean-verify MF-12 arbitrary polynomial growth exponents",
+        "head_sha": "95fb27612d651f9b9fc0dfddd138d97a850a616d"
+      },
+      {
+        "number": 275,
+        "title": "Lean-verify IE-04 Gaussian smoothed tail counterexample",
+        "head_sha": "27da65fead0d9471ab74d7b4aba2c32631ae0a6a"
+      },
+      {
+        "number": 274,
+        "title": "Lean-verify MF-24 polynomial norm counterexample",
+        "head_sha": "9acb634ce0d160a76c601c9432d6a14ca7e05e53"
+      }
+    ],
+    "branches_by_repository": {
+      "DiarHaidary/OpenProblemsInNLA": 2,
+      "FormulaRabbit81/OpenProblemsInNLA": 2,
+      "GeorgAUT/OpenProblemsInNLA": 2,
+      "MColbrook/OpenProblemsInNLA": 16,
+      "ajt60gaibb/OpenProblemsInNLA": 32,
+      "bonans/OpenProblemsInNLA": 2,
+      "k1monfared/OpenProblemsInNLA": 1,
+      "manasvishal/OpenProblemsInNLA": 1,
+      "mattman059/OpenProblemsInNLA": 1,
+      "maximilianbehr/OpenProblemsInNLA": 17,
+      "nicolasgillis/OpenProblemsInNLA": 20,
+      "sgstepaniants/OpenProblemsInNLA": 60,
+      "sidneyholden1/OpenProblemsInNLA": 87,
+      "yuningyang19/OpenProblemsInNLA": 5
+    },
+    "scope_limits": [
+      "public observed branch heads only",
+      "no private/deleted/future branches",
+      "no unlabelled unpublished proofs",
+      "upstream PR tab checked, not every fork PR tab"
+    ]
+  },
+  "files": {
+    "duplicate-audit/HEADS.json": "9c4ab17fcc64ffd756375ae8bc624f8a31f230ec0cd2174fa5152ece529e9062",
+    "duplicate-audit/LOCAL-TREE-SCAN.json": "7b8b9e3c9fdff63de229a087668a8dc8e12dabd07e2b57bade253dc6ffbc31c8",
+    "duplicate-audit/REMOTE-TREE-SCAN.json": "9f7935f8c6b157aecaf4e7190f08bae7bc33751bcef501dfce94e441b7849b98",
+    "duplicate-audit/upstream-open-pulls.json": "0a76e104909bcc1bcc70a10a381a9268e5fade4c7f3921bbf72c5511a71293c1"
+  },
+  "scope": "Observed public heads only. Complete evidence retained without modification; refresh before publication."
+}

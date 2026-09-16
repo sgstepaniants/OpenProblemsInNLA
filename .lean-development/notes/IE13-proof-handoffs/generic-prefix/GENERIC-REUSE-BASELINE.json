@@ -1,0 +1,26 @@
+{
+  "Basic": {
+    "source_commit": "6e48f25fffdae2cf93e4985dc515abbd15e0481b",
+    "source_path": "linear-systems-and-elimination/IE-14/lean/NLA/IE14/Basic.lean",
+    "source_sha256": "f75c6ae2c7d5532afc827e4405297ce8567332ade91a74a0df7f1284f1022a6b",
+    "initial_adaptation_sha256": "408c1fdf222dd4a3b8bec693d9c556b618657473fdb58864789dea00b694cb9b",
+    "transformations": [
+      "Namespace/import IE14 to IE13",
+      "Explicit source attribution",
+      "autoImplicit false and kernel LeanCert verification import",
+      "Rename old shorter entryMax_semantics to entryMax_attained_basic"
+    ]
+  },
+  "GEPP": {
+    "source_commit": "6e48f25fffdae2cf93e4985dc515abbd15e0481b",
+    "source_path": "linear-systems-and-elimination/IE-14/lean/NLA/IE14/GEPP.lean",
+    "source_sha256": "92f621550c134f82e130e80aa8a1fbc364ddc0f8e236149e5bc56383df33a18f",
+    "initial_adaptation_sha256": "1bf45e17d3042f8a7627a1fdf0f9acb5dcd0e7d0163f132fa071e09a1a5c5b51",
+    "transformations": [
+      "Namespace/import IE14 to IE13",
+      "Explicit source attribution",
+      "autoImplicit false and kernel LeanCert verification import",
+      "Preserve every generic active-injectivity and maximum-path proof body"
+    ]
+  }
+}

@@ -93,7 +93,8 @@ lemma extreme_symmetry_positive_scale {n : ℕ} (hn : 1 ≤ n) (X : Square n)
   have hT0 : T0.IsHermitian := hermitian_real_smul T hT r⁻¹
   have hscale : (r : ℂ) • T0 = T := by
     dsimp [T0]
-    rw [smul_smul, mul_inv_cancel₀ hr.ne', one_smul]
+    rw [smul_smul, ← Complex.ofReal_mul, mul_inv_cancel₀ hr.ne', Complex.ofReal_one,
+      one_smul]
   have he : pencil ((r : ℂ) • X) T = (r : ℂ) • pencil X T0 := by
     calc
       pencil ((r : ℂ) • X) T = pencil ((r : ℂ) • X) ((r : ℂ) • T0) :=

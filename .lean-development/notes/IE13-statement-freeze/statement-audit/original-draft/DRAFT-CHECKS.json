@@ -1,0 +1,33 @@
+{
+  "checked_at_utc": "2026-09-16T01:36:04.668449+00:00",
+  "phase": "unapproved statement-only candidate",
+  "schema": {
+    "path": "/private/tmp/nla-lean-next-ie14-worktree/docs/lean/schema/v0.4.schema.json",
+    "sha256": "25ff6b25ca4511635aff4443cf20480c15e59dddf19591c730950b442ea54fce",
+    "validation": "PASS using actual v0.4 JSON Schema only; completed-proof promotion validator not run on this draft"
+  },
+  "theorem_count": 28,
+  "declared_comparator_coverage": "PASS; exact 28-to-28 names; no definition holes",
+  "numeric_first_sha256": "a95e32b7b8e654185f1d6bbbb3c483fa9b988e2ee5800a2ce641a230706e1cb9",
+  "definition_and_challenge_sha256": {
+    "NLA/IE13/Definitions.lean": "cda485c546a5879f35eb9d69e7aaa7eaf1449d2219a47b75fcbb4c2827031988",
+    "Challenge.lean": "5b6b9a4c714686d6b060589a4ee1414f2ec94e80787a9ffe351ac6fe66331e57"
+  },
+  "retained_source_bytes_match_immutable_Git": true,
+  "dependency_pins_checked": true,
+  "routine_Fin_bound_terms_only_outside_Challenge": true,
+  "intentional_Challenge_placeholders": 28,
+  "Lean_solution_files": 0,
+  "Lean_solution_proof_bodies": 0,
+  "statement_approvals": 0,
+  "actual_Lean_statement_elaboration": "not performed",
+  "statement_frozen": false,
+  "whole_problem_verified": false,
+  "finite_source_data_cases": 20,
+  "finite_data_scope": "Exact small rational witness checks only; no universal proof, Lean execution or acceptance.",
+  "local_Lean_or_Lake": false,
+  "local_downloads": false,
+  "shared_worktree_changes": false,
+  "commit_or_push": false,
+  "whitespace_issues_in_authored_inputs": []
+}

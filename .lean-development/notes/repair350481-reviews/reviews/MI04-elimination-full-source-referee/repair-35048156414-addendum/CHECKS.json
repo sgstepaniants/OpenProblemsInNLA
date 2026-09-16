@@ -1,0 +1,18 @@
+{
+  "verdict": "APPROVE proof-only repair addendum; actual repaired compilation pending",
+  "baseline_full_review_sha256": "3df5650ab9182568508130624d24c290a9e720f077eabf8af36b5a0a83cd5f64",
+  "repair_manifest_sha256": "0a55ca2654eb1faeb206e55e79c52a99c0cf81db6fd5d2b5326a38117848168f",
+  "final_closure_sha256": "46f0d118bb154a40b5f39cd1ed3f6222fa8a4e62fd726e8a06ce2432828c6e1a",
+  "changed_source_paths": [
+    "NLA/MI04/Correction.lean",
+    "NLA/MI04/ScaledSymmetry.lean"
+  ],
+  "all_other19_sources_unchanged": true,
+  "all_ten_frozen_files_unchanged": true,
+  "exact_replacement_only_checks": true,
+  "before_matches_prior_review_and_actual_Git_commit": true,
+  "actual_log_matches_authenticated_coordinator_copy": true,
+  "new_actual_compilation_accepted": false,
+  "local_Lean_or_Lake": false,
+  "author_edits_by_reviewer": false
+}

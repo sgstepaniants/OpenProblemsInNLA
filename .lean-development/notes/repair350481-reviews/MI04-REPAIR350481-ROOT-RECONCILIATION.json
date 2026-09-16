@@ -1,0 +1,10 @@
+{
+  "phase": "root checked exact two-file actual-diagnostic repair; complete independent referee addenda separately required",
+  "packet_sha256": "0a55ca2654eb1faeb206e55e79c52a99c0cf81db6fd5d2b5326a38117848168f",
+  "closure_sha256": "46f0d118bb154a40b5f39cd1ed3f6222fa8a4e62fd726e8a06ce2432828c6e1a",
+  "whole_changed_files_and_diff_read": true,
+  "Git_before_verified": true,
+  "all_headers_and_frozen_inputs_unchanged": true,
+  "finding": "Explicit Matrix.mulVec expands the unavailable notation. The actual scaling residual is already over real scalars after dsimp/smul_smul, so real inverse cancellation and one_smul prove the same identity without inapplicable complex coercion rewrites.",
+  "new_Lean_acceptance_claimed": false
+}

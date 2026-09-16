@@ -1,0 +1,24 @@
+{
+  "created_at_utc": "2026-09-16T02:57:42.349548+00:00",
+  "MF22_two_complete_source_approvals_extended": true,
+  "MI04_two_complete_source_approvals_extended": true,
+  "IE13_prefix_independent_source_approval": "ten exports in six modules; whole problem and actual new compilation pending",
+  "root_reports_and_source_read": true,
+  "files_sha256": {
+    "reviews/MF22-root-final/repair-35048156414-addendum/REVIEW.md": "3ecedb80bec7719d65603dd758ec9824cc4b59aa531b61c79f9544e06c621334",
+    "reviews/MF22-root-final/repair-35048156414-addendum/CHECKS.json": "28178e4a28afb85a54416e3c1a1a4e3b007210718503ad152eb4e7687219e4f9",
+    "reviews/MF22-inequalities-repair-35048156414/REVIEW.md": "33108abb4a088dfd7123c7bcef9367684c644057a52a93360e42cbfeb53fd7e6",
+    "reviews/MF22-inequalities-repair-35048156414/CHECKS.json": "8d3ea14fcebcfb344b48d2956ad0c3d1eb94656de9fe7ca3b718dafa1f2264d5",
+    "reviews/MI04-matrix-functions-repair-35048156414/REVIEW.md": "819a232e82ba52ab70553f9d9dc9ce28c50eddd71e5be65ebf6155f046ab9d4f",
+    "reviews/MI04-matrix-functions-repair-35048156414/CHECKS.json": "681d2468577f72b63eb3353e2c6762bdb0920f50f08d17f08593169cd8d8c22f",
+    "reviews/MI04-elimination-full-source-referee/repair-35048156414-addendum/REVIEW.md": "108b4e0bb8341e3729ed8ed4f7939e14b76a43bf062d79843eeceba71f97897a",
+    "reviews/MI04-elimination-full-source-referee/repair-35048156414-addendum/CHECKS.json": "db478bd41fc7b1f4a920a1ad761c6e6333f5e1442c60732eba2accf3b9a42562",
+    "reviews/IE13-matrix-functions-generic-prefix/REVIEW.md": "3eff705ff2e443a56bd984d78d4526be40740c0db310333b24d752e45eac15af",
+    "reviews/IE13-matrix-functions-generic-prefix/CHECKS.json": "9dd00de8deb3ad58a4b247dfe1c55c5d586b1cf3d58f4179cac18ac19908277a",
+    "reviews/IE13-matrix-functions-origin-front/REVIEW.md": "29b6df97f4c72229a85cc1f0a43b644235da22723a789288c9bbfd0836c3f60f",
+    "reviews/IE13-matrix-functions-origin-front/CHECKS.json": "eee7c27620977e0bccd0a8d48be6177f04c29fdec9e80ba958b435bdf887626a",
+    "MI04-REPAIR350481-ROOT-RECONCILIATION.json": "e28d3ba8faccb4f9bdc7acb2481fc604427504769ddfb8581327c6f6e084fbfa"
+  },
+  "local_Lean_execution": false,
+  "complete_verification_claimed": false
+}

@@ -16,7 +16,12 @@
   {
     "id": "IE-13",
     "modules": [
-      "NLA.IE13.Definitions"
+      "NLA.IE13.Basic",
+      "NLA.IE13.Maxima",
+      "NLA.IE13.GEPP",
+      "NLA.IE13.Prefix",
+      "NLA.IE13.Origin",
+      "NLA.IE13.Front"
     ],
     "challenge": "Challenges/IE13.lean"
   }

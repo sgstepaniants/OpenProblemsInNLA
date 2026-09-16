@@ -1,0 +1,23 @@
+--- before/Correction.lean
++++ after/Correction.lean
+@@ -84,7 +84,7 @@
+       (Matrix.toEuclideanCLM (n := ι) (𝕜 := ℂ) (realDiagonal d) v) =
+         (d a : ℂ) * v a := by
+   rw [inner_coordinateUnit_left]
+-  change (Matrix.diagonal (fun j => (d j : ℂ)) *ᵥ WithLp.ofLp v) a = _
++  change Matrix.mulVec (Matrix.diagonal (fun j => (d j : ℂ))) (WithLp.ofLp v) a = _
+   exact Matrix.mulVec_diagonal _ _ _
+ 
+ lemma correction_trial_quadratic (d : ι → ℝ) (V : CMatrix ι) (a : ι)
+--- before/ScaledSymmetry.lean
++++ after/ScaledSymmetry.lean
+@@ -93,8 +93,7 @@
+   have hT0 : T0.IsHermitian := hermitian_real_smul T hT r⁻¹
+   have hscale : (r : ℂ) • T0 = T := by
+     dsimp [T0]
+-    rw [smul_smul, ← Complex.ofReal_mul, mul_inv_cancel₀ hr.ne', Complex.ofReal_one,
+-      one_smul]
++    rw [smul_smul, mul_inv_cancel₀ hr.ne', one_smul]
+   have he : pencil ((r : ℂ) • X) T = (r : ℂ) • pencil X T0 := by
+     calc
+       pencil ((r : ℂ) • X) T = pencil ((r : ℂ) • X) ((r : ℂ) • T0) :=

@@ -1,0 +1,82 @@
+{
+  "problem_id": "MF-22",
+  "kind": "predictive-proof-only-API-repair",
+  "actual_tail_compilation": false,
+  "local_Lean_or_Lake": false,
+  "status": "held candidate; needs independent diff review and actual remote compilation",
+  "prior_actual_blocked_run": 35048156414,
+  "prior_actual_commit": "39736a2e9db176f6f9551ae39c8194013ac770a7",
+  "source_scope": "One explicit additive monotonicity term; no declaration/header or mathematical change. Existing actual notation repair remains separate.",
+  "changed_files": {
+    "NLA/MF22/SpectralTailBounds.lean": {
+      "before_sha256": "a59421e36ac67c09f1f0f173dbda8f9a81ddc3321dccb1fd5adfe96ec29b8269",
+      "after_sha256": "9018f944873950c303040ff464192afdd91829ec937cff20893a872b668a1009"
+    }
+  },
+  "checks": {
+    "before_matches_actual_git": true,
+    "other28_source_files_unchanged_from_prior_integrated": true,
+    "all10_frozen_inputs_unchanged": true,
+    "all22_frozen_main_signatures_unchanged": true,
+    "no_source_change_for_local_scalar_helper": true
+  },
+  "previous_integrated_manifest_sha256": "5d7ddf213f047bfb6b5f7e85b5a8da809b522083ac0db6103eee85f62ce10532",
+  "complete_current_proof_closure": {
+    "NLA/MF22/Conditioning.lean": "05675818684fddb72e775839a57b768d78a9c2207c478934aa989b9604aebdc2",
+    "NLA/MF22/Coordinates.lean": "5434845e2d23134b8f0bb9bdd85b4f840e73aca8a4236f0043021a78414eca34",
+    "NLA/MF22/Coprime.lean": "c9f3e38ab6e033fd64d2dd26755981ad962c89ccabd56535da66c3183693e383",
+    "NLA/MF22/Definitions.lean": "41c0d3ffb9f061c0dbf6a0022d91e5f72e07e50842899cd3e22f8a482b6294f5",
+    "NLA/MF22/Dominant.lean": "03517e7ecb894a0d1cea8b32331b2b90822cdd4f01b1f703809a1b542e3da804",
+    "NLA/MF22/EigenEvaluation.lean": "a707e1540b08c0c09050fefaaf7916adbf2d4fa14fe012553b900022389d52df",
+    "NLA/MF22/GreenCoefficients.lean": "049faf1d55f30013c057795402d14270ac51286cccfdc4631b7a8c7df29a4f55",
+    "NLA/MF22/GreenEntryAlgebra.lean": "9ac96ec22d9ff316a24880be2af62999195a59c4819dd1c171be288e9be23a5b",
+    "NLA/MF22/GreenEntryBounds.lean": "a15c4ca6d1d53ab05a7fba6587c91d4988805214b43cab9975ade2ffb77d750c",
+    "NLA/MF22/GreenInverse.lean": "7c79e4b31774ab3cb0c277814bab0ba0df524c587bfa5b7d9535bce05bb93129",
+    "NLA/MF22/GreenKernel.lean": "c06372c23010f366a42c77c415b1256c676b5bd95fd65c31a2c1c6d3e4c66bc2",
+    "NLA/MF22/LeadingBlock.lean": "14b501678ec522423f05e560d138fbb6a480d997ae21bdb25a8c5486e98390c3",
+    "NLA/MF22/Norms.lean": "f37ffc6f38461a491e934043b6093a1b0a9968d2bf3c26c8d3be45bef4821f04",
+    "NLA/MF22/ProjectorAlgebra.lean": "c9597aa02f2c9d141806b94be1797c0711d8937f47f624c708e2ef724c5f4a8c",
+    "NLA/MF22/ProjectorPolynomial.lean": "10e88a81a066f915b62d084125e60fe59fef1b54eae1b79a2ea8f0b4414c31d0",
+    "NLA/MF22/ProjectorRank.lean": "0b02bcf21d2367f9c276078d84662ffbd03d54f1487cc6b576148760462c384c",
+    "NLA/MF22/RootCayley.lean": "b269e60c433ef8edd4e4227665934dc81d440fc2878b80f989936a49da167cb4",
+    "NLA/MF22/RootCubic.lean": "08083b1e76beb946ade88ed7ca5610d92f5f866b664e803444717273e1309da8",
+    "NLA/MF22/Roots.lean": "5ce001f3209a583dc6b1ce263a2156482d0977d6d28ac748ee0df1deabe9634c",
+    "NLA/MF22/ScalarCertificates.lean": "b30a176287042eb9fb3fdfac83fa5409f3015b4590dc9f21f79a97d083a6c70d",
+    "NLA/MF22/ScalarTail.lean": "0de5dea46f5e52ed163567b6e4459b48aedbeb923a8da5f98754c3cfc4dcd427",
+    "NLA/MF22/SourceBounds.lean": "8f9f476c6108ea080167423e61e4d9f385d4d2b3a9ecce672ca183dfff2dfd8f",
+    "NLA/MF22/SourceRecurrence.lean": "a9ea22f41be5421a57a36efd3708039bc89c8c8a7f1c1cde6c91dfa894fa9870",
+    "NLA/MF22/SourceRows.lean": "ffbf26af2d0859d128b068235808a09ad7ffd3ba441a48af4924c62b14221e21",
+    "NLA/MF22/SpectralAlgebra.lean": "d8c93f67972893a646844f9adce801f2caa6531082681cbe0239efff1adc2d8c",
+    "NLA/MF22/SpectralTailBounds.lean": "9018f944873950c303040ff464192afdd91829ec937cff20893a872b668a1009",
+    "NLA/MF22/StateReconstruction.lean": "30d21da93b1ed90ef1328df81a7773eee325e194be4baf4e17ec2b7683790f78",
+    "NLA/MF22/TransferCertificates.lean": "247751273e19544c15451f3088c2bb70335a12653a22882567e0925de341abd8",
+    "Solution.lean": "0dae6f12f63ed50665a3d6b9d3392141e64b42119333e8016876275b8ce6bd7a"
+  },
+  "frozen_boundary": {
+    "NLA/MF22/Definitions.lean": "41c0d3ffb9f061c0dbf6a0022d91e5f72e07e50842899cd3e22f8a482b6294f5",
+    "Challenge.lean": "87da57e93ad0e0054db6d84c461da170785f666afd0ffe34532a62423905a6e0",
+    "NUMERICAL_TARGETS.md": "913f1b55ad721e7ce4bf8003801d6f318842a619d510b7535dbaefa19e94f9f2",
+    "SourceCorrespondence.md": "17b9eea27a14d372db0f4a10a686325dcfd2aea50fe61e2faffb802962ee60de",
+    "SOURCE-PROVENANCE.json": "e4a68c5cb2934610002a124a5d1daed2250820ff7116a8b7f6e4fc38d37e5ec4",
+    "comparator.json": "3d35388b2307664f407b6623ed783de88db05159aa2f0c202f042692952cc47d",
+    "lakefile.toml": "1b63145543616848f5144eb518b322e964e6cbf829e5d4b10ff4cdbac3d8a00e",
+    "lake-manifest.json": "8875cbf1c4950de7a170635d73c26d7943c84305a1309fd0a1d9b3d108154e89",
+    "lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+    "LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+  },
+  "retained_evidence": {
+    "CHANGES.diff": "53fc61abb2268bea10b66755455591c99c3571307c409a9d15d99102698fe88e",
+    "PREFLIGHT.md": "b79e53870f03b0fa3f7caf23d45e1606593746a8da0f1b565b350d0afafa6f9b",
+    "after/NLA/MF22/SpectralTailBounds.lean": "9018f944873950c303040ff464192afdd91829ec937cff20893a872b668a1009",
+    "api/Mathlib/Algebra/Order/Monoid/Unbundled/Basic.lean": "d1487f01ffdc094065987d7e21bcd60023585ba9e7ec2f1e03866224eb888194",
+    "api/Mathlib/Data/Matrix/Mul.lean": "9ce6ecd0751e977f58fc47d6f271dff381e59868474a6955730ff07a99aa0e6b",
+    "api/Mathlib/LinearAlgebra/Matrix/Charpoly/Basic.lean": "584eb12d39eacb591155c98cfa2089479d88cfdea8eb5f31ba5ed687de200a9a",
+    "api/compiled-local-TransferCertificates.lean": "247751273e19544c15451f3088c2bb70335a12653a22882567e0925de341abd8",
+    "before/NLA/MF22/SpectralTailBounds.lean": "a59421e36ac67c09f1f0f173dbda8f9a81ddc3321dccb1fd5adfe96ec29b8269",
+    "prior-actual-MI04-additive-orientation.log": "4c6880cee6100f9f91bbf2d33b38514d03f353d1e25dfd679b39500c60593942",
+    "tail-before/Conditioning.lean": "05675818684fddb72e775839a57b768d78a9c2207c478934aa989b9604aebdc2",
+    "tail-before/Dominant.lean": "03517e7ecb894a0d1cea8b32331b2b90822cdd4f01b1f703809a1b542e3da804",
+    "tail-before/GreenEntryBounds.lean": "a15c4ca6d1d53ab05a7fba6587c91d4988805214b43cab9975ade2ffb77d750c",
+    "tail-before/SpectralTailBounds.lean": "a59421e36ac67c09f1f0f173dbda8f9a81ddc3321dccb1fd5adfe96ec29b8269"
+  }
+}

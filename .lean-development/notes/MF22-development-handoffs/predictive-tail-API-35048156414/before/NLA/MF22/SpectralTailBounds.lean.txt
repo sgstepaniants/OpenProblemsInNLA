@@ -48,7 +48,7 @@ lemma spectralRemainder_bound (ρ : ℝ) (hρ : 0 < ρ)
     _ ≤ (spectralNorm ((roots 0 ^ j) • spectralProjector ρ roots 0) +
         spectralNorm ((roots 1 ^ j) • spectralProjector ρ roots 1)) +
         spectralNorm ((roots 2 ^ j) • spectralProjector ρ roots 2) :=
-      add_le_add (spectralNorm_add _ _) (le_refl _)
+      add_le_add_right (spectralNorm_add _ _) _
     _ ≤ _ := by
       simp only [spectralNorm_smul]
       exact add_le_add (add_le_add

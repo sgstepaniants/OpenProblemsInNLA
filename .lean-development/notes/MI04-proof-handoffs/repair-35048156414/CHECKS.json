@@ -1,0 +1,28 @@
+{
+  "problem": "MI-04",
+  "phase": "two proof-only repairs after authentic failed Linux run; actual repaired acceptance pending",
+  "actual_run_id": 35048156414,
+  "actual_commit": "39736a2e9db176f6f9551ae39c8194013ac770a7",
+  "actual_log_sha256": "5eca4d2048051b3927af6fe9f483e013043beaceea6e918f43c7e869313be1b4",
+  "repairs": [
+    "Replace unavailable scoped matrix-vector notation with the exact Matrix.mulVec application in a local change command.",
+    "Remove complex-ofReal rewrite steps because the actual scalar-action target has already reduced to the real product r * inverse r; retain the same nonzero cancellation proof."
+  ],
+  "source_changes": {
+    "NLA/MI04/Correction.lean": {
+      "before": "b719f84cdfde494644f4eed77eff83bc946d4630da9046e3ce86525e0714431e",
+      "after": "9c647ae819a57c51b8a1529fe2783d9e27c3bb541ee2979a48a8c84a7de3c740"
+    },
+    "NLA/MI04/ScaledSymmetry.lean": {
+      "before": "6ad9967e48602adc087ac905407f1554fc5e8fdb04f90dd9cea0605c8d350ef1",
+      "after": "54694087df421c0f4e6148008b43447728e053ef075aa319a116d34dbc980457"
+    }
+  },
+  "before_files_match_actual_Git": true,
+  "all_auxiliary_and_export_headers_unchanged": true,
+  "other19_source_files_unchanged": true,
+  "all10_frozen_files_unchanged": true,
+  "baseline_complete_closure_sha256": "72fd19eccbb6ca682a102c928cc589c618247c7b6fb9dcf1d5a993a4334f34e0",
+  "current_math_compilation": "pending next actual run; no complete accepted graph claimed",
+  "no_local_Lean_Lake": true
+}

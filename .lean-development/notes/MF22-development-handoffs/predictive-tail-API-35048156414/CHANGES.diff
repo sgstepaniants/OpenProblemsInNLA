@@ -1,0 +1,11 @@
+--- before/NLA/MF22/SpectralTailBounds.lean
++++ after/NLA/MF22/SpectralTailBounds.lean
+@@ -48,7 +48,7 @@
+     _ ≤ (spectralNorm ((roots 0 ^ j) • spectralProjector ρ roots 0) +
+         spectralNorm ((roots 1 ^ j) • spectralProjector ρ roots 1)) +
+         spectralNorm ((roots 2 ^ j) • spectralProjector ρ roots 2) :=
+-      add_le_add_right (spectralNorm_add _ _) _
++      add_le_add (spectralNorm_add _ _) (le_refl _)
+     _ ≤ _ := by
+       simp only [spectralNorm_smul]
+       exact add_le_add (add_le_add
