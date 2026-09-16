@@ -1,0 +1,23 @@
+{
+  "phase": "independent proof-only repair source review",
+  "verdict": "approve; actual repaired build and canonical gates pending",
+  "prior_full_review_sha256": "44f1c7e088ef447ee4efbb5bddc4f1c2e8921e35896f33a882fc949d2fe01467",
+  "actual_failed_run": 35044592511,
+  "actual_git_commit": "cc17d70a568de50bb428f2665f576aec9dcd884e",
+  "actual_log_sha256": "d270f781af4d1ed378f624055028c12249a8592fd5777fd629cb2819171538d6",
+  "all29_current_sources_match_integrated_manifest": true,
+  "exactly_two_expected_one_line_proof_edits": true,
+  "all_ten_frozen_files_unchanged": true,
+  "changed_files": {
+    "NLA/MF22/GreenEntryAlgebra.lean": {
+      "before": "5831730e3c4f7444e45615fe0db6599af8ec25bfb8034617d0b80200bc0c008d",
+      "after": "9ac96ec22d9ff316a24880be2af62999195a59c4819dd1c171be288e9be23a5b"
+    },
+    "NLA/MF22/ProjectorAlgebra.lean": {
+      "before": "baeecca9b7d308b19ab00d88a752eecd11f5c03ad7bca89d49ec1871f029b7ad",
+      "after": "c9597aa02f2c9d141806b94be1797c0711d8937f47f624c708e2ef724c5f4a8c"
+    }
+  },
+  "source_approval_not_mechanical_acceptance": true,
+  "local_lean_execution": false
+}

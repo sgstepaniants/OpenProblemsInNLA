@@ -1,0 +1,22 @@
+{
+  "actual_run_id": 35044592511,
+  "actual_commit": "cc17d70a568de50bb428f2665f576aec9dcd884e",
+  "actual_log_sha256": "d270f781af4d1ed378f624055028c12249a8592fd5777fd629cb2819171538d6",
+  "recorded_at_utc": "2026-09-16T01:44:00.467327+00:00",
+  "files": [
+    {
+      "path": "NLA/MF22/ProjectorAlgebra.lean",
+      "before_sha256": "baeecca9b7d308b19ab00d88a752eecd11f5c03ad7bca89d49ec1871f029b7ad",
+      "after_sha256": "c9597aa02f2c9d141806b94be1797c0711d8937f47f624c708e2ef724c5f4a8c",
+      "diff_sha256": "4a1c8a4a1ad010e51868c4ca5d5de912f8248e3084fec13033b0591bb28df257",
+      "all_lemma_and_theorem_headers_unchanged": true
+    }
+  ],
+  "diagnostic": "ProjectorAlgebra line52: the idempotence equality has been proved, but simplification leaves the expected right side as if True then the projector else zero.",
+  "repair": "Add the standard ite_true simplifier to this one simpa-only list. No other source changes.",
+  "local_Lean_or_Lake": false,
+  "author_tree_mutated": false,
+  "shared_repository_mutated": false,
+  "frozen_definitions_or_Challenge_mutated": false,
+  "actual_acceptance_of_repaired_bytes": "not yet run"
+}

@@ -51,7 +51,7 @@ lemma green_expansion_of_sandwich (ρ : ℝ) (roots : Fin 4 → ℂ)
   by_cases h : ell < j
   all_goals
     simp only [greenKernel, greenLeadingCoefficient, h, if_true, if_false,
-      transfer_power_decomposition ρ roots, Matrix.add_mul, Matrix.mul_add,
+      transfer_power_decomposition, Matrix.add_mul, Matrix.mul_add,
       Matrix.smul_mul, Matrix.mul_smul, hsandwich, smul_add, smul_sub, smul_smul]
     module
 

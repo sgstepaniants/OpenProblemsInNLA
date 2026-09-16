@@ -16,7 +16,9 @@
       "NLA.MI04.Coordinates",
       "NLA.MI04.Correction",
       "NLA.MI04.Punctured",
-      "NLA.MI04.UpperBound"
+      "NLA.MI04.UpperBound",
+      "NLA.MI04.Limit",
+      "NLA.MI04.ScaledSymmetry"
     ],
     "challenge": "Challenges/MI04.lean"
   }

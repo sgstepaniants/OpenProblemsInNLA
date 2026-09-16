@@ -1,0 +1,11 @@
+--- before/NLA/MF22/ProjectorAlgebra.lean
++++ after/NLA/MF22/ProjectorAlgebra.lean
+@@ -49,7 +49,7 @@
+         intro k
+         rw [eval_mul, lagrange_basis_eval_node roots hroots.1 i k]
+         split_ifs <;> simp)
+-    simpa only [spectralProjector, map_mul, if_pos rfl] using he
++    simpa only [spectralProjector, map_mul, if_pos rfl, ite_true] using he
+   · have he := matrix_aeval_eq_of_eval_nodes (transferMatrix ρ) roots hroots.1
+       (transfer_charpoly_eq_nodal ρ roots hroots hchar)
+       (Lagrange.basis Finset.univ roots i * Lagrange.basis Finset.univ roots j)

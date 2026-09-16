@@ -1,0 +1,15 @@
+{
+  "phase": "incremental source review and identity reconciliation only",
+  "actual_failed_run": 35044592511,
+  "actual_failed_commit": "cc17d70a568de50bb428f2665f576aec9dcd884e",
+  "before_matches_git": true,
+  "after_matches_author": true,
+  "headers_unchanged": true,
+  "frozen_files_unchanged": 10,
+  "independent_report_sha256": "e46a78c5092e1cd2e7cad9e245af9a669b6ea1a9be4dae827eee50134fba82be",
+  "repair_manifest_sha256": "8d31a1d0d0c547a93cabb83006fa3294ed6ace7ee8f072fe2105055c145ba9d4",
+  "root_read_full_repaired_source_and_exact_diff": true,
+  "root_assessment": "The extensional continuity rewrite, explicit scalar map/application and definitional real-part bridge preserve their exact assertions. Source edits approved; actual build remains pending.",
+  "mechanical_acceptance_claimed": false,
+  "local_Lean_execution": false
+}

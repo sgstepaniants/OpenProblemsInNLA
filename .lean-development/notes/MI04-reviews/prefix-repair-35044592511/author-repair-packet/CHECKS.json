@@ -1,0 +1,24 @@
+{
+  "problem": "MI-04",
+  "actual_run": 35044592511,
+  "actual_git_commit": "cc17d70a568de50bb428f2665f576aec9dcd884e",
+  "status": "proof-only elaboration repairs; next actual Linux command pending",
+  "source_changes": {
+    "NLA/MI04/Quadratic.lean": {
+      "before": "57b0cd20fd608c1f618de16a7663de1863fd364900269bb9a5b92c5b64375ed4",
+      "after": "8f627c7c20e201548a8c0dfa68fb6a3252295d3103b6ffbbd3377385c10f3fbc"
+    }
+  },
+  "repairs": [
+    "Function extensionality rewrites the continuous quadratic-form function, since pointwise simp did not rewrite the unapplied function.",
+    "Explicit star-algebra scalar mapping and continuous-linear-map scalar application reduce the literal complex scalar action before taking its real part.",
+    "Close the actual remaining positive-quadratic equivalence by definitional reflexivity of complex RCLike.re."
+  ],
+  "mathematical_statements_changed": false,
+  "frozen_boundary_changed": false,
+  "other_held_proof_files_changed": false,
+  "local_lean_execution": false,
+  "review_baselines_replaced": false,
+  "log_sha256": "9df0f6a37b1182d7f21d7d94edf2d08403e3f2919748b06b678dfbfd210fae7b",
+  "all_ten_frozen_files_independently_rehashed": true
+}

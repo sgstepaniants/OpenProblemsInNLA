@@ -1,0 +1,28 @@
+{
+  "problem_id": "MI-04",
+  "reviewer": "OpenAI Codex /root/next_matrix_functions",
+  "independent_nonimplementer": true,
+  "verdict": "APPROVE three proof-only repairs at source level; original incremental scope unchanged",
+  "actual_prior_run": 35044592511,
+  "actual_prior_commit": "cc17d70a568de50bb428f2665f576aec9dcd884e",
+  "actual_log_sha256": "9df0f6a37b1182d7f21d7d94edf2d08403e3f2919748b06b678dfbfd210fae7b",
+  "author_repair_manifest_sha256": "8d31a1d0d0c547a93cabb83006fa3294ed6ace7ee8f072fe2105055c145ba9d4",
+  "new_quadratic_sha256": "8f627c7c20e201548a8c0dfa68fb6a3252295d3103b6ffbbd3377385c10f3fbc",
+  "all_declaration_headers_unchanged": true,
+  "seven_other_held_proof_files_and_frozen_boundary_unchanged": {
+    "NLA/MI04/Definitions.lean": "de70e2a9dd878f1d083adacf8df6808c90c27630ffc2644a62293bf085e41715",
+    "Challenge.lean": "ca80d090bfe9f3013d08aa86297761e1e524810881bce92776896545d6eeabf9",
+    "STATEMENT-FREEZE.json": "c5ca666f10da44ad1c47a81b0fe81898abf3a7a9ea789e90ec9dfbc8c8cf4c6c",
+    "NLA/MI04/Rayleigh.lean": "5fd32d7b37dfd66b6b3a30ab1d490a7fc3627536b05c8379641f84ffc95420ef",
+    "NLA/MI04/Unitary.lean": "05ccea07c757797829759c8a637ef14d5d216826d28b79a615e8b1df32b738e0",
+    "NLA/MI04/ScalarGeometry.lean": "583817923f7be81b7792a89b4e5ce48bd4817b07ef52655068fb17e3f48a4682",
+    "NLA/MI04/Coordinates.lean": "9c81bfca4b76495a35b8b740d2abfae231952c2b4da82702a0921e8be1e04cc4",
+    "NLA/MI04/Correction.lean": "b719f84cdfde494644f4eed77eff83bc946d4630da9046e3ce86525e0714431e",
+    "NLA/MI04/Punctured.lean": "8c7ff3d4386c0ff3a466f316b402637ce0ea7e6df02f80e96ade989ae22bc3ad",
+    "NLA/MI04/UpperBound.lean": "03376a5de032704cae5fa9fe17ab4633102655373699b5d8a23c30694362e190"
+  },
+  "local_lean_execution": false,
+  "repaired_source_actual_acceptance": "pending",
+  "complete_MI04_acceptance": false,
+  "canonical_comparator_acceptance": false
+}

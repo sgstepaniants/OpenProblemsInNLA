@@ -34,11 +34,8 @@ lemma realQuadratic_eq_linear (M : CMatrix ι) (v : CVector ι) :
   rfl
 
 lemma realQuadratic_continuous (M : CMatrix ι) : Continuous (realQuadratic M) := by
-  have hfun : realQuadratic M =
-      (Matrix.toEuclideanCLM (n := ι) (𝕜 := ℂ) M).reApplyInnerSelf :=
-    funext (realQuadratic_eq_reApply M)
-  rw [hfun]
-  exact (Matrix.toEuclideanCLM (n := ι) (𝕜 := ℂ) M).reApplyInnerSelf_continuous
+  simpa only [realQuadratic_eq_reApply] using
+    (Matrix.toEuclideanCLM (n := ι) (𝕜 := ℂ) M).reApplyInnerSelf_continuous
 
 @[simp] lemma realQuadratic_zero_vector (M : CMatrix ι) :
     realQuadratic M 0 = 0 := by
@@ -62,9 +59,7 @@ lemma realQuadratic_sub (M N : CMatrix ι) (v : CVector ι) :
 
 lemma realQuadratic_smul_matrix (c : ℝ) (M : CMatrix ι) (v : CVector ι) :
     realQuadratic ((c : ℂ) • M) v = c * realQuadratic M v := by
-  simp only [realQuadratic, map_smul, ContinuousLinearMap.smul_apply,
-    inner_smul_right, Complex.mul_re, Complex.ofReal_re, Complex.ofReal_im,
-    zero_mul, sub_zero]
+  simp [realQuadratic, inner_smul_right, Complex.mul_re]
 
 lemma realQuadratic_one (v : CVector ι) :
     realQuadratic (1 : CMatrix ι) v = ‖v‖ ^ 2 := by
@@ -97,7 +92,6 @@ lemma positive_quadratic_iff (M : CMatrix ι) :
   rw [← Matrix.isPositive_toEuclideanLin_iff, LinearMap.IsPositive,
     Matrix.isSymmetric_toEuclideanLin_iff]
   simp only [realQuadratic_eq_linear]
-  rfl
 
 lemma hermitian_real_smul (M : CMatrix ι) (hM : M.IsHermitian) (c : ℝ) :
     ((c : ℂ) • M).IsHermitian := by

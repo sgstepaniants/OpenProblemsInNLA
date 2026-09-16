@@ -1,0 +1,14 @@
+{
+  "files": {
+    "AUTHOR-INTEGRATED-MANIFEST.json": "c0e843760e7e3a85e973fbabcd76b7ce7316cc1a4007bb70950946a240a7f668",
+    "CHECKS.json": "031eee7ebdb21c100f0744c410e018899944e40765c62b4eb2d9308c155295b7",
+    "GreenEntryAlgebra.diff": "67661da24782851628d0f1328945e15ad7396ca9960ecd1e55a9a4f968a1fbba",
+    "MF-22-modules.log": "d270f781af4d1ed378f624055028c12249a8592fd5777fd629cb2819171538d6",
+    "ProjectorAlgebra.diff": "85005364e1b188889e0073cb78e26bc0ab61a2484301cb4f0e79ead775b7c222",
+    "REVIEW.md": "fbbc6271c04b59e82084a4bfa0f0efc1faa9f7fa0f75602d3fde55a80d992e5f",
+    "after/NLA/MF22/GreenEntryAlgebra.lean": "9ac96ec22d9ff316a24880be2af62999195a59c4819dd1c171be288e9be23a5b",
+    "after/NLA/MF22/ProjectorAlgebra.lean": "c9597aa02f2c9d141806b94be1797c0711d8937f47f624c708e2ef724c5f4a8c",
+    "before/NLA/MF22/GreenEntryAlgebra.lean": "5831730e3c4f7444e45615fe0db6599af8ec25bfb8034617d0b80200bc0c008d",
+    "before/NLA/MF22/ProjectorAlgebra.lean": "baeecca9b7d308b19ab00d88a752eecd11f5c03ad7bca89d49ec1871f029b7ad"
+  }
+}

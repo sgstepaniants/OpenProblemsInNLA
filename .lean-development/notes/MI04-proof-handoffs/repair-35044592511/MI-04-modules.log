@@ -1,0 +1,83 @@
+✔ [3257/3265] Built NLA.MI04.Definitions (1.7s)
+⚠ [3258/3265] Built NLA.MI04.ScalarGeometry (2.5s)
+warning: NLA/MI04/ScalarGeometry.lean:28:14: This simp argument is unused:
+  mul_zero
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Complex.normSq_apply, Complex.sub_re, Complex.sub_im, Complex.mul_re, Complex.mul_im,
+    Complex.ofReal_re, Complex.ofReal_im, zero_mul, sub_zero, zero_add] at h
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: NLA/MI04/ScalarGeometry.lean:28:34: This simp argument is unused:
+  zero_add
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Complex.normSq_apply, Complex.sub_re, Complex.sub_im, Complex.mul_re, Complex.mul_im,
+    Complex.ofReal_re, Complex.ofReal_im, zero_mul, mul_zero, sub_zero] at h
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: NLA/MI04/ScalarGeometry.lean:48:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: NLA/MI04/ScalarGeometry.lean:61:18: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: NLA/MI04/ScalarGeometry.lean:63:0: 'NLA.MI04.weighted_square_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MI04/ScalarGeometry.lean:65:0: 'NLA.MI04.collinear_values_affine' depends on axioms: [propext, Classical.choice, Quot.sound]
+✖ [3259/3265] Building NLA.MI04.Quadratic (3.1s)
+trace: .> LEAN_PATH=/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/Cli/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/batteries/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/Qq/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/aesop/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/proofwidgets/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/importGraph/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/plausible/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/mathlib/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/leancert/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/build/lib/lean /home/runner/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean /home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/NLA/MI04/Quadratic.lean -o /home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/build/lib/lean/NLA/MI04/Quadratic.olean -i /home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/build/lib/lean/NLA/MI04/Quadratic.ilean -c /home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/build/ir/NLA/MI04/Quadratic.c --setup /home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/build/ir/NLA/MI04/Quadratic.setup.json --json
+error: NLA/MI04/Quadratic.lean:37:2: Type mismatch: After simplification, term
+  ContinuousLinearMap.reApplyInnerSelf_continuous (Matrix.toEuclideanCLM M)
+ has type
+  Continuous (Matrix.toEuclideanCLM M).reApplyInnerSelf
+but is expected to have type
+  Continuous (realQuadratic M)
+error: NLA/MI04/Quadratic.lean:61:61: unsolved goals
+ι : Type u_1
+inst✝¹ : Fintype ι
+inst✝ : DecidableEq ι
+c : ℝ
+M : CMatrix ι
+v : CVector ι
+⊢ (inner ℂ v ((Matrix.toEuclideanCLM (c • M)) v)).re = c * (inner ℂ v ((Matrix.toEuclideanCLM M) v)).re
+warning: NLA/MI04/Quadratic.lean:62:23: This simp argument is unused:
+  inner_smul_right
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [realQuadratic, Complex.mul_re]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: NLA/MI04/Quadratic.lean:62:41: This simp argument is unused:
+  Complex.mul_re
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [realQuadratic, inner_smul_right]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: NLA/MI04/Quadratic.lean:91:77: unsolved goals
+ι : Type u_1
+inst✝¹ : Fintype ι
+inst✝ : DecidableEq ι
+M : CMatrix ι
+⊢ (Matrix.IsHermitian M ∧ ∀ (x : EuclideanSpace ℂ ι), 0 ≤ RCLike.re (inner ℂ ((Matrix.toEuclideanLin M) x) x)) ↔
+    Matrix.IsHermitian M ∧ ∀ (v : CVector ι), 0 ≤ (inner ℂ ((Matrix.toEuclideanLin M) v) v).re
+warning: NLA/MI04/Quadratic.lean:96:0: automatically included section variable(s) unused in theorem `NLA.MI04.hermitian_real_smul`:
+  [Fintype ι]
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype ι] [DecidableEq ι] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+info: NLA/MI04/Quadratic.lean:125:0: 'NLA.MI04.positive_quadratic_iff' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+error: NLA/MI04/Quadratic.lean:126:21: #assert_trust: 'NLA.MI04.positive_quadratic_iff' depends on sorry or unrecognized axioms
+  foundational: propext, Classical.choice, Quot.sound
+  sorryAx: sorryAx
+info: NLA/MI04/Quadratic.lean:127:0: 'NLA.MI04.pencil_isHermitian' depends on axioms: [propext, Classical.choice, Quot.sound]
+error: Lean exited with code 1
+Some required targets logged failures:
+- NLA.MI04.Quadratic
+error: build failed

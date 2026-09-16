@@ -1,0 +1,10 @@
+{
+  "files": {
+    "CHANGES.diff": "0dd440487300f5204892b81e58be62db69ad2233809a25d99f8eaed0278fb8d2",
+    "CHECKS.json": "7051a395277f8d9cc5aa1721a2df65d67b3a9f42f8ba9f1643daaeca85255024",
+    "MI-04-modules.log": "9df0f6a37b1182d7f21d7d94edf2d08403e3f2919748b06b678dfbfd210fae7b",
+    "after/Quadratic.lean": "8f627c7c20e201548a8c0dfa68fb6a3252295d3103b6ffbbd3377385c10f3fbc",
+    "before/Quadratic.lean": "57b0cd20fd608c1f618de16a7663de1863fd364900269bb9a5b92c5b64375ed4"
+  },
+  "current_quadratic_sha256": "8f627c7c20e201548a8c0dfa68fb6a3252295d3103b6ffbbd3377385c10f3fbc"
+}
