@@ -1,0 +1,199 @@
+{
+  "reviewer": "/root/mf22_publication_referee",
+  "phase": "independent complete source and observed-failure review",
+  "created_utc": "2026-09-16T04:46:21.674109+00:00",
+  "verdict": "approve complete mathematical source and narrow repair; fresh complete Linux/Comparator verification remains pending",
+  "closure_sha256": "3f553e705896b765090592e3a637fb202cf165bea9dbc01f437d6507298ec3c7",
+  "active_sources": {
+    "NLA/MI04/BasisTransport.lean": {
+      "sha256": "a3bd7f091903150bcf01c981a5a1ae8aae7bc8c31ea00f4b601aa53636c9341e",
+      "bytes": 4614,
+      "lines": 99
+    },
+    "NLA/MI04/BlockSymmetry.lean": {
+      "sha256": "7d5c0e711ba01a8bb98616427b50b06c64768e3bb12aef81ab06cd03720d3826",
+      "bytes": 5895,
+      "lines": 140
+    },
+    "NLA/MI04/Conclusion.lean": {
+      "sha256": "d12abb7dd84e2407b5a3f52769aec699f3f3a282eb2043fd9a6a00a3fb67b6d8",
+      "bytes": 3452,
+      "lines": 77
+    },
+    "NLA/MI04/Coordinates.lean": {
+      "sha256": "9fbf6dac25ce96499fdd7a6371e948c11d6e1b04156788af48998b0919d555d6",
+      "bytes": 4916,
+      "lines": 111
+    },
+    "NLA/MI04/Correction.lean": {
+      "sha256": "9c647ae819a57c51b8a1529fe2783d9e27c3bb541ee2979a48a8c84a7de3c740",
+      "bytes": 5216,
+      "lines": 128
+    },
+    "NLA/MI04/Definitions.lean": {
+      "sha256": "de70e2a9dd878f1d083adacf8df6808c90c27630ffc2644a62293bf085e41715",
+      "bytes": 3795,
+      "lines": 91
+    },
+    "NLA/MI04/Diagonalization.lean": {
+      "sha256": "dd1f160e56238b0b41846938774dd86cf63434465268e8ae5c33d532f12653f8",
+      "bytes": 3770,
+      "lines": 83
+    },
+    "NLA/MI04/Geometry.lean": {
+      "sha256": "21b50d8fb4d8eeed4a8b313f0e04599bcc7842fd69bfbe2310ea3a67948f2622",
+      "bytes": 5051,
+      "lines": 111
+    },
+    "NLA/MI04/JointBasis.lean": {
+      "sha256": "3d9ed5937621ea6251ebf0332c816b37b22703d52aa52c3af3f1944317c8b3b1",
+      "bytes": 3007,
+      "lines": 70
+    },
+    "NLA/MI04/Limit.lean": {
+      "sha256": "7cdbd3546146dc78ce37452fffcc4c95be66ab7c909180f1694ff23009fed981",
+      "bytes": 4267,
+      "lines": 93
+    },
+    "NLA/MI04/Normality.lean": {
+      "sha256": "d8abea3f3a78a9381890e637e022553ba0b9b0317d184b33d799123391831d6f",
+      "bytes": 4063,
+      "lines": 90
+    },
+    "NLA/MI04/Probes.lean": {
+      "sha256": "0e4b3d9a0e6bb70c8b91a1669e89785cbefe99777315d9a4b52d961fa93f5f76",
+      "bytes": 2941,
+      "lines": 79
+    },
+    "NLA/MI04/Punctured.lean": {
+      "sha256": "8c7ff3d4386c0ff3a466f316b402637ce0ea7e6df02f80e96ade989ae22bc3ad",
+      "bytes": 4824,
+      "lines": 119
+    },
+    "NLA/MI04/Quadratic.lean": {
+      "sha256": "81af17f3172536a7bf5e6c4d8f535b3cca8d801fae0884a60a477c4deff9ea18",
+      "bytes": 5559,
+      "lines": 136
+    },
+    "NLA/MI04/Rayleigh.lean": {
+      "sha256": "a9308e19575aa44ec56389ef2a24e75b375bcb577703c706590af6b63ebcca97",
+      "bytes": 5784,
+      "lines": 143
+    },
+    "NLA/MI04/ScalarGeometry.lean": {
+      "sha256": "583817923f7be81b7792a89b4e5ce48bd4817b07ef52655068fb17e3f48a4682",
+      "bytes": 2573,
+      "lines": 68
+    },
+    "NLA/MI04/ScaledSymmetry.lean": {
+      "sha256": "54694087df421c0f4e6148008b43447728e053ef075aa319a116d34dbc980457",
+      "bytes": 5124,
+      "lines": 115
+    },
+    "NLA/MI04/Unitary.lean": {
+      "sha256": "05ccea07c757797829759c8a637ef14d5d216826d28b79a615e8b1df32b738e0",
+      "bytes": 4127,
+      "lines": 97
+    },
+    "NLA/MI04/UpperBound.lean": {
+      "sha256": "5dc357316ab5e3ff1aeb282c20770870bd8b14d93c2928f64e3807cd96629c20",
+      "bytes": 5544,
+      "lines": 130
+    },
+    "NLA/MI04/WeightedProbes.lean": {
+      "sha256": "e72d7cd3a10c574477a794d26aba66d40da7486c9ead38e9e4e1d31840570eea",
+      "bytes": 5583,
+      "lines": 128
+    },
+    "Solution.lean": {
+      "sha256": "f00a126f014cf0220f104ac344991a0075e155218431e9e670607cc0d68dc587",
+      "bytes": 2366,
+      "lines": 60
+    }
+  },
+  "source_count": 21,
+  "source_lines": 2168,
+  "source_bytes": 92471,
+  "all21_export_headers_reviewed": true,
+  "Nonempty_section_context_resolved": true,
+  "all10_frozen_files_unchanged": true,
+  "all67_sealed_inputs_unchanged": true,
+  "all8_upstream_original_sources_Git_bound": true,
+  "all1454_failed_run_inputs_Git_bound": true,
+  "Probes_only_changed_source_from_actual_failure": true,
+  "Probes_all_headers_unchanged": true,
+  "LeanCert_kernel_interval_certificate_consumed_twice": true,
+  "all21_kernel_trust_assertions_present": true,
+  "schema_valid": true,
+  "original_mathematical_author": "Matthew J. Colbrook, Cambridge DAMTP",
+  "formalization_author": "George Stepaniants, California Institute of Technology, Department of Computing and Mathematical Sciences",
+  "fresh_success_receipt_reviewed": false,
+  "local_Lean_or_Lake_execution": false,
+  "source_edits": false,
+  "commit_push_publication_or_count_change": false,
+  "remaining_gates": [
+    "complete exact-source Linux build",
+    "all21 actual Comparator/default-kernel/axiom checks and required controls",
+    "actual-run final independent runtime reviews",
+    "publication metadata update retaining frozen history",
+    "explicit Solution build or documented default-target amendment"
+  ],
+  "evidence_files": {
+    "ACTIVE-IMPORT-CLOSURE.json": "d3090b00c743261fb3367e7f3b7c76098d0ee2c2c4c57d5c501c4548e2c8cf93",
+    "ALL-1454-FAILED-RUN-INPUT-BINDINGS.json": "64f1cde8548742672d918270e688868a8b021174c5ffdfdd58fcc0ab8d1e5330",
+    "ALL-21-HEADERS.json": "475ae09730064009218f73e561823bb2de3d40bfb52a924d7e821bc30ef51b9e",
+    "ALL-21-SOURCES.json": "c55095c7c0fce8dd9e6b37c2003c4fda45a8f6b30d79ca8ec0fe2ae4a0478f95",
+    "FROZEN-BOUNDARY.json": "2b5d13fd0a8dcbddc56b80ff4e015d59efd203f6b80e05c8b8143f2eeb2035a3",
+    "OBSERVED-FAILURE-CHECKS.json": "97de36f866cf7abe98fe0ffd0351f3a3a305ddc520aed792141461daa7af0cdf",
+    "ORIGINAL-SOURCE-BINDINGS.json": "c632ff4683ff6d02b78c1c3d0a1cfa41e103b27079298843f5700e77b57ef228",
+    "PRIMARY-API-CHECKS.json": "a508a0b4d0127103f651a2305e239f922b2365ea2bbdce5e40a72de4f4b343b0",
+    "check_sources.py": "3338b8aef32343118edf827d3aaefdb90847910bddf24a11203bd6117d51f76f",
+    "frozen-boundary/Challenge.lean.txt": "ca80d090bfe9f3013d08aa86297761e1e524810881bce92776896545d6eeabf9",
+    "frozen-boundary/LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "frozen-boundary/NLA/MI04/Definitions.lean.txt": "de70e2a9dd878f1d083adacf8df6808c90c27630ffc2644a62293bf085e41715",
+    "frozen-boundary/NUMERICAL_TARGETS.md": "5cb5e20ffcf035b2ea303cf9edae2e85619b0f562bf302cf6df0c7a46079d1d7",
+    "frozen-boundary/SOURCE-PROVENANCE.json": "aa92f22a3c17fa3abd48d80aaac4c7cff1d5dd0f02c32d6441c516d1000d6829",
+    "frozen-boundary/SourceCorrespondence.md": "dad6f6884c04ad65ba61fb2ab8b7d76fb01f679c724d69514545eaae7161f9fc",
+    "frozen-boundary/comparator.json": "6137dba303006439dc5c2a38c163834383752ca2fefd7b79b98ffe6839d04180",
+    "frozen-boundary/lake-manifest.json": "bbcbcd55e8d78d67e7772d7ee2e921ed70c1c10ef25a8d73bc454de23780397d",
+    "frozen-boundary/lakefile.toml": "194165e91eb78144ef94e089710f5b200005d63c402c95031e3817cc519c322e",
+    "frozen-boundary/lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+    "original-source/AGENTS.md": "d7e27520acdcb0edacebf965b56f5b1e3fb0205d83da45a7fa021e0bedb80162",
+    "original-source/docs/lean/README.md": "27d1baf38609e50049f077e8004dabe598dc53cadab73acdb8a7a1e1e4a48be6",
+    "original-source/matrix-inequalities-and-norms/MI-04/README.md": "22adf3cb0275c044c912eca496d13fbce98f83a35c6ee1184162cef379711bdc",
+    "original-source/matrix-inequalities-and-norms/MI-04/solution.md": "edfd1ddc69018997eb9709880d4ff5d3066eff4459bf39e7b402eacc1f390eb8",
+    "original-source/matrix-inequalities-and-norms/MI-04/solution.tex": "5e2c6b910f17ffebfcb8e2be76577ba2e8a8f55bd2551271430d77b8aa6fc230",
+    "original-source/references/colbrook-matrix-2026-09-11/original-proofs/MI-04.tex": "8363d460f59fba544577ba6453e44cec51f9b546a01875515361df352321fb7c",
+    "original-source/references/colbrook-matrix-2026-09-11/verification/reviews/MI-04-review.md": "7493c546f894fb6dd62bb1870cd4b18a20eaad3777d643c7ea32a9394452f645",
+    "primary-api/Lean/Elab/MutualDef.lean.txt": "73a278e79b6fa2a355c3076c40eec8f0cd607c8b68f21e1fa344b56d14e6c3b9",
+    "primary-api/Mathlib/Analysis/CStarAlgebra/Matrix.lean.excerpt": "412e422618f5f2f7a13b578819ea7479c5d3b59402a9ad308f0d5bae152af72a",
+    "primary-api/Mathlib/Analysis/InnerProductSpace/Adjoint.lean.excerpt": "74915fe2c06196cd82b281df4f24cd03417f20e21ac4b02a8bab63e19401f6cf",
+    "primary-api/Mathlib/Analysis/InnerProductSpace/JointEigenspace.lean.excerpt": "4b8575785cc68af2077d0944f6bdfccfc9259a169ccfde3b548b7da3ee522d67",
+    "primary-api/Mathlib/Analysis/InnerProductSpace/PiL2.lean.excerpt": "fc4ff81bc2568fdc176e298013ac41a1462b5405919ed4d0282e83b5f484d62d",
+    "primary-api/Mathlib/Analysis/InnerProductSpace/Positive.lean.excerpt": "5d3ed0b2ed65723b64e57faf3731ad1052b554e569ef58406e544ad4159cd24c",
+    "primary-api/Mathlib/Analysis/InnerProductSpace/Rayleigh.lean.excerpt": "79edd5cd8e1c53ce2939dec1f841118c342b17036af10e80303a2d1bee2f445a",
+    "primary-api/Mathlib/LinearAlgebra/Complex/Module.lean.excerpt": "2b34c91e91cec140017b2b21ee09a491b5d76544a571b467ee36db7bb304595e",
+    "primary-api/Mathlib/LinearAlgebra/Eigenspace/Minpoly.lean.excerpt": "10db0421b2c3a93d8866dc92e26c8ed42f1d2636604fdffd5be692bff9a44131",
+    "reviewed-source/NLA/MI04/BasisTransport.lean.txt": "a3bd7f091903150bcf01c981a5a1ae8aae7bc8c31ea00f4b601aa53636c9341e",
+    "reviewed-source/NLA/MI04/BlockSymmetry.lean.txt": "7d5c0e711ba01a8bb98616427b50b06c64768e3bb12aef81ab06cd03720d3826",
+    "reviewed-source/NLA/MI04/Conclusion.lean.txt": "d12abb7dd84e2407b5a3f52769aec699f3f3a282eb2043fd9a6a00a3fb67b6d8",
+    "reviewed-source/NLA/MI04/Coordinates.lean.txt": "9fbf6dac25ce96499fdd7a6371e948c11d6e1b04156788af48998b0919d555d6",
+    "reviewed-source/NLA/MI04/Correction.lean.txt": "9c647ae819a57c51b8a1529fe2783d9e27c3bb541ee2979a48a8c84a7de3c740",
+    "reviewed-source/NLA/MI04/Definitions.lean.txt": "de70e2a9dd878f1d083adacf8df6808c90c27630ffc2644a62293bf085e41715",
+    "reviewed-source/NLA/MI04/Diagonalization.lean.txt": "dd1f160e56238b0b41846938774dd86cf63434465268e8ae5c33d532f12653f8",
+    "reviewed-source/NLA/MI04/Geometry.lean.txt": "21b50d8fb4d8eeed4a8b313f0e04599bcc7842fd69bfbe2310ea3a67948f2622",
+    "reviewed-source/NLA/MI04/JointBasis.lean.txt": "3d9ed5937621ea6251ebf0332c816b37b22703d52aa52c3af3f1944317c8b3b1",
+    "reviewed-source/NLA/MI04/Limit.lean.txt": "7cdbd3546146dc78ce37452fffcc4c95be66ab7c909180f1694ff23009fed981",
+    "reviewed-source/NLA/MI04/Normality.lean.txt": "d8abea3f3a78a9381890e637e022553ba0b9b0317d184b33d799123391831d6f",
+    "reviewed-source/NLA/MI04/Probes.lean.txt": "0e4b3d9a0e6bb70c8b91a1669e89785cbefe99777315d9a4b52d961fa93f5f76",
+    "reviewed-source/NLA/MI04/Punctured.lean.txt": "8c7ff3d4386c0ff3a466f316b402637ce0ea7e6df02f80e96ade989ae22bc3ad",
+    "reviewed-source/NLA/MI04/Quadratic.lean.txt": "81af17f3172536a7bf5e6c4d8f535b3cca8d801fae0884a60a477c4deff9ea18",
+    "reviewed-source/NLA/MI04/Rayleigh.lean.txt": "a9308e19575aa44ec56389ef2a24e75b375bcb577703c706590af6b63ebcca97",
+    "reviewed-source/NLA/MI04/ScalarGeometry.lean.txt": "583817923f7be81b7792a89b4e5ce48bd4817b07ef52655068fb17e3f48a4682",
+    "reviewed-source/NLA/MI04/ScaledSymmetry.lean.txt": "54694087df421c0f4e6148008b43447728e053ef075aa319a116d34dbc980457",
+    "reviewed-source/NLA/MI04/Unitary.lean.txt": "05ccea07c757797829759c8a637ef14d5d216826d28b79a615e8b1df32b738e0",
+    "reviewed-source/NLA/MI04/UpperBound.lean.txt": "5dc357316ab5e3ff1aeb282c20770870bd8b14d93c2928f64e3807cd96629c20",
+    "reviewed-source/NLA/MI04/WeightedProbes.lean.txt": "e72d7cd3a10c574477a794d26aba66d40da7486c9ead38e9e4e1d31840570eea",
+    "reviewed-source/Solution.lean.txt": "f00a126f014cf0220f104ac344991a0075e155218431e9e670607cc0d68dc587"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "editor": "/root",
+  "correction": "Canonical closure inherited two older failure labels; latest observed failure is run35055219493 at dbc2371b74bcae58f6d6957bd588e32c56c8dc91. Correct those labels without changing any source/frozen hash.",
+  "preserved_previous_closure": "proof-handoffs/repair-35055219493/FINAL-CLOSURE.json",
+  "preserved_previous_closure_sha256": "f0162bbc3ff70f3405e211acac6039d707c39a28615a81f84ff2344fe06f5a84",
+  "new_closure_sha256": "3f553e705896b765090592e3a637fb202cf165bea9dbc01f437d6507298ec3c7",
+  "actual_failed_run": 35055219493,
+  "actual_failed_commit": "dbc2371b74bcae58f6d6957bd588e32c56c8dc91",
+  "no_source_changes": true,
+  "local_Lean_execution": false
+}

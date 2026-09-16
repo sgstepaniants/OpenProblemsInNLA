@@ -1,0 +1,22 @@
+--- before/NLA/MI04/Probes.lean
++++ after/NLA/MI04/Probes.lean
+@@ -34,14 +34,17 @@
+       -(1 : ℝ) / 2 ≤ tweakedPeak i j k ∧ tweakedPeak i j k ≤ (1 : ℝ) / 2 := by
+   refine ⟨by simp [tweakedPeak], ?_⟩
+   intro k hk
+-  by_cases hkj : k = j <;> norm_num [tweakedPeak, hk, hkj]
++  by_cases hkj : k = j
++  · subst k
++    norm_num [tweakedPeak, hk]
++  · norm_num [tweakedPeak, hk, hkj]
+ 
+ lemma weighted_probe_difference {n : ℕ} (q : Fin n → ℝ) (i j : Fin n) (hji : j ≠ i) :
+     (∑ k, q k / (1 + basePeak i k)) -
+       (∑ k, q k / (1 + tweakedPeak i j k)) = q j / 3 := by
+   rw [← Finset.sum_sub_distrib]
+   calc
+-    (∑ k, q k / (1 + basePeak i k) - q k / (1 + tweakedPeak i j k)) =
++    (∑ k, (q k / (1 + basePeak i k) - q k / (1 + tweakedPeak i j k))) =
+         ∑ k, if k = j then q j / 3 else 0 := by
+       apply Finset.sum_congr rfl
+       intro k _

@@ -1,0 +1,206 @@
+{
+  "problem": "IE-13",
+  "status": "complete source candidate; remote compilation and final referees pending",
+  "frozen_statement_sha256": "85916aae89eb2111ff914b8767e8918548c132a6ff6c7ed92e52286bec1998fe",
+  "public_exports": {
+    "witness_attainment": {
+      "file": "NLA/IE13/Attainment.lean",
+      "line": 22,
+      "sha256": "e63861f7a7a15e8db15ed7c040a88c8c1cb9b977e672c141fe74f3b997cadbfe",
+      "statement_matches_frozen_contract": true
+    },
+    "column_front_bound": {
+      "file": "NLA/IE13/ColumnBounds.lean",
+      "line": 94,
+      "sha256": "34af391613ba5362eb155cdf7601290f64467fa38780b1856d9372b754812908",
+      "statement_matches_frozen_contract": true
+    },
+    "envelope_recurrence": {
+      "file": "NLA/IE13/Envelope.lean",
+      "line": 85,
+      "sha256": "6869f47422e9b095e64133dec3324308ec771bd1c54eb06a797f828ba6648279",
+      "statement_matches_frozen_contract": true
+    },
+    "front_structure": {
+      "file": "NLA/IE13/Front.lean",
+      "line": 125,
+      "sha256": "6e2f6fcd432d001c3074030f1dc4c68c5dd0c20960920e5fbee5f5b8904a7a1e",
+      "statement_matches_frozen_contract": true
+    },
+    "admissiblePath_exists": {
+      "file": "NLA/IE13/GEPP.lean",
+      "line": 170,
+      "sha256": "3f6b8a53ff1db1fa6d0f16386ead9c23f4f11223705736f9ce0cf3deee1b8c47",
+      "statement_matches_frozen_contract": true
+    },
+    "identity_attainment": {
+      "file": "NLA/IE13/Identity.lean",
+      "line": 64,
+      "sha256": "099b4717ae0cca91dfc368b66f05d30584c06d9b8c00335509bf4859443bf036",
+      "statement_matches_frozen_contract": true
+    },
+    "late_column_zero": {
+      "file": "NLA/IE13/LateColumn.lean",
+      "line": 80,
+      "sha256": "eb1d7df64a15b120f882c438afc327487dcec2bc10095690e3722b49d2d6a7dd",
+      "statement_matches_frozen_contract": true
+    },
+    "gepp_model_semantics": {
+      "file": "NLA/IE13/Maxima.lean",
+      "line": 19,
+      "sha256": "c17bc375c0b6d4abf10aec25632a3763af30d413ecc24836aa328fb863163277",
+      "statement_matches_frozen_contract": true
+    },
+    "entryMax_semantics": {
+      "file": "NLA/IE13/Maxima.lean",
+      "line": 45,
+      "sha256": "c17bc375c0b6d4abf10aec25632a3763af30d413ecc24836aa328fb863163277",
+      "statement_matches_frozen_contract": true
+    },
+    "activeMax_semantics": {
+      "file": "NLA/IE13/Maxima.lean",
+      "line": 51,
+      "sha256": "c17bc375c0b6d4abf10aec25632a3763af30d413ecc24836aa328fb863163277",
+      "statement_matches_frozen_contract": true
+    },
+    "growth_semantics": {
+      "file": "NLA/IE13/Maxima.lean",
+      "line": 93,
+      "sha256": "c17bc375c0b6d4abf10aec25632a3763af30d413ecc24836aa328fb863163277",
+      "statement_matches_frozen_contract": true
+    },
+    "originalRow_update": {
+      "file": "NLA/IE13/Origin.lean",
+      "line": 91,
+      "sha256": "ccbca9a6ee35516ef0b830b89507b0d4011a067353e88eabb4c670cb8c980c15",
+      "statement_matches_frozen_contract": true
+    },
+    "multiplier_bounds": {
+      "file": "NLA/IE13/Origin.lean",
+      "line": 108,
+      "sha256": "ccbca9a6ee35516ef0b830b89507b0d4011a067353e88eabb4c670cb8c980c15",
+      "statement_matches_frozen_contract": true
+    },
+    "front_transition": {
+      "file": "NLA/IE13/Origin.lean",
+      "line": 132,
+      "sha256": "ccbca9a6ee35516ef0b830b89507b0d4011a067353e88eabb4c670cb8c980c15",
+      "statement_matches_frozen_contract": true
+    },
+    "admissiblePrefix_extension": {
+      "file": "NLA/IE13/Prefix.lean",
+      "line": 100,
+      "sha256": "f87e3f15182af6c3a0862f24c62d591eb170cc82be3ad0548f4ce4ca729c55b6",
+      "statement_matches_frozen_contract": true
+    },
+    "recurrence_history": {
+      "file": "NLA/IE13/Recurrence.lean",
+      "line": 24,
+      "sha256": "7b3d916e5848d156a759fd90542b89c2e4cc481720e2eff0da95cca3d7a404c6",
+      "statement_matches_frozen_contract": true
+    },
+    "sequence_recurrence": {
+      "file": "NLA/IE13/Recurrence.lean",
+      "line": 35,
+      "sha256": "7b3d916e5848d156a759fd90542b89c2e4cc481720e2eff0da95cca3d7a404c6",
+      "statement_matches_frozen_contract": true
+    },
+    "sequence_properties": {
+      "file": "NLA/IE13/Recurrence.lean",
+      "line": 70,
+      "sha256": "7b3d916e5848d156a759fd90542b89c2e4cc481720e2eff0da95cca3d7a404c6",
+      "statement_matches_frozen_contract": true
+    },
+    "sharp_growth": {
+      "file": "NLA/IE13/Sharp.lean",
+      "line": 39,
+      "sha256": "00cddc77e12b20c2a43f07d400700a967c579be4dd2e31fb2859e1e734cbe598",
+      "statement_matches_frozen_contract": true
+    },
+    "all_active_entries_bound": {
+      "file": "NLA/IE13/UpperBound.lean",
+      "line": 39,
+      "sha256": "f508358e10b5ab3ed566321d7191f592495e60d146451ccbf5b1d25b891b54c6",
+      "statement_matches_frozen_contract": true
+    },
+    "zero_lower_bandwidth": {
+      "file": "NLA/IE13/UpperBound.lean",
+      "line": 80,
+      "sha256": "f508358e10b5ab3ed566321d7191f592495e60d146451ccbf5b1d25b891b54c6",
+      "statement_matches_frozen_contract": true
+    },
+    "universal_growth": {
+      "file": "NLA/IE13/UpperBound.lean",
+      "line": 94,
+      "sha256": "f508358e10b5ab3ed566321d7191f592495e60d146451ccbf5b1d25b891b54c6",
+      "statement_matches_frozen_contract": true
+    },
+    "witness_prefix_admissible": {
+      "file": "NLA/IE13/WitnessDynamics.lean",
+      "line": 19,
+      "sha256": "67c6d5cc5484b224a1c40a8893fd8e01a63763e4fa8528d730b75b991ebe76c3",
+      "statement_matches_frozen_contract": true
+    },
+    "witness_target_value": {
+      "file": "NLA/IE13/WitnessDynamics.lean",
+      "line": 30,
+      "sha256": "67c6d5cc5484b224a1c40a8893fd8e01a63763e4fa8528d730b75b991ebe76c3",
+      "statement_matches_frozen_contract": true
+    },
+    "witness_nonsingular": {
+      "file": "NLA/IE13/WitnessDynamics.lean",
+      "line": 51,
+      "sha256": "67c6d5cc5484b224a1c40a8893fd8e01a63763e4fa8528d730b75b991ebe76c3",
+      "statement_matches_frozen_contract": true
+    },
+    "witness_structure": {
+      "file": "NLA/IE13/WitnessEntries.lean",
+      "line": 112,
+      "sha256": "a0bba2dc25dc09b02a9157cb007d1c34e410caa4e35f4291a7bdc05371f70314",
+      "statement_matches_frozen_contract": true
+    },
+    "witness_prefix_order": {
+      "file": "NLA/IE13/WitnessOrder.lean",
+      "line": 85,
+      "sha256": "9e792338aeb966935886373132c95549d901f639091af01210d5c80871b94844",
+      "statement_matches_frozen_contract": true
+    },
+    "witness_scale": {
+      "file": "NLA/IE13/WitnessScale.lean",
+      "line": 22,
+      "sha256": "ea68a71a53afcfde78dd13d74679475b2349c42a4177e4617da96813005647be",
+      "statement_matches_frozen_contract": true
+    }
+  },
+  "source_sha256": {
+    "NLA/IE13/Attainment.lean": "e63861f7a7a15e8db15ed7c040a88c8c1cb9b977e672c141fe74f3b997cadbfe",
+    "NLA/IE13/Basic.lean": "ba05afefeeea9bb5b4f2b3b8187aa0929ef1979700286ca9470ea991f7aa14b8",
+    "NLA/IE13/ColumnBounds.lean": "34af391613ba5362eb155cdf7601290f64467fa38780b1856d9372b754812908",
+    "NLA/IE13/Definitions.lean": "cda485c546a5879f35eb9d69e7aaa7eaf1449d2219a47b75fcbb4c2827031988",
+    "NLA/IE13/Envelope.lean": "6869f47422e9b095e64133dec3324308ec771bd1c54eb06a797f828ba6648279",
+    "NLA/IE13/Front.lean": "6e2f6fcd432d001c3074030f1dc4c68c5dd0c20960920e5fbee5f5b8904a7a1e",
+    "NLA/IE13/FrontBounds.lean": "f439389a89d7fe43d494bb34ae51d78206de46c3d286dec07de21e2740c18049",
+    "NLA/IE13/GEPP.lean": "3f6b8a53ff1db1fa6d0f16386ead9c23f4f11223705736f9ce0cf3deee1b8c47",
+    "NLA/IE13/Identity.lean": "099b4717ae0cca91dfc368b66f05d30584c06d9b8c00335509bf4859443bf036",
+    "NLA/IE13/LateColumn.lean": "eb1d7df64a15b120f882c438afc327487dcec2bc10095690e3722b49d2d6a7dd",
+    "NLA/IE13/Maxima.lean": "c17bc375c0b6d4abf10aec25632a3763af30d413ecc24836aa328fb863163277",
+    "NLA/IE13/Origin.lean": "ccbca9a6ee35516ef0b830b89507b0d4011a067353e88eabb4c670cb8c980c15",
+    "NLA/IE13/Prefix.lean": "f87e3f15182af6c3a0862f24c62d591eb170cc82be3ad0548f4ce4ca729c55b6",
+    "NLA/IE13/Recurrence.lean": "7b3d916e5848d156a759fd90542b89c2e4cc481720e2eff0da95cca3d7a404c6",
+    "NLA/IE13/Sharp.lean": "00cddc77e12b20c2a43f07d400700a967c579be4dd2e31fb2859e1e734cbe598",
+    "NLA/IE13/SubsetAlgebra.lean": "73e2e05a14e4cda1bc2ea7b830eb9b9cecade2243acf13b7e01225c0c17fdd47",
+    "NLA/IE13/TailAlgebra.lean": "942bdfa9f34272fb7ae617dc68869fbf0ace26ac07e6b0b67cbd34eaadd40338",
+    "NLA/IE13/UpperBound.lean": "f508358e10b5ab3ed566321d7191f592495e60d146451ccbf5b1d25b891b54c6",
+    "NLA/IE13/WitnessColumns.lean": "78e5686f41fa2f6ffc2d935e510f662b8ba3fefa85768cba7fd2a8afda665680",
+    "NLA/IE13/WitnessDynamics.lean": "67c6d5cc5484b224a1c40a8893fd8e01a63763e4fa8528d730b75b991ebe76c3",
+    "NLA/IE13/WitnessEntries.lean": "a0bba2dc25dc09b02a9157cb007d1c34e410caa4e35f4291a7bdc05371f70314",
+    "NLA/IE13/WitnessFactors.lean": "b645fa10d9660917c3a792138931f94e2781d3015583066c9fb72013f4d99bec",
+    "NLA/IE13/WitnessForward.lean": "4363ec641183e33f61210b0c30bf1333baaf476b2cfb1b4f1c94e942af9670ba",
+    "NLA/IE13/WitnessOrder.lean": "9e792338aeb966935886373132c95549d901f639091af01210d5c80871b94844",
+    "NLA/IE13/WitnessProduct.lean": "6376c64427207873653b7e9a3c8e109792449326d4f8d59ed624df65df0a15d3",
+    "NLA/IE13/WitnessScale.lean": "ea68a71a53afcfde78dd13d74679475b2349c42a4177e4617da96813005647be",
+    "Solution.lean": "3cdebabfea0d23071262256feaa6fa570103be7eb82f0da4e745f3f15bee4f63"
+  },
+  "actual_compilation_of_complete_closure": false,
+  "whole_problem_verified": false
+}

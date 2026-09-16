@@ -1,0 +1,20 @@
+{
+  "run": 35055219493,
+  "commit": "dbc2371b74bcae58f6d6957bd588e32c56c8dc91",
+  "conclusion": "failure",
+  "archives": [
+    {
+      "id": 10431000098,
+      "name": "lean-development-statements",
+      "sha256": "a6109b467efcb2848224684f5090be04342d704e962f90cc87207e4dcecb5de1"
+    }
+  ],
+  "jobs": [
+    {
+      "id": 104663872288,
+      "name": "statements",
+      "conclusion": "failure"
+    }
+  ],
+  "scope": "GitHub metadata/raw log/artifact identity only; proof acceptance needs actual log inspection."
+}

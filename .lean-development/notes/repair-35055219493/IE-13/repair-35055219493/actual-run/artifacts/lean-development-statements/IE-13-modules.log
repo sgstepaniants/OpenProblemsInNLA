@@ -1,0 +1,323 @@
+✔ [3629/3655] Built NLA.IE13.Definitions (2.1s)
+ℹ [3630/3655] Built NLA.IE13.WitnessScale (2.7s)
+info: NLA/IE13/WitnessScale.lean:39:0: 'NLA.IE13.half_bounds_certificate' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/IE13/WitnessScale.lean:41:0: 'NLA.IE13.witness_scale' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3631/3655] Built NLA.IE13.Recurrence (3.5s)
+info: NLA/IE13/Recurrence.lean:84:0: 'NLA.IE13.recurrence_history' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/IE13/Recurrence.lean:86:0: 'NLA.IE13.sequence_recurrence' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/IE13/Recurrence.lean:88:0: 'NLA.IE13.sequence_properties' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3632/3655] Built NLA.IE13.Basic (3.7s)
+info: NLA/IE13/Basic.lean:115:0: 'NLA.IE13.norm_le_entryMax' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/IE13/Basic.lean:117:0: 'NLA.IE13.entryMax_attained_basic' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/IE13/Basic.lean:119:0: 'NLA.IE13.multiplier_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+✖ [3633/3655] Building NLA.IE13.WitnessColumns (4.4s)
+trace: .> LEAN_PATH=/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/Cli/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/batteries/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/Qq/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/aesop/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/proofwidgets/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/importGraph/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/plausible/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/mathlib/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/leancert/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/build/lib/lean /home/runner/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean /home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/NLA/IE13/WitnessColumns.lean -o /home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/build/lib/lean/NLA/IE13/WitnessColumns.olean -i /home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/build/lib/lean/NLA/IE13/WitnessColumns.ilean -c /home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/build/ir/NLA/IE13/WitnessColumns.c --setup /home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/build/ir/NLA/IE13/WitnessColumns.setup.json --json
+warning: NLA/IE13/WitnessColumns.lean:84:15: This simp argument is unused:
+  if_pos hr
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [hr, Nat.zero_le, if_true]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: NLA/IE13/WitnessColumns.lean:107:8: Tactic `rewrite` failed: motive is not type correct:
+  fun _a => (if _a then geometricEntry ↑r else 0) = if ↑r < ↑j + 1 then geometricEntry ↑r else 0
+Error: Application type mismatch: The argument
+  (↑r).decLe ↑j
+has type
+  Decidable (↑r ≤ ↑j)
+but is expected to have type
+  Decidable _a
+in the application
+  @ite ℚ _a ((↑r).decLe ↑j)
+
+Explanation: The rewrite tactic rewrites an expression 'e' using an equality 'a = b' by the following process. First, it looks for all 'a' in 'e'. Second, it tries to abstract these occurrences of 'a' to create a function 'm := fun _a => ...', called the *motive*, with the property that 'm a' is definitionally equal to 'e'. Third, we observe that 'congrArg' implies that 'm a = m b', which can be used with lemmas such as 'Eq.mpr' to change the goal. However, if 'e' depends on specific properties of 'a', then the motive 'm' might not typecheck.
+
+Possible solutions: use rewrite's 'occs' configuration option to limit which occurrences are rewritten, or use 'simp' or 'conv' mode, which have strategies for certain kinds of dependencies (these tactics can handle proofs and 'Decidable' instances whose types depend on the rewritten term, and 'simp' can apply user-defined '@[congr]' theorems as well).
+
+p q : ℕ
+j : Fin (witnessOrder p q)
+hj : ↑j ≤ p
+r : Fin (witnessOrder p q)
+a✝ : r ∈ Finset.univ
+hiff : ↑r ≤ ↑j ↔ ↑r < ↑j + 1
+⊢ (if ↑r ≤ ↑j then geometricEntry ↑r else 0) = if ↑r < ↑j + 1 then geometricEntry ↑r else 0
+error: Lean exited with code 1
+✖ [3636/3655] Building NLA.IE13.Envelope (4.5s)
+trace: .> LEAN_PATH=/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/Cli/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/batteries/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/Qq/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/aesop/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/proofwidgets/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/importGraph/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/plausible/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/mathlib/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/leancert/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/build/lib/lean /home/runner/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean /home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/NLA/IE13/Envelope.lean -o /home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/build/lib/lean/NLA/IE13/Envelope.olean -i /home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/build/lib/lean/NLA/IE13/Envelope.ilean -c /home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/build/ir/NLA/IE13/Envelope.c --setup /home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/build/ir/NLA/IE13/Envelope.setup.json --json
+error: NLA/IE13/Envelope.lean:20:72: unsolved goals
+p : ℕ
+i : Fin p
+⊢ (if True then 0 else 1 + ∑ r ∈ Finset.range (p - ↑i), bandSequence p (0 - (r + 1))) = 0
+warning: NLA/IE13/Envelope.lean:21:23: This simp argument is unused:
+  if_pos rfl
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [envelope]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: NLA/IE13/Envelope.lean:161:15: This simp argument is unused:
+  Fin.val_mk
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Nat.succ_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+info: NLA/IE13/Envelope.lean:164:0: 'NLA.IE13.envelope_recurrence' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+error: NLA/IE13/Envelope.lean:165:21: #assert_trust: 'NLA.IE13.envelope_recurrence' depends on sorry or unrecognized axioms
+  foundational: propext, Classical.choice, Quot.sound
+  sorryAx: sorryAx
+info: NLA/IE13/Envelope.lean:166:0: 'NLA.IE13.envelopeSum_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+error: Lean exited with code 1
+⚠ [3638/3655] Built NLA.IE13.GEPP (4.6s)
+warning: NLA/IE13/GEPP.lean:170:39: Variable name `hn` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hn
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+info: NLA/IE13/GEPP.lean:175:0: 'NLA.IE13.activeInjective_schur' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/IE13/GEPP.lean:177:0: 'NLA.IE13.admissiblePath_exists' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [3639/3655] Built NLA.IE13.Maxima (4.6s)
+warning: NLA/IE13/Maxima.lean:36:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+info: NLA/IE13/Maxima.lean:113:0: 'NLA.IE13.gepp_model_semantics' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/IE13/Maxima.lean:115:0: 'NLA.IE13.entryMax_semantics' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/IE13/Maxima.lean:117:0: 'NLA.IE13.activeMax_semantics' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/IE13/Maxima.lean:119:0: 'NLA.IE13.growth_semantics' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [3640/3655] Built NLA.IE13.Origin (2.0s)
+warning: NLA/IE13/Origin.lean:46:4: Try `simp at hi` instead of `simpa using hi`
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: NLA/IE13/Origin.lean:132:56: Variable name `hA` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hA
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+info: NLA/IE13/Origin.lean:138:0: 'NLA.IE13.originalRow_update' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/IE13/Origin.lean:140:0: 'NLA.IE13.multiplier_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/IE13/Origin.lean:142:0: 'NLA.IE13.front_transition' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [3641/3655] Built NLA.IE13.Prefix (3.1s)
+warning: NLA/IE13/Prefix.lean:100:44: Variable name `hn` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hn
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: NLA/IE13/Prefix.lean:101:51: Variable name `ht` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _ht
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+info: NLA/IE13/Prefix.lean:110:0: 'NLA.IE13.trajectory_agree_before' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/IE13/Prefix.lean:112:0: 'NLA.IE13.admissiblePrefix_extension' depends on axioms: [propext, Classical.choice, Quot.sound]
+✖ [3642/3655] Building NLA.IE13.Front (3.7s)
+trace: .> LEAN_PATH=/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/Cli/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/batteries/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/Qq/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/aesop/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/proofwidgets/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/importGraph/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/plausible/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/mathlib/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/leancert/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/build/lib/lean /home/runner/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean /home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/NLA/IE13/Front.lean -o /home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/build/lib/lean/NLA/IE13/Front.olean -i /home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/build/lib/lean/NLA/IE13/Front.ilean -c /home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/build/ir/NLA/IE13/Front.c --setup /home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/build/ir/NLA/IE13/Front.setup.json --json
+error: NLA/IE13/Front.lean:28:37: failed to synthesize instance of type class
+  DecidablePred fun i => OriginalRowActive path 0 i ∧ ↑i < 0 + p
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+info: NLA/IE13/Front.lean:134:0: 'NLA.IE13.front_structure' depends on axioms: [propext, Classical.choice, Quot.sound]
+error: Lean exited with code 1
+✖ [3647/3655] Building NLA.IE13.TailAlgebra (3.0s)
+trace: .> LEAN_PATH=/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/Cli/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/batteries/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/Qq/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/aesop/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/proofwidgets/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/importGraph/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/plausible/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/mathlib/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/leancert/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/build/lib/lean /home/runner/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean /home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/NLA/IE13/TailAlgebra.lean -o /home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/build/lib/lean/NLA/IE13/TailAlgebra.olean -i /home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/build/lib/lean/NLA/IE13/TailAlgebra.ilean -c /home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/build/ir/NLA/IE13/TailAlgebra.c --setup /home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/build/ir/NLA/IE13/TailAlgebra.setup.json --json
+error: NLA/IE13/TailAlgebra.lean:95:54: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  l ≥ 0
+  h ≥ 0
+  h - l ≥ 0
+  g ≥ 0
+  e ≥ 0
+  e - l ≤ -1
+  d ≥ 0
+  d - e ≥ 1
+  d - g ≥ 1
+  d - h ≥ 1
+  d - l ≥ 1
+  c ≥ 0
+  c - d ≤ -2
+  c - e ≤ -1
+  c - g ≤ -1
+  b ≥ 0
+  b - c ≥ 1
+where
+ b := ↑T
+ c := ↑k
+ d := ↑n
+ e := ↑↑i
+ g := ↑↑j
+ h := ↑↑(path z)
+ l := ↑↑⟨k, hkn'⟩
+error: NLA/IE13/TailAlgebra.lean:102:54: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  m ≥ 0
+  l ≥ 0
+  h ≥ 0
+  h - l ≥ 0
+  g ≥ 0
+  g - l ≥ 1
+  e ≥ 0
+  e - l ≥ 1
+  d ≥ 0
+  d - e ≥ 1
+  d - g ≥ 1
+  d - h ≥ 1
+  d - l ≥ 1
+  d - m ≥ 1
+  c ≥ 0
+  c - d ≤ -2
+  c - e ≤ -1
+  c - g ≤ -1
+  c - m ≤ 0
+  b ≥ 0
+  b - c ≥ 1
+  b - l ≤ 0
+where
+ b := ↑T
+ c := ↑k
+ d := ↑n
+ e := ↑↑i
+ g := ↑↑j
+ h := ↑↑(path z)
+ l := ↑↑⟨k, hkn'⟩
+ m := ↑↑((Equiv.swap z a) i)
+error: NLA/IE13/TailAlgebra.lean:112:43: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  m ≥ 0
+  l ≥ 0
+  h ≥ 0
+  h - m ≥ 0
+  g ≥ 0
+  g - m ≥ 1
+  e ≥ 0
+  e - m ≥ 1
+  d ≥ 0
+  d - e ≥ 1
+  d - g ≥ 1
+  d - h ≥ 1
+  d - l ≥ 1
+  d - m ≥ 1
+  c ≥ 0
+  c - d ≤ -2
+  c - e ≤ -1
+  c - g ≤ -1
+  c - l ≤ 0
+  b ≥ 0
+  b - c ≥ 1
+  b - m ≤ 0
+where
+ b := ↑T
+ c := ↑k
+ d := ↑n
+ e := ↑↑i
+ g := ↑↑j
+ h := ↑↑(path z)
+ l := ↑↑((Equiv.swap z a) i)
+ m := ↑↑(f ((origin path k) a))
+info: NLA/IE13/TailAlgebra.lean:159:0: 'NLA.IE13.relabeled_LU_prefix_trajectory' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+error: NLA/IE13/TailAlgebra.lean:160:21: #assert_trust: 'NLA.IE13.relabeled_LU_prefix_trajectory' depends on sorry or unrecognized axioms
+  foundational: propext, Classical.choice, Quot.sound
+  sorryAx: sorryAx
+info: NLA/IE13/TailAlgebra.lean:161:0: 'NLA.IE13.relabeled_LU_prefix_admissible' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+error: NLA/IE13/TailAlgebra.lean:162:21: #assert_trust: 'NLA.IE13.relabeled_LU_prefix_admissible' depends on sorry or unrecognized axioms
+  foundational: propext, Classical.choice, Quot.sound
+  sorryAx: sorryAx
+info: NLA/IE13/TailAlgebra.lean:163:0: 'NLA.IE13.relabeled_LU_nonsingular' depends on axioms: [propext, Classical.choice, Quot.sound]
+error: Lean exited with code 1
+✖ [3650/3655] Building NLA.IE13.WitnessOrder (4.6s)
+trace: .> LEAN_PATH=/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/Cli/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/batteries/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/Qq/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/aesop/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/proofwidgets/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/importGraph/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/plausible/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/mathlib/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/leancert/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/build/lib/lean /home/runner/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean /home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/NLA/IE13/WitnessOrder.lean -o /home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/build/lib/lean/NLA/IE13/WitnessOrder.olean -i /home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/build/lib/lean/NLA/IE13/WitnessOrder.ilean -c /home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/build/ir/NLA/IE13/WitnessOrder.c --setup /home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/build/ir/NLA/IE13/WitnessOrder.setup.json --json
+warning: NLA/IE13/WitnessOrder.lean:30:15: This simp argument is unused:
+  Fin.val_mk
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: NLA/IE13/WitnessOrder.lean:64:22: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  e ≥ 0
+  d ≥ 0
+  d - e ≤ -1
+  c ≥ 0
+  c - d ≥ 1
+  c - e ≥ 1
+  b ≥ 0
+  b - c ≤ -1
+  a ≥ 0
+  a - b ≥ 1
+where
+ a := ↑p
+ b := ↑k
+ c := ↑(witnessOrder p q)
+ d := ↑↑⟨p, ⋯⟩
+ e := ↑↑⟨k, hkn⟩
+warning: NLA/IE13/WitnessOrder.lean:42:68: This simp argument is unused:
+  if_pos rfl
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [origin, Equiv.refl_apply, Nat.not_lt_zero, if_false]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: NLA/IE13/WitnessOrder.lean:58:23: This simp argument is unused:
+  Fin.val_mk
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [z, f]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: NLA/IE13/WitnessOrder.lean:63:25: This simp argument is unused:
+  Fin.val_mk
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [z, f]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: NLA/IE13/WitnessOrder.lean:101:22: `simp` made no progress
+error: NLA/IE13/WitnessOrder.lean:114:16: `simp` made no progress
+error: NLA/IE13/WitnessOrder.lean:114:16: `simp` made no progress
+error: NLA/IE13/WitnessOrder.lean:114:16: `simp` made no progress
+error: NLA/IE13/WitnessOrder.lean:114:16: `simp` made no progress
+error: NLA/IE13/WitnessOrder.lean:114:16: `simp` made no progress
+warning: NLA/IE13/WitnessOrder.lean:114:27: This simp argument is unused:
+  Fin.val_mk
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: NLA/IE13/WitnessOrder.lean:132:2: unsolved goals
+case pos
+p q : ℕ
+k : Fin (witnessOrder p q)
+hk : ↑k ≤ p
+⊢ (if True then ↑k else if p < p then p + 1 else p) = ↑k
+warning: NLA/IE13/WitnessOrder.lean:135:33: This simp argument is unused:
+  if_pos rfl
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [witnessSeedPath, if_pos hk, Fin.val_mk, not_lt_of_ge hk, if_false]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+info: NLA/IE13/WitnessOrder.lean:149:0: 'NLA.IE13.witness_prefix_order' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+error: NLA/IE13/WitnessOrder.lean:150:21: #assert_trust: 'NLA.IE13.witness_prefix_order' depends on sorry or unrecognized axioms
+  foundational: propext, Classical.choice, Quot.sound
+  sorryAx: sorryAx
+info: NLA/IE13/WitnessOrder.lean:151:0: 'NLA.IE13.witness_factor_pivot' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+error: NLA/IE13/WitnessOrder.lean:152:21: #assert_trust: 'NLA.IE13.witness_factor_pivot' depends on sorry or unrecognized axioms
+  foundational: propext, Classical.choice, Quot.sound
+  sorryAx: sorryAx
+error: Lean exited with code 1
+Some required targets logged failures:
+- NLA.IE13.WitnessColumns
+- NLA.IE13.Envelope
+- NLA.IE13.Front
+- NLA.IE13.TailAlgebra
+- NLA.IE13.WitnessOrder
+error: build failed

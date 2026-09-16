@@ -1,0 +1,392 @@
+✔ [3528/3571] Built NLA.MI04.Definitions (3.6s)
+✔ [3546/3572] Built LeanCert.Core.Interval (3.6s)
+✔ [3548/3575] Built LeanCert.Tactic.Verification (4.1s)
+✔ [3549/3575] Built LeanCert.Core.Expr (6.9s)
+✔ [3550/3575] Built LeanCert.Core.DerivativeIntervals (4.1s)
+⚠ [3551/3577] Built NLA.MI04.Quadratic (8.1s)
+warning: NLA/MI04/Quadratic.lean:65:38: `ContinuousLinearMap.smul_apply` has been deprecated: Use `smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
+warning: NLA/MI04/Quadratic.lean:102:0: automatically included section variable(s) unused in theorem `NLA.MI04.hermitian_real_smul`:
+  [Fintype ι]
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype ι] [DecidableEq ι] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+info: NLA/MI04/Quadratic.lean:131:0: 'NLA.MI04.positive_quadratic_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MI04/Quadratic.lean:133:0: 'NLA.MI04.pencil_isHermitian' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [3552/3577] Built NLA.MI04.ScalarGeometry (6.8s)
+warning: NLA/MI04/ScalarGeometry.lean:28:14: This simp argument is unused:
+  mul_zero
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Complex.normSq_apply, Complex.sub_re, Complex.sub_im, Complex.mul_re, Complex.mul_im,
+    Complex.ofReal_re, Complex.ofReal_im, zero_mul, sub_zero, zero_add] at h
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: NLA/MI04/ScalarGeometry.lean:28:34: This simp argument is unused:
+  zero_add
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Complex.normSq_apply, Complex.sub_re, Complex.sub_im, Complex.mul_re, Complex.mul_im,
+    Complex.ofReal_re, Complex.ofReal_im, zero_mul, mul_zero, sub_zero] at h
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: NLA/MI04/ScalarGeometry.lean:48:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: NLA/MI04/ScalarGeometry.lean:61:18: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: NLA/MI04/ScalarGeometry.lean:63:0: 'NLA.MI04.weighted_square_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MI04/ScalarGeometry.lean:65:0: 'NLA.MI04.collinear_values_affine' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [3553/3577] Built LeanCert.Core.IntervalRat.Basic (10s)
+✔ [3554/3579] Built LeanCert.Core.IntervalRat.LogReduction (7.3s)
+✔ [3555/3579] Built LeanCert.Core.Support (4.4s)
+✔ [3556/3579] Built LeanCert.Meta.Numeral (5.4s)
+⚠ [3557/3579] Built NLA.MI04.Rayleigh (6.3s)
+warning: NLA/MI04/Rayleigh.lean:24:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: NLA/MI04/Rayleigh.lean:28:4: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+info: NLA/MI04/Rayleigh.lean:134:0: 'NLA.MI04.topValue_maximum' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MI04/Rayleigh.lean:136:0: 'NLA.MI04.positive_norm_eq_top' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MI04/Rayleigh.lean:138:0: 'NLA.MI04.shifted_topValue' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MI04/Rayleigh.lean:140:0: 'NLA.MI04.scalar_order_iff_top' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [3558/3579] Built LeanCert.Core.Taylor (8.8s)
+⚠ [3559/3579] Built NLA.MI04.Coordinates (7.1s)
+warning: NLA/MI04/Coordinates.lean:22:8: automatically included section variable(s) unused in theorem `NLA.MI04.coordinateUnit_apply`:
+  [Fintype ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype ι] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: NLA/MI04/Coordinates.lean:35:59: This simp argument is unused:
+  Complex.star_def
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [coordinateUnit, EuclideanSpace.inner_single_right]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: NLA/MI04/Coordinates.lean:41:0: automatically included section variable(s) unused in theorem `NLA.MI04.norm_sq_eq_sum_normSq`:
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: NLA/MI04/Coordinates.lean:57:62: This simp argument is unused:
+  Complex.star_def
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Complex.normSq_apply, Complex.mul_re, Complex.mul_im]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: NLA/MI04/Coordinates.lean:57:80: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: NLA/MI04/Coordinates.lean:91:8: This simp argument is unused:
+  inner_smul_right
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [inner_coordinateUnit_left, hw, norm_smul, Complex.norm_real, Real.norm_eq_abs, mul_pow, sq_abs]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: NLA/MI04/Coordinates.lean:92:15: This simp argument is unused:
+  Complex.norm_real
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [inner_smul_right, inner_coordinateUnit_left, hw, norm_smul, Real.norm_eq_abs, mul_pow, sq_abs]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: NLA/MI04/Coordinates.lean:94:0: automatically included section variable(s) unused in theorem `NLA.MI04.realDiagonal_isHermitian`:
+  [Fintype ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype ι] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: NLA/MI04/Coordinates.lean:100:24: This simp argument is unused:
+  Matrix.diagonal_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [realDiagonal, h, Ne.symm h]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+info: NLA/MI04/Coordinates.lean:106:0: 'NLA.MI04.realQuadratic_diagonal' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MI04/Coordinates.lean:108:0: 'NLA.MI04.realQuadratic_real_perturbed_vector' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [3560/3580] Built LeanCert.Engine.Eval.Result (4.4s)
+✔ [3561/3580] Built LeanCert.Core.TrigReduction (3.0s)
+✔ [3562/3580] Built LeanCert.Tactic.IntervalAuto.Extract (3.5s)
+✔ [3563/3580] Built LeanCert.Tactic.IntervalAuto.Types (4.4s)
+✔ [3564/3580] Built LeanCert.Core.IntervalRat.Transcendental (6.1s)
+✔ [3565/3581] Built LeanCert.Meta.ToExpr (6.1s)
+⚠ [3566/3582] Built NLA.MI04.Correction (6.3s)
+warning: NLA/MI04/Correction.lean:21:8: automatically included section variable(s) unused in theorem `NLA.MI04.correctionVector_apply`:
+  [Fintype ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype ι] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: NLA/MI04/Correction.lean:25:8: automatically included section variable(s) unused in theorem `NLA.MI04.correctionVector_at`:
+  [Fintype ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype ι] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: NLA/MI04/Correction.lean:33:0: automatically included section variable(s) unused in theorem `NLA.MI04.diagonal_gap_pos`:
+  [Fintype ι]
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype ι] [DecidableEq ι] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: NLA/MI04/Correction.lean:69:20: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: NLA/MI04/Correction.lean:125:0: 'NLA.MI04.simple_peak_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [3567/3587] Built NLA.MI04.Punctured (7.5s)
+warning: NLA/MI04/Punctured.lean:23:8: automatically included section variable(s) unused in theorem `NLA.MI04.puncturedVector_apply`:
+  [Fintype ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype ι] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+info: NLA/MI04/Punctured.lean:116:0: 'NLA.MI04.perturbation_all_vector_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [3569/3594] Built LeanCert.Tactic.IntervalAuto.Norm (6.1s)
+✔ [3570/3598] Built LeanCert.Core.Dyadic (7.9s)
+✔ [3571/3599] Built LeanCert.Contrib.Sinc (9.1s)
+✔ [3572/3599] Built LeanCert.Tactic.IntervalAuto.Parse (11s)
+✔ [3573/3601] Built LeanCert.Tactic.NumericalRefinement (889ms)
+✔ [3623/3700] Built LeanCert.Tactic.LeanCert.Bridge.Environment (3.3s)
+✔ [3624/3701] Built LeanCert.Tactic.IntervalAuto.Diagnostic (3.8s)
+✔ [3625/3705] Built LeanCert.Tactic.VecUtil (3.4s)
+✔ [3626/3705] Built LeanCert.Tactic.LeanCert.Normalize (4.1s)
+✔ [3627/3707] Built LeanCert.Tactic.FinSumExpand (3.0s)
+✔ [3628/3709] Built LeanCert.Tactic.FinsetParse (4.1s)
+✔ [3629/3713] Built LeanCert.Core.IntervalRat.Taylor (27s)
+✔ [3630/3713] Built LeanCert.Tactic.BridgeNative (2.2s)
+✔ [3631/3716] Built LeanCert.Tactic.LeanCert.Semantic.Domain (1.9s)
+✔ [3632/3716] Built LeanCert.Validity.Eventual (3.5s)
+✔ [3633/3716] Built LeanCert.Core.IntervalReal (2.9s)
+✔ [3634/3716] Built LeanCert.Tactic.LeanCert.Semantic.Goal (2.3s)
+✔ [3635/3716] Built LeanCert.Core.IntervalRat.TrigReduced (3.4s)
+✔ [3636/3716] Built LeanCert.Tactic.VecSimp (1.0s)
+✔ [3637/3718] Built LeanCert.Tactic.EventualBound (8.0s)
+✔ [3638/3720] Built LeanCert.Core.IntervalRealEndpoints (6.9s)
+✔ [3639/3720] Built LeanCert.Tactic.LeanCert.Semantic.Parse.Comparison (2.2s)
+✔ [3640/3721] Built LeanCert.Engine.Affine.Basic (9.9s)
+✔ [3641/3721] Built LeanCert.Core.IntervalDyadic (11s)
+✔ [3642/3721] Built LeanCert.Tactic.Extension.Protocol (4.3s)
+✔ [3643/3723] Built LeanCert.Tactic.LeanCert.Semantic.Parse.Bound (4.6s)
+✔ [3644/3723] Built LeanCert.Tactic.LeanCert.Diagnostic.Evidence (5.8s)
+✔ [3645/3724] Built LeanCert.Engine.Affine.Nonlinear (6.8s)
+✔ [3646/3724] Built LeanCert.Engine.Eval.Core (10s)
+✔ [3647/3728] Built LeanCert.Tactic.LeanCert.Config (2.7s)
+✔ [3649/3729] Built LeanCert.Core.DyadicCell (6.9s)
+✔ [3650/3737] Built LeanCert.Tactic.Extension.Registry (3.9s)
+✔ [3651/3743] Built LeanCert.Engine.FloatEval (3.3s)
+✔ [3652/3750] Built LeanCert.Core.DyadicFrontier (3.7s)
+✔ [3654/3755] Built LeanCert.Engine.Eval.Extended (5.8s)
+✔ [3655/3755] Built LeanCert.Engine.Algebra.QPoly (5.6s)
+✔ [3656/3755] Built LeanCert.Tactic.Extension.Command (3.1s)
+✔ [3657/3755] Built LeanCert.Engine.Bounds.Lemmas (3.2s)
+✔ [3658/3755] Built LeanCert.Engine.Algebra.QPolyIntegral (3.9s)
+✔ [3659/3755] Built LeanCert.Tactic.Extension (2.7s)
+✔ [3660/3755] Built LeanCert.Engine.IntervalEval (2.7s)
+ℹ [3661/3755] Built NLA.MI04.Unitary (8.6s)
+info: NLA/MI04/Unitary.lean:92:0: 'NLA.MI04.unitary_topValue' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MI04/Unitary.lean:94:0: 'NLA.MI04.pair_symmetry_unitary' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [3662/3755] Built LeanCert.Validity.Bounds.Checked (3.2s)
+✔ [3663/3755] Built LeanCert.Engine.Affine.Transcendental (5.3s)
+✔ [3664/3755] Built LeanCert.Validity.Bounds.Core (4.9s)
+✔ [3665/3755] Built LeanCert.Engine.IntervalEvalDyadic (8.2s)
+✔ [3666/3755] Built LeanCert.Engine.RootFinding.Basic (6.5s)
+✔ [3667/3755] Built LeanCert.Engine.Optimization.Box (4.4s)
+✔ [3668/3755] Built LeanCert.Engine.AD.Basic (4.1s)
+✔ [3669/3755] Built LeanCert.Engine.Integrate (8.5s)
+⚠ [3670/3755] Built NLA.MI04.BlockSymmetry (6.9s)
+warning: NLA/MI04/BlockSymmetry.lean:64:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: NLA/MI04/BlockSymmetry.lean:70:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: NLA/MI04/BlockSymmetry.lean:105:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+info: NLA/MI04/BlockSymmetry.lean:137:0: 'NLA.MI04.universal_to_extreme_symmetry' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [3671/3755] Built LeanCert.Engine.TaylorModel.Core (12s)
+✔ [3672/3755] Built LeanCert.Validity.DyadicBounds (4.6s)
+✔ [3673/3755] Built LeanCert.Engine.FinSumDyadic (6.2s)
+✔ [3674/3755] Built LeanCert.Engine.IntervalEvalAffine (8.8s)
+✔ [3675/3755] Built LeanCert.Engine.Search.Heuristic (3.5s)
+✔ [3676/3755] Built LeanCert.Engine.RootFinding.Bisection (6.4s)
+✔ [3677/3755] Built LeanCert.Engine.AD.Transcendental (5.3s)
+⚠ [3678/3755] Built NLA.MI04.ScaledSymmetry (4.6s)
+warning: NLA/MI04/ScaledSymmetry.lean:72:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: NLA/MI04/ScaledSymmetry.lean:90:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+info: NLA/MI04/ScaledSymmetry.lean:112:0: 'NLA.MI04.extreme_symmetry_scaled_unitary' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [3679/3755] Built LeanCert.Engine.TaylorModel.Integral (4.3s)
+✔ [3680/3755] Built LeanCert.Engine.TaylorModel.Special (3.0s)
+✔ [3681/3755] Built LeanCert.Engine.WitnessSum (6.0s)
+✔ [3682/3755] Built LeanCert.Engine.TaylorModel.ExpLog (11s)
+✔ [3683/3755] Built LeanCert.Engine.AD.Eval (3.3s)
+✔ [3684/3755] Built LeanCert.Engine.Affine.Environment (6.1s)
+✔ [3685/3755] Built LeanCert.Engine.TaylorModel.Hyperbolic (16s)
+✔ [3686/3755] Built LeanCert.Engine.TaylorModel.Trig (14s)
+✔ [3687/3755] Built LeanCert.Engine.AD.Correctness (3.4s)
+✔ [3688/3755] Built LeanCert.Engine.TaylorModel.Functions (2.1s)
+✔ [3689/3755] Built LeanCert.Engine.AD.Computable (3.2s)
+✔ [3690/3755] Built LeanCert.Engine.TaylorModel.Expr (5.8s)
+✔ [3691/3755] Built LeanCert.Engine.AD.PartialCorrectness (6.8s)
+✔ [3692/3755] Built LeanCert.Engine.AD.DomainChecked (3.9s)
+✔ [3693/3755] Built LeanCert.Engine.TaylorModel (1.0s)
+✔ [3694/3755] Built LeanCert.Engine.AD.Dyadic (3.0s)
+✔ [3695/3755] Built LeanCert.Engine.AD (1.6s)
+✔ [3696/3755] Built LeanCert.Validity.Bounds.Smart (4.0s)
+✔ [3697/3755] Built LeanCert.Engine.IntervalEvalRefined (4.9s)
+✔ [3698/3755] Built LeanCert.Meta.ProveSupported (5.0s)
+✔ [3699/3755] Built LeanCert.Engine.Optimize (7.3s)
+✔ [3700/3755] Built LeanCert.Validity.Bounds.Bridge (3.7s)
+✔ [3701/3755] Built LeanCert.Meta.ProveContinuous (5.2s)
+✔ [3702/3755] Built LeanCert.Tactic.IntervalAuto.ProveCommon (7.5s)
+✔ [3703/3755] Built LeanCert.Validity.Bounds.Basic (3.5s)
+✔ [3704/3755] Built LeanCert.Engine.RootFinding.Newton (6.2s)
+✔ [3705/3755] Built LeanCert.Engine.Optimization.Gradient (7.4s)
+✔ [3706/3755] Built LeanCert.Tactic.IntervalAuto.Basic (3.2s)
+✔ [3707/3755] Built LeanCert.Tactic.LeanCert.Bridge.ReifiedFunction (4.4s)
+✔ [3708/3755] Built LeanCert.Validity.Integration (7.3s)
+✔ [3709/3755] Built LeanCert.Engine.RootFinding.MVTBounds (8.7s)
+✔ [3710/3755] Built LeanCert.Engine.RootFinding.Krawczyk (9.8s)
+✔ [3711/3755] Built LeanCert.Tactic.LeanCert.Semantic.Prepare (8.5s)
+✔ [3712/3755] Built LeanCert.Engine.RootFinding.KrawczykCandidate (7.4s)
+✔ [3713/3755] Built LeanCert.Tactic.LeanCert.Integral (12s)
+✔ [3714/3755] Built LeanCert.Engine.RootFinding.Contraction (9.9s)
+✔ [3715/3755] Built LeanCert.Validity.Krawczyk (3.2s)
+✔ [3716/3755] Built LeanCert.Engine.RootFinding.Main (3.3s)
+✔ [3717/3755] Built LeanCert.Tactic.LeanCert.Solver.Protocol (6.5s)
+✔ [3718/3755] Built LeanCert.Tactic.Extension.Execute (8.7s)
+✔ [3719/3755] Built LeanCert.Engine.Optimization.Global (29s)
+✔ [3720/3755] Built LeanCert.Tactic.Enclosure (3.7s)
+✔ [3721/3755] Built LeanCert.Tactic.LeanCert.Diagnostic.Render (4.1s)
+✔ [3722/3755] Built LeanCert.Validity.Types (3.5s)
+✔ [3723/3755] Built LeanCert.Engine.Optimization.Guided (3.0s)
+✔ [3724/3755] Built LeanCert.Engine.Search.CounterExample (3.8s)
+✔ [3725/3755] Built LeanCert.Validity.Bounds (7.2s)
+✔ [3726/3755] Built LeanCert.Engine.Optimization.BoundVerify (3.8s)
+✔ [3727/3755] Built LeanCert.Discovery.Find (3.7s)
+✔ [3728/3755] Built LeanCert.Tactic.IntervalAuto.RootBound (4.4s)
+✔ [3729/3755] Built LeanCert.Tactic.IntervalAuto.OptBound (4.5s)
+✔ [3730/3755] Built LeanCert.Tactic.IntervalAuto.Multivariate (6.1s)
+✔ [3731/3755] Built LeanCert.Tactic.IntervalAuto.Bound (13s)
+✔ [3732/3755] Built LeanCert.Tactic.IntervalAuto.Subdiv (6.1s)
+✔ [3733/3755] Built LeanCert.Tactic.IntervalAuto.Adaptive (7.5s)
+✔ [3734/3755] Built LeanCert.Tactic.IntervalAuto.PointIneq (8.8s)
+✔ [3735/3755] Built LeanCert.Tactic.IntervalAuto (2.2s)
+✔ [3736/3755] Built LeanCert.Tactic.Refute (2.9s)
+✔ [3737/3755] Built LeanCert.Tactic.FinSumWitness (5.5s)
+✔ [3738/3755] Built LeanCert.Tactic.FinSumBound (4.2s)
+✔ [3739/3755] Built LeanCert.Tactic.LeanCert.Semantic.Parse (2.9s)
+✔ [3740/3755] Built LeanCert.Tactic.Discovery (13s)
+✔ [3741/3755] Built LeanCert.Tactic.Krawczyk (3.1s)
+✔ [3742/3755] Built LeanCert.Tactic.LeanCert.Router (7.3s)
+✔ [3743/3755] Built LeanCert.Tactic.LeanCert (2.3s)
+✔ [3744/3755] Built LeanCert.Tactic (2.3s)
+ℹ [3745/3755] Built NLA.MI04.UpperBound (2.8s)
+info: NLA/MI04/UpperBound.lean:125:0: 'NLA.MI04.quarter_gap_certificate' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/MI04/UpperBound.lean:127:0: 'NLA.MI04.simple_peak_sandwich' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3746/3755] Built NLA.MI04.Limit (2.6s)
+info: NLA/MI04/Limit.lean:90:0: 'NLA.MI04.simple_peak_second_order' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [3747/3755] Built NLA.MI04.WeightedProbes (3.1s)
+warning: NLA/MI04/WeightedProbes.lean:85:51: This simp argument is unused:
+  Complex.star_def
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [secondCoefficient, Fintype.sum_sum_type, sumDiagonal, pencil, completion, Matrix.fromBlocks,
+    Matrix.conjTranspose_apply, sub_neg_eq_add]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: NLA/MI04/WeightedProbes.lean:91:23: This simp argument is unused:
+  Matrix.conjTranspose_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [secondCoefficient, Fintype.sum_sum_type, sumDiagonal, pencil, completion, Matrix.fromBlocks,
+    Complex.star_def, sub_neg_eq_add]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: NLA/MI04/WeightedProbes.lean:91:51: This simp argument is unused:
+  Complex.star_def
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [secondCoefficient, Fintype.sum_sum_type, sumDiagonal, pencil, completion, Matrix.fromBlocks,
+    Matrix.conjTranspose_apply, sub_neg_eq_add]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: NLA/MI04/WeightedProbes.lean:98:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+info: NLA/MI04/WeightedProbes.lean:125:0: 'NLA.MI04.weighted_magnitude_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+✖ [3748/3755] Building NLA.MI04.Probes (2.7s)
+trace: .> LEAN_PATH=/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/Cli/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/batteries/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/Qq/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/aesop/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/proofwidgets/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/importGraph/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/plausible/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/mathlib/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/leancert/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/build/lib/lean /home/runner/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean /home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/NLA/MI04/Probes.lean -o /home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/build/lib/lean/NLA/MI04/Probes.olean -i /home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/build/lib/lean/NLA/MI04/Probes.ilean -c /home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/build/ir/NLA/MI04/Probes.c --setup /home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/build/ir/NLA/MI04/Probes.setup.json --json
+error: NLA/MI04/Probes.lean:34:76: unsolved goals
+case pos
+n : ℕ
+i j k : Fin n
+hk : k ≠ i
+hkj : k = j
+⊢ (-(1 / 2) ≤ if j = i then 1 else 1 / 2) ∧ (if j = i then 1 else 1 / 2) ≤ 1 / 2
+error: NLA/MI04/Probes.lean:44:39: Unknown identifier `k`
+error: NLA/MI04/Probes.lean:44:64: Unknown identifier `k`
+info: NLA/MI04/Probes.lean:73:0: 'NLA.MI04.offDiagonal_magnitude_symmetry' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+error: NLA/MI04/Probes.lean:74:21: #assert_trust: 'NLA.MI04.offDiagonal_magnitude_symmetry' depends on sorry or unrecognized axioms
+  foundational: propext, Classical.choice, Quot.sound
+  sorryAx: sorryAx
+error: Lean exited with code 1
+Some required targets logged failures:
+- NLA.MI04.Probes
+error: build failed

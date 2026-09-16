@@ -1,0 +1,100 @@
+--- before/NLA/IE13/Envelope.lean
++++ after/NLA/IE13/Envelope.lean
+@@ -18,7 +18,7 @@
+ namespace NLA.IE13
+ 
+ @[simp] lemma envelope_zero (p : ℕ) (i : Fin p) : envelope p 0 i = 0 := by
+-  simp only [envelope, if_pos rfl]
++  simp only [envelope, if_true]
+ 
+ @[simp] lemma envelope_one (p : ℕ) (i : Fin p) : envelope p 1 i = 1 := by
+   rw [envelope, if_neg (by omega : (1 : ℕ) ≠ 0)]
+--- before/NLA/IE13/Front.lean
++++ after/NLA/IE13/Front.lean
+@@ -21,6 +21,7 @@
+ 
+ lemma oldRows_initial_card {n : ℕ} (p : ℕ) (path : PivotPath n) :
+     (oldRows p path 0).card ≤ p := by
++  classical
+   have hmap : Set.MapsTo (fun i : Fin n => i.val)
+       (oldRows p path 0 : Set (Fin n)) (Finset.range p : Set ℕ) := by
+     intro i hi
+--- before/NLA/IE13/TailAlgebra.lean
++++ after/NLA/IE13/TailAlgebra.lean
+@@ -92,14 +92,14 @@
+     let a : Fin n := path z
+     let r : Fin n := Equiv.swap z a i
+     have hza : z ≤ a := hpos z
+-    have hkr : k ≤ r.val := swap_active z a i hza (by omega)
++    have hkr : k ≤ r.val := swap_active z a i hza (by change k ≤ i.val; omega)
+     have hzi : z < i := by exact hi
+     have hzj : z < j := by exact hj
+     have hpj := ih (by omega) hkn' a j hza (by omega)
+     have hpk := ih (by omega) hkn' a z hza le_rfl
+     have hrj := ih (by omega) hkn' r j hkr (by omega)
+     have hrk := ih (by omega) hkn' r z hkr le_rfl
+-    have hl : f (origin path k a) = z := hlabel z (by omega)
++    have hl : f (origin path k a) = z := hlabel z (by change k < T; omega)
+     rw [hl, tail_pivot_row L U hL hd z j] at hpj
+     rw [hl, tail_pivot_row L U hL hd z z] at hpk
+     rw [tail_pivot_column L U hU z] at hrk
+@@ -109,7 +109,7 @@
+       (trajectory A path k r z / trajectory A path k a z) * trajectory A path k a j
+       else 0) = _
+     rw [if_pos ⟨hzi, hzj⟩, hrj, hrk, hpk, hpj,
+-      mul_div_cancel_right₀ _ (hdiag z (by omega)), tail_split L U z]
++      mul_div_cancel_right₀ _ (hdiag z (by change k < T; omega)), tail_split L U z]
+     have hnext : f (origin path k r) = f (origin path (k + 1) i) := by
+       rw [origin_step path k hkn'] <;> rfl
+     rw [hnext]
+--- before/NLA/IE13/WitnessColumns.lean
++++ after/NLA/IE13/WitnessColumns.lean
+@@ -104,7 +104,7 @@
+     intro r _
+     rw [upper_column_early p q j r hj]
+     have hiff : r.val ≤ j.val ↔ r.val < j.val + 1 := by omega
+-    rw [hiff]
++    simp only [hiff]
+   rw [he, sum_fin_prefix geometricEntry (j.val + 1) (Nat.succ_le_of_lt j.isLt), geometric_prefix]
+ 
+ lemma lower_upper_late (p q : ℕ) (j i : Fin (witnessOrder p q)) (hj : p < j.val) :
+--- before/NLA/IE13/WitnessOrder.lean
++++ after/NLA/IE13/WitnessOrder.lean
+@@ -60,8 +60,8 @@
+     · by_cases hif : i = f
+       · subst i
+         rw [Equiv.swap_apply_right, ih hkp.le z]
+-        simp only [z, f, Fin.val_mk]
+-        split_ifs <;> omega
++        have hpk : ¬p < k + 1 := by omega
++        simp [z, f, hpk, ne_of_lt hkp]
+       · rw [Equiv.swap_apply_of_ne_of_ne hiz hif, ih hkp.le i]
+         have hizv : i.val ≠ k := fun h => hiz (Fin.ext h)
+         have hifv : i.val ≠ p := fun h => hif (Fin.ext h)
+@@ -98,7 +98,7 @@
+   apply Fin.ext
+   have hv := congrArg Fin.val h
+   dsimp only [witnessFactorIndex] at hv
+-  split_ifs at hv <;> simp only at hv <;> omega
++  split_ifs at hv <;> (try simp only [Fin.val_mk] at hv) <;> omega
+ 
+ def witnessFactorEquiv (p q : ℕ) : Equiv.Perm (Fin (witnessOrder p q)) :=
+   Equiv.ofBijective (witnessFactorIndex p q) ⟨witnessFactorIndex_injective p q,
+@@ -111,7 +111,7 @@
+       else if i.val < p then i.val + 1 else i.val := by
+   have ho := origin_seed_small p q k hk i
+   unfold witnessFactorIndex
+-  split_ifs <;> simp only [Fin.val_mk]
++  split_ifs <;> (try simp only [Fin.val_mk])
+   all_goals split_ifs at ho ⊢ <;> omega
+ 
+ lemma witness_factor_origin_after (p q s : ℕ) (i : Fin (witnessOrder p q)) :
+@@ -132,7 +132,7 @@
+   · apply Fin.ext
+     rw [witness_factor_origin_small p q k.val hk]
+     simp only [witnessSeedPath, if_pos hk, Fin.val_mk,
+-      not_lt_of_ge hk, if_false, if_pos rfl]
++      not_lt_of_ge hk, if_false, if_true]
+   · rw [witness_factor_origin_ge p q k.val (by omega),
+       witness_seed_ge p q k (by omega)]
+ 

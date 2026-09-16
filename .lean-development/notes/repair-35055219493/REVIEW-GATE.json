@@ -1,0 +1,13 @@
+{
+  "phase": "two independent mathematical source approvals per current full candidate; actual new Linux run pending",
+  "reviews": {
+    "reviews/MI04-mf22-complete/REVIEW.md": "078e4420a10f7ff449a7b0bd7bf66a56cc1fd771dae60cb7591ed910fc6dda60",
+    "reviews/MI04-continuation-independent-repair-35055219493/REVIEW.md": "ef0831a710d366784ddeee0eab1a0134b802638b9ff783e9dec9d3002adf28a0",
+    "reviews/IE13-root-repair-35055219493/REVIEW.md": "4d962c2c269368549c96e9422b5c24750824212781d8d4fa3b0013192fc37e1c",
+    "reviews/IE13-continuation-independent-repair-35055219493/REVIEW.md": "7053b8404573a9cc55da417cc962607a85428d4fbce3537284a655a9609622fb"
+  },
+  "MI04_closure_sha256": "3f553e705896b765090592e3a637fb202cf165bea9dbc01f437d6507298ec3c7",
+  "IE13_current_source_record_sha256": "fbe12c37eaf78b05b91e2763a37d974024f404aed5dd431d82ff8e4f69055036",
+  "root_has_read_complete_reports": true,
+  "source_only_not_runtime_acceptance": true
+}

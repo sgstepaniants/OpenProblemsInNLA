@@ -1,0 +1,110 @@
+{
+  "reviewer": "/root",
+  "run": 35055219493,
+  "actual_checkout": "dbc2371b74bcae58f6d6957bd588e32c56c8dc91",
+  "actual_GitHub_conclusion": "failure",
+  "artifact_sha256": "a6109b467efcb2848224684f5090be04342d704e962f90cc87207e4dcecb5de1",
+  "bound_git_inputs": 1454,
+  "all_source_hashes_unchanged_during_commands": true,
+  "commands": [
+    {
+      "argv": [
+        "lean",
+        "--version"
+      ],
+      "exit_code": 0,
+      "log": "lean-version.log",
+      "sha256": "63f3e16bf0258e2cc0ab3010eb1830723df9bb85097b7b72b0137b9be25a78e9"
+    },
+    {
+      "argv": [
+        "lake",
+        "env",
+        "true"
+      ],
+      "exit_code": 0,
+      "log": "dependencies.log",
+      "sha256": "025fc8aa8b9c0edd94f54499f519dd6f3801068c4230f3173e6895708e75b9fb"
+    },
+    {
+      "argv": [
+        "lake",
+        "exe",
+        "cache",
+        "get"
+      ],
+      "exit_code": 0,
+      "log": "mathlib-cache.log",
+      "sha256": "baf8e98a778ca4f82fa01c96f289eb9f7e3f5dbd5ac173934808f9516125f754"
+    },
+    {
+      "argv": [
+        "lake",
+        "build",
+        "NLA.MI04.Complete"
+      ],
+      "exit_code": 1,
+      "log": "MI-04-modules.log",
+      "sha256": "94f7d76a6bfc11cbe4ab0b1daa7541c0255276bb27a3c46d6ea253d1729bdcfb"
+    },
+    {
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "Challenges/MI04.lean"
+      ],
+      "exit_code": 0,
+      "log": "MI-04-challenge.log",
+      "sha256": "af7bc36d34f4804a63715e558f243fa874d0fb9cd508aae388f8f4dda8529398"
+    },
+    {
+      "argv": [
+        "lake",
+        "build",
+        "NLA.IE13.Complete"
+      ],
+      "exit_code": 1,
+      "log": "IE-13-modules.log",
+      "sha256": "6ecd33f2bc502305eea2ae52e1613daf60b147274174f4fa5a4a439a992dc82c"
+    },
+    {
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "Challenges/IE13.lean"
+      ],
+      "exit_code": 0,
+      "log": "IE-13-challenge.log",
+      "sha256": "4d18ca0aa8287a7c7378aa0a463038d4263f3e5426a300b44d083404ca3cbbe5"
+    }
+  ],
+  "dependencies": {
+    "leancert": "621a43d7cf21f87872392a01e874f2f1dbddc926",
+    "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+    "plausible": "b7eb3304aeae834b12dda98993a37f6a41f6f0bb",
+    "LeanSearchClient": "5f4d51b81cbd3f6b32b156bfad9056621a040404",
+    "importGraph": "16f02aa7642864af59f1ff0e384a015994db9118",
+    "proofwidgets": "4be2e3d5087eeb272cf5a8853b8f9dd025ef5957",
+    "aesop": "3448c0bcc5ce01b2d1546e483ec3620e32df3d0e",
+    "Qq": "92c15be17b7caf78c2ad767ec40f89052d908d81",
+    "batteries": "4488d40d070b9700d4d5a6aa342f0d40c31b2a2d",
+    "Cli": "6130a47896ce867c6a4a55373441e59e565bad0f"
+  },
+  "statement_elaboration": {
+    "MI-04": {
+      "exit_code": 0,
+      "deliberate_holes": 21,
+      "error_lines": []
+    },
+    "IE-13": {
+      "exit_code": 0,
+      "deliberate_holes": 28,
+      "error_lines": []
+    }
+  },
+  "mathematical_verification": false,
+  "comparator_run": false,
+  "limits": "Statement holes are intentional specifications. Individual accepted proof helpers are not a complete problem verification. Inspect full compiler diagnostics before repairing or counting anything."
+}

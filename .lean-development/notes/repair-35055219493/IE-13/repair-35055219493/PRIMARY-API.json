@@ -1,0 +1,12 @@
+{
+  "mathlib_commit": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "path": "Mathlib/Data/Fin/Basic.lean",
+  "sha256": "8e0eaf32283e9bf44c09b0a3d20a2a0944901c880b9977bf88233c17aca0f462",
+  "reviewed_lines": [
+    165,
+    170,
+    175,
+    263
+  ],
+  "observations": "Finite order is definitionally natural-value order (Iff.rfl); the Fin order-to-value rewrites are registered with fin_omega. No local Lean or Lake was executed."
+}
