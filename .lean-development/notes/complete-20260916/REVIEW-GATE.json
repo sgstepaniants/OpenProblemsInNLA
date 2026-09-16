@@ -1,0 +1,20 @@
+{
+  "reviews": {
+    "reviews/IE13-root-complete/REVIEW.md": "b22cba734e0da031e127de7ce1f8153529ec24baa556c7e9d6dd2a730e9d8e84",
+    "reviews/IE13-continuation-independent/REVIEW.md": "03a203affaaa6f85c37e59a2f118fefad53486229bd22a81555eb3418682bced",
+    "reviews/MI04-continuation-independent/REVIEW.md": "98c0f308ffd75008cb32522560cf4427e76244e0fc0f57f7d4cbc43f4b203f9e",
+    "reviews/MI04-continuation-independent-nonempty-addendum/REVIEW.md": "f41287268c032fe57220b1f78e4c8e3d1c0bb0a322dba4b143e3145fd0f4392e",
+    "reviews/MI04-matrix-functions-repair-35052024095/REVIEW.md": "0f692f85fa3edd50b835e64c3b7b7e88c2ee1a293df0897d2957db9d20b92b89"
+  },
+  "root_has_read_all_reports": true,
+  "source_only_not_runtime_acceptance": true,
+  "MI04_predictive_header_addendum_required": true,
+  "IE13_root_and_nonimplementing_continuation_source_reviews": true,
+  "root_not_MI04_independent_referee_because_header_editor": true,
+  "two_problem_development_selection": [
+    "MI-04",
+    "IE-13"
+  ],
+  "MF22_omitted_from_selection_after_successful_canonical_run": 35053254275,
+  "count_increment": 0
+}

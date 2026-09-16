@@ -1,0 +1,13 @@
+{
+  "CHECKS.json": "c4b8c1a2dd2d07b70b2461009e7fef6ddc293cecd2ac1328193faa89a0327cad",
+  "IE14-Tail-original.lean": "655c1d27a7d14975dc263501d8e950d8873c5f5bbaf6d14283ce8d83708acdd4",
+  "README.md": "fd05ce3a982b834708f613b7dfa01c8848edf20f3c3cbed6c1b41181eed46baa",
+  "snapshot/Challenge.lean": "5b6b9a4c714686d6b060589a4ee1414f2ec94e80787a9ffe351ac6fe66331e57",
+  "snapshot/NLA/IE13/Basic.lean": "ba05afefeeea9bb5b4f2b3b8187aa0929ef1979700286ca9470ea991f7aa14b8",
+  "snapshot/NLA/IE13/Definitions.lean": "cda485c546a5879f35eb9d69e7aaa7eaf1449d2219a47b75fcbb4c2827031988",
+  "snapshot/NLA/IE13/Origin.lean": "ccbca9a6ee35516ef0b830b89507b0d4011a067353e88eabb4c670cb8c980c15",
+  "snapshot/NLA/IE13/TailAlgebra.lean": "7bb2d2fea11028025bbd1d94298e62264cc068bdf94de1c32f9ef22ae0763e79",
+  "snapshot/NLA/IE13/WitnessOrder.lean": "fa538b3ec308f1d1a6adc4599e140688e226821b4acb316faeb0bf607c589d92",
+  "snapshot/NLA/IE13/WitnessScale.lean": "ea68a71a53afcfde78dd13d74679475b2349c42a4177e4617da96813005647be",
+  "snapshot/STATEMENT-FREEZE.json": "85916aae89eb2111ff914b8767e8918548c132a6ff6c7ed92e52286bec1998fe"
+}

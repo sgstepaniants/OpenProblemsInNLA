@@ -1,0 +1,148 @@
+{
+  "reviewer": "/root",
+  "run": 35052024095,
+  "actual_checkout": "93abf01922d103993f2a92e819f207d63effbfae",
+  "actual_GitHub_conclusion": "failure",
+  "artifact_sha256": "ec63ae66f8752fce3971c965724f6d32dacb32985d22375d491a5e4c9ebf4da9",
+  "bound_git_inputs": 1118,
+  "all_source_hashes_unchanged_during_commands": true,
+  "commands": [
+    {
+      "argv": [
+        "lean",
+        "--version"
+      ],
+      "exit_code": 0,
+      "log": "lean-version.log",
+      "sha256": "63f3e16bf0258e2cc0ab3010eb1830723df9bb85097b7b72b0137b9be25a78e9"
+    },
+    {
+      "argv": [
+        "lake",
+        "env",
+        "true"
+      ],
+      "exit_code": 0,
+      "log": "dependencies.log",
+      "sha256": "025fc8aa8b9c0edd94f54499f519dd6f3801068c4230f3173e6895708e75b9fb"
+    },
+    {
+      "argv": [
+        "lake",
+        "exe",
+        "cache",
+        "get"
+      ],
+      "exit_code": 0,
+      "log": "mathlib-cache.log",
+      "sha256": "f5d3fff8b05e15a665286a8b985125671706379762e0a847a9991056981d5d13"
+    },
+    {
+      "argv": [
+        "lake",
+        "build",
+        "NLA.MF22.Complete"
+      ],
+      "exit_code": 0,
+      "log": "MF-22-modules.log",
+      "sha256": "62a3e73e1a9688d3e41f0b10d5c8b61b9ab45a31b5200e5aa599223ede20411e"
+    },
+    {
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "Challenges/MF22.lean"
+      ],
+      "exit_code": 0,
+      "log": "MF-22-challenge.log",
+      "sha256": "4b528f1df6cae53a736865fce53d2f5127b9a21c346e108b5c564da562dde1ad"
+    },
+    {
+      "argv": [
+        "lake",
+        "build",
+        "NLA.MI04.Complete"
+      ],
+      "exit_code": 1,
+      "log": "MI-04-modules.log",
+      "sha256": "5efd366b808afab219bde1b107072924998886031c6644655b53a0e07fb0b2d3"
+    },
+    {
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "Challenges/MI04.lean"
+      ],
+      "exit_code": 0,
+      "log": "MI-04-challenge.log",
+      "sha256": "af7bc36d34f4804a63715e558f243fa874d0fb9cd508aae388f8f4dda8529398"
+    },
+    {
+      "argv": [
+        "lake",
+        "build",
+        "NLA.IE13.Basic",
+        "NLA.IE13.Maxima",
+        "NLA.IE13.GEPP",
+        "NLA.IE13.Prefix",
+        "NLA.IE13.Origin",
+        "NLA.IE13.Front",
+        "NLA.IE13.Recurrence",
+        "NLA.IE13.Envelope",
+        "NLA.IE13.LateColumn",
+        "NLA.IE13.SubsetAlgebra",
+        "NLA.IE13.FrontBounds",
+        "NLA.IE13.ColumnBounds",
+        "NLA.IE13.UpperBound"
+      ],
+      "exit_code": 1,
+      "log": "IE-13-modules.log",
+      "sha256": "36992feebc6331a636b707f44cb79fa33e85c5465715472b8f95f30cbdde2cb8"
+    },
+    {
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "Challenges/IE13.lean"
+      ],
+      "exit_code": 0,
+      "log": "IE-13-challenge.log",
+      "sha256": "4d18ca0aa8287a7c7378aa0a463038d4263f3e5426a300b44d083404ca3cbbe5"
+    }
+  ],
+  "dependencies": {
+    "leancert": "621a43d7cf21f87872392a01e874f2f1dbddc926",
+    "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+    "plausible": "b7eb3304aeae834b12dda98993a37f6a41f6f0bb",
+    "LeanSearchClient": "5f4d51b81cbd3f6b32b156bfad9056621a040404",
+    "importGraph": "16f02aa7642864af59f1ff0e384a015994db9118",
+    "proofwidgets": "4be2e3d5087eeb272cf5a8853b8f9dd025ef5957",
+    "aesop": "3448c0bcc5ce01b2d1546e483ec3620e32df3d0e",
+    "Qq": "92c15be17b7caf78c2ad767ec40f89052d908d81",
+    "batteries": "4488d40d070b9700d4d5a6aa342f0d40c31b2a2d",
+    "Cli": "6130a47896ce867c6a4a55373441e59e565bad0f"
+  },
+  "statement_elaboration": {
+    "MF-22": {
+      "exit_code": 0,
+      "deliberate_holes": 22,
+      "error_lines": []
+    },
+    "MI-04": {
+      "exit_code": 0,
+      "deliberate_holes": 21,
+      "error_lines": []
+    },
+    "IE-13": {
+      "exit_code": 0,
+      "deliberate_holes": 28,
+      "error_lines": []
+    }
+  },
+  "mathematical_verification": false,
+  "comparator_run": false,
+  "limits": "Statement holes are intentional specifications. Individual accepted proof helpers are not a complete problem verification. Inspect full compiler diagnostics before repairing or counting anything."
+}

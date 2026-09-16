@@ -1,0 +1,12 @@
+--- before/NLA/IE13/UpperBound.lean
++++ after/NLA/IE13/UpperBound.lean
+@@ -25,7 +25,8 @@
+ 
+ lemma original_label_active {n : ℕ} (path : PivotPath n) (k i : Fin n) (hki : k ≤ i) :
+     OriginalRowActive path k.val (origin path k.val i) := by
+-  simpa only [OriginalRowActive, Equiv.symm_apply_apply] using hki
++  simpa only [OriginalRowActive, Equiv.symm_apply_apply] using
++    (Fin.le_iff_val_le_val.mp hki)
+ 
+ lemma active_not_old_is_future {n : ℕ} (p k : ℕ) (path : PivotPath n) (i : Fin n)
+     (hi : OriginalRowActive path k i) (hnot : i ∉ oldRows p path k) :

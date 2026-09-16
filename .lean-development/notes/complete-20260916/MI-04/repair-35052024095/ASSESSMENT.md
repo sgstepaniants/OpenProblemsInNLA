@@ -1,0 +1,7 @@
+# MI-04: observed diagonal-negation repair
+
+The actual Linux run 35052024095 at `93abf01922d103993f2a92e819f207d63effbfae` failed its MI-04 component only in the two entrywise diagonal identities in WeightedProbes. The full authentic log is retained. Every preceding module through Limit and ScaledSymmetry built; the accepted second-order limit prints the three permitted foundational axioms. This is component evidence, not full MI-04 verification.
+
+Both failed goals have the form `(if i = j then -dᵢ else 0) = -(if i = j then dᵢ else 0)`, after complex coercions. The exact pinned theorem `neg_ite` pushes negation into either branch; `neg_zero` then closes the zero branch. The two changes add that theorem to existing simp lists, preserving every definition, hypothesis and declaration header. The matrix analogue `Matrix.diagonal_neg` is retained as an additional semantic API anchor; the repair does not need to invoke it.
+
+All 21 preceding author source files were matched byte-for-byte to the actual Git checkout and runtime input map before the edit. Exactly WeightedProbes changes; the other 20 source files and all 10 frozen boundary files remain identical. Before/after copies, the full raw log, root audit, receipt, declaration-header comparison, exact diff and primary API files are retained. No local Lean or Lake was run. Both independent complete-source referees must reconcile this repair; actual new execution and all canonical controls remain pending.

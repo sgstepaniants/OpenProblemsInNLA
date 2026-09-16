@@ -1,0 +1,118 @@
+/-
+Copyright (c) 2026 George Stepaniants.
+Department of Computing and Mathematical Sciences, California Institute of Technology.
+Released under Apache 2.0 license. Substantial OpenAI Codex assistance.
+Original mathematical proof: Matthew J. Colbrook, Cambridge DAMTP.
+
+The full dimension-independent upper estimate for literal complex GEPP.
+Every active entry and every legal maximal-modulus tie are included.
+-/
+import NLA.IE13.ColumnBounds
+import NLA.IE13.Maxima
+
+set_option autoImplicit false
+set_option leancert.trust "kernel"
+
+noncomputable section
+open scoped BigOperators
+namespace NLA.IE13
+
+lemma envelopeSum_one_all (p t : ℕ) (hp : 0 < p) :
+    envelopeSum p t 1 = bandSequence p t := by
+  by_cases ht : t = 0
+  · simp only [ht, envelopeSum_initial, bandSequence_zero]
+  · exact envelopeSum_one p t hp (by omega)
+
+lemma original_label_active {n : ℕ} (path : PivotPath n) (k i : Fin n) (hki : k ≤ i) :
+    OriginalRowActive path k.val (origin path k.val i) := by
+  simpa only [OriginalRowActive, Equiv.symm_apply_apply] using hki
+
+lemma active_not_old_is_future {n : ℕ} (p k : ℕ) (path : PivotPath n) (i : Fin n)
+    (hi : OriginalRowActive path k i) (hnot : i ∉ oldRows p path k) :
+    k + p ≤ i.val := by
+  by_contra h
+  apply hnot
+  simp only [oldRows, Finset.mem_filter, Finset.mem_univ, true_and]
+  exact ⟨hi, by omega⟩
+
+theorem all_active_entries_bound {n : ℕ} (p q : ℕ) (hp : 0 < p)
+    (A : Mat n) (hA : Banded p q A) (path : PivotPath n)
+    (hpath : AdmissiblePath A path) (k i j : Fin n) (hki : k ≤ i) (hkj : k ≤ j) :
+    ‖trajectory A path k.val i j‖ ≤ (bandSequence p (p + q) : ℝ) * entryMax A := by
+  let a := origin path k.val i
+  have ha : OriginalRowActive path k.val a := original_label_active path k i hki
+  have hvalue : originalRowStage A path k.val a j = trajectory A path k.val i j := by
+    simp only [originalRowStage, a, Equiv.symm_apply_apply]
+  by_cases hold : a ∈ oldRows p path k.val
+  · have hsub : ({a} : Finset (Fin n)) ⊆ oldRows p path k.val := by simpa using hold
+    have hb := column_front_bound p q hp A hA path hpath k j hkj {a} hsub
+    simp only [Finset.sum_singleton, Finset.card_singleton,
+      envelopeSum_one_all p (columnAge p q k.val j) hp, hvalue] at hb
+    have hseq := (sequence_properties p).1 (columnAge_le_band p q k.val j hkj)
+    exact hb.trans (mul_le_mul_of_nonneg_right (by exact_mod_cast hseq) (entryMax_nonneg A))
+  · have hf := active_not_old_is_future p k.val path a ha hold
+    have he := ((front_structure p q A hA path hpath k).2.1 a hf).2 j hkj
+    rw [hvalue] at he
+    rw [he]
+    have hs : (1 : ℝ) ≤ (bandSequence p (p + q) : ℝ) := by
+      exact_mod_cast sequence_ge_one p (p + q) (by omega)
+    exact (norm_le_entryMax A a j).trans (by
+      simpa only [one_mul] using mul_le_mul_of_nonneg_right hs (entryMax_nonneg A))
+
+lemma zero_lower_entries_bound {n : ℕ} (q : ℕ) (A : Mat n) (hA : Banded 0 q A)
+    (path : PivotPath n) (hpath : AdmissiblePath A path) (k i j : Fin n)
+    (hki : k ≤ i) (hkj : k ≤ j) : ‖trajectory A path k.val i j‖ ≤ entryMax A := by
+  let a := origin path k.val i
+  have ha : OriginalRowActive path k.val a := original_label_active path k i hki
+  have hF := front_structure 0 q A hA path hpath k
+  have hnot : a ∉ oldRows 0 path k.val := by
+    intro hmem
+    have hpos := Finset.card_pos.mpr (show (oldRows 0 path k.val).Nonempty from ⟨a, hmem⟩)
+    have hcard := hF.1
+    omega
+  have hf := active_not_old_is_future 0 k.val path a ha hnot
+  have he := (hF.2.1 a hf).2 j hkj
+  simp only [originalRowStage, a, Equiv.symm_apply_apply] at he
+  rw [he]
+  exact norm_le_entryMax A a j
+
+theorem zero_lower_bandwidth {n : ℕ} (hn : 1 ≤ n) (q : ℕ) (A : Mat n)
+    (hA : BandedInput 0 q A) (path : PivotPath n) (hpath : AdmissiblePath A path) :
+    growth A path = 1 := by
+  have hmax : peakMax A path ≤ entryMax A := by
+    apply peakMax_le A path (entryMax A) (entryMax_nonneg A)
+    intro k
+    exact activeMax_le (trajectory A path k.val) k.val (entryMax A) (entryMax_nonneg A)
+      (fun i j hki hkj => zero_lower_entries_bound q A hA.2 path hpath k i j hki hkj)
+  apply le_antisymm
+  · change peakMax A path / entryMax A ≤ 1
+    apply (div_le_iff₀ (entryMax_pos_of_det_ne_zero hn A hA.1)).mpr
+    simpa only [one_mul] using hmax
+  · exact (growth_semantics hn A hA.1 path).1
+
+theorem universal_growth {n : ℕ} (hn : 1 ≤ n) (p q : ℕ) (A : Mat n)
+    (hA : BandedInput p q A) (path : PivotPath n) (hpath : AdmissiblePath A path) :
+    growth A path ≤ sharpBound p q := by
+  by_cases hp : p = 0
+  · subst p
+    rw [zero_lower_bandwidth hn q A hA path hpath]
+    simp only [sharpBound, if_pos rfl, le_refl]
+  · have hpos : 0 < p := Nat.pos_of_ne_zero hp
+    rw [sharpBound, if_neg hp]
+    change peakMax A path / entryMax A ≤ (bandSequence p (p + q) : ℝ)
+    apply (div_le_iff₀ (entryMax_pos_of_det_ne_zero hn A hA.1)).mpr
+    have hnonneg : 0 ≤ (bandSequence p (p + q) : ℝ) * entryMax A :=
+      mul_nonneg (Nat.cast_nonneg _) (entryMax_nonneg A)
+    apply peakMax_le A path _ hnonneg
+    intro k
+    exact activeMax_le (trajectory A path k.val) k.val _ hnonneg
+      (fun i j hki hkj => all_active_entries_bound p q hpos A hA.2 path hpath k i j hki hkj)
+
+#print axioms all_active_entries_bound
+#assert_trust kernel all_active_entries_bound
+#print axioms zero_lower_bandwidth
+#assert_trust kernel zero_lower_bandwidth
+#print axioms universal_growth
+#assert_trust kernel universal_growth
+
+end NLA.IE13

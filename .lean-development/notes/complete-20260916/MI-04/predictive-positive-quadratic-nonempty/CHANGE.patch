@@ -1,0 +1,11 @@
+--- before/NLA/MI04/Quadratic.lean
++++ after/NLA/MI04/Quadratic.lean
+@@ -92,7 +92,7 @@
+     realQuadratic M v ≤ spectralNorm M * ‖v‖ ^ 2 :=
+   (le_abs_self _).trans (abs_realQuadratic_le M v)
+ 
+-lemma positive_quadratic_iff (M : CMatrix ι) :
++lemma positive_quadratic_iff [Nonempty ι] (M : CMatrix ι) :
+     M.PosSemidef ↔ M.IsHermitian ∧ ∀ v : CVector ι, 0 ≤ realQuadratic M v := by
+   rw [← Matrix.isPositive_toEuclideanLin_iff, LinearMap.IsPositive,
+     Matrix.isSymmetric_toEuclideanLin_iff]

@@ -1,0 +1,71 @@
+{
+  "problem_id": "IE-13",
+  "state": "immutable reviewed statement boundary; proof implementation authorized",
+  "frozen_at_utc": "2026-09-16T02:38:39.526782+00:00",
+  "upstream_source_commit": "ce47b5630bf3680d9211131c3a43825b022c139a",
+  "statement_count": 28,
+  "frozen_files_sha256": {
+    "NLA/IE13/Definitions.lean": "cda485c546a5879f35eb9d69e7aaa7eaf1449d2219a47b75fcbb4c2827031988",
+    "Challenge.lean": "5b6b9a4c714686d6b060589a4ee1414f2ec94e80787a9ffe351ac6fe66331e57",
+    "NUMERICAL_TARGETS.md": "a95e32b7b8e654185f1d6bbbb3c483fa9b988e2ee5800a2ce641a230706e1cb9",
+    "SourceCorrespondence.md": "f4c1091773fe8b684147f80f80d16fec4f59d9c413fa3244947932a023c86782",
+    "SOURCE-PROVENANCE.json": "35906d147fa91f733fb80f8e8c431656df752da69bc7716b3fef4f0ada091905",
+    "comparator.json": "51a3effaed3e2ba4effde07da37c8f84c7c864a0010e2c1548eb5922ec8a7c14",
+    "lakefile.toml": "7f0a154e9c02b9f44b3573eb3447e30276885396364d3b66e896e2f72eb39380",
+    "lake-manifest.json": "55717fab833a468f9b9971b29a171b5a4098fafb7437b93641f357b45c8ec795",
+    "lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+    "LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+  },
+  "mathematical_target": "Exact sharp GEPP growth for every natural lower/upper bandwidth pair, every allowed positive finite dimension, nonsingular complex matrices and all legal maximal-modulus pivot choices. Includes p=0, q=0, general original-label front, all active entries, literal rational witnesses with genuine prefix extension, attained greatest value and real supremum.",
+  "independent_statement_reviewers": [
+    "OpenAI Codex agent /root",
+    "OpenAI Codex agent /root/next_matrix_functions"
+  ],
+  "reviews": [
+    {
+      "original_path": "/tmp/nla-lean-next-20260915/reviews/IE13-root-statements/REVIEW.md",
+      "retained_path": "statement-audit/reviews/root--REVIEW.md",
+      "sha256": "1182fa30893fd20d23e92b4ec5eea6241ffd3db760d2cf6bb4bda0b4ba405ad7"
+    },
+    {
+      "original_path": "/tmp/nla-lean-next-20260915/reviews/IE13-root-statements/CHECKS.json",
+      "retained_path": "statement-audit/reviews/root--CHECKS.json",
+      "sha256": "c7af8dd5b5638ff82d440cb8e4a28e73eba30dee82bfb50e3ffe8fdd7de53140"
+    },
+    {
+      "original_path": "/tmp/nla-lean-next-20260915/reviews/IE13-matrix-functions-statements/REVIEW.md",
+      "retained_path": "statement-audit/reviews/matrix-functions--REVIEW.md",
+      "sha256": "101ea631c0796193afbf2b1d199e3e81d9441cb4f4dbca9036cb76706ab09b69"
+    },
+    {
+      "original_path": "/tmp/nla-lean-next-20260915/reviews/IE13-matrix-functions-statements/CHECKS.json",
+      "retained_path": "statement-audit/reviews/matrix-functions--CHECKS.json",
+      "sha256": "89ee99323a7f3a6313756fd90974dfe2b687290543b8792651076d7b3feacbb6"
+    }
+  ],
+  "actual_linux_statement_run": {
+    "repository_commit": "39736a2e9db176f6f9551ae39c8194013ac770a7",
+    "run_id": 35048156414,
+    "job_id": 104642467150,
+    "workflow_conclusion": "failure",
+    "scope_note": "IE13 definition and statement component acceptance only; unrelated MF22/MI04 proof outcomes do not establish or invalidate IE13 statements.",
+    "uid": 1001,
+    "platform": "Linux-6.17.0-1022-azure-x86_64-with-glibc2.39",
+    "receipt_path": "statement-audit/linux/receipt.json",
+    "receipt_sha256": "b590809a789ada8cd4b8dbc2bff98ee3176bf77ddc2f4dd3a7f765f3278143bc",
+    "root_audit_sha256": "657e29136ffb96dd00018139a31a363ecd0eb0e21dca9482b8ec3c960e487ef6",
+    "bound_git_inputs": 862,
+    "command_logs_authenticated": 9,
+    "all28_IE13_contracts_elaborated": true,
+    "all_dependency_revisions_match": true,
+    "deliberate_challenge_placeholders_are_not_proofs": true,
+    "is_complete_problem_verification": false
+  },
+  "formalization_author": "George Stepaniants, Department of Computing and Mathematical Sciences, California Institute of Technology",
+  "original_mathematical_attribution": "Matthew J. Colbrook, Department of Applied Mathematics and Theoretical Physics, University of Cambridge",
+  "snapshot_directory": "statement-audit/snapshots",
+  "proof_implementation_exists_at_freeze": false,
+  "local_lean_execution": false,
+  "proof_authorization": "Root authorizes implementation only after this actual source-bound elaboration and both complete independent statement reviews. Preserve all mathematical definitions and contracts. A mathematical boundary correction requires two renewed independent approvals, actual elaboration and an explicit renewed freeze.",
+  "status_metadata_note": "Historical statement-only descriptions are retained unchanged; truthful later publication metadata may update status without changing the mathematical boundary."
+}

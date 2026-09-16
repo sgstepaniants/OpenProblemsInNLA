@@ -1,0 +1,156 @@
+✔ [3008/3021] Built NLA.IE13.Definitions (2.2s)
+✖ [3009/3021] Building NLA.IE13.Recurrence (2.7s)
+trace: .> LEAN_PATH=/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/Cli/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/batteries/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/Qq/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/aesop/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/proofwidgets/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/importGraph/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/plausible/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/mathlib/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/leancert/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/build/lib/lean /home/runner/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean /home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/NLA/IE13/Recurrence.lean -o /home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/build/lib/lean/NLA/IE13/Recurrence.olean -i /home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/build/lib/lean/NLA/IE13/Recurrence.ilean -c /home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/build/ir/NLA/IE13/Recurrence.c --setup /home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/build/ir/NLA/IE13/Recurrence.setup.json --json
+error: NLA/IE13/Recurrence.lean:49:35: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ∑ i, ?f ↑i
+in the target expression
+  1 + ∑ r, bandSequence p (t - ↑r) = 1 + ∑ r ∈ Finset.range p, bandSequence p (t - r)
+
+p t : ℕ
+⊢ 1 + ∑ r, bandSequence p (t - ↑r) = 1 + ∑ r ∈ Finset.range p, bandSequence p (t - r)
+info: NLA/IE13/Recurrence.lean:83:0: 'NLA.IE13.recurrence_history' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/IE13/Recurrence.lean:85:0: 'NLA.IE13.sequence_recurrence' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/IE13/Recurrence.lean:87:0: 'NLA.IE13.sequence_properties' depends on axioms: [propext, Classical.choice, Quot.sound]
+error: Lean exited with code 1
+ℹ [3012/3021] Built NLA.IE13.Basic (2.9s)
+info: NLA/IE13/Basic.lean:115:0: 'NLA.IE13.norm_le_entryMax' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/IE13/Basic.lean:117:0: 'NLA.IE13.entryMax_attained_basic' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/IE13/Basic.lean:119:0: 'NLA.IE13.multiplier_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [3013/3021] Built NLA.IE13.Origin (2.9s)
+warning: NLA/IE13/Origin.lean:46:4: Try `simp at hi` instead of `simpa using hi`
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: NLA/IE13/Origin.lean:132:56: Variable name `hA` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hA
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+info: NLA/IE13/Origin.lean:138:0: 'NLA.IE13.originalRow_update' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/IE13/Origin.lean:140:0: 'NLA.IE13.multiplier_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/IE13/Origin.lean:142:0: 'NLA.IE13.front_transition' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [3014/3021] Built NLA.IE13.GEPP (4.1s)
+warning: NLA/IE13/GEPP.lean:170:39: Variable name `hn` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hn
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+info: NLA/IE13/GEPP.lean:175:0: 'NLA.IE13.activeInjective_schur' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/IE13/GEPP.lean:177:0: 'NLA.IE13.admissiblePath_exists' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [3015/3021] Built NLA.IE13.Maxima (4.2s)
+warning: NLA/IE13/Maxima.lean:36:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+info: NLA/IE13/Maxima.lean:113:0: 'NLA.IE13.gepp_model_semantics' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/IE13/Maxima.lean:115:0: 'NLA.IE13.entryMax_semantics' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/IE13/Maxima.lean:117:0: 'NLA.IE13.activeMax_semantics' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/IE13/Maxima.lean:119:0: 'NLA.IE13.growth_semantics' depends on axioms: [propext, Classical.choice, Quot.sound]
+✖ [3016/3021] Building NLA.IE13.Front (2.9s)
+trace: .> LEAN_PATH=/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/Cli/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/batteries/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/Qq/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/aesop/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/proofwidgets/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/importGraph/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/plausible/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/mathlib/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/packages/leancert/.lake/build/lib/lean:/home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/build/lib/lean /home/runner/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean /home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/NLA/IE13/Front.lean -o /home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/build/lib/lean/NLA/IE13/Front.olean -i /home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/build/lib/lean/NLA/IE13/Front.ilean -c /home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/build/ir/NLA/IE13/Front.c --setup /home/runner/work/OpenProblemsInNLA/OpenProblemsInNLA/.lean-development/.lake/build/ir/NLA/IE13/Front.setup.json --json
+error: NLA/IE13/Front.lean:24:33: Application type mismatch: The argument
+  oldRows p path 0
+has type
+  Finset (Fin n)
+but is expected to have type
+  Set (Fin ?m.10)
+in the application
+  Set.MapsTo Fin.val (oldRows p path 0)
+error: NLA/IE13/Front.lean:43:37: unexpected identifier; expected ')', ',' or ':'
+error: NLA/IE13/Front.lean:42:40: unsolved goals
+n p k : ℕ
+path : PivotPath n
+hf : k + p < n
+fresh : Fin n := ⟨k + p, hf⟩
+i : Fin n
+hi : i ∈ frontRows p path k
+ha : OriginalRowActive path k i
+hle : ↑i ≤ k + p
+hlt : ↑i < k + p
+⊢ OriginalRowActive path k i ∧ ↑i < k + p
+error: NLA/IE13/Front.lean:38:72: unsolved goals
+case neg
+n p k : ℕ
+path : PivotPath n
+hf : k + p < n
+fresh : Fin n := ⟨k + p, hf⟩
+i : Fin n
+hi : i ∈ frontRows p path k
+ha : OriginalRowActive path k i
+hle : ↑i ≤ k + p
+hlt : ¬↑i < k + p
+⊢ i ∈ insert fresh (oldRows p path k)
+error: NLA/IE13/Front.lean:37:2: unsolved goals
+case pos
+n p k : ℕ
+path : PivotPath n
+hf : k + p < n
+fresh : Fin n := ⟨k + p, hf⟩
+hsub : frontRows p path k ⊆ insert fresh (oldRows p path k)
+⊢ (frontRows p path k).card ≤ (oldRows p path k).card + 1
+error: NLA/IE13/Front.lean:34:63: unsolved goals
+case neg
+n p k : ℕ
+path : PivotPath n
+hf : ¬k + p < n
+⊢ (frontRows p path k).card ≤ (oldRows p path k).card + 1
+error: NLA/IE13/Front.lean:60:4: Type mismatch: After simplification, term
+  (hpath k).left
+ has type
+  k ≤ path k
+but is expected to have type
+  ↑k ≤ ↑(path k)
+error: NLA/IE13/Front.lean:77:18: failed to synthesize instance of type class
+  DecidablePred fun i => OriginalRowActive path (↑k) i ∧ ↑i ≤ ↑k + p
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+error: NLA/IE13/Front.lean:116:4: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  g ≥ 0
+  f ≥ 1
+  e ≥ 0
+  d ≥ 0
+  d - e ≥ -1
+  c ≥ 0
+  c - d ≥ 0
+  c - g ≤ -1
+  b ≥ 0
+  a ≥ 0
+  a - b ≥ 1
+where
+ a := ↑n
+ b := ↑k
+ c := ↑p
+ d := ↑(oldRows p path k).card
+ e := ↑(frontRows p path k).card
+ f := ↑(frontRows p path ↑z).card
+ g := ↑((frontRows p path k).erase (pivotLabel path z)).card
+info: NLA/IE13/Front.lean:128:0: 'NLA.IE13.front_structure' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+error: NLA/IE13/Front.lean:129:21: #assert_trust: 'NLA.IE13.front_structure' depends on sorry or unrecognized axioms
+  foundational: propext, Classical.choice, Quot.sound
+  sorryAx: sorryAx
+error: Lean exited with code 1
+⚠ [3021/3021] Built NLA.IE13.Prefix (2.7s)
+warning: NLA/IE13/Prefix.lean:100:44: Variable name `hn` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hn
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: NLA/IE13/Prefix.lean:101:51: Variable name `ht` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _ht
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+info: NLA/IE13/Prefix.lean:110:0: 'NLA.IE13.trajectory_agree_before' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NLA/IE13/Prefix.lean:112:0: 'NLA.IE13.admissiblePrefix_extension' depends on axioms: [propext, Classical.choice, Quot.sound]
+Some required targets logged failures:
+- NLA.IE13.Recurrence
+- NLA.IE13.Front
+error: build failed

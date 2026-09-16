@@ -1,0 +1,11 @@
+# MI-04 independent Nonempty correction addendum
+
+Reviewer: OpenAI Codex agent `/root/mi04_independent_referee`, independent of this repair and of the mathematical implementation. This addendum extends the complete mathematical review sealed as `98c0f308ffd75008cb32522560cf4427e76244e0fc0f57f7d4cbc43f4b203f9e`.
+
+**Source verdict: approved.** The exact candidate closure is `b3ff13313d11355cf380419e228832db4799a8b5b8442055f74fde62cff65deb`. The prior review's sole required formal-signature correction has been implemented: `positive_quadratic_iff` alone now explicitly accepts `[Nonempty ι]`. I independently checked all 21 current source hashes, the complete single replacement in Quadratic, the unchanged other 20 files, and all ten immutable statement inputs. No proof body, original mathematical target, or frozen contract changed.
+
+The frozen Challenge's Variational section contains `{ι : Type*} [Fintype ι] [DecidableEq ι] [Nonempty ι]`. Lean 4.33.1's retained primary `Lean/Elab/MutualDef.lean`, lines 445–488, explicitly includes instance-implicit section variables whose dependencies are included. I checked these primary source bytes against the installed pinned toolchain. The repair therefore adds the missing instance in the same binder order while keeping the more general signatures of unrelated quadratic-form helpers. This resolves the independently identified source-level mismatch. It was a predictive finding; no actual Comparator rejection is claimed.
+
+The complete mathematical argument, including arbitrary positive finite complex dimension, singular and repeated-spectrum cases, genuine Euclidean operator norms, all Hermitian tests, and the consumed LeanCert certificate, retains the prior full review's approval. The scoped Tau Ceti checks retain their earlier semantic-fidelity and edge-case conclusions. This is an AI source review, not an official external referee certification.
+
+**Execution remains pending.** Neither this addendum nor the author packet proves successful elaboration of these changed bytes or a successful Comparator comparison. A new complete Linux build, actual Comparator and its controls, axiom inspection, and canonical exact-commit workflow are still required. No verified count may increase from this addendum. No local Lean/Lake process or author-proof edit was performed by this reviewer.

@@ -1,12 +1,5 @@
 [
   {
-    "id": "MF-22",
-    "modules": [
-      "NLA.MF22.Complete"
-    ],
-    "challenge": "Challenges/MF22.lean"
-  },
-  {
     "id": "MI-04",
     "modules": [
       "NLA.MI04.Complete"
@@ -16,19 +9,7 @@
   {
     "id": "IE-13",
     "modules": [
-      "NLA.IE13.Basic",
-      "NLA.IE13.Maxima",
-      "NLA.IE13.GEPP",
-      "NLA.IE13.Prefix",
-      "NLA.IE13.Origin",
-      "NLA.IE13.Front",
-      "NLA.IE13.Recurrence",
-      "NLA.IE13.Envelope",
-      "NLA.IE13.LateColumn",
-      "NLA.IE13.SubsetAlgebra",
-      "NLA.IE13.FrontBounds",
-      "NLA.IE13.ColumnBounds",
-      "NLA.IE13.UpperBound"
+      "NLA.IE13.Complete"
     ],
     "challenge": "Challenges/IE13.lean"
   }

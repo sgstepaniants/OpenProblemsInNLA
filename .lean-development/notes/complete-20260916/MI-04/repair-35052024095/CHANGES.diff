@@ -1,0 +1,19 @@
+--- before/NLA/MI04/WeightedProbes.lean
++++ after/NLA/MI04/WeightedProbes.lean
+@@ -25,14 +25,14 @@
+ lemma realDiagonal_neg {n : ℕ} (d : Fin n → ℝ) :
+     realDiagonal (fun j => -d j) = -realDiagonal d := by
+   ext i j
+-  simp [realDiagonal, Matrix.diagonal]
++  simp [realDiagonal, Matrix.diagonal, neg_ite]
+ 
+ lemma realDiagonal_sumDiagonal {n : ℕ} (d : Fin n → ℝ) :
+     realDiagonal (sumDiagonal d) =
+       Matrix.fromBlocks (realDiagonal d) 0 0 (-realDiagonal d) := by
+   ext i j
+   cases i <;> cases j <;>
+-    simp [realDiagonal, sumDiagonal, Matrix.diagonal, Matrix.fromBlocks]
++    simp [realDiagonal, sumDiagonal, Matrix.diagonal, Matrix.fromBlocks, neg_ite]
+ 
+ lemma perturbedDiagonal_pencil {n : ℕ} (d : Fin n → ℝ) (X : Square n) (ε : ℝ) :
+     perturbedDiagonal (sumDiagonal d) (pencil X 0) ε =

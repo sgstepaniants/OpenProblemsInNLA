@@ -1,0 +1,51 @@
+--- before/NLA/IE13/Front.lean
++++ after/NLA/IE13/Front.lean
+@@ -21,7 +21,8 @@
+ 
+ lemma oldRows_initial_card {n : ℕ} (p : ℕ) (path : PivotPath n) :
+     (oldRows p path 0).card ≤ p := by
+-  have hmap : Set.MapsTo Fin.val (oldRows p path 0) (Finset.range p) := by
++  have hmap : Set.MapsTo (fun i : Fin n => i.val)
++      (oldRows p path 0 : Set (Fin n)) (Finset.range p : Set ℕ) := by
+     intro i hi
+     apply Finset.mem_range.mpr
+     simpa only [Nat.zero_add] using (Finset.mem_filter.mp hi).2.2
+@@ -39,8 +40,9 @@
+       intro i hi
+       obtain ⟨ha, hle⟩ := (Finset.mem_filter.mp hi).2
+       by_cases hlt : i.val < k + p
+-      · exact Finset.mem_insert_of_mem (by simp only [oldRows, Finset.mem_filter,
+-          Finset.mem_univ, true_and]; exact ⟨ha, hlt⟩)
++      · apply Finset.mem_insert_of_mem
++        simp only [oldRows, Finset.mem_filter, Finset.mem_univ, true_and]
++        exact ⟨ha, hlt⟩
+       · have he : i = fresh := Fin.ext (by dsimp [fresh]; omega)
+         rw [he]
+         exact Finset.mem_insert_self fresh _
+@@ -57,7 +59,8 @@
+     (hfuture : FutureRows p A path k.val) :
+     pivotLabel path k ∈ frontRows p path k.val := by
+   have hactive : OriginalRowActive path k.val (pivotLabel path k) := by
+-    simpa only [OriginalRowActive, inverse_origin_pivot] using (hpath k).1
++    simpa only [OriginalRowActive, inverse_origin_pivot] using
++      (Fin.le_iff_val_le_val.mp (hpath k).1)
+   have hlabel : (pivotLabel path k).val ≤ k.val + p := by
+     by_contra hnot
+     have hlarge : k.val + p < (pivotLabel path k).val := lt_of_not_ge hnot
+@@ -73,6 +76,7 @@
+     (path : PivotPath n) (hpath : AdmissiblePath A path) (k : Fin n)
+     (hfuture : FutureRows p A path k.val) :
+     FutureRows p A path (k.val + 1) := by
++  classical
+   have hpivot := pivot_front_of_future p q A hA path hpath k hfuture
+   have hlabel := (Finset.mem_filter.mp hpivot).2.2
+   intro i hi
+@@ -107,6 +111,8 @@
+     have hpivot := pivot_front_of_future p q A hA path hpath z hprev.2
+     have hcard := frontRows_card_le p k path
+     have herase := Finset.card_erase_add_one hpivot
++    change ((frontRows p path k).erase (pivotLabel path z)).card + 1 =
++      (frontRows p path k).card at herase
+     have hnext : oldRows p path (k + 1) =
+         (frontRows p path k).erase (pivotLabel path z) :=
+       oldRows_succ_eq p path z (hpath z).1

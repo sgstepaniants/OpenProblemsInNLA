@@ -1,0 +1,31 @@
+{
+  "problem": "MI-04",
+  "phase": "two observed proof-body simplification repairs only; no new acceptance claim",
+  "actual_run_id": 35052024095,
+  "actual_commit": "93abf01922d103993f2a92e819f207d63effbfae",
+  "actual_whole_run": "failure",
+  "actual_log_sha256": "5efd366b808afab219bde1b107072924998886031c6644655b53a0e07fb0b2d3",
+  "root_audit_sha256": "67f1f590cf33c291e5f0de61668387a1d833c20e4cce06b0dd07deb9d595c4f2",
+  "actual_component_command": "lake build NLA.MI04.Complete",
+  "actual_component_exit_code": 1,
+  "actual_defect": "WeightedProbes lines 26 and 32 leave the identical negation-of-if identity in diagonal entries. The proof had not instructed simp to push outer negation through the conditional.",
+  "repair": "Add only the pinned neg_ite lemma to each of these two existing simp lists. Its right side has -0, simplified by the existing neg_zero rule. No cases, hypotheses, definitions, statement or arithmetic constants change.",
+  "source_change": {
+    "path": "NLA/MI04/WeightedProbes.lean",
+    "before": "8fb7c11c6c36371a3a3cee2e3ed6869be8b325ea063a8abe35bd5cd79510f693",
+    "after": "e72d7cd3a10c574477a794d26aba66d40da7486c9ead38e9e4e1d31840570eea"
+  },
+  "before_matches_actual_Git_and_receipt": true,
+  "all21_before_source_files_match_actual_Git_and_receipt": true,
+  "other20_source_files_unchanged": true,
+  "all10_frozen_files_unchanged": true,
+  "all_auxiliary_and_export_headers_unchanged": true,
+  "pinned_mathlib_commit": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "primary_api_anchors": {
+    "Mathlib/Algebra/Notation/Defs.lean": "lines 142-143: neg_ite, proved by split then rfl",
+    "Mathlib/Data/Matrix/Diagonal.lean": "lines 108-112: diagonal_neg, independently records the same matrix identity"
+  },
+  "actual_prior_repairs": "Limit and simple_peak_second_order built successfully with only propext, Classical.choice, Quot.sound. UpperBound and its consumed quarter-gap LeanCert certificate also passed.",
+  "scope_limit": "WeightedProbes failed and its LeanCert assertion correctly rejected sorryAx; later dependent modules remain unexecuted. A proof-only source repair is not successful execution. Complete build and canonical Comparator/default-kernel controls remain pending.",
+  "no_local_Lean_Lake": true
+}

@@ -1,0 +1,12 @@
+--- before/NLA/IE13/Recurrence.lean
++++ after/NLA/IE13/Recurrence.lean
+@@ -46,7 +46,8 @@
+ lemma sequence_recurrence_range (p t : ℕ) :
+     bandSequence p (t + 1) =
+       1 + ∑ r ∈ Finset.range p, bandSequence p (t - r) := by
+-  rw [(sequence_recurrence p).2 t, ← Finset.sum_range]
++  rw [(sequence_recurrence p).2 t,
++    ← Finset.sum_range (fun r : ℕ => bandSequence p (t - r))]
+ 
+ lemma sequence_step_le (p t : ℕ) : bandSequence p t ≤ bandSequence p (t + 1) := by
+   induction t using Nat.strong_induction_on with
