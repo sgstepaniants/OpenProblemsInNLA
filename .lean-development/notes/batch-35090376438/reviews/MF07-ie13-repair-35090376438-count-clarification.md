@@ -1,0 +1,1 @@
+The sealed REVIEW.md says "ScalarFamily and the other twelve reached modules built." The actual total is twelve: ScalarFamily and eleven other modules. The exact full log and source/runtime checks are unchanged. This corrects that prose count only; no additional module or whole-problem acceptance is claimed.

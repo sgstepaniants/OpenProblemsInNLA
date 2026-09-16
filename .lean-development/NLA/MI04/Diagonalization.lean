@@ -33,20 +33,22 @@ lemma normal_operator_eigenbasis {n : ℕ}
   have hAB : Commute A B := by
     letI : IsScalarTower ℂ
         (CVector (Fin n) →L[ℂ] CVector (Fin n))
-        (CVector (Fin n) →L[ℂ] CVector (Fin n)) where
-      smul_assoc c S U := by
-        apply ContinuousLinearMap.ext
-        intro v
-        change c • S (U v) = c • S (U v)
-        rfl
+        (CVector (Fin n) →L[ℂ] CVector (Fin n)) :=
+      { smul_assoc := by
+          intro c S U
+          apply ContinuousLinearMap.ext
+          intro v
+          change c • S (U v) = c • S (U v)
+          rfl }
     letI : SMulCommClass ℂ
         (CVector (Fin n) →L[ℂ] CVector (Fin n))
-        (CVector (Fin n) →L[ℂ] CVector (Fin n)) where
-      smul_comm c S U := by
-        apply ContinuousLinearMap.ext
-        intro v
-        change c • S (U v) = S (c • U v)
-        exact (S.map_smul c (U v)).symm
+        (CVector (Fin n) →L[ℂ] CVector (Fin n)) :=
+      { smul_comm := by
+          intro c S U
+          apply ContinuousLinearMap.ext
+          intro v
+          change c • S (U v) = S (c • U v)
+          exact (S.map_smul c (U v)).symm }
     exact isStarNormal_iff_commute_realPart_imaginaryPart.mp hT
   have hlin : Commute (A : Module.End ℂ (CVector (Fin n)))
       (B : Module.End ℂ (CVector (Fin n))) := by

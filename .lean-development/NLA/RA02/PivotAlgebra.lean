@@ -26,12 +26,12 @@ def pivotEliminator {n : ℕ} (A : Square n) (j : Fin n) : Square n :=
 
 lemma choleskyStep_pivot_row {n : ℕ} (A : Square n) (j : Fin n)
     (hj : A j j ≠ 0) (b : Fin n) : choleskyStep A j j b = 0 := by
-  simp only [choleskyStep, if_neg hj]
+  simp only [choleskyStep, hj, ↓reduceIte]
   field_simp [hj] <;> ring
 
 lemma choleskyStep_pivot_col {n : ℕ} (A : Square n) (j : Fin n)
     (hj : A j j ≠ 0) (a : Fin n) : choleskyStep A j a j = 0 := by
-  simp only [choleskyStep, if_neg hj]
+  simp only [choleskyStep, hj, ↓reduceIte]
   field_simp [hj] <;> ring
 
 lemma choleskyStep_preserves_zero_row {n : ℕ} (A : Square n) (i j : Fin n)
@@ -54,16 +54,17 @@ lemma mul_pivotEliminator {n : ℕ} (A : Square n) (j : Fin n)
     Matrix.mulVec_single_one]
   ext a b
   simp only [Matrix.sub_apply, Matrix.vecMulVec_apply, Matrix.col_apply,
-    choleskyStep, if_neg hj]
+    choleskyStep, hj, ↓reduceIte]
   ring
 
 lemma conjTranspose_pivotEliminator_mul_step {n : ℕ} (A : Square n) (j : Fin n)
     (hj : A j j ≠ 0) :
     (pivotEliminator A j)ᴴ * choleskyStep A j = choleskyStep A j := by
-  have he : star (Pi.single j (1 : ℂ)) = Pi.single j 1 := by
+  have he : star (Pi.single j (1 : ℂ) : Fin n → ℂ) =
+      (Pi.single j 1 : Fin n → ℂ) := by
     ext a
     simp [Pi.single_apply]
-  have hrow : star (Pi.single j (1 : ℂ)) ᵥ* choleskyStep A j = 0 := by
+  have hrow : star (Pi.single j (1 : ℂ) : Fin n → ℂ) ᵥ* choleskyStep A j = 0 := by
     rw [he, Matrix.single_one_vecMul]
     ext b
     exact choleskyStep_pivot_row A j hj b
@@ -80,7 +81,7 @@ lemma choleskyStep_eq_congruence {n : ℕ} (A : Square n) (j : Fin n)
 lemma choleskyStep_posSemidef {n : ℕ} (A : Square n) (hA : A.PosSemidef)
     (j : Fin n) : (choleskyStep A j).PosSemidef := by
   by_cases hj : A j j = 0
-  · simpa only [choleskyStep, if_pos hj] using hA
+  · simpa only [choleskyStep, hj, ↓reduceIte] using hA
   · rw [choleskyStep_eq_congruence A j hj]
     exact hA.conjTranspose_mul_mul_same (pivotEliminator A j)
 

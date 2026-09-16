@@ -145,7 +145,7 @@ lemma maximal_basis_coordinate_bound {d : ℕ} {v : EuclideanVector d → ℝ}
     have he : S.det = (v y : ℂ)⁻¹ * (z i * T.det) := by
       change (T.updateCol i (((v y)⁻¹ : ℂ) • (fun j => y j))).det = _
       dsimp only [y]
-      rw [Matrix.det_updateCol_smul, det_updateCol_applyMatrix, Complex.ofReal_inv]
+      rw [Matrix.det_updateCol_smul, det_updateCol_applyMatrix]
     have hn := hmax S hS
     rw [he, norm_mul, norm_mul] at hn
     have hh : (v y)⁻¹ * ‖z i‖ ≤ 1 := by

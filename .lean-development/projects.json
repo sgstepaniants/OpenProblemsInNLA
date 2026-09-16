@@ -16,7 +16,7 @@
   {
     "id": "SF-01",
     "modules": [
-      "NLA.SF01.FoundationChecks"
+      "NLA.SF01.SpectralBridgeChecks"
     ],
     "challenge": "Challenges/SF01.lean"
   },
@@ -28,7 +28,11 @@
       "NLA.RA02.PivotAlgebra",
       "NLA.RA02.PivotKernel",
       "NLA.RA02.PathSemantics",
-      "NLA.RA02.FiniteExpectation"
+      "NLA.RA02.FiniteExpectation",
+      "NLA.RA02.ArrowheadEntries",
+      "NLA.RA02.ArrowheadQuadratic",
+      "NLA.RA02.StateConstruction",
+      "NLA.RA02.ProbeValues"
     ],
     "challenge": "Challenges/RA02.lean"
   }

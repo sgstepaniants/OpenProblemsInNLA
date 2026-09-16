@@ -1,0 +1,354 @@
+{
+  "scope": "Prospective development execution only: four observed repair groups plus SF01 bridges02/03 and RA02 arrowhead02 with two reconciled repairs.",
+  "preparer": "/root/mi04_independent_referee; integration preparer and MI04 repair author, not referee of own MI04 repair.",
+  "base_commit": "0ce7dc10d8b901ee57e8d226f36a30979bb205aa",
+  "prior_actual_run": 35090376438,
+  "prior_actual_result": "All four selected module commands failed; their Challenge commands only elaborated intentional statement placeholders.",
+  "prior_actual_log_results": {
+    "MI-04-modules.log": {
+      "exit_code": 1,
+      "sha256": "dc080703c8f2f70e64c81ccd691625b551319e55433be8dff31fd0831e5ca9a7"
+    },
+    "MI-04-challenge.log": {
+      "exit_code": 0,
+      "sha256": "af7bc36d34f4804a63715e558f243fa874d0fb9cd508aae388f8f4dda8529398"
+    },
+    "MF-07-modules.log": {
+      "exit_code": 1,
+      "sha256": "86722c3e200da46c2eeb89b89f7d17c5b2e7ade975137abd03aaa37af0be344a"
+    },
+    "MF-07-challenge.log": {
+      "exit_code": 0,
+      "sha256": "827960612166d51ad14d1c35ef2cc84bbcf7de03ef3c9d3614504895742f0324"
+    },
+    "SF-01-modules.log": {
+      "exit_code": 1,
+      "sha256": "88b3f2a5b535a129398d95a975f9d2e7f400eb03a4e080be027fc1b75c8264bb"
+    },
+    "SF-01-challenge.log": {
+      "exit_code": 0,
+      "sha256": "d14d0567e6c283a56aa88fead320d2a428ee770e36942878c49a039a8118044f"
+    },
+    "RA-02-modules.log": {
+      "exit_code": 1,
+      "sha256": "0b31536a9101ab63207759f386a68a47f42b33a5562160bd8facee12c2e97044"
+    },
+    "RA-02-challenge.log": {
+      "exit_code": 0,
+      "sha256": "a22cc577dc88200fc57302ab3e6d8299308c2aba272bb1aa23665169c5f35de5"
+    }
+  },
+  "candidate_sources": {
+    "MI04": {
+      "count": 21,
+      "map_sha256": "1f0f675df40a6d6d87c656c92508a52563d1cf72710a92915d361575539479f3"
+    },
+    "MF07": {
+      "count": 20,
+      "map_sha256": "ae8f1b20386fe89afecd85f46adf5ca4d8e1828718db2c6e8e722689f3495bd9"
+    },
+    "SF01": {
+      "count": 17,
+      "map_sha256": "17052db9b9b95fc974735ffbb2b7e8e518cf363efb8a07c5d7752b4ac4ba6efc"
+    },
+    "RA02": {
+      "count": 11,
+      "map_sha256": "a0f8e32eaa3905ccbb370f46cce2acc025ce0ee33c956fe467657fa4d177d3c6"
+    },
+    "IE13": {
+      "count": 27,
+      "map_sha256": "2a0fa81d4b8b5920c14267ed98e41ec92f1b615cb83d7829d156c762227519e5"
+    }
+  },
+  "partial_scopes": {
+    "SF01": {
+      "source_files": 17,
+      "implemented_contracts": 8,
+      "all_contracts": 24,
+      "remaining_contracts": 16
+    },
+    "RA02": {
+      "source_files": 11,
+      "implemented_contracts": 10,
+      "all_contracts": 27,
+      "remaining_contracts": 17
+    }
+  },
+  "repair_provenance": "MI04 Diagonalization and RA02 StateConstruction include disclosed identical-pattern follow-throughs. StateConstruction was absent from the prior actual run. Exact immutable after snapshots are used; original private workspaces and historical seals are untouched.",
+  "RA02_current_selector_manifest": "d3e9dca135720d0f10bfe20c609ebf6f5ad2f5bf09f0760226689800e4f7565d",
+  "SF01_repaired_closure": "aab365c85c8afbd291212358548bc06bca1a130a8b6ce2c9a1d279e5f7414ee7",
+  "source_reviews": [
+    {
+      "group": "MI04 repair",
+      "directory": "MI04-root-repair-35090376438",
+      "reviewer": "/root",
+      "manifest": "MANIFEST.json",
+      "sha256": "3ca36c273225207c2d02e59a99f5f0651ab5a13315e7d22acfce016ae38bc233",
+      "report_path": "notes/batch-35090376438/reviews/MI04-root-repair-35090376438.md",
+      "report_sha256": "ede3bcbce3c3467ddfa7de3020e6be4a4f50b4dd7f0206800d9241cb9ed52ef0",
+      "meaning": "source approval only; actual execution pending"
+    },
+    {
+      "group": "MI04 repair",
+      "directory": "MI04-mf22-repair-35090376438",
+      "reviewer": "/root/mf22_publication_referee",
+      "manifest": "MANIFEST.json",
+      "sha256": "44340654b09905357e55d8b78720ca8397f0b270095a9b7627307b476acffc7e",
+      "report_path": "notes/batch-35090376438/reviews/MI04-mf22-repair-35090376438.md",
+      "report_sha256": "4f4fbe20101dbca5d1b8f332130bd7316916136d8ec3230b9fca2b5450f51712",
+      "meaning": "source approval only; actual execution pending"
+    },
+    {
+      "group": "MF07 repair",
+      "directory": "MF07-mi04-repair-35090376438",
+      "reviewer": "/root/mi04_independent_referee",
+      "manifest": "MANIFEST.json",
+      "sha256": "efa4edb246a90cd18cbe7b5e4b6a9fd07055e083b5d29d8e0f74031c57f70fc7",
+      "report_path": "notes/batch-35090376438/reviews/MF07-mi04-repair-35090376438.md",
+      "report_sha256": "993f20105015bae641502575eca435048bf9eb8a055c48d363036a75b0f12846",
+      "meaning": "source approval only; actual execution pending"
+    },
+    {
+      "group": "MF07 repair",
+      "directory": "MF07-ie13-repair-35090376438",
+      "reviewer": "/root/ie13_continuation",
+      "manifest": "FINAL-MANIFEST.json",
+      "sha256": "7087c3a44dcc7531b593242643bdc97e5f7e6afeec82cfa81aa291fb726a793e",
+      "report_path": "notes/batch-35090376438/reviews/MF07-ie13-repair-35090376438.md",
+      "report_sha256": "d4b2a210df7aa4398b2efb69bf73426145c4ac2fe901786ff663813d36c3d365",
+      "meaning": "source approval only; actual execution pending",
+      "clarification_path": "notes/batch-35090376438/reviews/MF07-ie13-repair-35090376438-count-clarification.md",
+      "clarification_sha256": "bb90f312ca6f516e88c2f19b2fe5f000db77b8441667f86fe7c5720da3382a37"
+    },
+    {
+      "group": "SF01 repair",
+      "directory": "SF01-root-repair-35090376438",
+      "reviewer": "/root",
+      "manifest": "MANIFEST.json",
+      "sha256": "bb0dafd275daa199ad5f97b1d93bf988370d1bbaaa16c8aa11266bf50c0c6258",
+      "report_path": "notes/batch-35090376438/reviews/SF01-root-repair-35090376438.md",
+      "report_sha256": "bac1e43541003b0cc0692672e3ee9ab95c52699d40e1c77ed7c9c16f184927e2",
+      "meaning": "source approval only; actual execution pending"
+    },
+    {
+      "group": "SF01 repair",
+      "directory": "SF01-mi04-repair-35090376438",
+      "reviewer": "/root/mi04_independent_referee",
+      "manifest": "MANIFEST.json",
+      "sha256": "beec86a383961ba813c2a0b906934cced54185f8332d1621bf12047fd0556f76",
+      "report_path": "notes/batch-35090376438/reviews/SF01-mi04-repair-35090376438.md",
+      "report_sha256": "c6ee1a7a5f94b8b1689d98775390e447ba3507ad58222fb9dc2b2127fec209c2",
+      "meaning": "source approval only; actual execution pending"
+    },
+    {
+      "group": "SF01 bridge02",
+      "directory": "SF01-root-analytical-bridge-02",
+      "reviewer": "/root",
+      "manifest": "MANIFEST.json",
+      "sha256": "f6c3dd01da0bab42ad9d0b66d1c52e0ab123def0d0f861397371c642736b0a57",
+      "report_path": "notes/batch-35090376438/reviews/SF01-root-analytical-bridge-02.md",
+      "report_sha256": "56b39f58004652541a0b7de75ca66166696496967f29b461792d919b949f54d4",
+      "meaning": "source approval only; actual execution pending"
+    },
+    {
+      "group": "SF01 bridge02",
+      "directory": "SF01-mf22-analytical-bridge-02",
+      "reviewer": "/root/mf22_publication_referee",
+      "manifest": "MANIFEST.json",
+      "sha256": "6c63d2c87571edb7a3e73d9d52d2e2b14361c13d70d4372a6f610347a0f02d86",
+      "report_path": "notes/batch-35090376438/reviews/SF01-mf22-analytical-bridge-02.md",
+      "report_sha256": "5527eec39f5a4c828487603caa17451714b8788e9b905459a05bcc2c8d5feed9",
+      "meaning": "source approval only; actual execution pending"
+    },
+    {
+      "group": "SF01 converse03",
+      "directory": "SF01-mi04-spectral-converse03",
+      "reviewer": "/root/mi04_independent_referee",
+      "manifest": "MANIFEST.json",
+      "sha256": "10741b2b40fadf056d7b5af8f1615eea693647a34f89280ad3bc6ed5779cc6a3",
+      "report_path": "notes/batch-35090376438/reviews/SF01-mi04-spectral-converse03.md",
+      "report_sha256": "376321ada0ea65a9d83518b53f462c92f7763b21c9e0791ef7f41c7c0227d2e0",
+      "meaning": "source approval only; actual execution pending"
+    },
+    {
+      "group": "RA02 arrowhead02",
+      "directory": "RA02-root-arrowhead-batch02",
+      "reviewer": "/root",
+      "manifest": "MANIFEST.json",
+      "sha256": "a5942f70d42dfc026e74c418fe12b60a784a22812f0394b9e90cc1c1455c6c4c",
+      "report_path": "notes/batch-35090376438/reviews/RA02-root-arrowhead-batch02.md",
+      "report_sha256": "08b9ab332e1160ca4fab2695e082e7bc2a5c4ed2ac5ed73b3fda20f84f839d26",
+      "meaning": "source approval only; actual execution pending"
+    },
+    {
+      "group": "RA02 arrowhead02",
+      "directory": "RA02-mi04-arrowhead-batch02",
+      "reviewer": "/root/mi04_independent_referee",
+      "manifest": "MANIFEST.json",
+      "sha256": "51e8017a30d50310b4a6e115e9bbfc0436ec9a58f4d33fc7d192e1d8144e5fc0",
+      "report_path": "notes/batch-35090376438/reviews/RA02-mi04-arrowhead-batch02.md",
+      "report_sha256": "b33884a8fd12d3324cc1ac911c7b488a3817d0284c812d5330101044f1ea248c",
+      "meaning": "source approval only; actual execution pending"
+    },
+    {
+      "group": "RA02 repaired arrowhead",
+      "directory": "RA02-ie13-repair-35090376438",
+      "reviewer": "/root/ie13_continuation",
+      "manifest": "MANIFEST.json",
+      "sha256": "883143bcbf9f7f42e01e264663fac673b1d18d2095be03ab33ed05c7153aade6",
+      "report_path": "notes/batch-35090376438/reviews/RA02-ie13-repair-35090376438.md",
+      "report_sha256": "c0b62e84802f8a82317529c4429d53c078ba28d653f818be8d3142940ca837d9",
+      "meaning": "source approval only; actual execution pending"
+    },
+    {
+      "group": "SF01 converse03",
+      "directory": "SF01-root-spectral-converse03",
+      "reviewer": "/root",
+      "manifest": "MANIFEST.json",
+      "sha256": "6c9dd8c9e96ffe8468ea2e95f688f97754ef3ffd0aacd7193a5409c6de2f61cd",
+      "report_path": "notes/batch-35090376438/reviews/SF01-root-spectral-converse03.md",
+      "report_sha256": "7d2942c6f13fdf5e7857315496a7242976e2821112b60843bd19669be475e387",
+      "meaning": "source approval only; actual execution pending"
+    },
+    {
+      "group": "RA02 repaired arrowhead",
+      "directory": "RA02-root-repair-35090376438",
+      "reviewer": "/root",
+      "manifest": "MANIFEST.json",
+      "sha256": "aad4156907730877ba999598a4cfe98d79bdf20ae78c8a29e21ec2794a50ad1b",
+      "report_path": "notes/batch-35090376438/reviews/RA02-root-repair-35090376438.md",
+      "report_sha256": "2175bdfd7fc8b4a0e459aee1432a299b995a08b7dc6e7584cf878be2fee63326",
+      "meaning": "source approval only; actual execution pending"
+    }
+  ],
+  "commands": [
+    {
+      "argv": [
+        "lean",
+        "--version"
+      ],
+      "log": "lean-version.log"
+    },
+    {
+      "argv": [
+        "lake",
+        "env",
+        "true"
+      ],
+      "log": "dependencies.log"
+    },
+    {
+      "argv": [
+        "lake",
+        "exe",
+        "cache",
+        "get"
+      ],
+      "log": "mathlib-cache.log"
+    },
+    {
+      "argv": [
+        "lake",
+        "build",
+        "NLA.MI04.Complete"
+      ],
+      "log": "MI-04-modules.log"
+    },
+    {
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "Challenges/MI04.lean"
+      ],
+      "log": "MI-04-challenge.log"
+    },
+    {
+      "argv": [
+        "lake",
+        "build",
+        "NLA.MF07.Complete"
+      ],
+      "log": "MF-07-modules.log"
+    },
+    {
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "Challenges/MF07.lean"
+      ],
+      "log": "MF-07-challenge.log"
+    },
+    {
+      "argv": [
+        "lake",
+        "build",
+        "NLA.SF01.SpectralBridgeChecks"
+      ],
+      "log": "SF-01-modules.log"
+    },
+    {
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "Challenges/SF01.lean"
+      ],
+      "log": "SF-01-challenge.log"
+    },
+    {
+      "argv": [
+        "lake",
+        "build",
+        "NLA.RA02.Numerical",
+        "NLA.RA02.Parameters",
+        "NLA.RA02.PivotAlgebra",
+        "NLA.RA02.PivotKernel",
+        "NLA.RA02.PathSemantics",
+        "NLA.RA02.FiniteExpectation",
+        "NLA.RA02.ArrowheadEntries",
+        "NLA.RA02.ArrowheadQuadratic",
+        "NLA.RA02.StateConstruction",
+        "NLA.RA02.ProbeValues"
+      ],
+      "log": "RA-02-modules.log"
+    },
+    {
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "Challenges/RA02.lean"
+      ],
+      "log": "RA-02-challenge.log"
+    }
+  ],
+  "command_count": 11,
+  "current_five_problem_retained_Challenge_contracts": 118,
+  "selected_Challenge_contracts": 90,
+  "all_retained_historical_Challenge_files": {
+    "Challenges/IE04.lean": 21,
+    "Challenges/IE13.lean": 28,
+    "Challenges/IE17.lean": 17,
+    "Challenges/MF02.lean": 13,
+    "Challenges/MF07.lean": 18,
+    "Challenges/MF12.lean": 28,
+    "Challenges/MF22.lean": 22,
+    "Challenges/MF24.lean": 22,
+    "Challenges/MI04.lean": 21,
+    "Challenges/PF02.lean": 11,
+    "Challenges/RA02.lean": 27,
+    "Challenges/SF01.lean": 24,
+    "Challenges/SP04.lean": 16
+  },
+  "IE13": "All27 mathematical files and28 frozen contracts are unchanged. Already accepted canonical/upstream IE13 is not selected for redundant development execution.",
+  "unchanged": "All prior inputs except five observed-repair source files and two selector module lists; no checker/workflow/pin/limit/frozen target changes.",
+  "attribution": "Original mathematics Matthew J. Colbrook, Cambridge DAMTP; retained IV03 formalization Sidney Holden; new formalization and integration George Stepaniants, Department of Computing and Mathematical Sciences, California Institute of Technology, with AI assistance.",
+  "records_scope": "Concise complete reviews are copied; private manifest hashes reference their retained original inventory scopes. No private archive or email is added.",
+  "new_runtime_acceptance": false,
+  "new_LeanCert_execution": false,
+  "Comparator_execution": false,
+  "whole_problem_verified": false,
+  "publication_or_count_change": false
+}

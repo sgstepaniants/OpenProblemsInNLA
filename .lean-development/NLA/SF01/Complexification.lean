@@ -45,7 +45,7 @@ lemma complexify_det {n : ℕ} (A : Square n) :
 lemma complexify_isUnit_iff {n : ℕ} (A : Square n) :
     IsUnit (complexify A) ↔ IsUnit A := by
   simp only [Matrix.isUnit_iff_isUnit_det, complexify_det,
-    isUnit_iff_ne_zero, Complex.ofReal_eq_zero]
+    isUnit_iff_ne_zero, Complex.ofReal_ne_zero]
 
 lemma complexify_spectralHomotopy {n : ℕ} (s : ℝ) (B : Square n) (t : ℝ) :
     complexify (spectralHomotopy s B t) =

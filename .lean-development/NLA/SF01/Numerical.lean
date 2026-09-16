@@ -20,7 +20,7 @@ theorem half_positive_certificate : (0 : ℝ) < 1 / 2 := by
 
 lemma half_coefficient_positive (a : ℝ) (ha : 0 < a) : 0 < a / 2 := by
   have h := mul_pos ha half_positive_certificate
-  simpa only [one_div, div_eq_mul_inv] using h
+  simpa only [one_div, div_eq_mul_inv, one_mul] using h
 
 theorem initial_data_valid : ValidData initialData := by
   refine ⟨half_positive_certificate, half_positive_certificate, ?_, ?_⟩
