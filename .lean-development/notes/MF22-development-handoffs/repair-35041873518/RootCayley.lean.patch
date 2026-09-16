@@ -1,0 +1,11 @@
+--- before/NLA/MF22/RootCayley.lean
++++ after/NLA/MF22/RootCayley.lean
+@@ -145,7 +145,7 @@
+     fin_cases i
+     · refine ⟨one_ne_zero, ?_⟩
+       rw [Polynomial.IsRoot, (quartic_factorization ρ).1]
+-      simp
++      simp [roots]
+     · exact hroot t hqt
+     · exact hroot u hqu
+     · exact hroot v hqv

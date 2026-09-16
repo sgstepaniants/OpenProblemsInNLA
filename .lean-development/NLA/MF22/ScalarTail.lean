@@ -28,7 +28,7 @@ lemma norm_ge_half_of_close_to_one (d : ℂ) (h : ‖d - 1‖ ≤ (1 / 2 : ℝ))
 
 lemma inverse_error_of_close_to_one (d : ℂ) (h : (1 / 2 : ℝ) ≤ ‖d‖) :
     ‖1 - d⁻¹‖ ≤ 2 * ‖d - 1‖ := by
-  have hd : d ≠ 0 := by intro he; simp [he] at h
+  have hd : d ≠ 0 := by intro he; norm_num [he] at h
   have he : 1 - d⁻¹ = (d - 1) / d := by field_simp [hd]
   rw [he, norm_div]
   apply (div_le_iff₀ (norm_pos_iff.mpr hd)).mpr
@@ -56,7 +56,7 @@ lemma scalar_dominant_tail (γ μ : ℂ) (hγ : γ ≠ 0) (hμ : 1 < ‖μ‖)
   let d : ℂ := (γ * μ ^ n + r n) / (γ * μ ^ n)
   have hdifference : d - 1 = r n / (γ * μ ^ n) := by
     dsimp [d]
-    field_simp [hgn]
+    field_simp [hgn] <;> ring
   have herror : ‖d - 1‖ ≤ C / (‖γ‖ * ‖μ‖ ^ n) := by
     rw [hdifference, norm_div, norm_mul, norm_pow]
     exact div_le_div_of_nonneg_right (hr n) hpos.le

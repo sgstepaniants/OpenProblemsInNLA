@@ -145,7 +145,7 @@ lemma rootData_of_quotient_configuration (ρ : ℝ) (hρ : 0 < ρ)
     fin_cases i
     · refine ⟨one_ne_zero, ?_⟩
       rw [Polynomial.IsRoot, (quartic_factorization ρ).1]
-      simp
+      simp [roots]
     · exact hroot t hqt
     · exact hroot u hqu
     · exact hroot v hqv

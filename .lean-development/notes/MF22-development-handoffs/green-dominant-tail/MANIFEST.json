@@ -1,0 +1,47 @@
+{
+  "problem_id": "MF-22",
+  "status": "complete proof-source candidate modules; actual Linux compilation pending",
+  "local_lean_execution": false,
+  "independent_referee_approval_claimed": false,
+  "statement_freeze_sha256": "28363e214e908192b52ae5f680be7b9872374b3a72cb2e0a98c9a39062e04f00",
+  "frozen_boundary_unchanged": true,
+  "files": {
+    "NLA/MF22/GreenKernel.lean": "34740d89070e813520e68ce71f96142bb10ae51ad08a11ffb8518f0edeca99d8",
+    "NLA/MF22/StateReconstruction.lean": "30d21da93b1ed90ef1328df81a7773eee325e194be4baf4e17ec2b7683790f78",
+    "NLA/MF22/GreenInverse.lean": "7c79e4b31774ab3cb0c277814bab0ba0df524c587bfa5b7d9535bce05bb93129",
+    "NLA/MF22/EigenEvaluation.lean": "a707e1540b08c0c09050fefaaf7916adbf2d4fa14fe012553b900022389d52df",
+    "NLA/MF22/SpectralAlgebra.lean": "d8c93f67972893a646844f9adce801f2caa6531082681cbe0239efff1adc2d8c",
+    "NLA/MF22/Dominant.lean": "03517e7ecb894a0d1cea8b32331b2b90822cdd4f01b1f703809a1b542e3da804",
+    "NLA/MF22/SpectralTailBounds.lean": "a59421e36ac67c09f1f0f173dbda8f9a81ddc3321dccb1fd5adfe96ec29b8269"
+  },
+  "exact_frozen_exports": [
+    "spectral_projector_algebra",
+    "dominant_projector",
+    "spectral_tail_bounds",
+    "green_source_state",
+    "green_inverse"
+  ],
+  "requested_targets": [
+    "NLA.MF22.GreenInverse",
+    "NLA.MF22.SpectralTailBounds"
+  ],
+  "requires_previously_held_targets": [
+    "NLA.MF22.ProjectorRank",
+    "NLA.MF22.Coprime",
+    "NLA.MF22.SourceRecurrence",
+    "NLA.MF22.ScalarTail",
+    "NLA.MF22.TransferCertificates"
+  ],
+  "source_review_sha256": "a56921a52973fc53b748176d682d62c2ce3a86c609aa31a31da000597efc1c7d",
+  "read_pinned_api_hashes": {
+    "Algebra/Algebra/Defs.lean": "57b1e15afacf8e7463f3fec312ef09dccf792b11a587ad6c2ac1459bd079ae00",
+    "Algebra/Polynomial/AlgebraMap.lean": "44480220e8998fc94589b1648a673d868dfc6d381d627bf0cbc901d58540d2e1",
+    "Data/Matrix/Mul.lean": "9ce6ecd0751e977f58fc47d6f271dff381e59868474a6955730ff07a99aa0e6b",
+    "LinearAlgebra/Matrix/Defs.lean": "d4e5b5a2762eb91e47bd4d913ed72cd3fac2f7ebf40b32ae4dc0db7f34332d54",
+    "LinearAlgebra/Matrix/Adjugate.lean": "7e28f11ff275a95412e8e8849715da0c763ff96709005d75843b8e0c40c5fef3",
+    "LinearAlgebra/Matrix/NonsingularInverse.lean": "1ee785b6ebd213ad2ed971bf3c804afee8cc6ce52be69e63572b4cf1bdb5e880",
+    "LinearAlgebra/Matrix/Trace.lean": "8053b04dc1c67b3a7d14262acc43b574e521940085e031726947f3c2241b7a73",
+    "LinearAlgebra/Matrix/Determinant/Basic.lean": "37646a248748fd65e37c20a21b4a20fea11539d4312aae4f277e4faef8ed2b87",
+    "LinearAlgebra/Matrix/Charpoly/Basic.lean": "584eb12d39eacb591155c98cfa2089479d88cfdea8eb5f31ba5ed687de200a9a"
+  }
+}

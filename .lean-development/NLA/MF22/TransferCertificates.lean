@@ -28,6 +28,7 @@ lemma companion_pencil_det (a b c d e f g h z w : ℂ) :
         (b * w + d * z) * (e * w + g * z) := by
   rw [Matrix.det_succ_row_zero, Fin.sum_univ_four]
   norm_num [Matrix.det_fin_three, Matrix.submatrix_apply, Fin.succAbove,
+    Fin.lt_def, Fin.ext_iff,
     Matrix.cons_val_two, Matrix.cons_val_three, Matrix.vecHead, Matrix.vecTail] <;> ring
 
 def leadingLift (ρ : ℝ) : Square 4 :=
@@ -64,11 +65,11 @@ lemma leadingLift_transfer (ρ : ℝ) (hρ : 0 < ρ) :
   ext i j
   fin_cases i
   · have h := congrArg (fun M : Matrix (Fin 2) (Fin 4) ℂ => M 0 j) htop
-    simpa [leadingLift, transferLift, transferRhs, Matrix.mul_apply,
+    simpa [leadingLift, transferLift, transferRhs, leadingBlock, Matrix.mul_apply,
       Fin.sum_univ_four, Fin.sum_univ_two, transferMatrix_row_zero,
       transferMatrix_row_one] using h
   · have h := congrArg (fun M : Matrix (Fin 2) (Fin 4) ℂ => M 1 j) htop
-    simpa [leadingLift, transferLift, transferRhs, Matrix.mul_apply,
+    simpa [leadingLift, transferLift, transferRhs, leadingBlock, Matrix.mul_apply,
       Fin.sum_univ_four, Fin.sum_univ_two, transferMatrix_row_zero,
       transferMatrix_row_one] using h
   · fin_cases j <;> simp [leadingLift, transferLift, transferMatrix,
@@ -137,6 +138,7 @@ lemma transfer_cofactor_form (ρ : ℝ) (z : ℂ) :
       1 - z * transferMatrix ρ 1 1 - z ^ 2 * transferMatrix ρ 1 3 := by
   rw [Matrix.adjugate_fin_succ_eq_det_submatrix]
   norm_num [Matrix.det_fin_three, Matrix.submatrix_apply, Fin.succAbove,
+    Fin.lt_def, Fin.ext_iff,
     Matrix.sub_apply, Matrix.smul_apply, Matrix.one_apply, transferMatrix,
     Matrix.cons_val_two, Matrix.cons_val_three, Matrix.vecHead, Matrix.vecTail] <;> ring
 

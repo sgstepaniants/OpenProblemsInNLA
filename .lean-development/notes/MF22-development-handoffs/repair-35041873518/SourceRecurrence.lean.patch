@@ -1,0 +1,40 @@
+--- before/NLA/MF22/SourceRecurrence.lean
++++ after/NLA/MF22/SourceRecurrence.lean
+@@ -37,11 +37,13 @@
+       Matrix.mulVec (transferRhs ρ) (sourceState x j.val) := by
+   ext c
+   fin_cases c
+-  · rw [source_row_zero]
++  · change Matrix.mulVec (scaledToeplitz ρ n) x (j, 0) = _
++    rw [source_row_zero]
+     simp [leadingBlock, transferRhs, sourceState, Matrix.mulVec, dotProduct,
+       Fin.sum_univ_succ, Matrix.cons_val_two, Matrix.cons_val_three,
+       Matrix.vecHead, Matrix.vecTail] <;> ring
+-  · rw [source_row_one]
++  · change Matrix.mulVec (scaledToeplitz ρ n) x (j, 1) = _
++    rw [source_row_one]
+     simp [leadingBlock, transferRhs, sourceState, Matrix.mulVec, dotProduct,
+       Fin.sum_univ_succ, Matrix.cons_val_two, Matrix.cons_val_three,
+       Matrix.vecHead, Matrix.vecTail] <;> ring
+@@ -80,8 +82,8 @@
+   · intro h
+     ext i
+     fin_cases i
+-    · simpa [v, sourceState, Nat.cast_add] using congrFun h 0
+-    · simpa [v, sourceState, Nat.cast_add] using congrFun h 1
++    · simpa [v, b, sourceState, Nat.cast_add] using congrFun h 0
++    · simpa [v, b, sourceState, Nat.cast_add] using congrFun h 1
+     · simp [sourceState, Nat.cast_add, Matrix.cons_val_two,
+         Matrix.cons_val_three, Matrix.vecHead, Matrix.vecTail]
+     · simp [sourceState, Nat.cast_add, Matrix.cons_val_two,
+@@ -90,8 +92,8 @@
+   · intro h
+     ext c
+     fin_cases c
+-    · simpa [v, sourceState, Nat.cast_add] using congrFun h 0
+-    · simpa [v, sourceState, Nat.cast_add] using congrFun h 1
++    · simpa [v, b, sourceState, Nat.cast_add] using congrFun h 0
++    · simpa [v, b, sourceState, Nat.cast_add] using congrFun h 1
+ 
+ theorem source_recurrence (ρ : ℝ) (hρ : 0 < ρ) (n : ℕ) (hn : 1 ≤ n)
+     (x f : BlockVector n) :

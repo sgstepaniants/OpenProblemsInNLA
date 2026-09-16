@@ -38,7 +38,8 @@ lemma generating_identities (ρ : ℝ) (z : ℂ) :
   constructor <;>
     simp only [auxiliaryAlpha, auxiliaryH, auxiliaryEll, numerator, denominator,
       eval_add, eval_mul, eval_pow, eval_C, eval_X] <;>
-    simp only [conjugate_leadingScalar, conjugate_middleScalar] <;>
+    try simp only [conjugate_leadingScalar, conjugate_middleScalar]
+  all_goals
     simp only [coefficientA, coefficientB, coefficientC,
       coefficientD, coefficientE, coefficientF, leadingScalar, middleScalar,
       centralScalar] <;>
@@ -97,6 +98,11 @@ lemma auxiliary_elimination (ρ : ℝ) (z : ℂ) :
   unfold auxiliaryH auxiliaryAlpha coefficientA coefficientB coefficientC coefficientF
   ring_nf <;> norm_num [Complex.I_sq, Complex.I_pow_three, Complex.I_pow_four] <;> ring
 
+lemma clear_quadratic_denominator (a b c u d : ℂ) (hd : d ≠ 0) :
+    d ^ 2 * (a + b * (u / d) + c * (u / d) ^ 2) =
+      a * d ^ 2 + b * u * d + c * u ^ 2 := by
+  field_simp [hd] <;> ring
+
 lemma substituted_numerator (ρ : ℝ) :
     let d : ℂ := 7 * (ρ : ℂ) ^ 2 + 30 + 22 * Complex.I * (ρ : ℂ)
     let u : ℂ := 7 * (ρ : ℂ) ^ 2 - 24 + 34 * Complex.I * (ρ : ℂ)
@@ -105,9 +111,10 @@ lemma substituted_numerator (ρ : ℝ) :
         Complex.I * (ρ : ℂ) *
           (-103032 - 40632 * (ρ : ℂ) ^ 2 + 840 * (ρ : ℂ) ^ 4) := by
   dsimp
-  simp only [numerator, eval_add, eval_mul, eval_pow, eval_C, eval_X, leadingScalar]
-  field_simp [root_denominator_ne_zero ρ] <;>
-    ring_nf <;> norm_num [Complex.I_sq, Complex.I_pow_three, Complex.I_pow_four] <;> ring
+  simp only [numerator, eval_add, eval_mul, eval_pow, eval_C, eval_X]
+  rw [clear_quadratic_denominator _ _ _ _ _ (root_denominator_ne_zero ρ)]
+  unfold leadingScalar
+  ring_nf <;> norm_num [Complex.I_sq, Complex.I_pow_three, Complex.I_pow_four] <;> ring
 
 theorem numerator_denominator_coprime (ρ : ℝ) (hρ : 0 < ρ) (z : ℂ)
     (hN : (numerator ρ).eval z = 0) : (denominator ρ).eval z ≠ 0 := by
@@ -154,10 +161,8 @@ theorem numerator_denominator_coprime (ρ : ℝ) (hρ : 0 < ρ) (z : ℂ)
   have hre := congrArg Complex.re he
   have him := congrArg Complex.im he
   norm_num [Complex.mul_re, Complex.mul_im, ← Complex.ofReal_pow] at hre him
-  have hi : -103032 - 40632 * ρ ^ 2 + 840 * ρ ^ 4 = 0 := by
-    have hmul : ρ * (-103032 - 40632 * ρ ^ 2 + 840 * ρ ^ 4) = 0 := by
-      nlinarith [him]
-    exact (mul_eq_zero.mp hmul).resolve_left hρ.ne'
+  have hi : -103032 - 40632 * ρ ^ 2 + 840 * ρ ^ 4 = 0 :=
+    him.resolve_left hρ.ne'
   have hcombine :
       70 * (134136 + 32436 * ρ ^ 2 - 10404 * ρ ^ 4) +
         867 * (-103032 - 40632 * ρ ^ 2 + 840 * ρ ^ 4) =

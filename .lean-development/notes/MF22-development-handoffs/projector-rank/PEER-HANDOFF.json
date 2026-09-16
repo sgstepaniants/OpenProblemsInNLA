@@ -1,0 +1,58 @@
+{
+  "stage": "complete conditional proof source; actual Linux elaboration pending",
+  "author_agent": "/root/next_elimination",
+  "owner_files_sha256": {
+    "NLA/MF22/ProjectorAlgebra.lean": "baeecca9b7d308b19ab00d88a752eecd11f5c03ad7bca89d49ec1871f029b7ad",
+    "NLA/MF22/ProjectorPolynomial.lean": "983177bd7e7ed117bbcd6aa05568c85b84fa294ea7c24de0ab7aa8f5e27444a4",
+    "NLA/MF22/ProjectorRank.lean": "3006740272f2d12b5331179eec67f091860df539ccea7bf12df75fb3aa3f8815"
+  },
+  "frozen_inputs_sha256": {
+    "NLA/MF22/Definitions.lean": "41c0d3ffb9f061c0dbf6a0022d91e5f72e07e50842899cd3e22f8a482b6294f5",
+    "Challenge.lean": "87da57e93ad0e0054db6d84c461da170785f666afd0ffe34532a62423905a6e0",
+    "NUMERICAL_TARGETS.md": "913f1b55ad721e7ce4bf8003801d6f318842a619d510b7535dbaefa19e94f9f2",
+    "STATEMENT-FREEZE.json": "28363e214e908192b52ae5f680be7b9872374b3a72cb2e0a98c9a39062e04f00"
+  },
+  "primary_API_sources_sha256": {
+    "Mathlib/LinearAlgebra/Lagrange.lean": "d499c3a0f94632d32003acec6dd5f40c4bffaf6985374dfa20c3c5addced3259",
+    "Mathlib/Algebra/Polynomial/Div.lean": "134ba328a39b1e2efdf894427c4cb7bbe05128dfa07e424d2cb00a7318cce08f",
+    "Mathlib/Algebra/Polynomial/RingDivision.lean": "f4baf56001bb5b4adab4c362fad2c231bf63d4b402763c82e07d7e25f57996e1",
+    "Mathlib/Algebra/Polynomial/AlgebraMap.lean": "44480220e8998fc94589b1648a673d868dfc6d381d627bf0cbc901d58540d2e1",
+    "Mathlib/RingTheory/Coprime/Lemmas.lean": "4dbb8331e5aa30de552b438e40c6d4c879a2c0f23b53acfd08caf7e232715e4f",
+    "Mathlib/LinearAlgebra/Matrix/Charpoly/Basic.lean": "584eb12d39eacb591155c98cfa2089479d88cfdea8eb5f31ba5ed687de200a9a",
+    "Mathlib/LinearAlgebra/Matrix/Charpoly/Coeff.lean": "465ebaa7462113f8c411a1bbfb582309a0224786c69ff381db8b78ed986e6eef",
+    "Mathlib/LinearAlgebra/Charpoly/ToMatrix.lean": "167cae25a064b15f836022f0441997349a236bd699ca87bcd93cf532b794529a",
+    "Mathlib/LinearAlgebra/Eigenspace/Zero.lean": "4c21ddafc2bea3c7403d84d87952c76065e6df952647bff24efe948d0d5b78e9",
+    "Mathlib/LinearAlgebra/Dimension/FreeAndStrongRankCondition.lean": "0e0131b3883f5be37a08ae02d6b04f900602ec17d17d42e1fcf0177aff26f248",
+    "Mathlib/Data/Matrix/Mul.lean": "9ce6ecd0751e977f58fc47d6f271dff381e59868474a6955730ff07a99aa0e6b"
+  },
+  "all_import_dependencies": [
+    "frozen NLA.MF22.Definitions",
+    "pinned Mathlib",
+    "pinned LeanCert"
+  ],
+  "coherent_remote_target": "NLA.MF22.ProjectorRank (imports ProjectorAlgebra and ProjectorPolynomial)",
+  "root_hypothesis": "RootData for the actual quartic; unconditional four_roots is a separate required export",
+  "matrix_hypothesis": "actual transferMatrix.charpoly = C (leadingScalar^-1) * quartic; author supplies separate complete transfer certificate",
+  "full_frozen_conjunction": "spectral_projector_algebra_of_charpoly exactly supplies sum=1, all pair products and all natural powers, including zero",
+  "additional_exports": [
+    "aeval_eq_sum_smul_projector for every polynomial",
+    "transfer_mul_spectralProjector_of_charpoly",
+    "spectralProjector_mul_transfer_of_charpoly",
+    "transfer_eigenspace_finrank_le_one_of_charpoly",
+    "spectralProjector_entry_minor_zero_of_charpoly",
+    "spectralProjector_boundary_sandwich_of_charpoly for every one of the four projectors"
+  ],
+  "algorithm": "Distinct-root divisibility plus monicity/dimension identifies the characteristic polynomial; Cayley-Hamilton makes nodewise equal polynomials equal at the matrix. Simple-root multiplicity bounds eigenspace dimension, giving one-dimensional column factorization and the exact boundary sandwich.",
+  "excluded_assumptions": [
+    "diagonalizability",
+    "predefined projector identities",
+    "nonzero boundary scalar",
+    "chosen eigenbasis",
+    "nonzero projector coordinate"
+  ],
+  "computational_optimization": "Symbolic generic polynomial and dimension arguments; no expanded powers, characteristic determinant or interval subdivisions. Only the fixed boundary basis vector is reduced at four coordinates.",
+  "local_Lean_Lake_or_cache_execution": false,
+  "frozen_or_shared_author_sources_modified": false,
+  "push_or_workflow_dispatch": false,
+  "actual_kernel_Comparator_acceptance": "not yet observed; assertions are present in source only"
+}

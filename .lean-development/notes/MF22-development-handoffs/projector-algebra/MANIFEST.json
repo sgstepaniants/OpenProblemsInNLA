@@ -1,0 +1,13 @@
+{
+  "status": "integrated complete conditional projector candidates; actual Linux elaboration pending",
+  "local_lean_execution": false,
+  "independent_final_referee": false,
+  "files": {
+    "NLA/MF22/ProjectorPolynomial.lean": "983177bd7e7ed117bbcd6aa05568c85b84fa294ea7c24de0ab7aa8f5e27444a4",
+    "NLA/MF22/ProjectorAlgebra.lean": "baeecca9b7d308b19ab00d88a752eecd11f5c03ad7bca89d49ec1871f029b7ad"
+  },
+  "review_sha256": "4ba7f2b149eb2ee860aa9189d5926fbb701442626eac61aa38c801883bc8cbdd",
+  "requested_targets": [
+    "NLA.MF22.ProjectorAlgebra"
+  ]
+}

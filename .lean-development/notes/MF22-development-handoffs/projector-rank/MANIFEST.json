@@ -1,0 +1,12 @@
+{
+  "status": "complete rank-one helper source integrated; actual Linux elaboration pending",
+  "local_lean_execution": false,
+  "files": {
+    "NLA/MF22/ProjectorRank.lean": "3006740272f2d12b5331179eec67f091860df539ccea7bf12df75fb3aa3f8815"
+  },
+  "integration_review_sha256": "8dede5cecbef58a332c7fe7bebc69356abc2dbb9b4e8d0b56d8d035ec973a549",
+  "peer_handoff_sha256": "fd33f0ac141b08e6e2fde6d88c2182d156a5a5262147853976276e49cf2b4bd1",
+  "requested_targets": [
+    "NLA.MF22.ProjectorRank"
+  ]
+}

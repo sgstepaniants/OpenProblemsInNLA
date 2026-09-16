@@ -1,0 +1,29 @@
+{
+  "source_commit": "5d756f75d6e90f0a391e0fc239b692c656f4c318",
+  "actual_run": 35041873518,
+  "full_actual_log_sha256": "6b34175da5b6902d7847154bee78935f93da4c88e715532c64d96d4da03164ff",
+  "files": {
+    "RootCayley.lean": {
+      "before_sha256": "3594c91a98a2ad9cbbaa10f8bb6e0a7e9015327af643bb6f4d8042a214a64ee9",
+      "after_sha256": "b269e60c433ef8edd4e4227665934dc81d440fc2878b80f989936a49da167cb4",
+      "diff_sha256": "ba5d40d27f9dacd7be0b1653454e9fe8e71978f3236482c081e33fed4330f523",
+      "all_declaration_signatures_unchanged": true
+    },
+    "TransferCertificates.lean": {
+      "before_sha256": "41139f4b386dd6cbd19efdbf23d2e0faec9191d741ed4d8a448fe6db941cf9b0",
+      "after_sha256": "aee6312c8222fe583055d85f26ca02e7f568ad438c380596cb269437eb992040",
+      "diff_sha256": "efcc569b4d738bc6abb98749414db66ed34b56978b59c651c224b145a7016973",
+      "all_declaration_signatures_unchanged": true
+    }
+  },
+  "repairs": [
+    "RootCayley: expose the already-chosen roots vector when simplifying the index-zero quartic root.",
+    "TransferCertificates: normalize concrete Fin equality and ordering predicates before the unchanged determinant/cofactor ring certificates.",
+    "TransferCertificates: unfold the literal leadingBlock on both sides of the already-proved inverse-cancellation matrix equality."
+  ],
+  "mathematical_targets_changed": false,
+  "mathematical_proof_route_changed": false,
+  "actual_rerun_acceptance": "pending",
+  "local_Lean_Lake_executed": false,
+  "author_source_modified": false
+}
