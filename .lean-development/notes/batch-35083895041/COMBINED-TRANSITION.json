@@ -1,0 +1,235 @@
+{
+  "scope": "One prospective development build: three observed repairs plus two partial foundation batches; no runtime result.",
+  "preparer": "/root/mi04_independent_referee; integration author, also MI04 repair author; not an independent referee of that repair.",
+  "base_commit": "09f9c4fd10c6e7d1efdb60eb0f43bc33ed920833",
+  "actual_prior_run": 35083895041,
+  "actual_prior_status": "failure in MI04/MF07; successful statement-only SF01/RA02 commands do not prove their targets",
+  "repair_subpacket_manifest_sha256": "064ec81735c92c1953e09abe4b10fde280da1f3140dbe7472a9fe2f0873bb263",
+  "repair_note_scope": "The unchanged REPAIR-TRANSITION.json describes only its original three-file repair subpacket. This record describes the combined candidate.",
+  "partial_scopes": {
+    "SF01": {
+      "active_sources": 9,
+      "new_sources": 8,
+      "implemented_contracts": 5,
+      "all_frozen_contracts": 24,
+      "remaining_contracts": 19,
+      "author_manifest": "255e22740468918c517340b8792f0a775621db72929cc575973e6b6441a5c3cd"
+    },
+    "RA02": {
+      "active_sources": 7,
+      "new_sources": 6,
+      "implemented_contracts": 6,
+      "all_frozen_contracts": 27,
+      "remaining_contracts": 21,
+      "author_manifest": "39d6f63e508d7f8937ab48a04c72848ce7f6d91d16ecfdd13ca68f0b7b4edfd5"
+    }
+  },
+  "source_reviews": [
+    {
+      "problem": "MI04",
+      "reviewer": "/root",
+      "report_path": "notes/batch-35083895041/reviews/MI04-root-repair-35083895041.md",
+      "report_sha256": "d7d387f032e6077fea552199df2bd0c4d3a668b3b5efafe73e8e5c384cdd8f7a",
+      "private_manifest_sha256": "775b617351664df4277009cf86e273801800c912a7d47af3ece33636f90a96aa",
+      "private_manifest_entries_rehashed": 3,
+      "external_bindings_rehashed": 91,
+      "private_inventory_scope": "Hash references only; full private inventories and archives are not copied into this overlay.",
+      "verdict": "Source approval for actual development execution; not runtime acceptance"
+    },
+    {
+      "problem": "MI04",
+      "reviewer": "/root/mf22_publication_referee",
+      "report_path": "notes/batch-35083895041/reviews/MI04-mf22-repair-35083895041.md",
+      "report_sha256": "1b38ab1f28932f463c901eb96a8c0c433b351bbfadb80faf36a995799277db3c",
+      "private_manifest_sha256": "ad86cf62b68d43036924b08b9ffadb7678d093ddbeca579ab510c7e4ef2aef68",
+      "private_manifest_entries_rehashed": 8,
+      "external_bindings_rehashed": 119,
+      "private_inventory_scope": "Hash references only; full private inventories and archives are not copied into this overlay.",
+      "verdict": "Source approval for actual development execution; not runtime acceptance"
+    },
+    {
+      "problem": "MF07",
+      "reviewer": "/root",
+      "report_path": "notes/batch-35083895041/reviews/MF07-root-repair-35083895041.md",
+      "report_sha256": "4d21046ce5a6bcec4b7c828f5de8a56fd9bf2b9eca9f05102777cda3bea6f43d",
+      "private_manifest_sha256": "fdf080d36b56fce7f7e1fd3ed6830f4c02fea1372be345fdcf2dc47ab96cba79",
+      "private_manifest_entries_rehashed": 3,
+      "external_bindings_rehashed": 45,
+      "private_inventory_scope": "Hash references only; full private inventories and archives are not copied into this overlay.",
+      "verdict": "Source approval for actual development execution; not runtime acceptance"
+    },
+    {
+      "problem": "MF07",
+      "reviewer": "/root/mi04_independent_referee",
+      "report_path": "notes/batch-35083895041/reviews/MF07-mi04-repair-35083895041.md",
+      "report_sha256": "f20c763b3cad26131a858049f8312ac551e6c66c5bce23be67c01115ab0eb886",
+      "private_manifest_sha256": "975f6ab607b1fe15f8e336a57b5500a916c4ef910a2b58a75e6c46e98876c423",
+      "private_manifest_entries_rehashed": 79,
+      "external_bindings_rehashed": 20,
+      "private_inventory_scope": "Hash references only; full private inventories and archives are not copied into this overlay.",
+      "verdict": "Source approval for actual development execution; not runtime acceptance"
+    },
+    {
+      "problem": "SF01",
+      "reviewer": "/root",
+      "report_path": "notes/batch-35083895041/reviews/SF01-root-foundations-20260916.md",
+      "report_sha256": "a854272a760fcad2621f82ca36c146649bdb2ff9ff7227885d630112665ac08b",
+      "private_manifest_sha256": "3316a080e580a78667532b937e1990507b97ee296bb54aad8b60168a7dabd816",
+      "private_manifest_entries_rehashed": 4,
+      "external_bindings_rehashed": 50,
+      "private_inventory_scope": "Hash references only; full private inventories and archives are not copied into this overlay.",
+      "verdict": "Source approval for actual development execution; not runtime acceptance"
+    },
+    {
+      "problem": "SF01",
+      "reviewer": "/root/mi04_independent_referee",
+      "report_path": "notes/batch-35083895041/reviews/SF01-mi04-foundations-20260916.md",
+      "report_sha256": "4a09bdc1934771a8dc4526ba3f4b5e8c7115c184ad6dfbe3af47e212c3e49dee",
+      "private_manifest_sha256": "a54b38ee820211e560be08a16731f791869ba8f2e9b615791f5498306ddcda6d",
+      "private_manifest_entries_rehashed": 90,
+      "external_bindings_rehashed": 86,
+      "private_inventory_scope": "Hash references only; full private inventories and archives are not copied into this overlay.",
+      "verdict": "Source approval for actual development execution; not runtime acceptance"
+    },
+    {
+      "problem": "RA02",
+      "reviewer": "/root",
+      "report_path": "notes/batch-35083895041/reviews/RA02-root-foundations-20260916.md",
+      "report_sha256": "fc94a331ce9a3cee2414940ec74ed942a7bc5b2b0736192d83f9d5f38800097f",
+      "private_manifest_sha256": "bd94df868afe0346e97205a449a5994aa4ed3e437d85b518862e5c358875e112",
+      "private_manifest_entries_rehashed": 4,
+      "external_bindings_rehashed": 56,
+      "private_inventory_scope": "Hash references only; full private inventories and archives are not copied into this overlay.",
+      "verdict": "Source approval for actual development execution; not runtime acceptance"
+    },
+    {
+      "problem": "RA02",
+      "reviewer": "/root/ie13_continuation",
+      "report_path": "notes/batch-35083895041/reviews/RA02-ie13-foundation-batch01.md",
+      "report_sha256": "b2875007653caefc9e53a86ed2c4d1eea9728ffad9d4e21d14aa6f1d46015e54",
+      "private_manifest_sha256": "a18f2e7e912d5ea0bac25a1304a99b5cb1c3e615c1213ba9795dcf38b888729d",
+      "private_manifest_entries_rehashed": 4,
+      "external_bindings_rehashed": 174,
+      "private_inventory_scope": "Hash references only; full private inventories and archives are not copied into this overlay.",
+      "verdict": "Source approval for actual development execution; not runtime acceptance"
+    }
+  ],
+  "prospective_commands": [
+    {
+      "argv": [
+        "lean",
+        "--version"
+      ],
+      "log": "lean-version.log"
+    },
+    {
+      "argv": [
+        "lake",
+        "env",
+        "true"
+      ],
+      "log": "dependencies.log"
+    },
+    {
+      "argv": [
+        "lake",
+        "exe",
+        "cache",
+        "get"
+      ],
+      "log": "mathlib-cache.log"
+    },
+    {
+      "argv": [
+        "lake",
+        "build",
+        "NLA.MI04.Complete"
+      ],
+      "log": "MI-04-modules.log"
+    },
+    {
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "Challenges/MI04.lean"
+      ],
+      "log": "MI-04-challenge.log"
+    },
+    {
+      "argv": [
+        "lake",
+        "build",
+        "NLA.MF07.Complete"
+      ],
+      "log": "MF-07-modules.log"
+    },
+    {
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "Challenges/MF07.lean"
+      ],
+      "log": "MF-07-challenge.log"
+    },
+    {
+      "argv": [
+        "lake",
+        "build",
+        "NLA.SF01.FoundationChecks"
+      ],
+      "log": "SF-01-modules.log"
+    },
+    {
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "Challenges/SF01.lean"
+      ],
+      "log": "SF-01-challenge.log"
+    },
+    {
+      "argv": [
+        "lake",
+        "build",
+        "NLA.RA02.Numerical",
+        "NLA.RA02.Parameters",
+        "NLA.RA02.PivotAlgebra",
+        "NLA.RA02.PivotKernel",
+        "NLA.RA02.PathSemantics",
+        "NLA.RA02.FiniteExpectation"
+      ],
+      "log": "RA-02-modules.log"
+    },
+    {
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "Challenges/RA02.lean"
+      ],
+      "log": "RA-02-challenge.log"
+    }
+  ],
+  "total_commands": 11,
+  "retained_frozen_Challenge_contracts": 118,
+  "selected_pending_Challenge_contracts": 90,
+  "IE13_promotion": {
+    "reason": "Root accepted the exact unchanged publication and real upstream execution. Its completed pair of development commands is no longer repeated; all sources, Challenge and freeze stay byte exact.",
+    "acceptance_record_sha256": "2ae40d684395ae5d6d8456cefffde94300ab2e71cbfccba6ff879a4cdb57315d",
+    "publication_commit": "b106102c68cbc77adbed1c79c0dbf93bb0054df7",
+    "actual_upstream_run": 35087238529,
+    "all27_retained_sources_and28_Challenge_contracts_equal_verified_publication": true,
+    "acceptance_authority": "/root; this preparation does not replace the separate runtime audits or update counts"
+  },
+  "unchanged": "Checker, workflow, pins, resource limits, all five complete Challenges, and every existing mathematical source except the three separately approved repairs.",
+  "source_records_scope": "Historical freeze and author closure records are copied unchanged. Original private inventory hashes are references, not a claim that archives have been republished. Reuse record references to its project refer to the isolated SF01 source workspace; exact licenses accompany each imported source subtree here.",
+  "attribution": "Matthew J. Colbrook, Cambridge DAMTP: original mathematics. Sidney Holden: unchanged IV03 formalization. George Stepaniants, Department of Computing and Mathematical Sciences, California Institute of Technology: new AI-assisted SF01/RA02 formalization and integration.",
+  "complete_verification": false,
+  "new_LeanCert_execution": false,
+  "Comparator_execution": false,
+  "runtime_acceptance": false,
+  "publication_or_count_change": false
+}

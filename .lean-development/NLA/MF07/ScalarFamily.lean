@@ -45,7 +45,7 @@ lemma scalar_growth_eq (M : Set (Square 1)) (hM : IsCompact M)
     obtain ⟨_, rfl⟩ := List.mem_replicate.mp hB
     exact hA
   have h := word_le_familyGrowth M hM n (List.replicate n A)
-    (List.length_replicate n A) hw
+    List.length_replicate hw
   simpa only [scalar_replicate_norm, he] using h
 
 lemma scalar_rootGrowth (M : Set (Square 1)) (hM : IsCompact M)

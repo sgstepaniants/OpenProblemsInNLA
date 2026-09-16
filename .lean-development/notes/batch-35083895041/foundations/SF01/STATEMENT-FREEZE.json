@@ -1,0 +1,49 @@
+{
+  "authority": "/root",
+  "authorized_at_utc": "2026-09-16T10:40:42.801587+00:00",
+  "status": "Exact reviewed statements frozen; proof implementation authorized in this isolated private workspace.",
+  "problem": "SF-01",
+  "source_draft": "/tmp/nla-lean-next-20260915/next-statements/SF-01",
+  "original_draft_manifest_sha256": "fa30a8ebe5e6f583a758f8cca336c46ca044e31009d6f22153c4041078686576",
+  "original_draft_unchanged": true,
+  "original_draft_manifest_scope": "Original preparation inventory, including pending status wording, retained unchanged in statement-history; it does not inventory this amended implementation workspace.",
+  "actual_statement_commit": "09f9c4fd10c6e7d1efdb60eb0f43bc33ed920833",
+  "actual_statement_run": 35083895041,
+  "actual_statement_job": 104754071378,
+  "actual_run_conclusion": "failure in unrelated MI04/MF07 proof commands; both Definitions/Challenge commands for this project exit0",
+  "actual_contracts_elaborated": 24,
+  "exact_tested_Lean_files": {
+    "NLA/SF01/Definitions.lean": "937c5a9f6908fe90b9633f80aa4db1e40859a51bf37cd3bbf87729d64719057d",
+    "Challenge.lean": "66f3111799d39aa5772dfb7395c9e95c7dc94b263d5c01d6e142f642b64c37c0"
+  },
+  "statement_review_manifest_bindings": {
+    "/tmp/nla-lean-next-20260915/reviews/SF01-root-statements/MANIFEST.json": "4c5c7d5d704291e62c5f6e0a3d2ee7a7abbf25bb092fdca295bfb4f1a05b2779",
+    "/tmp/nla-lean-next-20260915/reviews/SF01-mi04-statements/MANIFEST.json": "246135dbd8f7b45a125dbd3effaab937a3dbf66d6605aeb93eabba846db16c4b"
+  },
+  "runtime_audit_manifest_sha256": "fa9c50bef871b7660576bf25ba960a289b021a2def9e21805bb9bae892f96c8c",
+  "root_full_runtime_report_read_and293_external_bindings_checked": true,
+  "root_readiness_report_read": "/tmp/nla-lean-next-20260915/next-statements/SF01-proof-readiness-20260916",
+  "readiness_manifest_sha256": "1f111994addbcbb25dc0a57b71f3d8c58d9edc37156a1d2dba0488c82ae716d8",
+  "frozen_files": {
+    "Challenge.lean": "66f3111799d39aa5772dfb7395c9e95c7dc94b263d5c01d6e142f642b64c37c0",
+    "NLA/SF01/Definitions.lean": "937c5a9f6908fe90b9633f80aa4db1e40859a51bf37cd3bbf87729d64719057d",
+    "NUMERICAL_TARGETS.md": "75000b001fa71a5f96b2a608b2072ac0db84740a5dbfe7c4a3c0304f5bd24879",
+    "SourceCorrespondence.md": "1a9de247ae95aadf793b362377fb2fbba981e2746e8dbfba6ce74908f400b14e",
+    "comparator.json": "7594eb756571562080811164e01769f955365b745ced1772215186bcc711b2b1",
+    "lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+    "lakefile.toml": "d802c19657c6a7a7d9320c55db4ebad7b598e5e18294f98374978e539b59e8d0",
+    "lake-manifest.json": "3260ea38d021365ed58c7cd5580783725817c2c6faa9eec2685a15729185c488",
+    "LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+  },
+  "rules": [
+    "Add proof modules only; preserve exact definitions and all contracts.",
+    "No local Lean/Lake/cache work.",
+    "Any mathematical boundary change reopens independent statement review.",
+    "Use explicit kernel LeanCert and consume its certificate.",
+    "No custom axioms, native trust, skipped controls, resource-limit increase or weakened exports.",
+    "Final proof requires two nonauthor source referees, actual Linux default kernel and Comparator controls, exact publication and upstream PR checks."
+  ],
+  "proof_or_numerical_certificate_executed": false,
+  "whole_problem_verified": false,
+  "count_change": 0
+}

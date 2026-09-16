@@ -7,13 +7,6 @@
     "challenge": "Challenges/MI04.lean"
   },
   {
-    "id": "IE-13",
-    "modules": [
-      "NLA.IE13.Complete"
-    ],
-    "challenge": "Challenges/IE13.lean"
-  },
-  {
     "id": "MF-07",
     "modules": [
       "NLA.MF07.Complete"
@@ -23,14 +16,19 @@
   {
     "id": "SF-01",
     "modules": [
-      "NLA.SF01.Definitions"
+      "NLA.SF01.FoundationChecks"
     ],
     "challenge": "Challenges/SF01.lean"
   },
   {
     "id": "RA-02",
     "modules": [
-      "NLA.RA02.Definitions"
+      "NLA.RA02.Numerical",
+      "NLA.RA02.Parameters",
+      "NLA.RA02.PivotAlgebra",
+      "NLA.RA02.PivotKernel",
+      "NLA.RA02.PathSemantics",
+      "NLA.RA02.FiniteExpectation"
     ],
     "challenge": "Challenges/RA02.lean"
   }

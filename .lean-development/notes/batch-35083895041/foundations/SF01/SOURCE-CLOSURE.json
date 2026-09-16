@@ -1,0 +1,90 @@
+{
+  "active_Lean_sources": {
+    "NLA/IV03/Definitions.lean": "34d9726c54ec0b10005cb4225adf1c403a7109a0800b42c1f19865c1a897db2b",
+    "NLA/IV03/Proof.lean": "8a6de76006c53aac4b9f37860b790bfe304ba25cf40aea5385daed376acc0272",
+    "NLA/SF01/Complexification.lean": "4b3e976f2d515144bbcb0895d9afc398a13dc43d8929419fa20884b21e02be82",
+    "NLA/SF01/Definitions.lean": "937c5a9f6908fe90b9633f80aa4db1e40859a51bf37cd3bbf87729d64719057d",
+    "NLA/SF01/FoundationChecks.lean": "39adde092f33f283b7f17137f2ab4f763c75bb324619effa6e0203d9493b65c0",
+    "NLA/SF01/Numerical.lean": "eec2482cb1b0972ded489dd9380403f5c5c375ab922101621dd87bc24a5c8b62",
+    "NLA/SF01/SpectralHomotopy.lean": "b58abad7e8b41dabb93b8c7f1eb6a14093848aa467e90c4dc042a6b772fddaac",
+    "NLA/SF01/Spectrum.lean": "c23e6ccabc4004192177b897de819e5c9f3ad402fb1a24a79aa68172ee784114",
+    "NLA/SF01/WeightedZReuse.lean": "cea224b26d76958de082947cd633335394f933fb0cf76c7858767aa6a445722f"
+  },
+  "frozen9": {
+    "Challenge.lean": "66f3111799d39aa5772dfb7395c9e95c7dc94b263d5c01d6e142f642b64c37c0",
+    "NLA/SF01/Definitions.lean": "937c5a9f6908fe90b9633f80aa4db1e40859a51bf37cd3bbf87729d64719057d",
+    "NUMERICAL_TARGETS.md": "75000b001fa71a5f96b2a608b2072ac0db84740a5dbfe7c4a3c0304f5bd24879",
+    "SourceCorrespondence.md": "1a9de247ae95aadf793b362377fb2fbba981e2746e8dbfba6ce74908f400b14e",
+    "comparator.json": "7594eb756571562080811164e01769f955365b745ced1772215186bcc711b2b1",
+    "lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+    "lakefile.toml": "d802c19657c6a7a7d9320c55db4ebad7b598e5e18294f98374978e539b59e8d0",
+    "lake-manifest.json": "3260ea38d021365ed58c7cd5580783725817c2c6faa9eec2685a15729185c488",
+    "LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+  },
+  "freeze_sha256": "2c009f6b190c51b7376862524d9507c8163c4835ca69080f99b754c604eb94bb",
+  "implemented_candidate_contracts": {
+    "half_positive_certificate": {
+      "source": "NLA/SF01/Numerical.lean",
+      "header_sha256": "640095457a2209132d1c9bd4002d3714ab47858b700b0806d49652a1c344bbbc"
+    },
+    "initial_data_valid": {
+      "source": "NLA/SF01/Numerical.lean",
+      "header_sha256": "11008555484d6b53a08678623ce62e40fa48d76dcd8d9a63aeda3552d49296bb"
+    },
+    "spectral_homotopy_isUnit": {
+      "source": "NLA/SF01/SpectralHomotopy.lean",
+      "header_sha256": "c4d18d91b65ebd2f262552e71911c44314943f2be4d1f1afd21a393a4a99fed8"
+    },
+    "complex_spectral_radius_semantics": {
+      "source": "NLA/SF01/Spectrum.lean",
+      "header_sha256": "df5381acb6119214d96f328c467873e6859a811d45dd3167d082e5417686ab0b"
+    },
+    "spectral_radius_strict_bound": {
+      "source": "NLA/SF01/Spectrum.lean",
+      "header_sha256": "0d66eb3bc71f582def9e26dbf5fbdcf8ab9a8ba55c4c5ed3e86c80ccd4af0178"
+    }
+  },
+  "remaining_contracts": [
+    "spectralM_positive_weight",
+    "weighted_Z_spectralM",
+    "H_positive_weight",
+    "shift_comparison",
+    "H_shift_structure",
+    "comparison_abs_mulVec",
+    "resolvent_domination",
+    "ridge_comparison_preserver",
+    "ridge_commutes",
+    "pole_positive_definite",
+    "pole_diagonalization_exists",
+    "pole_residue_normalization",
+    "reciprocal_weights_nonnegative",
+    "reciprocal_blocks_isUnit",
+    "matrix_reciprocal_identity",
+    "newton_data_step",
+    "newton_first",
+    "iterate_ridge_representation",
+    "canonical_newton_preservation"
+  ],
+  "helper_declarations": [
+    "complexify_injective",
+    "complexify_one",
+    "complexify_sub",
+    "complexify_mul",
+    "complexify_smul",
+    "complexify_det",
+    "complexify_isUnit_iff",
+    "complexify_spectralHomotopy",
+    "half_coefficient_positive",
+    "real_scalar_identity_isUnit",
+    "complexSpectrum_finite",
+    "complexSpectrum_nonempty",
+    "weightedZ_maximum_principle",
+    "weightedZ_isUnit",
+    "weightedZ_inverse_nonnegative",
+    "weightedZ_weightVector_equation"
+  ],
+  "actual_statement_run": 35083895041,
+  "actual_statement_head": "09f9c4fd10c6e7d1efdb60eb0f43bc33ed920833",
+  "proof_compilation": false,
+  "comparator": false
+}

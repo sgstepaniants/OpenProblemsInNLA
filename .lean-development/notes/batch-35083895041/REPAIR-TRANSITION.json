@@ -1,0 +1,80 @@
+{
+  "scope": "Three already twice-reviewed proof-body repairs; actual rerun pending",
+  "preparer": "/root/ie13_continuation; integration preparation, not a new independent mathematical review",
+  "base_commit": "09f9c4fd10c6e7d1efdb60eb0f43bc33ed920833",
+  "actual_prior_failed_run": 35083895041,
+  "actual_prior_receipt_sha256": "df0867b843f49bcba3beae2f00c2cf224f241c4d5dec7fff58271aabac94d8ce",
+  "actual_prior_root_audit_sha256": "018b7da568a3e2ddbbeea9985e9eb7a7030591a285dc434705671a1226843179",
+  "mathematical_source_delta": {
+    "NLA/MI04/Diagonalization.lean": {
+      "before_sha256": "eb6aa421d7318669df808e9d3481c999278285e6fab2c30190beccb56225c4a2",
+      "after_sha256": "425dfa4d698ef5c259cf90c21dc90f710e02f92ce4d22e231d3c38b3a7072852"
+    },
+    "NLA/MF07/Auerbach.lean": {
+      "before_sha256": "9e1f04da52c406d325e2fb4ea1bded917a1872385d3b4b98e1bb2b587a1d018a",
+      "after_sha256": "ffafcb8a15b918783c4cea5237678c627fecb404d5b33c3ab1a3eafcf5bd9e92"
+    },
+    "NLA/MF07/ScalarFamily.lean": {
+      "before_sha256": "a04ae3e130512679f2eb8e68d270234f17947bcb1425042b59d753e644c4a5fe",
+      "after_sha256": "a7e0a6b1dabdb866649f0381934b9bea0c5da7698bf0c93e4bedc38876a4227c"
+    }
+  },
+  "private_author_manifests": {
+    "MI04": "854186042727961b99ef33fad602a7190749c26c93ad8045234628edae0334fc",
+    "MF07": "c5395fa308a4ccd5551e06d3c5dc6ddbbbfcaa95a0f372fb89a4f626ec3de9cc"
+  },
+  "author_manifest_scope": "References to immutable private inventories, not claims all their files are republished",
+  "candidate_closures": {
+    "MI04": "d492f2a937f1c8495794baa31a87eb6844d4549a67f09285cf485dd323e02daa",
+    "MF07": "6f12c614f2354af566c35b9bd318f931caa783e26be106426e5c7b3912688db6"
+  },
+  "source_reviews": [
+    {
+      "problem": "MI04",
+      "reviewer": "/root",
+      "report_path": "notes/batch-35083895041/reviews/MI04-root-repair-35083895041.md",
+      "report_sha256": "d7d387f032e6077fea552199df2bd0c4d3a668b3b5efafe73e8e5c384cdd8f7a",
+      "original_private_manifest_sha256": "775b617351664df4277009cf86e273801800c912a7d47af3ece33636f90a96aa",
+      "original_private_manifest_entries": 3,
+      "original_private_manifest_scope": "Hash reference to separately retained private review inventory; that inventory is not republished here.",
+      "verdict": "Source approval for a fresh actual development run, not runtime acceptance"
+    },
+    {
+      "problem": "MI04",
+      "reviewer": "/root/mf22_publication_referee",
+      "report_path": "notes/batch-35083895041/reviews/MI04-mf22-repair-35083895041.md",
+      "report_sha256": "1b38ab1f28932f463c901eb96a8c0c433b351bbfadb80faf36a995799277db3c",
+      "original_private_manifest_sha256": "ad86cf62b68d43036924b08b9ffadb7678d093ddbeca579ab510c7e4ef2aef68",
+      "original_private_manifest_entries": 8,
+      "original_private_manifest_scope": "Hash reference to separately retained private review inventory; that inventory is not republished here.",
+      "verdict": "Source approval for a fresh actual development run, not runtime acceptance"
+    },
+    {
+      "problem": "MF07",
+      "reviewer": "/root",
+      "report_path": "notes/batch-35083895041/reviews/MF07-root-repair-35083895041.md",
+      "report_sha256": "4d21046ce5a6bcec4b7c828f5de8a56fd9bf2b9eca9f05102777cda3bea6f43d",
+      "original_private_manifest_sha256": "fdf080d36b56fce7f7e1fd3ed6830f4c02fea1372be345fdcf2dc47ab96cba79",
+      "original_private_manifest_entries": 3,
+      "original_private_manifest_scope": "Hash reference to separately retained private review inventory; that inventory is not republished here.",
+      "verdict": "Source approval for a fresh actual development run, not runtime acceptance"
+    },
+    {
+      "problem": "MF07",
+      "reviewer": "/root/mi04_independent_referee",
+      "report_path": "notes/batch-35083895041/reviews/MF07-mi04-repair-35083895041.md",
+      "report_sha256": "f20c763b3cad26131a858049f8312ac551e6c66c5bce23be67c01115ab0eb886",
+      "original_private_manifest_sha256": "975f6ab607b1fe15f8e336a57b5500a916c4ef910a2b58a75e6c46e98876c423",
+      "original_private_manifest_entries": 79,
+      "original_private_manifest_scope": "Hash reference to separately retained private review inventory; that inventory is not republished here.",
+      "verdict": "Source approval for a fresh actual development run, not runtime acceptance"
+    }
+  ],
+  "unchanged": "Checker, workflow, dependency pins, selector, all exports and options; all other mathematical bytes",
+  "SF01_new_proofs_included": false,
+  "RA02_new_proofs_included": false,
+  "mathematical_verification": false,
+  "comparator_run": false,
+  "runtime_acceptance": false,
+  "count_change": 0
+}

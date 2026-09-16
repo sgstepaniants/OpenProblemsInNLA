@@ -30,7 +30,24 @@ lemma normal_operator_eigenbasis {n : ℕ}
   have hB : (B : Module.End ℂ (CVector (Fin n))).IsSymmetric :=
     ContinuousLinearMap.isSelfAdjoint_iff_isSymmetric.mp
       (selfAdjoint.isSelfAdjoint (x := imaginaryPart T))
-  have hAB : Commute A B := isStarNormal_iff_commute_realPart_imaginaryPart.mp hT
+  have hAB : Commute A B := by
+    letI : IsScalarTower ℂ
+        (CVector (Fin n) →L[ℂ] CVector (Fin n))
+        (CVector (Fin n) →L[ℂ] CVector (Fin n)) where
+      smul_assoc c S U := by
+        apply ContinuousLinearMap.ext
+        intro v
+        change c • S (U v) = c • S (U v)
+        rfl
+    letI : SMulCommClass ℂ
+        (CVector (Fin n) →L[ℂ] CVector (Fin n))
+        (CVector (Fin n) →L[ℂ] CVector (Fin n)) where
+      smul_comm c S U := by
+        apply ContinuousLinearMap.ext
+        intro v
+        change c • S (U v) = S (c • U v)
+        exact (S.map_smul c (U v)).symm
+    exact isStarNormal_iff_commute_realPart_imaginaryPart.mp hT
   have hlin : Commute (A : Module.End ℂ (CVector (Fin n)))
       (B : Module.End ℂ (CVector (Fin n))) := by
     exact congrArg (fun S : CVector (Fin n) →L[ℂ] CVector (Fin n) =>
@@ -54,14 +71,11 @@ theorem normal_unitary_diagonalization {n : ℕ} (hn : 1 ≤ n) (X : Square n)
       X = (U : Square n) * Matrix.diagonal z * (U : Square n).conjTranspose := by
   let T := Matrix.toEuclideanCLM (n := Fin n) (𝕜 := ℂ) X
   have hT : IsStarNormal T := by
-    constructor
-    have hs : (Matrix.toEuclideanCLM (n := Fin n) (𝕜 := ℂ)).toRingEquiv (star X) =
-        star (Matrix.toEuclideanCLM (n := Fin n) (𝕜 := ℂ) X) :=
-      map_star (Matrix.toEuclideanCLM (n := Fin n) (𝕜 := ℂ)) X
-    have hx : (Matrix.toEuclideanCLM (n := Fin n) (𝕜 := ℂ)).toRingEquiv X =
-        Matrix.toEuclideanCLM (n := Fin n) (𝕜 := ℂ) X := rfl
-    have h := congrArg (Matrix.toEuclideanCLM (n := Fin n) (𝕜 := ℂ)) hX
-    simpa only [← Matrix.star_eq_conjTranspose, map_mul, hs, hx] using h
+    letI : IsStarNormal X := ⟨by
+      change X.conjTranspose * X = X * X.conjTranspose
+      exact hX⟩
+    exact IsStarNormal.map
+      (Matrix.toEuclideanCLM (n := Fin n) (𝕜 := ℂ)) X
   obtain ⟨b, z, hb⟩ := normal_operator_eigenbasis T hT
   let U := basisUnitary b
   have hcolumns : X * (U : Square n) = (U : Square n) * Matrix.diagonal z := by

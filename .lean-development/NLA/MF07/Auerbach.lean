@@ -43,7 +43,7 @@ def matrixColumn {d : ℕ} (T : Square d) (j : Fin d) : EuclideanVector d :=
 lemma applyMatrix_eq_sum_columns {d : ℕ} (T : Square d) (z : EuclideanVector d) :
     applyMatrix T z = ∑ i, z i • matrixColumn T i := by
   ext j
-  simp [applyMatrix_coordinate, PiLp.sum_apply, mul_comm]
+  simp [applyMatrix_coordinate, WithLp.ofLp_sum, Finset.sum_apply, PiLp.smul_apply, mul_comm]
 
 lemma matrixColumn_updateCol {d : ℕ} (T : Square d) (j k : Fin d)
     (x : EuclideanVector d) :
@@ -101,7 +101,11 @@ lemma maximal_determinant_basis {d : ℕ} {v : EuclideanVector d → ℝ}
   have hTdet : T.det ≠ 0 := by
     have hn : 0 < ‖W.det‖ := norm_pos_iff.mpr hWdet
     exact norm_pos_iff.mp (hn.trans_le (hmax W hW))
-  exact ⟨T, hTdet, fun i => by simpa [T] using (b i).property, hmax⟩
+  refine ⟨T, hTdet, ?_, hmax⟩
+  intro i
+  change v (matrixColumn (columnMatrix (fun k => (b k).val)) i) ≤ 1
+  rw [matrixColumn_columnMatrix]
+  exact (b i).property
 
 lemma det_updateCol_applyMatrix {d : ℕ} (T : Square d) (z : EuclideanVector d)
     (i : Fin d) :
@@ -127,24 +131,27 @@ lemma maximal_basis_coordinate_bound {d : ℕ} {v : EuclideanVector d → ℝ}
   · have hyp : 0 < v y := lt_of_le_of_ne (hv.1 y) (Ne.symm hy)
     let x : EuclideanVector d := ((v y)⁻¹ : ℂ) • y
     have hx : v x ≤ 1 := by
-      rw [x, hv.2.2.2]
+      dsimp only [x]
+      rw [hv.2.2.2]
       simp [norm_inv, Complex.norm_real, Real.norm_eq_abs, abs_of_pos hyp, hy]
     let S := T.updateCol i (fun j => x j)
     have hS : ∀ j, v (matrixColumn S j) ≤ 1 := by
       intro j
-      rw [S, matrixColumn_updateCol]
+      dsimp only [S]
+      rw [matrixColumn_updateCol]
       split_ifs with hj
       · exact hx
       · exact hcol j
     have he : S.det = (v y : ℂ)⁻¹ * (z i * T.det) := by
       change (T.updateCol i (((v y)⁻¹ : ℂ) • (fun j => y j))).det = _
-      rw [Matrix.det_updateCol_smul, y, det_updateCol_applyMatrix, Complex.ofReal_inv]
+      dsimp only [y]
+      rw [Matrix.det_updateCol_smul, det_updateCol_applyMatrix, Complex.ofReal_inv]
     have hn := hmax S hS
     rw [he, norm_mul, norm_mul] at hn
     have hh : (v y)⁻¹ * ‖z i‖ ≤ 1 := by
       apply (mul_le_mul_iff_right₀ (norm_pos_iff.mpr hT)).mp
       simpa [norm_inv, Complex.norm_real, Real.norm_eq_abs, abs_of_pos hyp,
-        mul_assoc] using hn
+        mul_assoc, mul_comm, mul_left_comm] using hn
     calc
       ‖z i‖ = v y * ((v y)⁻¹ * ‖z i‖) := by rw [← mul_assoc, mul_inv_cancel₀ hy, one_mul]
       _ ≤ v y * 1 := mul_le_mul_of_nonneg_left hh hyp.le
