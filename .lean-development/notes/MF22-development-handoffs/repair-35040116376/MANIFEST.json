@@ -1,0 +1,44 @@
+{
+  "problem_id": "MF-22",
+  "actual_prior_run": 35040116376,
+  "status": "held proof-only repairs and independently handed-off root modules; next Linux check pending",
+  "local_lean_execution": false,
+  "frozen_boundary_unchanged": true,
+  "statement_freeze_sha256": "28363e214e908192b52ae5f680be7b9872374b3a72cb2e0a98c9a39062e04f00",
+  "files": {
+    "NLA/MF22/Norms.lean": "f37ffc6f38461a491e934043b6093a1b0a9968d2bf3c26c8d3be45bef4821f04",
+    "NLA/MF22/ScalarCertificates.lean": "b30a176287042eb9fb3fdfac83fa5409f3015b4590dc9f21f79a97d083a6c70d",
+    "NLA/MF22/Coordinates.lean": "5434845e2d23134b8f0bb9bdd85b4f840e73aca8a4236f0043021a78414eca34",
+    "NLA/MF22/SourceBounds.lean": "8f9f476c6108ea080167423e61e4d9f385d4d2b3a9ecce672ca183dfff2dfd8f",
+    "NLA/MF22/LeadingBlock.lean": "14b501678ec522423f05e560d138fbb6a480d997ae21bdb25a8c5486e98390c3",
+    "NLA/MF22/RootCayley.lean": "3594c91a98a2ad9cbbaa10f8bb6e0a7e9015327af643bb6f4d8042a214a64ee9",
+    "NLA/MF22/RootCubic.lean": "08083b1e76beb946ade88ed7ca5610d92f5f866b664e803444717273e1309da8",
+    "NLA/MF22/Roots.lean": "5ce001f3209a583dc6b1ce263a2156482d0977d6d28ac748ee0df1deabe9634c"
+  },
+  "requested_targets": [
+    "NLA.MF22.Norms",
+    "NLA.MF22.ScalarCertificates",
+    "NLA.MF22.Coordinates",
+    "NLA.MF22.SourceBounds",
+    "NLA.MF22.LeadingBlock",
+    "NLA.MF22.RootCubic",
+    "NLA.MF22.Roots"
+  ],
+  "exact_frozen_signatures": [
+    "complex_entry_norm_bound",
+    "quartic_factorization",
+    "cayley_identity",
+    "positive_discriminant_factor",
+    "real_cubic_discriminant",
+    "exceptional_parameter",
+    "source_boundaries",
+    "source_entry_bound",
+    "leading_block_invertible",
+    "four_roots"
+  ],
+  "actual_prior_acceptance": [
+    "complex_entry_norm_bound",
+    "positive_discriminant_factor"
+  ],
+  "assessment_sha256": "f0164f854a3a8883b2ea3023394309f9d6229c0e663c3b88e442a4c89fb4664e"
+}

@@ -56,7 +56,7 @@ lemma norm_entry_le_spectralNorm {ι : Type*} [Fintype ι] [DecidableEq ι]
   have he : ‖e‖ = 1 := by simp [e, PiLp.norm_single]
   have hv : (T e) i = A i j := by
     change (Matrix.mulVec A (Pi.single j (1 : ℂ))) i = A i j
-    simp [Matrix.mulVec_single_one]
+    simp
   calc
     ‖A i j‖ = ‖(T e) i‖ := congrArg norm hv.symm
     _ ≤ ‖T e‖ := PiLp.norm_apply_le (T e) i

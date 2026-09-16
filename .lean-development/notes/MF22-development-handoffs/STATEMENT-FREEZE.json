@@ -1,0 +1,91 @@
+{
+  "problem_id": "MF-22",
+  "state": "immutable reviewed statement boundary; proof implementation authorized",
+  "frozen_at_utc": "2026-09-16T00:06:44.201111+00:00",
+  "upstream_source_commit": "8f04b905eb2e0827b6b84f37d9d080ae1f05b202",
+  "statement_count": 22,
+  "frozen_files_sha256": {
+    "NLA/MF22/Definitions.lean": "41c0d3ffb9f061c0dbf6a0022d91e5f72e07e50842899cd3e22f8a482b6294f5",
+    "Challenge.lean": "87da57e93ad0e0054db6d84c461da170785f666afd0ffe34532a62423905a6e0",
+    "NUMERICAL_TARGETS.md": "913f1b55ad721e7ce4bf8003801d6f318842a619d510b7535dbaefa19e94f9f2",
+    "SourceCorrespondence.md": "17b9eea27a14d372db0f4a10a686325dcfd2aea50fe61e2faffb802962ee60de",
+    "SOURCE-PROVENANCE.json": "e4a68c5cb2934610002a124a5d1daed2250820ff7116a8b7f6e4fc38d37e5ec4",
+    "comparator.json": "3d35388b2307664f407b6623ed783de88db05159aa2f0c202f042692952cc47d",
+    "lakefile.toml": "1b63145543616848f5144eb518b322e964e6cbf829e5d4b10ff4cdbac3d8a00e",
+    "lake-manifest.json": "8875cbf1c4950de7a170635d73c26d7943c84305a1309fd0a1d9b3d108154e89",
+    "lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+    "LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+  },
+  "mathematical_target": "For every fixed positive real rho, the original complex 2n-by-2n Toeplitz matrix is nonsingular for all sufficiently large n and its genuine Euclidean condition number has a polynomial bound. All literal coefficient blocks, finite boundaries, parameter rho squared equal to10, and true inverse are retained. The sufficient exponent2 proves the full original existential question; the source stronger exponent1 is not a claimed formal result.",
+  "independent_statement_reviewers": [
+    "OpenAI Codex agent /root",
+    "OpenAI Codex agent /root/next_elimination"
+  ],
+  "reviews": [
+    {
+      "original_path": "/tmp/nla-lean-next-20260915/reviews/MF22-root-statements/REVIEW.md",
+      "retained_path": "statement-audit/reviews/root-complete--REVIEW.md",
+      "sha256": "85000ce6aca7e5c03f881b14a1387646ed7ae0852e1dceb08142df0f9a1eaf73"
+    },
+    {
+      "original_path": "/tmp/nla-lean-next-20260915/reviews/MF22-root-statements/CHECKS.json",
+      "retained_path": "statement-audit/reviews/root-complete--CHECKS.json",
+      "sha256": "7244e374c5a1b61adc3ef23ed675b346c1b0fb0c80ae1fa6ae8a963065d1de5f"
+    },
+    {
+      "original_path": "/tmp/nla-lean-next-20260915/reviews/MF22-elimination-statements/REVIEW.md",
+      "retained_path": "statement-audit/reviews/elimination-complete--REVIEW.md",
+      "sha256": "2e35697f570a76821e583202c7cd433bfb0fa586f1a439dc9a5204adf4c3c4d8"
+    },
+    {
+      "original_path": "/tmp/nla-lean-next-20260915/reviews/MF22-elimination-statements/CHECKS.json",
+      "retained_path": "statement-audit/reviews/elimination-complete--CHECKS.json",
+      "sha256": "05bb483b14a123feb3a9d6d3572161314c167f8f6d27774226803bf7ebf3988e"
+    },
+    {
+      "original_path": "/tmp/nla-lean-next-20260915/reviews/MF22-root-statements/notation-repair/REVIEW.md",
+      "retained_path": "statement-audit/reviews/root-notation--REVIEW.md",
+      "sha256": "9fb0aae4637a7ad485b3b68826fcaccb95617ea2e5f58f81ad73f61f3822b08f"
+    },
+    {
+      "original_path": "/tmp/nla-lean-next-20260915/reviews/MF22-root-statements/notation-repair/CHECKS.json",
+      "retained_path": "statement-audit/reviews/root-notation--CHECKS.json",
+      "sha256": "0d60f501390f1949cbdd6aa5b77ce5029cf620c1b3e8c70c03367c2b3f514d5e"
+    },
+    {
+      "original_path": "/tmp/nla-lean-next-20260915/reviews/MF22-elimination-statements/ENNReal-syntax-addendum/REVIEW.md",
+      "retained_path": "statement-audit/reviews/elimination-notation--REVIEW.md",
+      "sha256": "da31de2fdfaf50c32ddfde62913ad9faa81745866d19c6170e083fbb6997cdd3"
+    },
+    {
+      "original_path": "/tmp/nla-lean-next-20260915/reviews/MF22-elimination-statements/ENNReal-syntax-addendum/CHECKS.json",
+      "retained_path": "statement-audit/reviews/elimination-notation--CHECKS.json",
+      "sha256": "834b3ff188b577ae9d27f83c26b78e17b8e41cd02e640b04342d1e6cd246dbdb"
+    }
+  ],
+  "syntax_repair": "Both independent referees approved the sole ENNReal notation-scope addition. Original source, failed-run diagnostics and addenda remain in statement-audit/ENNReal-syntax-repair.",
+  "actual_linux_statement_run": {
+    "repository_commit": "8adab1b22dfd8e69433815eaea14842a80e60340",
+    "run_id": 35038020942,
+    "job_id": 104611399570,
+    "uid": 1001,
+    "platform": "Linux-6.17.0-1022-azure-x86_64-with-glibc2.39",
+    "receipt_path": "statement-audit/linux/receipt.json",
+    "receipt_sha256": "5bdbd66fa21b88345676c8a2dc342b2b587b4e19333ecdd3125c7fe5d1bbd54c",
+    "root_audit_sha256": "ecbd9bc48de0e0a568cb3c7976a59b080537beb2e5ccad48f57f99a2c4cff15b",
+    "all150_input_hashes_and_all5_command_hashes_checked": true,
+    "all5_commands_succeeded_and_sources_unchanged": true,
+    "all22_contracts_elaborated": true,
+    "all10_dependency_revisions_match": true,
+    "deliberate_challenge_placeholders_are_not_proofs": true,
+    "is_complete_problem_verification": false
+  },
+  "formalization_author": "George Stepaniants, Department of Computing and Mathematical Sciences, California Institute of Technology",
+  "original_question_attribution": "Bogoya, Böttcher, Ferrari, Grudsky and Serra-Capizzano; retained source distinctions remain in SourceCorrespondence.md",
+  "original_manuscript_author": "George Stepaniants",
+  "snapshot_directory": "statement-audit/snapshots",
+  "proof_implementation_exists_at_freeze": false,
+  "local_lean_execution": false,
+  "proof_authorization": "Root authorizes implementation only after this actual source-bound elaboration and both independent reviews. Preserve all mathematical definitions and signatures. A mathematical boundary correction requires two new independent approvals, actual elaboration and an explicit renewed freeze.",
+  "status_metadata_note": "Historical draft phase descriptions remain preserved. Truthful publication metadata may be updated later without changing the frozen mathematical boundary."
+}

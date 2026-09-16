@@ -29,7 +29,7 @@ def spectralNorm (M : CMatrix ι) : ℝ :=
 
 /-- Literal real part of the complex Hermitian quadratic form. -/
 def realQuadratic (M : CMatrix ι) (v : CVector ι) : ℝ :=
-  (inner ℂ v (Matrix.toEuclideanCLM (n := ι) (𝕜 := ℂ) M v)).re
+  (inner ℂ v (Matrix.toEuclideanCLM M v)).re
 
 def rayleighValues (M : CMatrix ι) : Set ℝ :=
   {r | ∃ v : CVector ι, ‖v‖ = 1 ∧ r = realQuadratic M v}
@@ -82,7 +82,7 @@ def ExtremeSymmetry {n : ℕ} (X : Square n) : Prop :=
     topValue (pencil X T) = topValue (-pencil X T)
 
 def matrixCoefficient {n : ℕ} (X : Square n)
-    (u v : CVector (Fin n)) : ℂ := inner ℂ u (Matrix.toEuclideanCLM (n := Fin n) (𝕜 := ℂ) X v)
+    (u v : CVector (Fin n)) : ℂ := inner ℂ u (Matrix.toEuclideanCLM X v)
 
 def PairMagnitudeSymmetry {n : ℕ} (X : Square n) : Prop :=
   ∀ u v : CVector (Fin n), ‖u‖ = 1 → ‖v‖ = 1 → inner ℂ u v = 0 →

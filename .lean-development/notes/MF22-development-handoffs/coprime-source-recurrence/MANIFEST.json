@@ -1,0 +1,15 @@
+{
+  "status": "complete source candidates; actual Linux check pending",
+  "local_lean_execution": false,
+  "frozen_boundary_unchanged": true,
+  "files": {
+    "NLA/MF22/Coprime.lean": "679f562d9f99c4201e57afacfb5a2fc152f355bfe3ecb64f5530b85bea2ae80a",
+    "NLA/MF22/SourceRows.lean": "ffbf26af2d0859d128b068235808a09ad7ffd3ba441a48af4924c62b14221e21",
+    "NLA/MF22/SourceRecurrence.lean": "1f0359413b833e4c9f746c1a8d35d84457ddd8fd1acea0789eac7d954dbe7dc2"
+  },
+  "requested_targets": [
+    "NLA.MF22.Coprime",
+    "NLA.MF22.SourceRecurrence"
+  ],
+  "route": "Exact quadratic elimination for coprimality; finite zero-extension sums for the full Toeplitz/transfer recurrence equivalence. All rho>0 and finite boundary rows retained."
+}

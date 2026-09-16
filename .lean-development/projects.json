@@ -10,7 +10,16 @@
     "id": "MF-22",
     "modules": [
       "NLA.MF22.Norms",
-      "NLA.MF22.ScalarCertificates"
+      "NLA.MF22.ScalarCertificates",
+      "NLA.MF22.Coordinates",
+      "NLA.MF22.SourceBounds",
+      "NLA.MF22.LeadingBlock",
+      "NLA.MF22.RootCubic",
+      "NLA.MF22.Roots",
+      "NLA.MF22.Coprime",
+      "NLA.MF22.SourceRecurrence",
+      "NLA.MF22.TransferCertificates",
+      "NLA.MF22.ScalarTail"
     ],
     "challenge": "Challenges/MF22.lean"
   }

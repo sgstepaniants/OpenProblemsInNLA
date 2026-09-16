@@ -1,0 +1,14 @@
+{
+  "status": "source/API-reviewed complete candidate modules; actual Linux proof elaboration pending",
+  "local_lean_execution": false,
+  "frozen_boundary_unchanged": true,
+  "files": {
+    "NLA/MF22/TransferCertificates.lean": "41139f4b386dd6cbd19efdbf23d2e0faec9191d741ed4d8a448fe6db941cf9b0",
+    "NLA/MF22/ScalarTail.lean": "86c54f884ff40544557378dab1d12c197feb6f1e391af616efeb00d9e5e2388c"
+  },
+  "requested_targets": [
+    "NLA.MF22.TransferCertificates",
+    "NLA.MF22.ScalarTail"
+  ],
+  "route": "Sparse fixed4x4 and3x3 determinant certificates; qualitative geometric-growth bound for actual complex normalized denominators."
+}
