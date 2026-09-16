@@ -32,15 +32,15 @@ lemma applyMatrix_add {d : ℕ} (A B : Square d) (x : EuclideanVector d) :
 
 lemma applyMatrix_add_vector {d : ℕ} (A : Square d) (x y : EuclideanVector d) :
     applyMatrix A (x+y) = applyMatrix A x + applyMatrix A y := by
-  exact (Matrix.toEuclideanCLM A).map_add x y
+  exact (Matrix.toEuclideanCLM (n := Fin d) (𝕜 := ℂ) A).map_add x y
 
 lemma applyMatrix_smul_vector {d : ℕ} (A : Square d) (c : ℂ) (x : EuclideanVector d) :
     applyMatrix A (c • x) = c • applyMatrix A x := by
-  exact (Matrix.toEuclideanCLM A).map_smul c x
+  exact (Matrix.toEuclideanCLM (n := Fin d) (𝕜 := ℂ) A).map_smul c x
 
 lemma norm_applyMatrix_le {d : ℕ} (A : Square d) (x : EuclideanVector d) :
     ‖applyMatrix A x‖ ≤ spectralNorm A * ‖x‖ :=
-  (Matrix.toEuclideanCLM A).le_opNorm x
+  (Matrix.toEuclideanCLM (n := Fin d) (𝕜 := ℂ) A).le_opNorm x
 
 /-- All nonnegative discounted orbit values, with the empty word included. -/
 def envelopeValues {d : ℕ} (M : Set (Square d)) (C : Square d → Square d)

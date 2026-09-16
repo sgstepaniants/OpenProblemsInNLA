@@ -45,8 +45,10 @@ theorem witness_target_value (p q : ℕ) (hp : 0 < p) :
     (witnessTarget p q) (witnessTarget p q) = _
   rw [tail_pivot_row (fullLower p q) (fullUpper p q)
     (fullLower_triangular p q) (fullLower_diag p q)]
-  simp only [fullUpper, fullUpper_target, witnessTarget, Fin.val_mk, le_refl,
-    if_true, forwardRational, if_neg (by omega : p + q ≠ 0), Rat.cast_natCast]
+  change (fullUpperRational p q (witnessTarget p q) (witnessTarget p q) : ℂ) = _
+  rw [fullUpper_target]
+  simp only [witnessTarget, Fin.val_mk, le_refl, ite_true,
+    forwardRational, if_neg (by omega : p + q ≠ 0), Rat.cast_natCast]
 
 theorem witness_nonsingular (p q : ℕ) (hp : 0 < p) :
     (witnessMatrix p q).det ≠ 0 := by

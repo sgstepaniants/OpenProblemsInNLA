@@ -97,7 +97,7 @@ theorem universal_growth {n : ℕ} (hn : 1 ≤ n) (p q : ℕ) (A : Mat n)
   by_cases hp : p = 0
   · subst p
     rw [zero_lower_bandwidth hn q A hA path hpath]
-    simp only [sharpBound, if_pos rfl, le_refl]
+    simp only [sharpBound, ite_true, le_refl]
   · have hpos : 0 < p := Nat.pos_of_ne_zero hp
     rw [sharpBound, if_neg hp]
     change peakMax A path / entryMax A ≤ (bandSequence p (p + q) : ℝ)

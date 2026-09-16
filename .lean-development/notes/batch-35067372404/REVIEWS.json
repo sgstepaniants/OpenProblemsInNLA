@@ -1,0 +1,72 @@
+{
+  "scope": "Source reviews for a development attempt only; the bound original private inventories are not copied in full.",
+  "reviews": [
+    {
+      "manifest": "reviews/MI04-independent-diagonalization-35067372404/MANIFEST.json",
+      "manifest_sha256": "779a7ab18276b5d1bb7b7f01afacdf59aaa5fa9fea7898c3f97f97d0168c20f3",
+      "manifest_binding_root": "reviews/MI04-independent-diagonalization-35067372404",
+      "review": "reviews/MI04-independent-diagonalization-35067372404/REVIEW.md",
+      "review_sha256": "ce1b3e78d6f59f715e7517907f44b03493212d3475873c1fa309cc03119856a3",
+      "scope": "MI04 independent final source continuation",
+      "root_read_full_report": true,
+      "root_verified_bound_files": 14,
+      "entries_checked": 14
+    },
+    {
+      "manifest": "reviews/MI04-ie13-diagonalization-35067372404/MANIFEST.json",
+      "manifest_sha256": "5f01f8b3e02d3351354f005db7b4562789d4ca4e80808388069f136939efe773",
+      "manifest_binding_root": "reviews/MI04-ie13-diagonalization-35067372404",
+      "review": "reviews/MI04-ie13-diagonalization-35067372404/REVIEW.md",
+      "review_sha256": "a499046fc490d0c6e23bb83378a9ea9de416ad7a1558bc2632795570fb9f4367",
+      "scope": "MI04 second independent final source continuation",
+      "root_read_full_report": true,
+      "root_verified_bound_files": 8,
+      "entries_checked": 8
+    },
+    {
+      "manifest": "reviews/IE13-mi04-Sharp-35067372404/MANIFEST.json",
+      "manifest_sha256": "016b45a3457936e8c65ef67e52419679b843c4e8857aeb49ddd753b097331657",
+      "manifest_binding_root": "reviews/IE13-mi04-Sharp-35067372404",
+      "review": "reviews/IE13-mi04-Sharp-35067372404/REVIEW.md",
+      "review_sha256": "4e1089fd15a81999c092011197b7415bd405c9ad550a968efb8183394f1b003e",
+      "scope": "IE13 independent final source continuation",
+      "root_read_full_report": true,
+      "root_verified_bound_files": 13,
+      "entries_checked": 13
+    },
+    {
+      "manifest": "reviews/IE13-mf22-final-35067372404/MANIFEST.json",
+      "manifest_sha256": "b3ffd654dff3040b001f2a93c004aab591fc2a0c8238a37c95af08b6f9f8e395",
+      "manifest_binding_root": "reviews/IE13-mf22-final-35067372404",
+      "review": "reviews/IE13-mf22-final-35067372404/REVIEW.md",
+      "review_sha256": "f486b8ea5e659974c0a3a0cf224da2a474335cb8a55a712c68e302c7d05bcb9f",
+      "scope": "IE13 second independent final source continuation",
+      "root_read_full_report": true,
+      "root_verified_bound_files": 9,
+      "entries_checked": 9
+    },
+    {
+      "manifest": "reviews/MF07-root-repair-35067372404/MANIFEST.json",
+      "manifest_sha256": "03998967adf62c86d3698295a26fc5175fc6ca1acfaf04ecf8675f1df3dba6de",
+      "manifest_binding_root": ".",
+      "review": "reviews/MF07-root-repair-35067372404/REVIEW.md",
+      "review_sha256": "b20c6d53b2930018c8dcdc0707cf001d52acf764f7c41d8113d1512be58ac75f",
+      "scope": "MF07 partial development API repair review",
+      "root_read_full_report": true,
+      "root_verified_bound_files": 36,
+      "entries_checked": 36
+    },
+    {
+      "manifest": "reviews/MF07-root-next-modules-03-04-binding-continuation/MANIFEST.json",
+      "manifest_sha256": "62c11d3d4195e588a4cff5783e2fd723d973678e61bd1f952fe6bd3e5f676104",
+      "manifest_binding_root": ".",
+      "review": "reviews/MF07-root-next-modules-03-04-binding-continuation/REVIEW.md",
+      "review_sha256": "a329b49aab8b617882b8f274918613fe85c64b64b45d6b9e2c9ddd80c6fb4c92",
+      "scope": "MF07 partial source review with explicit historical binding continuation",
+      "root_read_full_report": true,
+      "root_verified_bound_files": 54,
+      "entries_checked": 54
+    }
+  ],
+  "complete_problems_verified": false
+}

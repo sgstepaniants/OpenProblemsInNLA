@@ -42,12 +42,14 @@ lemma spectralNorm_nonneg {d : ℕ} (A : Square d) : 0 ≤ spectralNorm A := nor
 lemma spectralNorm_mul_le {d : ℕ} (A B : Square d) :
     spectralNorm (A * B) ≤ spectralNorm A * spectralNorm B := by
   simpa only [spectralNorm, map_mul] using
-    norm_mul_le (Matrix.toEuclideanCLM A) (Matrix.toEuclideanCLM B)
+    norm_mul_le (Matrix.toEuclideanCLM (n := Fin d) (𝕜 := ℂ) A)
+      (Matrix.toEuclideanCLM (n := Fin d) (𝕜 := ℂ) B)
 
 lemma spectralNorm_add_le {d : ℕ} (A B : Square d) :
     spectralNorm (A + B) ≤ spectralNorm A + spectralNorm B := by
   simpa only [spectralNorm, map_add] using
-    norm_add_le (Matrix.toEuclideanCLM A) (Matrix.toEuclideanCLM B)
+    norm_add_le (Matrix.toEuclideanCLM (n := Fin d) (𝕜 := ℂ) A)
+      (Matrix.toEuclideanCLM (n := Fin d) (𝕜 := ℂ) B)
 
 lemma spectralNorm_one {d : ℕ} (hd : 1 ≤ d) : spectralNorm (1 : Square d) = 1 := by
   letI : Nonempty (Fin d) := ⟨⟨0, by omega⟩⟩
@@ -58,7 +60,9 @@ lemma spectralNorm_smul {d : ℕ} (c : ℂ) (A : Square d) :
   simp [spectralNorm, map_smul, norm_smul]
 
 lemma continuous_spectralNorm {d : ℕ} : Continuous (spectralNorm (d := d)) := by
-  exact (Matrix.toEuclideanCLM.toLinearMap.continuous_of_finiteDimensional).norm
+  let f : Square d →ₗ[ℂ] (EuclideanVector d →L[ℂ] EuclideanVector d) :=
+    (Matrix.toEuclideanCLM (n := Fin d) (𝕜 := ℂ)).toAlgEquiv.toLinearEquiv.toLinearMap
+  exact f.continuous_of_finiteDimensional.norm
 
 lemma continuous_finiteProduct {d n : ℕ} :
     Continuous (fun A : Fin n → Square d => finiteProduct A) := by
@@ -85,7 +89,14 @@ lemma WordIn_cons_iff {d : ℕ} (M : Set (Square d)) (A : Square d) (w : List (S
 
 lemma WordIn_append_iff {d : ℕ} (M : Set (Square d)) (u v : List (Square d)) :
     WordIn M (u ++ v) ↔ WordIn M u ∧ WordIn M v := by
-  simp [WordIn, forall_and]
+  constructor
+  · intro h
+    exact ⟨fun A hA => h A (List.mem_append.mpr (Or.inl hA)),
+      fun A hA => h A (List.mem_append.mpr (Or.inr hA))⟩
+  · rintro ⟨hu, hv⟩ A hA
+    rcases List.mem_append.mp hA with hA | hA
+    · exact hu A hA
+    · exact hv A hA
 
 lemma WordIn_ofFn {d n : ℕ} (M : Set (Square d)) (A : Fin n → Square d)
     (hA : ∀ i, A i ∈ M) : WordIn M (List.ofFn A) := by
@@ -107,8 +118,9 @@ theorem diagonal_inverse {d : ℕ} (σ : Fin d → ℝ) (hσ : ∀ i, σ i ≠ 0
     diagonalWeights σ * inverseDiagonalWeights σ = 1 ∧
       inverseDiagonalWeights σ * diagonalWeights σ = 1 := by
   have hz : ∀ i, (σ i : ℂ) ≠ 0 := fun i => Complex.ofReal_ne_zero.mpr (hσ i)
-  constructor <;> ext i j <;>
-    simp [diagonalWeights, inverseDiagonalWeights, Matrix.diagonal_mul_diagonal, hz]
+  constructor <;> ext i j <;> by_cases hij : i = j <;>
+    simp [diagonalWeights, inverseDiagonalWeights, Matrix.diagonal_apply,
+      Matrix.one_apply, hij, hz]
 
 #print axioms matrix_product_semantics
 #assert_trust kernel matrix_product_semantics

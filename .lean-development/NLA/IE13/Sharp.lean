@@ -23,7 +23,7 @@ lemma sharpBound_mem_growthValues (p q : ℕ) : sharpBound p q ∈ growthValues 
     refine ⟨q + 1, ?_, (1 : Mat (q + 1)), hinput, (fun k => k), hpath, ?_⟩
     · simp only [Nat.zero_max]
       omega
-    · simpa only [sharpBound, if_pos rfl] using hgrowth
+    · simpa only [sharpBound, ite_true] using hgrowth
   · have hpos := Nat.pos_of_ne_zero hp
     obtain ⟨path, hpath, _, hgrowth⟩ := witness_attainment p q hpos
     have hstructure := witness_structure p q hpos

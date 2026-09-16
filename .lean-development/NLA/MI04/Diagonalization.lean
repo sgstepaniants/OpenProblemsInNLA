@@ -55,8 +55,13 @@ theorem normal_unitary_diagonalization {n : ℕ} (hn : 1 ≤ n) (X : Square n)
   let T := Matrix.toEuclideanCLM (n := Fin n) (𝕜 := ℂ) X
   have hT : IsStarNormal T := by
     constructor
+    have hs : (Matrix.toEuclideanCLM (n := Fin n) (𝕜 := ℂ)).toRingEquiv (star X) =
+        star (Matrix.toEuclideanCLM (n := Fin n) (𝕜 := ℂ) X) :=
+      map_star (Matrix.toEuclideanCLM (n := Fin n) (𝕜 := ℂ)) X
+    have hx : (Matrix.toEuclideanCLM (n := Fin n) (𝕜 := ℂ)).toRingEquiv X =
+        Matrix.toEuclideanCLM (n := Fin n) (𝕜 := ℂ) X := rfl
     have h := congrArg (Matrix.toEuclideanCLM (n := Fin n) (𝕜 := ℂ)) hX
-    simpa only [← Matrix.star_eq_conjTranspose, map_mul, map_star] using h
+    simpa only [← Matrix.star_eq_conjTranspose, map_mul, hs, hx] using h
   obtain ⟨b, z, hb⟩ := normal_operator_eigenbasis T hT
   let U := basisUnitary b
   have hcolumns : X * (U : Square n) = (U : Square n) * Matrix.diagonal z := by

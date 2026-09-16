@@ -21,7 +21,7 @@ namespace NLA.MF07
 lemma spectralNorm_eq_zero_iff {d : ℕ} (A : Square d) : spectralNorm A = 0 ↔ A = 0 := by
   constructor
   · intro h
-    apply Matrix.toEuclideanCLM.injective
+    apply (Matrix.toEuclideanCLM (n := Fin d) (𝕜 := ℂ)).injective
     simpa only [map_zero] using (norm_eq_zero.mp h)
   · rintro rfl
     simp [spectralNorm]
@@ -73,7 +73,7 @@ lemma interspersed_positive_rate {d : ℕ} (M : Set (Square d))
         exact add_le_add_left (mul_le_mul_of_nonneg_left
           (mul_le_mul_of_nonneg_left (hb x).1 hv) hK0) _
       _ = (u+K*v) * w x := by ring
-  apply (Matrix.toEuclideanCLM _).opNorm_le_bound (by positivity)
+  apply (Matrix.toEuclideanCLM (n := Fin d) (𝕜 := ℂ) _).opNorm_le_bound (by positivity)
   intro x
   calc
     ‖applyMatrix (matrixProduct (z.map (fun A => C A + E A))) x‖ ≤
